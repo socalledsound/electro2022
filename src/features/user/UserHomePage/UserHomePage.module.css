@@ -1,0 +1,11 @@
+.userHomePageBorder {
+  background-color: rgb(246, 157, 222);
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.userHomePageWrapper {
+  background-color: rgb(248, 249, 249);
+  padding: 2rem;
+  border-radius: 0.6rem;
+}

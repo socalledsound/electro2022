@@ -1,0 +1,41 @@
+.mainNavWrapper {
+  height: 8rem;
+  background-color: rgb(57, 9, 66);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 15px solid rgb(78, 4, 105);
+  border-bottom: 5px solid rgb(112, 237, 90);
+}
+
+.leftSide {
+  min-width: 70vw;
+}
+
+.rightSide {
+  background-color: rgb(57, 9, 66, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0.6rem;
+}
+
+.homeLink {
+  color: rgb(237, 213, 90);
+  text-decoration: none;
+  font-size: 5rem;
+  font-family: "Raleway Dots", cursive;
+}
+
+.otherLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.otherLink:hover {
+  color: rgb(237, 213, 90);
+}
