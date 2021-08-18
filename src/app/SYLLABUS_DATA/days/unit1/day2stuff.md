@@ -1,3 +1,0 @@
-# all about LEDs
-
-displays

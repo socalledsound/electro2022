@@ -1,0 +1,126 @@
+.dayDetailWrapper {
+  background-color: rgb(240, 235, 235);
+  border: 5px solid rgba(154, 205, 50, 0.7);
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dayContainer {
+  background-color: #c67204;
+  width: 55%;
+  min-width: 300px;
+  border-radius: 6px;
+  padding: 1.2rem;
+  color: white;
+  /* flex: 1 0 auto; */
+}
+
+.dayDetailTitle {
+  display: flex;
+}
+
+.unitButton {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.title {
+  font-size: 30px;
+  padding: 25px;
+  margin-top: -25px;
+  margin-left: 6px;
+  border-bottom: 1px solid white;
+}
+
+.dayDescription {
+  font-family: "Martel", serif;
+  font-weight: 300;
+  margin-top: 0 auto;
+  padding: 0.6rem;
+  background-color: rgb(161, 109, 12);
+  border-radius: 6px;
+}
+
+.descriptionBorder {
+  background-color: rgb(82, 12, 12);
+  border: 1px solid white;
+  padding: 1.2rem;
+  border-radius: 6px;
+  min-height: 10rem;
+}
+
+.descriptionText {
+  color: white;
+}
+
+.illustration {
+  width: 40%;
+  min-width: 100px;
+  max-width: 200px;
+  margin-bottom: 1.2rem;
+  margin-left: 1.2rem;
+  float: right;
+}
+
+.linksWrapper {
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .linksWrapper {
+    width: 95%;
+    flex: 0 1 auto;
+  }
+}
+
+.linksList {
+  margin-top: -0.1rem;
+  /* padding-top: 1.6rem; */
+  padding-bottom: 0.6rem;
+  font-size: 14px;
+  list-style-type: none;
+  background-color: lightyellow;
+  margin-left: 20px;
+  border-radius: 6px;
+}
+
+.linksTitle {
+  background-color: purple;
+  padding: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+}
+.dayDetailLink {
+  padding-top: 0.2rem;
+}
+.dayDetailLink:hover {
+  background-color: rgb(55, 213, 227);
+  padding: 10px;
+  border-radius: 6px;
+}
+.dayDetailLink a {
+  color: rgb(89, 13, 95);
+  text-decoration: none;
+}
+
+.assignmentButtonContainer {
+  background-color: rgb(246, 115, 222);
+  border-radius: 1.2rem;
+  /* padding: 0.8rem; */
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(82, 12, 12);
+  border: 1px solid green;
+}

@@ -1,0 +1,33 @@
+.userHomePageBorder {
+  background-color: rgb(246, 157, 222);
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.userHomePageWrapper {
+  background-color: rgb(248, 249, 249);
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+
+.critMessagesWrapper {
+  font-size: 0.8rem;
+  background-color: beige;
+  padding: 1.2rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.critMessagesWrapper p {
+  line-height: 1.8rem;
+}
+
+.linkStyles {
+  background-color: rgb(118, 241, 221);
+  text-decoration: none;
+  color: red;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}

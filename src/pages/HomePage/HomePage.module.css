@@ -1,4 +1,16 @@
-.homePageContainer {
+.homePageWrapper {
   background-color: rgb(220, 21, 234);
   padding: 0.6rem;
+}
+
+.homePageInnerBorder {
+  background-color: rgb(246, 157, 222);
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.homePageContainer {
+  background-color: rgb(248, 249, 249);
+  padding: 2rem;
+  border-radius: 0.6rem;
 }

@@ -1,0 +1,8 @@
+.border {
+  border: 1px solid grey;
+}
+
+.progress {
+  background-color: aqua;
+  height: 1.2rem;
+}

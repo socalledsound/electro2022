@@ -1,0 +1,107 @@
+.unitBlockWrapper {
+  background-color: salmon;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.unitBlockItem {
+  border: 2px solid rgb(57, 171, 107);
+  padding: 1.2rem;
+  /* width: 20rem;
+  height: 20rem; */
+  min-height: 22rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.innerunitBlock {
+  background-color: rgba(246, 243, 243, 0.5);
+  padding: 1.2rem;
+  padding-top: 0;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(25, 68, 43);
+}
+
+.unitBlockItem h3 {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(246, 243, 243, 0.5);
+  border: 2px solid rgb(57, 171, 107);
+  /* color: rgb(247, 241, 244); */
+  border-radius: 0.6rem;
+}
+
+.unitBlockItem h3:hover {
+  background-color: rgb(57, 171, 107);
+  color: rgb(255, 1, 136);
+}
+
+.dayContainer {
+  background-color: rgba(246, 243, 243, 0.5);
+  border-radius: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  /* border-bottom: 1px solid black; */
+  font-size: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.dayContainer:hover {
+  background-color: rgb(57, 171, 107);
+  color: rgb(255, 1, 136);
+}
+
+.unitHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.unitHeaderItem {
+  background-color: hotpink;
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  margin: 0 auto;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  /* width: 5rem; */
+}
+
+.unitDetailWrapper {
+  background-color: rgb(237, 175, 196);
+  padding: 2rem;
+}
+
+.dayHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.dayHeaderItem {
+  background-color: hotpink;
+  padding: 0.4rem;
+  border-radius: 1.6rem;
+  /* margin: 0 auto; */
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+.dayDetailWrapper {
+  background-color: rgb(237, 175, 196);
+  padding: 2rem;
+}
