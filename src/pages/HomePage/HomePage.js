@@ -4,7 +4,7 @@ import { selectCurrentUser } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
 import { selectUserWarnings  } from '../../features/warnings/warningsSlice'
 import UserWarnings from '../../features/warnings/UserWarnings'
-import CurrentDay from '../../features/syllabus/CurrentDay'
+import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
 import SignInPage from '../../features/user/SignInPage/SignInPage'
 import styles from './HomePage.module.css'
@@ -25,7 +25,7 @@ const HomePage = () => {
                             warnings &&
                             <UserWarnings warnings={warnings} />
                         }
-                    <CurrentDay currentUser={currentUser} currentDay={currentDay}/>
+                    <DayDetail day={currentDay}/>
                     </Fragment>
                   :
                     <SignInPage />  

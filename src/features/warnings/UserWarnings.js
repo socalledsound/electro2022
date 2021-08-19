@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from './UserWarnings.module.css'
 const UserWarnings = ({warnings}) => {
     return ( 
-        <div style={{color: 'red'}}>
+        <div className={styles.userWarningsWrapper}>
             {warnings}
         </div>
      );

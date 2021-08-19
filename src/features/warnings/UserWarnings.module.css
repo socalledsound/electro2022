@@ -1,0 +1,11 @@
+.userWarningsWrapper {
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(240, 235, 235);
+  border: 5px solid rgba(248, 5, 5, 0.7);
+}

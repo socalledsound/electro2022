@@ -82,15 +82,34 @@
   }
 }
 
-.linksList {
+.videoLinksContainer {
   margin-top: -0.1rem;
-  /* padding-top: 1.6rem; */
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 14px;
+  list-style-type: none;
+  background-color: rgb(248, 248, 161);
+  margin-left: 20px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.linksListContainer {
+  margin-top: -0.1rem;
+  margin-bottom: 0.6rem;
   padding-bottom: 0.6rem;
   font-size: 14px;
   list-style-type: none;
   background-color: lightyellow;
   margin-left: 20px;
   border-radius: 6px;
+  display: flex;
+}
+
+.linksList {
+  list-style-type: none;
+  width: 80%;
+  margin-right: 1rem;
 }
 
 .linksTitle {
@@ -100,17 +119,53 @@
   padding-right: 2rem;
   color: white;
 }
+
+.listTitleContainer {
+  background-color: rgba(240, 60, 140, 0.8);
+
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0 0.3rem 0 0;
+}
+
+.videoListTitleContainer {
+  background-color: #4f0f54;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0 0.3rem 0 0;
+}
+
+.listTitle {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  color: white;
+}
+.videoListTitle {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  color: rgb(248, 248, 161);
+}
+
 .dayDetailLink {
   padding-top: 0.2rem;
+  border-bottom: 1px solid pink;
 }
 .dayDetailLink:hover {
-  background-color: rgb(55, 213, 227);
-  padding: 10px;
-  border-radius: 6px;
+  background-color: rgb(231, 100, 222);
+  color: white;
+  padding: 0.2rem;
 }
 .dayDetailLink a {
   color: rgb(89, 13, 95);
   text-decoration: none;
+}
+
+.dayDetailLink a:hover {
+  color: white;
 }
 
 .assignmentButtonContainer {
@@ -123,4 +178,8 @@
   margin-bottom: 2rem;
   color: rgb(82, 12, 12);
   border: 1px solid green;
+}
+
+.assignmentButtonContainer:hover {
+  background-color: rgb(222, 56, 192);
 }

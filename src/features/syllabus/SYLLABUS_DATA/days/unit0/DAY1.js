@@ -4,16 +4,9 @@ const DAY1 = {
     date: 'August 26, 2021',
     title: 'hello! world',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "Hello!  And welcome to electro-crafting.  What the heck is electro-crafting?  It's just a word I came up with to describe what I like to do in this class.  Basically...it camn be whatever you want it to be!  We'll learn a lot about sensors and output devices of various kinds, and how to program them.  Today I want to talk a little about me and some art that I like and get to know you all a little.", 
+    description: "Hello!  And welcome to electro-crafting.  What's electrocrafting? Come to class to find out!  Today I want to talk a little about me and some art that I like, get to know you all a little, show you some stuff I think is cool and lay out my vision for the course.", 
     inspirationLinks: [
-        // {
-        //     linkText:"Pauline Oliveros, 'Some Sound Observations'",
-        //     linkSrc:"https://drive.google.com/open?id=1OAnH99RQi2uKMdw5ri6_RB7UzNi98p6y"
-        // },
-        {
-            linkText:"a piece I made called 'hum -human'",
-            linkSrc:"https://www.youtube.com/watch?v=eYW16vkYZg4"
-        },
+ 
                         {
             linkText:"socalled sound website",
             linkSrc:"http://socalledsound.com/"
@@ -22,54 +15,7 @@ const DAY1 = {
             linkText:"language removal services",
             linkSrc:"http://www.languageremoval.com"
         },
-        // {
-        //     linkText:"doublearchive",
-        //     linkSrc:"http://www.doublearchive.com"
-        // },
-        // {
-        //     linkText:"Christian Marclay mini documentary",
-        //     linkSrc:"https://www.youtube.com/watch?v=boWmP0os2e8"
-        // },	
-        // {
-        //     linkText:"zimoun",
-        //     linkSrc:"http://www.zimoun.net/works.html"
-        // },
-        // {
-        //     linkText:"Jim Campbell's LED images swim through space",
-        //     linkSrc:"https://www.youtube.com/watch?v=4x48aCX1uK8"
-        // },	
-        // {
-        //     linkText:"Camille Utterback Text Rain",
-        //     linkSrc:"https://www.youtube.com/watch?v=f_u3sSffS78"
-        // },														
-        // {
-        //     linkText:"jenny holzer, nowness",
-        //     linkSrc:"https://www.nowness.com/story/jenny-holzer-light-stream"
-        // },
-        // {
-        //     linkText:"carsten holler",
-        //     linkSrc:"https://www.dezeen.com/2015/06/09/carsten-holler-decision-london-south-bank-hayward-gallery-playground-slides/"
-        // },	
-
-        
-        // {
-        //     linkText:"yoko ono bicycle piece",
-        //     linkSrc:"https://socalledsound.github.io/gap2018/images/non-sense/yokoBicycle.jpg"
-        // },					{
-        //     linkText:"Christina Kubisch Electrical Walks",
-        //     linkSrc:"https://vimeo.com/54846163"
-        // },					{
-        //     linkText:"Max Neuhaus, Times Square",
-        //     linkSrc:"http://www.max-neuhaus.info/timessquare.htm"
-        // },	
-        // {
-        //     linkText:"Thomas Hirschorn Gramsci Monument",
-        //     linkSrc:"https://www.youtube.com/watch?v=O5yyegM2u88"
-        // },
-        // {
-        //     linkText:"olafur eliasson 'little sun' project",
-        //     linkSrc:"http://littlesun.com/"
-        // },	
+        	
 
         {
             linkText: "tim hawkinson's uber organ",
@@ -111,14 +57,7 @@ const DAY1 = {
             linkText:"pink trombone",
             linkSrc:"https://experiments.withgoogle.com/pink-trombone"
         },	
-        {
-            linkText:"",
-            linkSrc:""
-        },	
-        {
-            linkText:"",
-            linkSrc:""
-        },	
+	
         {
             linkText:"corey arcangel -- super mario clouds",
             linkSrc:"http://www.coryarcangel.com/things-i-made/2002-001-super-mario-clouds"
@@ -160,27 +99,16 @@ const DAY1 = {
     techLinks: [
 
 
-        {
-            linkText: 'navigating the side efects course site',
-            linkSrc: 'https://youtu.be/daLV3K0NYXg',
-        },
-        {
-            linkText: 'resizing an image using gimp',
-            linkSrc: 'https://youtu.be/8ukaQw6oPM8',
-        },
-        {
-            linkText: 'making a screenshot in the chrome browser',
-            linkSrc: 'https://youtu.be/lkBm5UPu5wg',
-        },
-        {
-            linkText: 'submitting an assignment',
-            linkSrc: "https://youtu.be/HUs52zqxADM",
-        },
+
     ],
     videos: [
         {
-            linkText: 'navigating the side efects course site',
-            linkSrc: 'https://youtu.be/daLV3K0NYXg',
+            linkText: 'navigating the course website',
+            linkSrc: '',
+        },
+        {
+            linkText: 'submitting an assignment',
+            linkSrc: '',
         },
         {
             linkText: 'resizing an image using gimp',
@@ -190,10 +118,7 @@ const DAY1 = {
             linkText: 'making a screenshot in the chrome browser',
             linkSrc: 'https://youtu.be/lkBm5UPu5wg',
         },
-        {
-            linkText: 'submitting an assignment',
-            linkSrc: 'https://developer.mozilla.org/en-US/',
-        },
+
     ], 
         
 }

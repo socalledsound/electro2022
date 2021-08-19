@@ -31,7 +31,7 @@ const DayDetail = ({day}) => {
             
                         <p className={styles.descriptionText}>
                             {description}
-                            hi
+                            
                         </p>
                     </div>
                     
