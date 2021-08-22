@@ -2,6 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 import { tempUser2 } from './TEMP_USERS'
 const initialState = {
     currentUser: tempUser2,
+    userWorks: [],
+    userCritMessages: [],
 }
 
 export const userSlice = createSlice({
