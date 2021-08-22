@@ -1,17 +1,19 @@
 .image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .attachImageButton {
-  height: 2rem;
-  padding: 0.2rem;
+  height: 5rem;
+  padding: 1.2rem;
   margin-top: 1.2rem;
-  border-radius: 0.2rem;
-  background-color: rgb(74, 10, 108);
+  border-radius: 0.8rem;
+  background-color: rgba(73, 91, 207, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0);
   color: white;
 }
 
 .attachImageButton:hover {
   background-color: rgb(153, 48, 209);
+  border: 2px solid purple;
 }

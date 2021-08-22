@@ -3,12 +3,15 @@
   padding: 0.6rem;
   margin-bottom: 1.2rem;
   border-radius: 0.6rem;
-  background-color: rgb(57, 101, 37);
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(29, 183, 197);
+  border: 2px solid rgba(61, 244, 238, 0);
   color: white;
 }
 .submitFormButton:hover {
-  background-color: rgb(57, 171, 107);
-  border: 2px solid rgb(57, 101, 37);
+  background-color: rgb(19, 88, 198);
+  border: 2px solid rgb(61, 244, 238);
 }
 
 .cancelButton {

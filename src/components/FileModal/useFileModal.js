@@ -3,13 +3,27 @@ import firebase from '../../firebase/firebase.utils'
 import { isAuthorized, getMetaData, getImageFilePath } from './uploadImageUtils'
 import tempImage from '../../assets/hvbrd.jpg'
 import FileModal from './FileModal'
+import ImagePicker from './ImagePicker'
 
 export default function useFileModal(){
     let [ fileModal, toggleFileModal ] = useState(false)
+    let [ image, setImage ] = useState(false)
     let [ imageURL, setImageURL] = useState(tempImage)
     let [file, setFile ] = useState(null)
     let [ percentUploaded, setPercentUploaded] = useState(0)
     console.log(percentUploaded)
+
+    const setThumbnail = (file) => {
+        const reader = new FileReader()
+        reader.onload = ((f) => {
+            return (e) => {
+                console.log(e.target.result)
+                setImage(e.target.result)
+            }
+        })()
+        reader.readAsDataURL(file)
+    }
+
 
     const addFile = (e) => {
         const file = e.target.files[0];
@@ -19,7 +33,9 @@ export default function useFileModal(){
                 alert('file cannot be bigger than 1MB')
             }
             else {
-            setFile(file) 
+                console.log(file)
+                setFile(file)
+                setThumbnail(file)
             }
             
         }    
@@ -87,9 +103,8 @@ export default function useFileModal(){
                         toggleFileModal={toggleFileModal}
                         fileModal={fileModal}
                     >
-                        <h5>select an image file</h5>
-                        <input type="file" name="file" onChange={(e) => addFile(e)} />
-                        <button onClick={submitFile}>upload</button>
+
+                        <ImagePicker image={image} addFile={addFile} submitFile={submitFile} setImage={setImage}/>
                     </FileModal>
                 }
             </Fragment>

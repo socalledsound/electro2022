@@ -14,7 +14,7 @@ const FileModal = ({ toggleFileModal, fileModal, children}) => {
                 > 
                 &times;
                 </button>
-                <div>
+                <div className={styles.pickerWrapper}>
                     {children}
                 </div>
             </div>
