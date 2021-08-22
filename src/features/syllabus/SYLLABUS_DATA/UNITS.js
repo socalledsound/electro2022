@@ -39,6 +39,8 @@ import { MIDTERM_PROJECT } from './projects/MIDTERM_PROJECT'
 import { PROJECT3 } from './projects/PROJECT3'
 import { FINAL_PROJECT } from './projects/FINAL_PROJECT'
 import UNIT0LOGO from '../../../assets/purecss-francine.png'
+import UNIT2LOGO from '../../../assets/pitagoru1.png'
+import UNIT4LOGO from '../../../assets/hvbrd2.jpg'
 
 export const UNIT0 = {
     id: 100,
@@ -53,6 +55,7 @@ export const UNIT1 = {
     id: 101,
     title: 'unit 1 : colllection',
     unit: 'unit1',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     overview: "This unit is about collections, otherwise known as data.  What makes a meaningful collection?  What are some of the strategies we can use to tame data, or set it free?  Data is to coding as paint is to painting.  In this unit we will learn some things about storing and manipulating data but also spend a good ammount of time thinking about why we should do this, and explore various approaches to organizing and presenting collections.  Most importantly, we'll discuss how to introduce just enough fuckery to keep things spicy and fun.  We'll look at the work of a wide range of artists who have tackled these problems in interesting ways: Eva Hesse, Agnes Martin, Francis Alys, Joseph Kosuth and, of course, Iggy Azalea.   And many others  .  Wait, what?  Data, Eva Hesse, you ask?  All will be made clear, and I hope it will be a fun process.",
     project: PROJECT1,
     days: [DAY4, DAY5, DAY6, DAY7]
@@ -61,8 +64,9 @@ export const UNIT1 = {
 
 export const UNIT2 = {
     id: 102,
-    title: 'goldberg machine',
+    title: 'unit 2 : goldberg machine',
     unit: 'unit2',
+    illustrationURL: UNIT2LOGO,
     overview: "In this unit we'll be thinking about systems, using Goldberg's famous machines as our model.  After getting a degree in engineering from UC Berkeley in 1904, Rube Goldberg quickly realized that working as an engineer for the fore-runner of EBMUD just wasn't for him.  Instead, he did the sensible thing and became a cartoonist.  Over the years, his drawings of intricate and whimsical machines have become iconic.  We're going to try to make our own playful versions of Goldberg machines in this unit, using javascript.  These can be games, or they can just be playful interactions.  Read more after the click.",
     project: MIDTERM_PROJECT,
     days: [DAY8, DAY9, DAY10, DAY11, DAY12, DAY13, DAY14, DAY15]
@@ -70,27 +74,30 @@ export const UNIT2 = {
 
 export const UNIT3 = {
     id: 103,
-    title: 'net work',
+    title: 'unit 3 : net work',
     unit: 'unit3',
-    overview: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
+    overview: "network description here",
     project: PROJECT3,
     days: [DAY16, DAY17, DAY18, DAY19, DAY20, DAY21]
 }
 
 export const UNIT4 = {
     id: 104,
-    title: 'three D',
+    title: 'unit 4 : three D',
     unit: 'unit4',
-    overview: "",
+    illustrationURL: UNIT4LOGO,
+    overview: "into x dimensional spaces",
     project: FINAL_PROJECT,
     days: [DAY22, DAY23, DAY24, DAY25, DAY26]   
 }
 
 export const UNIT5 = {
     id: 105,
-    title: 'finally',
+    title: 'unit 5 : finally',
     unit: 'unit5',
-    overview: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',
+    overview: "in which you take off from the nest and soar like a bird into unknown spaces",
     project: FINAL_PROJECT,
     days: [DAY27, DAY28, DAY29, DAY30]   
 }

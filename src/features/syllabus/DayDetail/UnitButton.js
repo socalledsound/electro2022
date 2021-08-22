@@ -7,7 +7,7 @@ const UnitButton = ({unit, history}) => {
         <div 
             className={styles.unitButton}
             style={{}} 
-            onClick={()=>history.push(`/units/${unit}`)}
+            onClick={()=>history.push(`/syllabus/${unit}`)}
         >
             {unit}
         </div>

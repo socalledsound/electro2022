@@ -12,7 +12,7 @@ const UnitBlock = ({unit, idx, history}) => {
     return ( 
         <div className={styles.unitBlockItem} >
             <div className={styles.innerunitBlock}>
-            <h3 onClick={() => history.push(`/syllabus/${unit.unit}`)}>{idx} : {unit.title}</h3>
+            <h3 onClick={() => history.push(`/syllabus/${unit.unit}`)}>{unit.title}</h3>
             {
                 unit.days.map((day, idx) => {
                 // console.log(day.date.slice(0,-6))

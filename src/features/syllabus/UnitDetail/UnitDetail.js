@@ -44,15 +44,21 @@ const UnitDetail = ({ unit, history }) => {
                 </div>
                 <div className={styles.unitDescription}>
                     <div className={styles.descriptionBorder}>
+                        <div className={styles.unitDescriptionContainer}>
+
+                        
                         {
                             illustrationURL && 
-
-                            <img src={illustrationURL} alt="" className={styles.illustration}/>
+                            <div className={styles.illustrationContainer}>
+                                 <img src={illustrationURL} alt="" className={styles.illustration}/>
+                            </div>
+                           
                         }
             
                         <p className={styles.descriptionText}>
                             {overview}       
                         </p>
+                        </div>
                     </div>
                     
                 </div>
