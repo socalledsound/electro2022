@@ -21,7 +21,7 @@ const SubmitWork = ({assignment, history}) => {
     const submitAssignment = (values) => {
         console.log(values)
         // maybe this should go to the user page and run an animation?
-        history.push('/gallery')
+        history.push('/')
     }
 
 

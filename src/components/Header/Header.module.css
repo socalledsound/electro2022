@@ -26,9 +26,10 @@
 
 .homeLink {
   color: rgb(237, 213, 90);
-  color: rgb(192, 82, 70);
+  color: rgb(237, 102, 86);
   text-decoration: none;
   font-size: 5rem;
+  /* font-weight: bold; */
   font-family: "Raleway Dots", cursive;
 }
 
@@ -78,7 +79,7 @@
     max-width: 70vw;
   }
   .homeLink {
-    font-size: 3rem;
+    font-size: 5rem;
     /* margin-left: 2rem; */
   }
   .avatar {
