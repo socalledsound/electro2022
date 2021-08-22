@@ -33,8 +33,8 @@
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .avatar img {
@@ -57,4 +57,32 @@
 
 .otherLink:hover {
   color: rgb(237, 213, 90);
+}
+
+@media screen and (min-width: 300px) {
+  .leftSide {
+    max-width: 50vw;
+  }
+  .homeLink {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .leftSide {
+    max-width: 70vw;
+  }
+  .homeLink {
+    font-size: 3rem;
+    /* margin-left: 2rem; */
+  }
+  .avatar {
+    width: 5rem;
+    height: 5rem;
+  }
 }

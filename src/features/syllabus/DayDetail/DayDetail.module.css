@@ -32,7 +32,7 @@
 .dayDetailTitle {
   display: flex;
   flex: 0 1 auto;
-  min-width: none;
+  max-width: 80%;
 }
 
 .unitButton {
@@ -41,7 +41,7 @@
   color: white;
   padding: 1.2rem;
   height: 1.6rem;
-  font-size: 24px;
+  font-size: 1.2rem;
   border-radius: 1.2rem;
   /* margin-right: 1.2rem; */
   display: inline-block;
@@ -218,7 +218,8 @@
 
 @media screen and (min-width: 300px) {
   .dayContainer {
-    min-width: 400px;
+    min-width: 80%;
+    max-width: 80%;
     margin: 0 auto;
   }
   .dayDetailWrapper {
