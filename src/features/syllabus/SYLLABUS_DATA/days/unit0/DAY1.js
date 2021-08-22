@@ -103,6 +103,13 @@ const DAY1 = {
     ],
     videos: [
         {
+            linkText: 'electrocrafting : intro',
+            linkSrc: '',
+        },
+        {   linkText: 'some stuff you might want',
+            linkSrc: '',
+        },
+        {
             linkText: 'navigating the course website',
             linkSrc: '',
         },

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import firebase from '../../firebase/utils' 
+import firebase from '../../firebase/firebase.utils' 
 import { isAuthorized, getMetaData, getImageFilePath } from './uploadImageUtils'
 import tempImage from '../../assets/hvbrd.jpg'
 import FileModal from './FileModal'

@@ -1,6 +1,6 @@
 import mime from 'mime-types';
 import uuidv4 from 'uuid/v4';
-import firebase from '../../firebase/utils' 
+import firebase from '../../firebase/firebase.utils' 
 
 export const isAuthorized = filename => ['image/jpeg', 'image/png'].includes(mime.lookup(filename));
 
