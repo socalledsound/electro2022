@@ -1,10 +1,10 @@
 .syllabusWrapper {
-  background-color: salmon;
+  /* background-color: salmon; */
   padding: 2rem;
 }
 
 .boilerplatewrapper {
-  background-color: salmon;
+  /* background-color: salmon; */
   border: 2px solid rgb(57, 171, 107);
   padding: 2rem;
   border-radius: 1.2rem;
@@ -86,7 +86,7 @@
 }
 
 .unitHeaderWrapper {
-  background-color: salmon;
+  /* background-color: salmon; */
   display: flex;
   flex-direction: row;
   padding: 0.8rem;
@@ -95,14 +95,21 @@
 }
 
 .unitHeaderItem {
-  background-color: hotpink;
-  background-color: rgba(246, 243, 243, 0.5);
+  /* background-color: hotpink;
+  background-color: rgba(246, 243, 243, 0.5); */
+  background-color: rgba(246, 243, 243, 0.1);
+  border: 2px solid rgb(57, 171, 107);
   padding: 1.2rem;
-  border-radius: 1.6rem;
+  border-radius: 1.2rem;
   margin: 0 auto;
   margin-right: 0.8rem;
   margin-bottom: 0.8rem;
+  font-size: 0.6rem;
   /* width: 5rem; */
+}
+.unitHeaderItem:hover {
+  background-color: rgba(246, 243, 243, 0.5);
+  border: 2px solid rgb(198, 24, 181);
 }
 
 .unitDetailWrapper {
@@ -111,7 +118,7 @@
 }
 
 .dayHeaderWrapper {
-  background-color: salmon;
+  /* background-color: salmon; */
   display: flex;
   flex-direction: row;
   padding: 0.8rem;
@@ -119,8 +126,8 @@
   flex-wrap: wrap;
 }
 .dayHeaderItem {
-  background-color: hotpink;
-  background-color: rgba(246, 243, 243, 0.5);
+  /* background-color: hotpink;
+  background-color: rgba(246, 243, 243, 0.2); */
   padding: 0.4rem;
   border-radius: 1.6rem;
   /* margin: 0 auto; */

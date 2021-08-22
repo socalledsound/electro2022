@@ -16,9 +16,13 @@ const DayDetail = ({day}) => {
             <div className={styles.dayContainer} >
 
                 <div className={styles.dayDetailTitle}>
-                    <UnitButton unit={unit}/>
-                    <h5 className={styles.title}>{date.slice(0,-6)} : {title}</h5>
-                    <AssignmentButton day={day}/>
+                   
+                        <UnitButton unit={unit}/>
+                        
+                  
+
+                        <h5 className={styles.title}>{date.slice(0,-6)} : {title}</h5>
+                        <AssignmentButton day={day}/>
                 </div>
             
                 <div className={styles.dayDescription}>

@@ -47,7 +47,7 @@ export const UNIT0 = {
     title: 'unit 0 : circuits',
     unit: 'unit0',
     illustrationURL: UNIT0LOGO,
-    overview: "In this first unit, we'll be getting our bearings with the tools that we'll use: electical circuits, inputs, outputs, code.",
+    overview: "In this first unit, we'll be getting our bearings with the tools that we'll use: electical circuits, inputs, outputs, code.  We'll",
     days: [DAY1, DAY2, DAY3]
 }
 

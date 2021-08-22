@@ -1,11 +1,11 @@
-import React from 'react'
+import React  from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { selectUnits, selectCurrentDayIdx, setCurrentDayIdx } from './syllabusSlice';
 import styles from './Syllabus.module.css'
 
 const DayHeader = ({ history }) => {
-    
+    // const [hover, toggleHover ] = useState(false)
     const dispatch = useDispatch()
     const units = useSelector(selectUnits)
     const currentDayIdx = useSelector(selectCurrentDayIdx)
@@ -32,8 +32,15 @@ const DayHeader = ({ history }) => {
                                 <div 
                                 key={day.id} 
                                 className={styles.dayHeaderItem}
-                                style={{ border: `${currentDay ?  '5px solid yellow' : ''}`}}
+                                style={{ 
+                                    border: `${currentDay ?  '2px solid yellow' : ''}`, 
+                                    backgroundColor: `${ currentDay ?  'rgba(116, 243, 143, 0.8)' : 'rgba(246, 243, 243, 0.2)'}`,
+                                    color: `${currentDay ?  'black' : 'white'}`    
+                                }}
                                 onClick={() => handleClick(unit, day.id)}
+                                // onMouseEnter={() => toggleHover(!hover)}
+                                // onMouseLeave={() => toggleHover(!hover)}
+                                // onHover={() => toggleHover(!hover)}
                                 // styles={{...styles.dayHeaderItem, border: {}}}
                             >
                                 {thisDate.getMonth() + 1}/{thisDate.getDate()}

@@ -1,42 +1,65 @@
 .dayDetailWrapper {
-  background-color: rgb(240, 235, 235);
+  /* background-color: rgb(240, 235, 235); */
   border: 5px solid rgba(154, 205, 50, 0.7);
-  border-radius: 0.6rem;
-  padding: 1.2rem;
-  max-width: 95%;
+  border-radius: 1.2rem;
+  /* max-width: 95%; */
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
+  /* margin-left: 1.2rem; */
+  /* margin-right: 1.2rem; */
+  /* padding: 1.2rem; */
+  /* max-width: 95%; */
 }
 
 .dayContainer {
-  background-color: #c67204;
-  border-radius: 6px;
+  /* background-color: #c67204; */
+  border: 2px solid rgb(82, 12, 12);
+  border-radius: 1.2rem;
   padding: 1.2rem;
   color: white;
+  /* margin-left: 1.2rem; */
+  /* display: flex; */
+  /* min-width: 0; */
   /* flex: 1 0 auto; */
+  /* flex-grow: 4; */
+  flex: 1 0 auto;
 }
 
 .dayDetailTitle {
   display: flex;
+  flex: 0 1 auto;
+  min-width: none;
 }
 
 .unitButton {
-  background-color: black;
+  background-color: rgba(246, 230, 222, 0.4);
+  border: 3px solid rgb(42, 139, 31);
   color: white;
-  padding: 6px;
-  height: 40px;
+  padding: 1.2rem;
+  height: 1.6rem;
   font-size: 24px;
-  border-radius: 6px;
+  border-radius: 1.2rem;
+  /* margin-right: 1.2rem; */
   display: inline-block;
+}
+.unitButton:hover {
+  background-color: rgb(222, 56, 192);
 }
 
 .title {
-  font-size: 30px;
-  padding: 25px;
+  font-size: 1.2rem;
+  padding: 0.6rem;
   margin-top: -25px;
-  margin-left: 6px;
-  border-bottom: 1px solid white;
+  text-align: center;
+  /* border-bottom: 1px solid white; */
+}
+
+.dayButtons {
+  display: flex;
+  flex-direction: column;
 }
 
 .dayDescription {
@@ -45,14 +68,17 @@
   margin-top: 0 auto;
   padding: 0.6rem;
   background-color: rgb(161, 109, 12);
-  border-radius: 6px;
+  background-color: #c67204;
+  background-color: rgba(129, 80, 16, 0.1);
+  border: 1px solid brown;
+  border-radius: 1.2rem;
 }
 
 .descriptionBorder {
-  background-color: rgb(82, 12, 12);
+  /* background-color: rgb(82, 12, 12); */
   border: 1px solid white;
   padding: 1.2rem;
-  border-radius: 6px;
+  border-radius: 1.2rem;
   min-height: 10rem;
 }
 
@@ -71,28 +97,37 @@
 
 .linksWrapper {
   max-width: 35%;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .videoLinksContainer {
   /* margin-top: -0.1rem; */
-  margin-bottom: 0.6rem;
+  min-width: 15rem;
+  margin-bottom: 2rem;
   padding-bottom: 0.6rem;
+  /* margin-right: 3rem; */
   font-size: 0.7rem;
   list-style-type: none;
   background-color: rgb(248, 248, 161);
-  margin-left: 1.4rem;
+  /* margin-left: 1.4rem; */
   border-radius: 0.3rem;
   display: flex;
 }
 
 .linksListContainer {
+  min-width: 15rem;
+  /* margin-right: 3rem; */
   margin-top: -0.1rem;
   margin-bottom: 0.6rem;
   padding-bottom: 0.6rem;
   font-size: 0.7rem;
   list-style-type: none;
   background-color: lightyellow;
-  margin-left: 1.4rem;
+  /* margin-left: 1.4rem; */
   border-radius: 0.3rem;
   display: flex;
 }
@@ -160,15 +195,20 @@
 }
 
 .assignmentButtonContainer {
-  background-color: rgb(246, 115, 222);
+  background-color: rgba(246, 230, 222, 0.4);
   border-radius: 1.2rem;
   /* padding: 0.8rem; */
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  margin-left: 2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  margin-left: 0.6rem;
   margin-bottom: 2rem;
+  /* padding-top: 0.2rem; */
+  height: 4rem;
+  font-size: 0.8rem;
+  text-align: center;
   color: rgb(82, 12, 12);
-  border: 1px solid green;
+  color: white;
+  border: 3px solid rgb(246, 115, 222);
 }
 
 .assignmentButtonContainer:hover {
@@ -177,20 +217,62 @@
 
 @media screen and (min-width: 300px) {
   .dayContainer {
-    min-width: 100%;
+    min-width: 400px;
+    margin: 0 auto;
   }
-
+  .dayDetailWrapper {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
   .linksWrapper {
     margin-top: 0.4rem;
-    /* min-width: 100%; */
-    margin-right: 0;
+    min-width: 100%;
+    margin-right: 0.6rem;
+  }
+  .videoLinksContainer {
+    min-width: 60%;
+    margin-right: 5%;
+    margin-top: 2rem;
+  }
+  .linksListContainer {
+    min-width: 60%;
+    margin-right: 5%;
   }
 }
 
 @media screen and (min-width: 600px) {
   .dayContainer {
-    max-width: 55%;
-    min-width: 420px;
+    max-width: 90%;
+    min-width: 500px;
+    margin-left: 0.2rem;
+    /* max-width: 55%;
+    min-width: 420px; */
+  }
+
+  .linksWrapper {
+    margin-top: 0.4rem;
+    min-width: 100%;
+    margin-right: 0;
+  }
+  .videoLinksContainer {
+    min-width: 60%;
+    margin-right: 5%;
+    margin-top: 2rem;
+  }
+  .linksListContainer {
+    min-width: 60%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .dayContainer {
+    max-width: 50%;
+    min-width: 500px;
+    margin-left: 1.2rem;
+    /* max-width: 55%;
+    min-width: 420px; */
   }
 
   .linksWrapper {
