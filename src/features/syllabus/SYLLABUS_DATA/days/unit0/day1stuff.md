@@ -26,6 +26,7 @@ https://learn.sparkfun.com/tutorials/transistors/all
 
 # tools
 
+multimeter
 breadboard
 soldering iron
 wire stripper/clipper
