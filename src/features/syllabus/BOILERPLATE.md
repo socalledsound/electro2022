@@ -4,6 +4,8 @@ Hi! I'm Chris Kubick and I'm teaching this class.
 
 My email is: socalledsound@gmail.com, feel free to reach out at any point!
 
+I'll be having office hours after class on tuesdays and thursdays from 12-1 or by appointment.
+
 ## electro-crafting?
 
 What is electro-crafting? Just, basically, expanded art forms. Maybe ten years ago, I realized that media specificity is a thing of the past. Painters are interested in light. Sculptors are interested in interactivity. Everyone loves the web. Let's learn to use the tools we need to make interesting art! That's what this class is all about. You'll learn to code and wire up sensors and, if you want, you can learn a little about web development and machine learning and a whole lot of other stuff. What you do with this course is, largely, up to you, because the possibilities are nearly endless. I'll help as best I can!
