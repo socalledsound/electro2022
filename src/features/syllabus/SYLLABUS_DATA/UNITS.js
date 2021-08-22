@@ -38,19 +38,20 @@ import { PROJECT1 } from './projects/PROJECT1'
 import { MIDTERM_PROJECT } from './projects/MIDTERM_PROJECT'
 import { PROJECT3 } from './projects/PROJECT3'
 import { FINAL_PROJECT } from './projects/FINAL_PROJECT'
-
+import UNIT0LOGO from '../../../assets/purecss-francine.png'
 
 export const UNIT0 = {
     id: 100,
-    title: 'circuits',
+    title: 'unit 0 : circuits',
     unit: 'unit0',
+    illustrationURL: UNIT0LOGO,
     overview: "In this first unit, we'll be getting our bearings with the tools that we'll use: electical circuits, inputs, outputs, code.",
     days: [DAY1, DAY2, DAY3]
 }
 
 export const UNIT1 = {
     id: 101,
-    title: 'colllections',
+    title: 'unit 1 : colllection',
     unit: 'unit1',
     overview: "This unit is about collections, otherwise known as data.  What makes a meaningful collection?  What are some of the strategies we can use to tame data, or set it free?  Data is to coding as paint is to painting.  In this unit we will learn some things about storing and manipulating data but also spend a good ammount of time thinking about why we should do this, and explore various approaches to organizing and presenting collections.  Most importantly, we'll discuss how to introduce just enough fuckery to keep things spicy and fun.  We'll look at the work of a wide range of artists who have tackled these problems in interesting ways: Eva Hesse, Agnes Martin, Francis Alys, Joseph Kosuth and, of course, Iggy Azalea.   And many others  .  Wait, what?  Data, Eva Hesse, you ask?  All will be made clear, and I hope it will be a fun process.",
     project: PROJECT1,

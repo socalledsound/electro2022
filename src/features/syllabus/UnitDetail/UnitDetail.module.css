@@ -1,0 +1,32 @@
+.unitDetailWrapper {
+  background-color: rgb(237, 175, 196);
+  padding: 0.6rem;
+}
+
+.unitDetailContainer {
+  background-color: rgb(240, 235, 235);
+  border: 5px solid rgba(154, 205, 50, 0.7);
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.unitContainer {
+  background-color: #c67204;
+  border-radius: 6px;
+  padding: 1.2rem;
+  color: white;
+}
+.unitDetailTitle {
+}
+
+.title {
+  font-size: 30px;
+  padding: 25px;
+  margin-top: -25px;
+  margin-left: 6px;
+  border-bottom: 1px solid white;
+}

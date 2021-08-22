@@ -1,5 +1,27 @@
-.unitBlockWrapper {
+.syllabusWrapper {
   background-color: salmon;
+  padding: 2rem;
+}
+
+.boilerplatewrapper {
+  border: 2px solid rgb(57, 171, 107);
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+.boilerplateContainer {
+  background-color: rgba(246, 243, 243, 0.5);
+  border-radius: 1.2rem;
+  padding: 2rem;
+}
+
+.markdown {
+  background-color: rgba(246, 243, 243, 0.8);
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+.unitBlockWrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
