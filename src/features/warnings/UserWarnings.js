@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import styles from './UserWarnings.module.css'
-const UserWarnings = ({warnings}) => {
+const UserWarnings = () => {
+  
+  
     return ( 
         <div className={styles.userWarningsWrapper}>
-            {warnings}
+  
         </div>
      );
 }

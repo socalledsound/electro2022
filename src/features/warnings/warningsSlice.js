@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    currentWarnings: ['MISSING_ASSIGNMENT', 'MISSING_CRIT_MESSAGES', 'MISSING_PROJECT']
+    currentWarning: true,
 }
 
 export const warningsSlice = createSlice({
@@ -16,9 +16,6 @@ export const warningsSlice = createSlice({
     }
 })
 
-export const selectUserWarnings = state => {
-    console.log(state.warnings)
-    return state.warnings.currentWarnings
+export const selectWarningStatus = state => state.warnings.currentWarning
 
-}
 export default warningsSlice.reducer

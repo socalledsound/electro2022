@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
 import { selectCurrentUser } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
-import { selectUserWarnings  } from '../../features/warnings/warningsSlice'
+import { selectWarningStatus  } from '../../features/warnings/warningsSlice'
 import UserWarnings from '../../features/warnings/UserWarnings'
 import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
@@ -14,9 +14,8 @@ import styles from './HomePage.module.css'
 const HomePage = () => {
 
     const currentUser = useSelector(selectCurrentUser)
-    const warnings = useSelector(selectUserWarnings)
+    const warning = useSelector(selectWarningStatus)
     const currentDay = useSelector(selectCurrentDay)
-    console.log(warnings)
 
     return ( 
         <div className={styles.homePageWrapper}>
@@ -26,8 +25,8 @@ const HomePage = () => {
                 currentUser ? 
                     <Fragment>
                         {
-                            warnings &&
-                            <UserWarnings warnings={warnings} />
+                            warning &&
+                            <UserWarnings />
                         }
                     <DayDetail day={currentDay}/>
                     </Fragment>

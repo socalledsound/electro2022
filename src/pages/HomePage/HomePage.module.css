@@ -29,14 +29,14 @@
 
 @media screen and (min-width: 600px) {
   .homePageWrapper {
-    padding: 0.6rem;
+    padding: 0.2rem;
   }
 
   .homePageInnerBorder {
-    padding: 1.2rem;
+    padding: 0.2rem;
   }
 
   .homePageContainer {
-    padding: 2rem;
+    padding: 0.2rem;
   }
 }

@@ -17,7 +17,7 @@
 
 .rightSide {
   background-color: rgb(57, 9, 66, 0.6);
-  background-color: rgb(91, 12, 105);
+  background-color: rgba(91, 12, 105, 0.6);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -63,6 +63,7 @@
 @media screen and (min-width: 300px) {
   .leftSide {
     max-width: 50vw;
+    font-weight: bold;
   }
   .homeLink {
     font-size: 2rem;
@@ -80,6 +81,7 @@
   }
   .homeLink {
     font-size: 5rem;
+    font-weight: normal;
     /* margin-left: 2rem; */
   }
   .avatar {
