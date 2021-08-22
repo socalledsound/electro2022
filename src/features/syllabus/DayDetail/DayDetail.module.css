@@ -5,6 +5,7 @@
   /* max-width: 95%; */
   margin: 0 auto;
   padding: 0;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -278,7 +279,7 @@
   .linksWrapper {
     margin-top: 0.4rem;
     min-width: 35%;
-    min-width: 300px;
-    margin-right: 0;
+    /* min-width: 300px; */
+    margin-right: 1.2rem;
   }
 }
