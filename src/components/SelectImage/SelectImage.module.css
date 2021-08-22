@@ -1,0 +1,17 @@
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.attachImageButton {
+  height: 2rem;
+  padding: 0.2rem;
+  margin-top: 1.2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(74, 10, 108);
+  color: white;
+}
+
+.attachImageButton:hover {
+  background-color: rgb(153, 48, 209);
+}

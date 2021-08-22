@@ -97,10 +97,16 @@
   padding: 0.4rem;
   border-radius: 1.6rem;
   /* margin: 0 auto; */
-  margin-right: 0.8rem;
-  margin-bottom: 0.8rem;
-  font-size: 0.8rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.5rem;
 }
+
+.dayHeaderItem:hover {
+  background-color: rgb(240, 248, 17);
+  /* border: 1px solid red; */
+}
+
 .dayDetailWrapper {
   background-color: rgb(237, 175, 196);
   padding: 2rem;

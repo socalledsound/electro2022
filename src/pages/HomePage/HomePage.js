@@ -8,7 +8,11 @@ import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
 import SignInPage from '../../features/user/SignInPage/SignInPage'
 import styles from './HomePage.module.css'
+
+
+
 const HomePage = () => {
+
     const currentUser = useSelector(selectCurrentUser)
     const warnings = useSelector(selectUserWarnings)
     const currentDay = useSelector(selectCurrentDay)

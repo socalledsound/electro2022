@@ -23,6 +23,7 @@ export const syllabusSlice = createSlice({
 })
 
 export const selectUnits = state => state.syllabus.units
+
 export const selectUnitById = id => state => {
     // console.log(id)
     return state.syllabus.units.filter((item) => item.unit === id)[0]
@@ -37,8 +38,44 @@ export const selectDayById = (unit, id) => state => {
     return day
 }
 
-export const selectCurrentDay = state => {
-    return state.syllabus.units[state.syllabus.currentUnitIdx].days[state.syllabus.currentDayIdx]
+export const selectCurrentDayIdx  = state => state.syllabus.currentDayIdx
+
+
+export const selectAllDays = (state) => {
+    const units = selectUnits(state)
+    console.log(units)
+    const allDays = units.reduce((arr, cur) => {
+        cur.days.forEach(day => arr.push(day))
+        return arr
+    },[])
+    console.log(allDays)
+    return allDays
+}
+
+export const selectRemainingDays = (state) => {
+    const allDays = selectAllDays(state)
+    console.log(allDays)
+    const today = new Date()
+    console.log(today)
+    const remainingDays = allDays.filter(day => {
+        const date = new Date(day.date);
+        if(date > today){
+            return day 
+        }
+        return null
+    })
+    console.log(remainingDays)
+    return remainingDays
+}
+
+
+export const selectCurrentDay = (state) => {
+
+    const remaining = selectRemainingDays(state)
+    console.log(remaining)
+    const lowestDay = remaining[0]
+    return lowestDay
+
 }
 
 export const { setCurrentDayIdx } = syllabusSlice.actions

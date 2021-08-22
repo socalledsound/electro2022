@@ -2,7 +2,7 @@ const DAY2 = {
     id: 2,
     unit: 'unit0',
     date: 'August 31, 2021',
-    title: 'LED',
+    title: 'the resistance needs you',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
     description: "",
     videos: [

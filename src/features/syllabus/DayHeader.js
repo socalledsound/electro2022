@@ -1,18 +1,20 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { selectUnits, setCurrentDayIdx } from './syllabusSlice';
+import { selectUnits, selectCurrentDayIdx, setCurrentDayIdx } from './syllabusSlice';
 import styles from './Syllabus.module.css'
 
 const DayHeader = ({ history }) => {
     
     const dispatch = useDispatch()
     const units = useSelector(selectUnits)
+    const currentDayIdx = useSelector(selectCurrentDayIdx)
+    console.log(currentDayIdx)
     // const days = useSelector(selectDays)
     
-    const handleClick = (unit, day) => {
-        history.push(`/syllabus/${unit.unit}/${day.id}`)
-        dispatch(setCurrentDayIdx(day.id));
+    const handleClick = (unit, dayId) => {
+        history.push(`/syllabus/${unit.unit}/${dayId}`)
+        dispatch(setCurrentDayIdx(dayId));
     }
 
 
@@ -22,15 +24,19 @@ const DayHeader = ({ history }) => {
                 units.map( (unit ) => {
                     return (
                         
-                        unit.days.map( day => {
+                        unit.days.map( (day, idx)  => {
+                            const thisDate = new Date(day.date)
+                            const currentDay = day.id === currentDayIdx
+                            console.log(currentDay)
                             return (
                                 <div 
                                 key={day.id} 
                                 className={styles.dayHeaderItem}
-                                onClick={() => handleClick(unit, day)}
+                                style={{ border: `${currentDay ?  '5px solid yellow' : ''}`}}
+                                onClick={() => handleClick(unit, day.id)}
                                 // styles={{...styles.dayHeaderItem, border: {}}}
                             >
-                                {day.id}
+                                {thisDate.getMonth() + 1}/{thisDate.getDate()}
                             </div>
                             )
                         })

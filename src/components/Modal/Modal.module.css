@@ -1,0 +1,38 @@
+.modalContainer {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  /* "fixed top-0 left-0 h-screen w-full flex items-center justify-center" */
+}
+
+.modalBody {
+  background-color: rgba(240, 240, 240, 0.8);
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 0.6rem;
+  padding-left: 0.4rem;
+  border-radius: 1.2rem;
+
+  /* "bg-white relative p-5 shadow-lg rounded flex flex-col items-start text-lg text-gray-800" */
+}
+
+.closeModalButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgb(238, 15, 223);
+  border-radius: 2rem;
+  border: 2px solid black;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  /* "absolute top-0 right-0 -mt-12 font-bold self-end rounded-full bg-red-200 mb-3 bg-white text-red-700 w-8 h-8" */
+}

@@ -1,7 +1,7 @@
 const DAY8 = {
     id: 8,
     unit: 'unit2',
-    date: 'September 23, 2021',
+    date: 'September 21, 2021',
     title: 'fun fun function',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
     description: "Today we begin unit 2, which will focus on compositions which unfold in time, such as animation and video games.  I'm taking Rube Goldberg's machines as inspiration for this unit, not because his machines are senesless and wonderful, but because they are processes.  We'll be focusing on artworks that are processes in this unit, and I hope what you learn here will cause you to look at all kinds of work differently.We'll also switch gears slightly, and move our attention to the <canvas /> element in the web browser.  We'll use the p5 library, which has all kinds of useful tools for artists.  And, we'll start composing software in javascript, using both the functional and the class-based style.",

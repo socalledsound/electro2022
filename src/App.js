@@ -7,7 +7,7 @@ import GalleryItemDetail from './features/gallery/GalleryItemDetail'
 import Syllabus from './features/syllabus/Syllabus'
 import SyllabusUnit from './features/syllabus/SyllabusUnit'
 import SyllabusDay from './features/syllabus/SyllabusDay'
-import Assignment from './components/Assignment/Assignment'
+import Assignment from './features/assignments/Assignment'
 import UserStatus from './features/user/UserStatus/UserStatus'
 import People from './features/people/People'
 import './App.css';
@@ -24,7 +24,7 @@ const App = () => {
           <Route exact path='/syllabus' component={Syllabus}/>
           <Route exact path='/syllabus/:unitId' component={SyllabusUnit}/>
           <Route exact path='/syllabus/:unitId/:dayId' component={SyllabusDay}/>
-          <Route exact path='assignments/:dayId' component={Assignment}/>
+          <Route exact path='/assignments/:dayId' component={Assignment}/>
           <Route path='/resources' component={ResourcesPage}/>
           <Route path='/people' component={People}/>
           <Route path='/userStatus' component={UserStatus} />

@@ -1,17 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { withHistory } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import MarkdownView from 'react-showdown';
 import {selectAssignment } from './assignmentSlice'
+import useModal from '../../components/Modal/useModal'
+import SubmitWork from './SubmitWork'
+import styles from './Assignment.module.css'
 
 const Assignment = ({match}) => {
     
+    const [ assignmentMarkdown, setAssignmentMarkdown ] = useState(null)
+    const { modal, toggleModal, ModalContent } = useModal();
     const assignment = useSelector(selectAssignment(match.params.dayId))
+
+    useEffect(() => {
+        console.log(assignment.markdown)
+        fetch(assignment.markdown)
+        .then(resp => resp.text())
+        .then(text => setAssignmentMarkdown(text))   
+    })
+
+    const handleClick = () => {
+        console.log(toggleModal)
+        toggleModal(true)
+        console.log('clicked')
+        window.scrollTo(0,0)
+       
+    }
+
     
     return ( 
-        <div>
-            {assignment.title}
+        <div className={styles.assignmentWrapper}>
+
+            {!modal ?
+            <div className={styles.assignmentContainer}>
+            <h3 className={styles.assignmentTitle}>{assignment.title}</h3>
+            
+            
+            {assignmentMarkdown && 
+                <MarkdownView 
+                    markdown={assignmentMarkdown}
+                    options={{ tables: true, emoji: true }}
+                    className={styles.markdown}
+                />
+            }
+            
+           
+                <button 
+                    onClick={handleClick}
+                    className={styles.submitButton}
+                >
+                    submit assignment
+                </button>
+                </div>
+                :
+                null
+            }
+
+            <ModalContent>
+                <SubmitWork assignment={assignment.title}/>
+            </ModalContent>
+
         </div>
      );
 }
  
-export default withHistory(Assignment);
+export default withRouter(Assignment);

@@ -1,0 +1,25 @@
+.submitFormButton {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: rgb(57, 101, 37);
+  color: white;
+}
+.submitFormButton:hover {
+  background-color: rgb(57, 171, 107);
+  border: 2px solid rgb(57, 101, 37);
+}
+
+.cancelButton {
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: rgb(176, 58, 58);
+  color: white;
+}
+.cancelButton:hover {
+  background-color: rgb(214, 53, 39);
+  border: 2px solid rgb(120, 13, 13);
+}

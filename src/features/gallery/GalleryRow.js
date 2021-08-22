@@ -2,10 +2,11 @@ import React from 'react'
 import styles from './Gallery.module.css'
 import GalleryItem from './GalleryItem'
 
-const GalleryRow = ({title, works}) => {
-    console.log(works)
+const GalleryRow = ({ works}) => {
+    // console.log(works)
     return ( 
         <div className={styles.galleryRowContainer}> 
+           
             {
                 works.map(((item, idx) => {
                     return (

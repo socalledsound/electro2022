@@ -1,0 +1,48 @@
+.assignmentWrapper {
+  background-color: salmon;
+  /* padding: 2rem; */
+}
+
+.assignmentContainer {
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 2rem;
+}
+
+.assignmentTitle {
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  color: yellow;
+}
+
+.assignmentContent {
+  margin: 0 auto;
+  border: 2px solid rgb(57, 171, 107);
+}
+
+.markdown {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  border: 2px solid rgb(57, 171, 107);
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.markdown img {
+  max-width: 60vw;
+}
+
+.submitButton {
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  background-color: rgb(57, 101, 37);
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: rgb(57, 171, 107);
+  border: 2px solid rgb(57, 101, 37);
+}

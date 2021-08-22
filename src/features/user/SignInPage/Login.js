@@ -1,11 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import useForm from '../../../utils/useForm'
 import validateLogin from '../../../utils/validateLogin'
 import { addUser } from '../userSlice'
-
-import TextField from '../../../components/TextField/TextField'
-
+import Form from '../../../components/Form/Form'
 import styles from './SignInPage.module.css'
 
 const Login = () => {
@@ -17,45 +14,21 @@ const Login = () => {
         password: '',
     }
 
-    const submitFormData = (data) => {
+    const submitUserData = (data) => {
         dispatch(addUser(data))
     }
 
 
-    const { formData, errors, handleInputChange, handleSubmit } = useForm(initialFormState, validateLogin, (formData) => submitFormData(formData))
 
-    const  { username, email, password } = formData;
 
     return ( 
         <div className={styles.loginBG}>
            <div className={styles.formContainer}>
-           <form onSubmit={handleSubmit}>
-           <TextField 
-                            value={username}
-                            required
-                            name='username'
-                            onChange={handleInputChange}
-                            error={errors.name}
-                            placeholder='enter username'
-                        />
-                        <TextField 
-                            value={email}
-                            required
-                            name='email'
-                            onChange={handleInputChange}
-                            error={errors.email}
-                            placeholder='enter email'
-                        />
-                        <TextField 
-                            value={password}
-                            required
-                            name='password'
-                            onChange={handleInputChange}
-                            error={errors.password}
-                            placeholder='enter password'
-                        />
-                        <button className={styles.submitButton} type='submit'>submit</button>
-                        </form>
+           <Form 
+                    initialFormState={initialFormState}
+                    validateForm={validateLogin} 
+                    submitFormData={submitUserData}  
+                />
             </div>
         </div>
      );

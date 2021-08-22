@@ -1,16 +1,42 @@
 .homePageWrapper {
   background-color: rgb(220, 21, 234);
-  padding: 0.6rem;
 }
 
 .homePageInnerBorder {
   background-color: rgb(246, 157, 222);
-  padding: 1.2rem;
+
   border-radius: 0.6rem;
 }
 
 .homePageContainer {
   background-color: rgb(248, 249, 249);
-  padding: 0.6rem;
   border-radius: 0.6rem;
+}
+
+@media screen and (min-width: 300px) {
+  .homePageWrapper {
+    padding: 0;
+  }
+
+  .homePageInnerBorder {
+    padding: 0;
+  }
+
+  .homePageContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .homePageWrapper {
+    padding: 0.6rem;
+  }
+
+  .homePageInnerBorder {
+    padding: 1.2rem;
+  }
+
+  .homePageContainer {
+    padding: 2rem;
+  }
 }

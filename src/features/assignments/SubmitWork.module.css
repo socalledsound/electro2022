@@ -1,0 +1,25 @@
+.submitFormWrapper {
+  display: flex;
+  flex-direction: row;
+
+  border: 2px solid black;
+  padding: 1.2rem;
+  padding-left: 0;
+
+  border-radius: 0.6rem;
+  max-width: 75vw;
+}
+
+.attachImageDiv {
+  margin-bottom: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  min-height: 325px;
+  flex-direction: column;
+  margin-right: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.formWrapper {
+  width: 80%;
+}
