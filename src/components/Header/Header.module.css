@@ -5,6 +5,7 @@
   padding: 2rem;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   border-top: 15px solid rgb(78, 4, 105);
   border-bottom: 2px solid rgb(112, 237, 90);

@@ -30,3 +30,18 @@
   margin-left: 6px;
   border-bottom: 1px solid white;
 }
+
+.dayContainer {
+  background-color: rgba(246, 243, 243, 0.5);
+  border-radius: 0.6rem;
+  padding: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border-bottom: 1px solid black; */
+  font-size: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.dayContainer:hover {
+  background-color: rgba(246, 10, 243, 0.8);
+}
