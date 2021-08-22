@@ -9,7 +9,7 @@ export default function useFileModal(){
     let [ imageURL, setImageURL] = useState(tempImage)
     let [file, setFile ] = useState(null)
     let [ percentUploaded, setPercentUploaded] = useState(0)
-
+    console.log(percentUploaded)
 
     const addFile = (e) => {
         const file = e.target.files[0];
@@ -32,6 +32,7 @@ export default function useFileModal(){
         uploadTask.on('state_changed', snap => {
             const percentUploaded = Math.round((snap.bytesTransferred / snap.totalBytes) * 100);
             setPercentUploaded(percentUploaded)
+            
         },
         err => {
             console.error(err);
