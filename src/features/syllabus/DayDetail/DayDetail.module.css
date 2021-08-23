@@ -31,8 +31,9 @@
 
 .dayDetailTitle {
   display: flex;
-  flex: 0 1 auto;
-  max-width: 80%;
+  justify-content: right;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .unitButton {
@@ -203,15 +204,16 @@
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   padding-bottom: 0.8rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-bottom: 2rem;
   /* padding-top: 0.2rem; */
-  height: 2rem;
+  height: 4rem;
   font-size: 0.8rem;
   text-align: center;
   color: rgb(82, 12, 12);
   color: white;
   border: 3px solid rgb(246, 115, 222);
+  float: right;
 }
 
 .assignmentButtonContainer:hover {
@@ -229,14 +231,21 @@
     margin: 0;
     border: none;
   }
+  .dayDetailTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
   .linksWrapper {
     margin-top: 0.4rem;
     min-width: 100%;
     margin-right: 0.6rem;
   }
   .videoLinksContainer {
-    min-width: 60%;
-    margin-right: 5%;
+    min-width: 100%;
+    margin-right: 0.6rem;
     margin-top: 2rem;
   }
   .linksListContainer {
@@ -253,7 +262,13 @@
     /* max-width: 55%;
     min-width: 420px; */
   }
-
+  .videoLinksContainer {
+    min-width: 100%;
+    margin-right: 0.6rem;
+    margin-top: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
   .linksWrapper {
     margin-top: 0.4rem;
     min-width: 100%;
@@ -278,7 +293,11 @@
     /* max-width: 55%;
     min-width: 420px; */
   }
-
+  .videoLinksContainer {
+    min-width: 100%;
+    margin-right: 0.6rem;
+    margin-top: 0;
+  }
   .linksWrapper {
     margin-top: 0.4rem;
     min-width: 35%;

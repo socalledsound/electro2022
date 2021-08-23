@@ -145,3 +145,56 @@
   background-color: rgb(237, 175, 196);
   padding: 2rem;
 }
+
+@media screen and (min-width: 300px) {
+  .syllabusWrapper {
+    padding: 0.2rem;
+  }
+  .boilerplatewrapper {
+    /* background-color: salmon; */
+    border: 2px solid rgb(57, 171, 107);
+    padding: 0.2rem;
+    border-radius: 1.2rem;
+  }
+
+  .boilerplateContainer {
+    background-color: rgba(246, 243, 243, 0.5);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+  }
+  .unitBlockItem {
+    border: 2px solid rgb(57, 171, 107);
+    padding: 1.2rem;
+    min-height: 12rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .syllabusWrapper {
+    padding: 2rem;
+  }
+  .boilerplatewrapper {
+    /* background-color: salmon; */
+    border: 2px solid rgb(57, 171, 107);
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+
+  .boilerplateContainer {
+    background-color: rgba(246, 243, 243, 0.5);
+    border-radius: 1.2rem;
+    padding: 2rem;
+  }
+
+  .unitBlockItem {
+    border: 2px solid rgb(57, 171, 107);
+    padding: 1.2rem;
+    min-height: 22rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+  }
+}
