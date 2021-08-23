@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { selectCritMessagesForItemId } from './critMessagesSlice'
 import CritMessage from './CritMessage'
 import styles from './CritMessages.module.css'
-import SubmitCritMessage from './SubmitCritMessage'
+import SubmitCritMessageForm from './SubmitCritMessageForm'
 const CritMessagesContainer = ({item}) => {
 
     const critMessages = useSelector(selectCritMessagesForItemId(item.id))
@@ -16,7 +16,7 @@ const CritMessagesContainer = ({item}) => {
 
     return ( 
         <div className={styles.critMessagesContainerWrapper}>
-            <SubmitCritMessage />
+            <SubmitCritMessageForm item={item}/>
             {
                 critMessages.length > 0 ?
                 critMessages.map(msg => <CritMessage key={msg.id} message={msg}/>)

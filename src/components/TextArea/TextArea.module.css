@@ -1,0 +1,19 @@
+.textAreaWrapper {
+  width: 30%;
+}
+.submitTextAreaButton {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(29, 183, 197);
+  border: 2px solid rgba(61, 244, 238, 0);
+  color: white;
+}
+
+.submitTextAreaButton:hover {
+  background-color: rgb(19, 88, 198);
+  border: 2px solid rgb(61, 244, 238);
+}

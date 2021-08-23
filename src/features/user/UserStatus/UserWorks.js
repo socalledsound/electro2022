@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+// import { selectWorks } from '../../gallery/gallerySlice'
 import { selectCompletedAssignments } from '../userSlice'
 const UserWorks = () => {
 
@@ -9,7 +10,7 @@ const UserWorks = () => {
         <div>
             {   
                 userWorks.length > 0 &&
-                userWorks.map(work => <div>{work.assignment}{work.title}</div>)
+                userWorks.map(work => <div key={work.id}>{work.assignment}{work.title}</div>)
             }
             
         </div>
