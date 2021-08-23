@@ -1,0 +1,16 @@
+.critMessagesContainerWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.critMessageContainer {
+  display: flex;
+}
+
+.critMessageTitleContainer {
+  display: flex;
+}
+
+.critMessageBodyContainer {
+  margin-left: 0.6rem;
+}

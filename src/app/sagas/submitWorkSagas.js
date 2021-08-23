@@ -6,13 +6,10 @@ import { addSubmissionToWorks } from '../../features/gallery/gallerySlice'
 import { addItemToFirestore} from '../../firebase/firebase.utils'
 import { createSubmission } from '../../features/submitWork/submit.utils'
 
-
 export function* submitWorkSuccess(data){
     yield console.log(data)
     yield put(addSubmissionToWorks(data))
 }
-
-
 
 function* submitWork(action){
    yield console.log(action.payload)
@@ -46,26 +43,3 @@ export function* submitWorkSagas(){
 }
 
 
-
-// uploadSubmission = () => {
-//     console.log('upload submission');
-//     const { submission, worksRef } = this.state;
-//     const { history } = this.props;
-//     console.log('submission in upload', submission);
-//     if(submission){
-//         this.setState({ loading: true });
-//         addItemToFirestore(worksRef, submission)
-//             .then(()=>{
-//                 console.log('successfully added');
-//                 this.setState({ loading: false, title: '', description: '', linkURL: '', imageAttached: false})
-//                 history.push('/gallery');
-//             })
-//             .catch( err => {
-//                 console.error(err);
-//                 this.setState({
-//                     loading: false,
-//                     errors: this.state.errors.concat(err)
-//                 })
-//             })
-//     }
-// }

@@ -1,4 +1,5 @@
 export const tempWork1 = {
+    id: 0,
     assignment: 'fun fun function',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -14,6 +15,7 @@ export const tempWork1 = {
 }
 
 export const tempWork2 = {
+    id: 1,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -29,6 +31,7 @@ export const tempWork2 = {
 }
 
 export const tempWork3 = {
+    id: 2,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -44,6 +47,7 @@ export const tempWork3 = {
 }
 
 export const tempWork4 = {
+    id: 3,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -59,6 +63,7 @@ export const tempWork4 = {
 }
 
 export const tempWork5 = {
+    id: 4,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -74,6 +79,7 @@ export const tempWork5 = {
 }
 
 export const tempWork6 = {
+    id: 5,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -89,6 +95,7 @@ export const tempWork6 = {
 }
 
 export const tempWork7 = {
+    id: 6,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -104,6 +111,7 @@ export const tempWork7 = {
 }
 
 export const tempWork8 = {
+    id: 7,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -119,6 +127,7 @@ export const tempWork8 = {
 }
 
 export const tempWork9 = {
+    id: 8,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',
@@ -134,6 +143,7 @@ export const tempWork9 = {
 }
 
 export const tempWork10 = {
+    id: 9,
     assignment: 'hello!',
     code: 'https://github.com/socalledsound/something',
     description: 'my desriptiuon here',

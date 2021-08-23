@@ -12,17 +12,23 @@ export const critMessagesSlice = createSlice({
     name: 'critMessages',
     initialState,
     reducers: {
-        critMessagesFailure  : (state, action) => {
+
+        startSubmitCritMessage : (state, action) => {
+            return {
+                ...state,
+            }
+        },
+
+        submitCritMessageFailure  : (state, action) => {
             return {
                 ...state,
                 errors : action.payload
             }
         },
 
-        critMessagesSuccess  : (state, action) => {
+        submitCritMessageSuccess  : (state, action) => {
             return {
                 ...state,
-                messages: state.messages.concat(action.payload)
             }
         },
 
@@ -34,10 +40,15 @@ export const selectUserCritMessages = state => user => {
         return state.critMessages.messages.filter(msg => msg.createdBy.id === user.id)
     } else {
         return null
-    }
-    
+    } 
 }
 
-export const { critMessagesSuccess, critMessagesFailure  } = critMessagesSlice.actions
+export const selectCritMessagesForItemId = id => state => {
+    return (
+        {id: 0, createdBy:{id:'xqWp0vWr3ENQwBOep8O6nrlCKgo1'}, text: 'hi there thius is really nice'}
+    )
+}
+
+export const { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure } = critMessagesSlice.actions
 
 export default critMessagesSlice.reducer

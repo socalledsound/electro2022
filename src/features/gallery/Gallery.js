@@ -28,7 +28,7 @@ const Gallery = () => {
                         const categoryWorks = works.filter(work => {
                         //    console.log(category, work.assignment)
                            if(work.assignment === category){
-                               console.log(category, work)
+                            //    console.log(category, work)
                            }
                             return work.assignment === category
                         })

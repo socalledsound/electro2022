@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
 import Gallery from './features/gallery/Gallery'
-import GalleryItemDetail from './features/gallery/GalleryItemDetail'
+import GalleryItemDetailPage from './pages/GalleryItemDetailPage/GalleryItemDetailPage'
 import Syllabus from './features/syllabus/Syllabus'
 import SyllabusUnit from './features/syllabus/SyllabusUnit'
 import SyllabusDay from './features/syllabus/SyllabusDay'
@@ -26,7 +26,7 @@ const App = () => {
         <Switch>
           <Route exact path ='/' component={HomePage}/>
           <Route exact path='/gallery' component={Gallery}/>
-          <Route path ={'/gallery/:workId'} component={GalleryItemDetail} />
+          <Route path ={'/gallery/:workId'} component={GalleryItemDetailPage} />
           <Route exact path='/syllabus' component={Syllabus}/>
           <Route exact path='/syllabus/:unitId' component={SyllabusUnit}/>
           <Route exact path='/syllabus/:unitId/:dayId' component={SyllabusDay}/>
