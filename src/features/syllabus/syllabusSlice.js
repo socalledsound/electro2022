@@ -43,20 +43,20 @@ export const selectCurrentDayIdx  = state => state.syllabus.currentDayIdx
 
 export const selectAllDays = (state) => {
     const units = selectUnits(state)
-    console.log(units)
+    // console.log(units)
     const allDays = units.reduce((arr, cur) => {
         cur.days.forEach(day => arr.push(day))
         return arr
     },[])
-    console.log(allDays)
+    // console.log(allDays)
     return allDays
 }
 
 export const selectRemainingDays = (state) => {
     const allDays = selectAllDays(state)
-    console.log(allDays)
+    // console.log(allDays)
     const today = new Date()
-    console.log(today)
+    // console.log(today)
     const remainingDays = allDays.filter(day => {
         const date = new Date(day.date);
         if(date > today){
@@ -64,7 +64,7 @@ export const selectRemainingDays = (state) => {
         }
         return null
     })
-    console.log(remainingDays)
+    // console.log(remainingDays)
     return remainingDays
 }
 
@@ -72,7 +72,7 @@ export const selectRemainingDays = (state) => {
 export const selectCurrentDay = (state) => {
 
     const remaining = selectRemainingDays(state)
-    console.log(remaining)
+    // console.log(remaining)
     const lowestDay = remaining[0]
     return lowestDay
 

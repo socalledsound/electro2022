@@ -2,11 +2,12 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import useForm from '../../../utils/useForm'
 import validateLogin from '../../../utils/validateLogin'
-import { addUser } from '../userSlice'
+// import { registerUser } from '../userSlice'
 
 import TextField from '../../../components/TextField/TextField'
 
 import styles from './SignInPage.module.css'
+import { emailRegisterStart } from '../../../app/sagas/userActions'
 
 const Register = () => {
 
@@ -18,7 +19,8 @@ const Register = () => {
     }
 
     const submitFormData = (data) => {
-        dispatch(addUser(data))
+        // dispatch(registerUser({type: 'REGISTER_NEW_USER', payload: data}))
+        dispatch(emailRegisterStart(data))
     }
 
 

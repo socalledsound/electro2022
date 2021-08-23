@@ -1,21 +1,21 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import validateLogin from '../../../utils/validateLogin'
-import { addUser } from '../userSlice'
+// import { addUser } from '../userSlice'
+import { emailSignInStart } from '../../../app/sagas/userActions'
 import Form from '../../../components/Form/Form'
 import styles from './SignInPage.module.css'
 
-const Login = () => {
+const Login = ({toggleRegistered}) => {
 
     const dispatch = useDispatch()
     const initialFormState = {
-        username: '',
         email: '',
         password: '',
     }
 
     const submitUserData = (data) => {
-        dispatch(addUser(data))
+        dispatch(emailSignInStart(data))
     }
 
 
@@ -29,7 +29,13 @@ const Login = () => {
                     validateForm={validateLogin} 
                     submitFormData={submitUserData}  
                 />
+                            <div 
+                className={styles.toggleRegisterButton}
+                onClick={() => toggleRegistered(false)}>
+                    <p>i need to register</p>
             </div>
+            </div>
+
         </div>
      );
 }
