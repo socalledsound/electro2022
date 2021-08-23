@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
 import {selectAssignment } from './assignmentSlice'
 import useModal from '../../components/Modal/useModal'
-import SubmitWork from './SubmitWork'
+import SubmitWork from '../submitWork/SubmitWork'
 import styles from './Assignment.module.css'
 
 const Assignment = ({match}) => {

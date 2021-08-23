@@ -12,6 +12,7 @@ export const firestore = firebase.firestore();
 export const storage = firebase.storage();
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
+        console.log(userAuth, additionalData)
     if(!userAuth) return;
     const userRef = firestore.doc(`users/${userAuth.uid}`);
     const snapShot = await userRef.get();
@@ -19,12 +20,13 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!snapShot.exists){
         const { displayName, email} = userAuth;
         const createdAt = new Date();
+        console.log(createdAt)
         try {
             await userRef.set({
                 displayName,
                 email,
                 createdAt,
-                photoURL: `http://gravatar.com/avatar/${md5(email)}?d=identicon`,
+                avatar: `http://gravatar.com/avatar/${md5(email)}?d=identicon`,
                 ...additionalData
             })
         } catch(error) {
@@ -34,7 +36,14 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef
 }
 
-
+export const addItemToFirestore = async(collectionKey, objectToAdd) => {
+    const collectionRef = firestore.collection(collectionKey);
+    console.log(objectToAdd, 'in firestore');
+    console.log("collectionref:", collectionRef);
+    
+    await collectionRef.add(objectToAdd)
+    return
+}
 
 
 export default firebase;

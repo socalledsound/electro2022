@@ -1,17 +1,20 @@
 import React, { Fragment, useState } from 'react'
+import { useDispatch } from 'react-redux'
 import firebase from '../../firebase/firebase.utils' 
+import { setPercentUploadedImg, setSelectedImage } from '../../features/submitWork/submitWorkSlice'
 import { isAuthorized, getMetaData, getImageFilePath } from './uploadImageUtils'
 import tempImage from '../../assets/hvbrd.jpg'
 import FileModal from './FileModal'
 import ImagePicker from './ImagePicker'
 
 export default function useFileModal(){
+    const dispatch = useDispatch()
     let [ fileModal, toggleFileModal ] = useState(false)
     let [ image, setImage ] = useState(false)
     let [ imageURL, setImageURL] = useState(tempImage)
     let [file, setFile ] = useState(null)
-    let [ percentUploaded, setPercentUploaded] = useState(0)
-    console.log(percentUploaded)
+    
+   
 
     const setThumbnail = (file) => {
         const reader = new FileReader()
@@ -45,10 +48,10 @@ export default function useFileModal(){
         const filePath = getImageFilePath()
         const storageRef = firebase.storage().ref()
         const uploadTask = storageRef.child(filePath).put(file, metadata)
+        dispatch(setPercentUploadedImg(1))
         uploadTask.on('state_changed', snap => {
             const percentUploaded = Math.round((snap.bytesTransferred / snap.totalBytes) * 100);
-            setPercentUploaded(percentUploaded)
-            
+            dispatch(setPercentUploadedImg(percentUploaded))
         },
         err => {
             console.error(err);
@@ -64,6 +67,8 @@ export default function useFileModal(){
                //need to set the imageURL here
             //    this.setState({ imageURL: downloadURL, imageAttached: true, form: true})
                 setImageURL(downloadURL)
+                dispatch(setSelectedImage(downloadURL))
+                dispatch(setPercentUploadedImg(0))
             })
             .catch( err => {
                 console.error(err);
@@ -102,6 +107,7 @@ export default function useFileModal(){
                     <FileModal 
                         toggleFileModal={toggleFileModal}
                         fileModal={fileModal}
+
                     >
 
                         <ImagePicker image={image} addFile={addFile} submitFile={submitFile} setImage={setImage}/>

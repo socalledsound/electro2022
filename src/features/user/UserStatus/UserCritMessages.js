@@ -1,11 +1,17 @@
 import React, { Fragment } from 'react';
+import { useSelector } from 'react-redux';
+import { selectUserCritMessages } from '../../critMessages/critMessagesSlice'
 import { Link } from 'react-router-dom'
 import ProgressBar from '../../../components/ProgressBar/ProgressBar'
-import styles from '../UserHomePage.module.css'
+// import styles from '../UserHomePage.module.css'
+import styles from './UserCritMessages.module.css'
 
-const UserCritMessages = ({ numCritMessages, assignmentsCompleted }) => {
+const UserCritMessages = ({ user }) => {
 
-    const critsPerAssignment = (numCritMessages / assignmentsCompleted)
+    const critMessages = useSelector(selectUserCritMessages)(user)
+    const numCritMessages = critMessages.length
+    const assignmentsCompleted = 1
+    const critsPerAssignment = (critMessages.length / assignmentsCompleted)
     const critMessagePercent = critsPerAssignment/2
     
             return (

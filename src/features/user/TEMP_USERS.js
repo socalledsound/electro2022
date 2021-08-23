@@ -3,7 +3,7 @@ export const tempUser1 = {
     id: '05zdalJXc2a0fifn5JykHqpJkiX2',
     displayName: 'ruby',
     email: 'socalledsound@gmail.com',
-    created: Date.now(),
+    createdAt: Date.now(),
     numFeedbackMessages: 0,
     numCritMessages: 0,
     avatar: 'https://firebasestorage.googleapis.com/v0/b/side-effects-7f7e8.appspot.com/o/images%2F7fe6ba0a-e2c1-4636-9178-fc2f736006ed.jpg?alt=media&token=8f177fe1-1628-4338-a081-cfd5686bc36d',

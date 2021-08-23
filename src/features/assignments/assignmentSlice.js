@@ -68,6 +68,7 @@ const ASSIGNMENTS = [
 const initialState = {
     assignments: ASSIGNMENTS,
     selectedAssignmentId: null,
+    
 }
 
 
@@ -75,10 +76,17 @@ export const assignmentSlice = createSlice({
     name: 'assignment',
     initialState,
     reducers: {
-
+        setPercentUploadedImg : (state, action) => {
+            return {
+                ...state,
+                percentUploadedImg : action.payload
+            }
+        }
     }
 })
 
 export const selectAssignment = (id) => state => state.assignment.assignments[id-1]
+export const selectPercentUploadedImg = state => state.assignment.percentUploadedImg
+export const { setPercentUploadedImg } = assignmentSlice.actions
 
 export default assignmentSlice.reducer

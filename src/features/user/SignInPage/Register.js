@@ -13,7 +13,7 @@ const Register = () => {
 
     const dispatch = useDispatch()
     const initialFormState = {
-        username: '',
+        displayName: '',
         email: '',
         password: '',
     }
@@ -26,19 +26,19 @@ const Register = () => {
 
     const { formData, errors, handleInputChange, handleSubmit } = useForm(initialFormState, validateLogin, (formData) => submitFormData(formData))
 
-    const  { username, email, password } = formData;
+    const  { displayName, email, password } = formData;
 
     return ( 
         <div className={styles.loginBG}>
            <div className={styles.formContainer}>
            <form onSubmit={handleSubmit}>
            <TextField 
-                            value={username}
+                            value={displayName}
                             required
-                            name='username'
+                            name='displayName'
                             onChange={handleInputChange}
                             error={errors.name}
-                            placeholder='enter username'
+                            placeholder='enter a displayName'
                         />
                         <TextField 
                             value={email}

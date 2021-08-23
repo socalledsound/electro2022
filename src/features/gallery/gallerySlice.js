@@ -12,11 +12,17 @@ export const gallerySlice = createSlice({
     name: 'gallery',
     initialState,
     reducers : {
-
+        addSubmissionToWorks : (state, action) => {
+            console.log(action)
+            return {
+                ...state,
+                works:  state.works.concat(action.payload)
+            }
+        }
     }
 })
 
 export const selectCategories = state => state.gallery.categories
 export const selectWorks = state => state.gallery.works
-
+export const {  addSubmissionToWorks } = gallerySlice.actions
 export default gallerySlice.reducer

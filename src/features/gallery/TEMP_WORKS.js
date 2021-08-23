@@ -7,7 +7,7 @@ export const tempWork1 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'a little thing',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -22,7 +22,7 @@ export const tempWork2 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -37,7 +37,7 @@ export const tempWork3 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -52,7 +52,7 @@ export const tempWork4 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -67,7 +67,7 @@ export const tempWork5 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -82,7 +82,7 @@ export const tempWork6 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -97,7 +97,7 @@ export const tempWork7 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -112,7 +112,7 @@ export const tempWork8 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -127,7 +127,7 @@ export const tempWork9 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
+    createdBy: {
         id: 110292,
         name: 'chris kubick'
     }
@@ -142,8 +142,8 @@ export const tempWork10 = {
     linkURL: 'https://socalledsidefx.com/',
     timestamp: Date.now(),
     title: 'hello from here',
-    user: {
-        id: 110292,
-        name: 'chris kubick'
+    createdBy: {
+        id: 'xqWp0vWr3ENQwBOep8O6nrlCKgo1',
+        name: 'polly'
     }
 }

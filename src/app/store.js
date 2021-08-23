@@ -8,6 +8,8 @@ import warningsReducer from '../features/warnings/warningsSlice'
 import galleryReducer from '../features/gallery/gallerySlice'
 import peopleReducer from '../features/people/peopleSlice'
 import assignmentReducer from '../features/assignments/assignmentSlice'
+import submitWorkReducer from '../features/submitWork/submitWorkSlice'
+import critMessagesReducer from '../features/critMessages/critMessagesSlice'
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -18,7 +20,11 @@ const reducer = combineReducers({
   gallery: galleryReducer,
   people: peopleReducer,
   assignment: assignmentReducer,
+  submitWork: submitWorkReducer,
+  critMessages: critMessagesReducer,
 })
+
+
 
 
 export const store = configureStore({
