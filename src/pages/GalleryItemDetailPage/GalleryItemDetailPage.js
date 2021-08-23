@@ -16,7 +16,6 @@ const GalleryItemDetailPage = ({match}) => {
             {
                 item &&
                 <Fragment>
-                    {item.id}
                 <CritMessagesContainer item={item}/>
                 <GalleryItemDetail item={item}/>
                 </Fragment>

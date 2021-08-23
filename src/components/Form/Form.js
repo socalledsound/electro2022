@@ -14,10 +14,10 @@ const Form = ({initialFormState, validateForm, submitFormData}) => {
         <form onSubmit={handleSubmit}>
 
             {
-                keys.map(key => {
+                keys.map((key, idx) => {
                     return (
                         <TextField 
-                        key={key}
+                        key={`form${key}${idx}`}
                         value={formData[key]}
                         required
                         name={`${key}`}
