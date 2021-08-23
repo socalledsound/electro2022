@@ -1,7 +1,11 @@
 import  { takeLatest, put, all, call } from 'redux-saga/effects';
 import  UserActionTypes from './UserActionTypes';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
-import { emailSignInSuccess, emailSignInFailure, loginLoading} from '../../features/user/userSlice'
+import { emailSignInSuccess, emailSignInFailure, loginLoading, submitUserUpdateStart} from '../../features/user/userSlice'
+
+function* updateUser(action){
+    yield console.log(action.payload)
+}
 
 
 function* signInWithEmail(action){
@@ -67,9 +71,13 @@ export function* onEmailSignInStart(){
     yield takeLatest(UserActionTypes.EMAIL_SIGNIN_START, signInWithEmail)
 }
 
+export function* onUserUpdateStart(){
+    yield takeLatest(submitUserUpdateStart.type, updateUser)
+}
+
 
 export function* userSagas() {
-    yield all([call(onEmailSignInStart),call(onEmailRegisterStart)])
+    yield all([call(onEmailSignInStart),call(onEmailRegisterStart), call(onUserUpdateStart)])
 }
 
 

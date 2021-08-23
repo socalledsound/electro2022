@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectCurrentUser } from '../userSlice'
-import UserSettings from './UserSettings'
+import UserSettings from './UserSettings/UserSettings'
 import UserWorks from './UserWorks'
 import UserCritMessages from './UserCritMessages'
 import styles from './UserStatus.module.css'
@@ -16,8 +16,8 @@ const UserStatus = () => {
                  currentUser ? 
                  <div className={styles.userWrapper}>
                         <UserSettings user={currentUser}/>
-                        <UserWorks />
                         <UserCritMessages user={currentUser}/>
+                        <UserWorks />
                  </div>
                  :
                  <div>

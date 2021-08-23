@@ -1,0 +1,38 @@
+.userSettingsWrapper {
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border-radius: 1.2rem;
+  border: 2px solid purple;
+  color: white;
+}
+
+.settingsFlexWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(246, 243, 243, 0.5);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  color: rgb(25, 68, 43);
+}
+
+.userDetailsFlexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.userSettingsButton {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(246, 243, 243, 0.5);
+  border: 2px solid rgb(57, 171, 107);
+  /* color: rgb(247, 241, 244); */
+  border-radius: 0.6rem;
+  margin-left: 2rem;
+}
+
+.userSettingsButton:hover {
+  background-color: rgb(57, 171, 107);
+  color: rgb(255, 1, 136);
+  color: white;
+}

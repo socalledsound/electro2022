@@ -23,7 +23,7 @@ const Form = ({initialFormState, validateForm, submitFormData}) => {
                         name={`${key}`}
                         onChange={handleInputChange}
                         error={errors.key}
-                        placeholder={`enter a ${key} here`}
+                        placeholder={`enter a ${key}`}
             />
                     )
                 })

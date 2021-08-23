@@ -39,3 +39,37 @@
   background-color: rgb(255, 109, 109);
   border: 3px solid rgba(98, 10, 10, 1);
 }
+
+.imagePickerButton {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(246, 243, 243, 0.5);
+  border: 2px solid rgb(57, 171, 107);
+  /* color: rgb(247, 241, 244); */
+  border-radius: 0.6rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.imagePickerButton:hover {
+  background-color: rgb(57, 171, 107);
+  color: rgb(255, 1, 136);
+  color: white;
+}
+
+.imagePickerCancelButton {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(246, 243, 243, 0.5);
+  border: 2px solid rgb(171, 57, 163);
+  /* color: rgb(247, 241, 244); */
+  border-radius: 0.6rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.imagePickerCancelButton:hover {
+  background-color: rgb(171, 57, 108);
+  color: rgb(255, 1, 136);
+  color: white;
+}

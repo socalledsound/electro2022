@@ -14,8 +14,6 @@ export default function useFileModal(){
     let [ imageURL, setImageURL] = useState(tempImage)
     let [file, setFile ] = useState(null)
     
-   
-
     const setThumbnail = (file) => {
         const reader = new FileReader()
         reader.onload = ((f) => {

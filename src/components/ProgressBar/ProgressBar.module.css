@@ -1,8 +1,11 @@
 .border {
+  margin-top: 1.2rem;
   border: 1px solid grey;
+  border-radius: 0.3rem;
 }
 
 .progress {
   background-color: aqua;
+  border-radius: 1.2rem;
   height: 1.2rem;
 }

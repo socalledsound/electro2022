@@ -20,13 +20,13 @@ const ImagePicker = ({image, addFile, submitFile, setImage}) => {
             }
         <div>
         <button 
-                className={styles.uploadButton}
+                className={styles.imagePickerButton }
                 onClick={submitFile}
             >
                 upload
             </button>
             <button 
-                className={styles.cancelButton}
+                className={styles.imagePickerCancelButton}
                 onClick={() => setImage(false)}
             >
                 clear image

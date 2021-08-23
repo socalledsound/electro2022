@@ -1,2 +1,14 @@
+.userCritMessagesInnerWrapper {
+  background-color: rgba(246, 243, 243, 0.5);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  color: rgb(25, 68, 43);
+}
+
 .critMessagesWrapper {
+  margin-top: 1.2rem;
+  border: 2px solid green;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  color: white;
 }

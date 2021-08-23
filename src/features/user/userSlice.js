@@ -37,7 +37,15 @@ export const userSlice = createSlice({
                 ...state,
                 loading: action.payload
             }
-        }
+        },
+        logOutUser : (state) => {
+            return {
+                ...state,
+                currentUser: null,
+            }
+        },
+        submitUserUpdateStart (){}
+
     }
 })
 
@@ -70,5 +78,5 @@ export const selectUserWarnings = state => {
     // want to write a selector to check the assignments and see what's missing
     return state.user.warnings
 }
-export const { addUser, resetLoginErrors, emailSignInSuccess, emailSignInFailure, loginLoading  } = userSlice.actions 
+export const { addUser, logOutUser, resetLoginErrors, emailSignInSuccess, emailSignInFailure, loginLoading, submitUserUpdateStart  } = userSlice.actions 
 export default userSlice.reducer

@@ -9,8 +9,8 @@ const SelectImage = () => {
 
     const percentUploaded = useSelector(selectPercentUploadedImg)
     // const { modal, toggleModal, ModalContent } = useModal();
-    const { imageURL, fileModal, toggleFileModal, SelectImageModal} = useFileModal()
-    console.log(fileModal)
+    const { imageURL, toggleFileModal, SelectImageModal} = useFileModal()
+    console.log(percentUploaded)
     return ( 
         <Fragment>
             {

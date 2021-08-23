@@ -1,0 +1,29 @@
+.userWorksSectionWrapper {
+  margin-top: 1.2rem;
+  border: 2px solid green;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  color: white;
+}
+
+.userWorksInnerWrapper {
+  background-color: rgba(246, 243, 243, 0.5);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  color: rgb(25, 68, 43);
+}
+
+.userWorksFlexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttonToUserWork {
+  background-color: indianred;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  max-width: 3rem;
+}
+.buttonToUserWork:hover {
+  background-color: rgb(232, 173, 173);
+}

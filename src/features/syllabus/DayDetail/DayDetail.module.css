@@ -199,14 +199,11 @@
 .assignmentButtonContainer {
   background-color: rgba(246, 230, 222, 0.4);
   border-radius: 1.2rem;
-  /* padding: 0.8rem; */
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  /* padding-bottom: 0.8rem; */
   margin-left: 0rem;
   margin-bottom: 2rem;
-  /* padding-top: 0.2rem; */
-  height: 4rem;
+  height: 3rem;
   font-size: 0.8rem;
   text-align: center;
   color: rgb(82, 12, 12);
