@@ -1,10 +1,11 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectCategories, selectWorks } from './gallerySlice'
 import GalleryRow from './GalleryRow'
 import styles from './Gallery.module.css'
 
-const Gallery = () => {
+const Gallery = ({history}) => {
     const galleryCategories = useSelector(selectCategories)
     const works = useSelector(selectWorks)
     const featuredWorks = works.filter(item => item.featured)
@@ -41,7 +42,10 @@ const Gallery = () => {
                                     className={styles.galleryRowWrapper}
                                     // style={{backgroundColor: getRandomColor()}}
                                 >
-                                    <div>
+                                    <div 
+                                        className={styles.galleryCategoryButton}
+                                        onClick={() => history.push(`/gallery/${category}`)}
+                                    >
                                         <h5 className={styles.galleryHeading}>{category}</h5>
                                     </div>
                                      
@@ -63,4 +67,4 @@ const Gallery = () => {
      );
 }
  
-export default Gallery;
+export default withRouter(Gallery);

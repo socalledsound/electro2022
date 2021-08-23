@@ -5,8 +5,10 @@ import { selectItemById } from '../../features/gallery/gallerySlice'
 import GalleryItemDetail from '../../features/gallery/GalleryItemDetail'
 import CritMessagesContainer from '../../features/critMessages/CritMessagesContainer'
 import styles from './GalleryItemDetailPage.module.css'
+import { selectCurrentUser } from '../../features/user/userSlice'
 const GalleryItemDetailPage = ({match}) => {
 
+    const currentUser = useSelector(selectCurrentUser)
     const itemId = match.params.workId 
     console.log(itemId)
     const item = useSelector(selectItemById(itemId))
@@ -16,7 +18,11 @@ const GalleryItemDetailPage = ({match}) => {
             {
                 item &&
                 <Fragment>
-                <CritMessagesContainer item={item}/>
+                    {
+                    currentUser &&
+                    <CritMessagesContainer item={item}/>
+                    }
+
                 <GalleryItemDetail item={item}/>
                 </Fragment>
             }

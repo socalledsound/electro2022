@@ -1,10 +1,16 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import styles from './GalleryItemDetail.module.css'
-const GalleryItemDetail = ({ item}) => {
+const GalleryItemDetail = ({ item, history }) => {
     return ( 
         <div
             className={styles.galleryItemDetailWrapper} 
         >
+            <div
+                onClick={() => history.push(`/gallery/${item.assignment}`)} 
+                className={styles.returnToCategoryDiv}> {`<---`} 
+                {item.assignment}
+            </div>
             <img className={styles.galleryItemDetailImage} src={item.imageURL} alt="artwork" />
             <h4>{item.title}</h4>
             <p>{item.description}</p>
@@ -14,4 +20,4 @@ const GalleryItemDetail = ({ item}) => {
      );
 }
  
-export default GalleryItemDetail;
+export default withRouter(GalleryItemDetail);

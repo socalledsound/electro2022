@@ -2,18 +2,13 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import styles from './Gallery.module.css'
 
-const GalleryItem = ({ item, history }) => {
+const GalleryItem = ({ item, category, history }) => {
     return ( 
         <div  
             className={styles.galleryItemContainer}
-            onClick={ () => history.push(`/gallery/${item.id}`)} >
+            onClick={ () => history.push(`/gallery/${category}/${item.id}`)} >
                 <img className={styles.workImage} src={item.imageURL} alt={item.title}/>
-                <div 
-                    className={styles.workTitle} 
-                  
-                >
-                    {item.title}
-                </div>     
+                {item.title}   
         </div>
      );
 }

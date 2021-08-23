@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Gallery.module.css'
 import GalleryItem from './GalleryItem'
 
-const GalleryRow = ({ works}) => {
+const GalleryRow = ({ category, works}) => {
     // console.log(works)
     return ( 
         <div className={styles.galleryRowContainer}> 
@@ -10,7 +10,7 @@ const GalleryRow = ({ works}) => {
             {
                 works.map(((item, idx) => {
                     return (
-                        <GalleryItem key={`gallery-item-${idx}`} item={item} />
+                        <GalleryItem key={`gallery-item-${idx}`} item={item} category={category} />
                     )
                 }))
             }

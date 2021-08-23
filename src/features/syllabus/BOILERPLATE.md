@@ -16,6 +16,12 @@ Before I fell in love with code, I used to be a foley designer in Hollywood. I w
 
 And so I set out to learn how to do things differently. And I'm still on that trip! And I'm glad to be on it with you.
 
+I'm a lecturer here at UC Berkeley, and I just teach this course, which I've been doing in one form or another for about 15 years. I hope we'l have fun and grow together.
+
+# lab fees
+
+Lab fees are 60 bucks and cover the stuff we'll use and the honor of being present on the UC campus. Dillon Thomas dillont@berkeley.edu will be reaching out to you about that. Sorry, they're non-negotiable. But, fwiw, I don't really get it, what do they do with all of that tuition money? They sure don't pass it on to us lecturers.
+
 ## projects
 
 In this course, we're going to look at a bunch of art and talk about art and ideas, and most class sessions there will be a small assignment that will aim to teach you something useful. But the core of this course is the four big projects that you will complete.
@@ -26,7 +32,19 @@ I always feel that I never really learn something until I put that knowledge int
 
 ## grading
 
-Grading will be based on a mixture of (online) attendance, discussion participation and, of course, completion of assignments and projects. If you are logged in, you should see your user page at www.socalledsidefx.com. There you can find your current status, what assignments are due and get a decent sense of how you're doing in the course. If you ever have any questions about your grade, don't be afraid to reach out, I'm very happy to accomodate any concerns or considerations that you might have.
+Grading will be based on participation and on the completion of assignments and projects.
+
+Shocking, I know.
+
+It is absolutely essential to be present and participating in the four crits that we will have. I say this not just from a grade perspective but from a human perspective. These crits are an opportunity to give back to your peers, to help them along their way and provide the feedback that is so essential to growth. We'll do one for each of the four big projects we'll do.
+
+ALSO IMPORTANT is to provide goood feedback in the gallery on this site. There, if you are logged in, you should be able to leave a response to each work. People who do a lot of that are super honorable in my book and I will be sure to honor you right back when it comes time to submit the grades!
+
+The other thing is, there will be a small assignment for each day of this course. Do these! They're my best way to see that you're doing the work and understanding what you're doing, and I think they'll be pretty fun and useful for you.
+
+Having said all of this...really the most important thing is that you do great work on your big projects. Do that, and your grade will take care of itself.
+
+If you are logged in, you should see your user page on this website. There you can find your current status, what assignments are due and get a decent sense of how you're doing in the course. If you ever have any questions about your grade, don't be afraid to reach out, I'm very happy to accomodate any concerns or considerations that you might have.
 
 ### building hours
 

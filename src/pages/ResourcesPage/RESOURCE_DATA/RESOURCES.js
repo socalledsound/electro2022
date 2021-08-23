@@ -1,9 +1,10 @@
 const RESOURCES = {
     resourceTopics: [
     {   
-        title: 'this site',
+        title: 'this course',
         description: "",
         links: [
+
             {
                 linkText: 'navigating this website',
                 linkSrc: '',
@@ -20,12 +21,18 @@ const RESOURCES = {
                 linkText: 'resizing an image using gimp',
                 linkSrc: 'https://youtu.be/8ukaQw6oPM8',
             },
-
-
+            {
+                linkText: 'course discord channel',
+                linkSrc: '',
+            },
+            {
+                linkText: 'my youtube channel',
+                linkSrc: '',
+            },
 
             {
                 linkText: 'email me',
-                linkSrc: '',
+                linkSrc: 'mailto:socalledsound@gmail.com',
             },
         ]
     },

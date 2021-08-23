@@ -1,0 +1,29 @@
+.galleryCategoryPageWrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.returnToMainGalleryButton {
+  background-color: indianred;
+  color: white;
+  width: 10rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 1.2rem;
+}
+.returnToMainGalleryButton:hover {
+  background-color: rgb(241, 160, 160);
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.itemSpacer {
+  padding: 0.4rem;
+}
