@@ -1,11 +1,14 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import {selectCurrentUser } from '../../user/userSlice'
 import UnitButton from './UnitButton'
 import AssignmentButton from './AssignmentButton'
+import LoginButton from './LoginButton'
 import DayDetailLinks from './DayDetailLinks'
 import styles from './DayDetail.module.css'
 
 const DayDetail = ({day}) => {
-
+    const currentUser = useSelector(selectCurrentUser)
     const { unit, date, title, illustrationURL, description } = day
     console.log(description)
     return ( 
@@ -22,7 +25,13 @@ const DayDetail = ({day}) => {
                   
 
                         <h5 className={styles.title}>{date.slice(0,-6)} : {title}</h5>
-                        <AssignmentButton day={day}/>
+                        {
+                            currentUser ?
+                            <AssignmentButton day={day}/>
+                            :
+                            <LoginButton />
+                        }
+                        
                 </div>
             
                 <div className={styles.dayDescription}>

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
 import {selectAssignment } from './assignmentSlice'
+import { selectCompletedAssignments } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
 import SubmitWork from '../submitWork/SubmitWork'
 import styles from './Assignment.module.css'
@@ -10,8 +11,26 @@ import styles from './Assignment.module.css'
 const Assignment = ({match}) => {
     
     const [ assignmentMarkdown, setAssignmentMarkdown ] = useState(null)
+    const [ completed, setCompleted ] = useState(false)
     const { modal, toggleModal, ModalContent } = useModal();
     const assignment = useSelector(selectAssignment(match.params.dayId))
+    const completedAssignments = useSelector(selectCompletedAssignments)
+
+  
+  
+    useEffect(() => {
+
+        const filtered = completedAssignments.filter(item => {
+           console.log(item.assignment, assignment)
+            return item.assignment === assignment.title
+        })
+        console.log(filtered)
+        if(filtered.length > 0){
+            setCompleted(true)
+        }
+    }, [assignment, completedAssignments, setCompleted])
+
+    console.log(completed)
 
     useEffect(() => {
         console.log(assignment.markdown)
@@ -45,20 +64,29 @@ const Assignment = ({match}) => {
                 />
             }
             
-           
-                <button 
+                {
+               completed ? 
+                <div className={styles.noSubmitButton}>
+                    <p>you already completed this assignment</p>
+                   
+                
+                </div>
+                :
+                    <button 
                     onClick={handleClick}
                     className={styles.submitButton}
                 >
                     submit assignment
                 </button>
+                }
+                
                 </div>
                 :
                 null
             }
 
             <ModalContent>
-                <SubmitWork assignment={assignment.title}/>
+                <SubmitWork assignment={assignment.title} />
             </ModalContent>
 
         </div>

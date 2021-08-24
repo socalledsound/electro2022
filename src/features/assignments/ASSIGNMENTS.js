@@ -47,7 +47,7 @@ export const ASSIGNMENT1 = {
 }
 
 export const ASSIGNMENT2 = {
-    title : 'painting with css part 1',
+    title : 'the resistance needs you',
     description : "Today we're going to start learning css by making copies of paintings by Josef Albers and Bridget Reilly.  We'll learn a bit about the box model and the 'flow' of a web page.  To get the detailed instructions, click the button below.",
     markdown: DAY2_WORKSHOP_MD,
 }
