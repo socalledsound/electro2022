@@ -1,6 +1,5 @@
 const galleryCategories = [
-    'hello!',
-    'fun fun function',
+    'intros all around',
 ]
 
 export default galleryCategories

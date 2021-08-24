@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { withRouter } from 'react-router-dom'
 import { selectSelectedImage} from '../../../submitWork/submitWorkSlice'
 import { selectCurrentUser } from '../../userSlice'
 // import { submitWorkStart } from '../../../../app/sagas/submitWorkActions'
@@ -16,18 +15,15 @@ const initialFormState = {
 
 
 
-const EditUserForm = ({assignment, history}) => {
+const EditUserForm = ({assignment, toggleModal}) => {
 
    const dispatch = useDispatch()
    const currentUser = useSelector(selectCurrentUser)
    const selectedImage = useSelector(selectSelectedImage)
 
-    const submitAssignment = (data) => {
-        // const { title, description, linkURL, code, imageURL } = data
-        console.log(data)
+    const submitUserData = (data) => {
         dispatch(submitUserUpdateStart({...data, currentUser, selectedImage}))
-        // maybe this should go to the user page and run an animation?
-        history.push('/userStatus')
+        toggleModal(false)
     }
 
 
@@ -48,11 +44,11 @@ const EditUserForm = ({assignment, history}) => {
                 <Form 
                     initialFormState={initialFormState}
                     validateForm={validateUserSubmission} 
-                    submitFormData={submitAssignment}     
+                    submitFormData={submitUserData}     
                 />
             </div>
         </div>
      );
 }
  
-export default withRouter(EditUserForm);
+export default EditUserForm;

@@ -6,7 +6,7 @@ const ImagePicker = ({image, addFile, submitFile, setImage}) => {
                    
             {
                 image ?
-                <img src={image} alt='user selected'></img>
+                <img src={image} alt='user selected' className={styles.imagePickerImage}></img>
                 :
                 <div>
                 <h5>select an image file:</h5>

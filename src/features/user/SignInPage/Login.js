@@ -23,13 +23,17 @@ const Login = ({toggleRegistered}) => {
 
     return ( 
         <div className={styles.loginBG}>
+
            <div className={styles.formContainer}>
+           <div className={styles.loginTitleCard}>
+                existing user login:
+            </div>
            <Form 
                     initialFormState={initialFormState}
                     validateForm={validateLogin} 
                     submitFormData={submitUserData}  
                 />
-                            <div 
+            <div 
                 className={styles.toggleRegisterButton}
                 onClick={() => toggleRegistered(false)}>
                     <p>i need to register</p>

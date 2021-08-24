@@ -13,14 +13,14 @@ export const userSlice = createSlice({
     reducers: {
 
         emailSignInSuccess : (state, action) => {
-            console.log(action.payload)
+            // console.log(action.payload)
             return {
                 ...state,
                 currentUser: action.payload
             }
         },
         emailSignInFailure : (state, action) => {
-            console.log(action.payload)
+            // console.log(action.payload)
             return {
                 ...state,
                 errors: action.payload
@@ -44,7 +44,20 @@ export const userSlice = createSlice({
                 currentUser: null,
             }
         },
-        submitUserUpdateStart (){}
+        submitUserUpdateStart (){},
+        updateUserSuccess : (state, action) => {
+            return {
+                ...state,
+                currentUser : action.payload
+            }
+        },
+        updateUserfailure : (state, action) => {
+            return {
+                ...state,
+                errors: action.payload
+            }
+        },
+
 
     }
 })
@@ -59,7 +72,7 @@ export const selectCompletedAssignments = state => {
     if(allWorks && user){
         const userWorks = allWorks.filter(item => {
             // console.log(item, user.id)
-            return item.createdBy.id === user.id
+            return item.user.id === user.id
         })
         return userWorks
     } else {
@@ -78,5 +91,8 @@ export const selectUserWarnings = state => {
     // want to write a selector to check the assignments and see what's missing
     return state.user.warnings
 }
-export const { addUser, logOutUser, resetLoginErrors, emailSignInSuccess, emailSignInFailure, loginLoading, submitUserUpdateStart  } = userSlice.actions 
+export const { addUser, logOutUser, resetLoginErrors, emailSignInSuccess, 
+    emailSignInFailure, loginLoading, 
+    submitUserUpdateStart, updateUserSuccess,updateUserFailure,
+    } = userSlice.actions 
 export default userSlice.reducer

@@ -1,10 +1,57 @@
 import  { takeLatest, put, all, call } from 'redux-saga/effects';
 import  UserActionTypes from './UserActionTypes';
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
-import { emailSignInSuccess, emailSignInFailure, loginLoading, submitUserUpdateStart} from '../../features/user/userSlice'
+import { auth, createUserProfileDocument, firestore, convertWorksSnapshotToMap } from '../../firebase/firebase.utils';
+import { emailSignInSuccess, emailSignInFailure, loginLoading, 
+         submitUserUpdateStart, updateUserSuccess, updateUserFailure } from '../../features/user/userSlice'
+import{ startFetchUserWorks, fetchUserWorksSuccess, fetchUserWorksFailure} from '../../features/gallery/gallerySlice'
+
+
+function* fetchUserWorks(action){
+    yield console.log(action.payload)
+    
+    if(action.payload){
+        const { id } = action.payload
+        try{
+            const snap = yield firestore.collection('works').where(`user.id`, '==',  id).get()
+            const works = yield convertWorksSnapshotToMap(snap)
+            yield console.log(works)
+            yield put(fetchUserWorksSuccess(works))
+        }
+        catch(err){
+            console.error(err)
+            yield put(fetchUserWorksFailure(err))
+        }
+    }
+
+}
+
 
 function* updateUser(action){
-    yield console.log(action.payload)
+    const { currentUser, displayName, selectedImage } = action.payload
+    yield put(loginLoading(true))
+    try{
+        
+        yield firestore.collection('users').doc(currentUser.id).update({
+            id: currentUser.id,
+            email: currentUser.email,
+            avatar: selectedImage,
+            displayName,
+        })
+        const user = {
+            id: currentUser.id,
+            email: currentUser.email,
+            avatar: selectedImage,
+            displayName,
+        }
+        yield put(updateUserSuccess(user))
+        yield put(loginLoading(false))
+    }catch(err){
+        console.error(err)
+        yield put(loginLoading(false))
+        yield put(updateUserFailure(err))
+    }
+    
+    
 }
 
 
@@ -75,9 +122,12 @@ export function* onUserUpdateStart(){
     yield takeLatest(submitUserUpdateStart.type, updateUser)
 }
 
+export function* onFetchUserWorksStart(){
+    yield takeLatest(startFetchUserWorks.type, fetchUserWorks)
+}
 
 export function* userSagas() {
-    yield all([call(onEmailSignInStart),call(onEmailRegisterStart), call(onUserUpdateStart)])
+    yield all([call(onEmailSignInStart),call(onEmailRegisterStart), call(onUserUpdateStart), call(onFetchUserWorksStart)])
 }
 
 

@@ -16,13 +16,16 @@
 .userWorksFlexWrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .buttonToUserWork {
   background-color: indianred;
   border-radius: 1.2rem;
   padding: 1.2rem;
-  max-width: 3rem;
+  width: 3rem;
+  margin-left: 1.2rem;
+  margin-top: 1.2rem;
 }
 .buttonToUserWork:hover {
   background-color: rgb(232, 173, 173);

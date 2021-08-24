@@ -25,7 +25,7 @@ const SignInPage = () => {
                 
                 <LogIn toggleRegistered={toggleRegistered}/>
                 :
-                <Register />
+                <Register toggleRegistered={toggleRegistered}/>
             :
             <div>
                 <div>

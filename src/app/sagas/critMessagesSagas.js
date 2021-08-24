@@ -16,7 +16,7 @@ function* submitCritMessage(action){
     if(submission){
         yield put(uploadLoading(true))
         try{
-            yield call(addItemToFirestore, 'works', submission)
+            yield call(addItemToFirestore, 'critMessages', submission)
             yield call(submitCritMessageSuccess)
             yield put(uploadLoading(false))
         } 
@@ -31,7 +31,7 @@ function* submitCritMessage(action){
 
 
 export function* submitCritMessageStart(){
-    console.log(startSubmitCritMessage.type)
+    // console.log(startSubmitCritMessage.type)
     yield takeLatest(startSubmitCritMessage.type, submitCritMessage)
 }
 

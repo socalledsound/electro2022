@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.imagePickerImage {
+  width: 200px;
+}
+
 .chooseFileButton {
   /* background-color: greenyellow;
   width: 12rem; */

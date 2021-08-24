@@ -72,6 +72,7 @@
   .avatar {
     width: 3rem;
     height: 3rem;
+    margin-bottom: 0.6rem;
   }
 }
 
@@ -85,7 +86,8 @@
     /* margin-left: 2rem; */
   }
   .avatar {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.6rem;
   }
 }

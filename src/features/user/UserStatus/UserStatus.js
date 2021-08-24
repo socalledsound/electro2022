@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { selectCurrentUser } from '../userSlice'
+import { startFetchUserWorks } from '../../gallery/gallerySlice'
 import UserSettings from './UserSettings/UserSettings'
 import UserWorks from './UserWorks'
 import UserCritMessages from './UserCritMessages'
 import styles from './UserStatus.module.css'
 const UserStatus = () => {
-
+    const dispatch = useDispatch()
     const currentUser = useSelector(selectCurrentUser)
-  
+
+    useEffect(() => {
+        dispatch(startFetchUserWorks(currentUser))
+    }, [currentUser, dispatch])
+
+
     return ( 
         <div>
             {

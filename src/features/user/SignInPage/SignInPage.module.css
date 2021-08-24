@@ -30,6 +30,11 @@
   border-radius: 0.3rem;
 }
 
+.loginTitleCard {
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
 .submitButton {
   width: 100%;
   height: 4rem;

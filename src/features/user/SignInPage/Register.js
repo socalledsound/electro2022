@@ -9,7 +9,7 @@ import TextField from '../../../components/TextField/TextField'
 import styles from './SignInPage.module.css'
 import { emailRegisterStart } from '../../../app/sagas/userActions'
 
-const Register = () => {
+const Register = ({toggleRegistered}) => {
 
     const dispatch = useDispatch()
     const initialFormState = {
@@ -31,6 +31,9 @@ const Register = () => {
     return ( 
         <div className={styles.loginBG}>
            <div className={styles.formContainer}>
+           <div className={styles.loginTitleCard}>
+                create user account:
+            </div>
            <form onSubmit={handleSubmit}>
            <TextField 
                             value={displayName}
@@ -58,6 +61,11 @@ const Register = () => {
                         />
                         <button className={styles.submitButton} type='submit'>submit</button>
                         </form>
+                        <div 
+                className={styles.toggleRegisterButton}
+                onClick={() => toggleRegistered(true)}>
+                    <p>i already have an account</p>
+            </div>
             </div>
         </div>
      );

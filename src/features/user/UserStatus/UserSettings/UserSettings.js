@@ -1,7 +1,7 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { logOutUser } from '../../userSlice'
-import { selectPercentUploadedImg } from '../../../submitWork/submitWorkSlice'
+// import { selectPercentUploadedImg } from '../../../submitWork/submitWorkSlice'
 import useModal from '../../../../components/Modal/useModal'
 import EditUserForm from './EditUserForm'
 import styles from './UserSettings.module.css'
@@ -9,14 +9,14 @@ const UserSettings = ({user}) => {
     
     const dispatch = useDispatch()
     const { modal, toggleModal, ModalContent } = useModal()
-    const percentUploaded = useSelector(selectPercentUploadedImg)
-    console.log(percentUploaded)
+    // const percentUploaded = useSelector(selectPercentUploadedImg)
+    // console.log(percentUploaded)
     return ( 
         <div className={styles.userSettingsWrapper}>
             <div className={styles.settingsFlexWrapper}>
             <div className={styles.userDetailsFlexContainer}>
                
-                <img src={user.avatar} alt="user" />
+                <img src={user.avatar} alt="user" className={styles.userSettingsImage}/>
                 <p>{user.displayName}</p>
             </div>
             <div>
@@ -39,7 +39,7 @@ const UserSettings = ({user}) => {
             {
                 modal &&
                 <ModalContent>
-                    <EditUserForm />
+                    <EditUserForm  toggleModal={toggleModal}/>
                 </ModalContent>
             }
 
