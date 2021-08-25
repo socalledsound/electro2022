@@ -10,7 +10,7 @@ import styles from './DayDetail.module.css'
 const DayDetail = ({day}) => {
     const currentUser = useSelector(selectCurrentUser)
     const { unit, date, title, illustrationURL, description } = day
-    console.log(description)
+    // console.log(description)
     return ( 
 
 

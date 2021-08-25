@@ -7,7 +7,7 @@ const BoilerPlate = () => {
     const [bp, setBoilerPlate ] = useState(null)
 
     useEffect(() => {
-        console.log(boilerplateMarkdown)
+        // console.log(boilerplateMarkdown)
         fetch(boilerplateMarkdown)
         .then(resp => resp.text())
         .then(text => setBoilerPlate(text))   

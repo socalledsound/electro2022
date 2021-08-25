@@ -7,14 +7,14 @@ import{ startFetchUserWorks, fetchUserWorksSuccess, fetchUserWorksFailure} from 
 
 
 function* fetchUserWorks(action){
-    yield console.log(action.payload)
+    // yield console.log(action.payload)
     
     if(action.payload){
         const { id } = action.payload
         try{
             const snap = yield firestore.collection('works').where(`user.id`, '==',  id).get()
             const works = yield convertWorksSnapshotToMap(snap)
-            yield console.log(works)
+            // yield console.log(works)
             yield put(fetchUserWorksSuccess(works))
         }
         catch(err){
@@ -28,13 +28,14 @@ function* fetchUserWorks(action){
 
 function* updateUser(action){
     const { currentUser, displayName, selectedImage } = action.payload
+    const image = selectedImage ? selectedImage : currentUser.avatar
     yield put(loginLoading(true))
     try{
         
         yield firestore.collection('users').doc(currentUser.id).update({
             id: currentUser.id,
             email: currentUser.email,
-            avatar: selectedImage,
+            avatar: image,
             displayName,
         })
         const user = {
@@ -56,7 +57,7 @@ function* updateUser(action){
 
 
 function* signInWithEmail(action){
-    console.log('registering with email')
+    // console.log('registering with email')
     const { email, password } = action.payload
     yield put(loginLoading(true))
     try{
@@ -83,7 +84,7 @@ function* signInWithEmail(action){
 }
 
 function* registerWithEmail(action){
-    console.log('registering with email')
+    // console.log('registering with email')
     const { displayName, email, password } = action.payload
     yield put(loginLoading(true))
     try{
@@ -109,12 +110,12 @@ function* registerWithEmail(action){
 }
 
 export function* onEmailRegisterStart(){
-    console.log('hi from register')
+    // console.log('hi from register')
     yield takeLatest(UserActionTypes.EMAIL_REGISTER_START, registerWithEmail)
 }
 
 export function* onEmailSignInStart(){
-    console.log('hi from sign in')
+    // console.log('hi from sign in')
     yield takeLatest(UserActionTypes.EMAIL_SIGNIN_START, signInWithEmail)
 }
 

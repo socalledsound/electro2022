@@ -39,7 +39,7 @@ const UserSettings = ({user}) => {
             {
                 modal &&
                 <ModalContent>
-                    <EditUserForm  toggleModal={toggleModal}/>
+                    <EditUserForm  toggleModal={toggleModal} user={user}/>
                 </ModalContent>
             }
 

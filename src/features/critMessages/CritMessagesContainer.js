@@ -7,6 +7,7 @@ import SubmitCritMessageForm from './SubmitCritMessageForm'
 const CritMessagesContainer = ({item}) => {
 
     const critMessages = useSelector(selectCritMessagesForItemId(item.id))
+    console.log(item.id)
     console.log(critMessages)
     // const critMessages = useSelector(selectCritMessages)
 

@@ -1,0 +1,25 @@
+/* className="rounded-md w-full border border-gray-400 p-3 mb-5" */
+
+.input-container {
+  width: 100%;
+}
+
+.text-area {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 6rem;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.text-input-error {
+  border: solid 0.1rem red;
+  color: red;
+}
+
+.error-text {
+  color: #ff0000;
+}

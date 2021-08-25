@@ -1,18 +1,21 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
-import { firestore } from '../../firebase/firebase.utils'
+import { firestore, convertWorksSnapshotToMap } from '../../firebase/firebase.utils'
+import { loginLoading } from '../../features/user/userSlice'
 import { startFetchWorks, fetchWorksSuccess, fetchWorksFailure } from '../../features/gallery/gallerySlice'
 
 
 
 function* fetchWorks(){
-
+    yield put(loginLoading(true))
     try{
-        const works = yield firestore.collection('works')
-
+        const snap = yield firestore.collection('works').get()
+        const works = yield(convertWorksSnapshotToMap(snap))
         yield put(fetchWorksSuccess(works))
+        yield put(loginLoading(false))
     }
     catch(err){
-        yield put(fetchWorksFailure())
+        yield put(fetchWorksFailure(err))
+        yield put(loginLoading(false))
     }
    
 }

@@ -15,10 +15,6 @@ const DAY2 = {
             linkSrc: '',
         },
         {
-            linkText: 'color coding and resistors',
-            linkSrc: '',
-        },
-        {
             linkText: 'LED basics',
             linkSrc: '',
         },
@@ -37,6 +33,26 @@ const DAY2 = {
             linkSrc: '',
         },
         {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'terry fox: cone of silence',
+            linkSrc: 'https://www.artsy.net/artwork/terry-fox-cones-of-silence',
+        },
+        {
             linkText: 'box with the sound of its own making',
             linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
         },
@@ -51,8 +67,8 @@ const DAY2 = {
             linkSrc: 'https://animagraffs.com/loudspeaker/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'how to make a home-made speaker',
+            linkSrc: 'http://www.josepino.com/?homemade-hifi-speaker',
         },
         {
             linkText: '',

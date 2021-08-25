@@ -9,13 +9,13 @@ import SelectImage from '../../../../components/SelectImage/SelectImage'
 import Form from '../../../../components/Form/Form'
 import styles from './EditUserForm.module.css'
 
-const initialFormState = {
-    displayName: '',
-}
 
+const EditUserForm = ({user, toggleModal}) => {
 
+    const initialFormState = {
+        displayName: user.displayName,
+    }
 
-const EditUserForm = ({assignment, toggleModal}) => {
 
    const dispatch = useDispatch()
    const currentUser = useSelector(selectCurrentUser)
@@ -33,13 +33,13 @@ const EditUserForm = ({assignment, toggleModal}) => {
         <div className={styles.submitFormWrapper}>
  
             <div className={styles.attachImageDiv}>
-                <SelectImage />
+                <SelectImage defaultImage={currentUser.avatar}/>
             </div>
             
 
             <div className={styles.formWrapper}>
             
-                <p>{assignment}</p>
+                {/* <p>{assignment}</p> */}
             
                 <Form 
                     initialFormState={initialFormState}

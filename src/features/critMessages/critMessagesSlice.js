@@ -2,7 +2,14 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 const initialState = {
-    messages: [{id: '00292', workId: 0, createdBy:{id:'xqWp0vWr3ENQwBOep8O6nrlCKgo1'}, text: 'hi there thius is really nice'}],
+    messages: [
+        {
+            id: '00292', 
+            workId: 'FofKrnSk5XNHBuFWekwM', 
+            user: 'xqWp0vWr3ENQwBOep8O6nrlCKgo1', 
+            text: 'hi there thius is really nice'  
+        }
+    ],
     errors: null,
     
 }
@@ -13,11 +20,7 @@ export const critMessagesSlice = createSlice({
     initialState,
     reducers: {
 
-        startSubmitCritMessage : (state, action) => {
-            return {
-                ...state,
-            }
-        },
+        startSubmitCritMessage(){},
 
         submitCritMessageFailure  : (state, action) => {
             return {
@@ -43,14 +46,24 @@ export const selectUserCritMessages = state => user => {
     } 
 }
 
+export const selectCritMessages = state => state.critMessages.messages
+
 // export const selectCritMessagesForItemId = id => state => {
 //     return (
 //         [{id: 0, createdBy:{id:'xqWp0vWr3ENQwBOep8O6nrlCKgo1'}, text: 'hi there thius is really nice'}]
 //     )
 // }
 
-export const selectCritMessagesForItemId = id => state => state.critMessages.messages.filter(item => item.workId === id)
-
+export const selectCritMessagesForItemId = id => state => {
+    
+    console.log(id)
+    const arr = state.critMessages.messages.filter(item => {
+        console.log(item.workId, id)
+        return item.workId === id
+    })
+    
+    return arr
+}
 export const { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure } = critMessagesSlice.actions
 
 export default critMessagesSlice.reducer

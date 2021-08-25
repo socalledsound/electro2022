@@ -14,7 +14,6 @@ https://makecode.com/_c7K0vbLtMLAH
 
 https://www.dummies.com/programming/electronics/diy-projects/electronics-projects-how-to-create-a-transistor-nand-gate-circuit/
 https://blog.nona.digital/introduction-to-boolean-logic-gates-in-javascript/
-variable
 
 # make a sort of binary abacus using the circuit playground express
 

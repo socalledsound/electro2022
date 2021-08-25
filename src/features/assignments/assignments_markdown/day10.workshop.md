@@ -1,509 +1,531 @@
-# animation: literally,  bringing things to life
+### SPRITES
 
-![soundgame1](https://res.cloudinary.com/chris-kubick/image/upload/v1599606598/side-effects/127.0.0.1_5501_index.html_vkz2zh.png)
+Today we're going to keep developing our game characters. So far, we've learned to animate our characters in a pretty simple way: we take an image or an illustration and we move it around the screen. But, our characters don't really look like they're moving, they just look like images that are moving on the screen. And, our game over state isn't great either, it just sort of happens. Shouldn't there be some sort of transition? Well, today we'll look at some ways to handle those things.
 
-Today, we'll start using p5.js, one of my favorite javascript libraries.  It's a port to javascript of a project called Processing, which is probably the best-known coding environment for artists.  Although Processing uses java -- very different from javascript! -- as it's primary language, if you know Processing, learning/adapting to p5 will be a piece of cake, as it uses pretty much the same API, but written in a different language.
+To begin, I want you to do the work. I've given you a starter [sketch](https://github.com/socalledsound/SE-unit2-day13-alien/tree/01-starter). In it, you'll find a folder with a set of images and an empty sketch loaded with the p5 library. So everything is all ready to go. I want you to figure out how to animate those images, using what you already know! Don't worry, I've got more for you, but I'm not going to give it to you just yet! Get to work. I'll be here to talk things through with you and when we're done, we'll move on.
 
+![dancing alien](https://res.cloudinary.com/chris-kubick/image/upload/v1601955915/side-effects/alien6_tkoi8y.png)
 
-The really nice thing about p5.js is that any project you create in it can be run in a web browser, and every project you make is actually a web site that you can host on the web, so your work becomes much easier to share with others.
+Ok, here's my [code](https://github.com/socalledsound/SE-unit2-day13-alien/tree/02-finished).
 
+It's just one way to do it, though! There are many others.
 
-P5 is a canvas-based library, which means that it draw onto a canvas element in the browser.  The canvas element is a pixel-based environment for drawing graphics.  Which is both good and bad; it is definitely computationally expensive, but it also gives us complete control over every pixel of the screen.  
-
-But enough of this preamble, let's just write some code and pick up the pieces later.  I've made a starter skeleton with the main p5 library, along with the p5.sound library, loaded it with some sound files and written some basic code that draws a circle.  Download it from github: [here](https://github.com/socalledsound/sound-game-1-starter/tree/01-starter) and open it up in vs code.  You can load it into a browser using live server, and it should look like this:
-
-
-![basic p5 sketch with an ellipse](https://res.cloudinary.com/chris-kubick/image/upload/v1599608847/side-effects/127.0.0.1_5500_index.html_jlgybo.png)
-
-
-A basic p5 sketch starts with two javascript functions, named setup and draw.  I've always found these to be a little mysterious, because we declare the functions but don't actually run the functions.  This happens automagically behind the scenes with p5: setup is called once, when the page loads (or, you press play on the online editor), and draw loop is called continuously in a loop, at either the default frame rate or one which you specify.  
-</br>
-</br>
-I've also used the preload function in this example, to "preload" some sounds, which means that the sketch won't run until those sounds load.  We're going to come back to those later.  For now, look at the setup function, where I create a new canvas, giving it a height and width, and then set a backgroundColor for the canvas, by passing it an rgb value.
+One really HUGE concept that I want to make sure you remember from this code (which we just did together in class) is the concept of a modulo, which is often used to constrain the value of a counter in a loop, by generating a remainder each time through a loop. In my draw loop I write
 
 ```
-function setup(){
-    createCanvas(600, 600);
-    backgroundColor(230, 220, 190);
+function draw() {
+  background(220);
+  image(imgArray[counter%numImgs], x, y, 250, 250);
+  counter++
 }
 
 ```
 
-In the draw function, I use p5's stroke, fill and ellipse methods to draw an ellipse:  
+What this does is, constrain the value of counter to numImgs. Up to the value of numImgs, the remainder will be the value of counter. Above the value of numImgs, the remainder will reset to zero and continue up to the value of numImgs again. And again. Super useful! You'll see it a lot today, and hopefully get comfortable using it.
 
+One of muy favorite [videos](https://www.youtube.com/watch?v=r5Iy3v1co0A) on the topic of modulo was made by an artist named Golan Levin, for Daniel Shiffman's show on youtube. Check it out, I also linked to it on today's syllabus. I'm going to link to videos by Daniel a lot this unit! He's really the Bob Ross of p5, and his videos are amazing.
+
+Just for fun, have a look at this [code](https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH).
+
+I wrote it for this class a few years ago, it's kind of dumb but maybe it's a good example of a class in action? The class here, called FluffyMover, let's me bundle a bunch of characteristics into this thing called a fluffyMover, that has an image and sound attached to it. It also has a lifecycle, see where I give each one a somewhat random lifespan (in milliseconds) and a time born by saying
+
+```
+this.lifeSpan = random(5000,15000);
+this.bornTime = millis();
 
 ```
 
-function draw(){
-    stroke(0,220,20);
-    fill(190, 80, 230);
-    ellipse(300, 300, 90);
-
-}
-
+and then in the draw loop, every time I call fluffyMover.update(), I get the current time and check to see if the fluffy should be recharacterized as no longer alive:
 
 ```
+  if(this.currentTime - this.bornTime > this.lifeSpan){
+      this.alive = false;
 
-
-All of these functions come from the p5 API, which is available [here](https://p5js.org/reference/).  If you take a look, you'll see that p5 has a pretty great library of helper functions that make it easy to make all sorts of generative artwork.  But let's focus on the ellipse method, so we can better understand what's going on.  If we take a look at the ellipse page [reference page](https://p5js.org/reference/#/p5/ellipse) , we can see that the ellipse function takes three arguments -- an x coordinate, a y coordinate, a radius and an optional fourth argument for a vertical radius, which you can specify if you want an oval rather than a circle.
-
-</br>
-</br>
-![image of p5 ellipse method page, the part with the args](https://res.cloudinary.com/chris-kubick/image/upload/v1599608547/side-effects/p5js.org_reference__gt8tey.png)
-
-</br>
-</br>
-We can change those values and get a different looking ellipse.
-
-We can also change the outline color by change the color values we are feeding into the stroke() function, or change the fill() color.
-</br>
-</br>
-We're going to play with those values in a minute, but first I want to show you a new data type in javascript, one that is probably the most fundamental and useful data type in javascript, the javascript Object.
-</br>
-</br>
-Objects use key - value pairs to store their data.  You can think of them as collections of variables.  
-</br>
-</br>
-At the very top of your page, outside of both functions, let's write an object.  We'll call our object 'ball1' and give it an x, y, r, fillColor and strokeColor.  Since it's outside of all of the functions, in the 'global' scope, it is accessible to all of our functions.
-
-```
-const ball1 = {
-    x: 300,
-    y: 300,
-    r: 100,
-    fillColor: [0,220,20],
-    strokeColor: [0, 220, 20]
-}
-
-```
-
-</br>
-</br>
-As you can see, you can store numbers, arrays, or even other objects as keys in an object.  This is tremendously useful for organizing data.  Now, we can use those values in our sketch, in place of the numbers we currently have in there:
-
-
-```
-
-function draw(){
-
-    stroke(ball1.strokeColor);
-    fill(ball1.fillColor)
-    ellipse(ball1.x, ball1.y, ball1.r);
-
-}
-
-
-```
-
-Your code should run the same as before, but we actually took a major step towards making it more flexible.  I'll show you why in a second.
-
-</br>
-</br>
-But first, I want to take a slightly deeper dive into this thing called a function.  In a very general sense, a function is a transformation or mapping of one value into another value, or of one set of values into another set of values.  That seems pretty abstract, so I prefer to think of functions just as sets of operations that we can perform on data.  Just like you can take an apple and call a cut() function to cut it up and then a mixPieIngredients() function to add sugar and spice, and then a bake() function to cook it, we can take a set of numbers and turn them into a circle on our canvas. And, we can replace the apple with a peach, or replace our numbers with new numbers, and get a different pie, or circle, using the same functions.
-</br>
-</br>
-And -- this is maybe the most important thing to take away here -- we can compose with these functions.  So, we can create a makePie() function from our various functions, and simply send an apple into that function, and walk away with a pie.  Let's do something like that now.
-
-```
-const drawCircle = () => {
-    stroke(ball1.strokeColor);
-    fill(ball1.fillColor)
-    ellipse(ball1.x, ball1.y, ball1.r);
-}
-
-
-```
-
-Now, we can call this function, in our main draw loop, in place of the other functions, like this:
-
-```
-
-function draw(){
-
-    drawCircle();
-}
-
-
-```
-
-In my function declaration, I used the arrow syntax that I introduced earlier in the course, remember?  It's basically the same as saying 
-
-```
-function drawCircle(){
-    stroke(ball1.strokeColor);
-    fill(ball1.fillColor)
-    ellipse(ball1.x, ball1.y, ball1.r);
-}
-
-
-```
-
-But I like it better, because I think that the arrow speaks to what's happening here: an input value is being processed.  I think it's also a good idea to get used to using this syntax because as you get more advanced you'll discover that arrow functions are absolutely a huge improvement when it comes to dealing with scope, or, where the function is defined.  But wait....I said 'input value' but there isn't one in this function.  
-</br>
-</br>
-The input value, or argument, is optional and goes in the parentheses. We don't currently have one, but it would be much better to make this function re-usable, by adding some arguments, like this: 
-
-```
-
-const drawCircle = (x,y,r,strokeColor, fillColor) => {
-        stroke(strokeColor);
-        fill(fillColor)
-        ellipse(x, y, r);
-}
-
-
-
-```
-
-Now, we can re-use this function to draw circles of varying sizes and colors, by passing the values that the function wants whne we call it:
-
-
-```
-
-function draw(){
-
-    drawCircle(ball1.x, ball1.y, ball1.r, ball1.strokeColor, ball1.fillColor);
-}
-
-
-```
-
-BUT before you take the time to write that out, we can make our lives a heck of a lot easier by just passing in our entire ball object, and 'destructuring' the values we want from the ball, like this:
-
-
-```
-
-function draw(){
-
-    drawCircle(ball1);
-}
-
-const drawCircle = ({x, y, r, strokeColor, fillColor}) => {
-        stroke(strokeColor);
-        fill(fillColor)
-        ellipse(x, y, r);
-}
-
-
-```
-
-<p>See how I put that whole object {} in the where we put the arguments, and then put the values we want to grab from that object between those braces?  This really cleans up our code!</p>
-
-<p>If you want to check your code against my code, we're now at the 'draw-function' branch: [link](https://github.com/socalledsound/sound-game-1-starter/blob/with-draw-function/index.js)<p>
-<p>Let's make a few more balls, and add a few more key value pairs as well while we're at it.  First, delete our original ball1, and then copy these balls into your code:</p>
-
-
-```
-const ball1 = {
-    x: 300,
-    y: 300,
-    r: 100,
-    speed: 1,
-    fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    outlineWidth: 6,
-    rightSound: sounds[0],
-    leftSound: sounds[1],
-    soundLength: 2000,
-} 
-
-const ball2 = {
-    x: 300,
-    y: 100,
-    r: 50,
-    speed: 2,
-    fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    outlineWidth: 6,
-    rightSound: sounds[2],
-    leftSound: sounds[3],
-    soundLength: 1000,
-} 
-
-const ball3 = {
-    x: 300,
-    y: 200,
-    r: 80,
-    speed: 2,
-    fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    outlineWidth: 6,
-    rightSound: sounds[4],
-    leftSound: sounds[5],
-    soundLength: 500,
-} 
-
-```
-
-Keep drawCircle the same for now, but update your draw loop to call drawCircle with each of the three balls.
-
-```
-
-function draw(){
-
-    drawCircle(ball1);
-    drawCircle(ball2);
-    drawCircle(ball3);
-}
-
-
-
-```
-
-
-Presto!  Three balls ([repo](https://github.com/socalledsound/sound-game-1-starter/blob/multiple-balls/index.js))!  But wait, this gets better!  Let's put these three balls into an array, so we can use the forEach() method on the Array object, to make this code a little less repetitive.  First, declare the array:
-
-
-```
-const balls = [ball1, ball2, ball3];
-
-
-```
-
-Then, in the draw loop:
-
-
-```
-
-function draw(){
-
-    balls.forEach( (ball) => {
-        drawCircle(ball)
-    })
-}
-
-
-
-```
-
-Now, before we continue, let's look a little more deeply at the forEach() method, now that we've talked a bit about functions.  forEach() is a method of the Array object that's built into javascript.  In this way, it's a little like the ellipse() method of the p5 library.  It's a function that takes in values and changes them.  But what it takes in is....A FUNCTION.  That function can be written as an arrow function or an old fashioned function.  I've written it as an arrow function here.  It takes each element of the array as it's input.  We can call this element whatever we want to -- but the value of this thing, in our function, will be each item in our array.  
-</br>
-</br>
-We can test this out, by using console.log(), like this:
-
-```
-function draw(){
-
-    balls.forEach( (ball) => {
-        console.log(ball);
-        drawCircle(ball)
-    })
-}
-
-```
-
-
-
-
-
-Inside of our function, we can perform any number of tranformations upon each object in our array.  Let's add another function in there, to move each of our balls at the speed that we have already coded into each ball.
-
-
-```
-
-const move = (ball) => {
-    ball.x += ball.speed;
-}
-
-
-```
-
-
-And then in our draw loop:
-
-
-```
-function draw(){
-
-    balls.forEach( (ball) => {
-        console.log(ball);
-        move(ball);
-        drawCircle(ball)
-    })
-}
-
-```
-
-And now we are updating each of the values of x for each of the balls.  This makes each of the balls appear to move, at the speed that we have already declared for each ball!  Each time the draw loop runs, it updates the value of x and then redraws the ball.  But, it'll look better if we also redraw the background each time, so that we only see one ball at a time:
-
-```
-function draw(){
-    background(backgroundColor);
-    balls.forEach( (ball) => {
-        console.log(ball);
-        ball.x = updateX(ball);
-        drawCircle(ball)
-    })
-}
-
-```
-
-</br>
-
-So here we are: [link](https://github.com/socalledsound/sound-game-1-starter/tree/04-moving-array).  Now...we have a bit of a problem, which is that the balls disappear, rather quickly.  It would be better if we keep them on the screen.  We'll need a function to check the position of the balls and reverse them if they are getting off the screen.  But, before we write this, let's draw some lines so we know where the ball should reverse, one line at say 50px from the left edge and the other at 50px from the right edge.  I'm going to let you take a stab at doing this on your own, while I grab a cup of coffee.  I'll give you one clue, which is the reference for the line() method of p5, which as you can [see](https://p5js.org/reference/#/p5/line), takes an two x value and two y values.  You'll probably want to make objects for each of the lines, with those values, and maybe also have a constant for a line color that you can use for both of the lines?  Then, make a function that draws the lines.  You can do it!  See you in a bit.  My solution is below, after the picture -- but seriously, don't peek, do it yourself!
-
-</br>
-
-![image of three balls with lines](https://res.cloudinary.com/chris-kubick/image/upload/v1600994613/side-effects/127.0.0.1_5500_index.html_1_hjcalc.png)
-
-
-</br>
-
-All right so here's what I did.  [Solution](https://github.com/socalledsound/sound-game-1-starter/tree/05-with-lines)  First, I made some objects to store the data for our lines:
-
-```
-const leftEdge = {
-    x1: 230,
-    y1: 0,
-    x2: 230,
-    y2: 600,
-    color: lineColor,
-    width: lineWidth,
-
-}
-
-const rightEdge = {
-    x1: 370,
-    y1: 0,
-    x2: 370,
-    y2: 600,
-    color: lineColor,
-    width: lineWidth,
-}
-
-
-```
-
-Then, I made a function called drawLines, to draw the lines.
-
-And finally, I fed the data into the function.  I could have drawn these in the setup function, and only drawn them once; but I plan on animating them in a minute, so I'm going to go ahead an put it in the draw function:
-
-```
-
-
-function drawLine({x1, y1, x2, y2, color, width}){
-    stroke(color);
-    strokeWeight(width);
-    line(x1, y1, x2, y2);
-}
-
-
-function draw(){
-    
-    background(backgroundColor);
-
-    balls.forEach((ball) => {
-        moveBall(ball);
-        displayBall(ball);
-    })
-    drawLine(leftEdge);
-    drawLine(rightEdge);
-}
-
-
-```
-I also changed the names of our ball functions to make them more specific.
-
-</br>
-You can see the current code [here](https://github.com/socalledsound/sound-game-1-starter/tree/05-with-lines).
-</br>
-
-
-Now, that's only the first part, right?  The next thing we have to do is turn the balls around when we hit the lines.
-</br>
-
-
-Currently, we're moving the balls left by adding the speed value to the x coordinate of the ball.  So what we need to do is, reverse the speed, by multiplying it times -1 when we hit a line.  Since we're no longer just moving the ball, why don't we make our function a little more general, and call it 'updateball'?  In there, we'll use a conditional statement to check the current value of x, and before we move the ball, check and see if we need to reverse direction.  So, something like this:
-
-```
-function updateBall(ball){
-    console.log(ball.x);
-    if(ball.x + ball.size/2 > rightEdge.x1 ){
-        ball.speed *= -1;
-        activateLine(rightEdge);
-    } else if(ball.x - ball.size/2 < leftEdge.x1 ){
-        ball.speed *= -1;
-        activateLine(leftEdge);
     }
-    ball.x+= ball.speed;
+
+
+```
+
+And then I stop showing it, stop playing the sound and actually splice the fluffy from the array of fluffies, if it's no longer alive.
+
+Another little chunk of code I want you to take a look at is [this](https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7) simple sound and image animation.
+
+The main tools I'm using here are setTimeout and setInterval, two timing functions that are built into the browser. SetTimeout does something after a specified period. We pass it a function and a time value in milliseconds, like this:
+
+```
+setTimeout( aFunction, 1000);
+
+```
+
+SetInterval is similar, but it will do something at a set interval. Both are pretty useful! I put a video describing how to use each one on today's syllabus if you want more on those.
+
+In this sketch, you can also see how easy it is to make music with p5 with the help of these timing functions! All of those sounds are generated by oscillators in p5.
+
+But, anyway...let's get down to sprite sheets.
+
+I've borrowed this code from a video that Daniel Shiffman made. You can see the video [here](https://thecodingtrain.com/CodingChallenges/111-animated-sprite.html), and download his code from there if you want to. But you might find my code to be just a little easier to understand at first, I've added a few comments and simplified it just a little, he makes an array of horse animations and I just make one. You can get it from our course repo [here](https://github.com/socalledsound/SE-unit2-day13-spritesheet/tree/master).
+
+I'm going to take his code as my starter code and then load in my own sprite.
+
+You can see that his code uses a class called Sprite, which is in a seperate file. In that file, we use the modulo to keep an index value in range:
+
+```
+  //notice the use of modulo to keeop the value of index in range of the number of images, ie this.len.....
+  show() {
+    let index = floor(this.index) % this.len;
+    image(this.animation[index], this.x, this.y);
+  }
+
+```
+
+and we increment this index along with an x value, making sure to keep x on the screen by reseting it to zero if it gets past the edge of the page
+
+```
+  animate() {
+    //increment the index and the position of x
+    this.index += this.speed;
+    this.x += this.speed * 15;
+    //if this.x exceeds the screen, send it back to the beginning of the screen.....
+    if (this.x > width) {
+      this.x = -this.w;
+    }
+  }
+
+```
+
+Then in our main code, we call these two functions inside the draw loop:
+
+```
+  horse.show();
+  horse.animate();
+
+```
+
+If you want to, you can uncomment Daniel's code where he makes an array of these sprites, I just took that out to simplify things a bit for now.
+
+The thing I really want to focus on is, how we load our spritesheet, which is kind of annoying. He doesn't talk about it much in his video, but to load your own in, you'll have to modify the two files that we load in in preload, the actual spritesheet, which is a .png file, and the spritedata, which is a .json file.
+
+.json is the basic data storage medium of the internet. JSON is a little like any other javascript object -- it stands for Javascript Standard Object Notation, after all -- but it's just a little more persnickety. You have to be very careful with your commas. Let's take a look at the horse one now, and then I'll show you one that I made for my own spritesheet.
+
+JSON, like all javascript objects, works on this idea of key value pairs. But as you can see below, we need to actually put our keys in quotes:
+
+```
+{
+  "frames": [{
+      "name": "sprite-00",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      }
+    },
+    {
+      "name": "sprite-01",
+      "position": {
+        "x": 192,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      }
+    }
+    ]
+}
+
+
+```
+
+That code is just the first two frames, putting them all wouyld have been too long. You can see we have an array called 'frames', which holds, in this case, two objects. Eacgh one is a frame of the animation. Each frame is an object with two keys: a name, and 'position' object, which stores four variables, one each for x, y, w, and h.
+
+In our code, we bring this whole data structure in and then we use a for loop to get a chunk of the image for each 'position', using p5's image.get() function.
+
+```
+  for (let i = 0; i < frames.length; i++) {
+    let pos = frames[i].position;
+    let img = spritesheet.get(pos.x, pos.y, pos.w, pos.h);
+    animation.push(img);
+  }
+
+```
+
+Make sense?
+
+So, in order to use our own spritesheet, we need to change the JSON file to match our own spritesheet, and also load that spritesheet in.
+
+I made a simple one, using piskel, I hope you did too. I'm going to take mine and load it in now. First, the easy part:
+
+```
+ function preload() {
+  spritedata = loadJSON('abstract/abstract.json');
+  spritesheet = loadImage('abstract/abstract.png');
+}
+```
+
+I copied the horse.json into a new file called abstract.json and put it in a folder called abstract, with my spritesheet.
+
+You can try just loading that in to your project, without changing the JSON; mine looks ALL WRONG, because, my image size is much smaller.
+
+So the first thing I have to do is do some calculations. My overall image is a measly 128 x 128. and it's broken up into a 4x4 grid, but the last row is empty, I only have 12 images.
+
+So each image should be about 32 x 32.
+
+And my first JSON frame should look like this :
+
+```
+      "name": "sprite-00",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+
+```
+
+Now for each frame I just have to increment the x and y values, across and then down the screen. Here's my finished JSON file:
+
+```
+{
+  "frames": [
+    {
+      "name": "sprite-00",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-01",
+      "position": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-02",
+      "position": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-03",
+      "position": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-04",
+      "position": {
+        "x": 0,
+        "y": 32,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-05",
+      "position": {
+        "x": 32,
+        "y": 32,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-06",
+      "position": {
+        "x": 64,
+        "y": 32,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-07",
+      "position": {
+        "x": 96,
+        "y": 32,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-08",
+      "position": {
+        "x": 0,
+        "y": 64,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-09",
+      "position": {
+        "x": 32,
+        "y": 64,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-10",
+      "position": {
+        "x": 64,
+        "y": 64,
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "name": "sprite-11",
+      "position": {
+        "x": 96,
+        "y": 64,
+        "w": 32,
+        "h": 32
+      }
+    }
+  ]
+}
+```
+
+Maybe something similar will work for you, if you used piskel.
+
+I'm going to make my output image bigger on my canvas, by adding a size property to my Sprite:
+
+```
+class Sprite {
+  constructor(animation, x, y, size, speed) {
+    this.x = x;
+    this.y = y;
+    this.animation = animation;
+    this.w = this.animation[0].width;
+    this.len = this.animation.length;
+    this.speed = speed;
+    this.index = 0;
+    this.size = size;
+  }
+
+
+  //notice the use of modulo to keeop the value of index in range of the number of images, ie this.len.....
+  show() {
+    let index = floor(this.index) % this.len;
+    image(this.animation[index], this.x, this.y, this.size, this.size);
+  }
+
+  animate() {
+    //increment the index and the position of x
+    this.index += this.speed;
+
+  }
 }
 
 ```
 
-We take in a ball and first, we check if the right edge of the ball (ball.x + ball.size/2) has made it to the x position of the right line.  If it has, we reverse speed -- so the ball turns around.  We do the same thing on the other side, and then we add the new (or old, depending on whether the condition has been satisfied) speed to the old location of the ball.  If we add a positive value to x it goes right...if negative it goes left.  You can see the code [here](https://github.com/socalledsound/sound-game-1-starter/tree/06-reversing-direction).
-</br>
-
-</br>
-
-
-And you can see that I've also, gratuitously, added an activateLine function, which is a little animation that makes the line wider briefly and then shrinks it back down to size after an ammount of time specified in our setTimeout function. 
+and then setting it kind of big, when I make my sprite:
 
 ```
-function activateLine(line){
+abstract = new Sprite(animation, 100, 100, 320, 0.25);
 
-    line.color = activeLineColor;
-    line.width = activelineWidth;
+```
 
-    setTimeout(() => resetLines(line), 500);
+Maybe I should bring back this idea of an array of these things:
+
+```
+
+function setup() {
+  createCanvas(640, 480);
+
+  //this is the array from our JSON file
+  let frames = spritedata.frames;
+
+//now we loop over the array data and load each image into an array called animation
+  for (let i = 0; i < frames.length; i++) {
+    let pos = frames[i].position;
+    let img = spritesheet.get(pos.x, pos.y, pos.w, pos.h);
+    animation.push(img);
+  }
+
+  //make an instance of the Sprite class
+  // abstract = new Sprite(animation, 100, 100, 320, 0.25);
+
+  for (let i = 0; i < 5; i++) {
+    abstractions[i] = new Sprite(animation, i * 100, 100, 160, random(0.1, 0.4));
+  }
 }
 
+function draw() {
+  background(0);
 
-function resetLines(line){
-    line.color = lineColor;
-    line.width = lineWidth;
-}
-
-
-```
-
-All right, all that's left is to add the sounds! We can do that by calling
-
-```
-ball.rightSound.play();
-
-```
-
-or 
+  //use the sprite class to show and animate the spritesheet
+  // abstract.show();
+  // abstract.animate();
 
 
-```
-ball.leftSound.play();
+  for (let abstraction of abstractions) {
+    abstraction.show();
+    abstraction.animate();
+  }
 
-```
-
-
-Can you figure out where to put them?  I'll be here to answer questions, or you can cheat and look at the finished code [here](https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed)
-
-</br>
-</br>
-
-The other thing I'd like you to do is, make this code at least slightly your own by changing the look of the balls or the lines.  Add an 'activateBall' function if you want to, which triggers when the ball hits a line.  Change the sounds and otherwise make it your own!  We've built a weird little sound looper!  Could it be a drum machine?  Maybe try making beats with it, loading in some samples from a drum kit.Then post it to the gallery and call it a day.  Next class we're going to go farther with these ideas, which are going to serve us very well when we start making our 'games'!
-
-</br>
-</br>
-ps! I had to set the ball sounds in the preload function so they were loaded when I set them.  There is no doubt a cleaner way to do this but I'm in a bit of a hurry and I'll have to come back to it.  If you have a better idea here, let us know!
-
-```
-
-
-function preload(){
-
-    sounds.forEach((sound, i) => {
-        sounds[i] = loadSound(`sounds/${i}.mp3`)
-    })
-
-    console.log(sounds);
-
-    ball1.rightSound = sounds[0];
-    ball1.leftSound = sounds[1];
-    ball2.rightSound = sounds[2];
-    ball2.leftSound = sounds[3];
-    ball3.rightSound = sounds[4];
-    ball3.leftSound = sounds[5];
+  // image(animation[frameCount % animation.length], 0, 0);
 }
 
 ```
 
+Or maybe even use a two dimensional array to make a grid of them! Like [here](https://github.com/socalledsound/SE-unit2-day13-spritesheet/tree/mySprite2DArray).
+
+And that's that!
+
+Ok now, I have a confession to make. There's an easier way to do this. And that's to use a library called p5.play, which you can download [here](https://molleindustria.github.io/p5.play/).
+
+I wanted use to work through this sprite sheet thing without it because I think it shows some important and very useful things in coding and in particular coding with javascript. But, it's definitely (usually) easier to do this stuff using p5.play. I'll show you how now.
+
+Here's a p5.play [starter](https://github.com/socalledsound/SE-unit2-day13-p5play), with the p5.play library and some assets.
+
+So first off, let's use it to create a looping animation from a set of images, just like we did above, but this time with p5.play. We use a function called loadAnimation, like this, feeding in the start and end of a set of sequentially numbered images.
+
+```
+alien = loadAnimation('img/alien0.png', 'img/alien21.png');
+
+```
+
+and then in our draw loop all we have to do is call a function called animation() and give your animation x and y coordinates:
+
+```
+function draw() {
+  background(255, 255, 255);
+    animation(alien, 400, 100);
+}
+
+```
+
+You can see that code [here](https://github.com/socalledsound/SE-unit2-day13-p5play/tree/01-animation1).
+
+Easy, huh? P5. play is nice. It makes a lot of things easier.
+
+Similarly, loading a sprite sheet using p5.play is super easy:
+
+```
+  mySpritesheet = loadSpriteSheet('abstract/abstract.png', 32, 32, 12);
+  myAnimation = loadAnimation(mySpritesheet);
+
+```
+
+and then, just the same as before, play the animation in the draw loop:
+
+```
+  animation(myAnimation, 100, 250);
+
+```
+
+And, you can see that code [here](https://github.com/socalledsound/SE-unit2-day13-p5play/tree/02-spritesheet).
+
+So, that's a lot easier, right? But, with some tradeoffs, in terms of control. But there are some useful methods you can call to alter your animation, though, a full list is at the p5.play [reference](https://molleindustria.github.io/p5.play/docs/index.html).
+
+You can see some sketches I made using p5.play in the links on today's syllabus page.
+
+p5.play is maintained by one guy mostly, I think, so it's a little bit more fringe than the main p5 library, and occasionally I've run into some bugs. But I'll keep using it alongside regular old p5 for the rest of this unit, because it does help out with some things! Experiment with it if you think it can solve some problems for you.
+
+So, what I want you to do for today's assignment is, use some or all of these tricks I've shown you today -- spritesheets, sequential animations, setTimeout and setInterval....to make an animation with your character that you like and upload it as a canvas-based website (p5 style) to the course gallery.
+
+And, that's possibly enough for today, but I also want to show you one more thing! Which I really like, and which may or may not be useful to you right now. That thing is EASING. It can really improve your animations, and getting a sense of how it works is, I think, pretty interesting. In a way, it's similar to what we did with our pendulum, to reverse it.
+
+This first bit of code is an adaptation of some code out of Daniel Shiffman's amazing (free) book, [the nature of code](https://natureofcode.com/book/), which is really an amazing book, that presents a lot of these ideas about physics and animation in a way that everyone can understand.
+
+You can see my adaptation and play wit the values [here](https://editor.p5js.org/socalledsound/sketches/N-Ll8LRmO).
+
+Let's start by making a class called CenterMover.
+
+```
+
+class CenterMover{
+  constructor(){
+    this.x = random(width);
+    this.y = random(height);
+    //we'll start with a velocity of zero and then create a velocity in update
+    this.velocityX = 0;
+    this.velocityY = 0;
+
+    //this value scales the velocity down as it gets closer
+    this.easing = 10;
+  }
+
+  update() {
+
+    //first lets measure the distance between the ball and the center
+    let centerX = width/2;
+    let centerY = height/2;
+    let distanceX = centerX - this.x;
+    let distanceY = centerY - this.y;
+    //now lets multiple that value by our scalar, that is our velocity
+    this.velocityX = distanceX/this.easing;
+    this.velocityY = distanceY/this.easing;
+
+    //as always add velocity to position to get a new position
+    this.x += this.velocityX;
+    this.y += this.velocityY;
+
+  }
+
+  display() {
+    stroke(0);
+    strokeWeight(2);
+    fill(127);
+    ellipse(this.x, this.y, 48, 48);
+  }
+}
+
+```
+
+The key thing to notice is that, just like with our pendulum, we are updating the velocity of the object continuously. And, we are calculating it by dividing the distance from the center by a constant amount of easing. So....as the distance gets smaller, the velocity slows down. Nice, right?
+
+Now in our main sketch we can do something like
+
+```
+//this sketch changes shiffman's mover class so that movers move towards the center.
+//how would you rewrite it so they move towards one of the movers -- or each mover move towards the next mover????
+//how would you rewrite this using array.forEach()?
+//an empty array to hold our movers
+let movers = [];
+//here we can change the number of movers
+let numMovers = 10;
+function setup() {
+  createCanvas(640, 360);
+
+  //a for loop lets us create the number of movers specified in numMovers
+  for(let i = 0; i < numMovers; i++){
+    //for each element in the array lets make a "center mover", a mover that moves towards the center
+    //notice that I changed the class 'Mover' to be a 'CenterMover'.
+    //I also changed the title of the file and the corresponding link on the index.html page.
+    movers[i] = new CenterMover();
+  }
+}
+
+function draw() {
+  background(51);
+  //don't forget to update and display all of the movers in the array of movers.
+  for(let i = 0; i < numMovers; i++){
+  movers[i].update();
+  movers[i].display();
+  }
+}
 
 
+```
 
+What's really nice, and natural about this movement is, it doesn't just stop, it decelerates.
+
+You can play with some other, slightly more sophisticated easing functions in this [sketch](https://editor.p5js.org/socalledsound/sketches/mAb43xKpi) if you want to. It's very similar to the other sketch, but you can substitute various easing functions to modify the easing value.
+
+Now, I know this has been a lot, but I want to leave you with one more sligtly more complicated [sketch](https://editor.p5js.org/socalledsound/sketches/ecrE28PMw). Look it over, I hope that the comments give you a sense of what's going on, and I'm happy to talk it over with you if you're interested! As you can see, we can use these easing functions on all kinds of values in our sketches....including color values. Which is kind of what a gradient is. Also, we can loop over location values, similar to the way that we looped over images earlier today! Using this idea, we can map out a set of locations on a screen and have an object move along the list of those locations, which is what I do in this sketch. See you next time.

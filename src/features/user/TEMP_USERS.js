@@ -4,23 +4,16 @@ export const tempUser1 = {
     displayName: 'ruby',
     email: 'socalledsound@gmail.com',
     createdAt: Date.now(),
-    numFeedbackMessages: 0,
-    numCritMessages: 0,
     avatar: 'https://firebasestorage.googleapis.com/v0/b/side-effects-7f7e8.appspot.com/o/images%2F7fe6ba0a-e2c1-4636-9178-fc2f736006ed.jpg?alt=media&token=8f177fe1-1628-4338-a081-cfd5686bc36d',
-    completedAssignments : [],
-
 }
 
 
 export const tempUser2 = {
-    id: 1,
-    displayName: 'lauren',
-    email: 'socalledsound@gmail.com',
-    created: Date.now(),
-    numFeedbackMessages: 0,
-    numCritMessages: 0,
+    id: 'xqWp0vWr3ENQwBOep8O6nrlCKgo1',
+    displayName: 'chris k',
+    email: 'pollyserial@yahoo.com',
+    createdAt: Date.now(),
     avatar: 'https://firebasestorage.googleapis.com/v0/b/side-effects-7f7e8.appspot.com/o/images%2Fdb58ae3a-3866-4fff-9f31-4cf021dd7f12.jpg?alt=media&token=0bc67276-2512-4439-9253-60f3da370a1c',
-    completedAssignments : [],
 
 }
 

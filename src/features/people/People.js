@@ -1,11 +1,23 @@
-import React, { useState, useMemo } from 'react'
-import { useSelector } from 'react-redux';
+import React, { useState, useEffect, useMemo } from 'react'
+import { useSelector, useDispatch } from 'react-redux';
 import { randomizeArray } from '../../utils/utils'
-import { selectAllPeople } from './peopleSlice';
+import { selectAllPeople, startFetchUsers } from './peopleSlice';
 import styles from './People.module.css'
 import PersonAvatar from './PersonAvatar';
 import PersonDetail from './PersonDetail'
+// import { updateUserSuccess } from '../user/userSlice';
 const People = () => {
+  const dispatch = useDispatch()
+
+
+  useEffect(() => {
+    dispatch(startFetchUsers())
+}, [dispatch])
+
+  // useEffect(() => {
+  //   const usersFromRedux = useSelector(selectAllPeople())
+  //   updateUsers(usersFromRedux)
+  // }, [useSelector, updateUsers])
 
     const people = useSelector(selectAllPeople)
     const [ selectedPerson, selectPerson ]= useState(null)

@@ -1,5 +1,10 @@
 # all about circuits, speakers and LEDs
 
+start with jenny holzer
+
+leo villareal
+jim campbell
+
 -- jim campbell + some speaker artists
 -- projects with LED's
 -- light emitting diode

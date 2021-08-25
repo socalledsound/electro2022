@@ -23,11 +23,11 @@ const RESOURCES = {
             },
             {
                 linkText: 'course discord channel',
-                linkSrc: '',
+                linkSrc: 'https://discord.com/channels/786030089569304637/879893192307245107',
             },
             {
                 linkText: 'my youtube channel',
-                linkSrc: '',
+                linkSrc: 'https://www.youtube.com/channel/UCT2Izq0S6wwHmVFPqedJcUg',
             },
 
             {
@@ -36,18 +36,46 @@ const RESOURCES = {
             },
         ]
     },
+    {
+        title: 'essentials',
+        links: [
+            {
+                linkText: 'github.com',
+                linkSrc: 'https://github.com/',
+            },
+
+            {
+                linkText: 'make zine',
+                linkSrc: 'https://makezine.com/',
+            },
+            {
+                linkText: 'adafruit website',
+                linkSrc: 'https://www.adafruit.com/'
+            },
+            {
+                linkText: 'make code editor',
+                linkSrc: 'https://makecode.adafruit.com/',
+            },
+            {
+                linkText: 'download vs code',
+                linkSrc: 'https://code.visualstudio.com/download',
+            },
+            {
+                linkText: 'online p5 editor',
+                linkSrc: 'https://editor.p5js.org/',
+            },
+
+        ]
+    },
     {   
-        title: 'CPE',
+        title: 'Circuit Playground',
         description: "",
         links: [
             {
                 linkText: 'intro to circuit playground express',
                 linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express',
             },
-            {
-                linkText: 'make code editor',
-                linkSrc: 'https://makecode.adafruit.com/',
-            },
+
             {
                 linkText: '',
                 linkSrc: '',
@@ -170,10 +198,7 @@ const RESOURCES = {
                 linkText: 'code pen',
                 linkSrc: 'https://codepen.io/',
             },
-            {
-                linkText: 'p5 web editor',
-                linkSrc: 'https://editor.p5js.org/',
-            },
+
             {
                 linkText: 'cloudinary',
                 linkSrc: 'https://cloudinary.com/',
@@ -190,6 +215,11 @@ const RESOURCES = {
                 linkText: 'twisted wave online editor',
                 linkSrc: 'https://twistedwave.com/online',
             },
+
+            {
+                linkText: 'hex color picker',
+                linkSrc: 'https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.69i59.2266j0j7&sourceid=chrome&ie=UTF-8',
+            }, 
             {
                 linkText: '',
                 linkSrc: '',
@@ -242,13 +272,10 @@ const RESOURCES = {
     ]
     },
     {   
-        title: 'essentials',
+        title: 'answers',
         description: "",
         links: [
-            {
-                linkText: 'github.com',
-                linkSrc: 'https://github.com/',
-            },
+
             {
                 linkText: 'stack overflow',
                 linkSrc: 'https://stackoverflow.com/',
@@ -262,10 +289,6 @@ const RESOURCES = {
                 linkSrc: 'https://developer.mozilla.org/en-US/',
             },
 
-            {
-                linkText: 'hex color picker',
-                linkSrc: 'https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.69i59.2266j0j7&sourceid=chrome&ie=UTF-8',
-            },
 
             {
                 linkText: '',

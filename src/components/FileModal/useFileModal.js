@@ -3,15 +3,15 @@ import { useDispatch } from 'react-redux'
 import firebase from '../../firebase/firebase.utils' 
 import { setPercentUploadedImg, setSelectedImage } from '../../features/submitWork/submitWorkSlice'
 import { isAuthorized, getMetaData, getImageFilePath } from './uploadImageUtils'
-import tempImage from '../../assets/hvbrd.jpg'
 import FileModal from './FileModal'
 import ImagePicker from './ImagePicker'
 
-export default function useFileModal(){
+export default function useFileModal(defaultImage){
+
     const dispatch = useDispatch()
     let [ fileModal, toggleFileModal ] = useState(false)
     let [ image, setImage ] = useState(false)
-    let [ imageURL, setImageURL] = useState(tempImage)
+    let [ imageURL, setImageURL] = useState(defaultImage)
     let [file, setFile ] = useState(null)
     
     const setThumbnail = (file) => {
@@ -61,10 +61,11 @@ export default function useFileModal(){
         },
         () => {
             uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => {
-               
+               console.log('does this even run any more?')
                //need to set the imageURL here
             //    this.setState({ imageURL: downloadURL, imageAttached: true, form: true})
                 setImageURL(downloadURL)
+                console.log(' i just set the image url')
                 dispatch(setSelectedImage(downloadURL))
                 dispatch(setPercentUploadedImg(0))
             })

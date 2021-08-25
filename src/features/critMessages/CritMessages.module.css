@@ -3,14 +3,58 @@
   flex-direction: column;
 }
 
+.critMessageWrapper {
+  border: 2px solid green;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  margin-top: 0.6rem;
+}
 .critMessageContainer {
   display: flex;
+  flex-direction: column;
+  background-color: rgba(227, 218, 218, 0.573);
+  border-radius: 0.6rem;
+  padding: 0.6rem;
 }
+/* .critMessageContainer:hover {
+  background-color: rgba(227, 218, 218, 0.902);
+} */
 
 .critMessageTitleContainer {
   display: flex;
+  height: 2.5rem;
+  padding: 0.6rem;
+  padding-bottom: 0.2rem;
+  align-items: center;
 }
 
 .critMessageBodyContainer {
   margin-left: 0.6rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.8rem;
+}
+
+.submitCritMessageWrapper {
+  border: 2px solid green;
+  padding: 0.6rem;
+  padding-bottom: 0.8rem;
+  border-radius: 0.6rem;
+}
+
+.submitMessageButton {
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(29, 183, 197);
+  border: 2px solid rgba(61, 244, 238, 0);
+  color: white;
+}
+.submitMessageButton:hover {
+  background-color: rgb(19, 88, 198);
+  border: 2px solid rgb(61, 244, 238);
 }

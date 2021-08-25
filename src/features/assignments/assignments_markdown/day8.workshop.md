@@ -1,390 +1,480 @@
-# let's review what we know!
+# animation: literally, bringing things to life
 
+![soundgame1](https://res.cloudinary.com/chris-kubick/image/upload/v1599606598/side-effects/127.0.0.1_5501_index.html_vkz2zh.png)
 
-<p>Today I want to meet with anyone who needs help with their project.  I'll do these meetings in the main room, so you can listen in in case you may also be helped by the answer.  You can sign up for a slot on the sign up page @ [www.socalledsidefx.com/meetings/project1](/www.socalledsidefx.com/meetings/project1)
+Today, we'll start using p5.js, one of my favorite javascript libraries. It's a port to javascript of a project called Processing, which is probably the best-known coding environment for artists. Although Processing uses java -- very different from javascript! -- as it's primary language, if you know Processing, learning/adapting to p5 will be a piece of cake, as it uses pretty much the same API, but written in a different language.
 
-<p>I also want you to take a little time here to consolidate what we've learned, and perhaps learn a bit more.  Below is some code that should make sense to you!  If there's anything in there that doesn't make sense, read on, I'll explain below</p>
+The really nice thing about p5.js is that any project you create in it can be run in a web browser, and every project you make is actually a web site that you can host on the web, so your work becomes much easier to share with others.
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="more.js"></script>
-    <style>
-        .my-container {
-            display: flex; 
-            flex-wrap: wrap;
-            background-color: #FFF;      
-        }
-        h1 { 
-            color: red;
-        }
-        .item {
-            background-color: rgba(120,90,230,0.7);
-            margin-left: 50px;
-        }
-        .item:hover {
-            background-color: #aaa;
-        }
-        p {
-            color: #a5a80c;
-        }
-    </style>
-    <title>my page</title>
-</head>
-<body>
-    <div class="my-container">
-        <div class="item">
-            <h1>item 1</h1>
-            <img src="img/image1.jpg" />
-            <p>this is a paragraph description about item 1</p>
-        </div>
-        <div class="item">
-            <h1>item 2</h1>
-            <img src="img/image2.jpg" />
-            <p>this is a paragraph description about item 2</p>
-        </div>
-    </div>
-    <script>
-        //now let's make a bunch more divs like that using javascript!
-        //first let's get the container as a global constant:
-        const container = document.querySelector('.my-container');
-        //a constant to specify length of array
-        const length = 10;
-        //the function we call in Array.from, we pass in the index number so we can specify which image and some of the text
-        const makeDiv = (i) => {
-            //create our html elements
-            const div = document.createElement('div');
-            div.className = 'item';
-            const headerTag = document.createElement('h1');
-            //here we use the javascript template literal syntax to fill in the i value we are taking in above, which 
-            //will iterate from 0 to the length of the string
-            headerTag.innerHTML = `item ${i}`
-            const image = document.createElement('img');
-            //again, a template literal
-            image.src = `img/image${i}.jpg`;
-            const paragraph = document.createElement('p');
-            paragraph.innerHTML= `this is a paragraph description about item ${i}`;
-            //now we use .appendChild to add them inside the div
-           div.appendChild(headerTag);
-           div.appendChild(image);
-           div.appendChild(paragraph);
-           //we can't forget to return the div we just made!
-           return div
-        }
-        //now we pass the function into Array.from and we pass the index argument into our function!  
-        const myArray = Array.from({length: 10}, (e, i) => makeDiv(i));  
-        //let's add a useless event listener to each element just for fun:
-        myArray.forEach(element => {
-            element.addEventListener('click', ()=>console.log('hi'));
-        })
-        //and finally, use Array.forEach() to iterate over our array and add each element to our container!
-        myArray.forEach(element => {
-            container.appendChild(element);
-        })
-        myArray.forEach(element)
-    </script>
-</body>
-</html>
+P5 is a canvas-based library, which means that it draw onto a canvas element in the browser. The canvas element is a pixel-based environment for drawing graphics. Which is both good and bad; it is definitely computationally expensive, but it also gives us complete control over every pixel of the screen.
+
+But enough of this preamble, let's just write some code and pick up the pieces later. I've made a starter skeleton with the main p5 library, along with the p5.sound library, loaded it with some sound files and written some basic code that draws a circle. Download it from github: [here](https://github.com/socalledsound/sound-game-1-starter/tree/01-starter) and open it up in vs code. You can load it into a browser using live server, and it should look like this:
+
+![basic p5 sketch with an ellipse](https://res.cloudinary.com/chris-kubick/image/upload/v1599608847/side-effects/127.0.0.1_5500_index.html_jlgybo.png)
+
+A basic p5 sketch starts with two javascript functions, named setup and draw. I've always found these to be a little mysterious, because we declare the functions but don't actually run the functions. This happens automagically behind the scenes with p5: setup is called once, when the page loads (or, you press play on the online editor), and draw loop is called continuously in a loop, at either the default frame rate or one which you specify.  
+</br>
+</br>
+I've also used the preload function in this example, to "preload" some sounds, which means that the sketch won't run until those sounds load. We're going to come back to those later. For now, look at the setup function, where I create a new canvas, giving it a height and width, and then set a backgroundColor for the canvas, by passing it an rgb value.
 
 ```
-
-
-
-<p>We started by learning some html tags: div, a, img, p, h[1..6].  Divs are sections of a page, a are links, img is for images and p and h tags are for text.  These tags all go inside a body tag on our html page.</p>
-
-<p>We use css to style our page.  We can specify colors, background colors, and sizes and positions for everything on our page in css, as well as do nifty animations and specify hover states.  We can also use display properties (none, inline, inline-block, flex) to specify how our content will be displayed.  We can write those files in a style tag or in an external document using the link tag.  And We can also load in external libraries and fonts to help us with our layout using the link tag.</p>
-
-<p>We put link and style tags in the head section of our html.</p>
-
-```
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-    
-
-    <style>
-        .myContainer {
-            display: flex; 
-            background-color: #FFF;      
-        }
-        h { 
-            color: red;
-        }
-
-        .item {
-            background-color: rgba(120,90,230,0.7);
-        }
-
-        .item:hover {
-            background-color: #aaa;
-        }
-
-        p {
-            color: #a5a80c;
-        }
-    </style>
-
-
-    <title>my page</title>
-</head>
-
-```
-
-
-
-<p>We can use the :hover pseudo class to specify a change to our page when the mouse is over a specific element.</p>
-
-<p>Colors can be specified using one of the accepted color names like 'red' or 'lightpink' or we can get more specific and use an rgba value like rgba(255,20,120, 0.5), where each color is a number between 0 and 255 and the alpha value or opacity is a decimal number between 0 and 1, or we can use a hex color where we give those colors as three hexadecimal numbers written in binary like #a5a80c.</p>
-
-<p>Maybe the biggest and broadest thing we learned is, how html, css and javascript work together to make a web page.  Html is the collection of data which forms a web page.  CSS styles it.  Javascript is the language we use to dynamically alter our css and html.  Our focus for the rest of this course will be on javascript, because it gives us so many possibilities.  But, at the end of the day, you can't show anything on the page without html and css, so we also need to know a bit about those.</p>
-
-<p>We can load javascript into our page using a script tag in our html.  We can load an external file like this:</p>
-
-```
-<script src="index.js"></script>
-
-```
-<p>Or we can write our javascript in a script tag like this:</p>
-
-
-```
-<script>
-
-        const myNumber = 10;
-
-
-</script>
-
-```
-
-<p>Built into our web browser is a console, you can find it in developer tools in all web browsers.  Using the console, we can see what's happening in our javascript:</p>
-
-```
-console.log('what's going on here??')
-
-```
-
-<p>We can write comments for ourselves or other people that the computer will ignore, like this:</p>
-
-```
-// this is a comment
-
-```
-
-<p>We can store values in javascript using constants and variables.  Constants don't change and variables do.</p>
-
-```
-const myConstant = 'me';
-let myVariable = 'myAge';
-
-console.log(me, myAge);
-```
-<p>The values stored in constants and variables can be one of six primitive types: string (text), number, boolean (true/false), undefined, null, or symbol.  We mostly are going to use them to store the first three types of data; null and undefined are useful for conditional statements and error checking, and honestly I've never used symbol, though it seems useful.</p>
-
-<p>If you want to get the type of something in javascript you can use the typeof operator like this:</p>
-
-```
-const myName = 'chris';
-console.log(typeof myName)
-
-```
-
-
-<p>There is another data type in javascript, which is not a primitive type, and it is undeniably more important than all of the other ones.  It is called an Object, and it can be used to store collections of all of the other data types, including other objects.  Objects store multiple properties using key/value pairs, like this:</p>
-
-```
-const myObject = {
-    fillColor: 'brown',
-    borderColor: 'red'
+function setup(){
+    createCanvas(600, 600);
+    backgroundColor(230, 220, 190);
 }
 
-console.log(myObect, typeof myObject);
+```
+
+In the draw function, I use p5's stroke, fill and ellipse methods to draw an ellipse:
+
+```
+
+function draw(){
+    stroke(0,220,20);
+    fill(190, 80, 230);
+    ellipse(300, 300, 90);
+
+}
 
 
 ```
 
-<p>And then we can acess those properties using dot notation like this:</p>
+All of these functions come from the p5 API, which is available [here](https://p5js.org/reference/). If you take a look, you'll see that p5 has a pretty great library of helper functions that make it easy to make all sorts of generative artwork. But let's focus on the ellipse method, so we can better understand what's going on. If we take a look at the ellipse page [reference page](https://p5js.org/reference/#/p5/ellipse) , we can see that the ellipse function takes three arguments -- an x coordinate, a y coordinate, a radius and an optional fourth argument for a vertical radius, which you can specify if you want an oval rather than a circle.
+
+</br>
+</br>
+![image of p5 ellipse method page, the part with the args](https://res.cloudinary.com/chris-kubick/image/upload/v1599608547/side-effects/p5js.org_reference__gt8tey.png)
+
+</br>
+</br>
+We can change those values and get a different looking ellipse.
+
+We can also change the outline color by change the color values we are feeding into the stroke() function, or change the fill() color.
+</br>
+</br>
+We're going to play with those values in a minute, but first I want to show you a new data type in javascript, one that is probably the most fundamental and useful data type in javascript, the javascript Object.
+</br>
+</br>
+Objects use key - value pairs to store their data. You can think of them as collections of variables.  
+</br>
+</br>
+At the very top of your page, outside of both functions, let's write an object. We'll call our object 'ball1' and give it an x, y, r, fillColor and strokeColor. Since it's outside of all of the functions, in the 'global' scope, it is accessible to all of our functions.
+
+```
+const ball1 = {
+    x: 300,
+    y: 300,
+    r: 100,
+    fillColor: [0,220,20],
+    strokeColor: [0, 220, 20]
+}
 
 ```
 
-console.log(myObject.borderColor)
+</br>
+</br>
+As you can see, you can store numbers, arrays, or even other objects as keys in an object.  This is tremendously useful for organizing data.  Now, we can use those values in our sketch, in place of the numbers we currently have in there:
+
+```
+
+function draw(){
+
+    stroke(ball1.strokeColor);
+    fill(ball1.fillColor)
+    ellipse(ball1.x, ball1.y, ball1.r);
+
+}
 
 
 ```
 
-<p>Or using square brackets like this: </p>
+Your code should run the same as before, but we actually took a major step towards making it more flexible. I'll show you why in a second.
+
+</br>
+</br>
+But first, I want to take a slightly deeper dive into this thing called a function.  In a very general sense, a function is a transformation or mapping of one value into another value, or of one set of values into another set of values.  That seems pretty abstract, so I prefer to think of functions just as sets of operations that we can perform on data.  Just like you can take an apple and call a cut() function to cut it up and then a mixPieIngredients() function to add sugar and spice, and then a bake() function to cook it, we can take a set of numbers and turn them into a circle on our canvas. And, we can replace the apple with a peach, or replace our numbers with new numbers, and get a different pie, or circle, using the same functions.
+</br>
+</br>
+And -- this is maybe the most important thing to take away here -- we can compose with these functions.  So, we can create a makePie() function from our various functions, and simply send an apple into that function, and walk away with a pie.  Let's do something like that now.
+
+```
+const drawCircle = () => {
+    stroke(ball1.strokeColor);
+    fill(ball1.fillColor)
+    ellipse(ball1.x, ball1.y, ball1.r);
+}
 
 
 ```
-console.log(myObject[fillColor]);
+
+Now, we can call this function, in our main draw loop, in place of the other functions, like this:
 
 ```
 
-<p>We also learned about storing data in Arrays, like this:</p>
+function draw(){
 
-```
-const myArray = [1, 5, 8, 9, 2];
-console.log(myArray);
-console.log(typeof myArray);
+    drawCircle();
+}
 
-```
-
-
-<p>Wait, what?  typeof myArray is 'object'.  Yes!  Arrays are actually a specific type of Object, which uses indexes (numbers) instead of key/value pairs to set and get data.  So we can access the value of an array at a specific place, starting with the 0th place, like this:</p>
-
-```
-console.log(myArray[0])
-console.log(myArray[3]);
 
 ```
 
-<p>And, we learned about functions.   Functions perform some operation and then can optionally return a value.  They can also take in values.  A lot of people will tell you that it's best to always take in the value that you want to transform as an argument to your function and then return the transformed value, like this:</p>
+In my function declaration, I used the arrow syntax that I introduced earlier in the course, remember? It's basically the same as saying
+
+```
+function drawCircle(){
+    stroke(ball1.strokeColor);
+    fill(ball1.fillColor)
+    ellipse(ball1.x, ball1.y, ball1.r);
+}
+
 
 ```
 
-const myFunction = (inputValue) => {
-    if(typeof inputValue === 'number') {
-    return inputvalue + 1
-    } else {
-        return 'not a number' 
+But I like it better, because I think that the arrow speaks to what's happening here: an input value is being processed. I think it's also a good idea to get used to using this syntax because as you get more advanced you'll discover that arrow functions are absolutely a huge improvement when it comes to dealing with scope, or, where the function is defined. But wait....I said 'input value' but there isn't one in this function.  
+</br>
+</br>
+The input value, or argument, is optional and goes in the parentheses. We don't currently have one, but it would be much better to make this function re-usable, by adding some arguments, like this:
+
+```
+
+const drawCircle = (x,y,r,strokeColor, fillColor) => {
+        stroke(strokeColor);
+        fill(fillColor)
+        ellipse(x, y, r);
+}
+
+
+
+```
+
+Now, we can re-use this function to draw circles of varying sizes and colors, by passing the values that the function wants whne we call it:
+
+```
+
+function draw(){
+
+    drawCircle(ball1.x, ball1.y, ball1.r, ball1.strokeColor, ball1.fillColor);
+}
+
+
+```
+
+BUT before you take the time to write that out, we can make our lives a heck of a lot easier by just passing in our entire ball object, and 'destructuring' the values we want from the ball, like this:
+
+```
+
+function draw(){
+
+    drawCircle(ball1);
+}
+
+const drawCircle = ({x, y, r, strokeColor, fillColor}) => {
+        stroke(strokeColor);
+        fill(fillColor)
+        ellipse(x, y, r);
+}
+
+
+```
+
+<p>See how I put that whole object {} in the where we put the arguments, and then put the values we want to grab from that object between those braces?  This really cleans up our code!</p>
+
+<p>If you want to check your code against my code, we're now at the 'draw-function' branch: [link](https://github.com/socalledsound/sound-game-1-starter/blob/with-draw-function/index.js)<p>
+<p>Let's make a few more balls, and add a few more key value pairs as well while we're at it.  First, delete our original ball1, and then copy these balls into your code:</p>
+
+```
+const ball1 = {
+    x: 300,
+    y: 300,
+    r: 100,
+    speed: 1,
+    fillColor: [190,80,230],
+    strokeColor: [0,220,20],
+    outlineWidth: 6,
+    rightSound: sounds[0],
+    leftSound: sounds[1],
+    soundLength: 2000,
+}
+
+const ball2 = {
+    x: 300,
+    y: 100,
+    r: 50,
+    speed: 2,
+    fillColor: [190,80,230],
+    strokeColor: [0,220,20],
+    outlineWidth: 6,
+    rightSound: sounds[2],
+    leftSound: sounds[3],
+    soundLength: 1000,
+}
+
+const ball3 = {
+    x: 300,
+    y: 200,
+    r: 80,
+    speed: 2,
+    fillColor: [190,80,230],
+    strokeColor: [0,220,20],
+    outlineWidth: 6,
+    rightSound: sounds[4],
+    leftSound: sounds[5],
+    soundLength: 500,
+}
+
+```
+
+Keep drawCircle the same for now, but update your draw loop to call drawCircle with each of the three balls.
+
+```
+
+function draw(){
+
+    drawCircle(ball1);
+    drawCircle(ball2);
+    drawCircle(ball3);
+}
+
+
+
+```
+
+Presto! Three balls ([repo](https://github.com/socalledsound/sound-game-1-starter/blob/multiple-balls/index.js))! But wait, this gets better! Let's put these three balls into an array, so we can use the forEach() method on the Array object, to make this code a little less repetitive. First, declare the array:
+
+```
+const balls = [ball1, ball2, ball3];
+
+
+```
+
+Then, in the draw loop:
+
+```
+
+function draw(){
+
+    balls.forEach( (ball) => {
+        drawCircle(ball)
+    })
+}
+
+
+
+```
+
+Now, before we continue, let's look a little more deeply at the forEach() method, now that we've talked a bit about functions. forEach() is a method of the Array object that's built into javascript. In this way, it's a little like the ellipse() method of the p5 library. It's a function that takes in values and changes them. But what it takes in is....A FUNCTION. That function can be written as an arrow function or an old fashioned function. I've written it as an arrow function here. It takes each element of the array as it's input. We can call this element whatever we want to -- but the value of this thing, in our function, will be each item in our array.  
+</br>
+</br>
+We can test this out, by using console.log(), like this:
+
+```
+function draw(){
+
+    balls.forEach( (ball) => {
+        console.log(ball);
+        drawCircle(ball)
+    })
+}
+
+```
+
+Inside of our function, we can perform any number of tranformations upon each object in our array. Let's add another function in there, to move each of our balls at the speed that we have already coded into each ball.
+
+```
+
+const move = (ball) => {
+    ball.x += ball.speed;
+}
+
+
+```
+
+And then in our draw loop:
+
+```
+function draw(){
+
+    balls.forEach( (ball) => {
+        console.log(ball);
+        move(ball);
+        drawCircle(ball)
+    })
+}
+
+```
+
+And now we are updating each of the values of x for each of the balls. This makes each of the balls appear to move, at the speed that we have already declared for each ball! Each time the draw loop runs, it updates the value of x and then redraws the ball. But, it'll look better if we also redraw the background each time, so that we only see one ball at a time:
+
+```
+function draw(){
+    background(backgroundColor);
+    balls.forEach( (ball) => {
+        console.log(ball);
+        ball.x = updateX(ball);
+        drawCircle(ball)
+    })
+}
+
+```
+
+</br>
+
+So here we are: [link](https://github.com/socalledsound/sound-game-1-starter/tree/04-moving-array). Now...we have a bit of a problem, which is that the balls disappear, rather quickly. It would be better if we keep them on the screen. We'll need a function to check the position of the balls and reverse them if they are getting off the screen. But, before we write this, let's draw some lines so we know where the ball should reverse, one line at say 50px from the left edge and the other at 50px from the right edge. I'm going to let you take a stab at doing this on your own, while I grab a cup of coffee. I'll give you one clue, which is the reference for the line() method of p5, which as you can [see](https://p5js.org/reference/#/p5/line), takes an two x value and two y values. You'll probably want to make objects for each of the lines, with those values, and maybe also have a constant for a line color that you can use for both of the lines? Then, make a function that draws the lines. You can do it! See you in a bit. My solution is below, after the picture -- but seriously, don't peek, do it yourself!
+
+</br>
+
+![image of three balls with lines](https://res.cloudinary.com/chris-kubick/image/upload/v1600994613/side-effects/127.0.0.1_5500_index.html_1_hjcalc.png)
+
+</br>
+
+All right so here's what I did. [Solution](https://github.com/socalledsound/sound-game-1-starter/tree/05-with-lines) First, I made some objects to store the data for our lines:
+
+```
+const leftEdge = {
+    x1: 230,
+    y1: 0,
+    x2: 230,
+    y2: 600,
+    color: lineColor,
+    width: lineWidth,
+
+}
+
+const rightEdge = {
+    x1: 370,
+    y1: 0,
+    x2: 370,
+    y2: 600,
+    color: lineColor,
+    width: lineWidth,
+}
+
+
+```
+
+Then, I made a function called drawLines, to draw the lines.
+
+And finally, I fed the data into the function. I could have drawn these in the setup function, and only drawn them once; but I plan on animating them in a minute, so I'm going to go ahead an put it in the draw function:
+
+```
+
+
+function drawLine({x1, y1, x2, y2, color, width}){
+    stroke(color);
+    strokeWeight(width);
+    line(x1, y1, x2, y2);
+}
+
+
+function draw(){
+
+    background(backgroundColor);
+
+    balls.forEach((ball) => {
+        moveBall(ball);
+        displayBall(ball);
+    })
+    drawLine(leftEdge);
+    drawLine(rightEdge);
+}
+
+
+```
+
+I also changed the names of our ball functions to make them more specific.
+
+</br>
+You can see the current code [here](https://github.com/socalledsound/sound-game-1-starter/tree/05-with-lines).
+</br>
+
+Now, that's only the first part, right? The next thing we have to do is turn the balls around when we hit the lines.
+</br>
+
+Currently, we're moving the balls left by adding the speed value to the x coordinate of the ball. So what we need to do is, reverse the speed, by multiplying it times -1 when we hit a line. Since we're no longer just moving the ball, why don't we make our function a little more general, and call it 'updateball'? In there, we'll use a conditional statement to check the current value of x, and before we move the ball, check and see if we need to reverse direction. So, something like this:
+
+```
+function updateBall(ball){
+    console.log(ball.x);
+    if(ball.x + ball.size/2 > rightEdge.x1 ){
+        ball.speed *= -1;
+        activateLine(rightEdge);
+    } else if(ball.x - ball.size/2 < leftEdge.x1 ){
+        ball.speed *= -1;
+        activateLine(leftEdge);
     }
-
-   
-}
-
-console.log( typeof myFunction);
-console.log(myFunction(1));
-console.log(myFunction('hi'));
-
-```
-
-<p>Here, we're using an if/then statement that checks to see what the type of the input is and then returns an appropriate output depending on what type of value we put in.  (We haven't really looked at if/then statements yet but we'll look at them more soon).  We can define a function with either the arrow syntax like above, or with a function keyword like this:</p>
-
-```
-
-function myNonArrowFunction(inputValue){
-        if(typeof inputValue === 'number'){
-    return inputvalue + 1
-    } else {
-        return 'not a number' 
-    }
+    ball.x+= ball.speed;
 }
 
 ```
 
-<p>Functions can take functions in as arguments, like in event listeners or in setInterval, which is a timing function built in to the browser:</p>
+We take in a ball and first, we check if the right edge of the ball (ball.x + ball.size/2) has made it to the x position of the right line. If it has, we reverse speed -- so the ball turns around. We do the same thing on the other side, and then we add the new (or old, depending on whether the condition has been satisfied) speed to the old location of the ball. If we add a positive value to x it goes right...if negative it goes left. You can see the code [here](https://github.com/socalledsound/sound-game-1-starter/tree/06-reversing-direction).
+</br>
+
+</br>
+
+And you can see that I've also, gratuitously, added an activateLine function, which is a little animation that makes the line wider briefly and then shrinks it back down to size after an ammount of time specified in our setTimeout function.
 
 ```
+function activateLine(line){
 
-        let number = 0; 
+    line.color = activeLineColor;
+    line.width = activelineWidth;
 
-        const increment = () => {
-                number += 1;
-                console.log(number);
-             };
-
-        setTimeout(increment, 500)
-
-```
-
-<p>A special type of function is called a constructor function, which is a function which returns an object, when preceded by the keyword 'new'.  We'll learn more about these, and about classes in unit 2.  The other day we encountered them when we made our Howls, using new Howl().  The objects returned by these functions have access to methods, which we used when we used the .play() method of our Howls, and also when we used some of the Array methods that are available on the Array object.  Let's review a few of those methods now, because they are very useful and very important in javascript.</p>
-
-<p>First of all, we can make an array of a specified length using Array.from() and passing in an object with a length property.  We can also optionally pass in a function that we can use to fill each element of the array, like this:
-
-```
-const length = 10;
-
-const makeDiv = () => document.createElement('div');
-
-const myArray = Array.from({length: 10}, ()=>makeDiv());    
-
-```
-<p>We can get the length of our new array using Array.length:
-```
-console.log(myArray.length);
-```
-
-<p>We can also iterate over an array that we have created and apply a function to each element using Array.forEach():
-
-```
-const container = document.querySelector('.container');
-myArray.forEach(element => {
-    container.appendChild(element);
-})
-```
-
-<p>There are many different array methods that lets us sort, combine and add and remove items from arrays, it's well worth learning them all if you have the time and interest!</p>
-<p>Often times, we put our javascript on our html page inside our body tags, at the bottom of our body:  </p>
-
-```
-<body>
-
-    <div class="myContainer">
-        <div class="item">
-            <h1>item 1</h1>
-            <img src="img/image1.jpg"
-            <p>this is a paragraph description about item 1</p>
-        </div>
-
-        <div class="item">
-            <h1>item 2</h1>
-            <img src="img/image2.jpg"
-            <p>this is a paragraph description about item 2</p>
-        </div>
-
-        
-
-    </div>
+    setTimeout(() => resetLines(line), 500);
+}
 
 
-    <script>
-        //nsome javscript here
-        
-    </script>
-</body>
-
-```
-
-
-<p>This is so that our javascript has access to the DOM, after the html has been loaded into the browser.  If we aren't concerned with DOM manupulation, we can put our javascript at the top, in the head section of our html, which is where we usually put things like libraries:</p>
-
-```
- <script src="more.js"></script>
-```
-
-
-<p>Javascript interacts with our html and css using something called the DOM -- the Document Object Model.  When the web browser loads our page, it creates this abstract representation of our html and css.  This thing is a javascript Object called 'Document'.  </p>
-
-<p>The most import DOM methods are querSelector, querySelectorAll, createElement and appendChild.  Below, I query for the container on my page, make an element, give that element some style and then append it to the page.</p>
-
-
-```
-const container = document.querySelector('.container');
-const newDiv = createElement('div');
-newDiv.style.backgroundColor = 'red';
-newDiv.style.height = '50px';
-newDiv.style.width = '100px';
-container.appendChild(newDiv);
+function resetLines(line){
+    line.color = lineColor;
+    line.width = lineWidth;
+}
 
 
 ```
 
-
-
-<p>And finally, a quick note about event listeners, which we can use to listen for specific events on our page.  If for instance we want to do something when the mouse clicks on a specific div, we can first get the element from our page using querySelector, then attach an event listener, and pass into it first the name of the listener that we want to invoke and then a function that we want to run when the listened for event happens:</p>
+All right, all that's left is to add the sounds! We can do that by calling
 
 ```
-        myArray.forEach(element => {
-            element.addEventListener('click', ()=>console.log('hi'));
-        })
+ball.rightSound.play();
 
 ```
 
-<p>Ok!  That's a quick review for you.  Now go finish project 1!  Or go learn some more about git and the command line, using the links at the side of today's syllabus page.</p>
+or
 
+```
+ball.leftSound.play();
+
+```
+
+Can you figure out where to put them? I'll be here to answer questions, or you can cheat and look at the finished code [here](https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed)
+
+</br>
+</br>
+
+The other thing I'd like you to do is, make this code at least slightly your own by changing the look of the balls or the lines. Add an 'activateBall' function if you want to, which triggers when the ball hits a line. Change the sounds and otherwise make it your own! We've built a weird little sound looper! Could it be a drum machine? Maybe try making beats with it, loading in some samples from a drum kit.Then post it to the gallery and call it a day. Next class we're going to go farther with these ideas, which are going to serve us very well when we start making our 'games'!
+
+</br>
+</br>
+ps! I had to set the ball sounds in the preload function so they were loaded when I set them.  There is no doubt a cleaner way to do this but I'm in a bit of a hurry and I'll have to come back to it.  If you have a better idea here, let us know!
+
+```
+
+
+function preload(){
+
+    sounds.forEach((sound, i) => {
+        sounds[i] = loadSound(`sounds/${i}.mp3`)
+    })
+
+    console.log(sounds);
+
+    ball1.rightSound = sounds[0];
+    ball1.leftSound = sounds[1];
+    ball2.rightSound = sounds[2];
+    ball2.leftSound = sounds[3];
+    ball3.rightSound = sounds[4];
+    ball3.leftSound = sounds[5];
+}
+
+```

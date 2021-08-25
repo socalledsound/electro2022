@@ -4,13 +4,15 @@ import { selectPercentUploadedImg } from '../../features/submitWork/submitWorkSl
 import Loading from '../Loading/Loading'
 import useFileModal from '../FileModal/useFileModal'
 import styles from './SelectImage.module.css'
+import { selectCurrentUser } from '../../features/user/userSlice'
 
 const SelectImage = () => {
-
+    const currentUser = useSelector(selectCurrentUser)
+    const defaultImage = currentUser.avatar
     const percentUploaded = useSelector(selectPercentUploadedImg)
     // const { modal, toggleModal, ModalContent } = useModal();
-    const { imageURL, toggleFileModal, SelectImageModal} = useFileModal()
-    console.log(percentUploaded)
+    const { imageURL, toggleFileModal, SelectImageModal} = useFileModal(defaultImage)
+    console.log(imageURL)
     return ( 
         <Fragment>
             {

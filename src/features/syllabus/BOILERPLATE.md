@@ -4,7 +4,7 @@ Hi! I'm Chris Kubick and I'm teaching this class.
 
 My email is: socalledsound@gmail.com, feel free to reach out at any point!
 
-I'll be having office hours after class on tuesdays and thursdays from 12-1 or by appointment.
+I'll be having office hours after class on tuesdays and on the course discord channel by appointment.
 
 ## electro-crafting?
 
@@ -16,11 +16,11 @@ Before I fell in love with code, I used to be a foley designer in Hollywood. I w
 
 And so I set out to learn how to do things differently. And I'm still on that trip! And I'm glad to be on it with you.
 
-I'm a lecturer here at UC Berkeley, and I just teach this course, which I've been doing in one form or another for about 15 years. I hope we'l have fun and grow together.
+I've been a lecturer here at UC Berkeley for about 15 years, and I only teach this course, which has evolved over the years. I hope we'll have fun and grow together!
 
 # lab fees
 
-Lab fees are 60 bucks and cover the stuff we'll use and the honor of being present on the UC campus. Dillon Thomas dillont@berkeley.edu will be reaching out to you about that. Sorry, they're non-negotiable. But, fwiw, I don't really get it, what do they do with all of that tuition money? They sure don't pass it on to us lecturers.
+Lab fees are 60 bucks and cover the stuff we'll use and will also give you access to all of the other film and video equipment, as well as the computer lab. Dillon Thomas dillont@berkeley.edu will be reaching out to you about those fees, which are non-negotiable.
 
 ## projects
 

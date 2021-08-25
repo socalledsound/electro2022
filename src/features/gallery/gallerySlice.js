@@ -21,15 +21,22 @@ export const gallerySlice = createSlice({
             }
         },
         startFetchWorks(){},
-        fetchWorksSuccess : () => {
-
+        fetchWorksSuccess : (state, action) => {
+            const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
+            return {
+                ...state,
+                works: oldWorks.concat(action.payload)
+            }
         }, 
-        fetchWorksFailure : () => {
-            
+        fetchWorksFailure : (state, action) => {
+            return {
+                ...state,
+                errors: action.payload
+            }
         },
         startFetchUserWorks(){}, 
         fetchUserWorksSuccess: (state, action) => {
-            console.log('too much success')
+            // console.log('too much success')
             // const updatedWorks = [...state.works, ...action.payload].filter((item, pos, arr) => {
             //     return arr.map(work => work['id'].indexOf(item['id']) !== pos)
             // })
@@ -46,12 +53,13 @@ export const gallerySlice = createSlice({
                 errors: action.payload
             }
         }
+
     }
 })
 
 export const selectCategories = state => state.gallery.categories
 export const selectWorks = state => state.gallery.works
-export const selectItemById = id => state => state.gallery.works.filter(item => item.id === parseInt(id, 10))[0]
+export const selectItemById = id => state => state.gallery.works.filter(item => item.id === id)[0]
 export const selectWorksByCategory = category => state => state.gallery.works.filter(item => item.assignment === category)
 
 

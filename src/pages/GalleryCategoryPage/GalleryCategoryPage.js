@@ -23,10 +23,10 @@ const GalleryCategoryPage = ({match, history}) => {
             {
                 works && 
                 works.length > 0 &&
-                works.map( work => {
+                works.map( (work, idx) => {
                     return(
                         <div className={styles.itemSpacer}>
-                            <GalleryItem key={work.id} item={work}/>
+                            <GalleryItem key={`item${work.id}-${idx}`} item={work}/>
                         </div>
                         
                     )

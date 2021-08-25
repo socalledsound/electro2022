@@ -1,16 +1,32 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { useSelector } from 'react-redux'
+import { selectUserById } from '../people/peopleSlice'
 import styles from './CritMessages.module.css'
 const CritMessage = ({message}) => {
     console.log(message.id)
+    console.log(message.user)
+    const user = useSelector(selectUserById(message.user))
+    console.log(user)
     return ( 
+        <div className={styles.critMessageWrapper}>
+
+        
         <div className={styles.critMessageContainer}>
             <div className={styles.critMessageTitleContainer}>
-                <h5>{message.createdBy.displayName}</h5>
-                <img src={message.createdBy.avatar} alt='user avatar'/>
+                {
+                    user&&
+                    <Fragment>
+                         <img src={user.avatar} alt='user avatar' className={styles.avatar}/>    
+                         <h5>{user.displayName} says:</h5>
+                   
+                    </Fragment>
+                }
+
             </div>
             <div className={styles.critMessageBodyContainer}>
                 {message.text}
             </div>
+        </div>
         </div>
      );
 }

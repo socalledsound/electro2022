@@ -1,4 +1,26 @@
 .galleryDetailWrapper {
   display: flex;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: left;
+  padding: 0.6rem;
+}
+
+.galleryDetailContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.returnToCategoryDiv {
+  background-color: indianred;
+  color: white;
+  width: 10rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius: 1.2rem;
+}
+.returnToCategoryDiv:hover {
+  background-color: rgb(241, 160, 160);
 }

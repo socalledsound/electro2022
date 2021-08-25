@@ -4,17 +4,11 @@ import { withRouter } from 'react-router-dom'
 import { selectSelectedImage} from './submitWorkSlice'
 import { selectCurrentUser } from '../user/userSlice'
 import { submitWorkStart } from '../../app/sagas/submitWorkActions'
-import { validateAssignmentSubmission } from '../assignments/validateAssignmentSubmission'
+
 import SelectImage from '../../components/SelectImage/SelectImage'
-import Form from '../../components/Form/Form'
+import SubmitWorkForm from '../../components/Form-SubmitWork/SubmitWorkForm'
 import styles from './SubmitWork.module.css'
 
-const initialFormState = {
-    title: '',
-    description: '',
-    linkURL: '',
-    codeURL: '',
-}
 
 
 
@@ -45,13 +39,9 @@ const SubmitWork = ({assignment, history}) => {
 
             <div className={styles.formWrapper}>
             
-                <p>{assignment}</p>
+                <p>assignment : {assignment}</p>
             
-                <Form 
-                    initialFormState={initialFormState}
-                    validateForm={validateAssignmentSubmission} 
-                    submitFormData={submitAssignment}     
-                />
+                <SubmitWorkForm submitFormData={submitAssignment} />
             </div>
         </div>
      );

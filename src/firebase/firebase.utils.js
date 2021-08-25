@@ -44,7 +44,22 @@ export const addItemToFirestore = async(collectionKey, objectToAdd) => {
     await collectionRef.add(objectToAdd)
     return
 }
-
+export const convertUsersSnapshotToMap = (users) => {
+    console.log(users)
+    const transformedUsers = users.docs.map(doc => {
+        const { avatar, displayName, email } = doc.data();
+        return {
+            
+            id: doc.id,
+            avatar, 
+            displayName,
+            email,
+            
+        }
+    })
+    
+    return transformedUsers
+}
 
 export const convertWorksSnapshotToMap = (works) => {
     

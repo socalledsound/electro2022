@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import { selectCategories, selectWorks } from './gallerySlice'
+import { useSelector, useDispatch } from 'react-redux'
+import { selectCategories, selectWorks, startFetchWorks } from './gallerySlice'
 import GalleryRow from './GalleryRow'
 import styles from './Gallery.module.css'
 
 const Gallery = ({history}) => {
+
+    const dispatch = useDispatch()
+
+
+    useEffect(() => {
+      dispatch(startFetchWorks())
+  }, [dispatch])
+
+
+
     const galleryCategories = useSelector(selectCategories)
     const works = useSelector(selectWorks)
     const featuredWorks = works.filter(item => item.featured)
