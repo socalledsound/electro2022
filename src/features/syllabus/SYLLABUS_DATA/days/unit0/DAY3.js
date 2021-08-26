@@ -2,12 +2,12 @@ const DAY3 = {
     id: 3,
     unit: 'unit0',
     date: 'September 2, 2021',
-    title: 'switches',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
+    title: 'listening',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597029252/side-effects/max-neuhaus-listen-1_l5gaoq.jpg',
     description: ``,
     videos: [
         {
-            linkText: 'Switches',
+            linkText: 'listening',
             linkSrc: '',
         },      
         {

@@ -3,7 +3,7 @@ const DAY2 = {
     unit: 'unit0',
     date: 'August 31, 2021',
     title: 'the resistance needs you',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1629990026/tiananmen-square-anniversary-01-file-gty-jef-190529_hpMain_4x3t_992_s73ehp.jpg',
     description: "Today we'll talk about resistance -- in the electrical sense of the word.  In paticular, we'll look at speakers and LEDS, how to connect them, how to measure resistance and a few artists that use them in their work.",
     videos: [
         {

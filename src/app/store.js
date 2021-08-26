@@ -1,15 +1,15 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import {
-  persistStore,
-  persistReducer,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-} from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+// import {
+//   persistStore,
+//   persistReducer,
+//   FLUSH,
+//   REHYDRATE,
+//   PAUSE,
+//   PERSIST,
+//   PURGE,
+//   REGISTER,
+// } from 'redux-persist'
+// import storage from 'redux-persist/lib/storage'
 
 import createSagaMiddleware from "@redux-saga/core";
 import rootSaga from './sagas/rootSaga' 
@@ -35,26 +35,27 @@ const reducer = combineReducers({
   critMessages: critMessagesReducer,
 })
 
-const persistConfig = {
-  key: 'root',
-  version: 1,
-  storage,
-}
+// const persistConfig = {
+//   key: 'root',
+//   version: 1,
+//   storage,
+// }
 
-const persistedReducer = persistReducer(persistConfig, reducer)
+// const persistedReducer = persistReducer(persistConfig, reducer)
 
 
 export const store = configureStore({
-  reducer: persistedReducer,
+  // reducer: persistedReducer,
+  reducer,
   middleware: (getDefaultMiddleware) => [...getDefaultMiddleware({ 
       thunk: false,
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
+    //   serializableCheck: {
+    //     ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    //   },
     }), 
     sagaMiddleware],
 });
 
 sagaMiddleware.run(rootSaga)
 
-export const persistor = persistStore(store)
+// export const persistor = persistStore(store)
