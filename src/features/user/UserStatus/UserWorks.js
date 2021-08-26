@@ -19,7 +19,7 @@ const UserWorks = ({history}) => {
             {   
                 userWorks.length > 0 &&
                 userWorks.map((work, idx) => {
-                    console.log(work)
+                    // console.log(work)
                 return (
                         <div 
                             key={`${work.id}-${idx}`}

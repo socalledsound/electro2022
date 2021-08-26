@@ -13,7 +13,7 @@ export const createSubmission = ({assignment, currentUser, title, description, l
         codeURL,
         
     }
-    console.log(submission)
+    // console.log(submission)
     return submission
 
 }

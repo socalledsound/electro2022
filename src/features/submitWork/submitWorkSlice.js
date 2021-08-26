@@ -37,6 +37,7 @@ export const submitWorkSlice = createSlice({
 
 export const selectSelectedImage = state => state.submitWork.selectedImage
 export const selectPercentUploadedImg = state => state.submitWork.percentUploadedImg
+
 export const { setPercentUploadedImg, setSelectedImage, submitWorkSuccess, submitWorkFailure  } = submitWorkSlice.actions
 
 export default submitWorkSlice.reducer

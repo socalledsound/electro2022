@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
 import {selectAssignment } from './assignmentSlice'
-import { selectCompletedAssignments } from '../user/userSlice';
+import { selectCompletedAssignments, selectCurrentUser } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
 import SubmitWork from '../submitWork/SubmitWork'
 import styles from './Assignment.module.css'
@@ -16,31 +16,37 @@ const Assignment = ({match}) => {
     const assignment = useSelector(selectAssignment(match.params.dayId))
     const completedAssignments = useSelector(selectCompletedAssignments)
 
-  
+    const currentUser = useSelector(selectCurrentUser)
   
     useEffect(() => {
-
-        const filtered = completedAssignments.filter(item => {
-           console.log(item.assignment, assignment)
-            return item.assignment === assignment.title
-        })
-        console.log(filtered)
-        if(filtered.length > 0){
-            setCompleted(true)
+        if(currentUser){
+            if(completedAssignments && completedAssignments.length > 0){
+                const filtered = completedAssignments.filter(item => {
+                    console.log(item.assignment, assignment)
+                     return item.assignment === assignment.title
+                 })
+                 if(filtered.length > 0){
+                    setCompleted(true)
+                }
+            }
         }
-    }, [assignment, completedAssignments, setCompleted])
 
-    console.log(completed)
+
+        // console.log(filtered)
+  
+    }, [currentUser, assignment, completedAssignments, setCompleted])
+
+    // console.log(completed)
 
     useEffect(() => {
-        console.log(assignment.markdown)
+        // console.log(assignment.markdown)
         fetch(assignment.markdown)
         .then(resp => resp.text())
         .then(text => setAssignmentMarkdown(text))   
     })
 
     const handleClick = () => {
-        console.log(toggleModal)
+        // console.log(toggleModal)
         toggleModal(true)
         console.log('clicked')
         window.scrollTo(0,0)
@@ -64,21 +70,29 @@ const Assignment = ({match}) => {
                 />
             }
             
-                {
-               completed ? 
+            {
+            !currentUser ? 
                 <div className={styles.noSubmitButton}>
-                    <p>you already completed this assignment</p>
-                   
-                
+                    <p>please log in to submit an assignment</p>
                 </div>
                 :
-                    <button 
-                    onClick={handleClick}
-                    className={styles.submitButton}
-                >
-                    submit assignment
-                </button>
-                }
+
+               completed ? 
+                    <div className={styles.noSubmitButton}>
+                        <p>you already completed this assignment</p>
+                    
+                    
+                    </div>
+                    :
+                    
+                        <button 
+                        onClick={handleClick}
+                        className={styles.submitButton}
+                    >
+                        submit assignment
+                    </button>
+               
+            }
                 
                 </div>
                 :
