@@ -13,14 +13,14 @@ const DAY2 = {
             linkText: 'art of the resistance',
             linkSrc: '',
         },
-        {
-            linkText: 'speaker circuit : using a multimeter to measure resistance',
-            linkSrc: '',
-        },
-        {
-            linkText: 'LED basics',
-            linkSrc: '',
-        },
+        // {
+        //     linkText: 'speaker circuit : using a multimeter to measure resistance',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: 'LED basics',
+        //     linkSrc: '',
+        // },
     ],
     inspirationLinks: [
 
