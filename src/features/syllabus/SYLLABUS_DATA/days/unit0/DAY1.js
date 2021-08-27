@@ -11,16 +11,16 @@ const DAY1 = {
                     and introduce you to our first coding platform, makeCode.
                     `, 
                     videos: [
-                        {
-                            linkText: 'electrocrafting : intro',
-                            linkSrc: '',
-                        },
+                        // {
+                        //     linkText: 'electrocrafting : intro',
+                        //     linkSrc: '',
+                        // },
                         // {   linkText: 'some stuff you might want',
                         //     linkSrc: '',
                         // },
                         {
                             linkText: 'navigating the course website',
-                            linkSrc: '',
+                            linkSrc: 'https://youtu.be/iELgJ3UqKcg',
                         },
                         // {
                         //     linkText: 'submitting an assignment',
