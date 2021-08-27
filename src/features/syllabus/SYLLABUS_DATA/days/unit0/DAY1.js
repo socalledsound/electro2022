@@ -11,10 +11,10 @@ const DAY1 = {
                     and introduce you to our first coding platform, makeCode.
                     `, 
                     videos: [
-                        // {
-                        //     linkText: 'electrocrafting : intro',
-                        //     linkSrc: '',
-                        // },
+                        {
+                            linkText: 'electrocrafting : intro',
+                            linkSrc: 'https://youtu.be/UjmrI5l0voM',
+                        },
                         // {   linkText: 'some stuff you might want',
                         //     linkSrc: '',
                         // },
