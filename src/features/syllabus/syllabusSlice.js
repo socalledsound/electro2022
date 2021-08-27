@@ -56,7 +56,7 @@ export const selectRemainingDays = (state) => {
     const allDays = selectAllDays(state)
     // console.log(allDays)
     const today = new Date()
-    // console.log(today)
+    today.setHours(today.getHours() - 12)
     const remainingDays = allDays.filter(day => {
         const date = new Date(day.date);
         if(date > today){
@@ -70,13 +70,28 @@ export const selectRemainingDays = (state) => {
 
 
 export const selectCurrentDay = (state) => {
-
     const remaining = selectRemainingDays(state)
     // console.log(remaining)
     const lowestDay = remaining[0]
     return lowestDay
-
 }
+
+export const selectPreviousDays = (state) => {
+    const allDays = selectAllDays(state)
+    // console.log(allDays)
+    const today = new Date()
+    today.setHours(today.getHours() - 12)
+    const previousDays = allDays.filter(day => {
+        const date = new Date(day.date);
+        if(date < today){
+            return day 
+        }
+        return null
+    })
+    // console.log(remainingDays)
+    return previousDays
+}
+
 
 export const { setCurrentDayIdx } = syllabusSlice.actions
 

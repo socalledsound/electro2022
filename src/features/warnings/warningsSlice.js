@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+import { selectPreviousDays } from '../syllabus/syllabusSlice'
 const initialState = {
     currentWarning: false,
     critMessageWarning : {
@@ -25,6 +25,13 @@ export const warningsSlice = createSlice({
 
 export const selectWarningStatus = state => state.warnings.currentWarning
 export const selectProjectWarnings  = state => state.warnings.projectWarnings
-export const selectAssignmentWarnings = state => state.warnings.assignmentWarnings
-export const selectCritMessageWarning = state => state.warnings.critMessageWarning
+export const selectAssignmentWarnings = state => {
+    // state.warnings.assignmentWarnings
+    const assignmentsDue = selectPreviousDays(state)
+    // const warnings = assignmentsDue.filter(item => item.)
+    const warnings= []
+    console.log(assignmentsDue)
+    return warnings
+}
+    export const selectCritMessageWarning = state => state.warnings.critMessageWarning
 export default warningsSlice.reducer

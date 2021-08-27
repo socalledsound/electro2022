@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { selectAllDays, selectCurrentDay } from '../syllabus/syllabusSlice'
 import {
     ASSIGNMENT1,
     ASSIGNMENT2,
@@ -68,6 +69,7 @@ const ASSIGNMENTS = [
 const initialState = {
     assignments: ASSIGNMENTS,
     selectedAssignmentId: null,
+    currentAssignment: null,
     
 }
 
@@ -86,7 +88,22 @@ export const assignmentSlice = createSlice({
 })
 
 export const selectAssignment = (id) => state => state.assignment.assignments[id-1]
-export const selectPercentUploadedImg = state => state.assignment.percentUploadedImg
+
+export const selectAssignmentDue = (dayId) => state => {
+    const allDays = selectAllDays(state)
+    //console.log(allDays, dayId)
+    const thisDayDue = new Date(allDays[dayId - 1].date)
+    const currentDay = selectCurrentDay(state)
+    const currentDue = new Date(currentDay.date)
+    let today = new Date()
+    // if due > today, then highest is today
+    const highest = (today <= currentDue) ? currentDue : today
+    //console.log(highest, thisDayDue)
+    const due = (highest >= thisDayDue) ? true : false 
+    //console.log(due)
+    return due
+}
+    export const selectPercentUploadedImg = state => state.assignment.percentUploadedImg
 export const { setPercentUploadedImg } = assignmentSlice.actions
 
 export default assignmentSlice.reducer

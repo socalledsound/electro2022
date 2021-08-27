@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
-import {selectAssignment } from './assignmentSlice'
+import {selectAssignment, selectAssignmentDue } from './assignmentSlice'
 import { selectCompletedAssignments, selectCurrentUser } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
 import SubmitWork from '../submitWork/SubmitWork'
@@ -15,14 +15,15 @@ const Assignment = ({match}) => {
     const { modal, toggleModal, ModalContent } = useModal();
     const assignment = useSelector(selectAssignment(match.params.dayId))
     const completedAssignments = useSelector(selectCompletedAssignments)
-
     const currentUser = useSelector(selectCurrentUser)
+
+    const assignmentDue = useSelector(selectAssignmentDue(match.params.dayId))
   
     useEffect(() => {
         if(currentUser){
             if(completedAssignments && completedAssignments.length > 0){
                 const filtered = completedAssignments.filter(item => {
-                    console.log(item.assignment, assignment)
+                    //console.log(item.assignment, assignment)
                      return item.assignment === assignment.title
                  })
                  if(filtered.length > 0){
@@ -76,22 +77,29 @@ const Assignment = ({match}) => {
                     <p>please log in to submit an assignment</p>
                 </div>
                 :
+                assignmentDue ?
 
-               completed ? 
-                    <div className={styles.noSubmitButton}>
-                        <p>you already completed this assignment</p>
-                    
-                    
-                    </div>
-                    :
-                    
-                        <button 
-                        onClick={handleClick}
-                        className={styles.submitButton}
-                    >
-                        submit assignment
-                    </button>
-               
+
+                    completed ? 
+                            <div className={styles.noSubmitButton}>
+                                <p>you already completed this assignment</p>
+                            
+                            
+                            </div>
+                            :
+                            
+                                <button 
+                                onClick={handleClick}
+                                className={styles.submitButton}
+                            >
+                                submit assignment
+                            </button>
+                :
+                <div className={styles.noSubmitButton}>
+                <p>this assignment isn't due yet!</p>
+            
+            
+            </div>
             }
                 
                 </div>
