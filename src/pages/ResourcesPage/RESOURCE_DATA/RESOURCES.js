@@ -6,13 +6,10 @@ const RESOURCES = {
         links: [
 
             {
-                linkText: 'navigating this website',
-                linkSrc: '',
+                linkText: 'electrocrafting youtube video playlist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBZFnp3rMM2Qah53Hs0XMJD',
             },
-            {
-                linkText: 'submitting an assignment',
-                linkSrc: '',
-            },
+
             {
                 linkText: 'making a screenshot in the chrome browser',
                 linkSrc: 'https://youtu.be/lkBm5UPu5wg',
