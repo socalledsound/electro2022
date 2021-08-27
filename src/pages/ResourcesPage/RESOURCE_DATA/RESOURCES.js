@@ -20,11 +20,12 @@ const RESOURCES = {
             },
             {
                 linkText: 'course discord channel',
-                linkSrc: 'https://discord.com/channels/786030089569304637/879893192307245107',
+                linkSrc: 'https://discord.com/channels/786030089569304637',
             },
+
             {
-                linkText: 'my youtube channel',
-                linkSrc: 'https://www.youtube.com/channel/UCT2Izq0S6wwHmVFPqedJcUg',
+                linkText:'discord invite link?',
+                linkSrc: 'https://discord.gg/a6zcqVpMJq',
             },
 
             {
