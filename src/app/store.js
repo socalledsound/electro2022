@@ -39,6 +39,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
+  blacklist:['syllabus','warnings', 'assignment', 'submitWork']
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
