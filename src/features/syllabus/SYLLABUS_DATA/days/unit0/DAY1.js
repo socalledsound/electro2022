@@ -10,7 +10,32 @@ const DAY1 = {
                     and lay out my vision for the course.  I'll also give you a circuit playground express
                     and introduce you to our first coding platform, makeCode.
                     `, 
-    
+                    videos: [
+                        {
+                            linkText: 'electrocrafting : intro',
+                            linkSrc: '',
+                        },
+                        // {   linkText: 'some stuff you might want',
+                        //     linkSrc: '',
+                        // },
+                        {
+                            linkText: 'navigating the course website',
+                            linkSrc: '',
+                        },
+                        // {
+                        //     linkText: 'submitting an assignment',
+                        //     linkSrc: '',
+                        // },
+                        {
+                            linkText: 'resizing an image using gimp',
+                            linkSrc: 'https://youtu.be/8ukaQw6oPM8',
+                        },
+                        {
+                            linkText: 'making a screenshot in the chrome browser',
+                            linkSrc: 'https://youtu.be/lkBm5UPu5wg',
+                        },
+                
+                    ], 
     techLinks: [
         {
             linkText: 'make code website',
@@ -31,32 +56,7 @@ const DAY1 = {
 
 
     ],
-    videos: [
-        {
-            linkText: 'electrocrafting : intro',
-            linkSrc: '',
-        },
-        {   linkText: 'some stuff you might want',
-            linkSrc: '',
-        },
-        {
-            linkText: 'navigating the course website',
-            linkSrc: '',
-        },
-        {
-            linkText: 'submitting an assignment',
-            linkSrc: '',
-        },
-        {
-            linkText: 'resizing an image using gimp',
-            linkSrc: 'https://youtu.be/8ukaQw6oPM8',
-        },
-        {
-            linkText: 'making a screenshot in the chrome browser',
-            linkSrc: 'https://youtu.be/lkBm5UPu5wg',
-        },
-
-    ], 
+    
     inspirationLinks: [
  
         {
