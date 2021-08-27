@@ -13,8 +13,8 @@ const DAY16 = {
     ],
     inspirationLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'Clock Clock 24 on a Raspberry Pi using Web Technologies',
+            linkSrc: 'https://manu.ninja/clock-clock-24-on-a-raspberry-pi-using-web-technologies/',
         },
     ],
     techLinks: [

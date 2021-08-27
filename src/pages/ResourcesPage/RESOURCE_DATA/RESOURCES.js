@@ -165,6 +165,10 @@ const RESOURCES = {
         description: '',
         links: [
             {
+                linkText: 'learn git and github in five minutes',
+                linkSrc: 'https://www.educative.io/edpresso/learn-git-and-github-in-5-minutes',
+            },
+            {
                 linkText: 'Daniel Shiffman git and github for poets, series of videos',
                 linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
             },
@@ -180,10 +184,7 @@ const RESOURCES = {
                 linkText: 'installing git',
                 linkSrc: 'https://git-scm.com/book/en/v2/Getting-Started-Installing-Git',
             },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
+
             {
                 linkText: '',
                 linkSrc: '',

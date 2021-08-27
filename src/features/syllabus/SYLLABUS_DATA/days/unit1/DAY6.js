@@ -13,11 +13,51 @@ const DAY6 = {
     ],
     inspirationLinks: [
         {
+            linkText: 'thingamajigs festival 2013 video',
+            linkSrc: 'https://www.youtube.com/watch?v=K0ZZ3mVlYD8',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'this marble machine is kinda cool but...the video is lame-ish',
+            linkSrc: 'https://www.youtube.com/watch?v=IvUU8joBb1Q',
+        },
     ],
     techLinks: [
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         {
             linkText: '',
             linkSrc: '',

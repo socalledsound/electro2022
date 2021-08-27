@@ -42,38 +42,38 @@ export const ASSIGNMENT_TITLES = [
 export const ASSIGNMENT1 = {
     id: 1,
     title : 'intro',
-    description : "Please log in to the course website, upload a picture of yourself to your profile, and write a sentence or two about yourself in the discussion thread named 'cast list'.    Please read through the links at today's day page and then get started with the materials for next class, which will introduce you to html and css by making copies of some famous paintings.  You should look through the links (and watch whatever attached videos there are) for each day before class.  Oh, and go to the project 1 page (get there from the unit1 page in the syllabus) and start thinking about what you'll make!",
+    description : ``,
     markdown: DAY1_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT2 = {
     title : 'resistance',
-    description : "Today we're going to start learning css by making copies of paintings by Josef Albers and Bridget Reilly.  We'll learn a bit about the box model and the 'flow' of a web page.  To get the detailed instructions, click the button below.",
+    description : ``,
     markdown: DAY2_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT3 = {
     title : 'switches',
-    description :     "Today, we get a little more serious about drawing with css.  We'll use circles and other shapes, learn about color gradients, and think a little more seriously about composition.  We'll look at some fairly baroque adventures in css drawing and realize that the learning curve in css is basically eternal.  If there's a core lesson that I'd like you to take away from today it's the idea of re-building something by first breaking it down into it's discrete components.",
+    description : ``,
 
     markdown: DAY3_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT4 = {
     title : 'sensing',
-    description: "let's make a meme! in html and css.  or: explore the relationship between text and image in a single page work of art.  We'll learn about the <img>, <h> and <p> tags, and use what you've learned about positioning to make an effective layout.  We're also going to learn about Cloudinary, for hosting our images.", 
+    description: ``, 
     markdown: DAY4_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT5 = {
     title : 'collection',
-    description :"I want you to take ten images that are loosely related, and tell a story, or even better, tell a bunch of different stories, depending on the order in which they are presented.  In other words, let's make a hypertext!   Details afer the click.",
+    description :``,
     markdown: DAY5_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT6 = {
     title : 'hardware',
-    description : "It's time to start working on your first big project, if you haven't already.  Submit a sketch of what you're thinking about doing to the project1 channel in the dicussion.  In workshop we'll about arrays and objects, our two fundamental tools for managing collections and data in javascript.  We'll also learn about flexbox, a super useful css layout model that makes it super easy to lay out a collection on a page.",
+    description : ``,
     markdown: DAY6_WORKSHOP_MD,
 }
 

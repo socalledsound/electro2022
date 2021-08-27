@@ -3,16 +3,25 @@ const DAY5 = {
     unit: 'unit1',
     date: 'September 9, 2021',
     title: 'collection',
-    description: "Today we're going to look at a bunch of art that involves this idea of collecting that I want you to explore in your first project.  We'll start by talking about the Tacita Dean article you read, which talks about the magic and the burden of collecting.  We'll talk about ambergris and we'll talk about that one sock in the drawer that doesn't match anything and sort of makes the whole drawer sing, as a result.",
+    description: `
+    Today we're going to look at a bunch of art that involves this idea of collecting that I want you to explore 
+    in this first project.  We'll start by talking about the Tacita Dean article you read, which talks about the 
+    magic and the burden of collecting.  We'll talk about ambergris and we'll talk about that one sock in the drawer 
+    that doesn't match anything and sort of makes the whole drawer sing, as a result.  We'll also explore loops and arrays
+    in javascript and learn how to trigger sounds on the circuit playground express.`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     
     videos: [
         {
-            linkText: '',
+            linkText: 'collection',
             linkSrc: '',
         },
     ],
     inspirationLinks: [
+        {
+            linkText:"Christian Marclay mini documentary",
+            linkSrc:"https://www.youtube.com/watch?v=boWmP0os2e8"
+        },	
         {
             linkText:"Arthur Jafa, Love is the Message, the Message is Death",
             linkSrc:"https://www.youtube.com/watch?v=lKWmx0JNmqY"
@@ -117,9 +126,17 @@ const DAY5 = {
     ],
     techLinks: [
         {
+            linkText: 'freesound.org',
+            linkSrc: 'https://freesound.org/',
+        },
+        {
             linkText:"javascript array reference",
             linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
-        },					                
+        },	
+        {
+            linkText: 'objects and arrays in javascript',
+            linkSrc: 'https://medium.com/javascript-in-plain-english/introduction-to-javascript-data-structures-af1ecb2d38eb',
+        },				                
         {
             linkText:"array methods",
             linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
@@ -128,6 +145,10 @@ const DAY5 = {
         {
             linkText: 'How To Correctly Shuffle An Array in JavaScript',
             linkSrc: 'https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb',
+        },
+        {
+            linkText: 'a simple looping sequencer in js',
+            linkSrc: 'https://github.com/socalledsound/js-sequencer',
         },
     ],
 

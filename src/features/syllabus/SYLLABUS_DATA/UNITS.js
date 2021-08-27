@@ -56,7 +56,7 @@ export const UNIT0 = {
 
 export const UNIT1 = {
     id: 101,
-    title: 'unit 1 : colllection',
+    title: 'unit 1 : collection',
     unit: 'unit1',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     overview: "This unit is about collections, otherwise known as data.  What makes a meaningful collection?  What are some of the strategies we can use to tame data, or set it free?  Data is to coding as paint is to painting.  In this unit we will learn some things about storing and manipulating data but also spend a good ammount of time thinking about why we should do this, and explore various approaches to organizing and presenting collections.  Most importantly, we'll discuss how to introduce just enough fuckery to keep things spicy and fun.  We'll look at the work of a wide range of artists who have tackled these problems in interesting ways: Eva Hesse, Agnes Martin, Francis Alys, Joseph Kosuth and, of course, Iggy Azalea.   And many others  .  Wait, what?  Data, Eva Hesse, you ask?  All will be made clear, and I hope it will be a fun process.",
@@ -67,20 +67,29 @@ export const UNIT1 = {
 
 export const UNIT2 = {
     id: 102,
-    title: 'unit 2 : goldberg machine',
+    title: 'unit 2 : pitagoru suitchi',
     unit: 'unit2',
     illustrationURL: UNIT2LOGO,
-    overview: "In this unit we'll be thinking about systems, using Goldberg's famous machines as our model.  After getting a degree in engineering from UC Berkeley in 1904, Rube Goldberg quickly realized that working as an engineer for the fore-runner of EBMUD just wasn't for him.  Instead, he did the sensible thing and became a cartoonist.  Over the years, his drawings of intricate and whimsical machines have become iconic.  We're going to try to make our own playful versions of Goldberg machines in this unit, using javascript.  These can be games, or they can just be playful interactions.  Read more after the click.",
+    overview: `
+    In this unit we'll be thinking about systems, using the idea of a 'pythagorean switch' or 'rube goldberg machine' 
+    as our model.  After getting a degree in engineering from UC Berkeley in 1904, Rube Goldberg quickly realized that 
+    working as an engineer for the fore-runner of EBMUD just wasn't for him.  
+    Instead, he did the sensible thing and became a cartoonist.  Over the years, his drawings of intricate and whimsical 
+    machines have become iconic.  We're going to try to make our own playful versions of Goldberg machines in this unit, 
+    using javascript.  These can be games, or they can just be playful interactions.
+    `,
     project: MIDTERM_PROJECT,
     days: [DAY8, DAY9, DAY10, DAY11, DAY12, DAY13, DAY14, DAY15]
 }
 
 export const UNIT3 = {
     id: 103,
-    title: 'unit 3 : net work',
+    title: 'unit 3 : net.work',
     unit: 'unit3',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
-    overview: "network description here",
+    overview: `
+    
+    `,
     project: PROJECT3,
     days: [DAY16, DAY17, DAY18, DAY19, DAY20, DAY21]
 }

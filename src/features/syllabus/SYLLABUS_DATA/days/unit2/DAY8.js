@@ -3,13 +3,30 @@ const DAY8 = {
     unit: 'unit2',
     date: 'September 21, 2021',
     title: 'fun fun function',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "Today we begin unit 2, which will focus on compositions which unfold in time, such as animation and video games.  I'm taking Rube Goldberg's machines as inspiration for this unit, not because his machines are senesless and wonderful, but because they are processes.  We'll be focusing on artworks that are processes in this unit, and I hope what you learn here will cause you to look at all kinds of work differently.We'll also switch gears slightly, and move our attention to the <canvas /> element in the web browser.  We'll use the p5 library, which has all kinds of useful tools for artists.  And, we'll start composing software in javascript, using both the functional and the class-based style.",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
+    description: `
+    Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
+    Or, choose your own adventure books, like the one shown on the right.
+    I'm taking the famous 'Goldberg Machines', or 'Pitagoru Suitchi', as they're called in Japan,
+     as inspiration for this unit, not just because those machines are senesless and wonderful, but also because they are 
+     processes.  We'll be focusing on artworks that are processes in this unit, and I hope what you learn here will cause 
+     you to look at all kinds of work differently.  We'll also switch gears slightly, and move our attention to the 
+     javascript in its native context, the web.  We'll use the p5 library, which has all kinds of useful tools for artists.  
+     And, we'll start actually composing software in javascript, using both the functional and the class-based style.
+    `,
     inspirationLinks: [
-        
+
         {
             linkText:"Pitagoru Suitchi",
             linkSrc:"https://www.facebook.com/34842394274/videos/1054182998170/"
+        },
+        {
+            linkText: 'fischli and weiss:the way things go',
+            linkSrc: 'https://vimeo.com/463685768',
+        },
+        {
+            linkText: '748時間かけたピタゴラ装置（short ver.）Rube Goldberg Machine made in 748 hours',
+            linkSrc: 'https://www.youtube.com/watch?v=IfEWIT_pHPk',
         },
         {
             linkText:"sound shapes game",
@@ -98,10 +115,7 @@ const DAY8 = {
                 linkText: '',
                 linkSrc: '',
             },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
+
         ], 
         videos: [
             // {
