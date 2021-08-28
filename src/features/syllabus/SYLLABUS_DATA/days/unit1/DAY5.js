@@ -1,5 +1,6 @@
 const DAY5 = {
     id: 5,
+    async: true,
     unit: 'unit1',
     date: 'September 9, 2021',
     title: 'collection',
@@ -10,11 +11,21 @@ const DAY5 = {
     that doesn't match anything and sort of makes the whole drawer sing, as a result.  We'll also explore loops and arrays
     in javascript and learn how to trigger sounds on the circuit playground express.`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
-    
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
             linkText: 'collection',
             linkSrc: '',
+        },
+    ],
+    reading: [
+        {
+            linkText:"Tacita Dean, 'Collections and Childhood'",
+            linkSrc : 'https://drive.google.com/file/d/1xGCnGF_bqDqtF8u83OrKUbtSOprsSVSE/view?usp=sharing',
         },
     ],
     inspirationLinks: [
@@ -34,10 +45,7 @@ const DAY5 = {
             linkText: 'MSCHF Cuts Up $30,000 USD Damien Hirst Spot Print Into 88 Dots',
             linkSrc: 'https://hypebeast.com/2020/4/mschf-damien-hirst-severed-spots-project',
         },
-        {
-            linkText:"Tacita Dean, 'Collections and Childhood'",
-            linkSrc : 'https://drive.google.com/file/d/1xGCnGF_bqDqtF8u83OrKUbtSOprsSVSE/view?usp=sharing',
-        },
+
         {
             linkText: 'the green ray, tacita dean',
             linkSrc: 'https://vimeo.com/38026163',

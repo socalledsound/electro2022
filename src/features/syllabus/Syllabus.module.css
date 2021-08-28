@@ -85,6 +85,21 @@
   color: rgb(255, 1, 136);
 }
 
+.asyncDayContainer {
+  border-radius: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  background-color: rgba(20, 20, 200, 0.5);
+  color: white;
+}
+
+.asyncDayContainer:hover {
+  background-color: rgb(57, 171, 107);
+  color: rgb(255, 1, 136);
+}
+
 .unitHeaderWrapper {
   /* background-color: salmon; */
   display: flex;

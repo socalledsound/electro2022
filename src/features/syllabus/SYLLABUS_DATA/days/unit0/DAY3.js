@@ -1,5 +1,6 @@
 const DAY3 = {
     id: 3,
+    async: true,
     unit: 'unit0',
     date: 'September 2, 2021',
     title: 'listen!',
@@ -11,25 +12,29 @@ const DAY3 = {
     And when I say, 'listen', I don't mean in the sonic sense; we'll do that soon enough.  
     No, in this class, we'll learn about listening for event messages, using 'event listeners',
     which are pretty essential to all forms of machine/human interfaces.  Watch the videos to find out what I mean!`,
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
             linkText: 'listen!',
             linkSrc: '',
         },      
         {
-            linkText: 'listening for messages',
+            linkText: 'listening for messages on the CPE',
             linkSrc: '',
         },        
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
     ],
-    inspirationLinks: [
+    reading : [
         {
             linkText: 'Pauline Oliveros: some sound observations',
             linkSrc: 'https://drive.google.com/file/d/1OAnH99RQi2uKMdw5ri6_RB7UzNi98p6y/view',
         },
+    ],
+    inspirationLinks: [
+
         {
             linkText: 'The watts prophets: listen',
             linkSrc: 'https://www.youtube.com/watch?v=kU8X3GQOOqo',
@@ -104,10 +109,11 @@ const DAY3 = {
             linkText: 'this looks cool if you prefer python on your CPE',
             linkSrc: 'https://www.hanselman.com/blog/adafruits-circuit-playground-express-simulated-visual-studio-codes-device-simulator-express',
         },        
+        {
+            linkText: 'linux signals',
+            linkSrc: 'https://wizardzines.com/comics/signals/',
+        },        
         //{
-        //     linkText: '',
-        //     linkSrc: '',
-        // },        {
         //     linkText: '',
         //     linkSrc: '',
         // },

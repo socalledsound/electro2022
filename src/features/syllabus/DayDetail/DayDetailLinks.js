@@ -3,7 +3,7 @@ import styles from './DayDetail.module.css'
 
 const DayDetailLinks = ({day}) => {
     
-    const { inspirationLinks, techLinks, videos } = day
+    const { inspirationLinks, techLinks, videos, reading } = day
     return ( 
                       
         <div className={styles.linksWrapper}>
@@ -23,13 +23,34 @@ const DayDetailLinks = ({day}) => {
                     <p className={styles.videoListTitle}>i</p> 
                     <p className={styles.videoListTitle}>d</p> 
                     <p className={styles.videoListTitle}>s</p> 
-                    {/* <p className={styles.videoListTitle}>o</p> 
-                    <p className={styles.videoListTitle}>s</p>  */}
-
                 </div>
             </div>
 
             }
+
+            {
+                reading && reading.length > 0 &&
+                <div className={styles.linksListContainer}>
+                    <ul  className={styles.linksList}>
+                    {
+                        reading.map((link, idx) => {
+                            return (
+                                <div>
+                                     <li key={idx} className={styles.dayDetailLink}><a href={link.linkSrc}>{link.linkText}</a></li>
+                                </div>
+                            )
+                        })
+                    }
+                    </ul>
+                    <div className={styles.listTitleContainer} style={{backgroundColor: 'rgba(32, 18, 231, 0.9)'}}>
+                        <p className={styles.listTitle}>r</p> 
+                        <p className={styles.listTitle}>e</p> 
+                        <p className={styles.listTitle}>a</p> 
+                        <p className={styles.listTitle}>d</p> 
+                    </div>
+                </div>
+            }
+
             
                 {
                 techLinks.length > 0 &&
@@ -47,13 +68,6 @@ const DayDetailLinks = ({day}) => {
                         <p className={styles.listTitle}>o</p> 
                         <p className={styles.listTitle}>d</p> 
                         <p className={styles.listTitle}>e</p> 
-                        {/* <p className={styles.listTitle}>n</p>  */}
-                        {/* <p className={styles.listTitle}>r</p> 
-                        <p className={styles.listTitle}>a</p> 
-                        <p className={styles.listTitle}>t</p> 
-                        <p className={styles.listTitle}>i</p> 
-                        <p className={styles.listTitle}>o</p> 
-                        <p className={styles.listTitle}>n</p>  */}
                     </div>
                 </div>
                 }

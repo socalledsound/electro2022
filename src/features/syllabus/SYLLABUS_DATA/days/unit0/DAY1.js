@@ -10,6 +10,11 @@ const DAY1 = {
                     and lay out my vision for the course.  I'll also give you a circuit playground express
                     and introduce you to our first coding platform, makeCode.
                     `, 
+    discussionQuestions: [
+        `why are you here and`,
+        `WHAT DO YOU WANT TO MAKE?`,
+        `; ) `,
+    ],
                     videos: [
                         {
                             linkText: 'electrocrafting : intro',

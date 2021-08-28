@@ -1,5 +1,6 @@
 const DAY8 = {
     id: 8,
+    async: true,
     unit: 'unit2',
     date: 'September 21, 2021',
     title: 'fun fun function',

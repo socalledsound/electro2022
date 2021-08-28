@@ -1,5 +1,6 @@
 const DAY26 = {
     id: 26,
+    async: true,
     unit: 'unit3',
     date: 'November 23, 2021',
     title: 'real time',

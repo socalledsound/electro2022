@@ -1,5 +1,6 @@
 const DAY13 = {
     id: 13,
+    async: true,
     unit: 'unit3',
     date: 'October 07, 2021',
     title: 'process',
@@ -12,11 +13,15 @@ const DAY13 = {
     `,
     videos: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: `Francis Alys: 'the leak'`,
+            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
         },
     ],
     inspirationLinks: [
+        {
+            linkText: `Francis Alys: 'the leak'`,
+            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
+        },
         {
             title: 'steve reich, music as a gradual process',
             link : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',

@@ -1,5 +1,6 @@
 const DAY22 = {
     id: 22,
+    async: true,
     unit: 'unit3',
     date: 'November 9, 2021',
     title: 'expanded realities',

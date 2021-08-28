@@ -1,10 +1,19 @@
 const DAY4 = {
     id: 4,
+    async: false,
     unit: 'unit1',
     date: 'September 7, 2021',
     title: 'mic check',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1603689412/side-effects/HNND2_lw07um.jpg',
-    description: ``,
+    description: `The title says 'mic check' -- because we're going to build mics in class -- but really, today's class 
+    is about listening.  Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva', just put it 
+    on in the background for a while at some point.  Also listen to untitled # read
+    his 'profound listening article.  `,
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
             linkText: 'working with sound',
@@ -19,10 +28,21 @@ const DAY4 = {
             linkSrc: '',
         },        
     ],
+    reading: [
+        {
+           linkText: `Francisco Lopez, 'profound listening'`,
+           linkSrc: 'https://drive.google.com/file/d/1JaJP-WHN08ReQ05Lm3jHr89HNr8-kb-g/view?usp=sharing', 
+        }
+
+    ],
     inspirationLinks: [
         {
             linkText:"Francisco Lopez, La Selva",
             linkSrc:"https://www.youtube.com/watch?v=1_slk9NmgGM"
+        },
+        {
+            linkText:'',
+            linkSrc: 'https://room40.bandcamp.com/album/airport-symphony',
         },
         {
             linkText:"this is not la selva",

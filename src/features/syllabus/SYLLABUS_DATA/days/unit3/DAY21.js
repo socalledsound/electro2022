@@ -1,5 +1,6 @@
 const DAY21 = {
     id: 21,
+    async: true,
     unit: 'unit3',
     date: 'November 4, 2021',
     title: 'backend',

@@ -1,5 +1,6 @@
 const DAY11 = {
     id: 11,
+    async: true,
     unit: 'unit3',
     date: 'September 30, 2021',
     title: 'enemy mine',

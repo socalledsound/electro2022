@@ -9,7 +9,7 @@ import styles from './DayDetail.module.css'
 
 const DayDetail = ({day}) => {
     const currentUser = useSelector(selectCurrentUser)
-    const { unit, date, title, illustrationURL, description } = day
+    const { unit, async, date, title, illustrationURL, description, discussionQuestions } = day
     // console.log(description)
     return ( 
 
@@ -24,7 +24,7 @@ const DayDetail = ({day}) => {
                         
                   
 
-                        <h5 className={styles.title}>{date.slice(0,-6)} : {title}</h5>
+                        <h5 className={async ? styles.asyncTitle : styles.title}>{date.slice(0,-6)} : {title}</h5>
                         {
                             currentUser ?
                             <AssignmentButton day={day}/>
@@ -50,14 +50,22 @@ const DayDetail = ({day}) => {
                     
                 </div>
 
-                {/* <AssignmentBlock 
-                    assignment={assignment} 
-                    assignmentRoute={assignmentRoute} 
-                    assignmentRouteHandler={assignmentRouteHandler} 
-                    nextDay={nextDay} 
-                    month={month} 
-                    day={day}
-                /> */}
+                <div className={styles.discussionQuestionsContainer}>
+                    <div className={styles.questionsBorder}>
+                        {
+                            discussionQuestions && 
+                            discussionQuestions.map( q => {
+                                return (
+                                    <div>
+                                        <p>{q}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    
+                    </div>
+                </div>
+
                 
            </div>
            <DayDetailLinks day={day}/>

@@ -1,5 +1,6 @@
 const DAY20 = {
     id: 20,
+    async: true,
     unit: 'unit4',
     date: 'November 2, 2021',
     title: 'analyzing audio',

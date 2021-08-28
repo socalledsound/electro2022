@@ -1,5 +1,6 @@
 const DAY24 = {
     id: 24,
+    async: true,
     unit: 'unit3',
     date: 'November 16, 2021',
     title: 'throwing shade',

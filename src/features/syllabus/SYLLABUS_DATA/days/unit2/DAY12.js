@@ -1,5 +1,6 @@
 const DAY12 = {
     id: 12,
+    async: true,
     unit: 'unit3',
     date: 'October 05, 2021',
     title: 'games without players',

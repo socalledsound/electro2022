@@ -1,5 +1,6 @@
 const DAY17 = {
     id: 17,
+    async: true,
     unit: 'unit4',
     date: 'October 21, 2021',
     title: 'sockets',

@@ -1,5 +1,6 @@
 const DAY25 = {
     id: 25,
+    async: true,
     unit: 'unit3',
     date: 'November 18, 2021',
     title: 'the matrix',

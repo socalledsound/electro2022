@@ -1,5 +1,6 @@
 const DAY19 = {
     id: 19,
+    async: true,
     unit: 'unit4',
     date: 'October 28, 2021',
     title: 'camera input',

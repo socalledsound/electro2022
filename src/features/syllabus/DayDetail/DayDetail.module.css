@@ -59,6 +59,18 @@
   /* border-bottom: 1px solid white; */
 }
 
+.asyncTitle {
+  font-size: 1rem;
+  padding: 1.6rem;
+  padding: 1.6rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-radius: 1.8rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(20, 20, 225, 0.457);
+}
+
 .dayButtons {
   display: flex;
   flex-direction: column;
@@ -76,9 +88,26 @@
   border-radius: 1.2rem;
 }
 
+.discussionQuestionsContainer {
+  font-family: "Martel", serif;
+  font-weight: 300;
+  margin-top: 1.2rem;
+  padding: 0.6rem;
+  border: 1px solid rgb(42, 48, 165);
+  border-radius: 1.2rem;
+}
+
 .descriptionBorder {
   /* background-color: rgb(82, 12, 12); */
   border: 1px solid white;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  min-height: 10rem;
+}
+
+.questionsBorder {
+  border: 1px solid white;
+  background-color: rgba(128, 128, 128, 0.457);
   padding: 1.2rem;
   border-radius: 1.2rem;
   min-height: 10rem;
