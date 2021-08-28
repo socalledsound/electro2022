@@ -8,6 +8,7 @@ const CritMessagesContainer = ({item}) => {
 
     const dispatch = useDispatch()
     const critMessages = useSelector(selectCritMessagesForItemId(item.id))
+    
     useEffect(() => {  
         dispatch(fetchCritMessagesStart(item.id))
     }, [dispatch, item.id])

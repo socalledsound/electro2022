@@ -2,3 +2,24 @@
   padding: 0.4rem;
   /* border: 2px solid green; */
 }
+
+.loginAgainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logInAgainContainer {
+  background-color: blue;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.logInAgainButton {
+  color: white;
+  text-decoration: none;
+}
+
+.logInAgainContainer {
+  margin-top: 1.2rem;
+}

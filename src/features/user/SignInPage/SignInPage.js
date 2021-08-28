@@ -27,11 +27,15 @@ const SignInPage = ({currentUser}) => {
                 :
                 <Register toggleRegistered={toggleRegistered}/>
             :
-            <div>
+            <div className={styles.failureWrapper}>
                 <div>
-                {/* {errors}  */}
+                {errors} 
                 </div>
-                <div onClick={() => dispatch(resetLoginErrors())}>
+                <div
+                    className={styles.tryAgainButton} 
+                    onClick={() => dispatch(resetLoginErrors())}
+                >
+                    
                     try again?
                 </div>
             </div>

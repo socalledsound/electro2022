@@ -33,9 +33,15 @@ const UserStatus = () => {
                         
                  </div>
                  :
-                 <div>
-                     <Link to='/'>log in </Link>again to see your status
+                 <div className={styles.loginAgainWrapper}>
+
+                    <div className={styles.logInAgainContainer}>
+                        <Link to='/' className={styles.logInAgainButton}>log in </Link>
+                        <div></div> 
+                    </div>
+                    <p>to see your status</p>
                  </div>
+
             }
         </div>
 

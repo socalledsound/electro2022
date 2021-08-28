@@ -5,6 +5,7 @@ const initialState = {
     currentUser: null,
     errors: null,
     loading: false,
+    readCritMessages: [],
 }
 
 export const userSlice = createSlice({

@@ -71,3 +71,25 @@
   text-decoration: none;
   text-align: center;
 }
+
+.failureWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tryAgainButton {
+  background-color: indianred;
+  color: rgb(18, 15, 110);
+  width: 5rem;
+  margin-top: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  /* text-decoration: underline; */
+  cursor: pointer;
+  text-align: center;
+}
+
+.tryAgainButton:hover {
+  background-color: rgb(130, 124, 124);
+}
