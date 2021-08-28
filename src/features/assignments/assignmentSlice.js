@@ -33,7 +33,7 @@ import {
     ASSIGNMENT30,    
 } from './ASSIGNMENTS'
 
-const ASSIGNMENTS = [
+export const ASSIGNMENTS = [
     ASSIGNMENT1,
     ASSIGNMENT2,
     ASSIGNMENT3,

@@ -11,7 +11,7 @@
 }
 .critMessageContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgba(227, 218, 218, 0.573);
   border-radius: 0.6rem;
   padding: 0.6rem;
@@ -21,11 +21,27 @@
 } */
 
 .critMessageTitleContainer {
-  display: flex;
-  height: 2.5rem;
-  padding: 0.6rem;
+  width: 30%;
+  height: 6rem;
+  padding: 0.1rem;
+  padding-right: 1.2rem;
   padding-bottom: 0.2rem;
+
+  border-right: 2px solid rgb(134, 132, 132);
+}
+
+.critMessageTitleSecondaryContainer {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  /* padding-bottom: 0.2rem; */
+}
+
+.userName {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .critMessageBodyContainer {
@@ -33,15 +49,21 @@
 }
 
 .avatar {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+}
+
+.elapsedTime {
+  font-size: 0.5rem;
+  color: grey;
+  font-style: italic;
 }
 
 .submitCritMessageWrapper {
   border: 2px solid green;
   padding: 0.6rem;
-  padding-bottom: 0.8rem;
+  /* padding-bottom: 0.8rem; */
   border-radius: 0.6rem;
 }
 

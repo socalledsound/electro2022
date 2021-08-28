@@ -25,8 +25,8 @@ const GalleryCategoryPage = ({match, history}) => {
                 works.length > 0 &&
                 works.map( (work, idx) => {
                     return(
-                        <div className={styles.itemSpacer}>
-                            <GalleryItem key={`item${work.id}-${idx}`} item={work}/>
+                        <div key={`item${work.id}-${idx}`} className={styles.itemSpacer}>
+                            <GalleryItem  item={work}/>
                         </div>
                         
                     )

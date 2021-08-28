@@ -1,13 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { selectPreviousDays } from '../syllabus/syllabusSlice'
+import { selectCompletedAssignments } from '../user/userSlice'
+import { selectCritMessagesForUserId } from '../critMessages/critMessagesSlice'
+import { ASSIGNMENTS } from '../assignments/assignmentSlice'
 const initialState = {
     currentWarning: false,
-    critMessageWarning : {
-        numMade: 0,
-        numNeeded: 0
-    },
-    assignmentWarnings : [],
-    projectWarnings : [],
 }
 
 export const warningsSlice = createSlice({
@@ -24,14 +21,37 @@ export const warningsSlice = createSlice({
 })
 
 export const selectWarningStatus = state => state.warnings.currentWarning
-export const selectProjectWarnings  = state => state.warnings.projectWarnings
+export const selectProjectWarnings  = state => false
 export const selectAssignmentWarnings = state => {
     // state.warnings.assignmentWarnings
-    const assignmentsDue = selectPreviousDays(state)
-    // const warnings = assignmentsDue.filter(item => item.)
-    const warnings= []
+    const previousDays = selectPreviousDays(state)
+    const completedAssignments = selectCompletedAssignments(state)
+    const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title)
     console.log(assignmentsDue)
-    return warnings
+    // const warnings = assignmentsDue.filter(item => item.)
+    // const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
+    const warnings = assignmentsDue.filter((ass, idx) => {
+        if(!completedAssignments.some(comp => comp.assignment === ass)){
+            console.log(idx)
+            console.log(previousDays[idx])
+            return idx
+        } else {
+            return null
+        }
+    })
+    console.log(warnings)
+    if(warnings.length > 0){
+        return warnings
+    } else {
+        return null
+    }
+    
 }
-    export const selectCritMessageWarning = state => state.warnings.critMessageWarning
+    export const selectCritMessageWarning = userId => state => {
+        const numMade = selectCritMessagesForUserId(userId)(state)
+        const completedDays = selectPreviousDays(state)
+        const numNeeded = completedDays.length * 2
+        const critMessageWarning = {numMade, numNeeded}
+        return critMessageWarning
+    }
 export default warningsSlice.reducer

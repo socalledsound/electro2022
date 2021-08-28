@@ -10,7 +10,7 @@ const GalleryItemDetailPage = ({match, history}) => {
 
     // const currentUser = useSelector(selectCurrentUser)
     const itemId = match.params.workId 
-    console.log(itemId)
+    // console.log(itemId)
     const item = useSelector(selectItemById(itemId))
 
     return ( 

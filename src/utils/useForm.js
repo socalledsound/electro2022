@@ -11,6 +11,10 @@ export default function useForm(initialState = {}, validate, onSubmit) {
     //     }
     // }, [errors, isSubmitting, login])
 
+    const resetForm = () => {
+        setFormData(initialState)
+    }
+
 
     const handleInputChange = (e) => {
         setFormData({
@@ -25,5 +29,5 @@ export default function useForm(initialState = {}, validate, onSubmit) {
         updateErrors(validate(formData))
         onSubmit?.(formData);
     }
-    return { formData, errors, handleInputChange, handleSubmit }    
+    return { formData, errors, handleInputChange, handleSubmit, resetForm }    
 }

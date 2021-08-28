@@ -84,7 +84,22 @@ export const convertWorksSnapshotToMap = (works) => {
     return transformedArray
 }
 
-
+export const convertMessagesSnapshotToMap = (snap) => {
+    
+    const messages = snap.docs.map(doc => {
+        const { user, workId, message, timestamp} = doc.data()
+        // console.log(doc.data())
+        console.log(timestamp, user, workId, message)
+        return {
+            id: doc.id,
+            user,
+            workId, 
+            message,
+            timestamp: timestamp,
+        }
+    })
+    return messages
+}
 
 export default firebase;
 

@@ -1,10 +1,10 @@
 
-const example = {
-id: '00292', 
-workId: 'FofKrnSk5XNHBuFWekwM', 
-user: `user here`, 
-text: 'hi there thius is really nice'
-}
+// const example = {
+// id: '00292', 
+// workId: 'FofKrnSk5XNHBuFWekwM', 
+// user: `user here`, 
+// text: 'hi there thius is really nice'
+// }
 
 
 export const createCritMessageSubmission = (data) => {
@@ -13,8 +13,9 @@ export const createCritMessageSubmission = (data) => {
     const submission = {
         workId,
         user: currentUser.id,
-        text: message, 
+        message: message.message, 
+        timestamp: new Date().toString(),
     }
-
+    console.log(submission)
     return submission
 }

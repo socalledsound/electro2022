@@ -34,10 +34,6 @@ import DAY31_WORKSHOP_MD from './assignments_markdown/day31.workshop.md';
 
 
 //export const ASSIGNMENT_TITLES = [  'final-final','proto-final',  'sketchy-final', 'sockets and servers', 'hiro', 'shade', 'WEBGL', 'selfies', 'fun with fourier', 'project 2: goldberg machine', 'loading....', 'boids', 'enemy mine', 'games without players', 'SPRITES', 'new Player','pendulum music', 'fun fun function',  'project 1', 'listening', 'collecting', 'jeremy bearimy', 'can haz meme' , 'painting with css part 2', 'painting with css part 1'];
-export const ASSIGNMENT_TITLES = [
-    'hello!',
-    ''
-]
 
 export const ASSIGNMENT1 = {
     id: 1,

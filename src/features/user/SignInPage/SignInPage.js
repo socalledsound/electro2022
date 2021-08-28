@@ -11,7 +11,7 @@ const SignInPage = () => {
     const errors = useSelector(selectLoginError)
     const [registered, toggleRegistered ] = useState(true)
     // console.log(registered)
-
+    console.log(loading, registered, errors)
     return ( 
         <div className={styles.signInPageWrapper}>
 

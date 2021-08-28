@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import useForm from '../../utils/useForm'
 import { selectCurrentUser } from '../user/userSlice'
@@ -20,19 +20,21 @@ const SubmitCritMessageForm = ({item}) => {
 
     const dispatch = useDispatch()
     const currentUser = useSelector(selectCurrentUser)
-    const [textAreaState, resetTextAreaState] = useState(initialTextAreaState)
+
 
 
     const submitCritMessage = (message) => {
         
-        console.log(message)
+        console.log(message, 'in submitCM')
         const data = {currentUser, message, workId: item.id}
+        console.log(data)
         dispatch(startSubmitCritMessage(data))
-        resetTextAreaState(initialTextAreaState)
+        resetForm()
+        
     }
 
-    const { formData, errors, handleInputChange, handleSubmit } = 
-    useForm(textAreaState, validateCritMessage, (formData) => submitCritMessage(formData))
+    const { formData, errors, handleInputChange, handleSubmit, resetForm } = 
+    useForm(initialTextAreaState, validateCritMessage, (formData) => submitCritMessage(formData))
 
     const { message } = formData
 

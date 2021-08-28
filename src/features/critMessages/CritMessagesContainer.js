@@ -1,26 +1,31 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { selectCritMessagesForItemId } from './critMessagesSlice'
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { selectCritMessagesForItemId, fetchCritMessagesStart } from './critMessagesSlice'
 import CritMessage from './CritMessage'
 import styles from './CritMessages.module.css'
 import SubmitCritMessageForm from './SubmitCritMessageForm'
 const CritMessagesContainer = ({item}) => {
 
+    const dispatch = useDispatch()
     const critMessages = useSelector(selectCritMessagesForItemId(item.id))
-    console.log(item.id)
-    console.log(critMessages)
-    // const critMessages = useSelector(selectCritMessages)
+    useEffect(() => {  
+        dispatch(fetchCritMessagesStart(item.id))
+    }, [dispatch, item.id])
 
-    // const critMessages = [
-    //     {id: 0, createdBy:{id:'xqWp0vWr3ENQwBOep8O6nrlCKgo1'}, text: 'hi there thius is really nice'}
-    // ]
+    console.log(critMessages)
+
+    const sortedCritMessages = critMessages.sort((a, b) => {
+        const time1 = new Date(a.timestamp)
+        const time2 = new Date(b.timestamp)
+        return time2 - time1
+    })
 
     return ( 
         <div className={styles.critMessagesContainerWrapper}>
             <SubmitCritMessageForm item={item}/>
             {
-                critMessages.length > 0 ?
-                critMessages.map(msg => <CritMessage key={msg.id} message={msg}/>)
+               sortedCritMessages.length > 0 ?
+               sortedCritMessages.map(messageItem => <CritMessage key={messageItem.id} item={messageItem}/>)
                 :
                 null
             }

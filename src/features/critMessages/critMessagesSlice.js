@@ -2,14 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 const initialState = {
-    messages: [
-        {
-            id: '00292', 
-            workId: 'FofKrnSk5XNHBuFWekwM', 
-            user: 'xqWp0vWr3ENQwBOep8O6nrlCKgo1', 
-            text: 'hi there thius is really nice'  
-        }
-    ],
+    messages: [],
     errors: null,
     
 }
@@ -30,10 +23,28 @@ export const critMessagesSlice = createSlice({
         },
 
         submitCritMessageSuccess  : (state, action) => {
+           
             return {
                 ...state,
+
             }
         },
+        fetchCritMessagesStart(){},
+        fetchCritMessagesSuccess : (state, action) => {
+            console.log(action.payload, 'sucess!')
+            // const previousCritMessages = 
+            return{
+                ...state,
+                messages: action.payload
+            }
+        },
+        fetchCritMessagesFailure : (state, action) => {
+            return {
+                ...state,
+                errors: action.payload,
+            }
+        }
+
 
     }
 })
@@ -54,16 +65,30 @@ export const selectCritMessages = state => state.critMessages.messages
 //     )
 // }
 
-export const selectCritMessagesForItemId = id => state => {
-    
-    console.log(id)
+export const selectCritMessagesForItemId = id => state => { 
+    // console.log(id)
     const arr = state.critMessages.messages.filter(item => {
-        console.log(item.workId, id)
+        // console.log(item.workId, id)
         return item.workId === id
     })
-    
     return arr
 }
-export const { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure } = critMessagesSlice.actions
+
+export const selectCritMessagesForUserId = id => state => {
+    const arr = state.critMessages.messages.filter(item => {
+        return item.user === id
+    })
+    if(arr.length > 0){
+        return arr
+    } else {
+        return 0
+    }
+    
+}
+
+
+export const { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
+    fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure,
+ } = critMessagesSlice.actions
 
 export default critMessagesSlice.reducer
