@@ -1,7 +1,25 @@
-import  { takeLatest, put, all, call } from 'redux-saga/effects';
+import  { takeLatest, put, all, call, take } from 'redux-saga/effects';
+import { eventChannel } from 'redux-saga'
 import { firestore, convertUsersSnapshotToMap} from '../../firebase/firebase.utils';
 import { loginLoading } from '../../features/user/userSlice'
-import{ startFetchUsers, fetchUsersSuccess, fetchUsersFailure} from '../../features/people/peopleSlice'
+import{ startFetchUsers, fetchUsersSuccess, fetchUsersFailure, updateUsers, syncUsersFailure, startSyncUsers} from '../../features/people/peopleSlice'
+
+
+function * syncUsers () {
+    const ref = firestore.collection('users')
+    const channel = eventChannel(emit => ref.onSnapshot(emit))
+  
+    try {
+      while (true) {
+        const data = yield take(channel)
+        yield put(updateUsers(data))
+      }
+    } catch (err) {
+      yield put(syncUsersFailure(err))
+    }
+  }
+
+
 
 
 function* fetchUsers(){
@@ -21,13 +39,16 @@ function* fetchUsers(){
         }
 }
 
+export function* onStartSyncUsers(){
+    yield takeLatest(startSyncUsers.type, syncUsers)
+}
 
 export function* onFetchUsersStart(){
     yield takeLatest(startFetchUsers.type, fetchUsers)
 }
 
 export function* peopleSagas() {
-    yield all([call(onFetchUsersStart)])
+    yield all([call(onFetchUsersStart), call(onStartSyncUsers)])
 }
 
 
