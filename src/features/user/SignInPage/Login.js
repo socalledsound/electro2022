@@ -24,7 +24,7 @@ const Login = ({toggleRegistered}) => {
     return ( 
         <div className={styles.loginBG}>
 
-           <div className={styles.formContainer}>
+            <div className={styles.formContainer}>
            <div className={styles.loginTitleCard}>
                 existing user login:
             </div>

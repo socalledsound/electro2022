@@ -21,7 +21,7 @@ import peopleReducer from '../features/people/peopleSlice'
 import assignmentReducer from '../features/assignments/assignmentSlice'
 import submitWorkReducer from '../features/submitWork/submitWorkSlice'
 import critMessagesReducer from '../features/critMessages/critMessagesSlice'
-
+import logger from 'redux-logger'
 const sagaMiddleware = createSagaMiddleware()
 
 const reducer = combineReducers({
@@ -54,7 +54,7 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }), 
-    sagaMiddleware],
+    sagaMiddleware, logger],
 });
 
 sagaMiddleware.run(rootSaga)

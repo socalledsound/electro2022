@@ -27,19 +27,19 @@ export const selectAssignmentWarnings = state => {
     const previousDays = selectPreviousDays(state)
     const completedAssignments = selectCompletedAssignments(state)
     const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title)
-    console.log(assignmentsDue)
+    console.log(assignmentsDue, completedAssignments)
     // const warnings = assignmentsDue.filter(item => item.)
     // const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
-    const warnings = assignmentsDue.filter((ass, idx) => {
-        if(!completedAssignments.some(comp => comp.assignment === ass)){
-            console.log(idx)
-            console.log(previousDays[idx])
-            return idx
-        } else {
-            return null
-        }
-    })
+    let needed = []
+    if(completedAssignments.length > 0){
+        needed = assignmentsDue.filter((ass, idx) => !completedAssignments.some(comp => comp.assignment === ass))
+    }else {
+       needed = assignmentsDue
+    }
+    console.log(needed)
+    const warnings = needed.map((el, idx) => previousDays[idx])
     console.log(warnings)
+
     if(warnings.length > 0){
         return warnings
     } else {
@@ -48,10 +48,17 @@ export const selectAssignmentWarnings = state => {
     
 }
     export const selectCritMessageWarning = userId => state => {
-        const numMade = selectCritMessagesForUserId(userId)(state)
+        
+        const numMade = selectCritMessagesForUserId(userId)(state).length
         const completedDays = selectPreviousDays(state)
         const numNeeded = completedDays.length * 2
-        const critMessageWarning = {numMade, numNeeded}
-        return critMessageWarning
+        if(numMade < numNeeded){
+            return {
+                numMade,
+                numNeeded
+            }
+        }else{
+            return null
+        }    
     }
 export default warningsSlice.reducer

@@ -2,13 +2,15 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectProjectWarnings, selectAssignmentWarnings, selectCritMessageWarning } from './warningsSlice'
 import AssignmentWarning from './AssignmentWarning'
+import CritMessageWarning from './CritMessageWarning'
 import styles from './UserWarnings.module.css'
 const UserWarnings = ({currentUser}) => {
   
     const projectWarnings = useSelector(selectProjectWarnings)
     const assignmentWarnings = useSelector(selectAssignmentWarnings)
-    console.log(assignmentWarnings)
     const critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
+    
+    console.log(assignmentWarnings)
 
     return ( 
         <div className={styles.userWarningsWrapper}>
@@ -41,7 +43,7 @@ const UserWarnings = ({currentUser}) => {
                 <div className={styles.critMessageWarningsWrapper}>
                     ATTENTION!: please spend a little time responding to other peoples work in the gallery
                     <div className={styles.critMessageWarningsContainer}>
-                        {critMessageWarning.numMade} of {critMessageWarning.numNeeded}
+                        <CritMessageWarning warning={critMessageWarning}/>
                     </div>
                     
                 </div>

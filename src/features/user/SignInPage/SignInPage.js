@@ -5,7 +5,7 @@ import Loading from '../../../components/Loading/Loading'
 import LogIn from './Login'
 import Register from './Register'
 import styles from './SignInPage.module.css'
-const SignInPage = () => {
+const SignInPage = ({currentUser}) => {
     const dispatch = useDispatch()
     const loading = useSelector(selectLoginLoading)
     const errors = useSelector(selectLoginError)
@@ -29,7 +29,7 @@ const SignInPage = () => {
             :
             <div>
                 <div>
-                {errors} 
+                {/* {errors}  */}
                 </div>
                 <div onClick={() => dispatch(resetLoginErrors())}>
                     try again?

@@ -32,12 +32,12 @@ const HomePage = () => {
                     <Fragment>
                         {
                             currentUser &&
-                            <UserWarnings currentUser={currentUser}/>
+                                <UserWarnings currentUser={currentUser}/>
                         }
                     <DayDetail day={currentDay}/>
                     </Fragment>
                   :
-                    <SignInPage />
+                    <SignInPage currentUser={currentUser}/>
                     // <div>hi</div>  
             }
                 </div>
