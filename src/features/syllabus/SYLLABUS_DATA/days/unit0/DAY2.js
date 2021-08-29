@@ -34,7 +34,7 @@ const DAY2 = {
     videos: [
         {
             linkText: '2.1 : speaker circuit, multimeter',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/VeIOYwJd3Is',
         },
         {
             linkText: '2.2 : fight the power',
