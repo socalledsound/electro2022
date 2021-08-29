@@ -151,6 +151,10 @@ const DAY2 = {
     ],
     techLinks: [
         {
+            linkText: 'my make code code for turning an LED on and off with a button',
+            linkSrc: 'https://makecode.com/_Ves2qjRivLRa',
+        },
+        {
             linkText: 'CPE: using the pins',
             linkSrc: 'https://makecode.adafruit.com/learnsystem/pins-tutorial',
         },
