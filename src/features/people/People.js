@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { randomizeArray } from '../../utils/utils'
-import { selectAllPeople, startFetchUsers } from './peopleSlice';
+import { selectAllPeople, startSyncUsers } from './peopleSlice';
 import styles from './People.module.css'
 import PersonAvatar from './PersonAvatar';
 import PersonDetail from './PersonDetail'
@@ -11,7 +11,7 @@ const People = () => {
 
 
   useEffect(() => {
-    dispatch(startFetchUsers())
+    dispatch(startSyncUsers())
 }, [dispatch])
 
   // useEffect(() => {

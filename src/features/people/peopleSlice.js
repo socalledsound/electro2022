@@ -34,6 +34,7 @@ const peopleSlice = createSlice({
             console.log(action.payload)
             return {
                 ...state,
+                allPeople: action.payload,
             }
         }
     }

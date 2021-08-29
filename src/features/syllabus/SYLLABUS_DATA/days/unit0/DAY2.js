@@ -38,7 +38,7 @@ const DAY2 = {
         // },
         {
             linkText: 'fight the power',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/s7WBZJ6gbzA',
         },
         // {
         //     linkText: 'IN CLASS: hooking up an LED',
@@ -57,6 +57,40 @@ const DAY2 = {
         {
             linkText: `Public Enemy: 'fight the power'`,
             linkSrc: `https://www.youtube.com/watch?v=mmo3HFa2vjg`,
+        },
+
+        {
+            linkText: 'Muir Woods park staff annotates own signs with historical corrections for racism, misogyny',
+            linkSrc: 'https://www.sfgate.com/california-parks/article/muir-woods-national-park-history-timeline-project-16414800.php',
+        },
+        {
+            linkText: `jodi.org`,
+            linkSrc: 'http://wwwwwwwww.jodi.org/',
+        },
+        {
+            linkText: 'Wafa Bilal : domestic tension',
+            linkSrc: 'https://wafaabilal.com/domestic-tension/',
+        },
+
+        {
+            linkText: 'Guillermo Gomez Pena: border interrogation; la pocha nostra',
+            linkSrc: 'https://www.youtube.com/watch?v=txaY7ZAV5ck',
+        },
+        {
+            linkText: 'Rael San Fratello : transforming the border wall into a teeter totter',
+            linkSrc: 'https://www.youtube.com/watch?v=1bbeBo3te5E',
+        },
+        {
+            linkText: 'Banksy in palestine',
+            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
+        },
+        {
+            linkText: 'palestine thanks Banksy',
+            linkSrc: 'https://www.theguardian.com/global-development/2020/aug/21/palestinians-stage-surprise-thank-you-event-for-banksy-in-bethlehem',
+        },
+        {
+            linkText: '33 powerful black lives matter murals',
+            linkSrc: 'https://www.theverge.com/2020/7/5/21304985/black-lives-matter-murals-round-up-artists',
         },
         {
             linkText: 'Jenny Holzer, works with LEDs',
@@ -93,6 +127,10 @@ const DAY2 = {
             linkSrc: 'https://vimeo.com/111166472',
         },
         {
+            linkText: 'works by steve roden',
+            linkSrc : 'http://www.inbetweennoise.com/works/',
+        },
+        {
             linkText: 'terry fox: cone of silence',
             linkSrc: 'https://www.artsy.net/artwork/terry-fox-cones-of-silence',
         },
@@ -101,39 +139,6 @@ const DAY2 = {
             linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
         },
 
-        {
-            linkText: 'Muir Woods park staff annotates own signs with historical corrections for racism, misogyny',
-            linkSrc: 'https://www.sfgate.com/california-parks/article/muir-woods-national-park-history-timeline-project-16414800.php',
-        },
-        {
-            linkText: `jodi.org`,
-            linkSrc: 'http://wwwwwwwww.jodi.org/',
-        },
-        {
-            linkText: 'Wafa Bilal : domestic tension',
-            linkSrc: 'https://wafaabilal.com/domestic-tension/',
-        },
-
-        {
-            linkText: 'Guillermo Gomez Pena: border interrogation; la pocha nostra',
-            linkSrc: 'https://www.youtube.com/watch?v=txaY7ZAV5ck',
-        },
-        {
-            linkText: 'Rael San Fratello : transforming the border wall into a teeter totter',
-            linkSrc: 'https://www.youtube.com/watch?v=1bbeBo3te5E',
-        },
-        {
-            linkText: 'Banksy in palestine',
-            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
-        },
-        {
-            linkText: 'palestine thanks Banksy',
-            linkSrc: 'https://www.theguardian.com/global-development/2020/aug/21/palestinians-stage-surprise-thank-you-event-for-banksy-in-bethlehem',
-        },
-        {
-            LinkText: '33 powerful black lives matter murals',
-            linkSrc: 'https://www.theverge.com/2020/7/5/21304985/black-lives-matter-murals-round-up-artists',
-        }
 
     ],
     techLinks: [
@@ -177,6 +182,18 @@ const DAY2 = {
         {
             linkText: 'an acoustic feedback system',
             linkSrc: 'https://www.instructables.com/Acoustic-Feedback-System-With-Snare-Drum-or-Any-Ot/',
+        },
+        {
+            linkText: 'parts express website',
+            linkSrc: 'https://www.parts-express.com/',
+        },
+        {
+            linkText: 'meditations on speaker impedance',
+            linkSrc: 'http://www.prestonelectronics.com/audio/Impedance.htm'
+        },
+        {
+            linkText: 'calculating the resistor value for an led',
+            linkSrc: 'https://www.etechnog.com/2019/01/resistor-value-calculation-for-led.html',
         },
 
     ],

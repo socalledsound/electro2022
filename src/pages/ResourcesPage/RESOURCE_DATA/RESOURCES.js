@@ -123,6 +123,10 @@ const RESOURCES = {
                 linkText: 'eev blog youtube channel',
                 linkSrc: 'https://www.youtube.com/c/EevblogDave'
             },
+            {
+                linkText: 'parts express website',
+                linkSrc: 'https://www.parts-express.com/',
+            }
     ]
     },
     {

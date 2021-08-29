@@ -29,10 +29,7 @@ const DAY7 = {
             linkText: 'celeste boursier mougenot: birds',
             linkSrc: 'https://www.artnews.com/artnews/news/french-pavilion-artist-celeste-boursier-mougenot-teaches-the-world-to-sing-4036/',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
     ],
     techLinks: [
         {

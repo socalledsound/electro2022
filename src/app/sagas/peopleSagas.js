@@ -12,7 +12,8 @@ function * syncUsers () {
     try {
       while (true) {
         const data = yield take(channel)
-        yield put(updateUsers(data))
+        const users= yield convertUsersSnapshotToMap(data)
+        yield put(updateUsers(users))
       }
     } catch (err) {
       yield put(syncUsersFailure(err))
