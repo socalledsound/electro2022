@@ -3,10 +3,32 @@ import styles from './DayDetail.module.css'
 
 const DayDetailLinks = ({day}) => {
     
-    const { inspirationLinks, techLinks, videos, reading } = day
+    const { inspirationLinks, techLinks, videos, reading, inClassDemo } = day
     return ( 
                       
         <div className={styles.linksWrapper}>
+
+            {
+                inClassDemo&&
+                <div className={styles.linksListContainer}>
+                <ul  className={styles.linksList}>
+                    {
+                         inClassDemo.map((item, index) => (
+                             <div>
+                            <li key={index} className={styles.dayDemoTitle}><p>{item.title}</p></li>     
+                            </div>       
+                        ))
+                    }
+                </ul>
+                <div className={styles.listTitleContainer}>
+                    <p className={styles.videoListTitle}>d</p> 
+                    <p className={styles.videoListTitle}>e</p> 
+                    <p className={styles.videoListTitle}>m</p> 
+                    <p className={styles.videoListTitle}>o</p> 
+                </div>
+            </div>
+            }
+
             {
             videos.length > 0 &&
             <div className={styles.videoLinksContainer} >
@@ -61,7 +83,8 @@ const DayDetailLinks = ({day}) => {
                 
                 techLinks.map((link, index) => (
                             <li key={index} className={styles.dayDetailLink}><a href={link.linkSrc}>{link.linkText}</a></li>            
-                        ))}
+                        ))
+                }
                 </ul>
                     <div className={styles.listTitleContainer} style={{backgroundColor: 'rgba(154, 205, 50, 0.9)'}}>
                         <p className={styles.listTitle}>c</p> 

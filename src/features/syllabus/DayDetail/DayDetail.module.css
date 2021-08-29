@@ -139,7 +139,9 @@
   /* margin-top: -0.1rem; */
   min-width: 15rem;
   margin-bottom: 2rem;
+  padding: 1rem;
   padding-bottom: 0.6rem;
+
   /* margin-right: 3rem; */
   font-size: 0.7rem;
   list-style-type: none;
@@ -166,7 +168,7 @@
 .linksList {
   list-style-type: none;
   min-width: 80%;
-  margin-right: 1rem;
+  margin-right: 0.4rem;
 }
 
 .linksTitle {
@@ -223,6 +225,12 @@
 
 .dayDetailLink a:hover {
   color: white;
+}
+
+.dayDemoTitle {
+  padding-top: 0.2rem;
+  font-size: 0.5rem;
+  border-bottom: 1px solid pink;
 }
 
 .assignmentButtonContainer {

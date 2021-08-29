@@ -32,18 +32,26 @@ const DAY2 = {
 
     ],
     videos: [
-        // {
-        //     linkText: 'IN CLASS: speaker circuit, multimeter',
-        //     linkSrc: '',
-        // },
         {
-            linkText: 'fight the power',
-            linkSrc: 'https://youtu.be/s7WBZJ6gbzA',
+            linkText: '2.1 : speaker circuit, multimeter',
+            linkSrc: '',
+        },
+        {
+            linkText: '2.2 : fight the power',
+            linkSrc: 'https://youtu.be/vZB9bfWPHOY',
         },
         // {
         //     linkText: 'IN CLASS: hooking up an LED',
         //     linkSrc: '',
         // },
+    ],
+    inClassDemo: [
+        {
+            title: 'making an LED circuit'
+        },
+        {
+            title: 'hooking up an external LED to a CPE'
+        }
     ],
     inspirationLinks: [
         {
