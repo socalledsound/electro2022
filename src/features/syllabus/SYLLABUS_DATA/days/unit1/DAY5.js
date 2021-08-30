@@ -9,19 +9,27 @@ const DAY5 = {
     in this first project.  We'll start by talking about the Tacita Dean article you read, which talks about the 
     magic and the burden of collecting.  We'll talk about ambergris and we'll talk about that one sock in the drawer 
     that doesn't match anything and sort of makes the whole drawer sing, as a result.  We'll also explore loops and arrays
-    in javascript and learn how to trigger sounds on the circuit playground express.`,
+    in javascript and learn how to load our own sounds onto the circuit playground express.  (which, as it turns out, is
+    impossible using their stripped down version of javascript!  So we'll learn how to do it in...python!).`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     discussionQuestions: [
-        ``,
-        ``,
-        ``,
+
+        `Do you have a collection?  Tell us about it.`,
+        `What is a collection and how is it different from, just, a bunch of stuff?`,
+        `'The problem is realizing that you've started one', says Tacita Dean.
+        What are the 'problems' that she's talking about?  
+        `,
+        `She also talks about 'living' vs 'dead' collections, which, in the context of
+        art, or making an art practice from collecting, seems like a particularly
+        important distinction.  How do you understand this distinction?
+        `,
     ],
     inClassDemo: [
         {
-            title: ''
+            title: 'getting started with circuit python and the CPE'
         },
         {
-            title: ''
+            title: 'loading sounds onto your CPE'
         }
     ],
     videos: [
@@ -30,9 +38,10 @@ const DAY5 = {
             linkSrc: '',
         },
         {
-            linkText: 'arrays of sounds on the CPE',
+            linkText: 'a little sampler written incircuit pyton on the CPE',
             linkSrc: '',
         },
+
     ],
     reading: [
         {
@@ -149,6 +158,7 @@ const DAY5 = {
             linkText: 'freesound.org',
             linkSrc: 'https://freesound.org/',
         },
+
         {
             linkText:"javascript array reference",
             linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
@@ -171,14 +181,14 @@ const DAY5 = {
             linkSrc: 'https://github.com/socalledsound/js-sequencer',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'circuit python made easy on the CPE',
+            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
         },        {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'circuit python sound box on the CPE',
+            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
         },        {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'sensors on the CPE',
+            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
         },        {
             linkText: '',
             linkSrc: '',

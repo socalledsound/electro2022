@@ -67,7 +67,7 @@ const DAY3 = {
         {
             linkText: 'video about max neuhaus times square',
             linkSrc:'https://www.youtube.com/watch?v=kA-fihBFWBI',
-        }
+        },
         {
             linkText: `4' 33" on a bus`,
             linkSrc: 'https://www.youtube.com/watch?v=WYQhXN1UFbU&t=55s',

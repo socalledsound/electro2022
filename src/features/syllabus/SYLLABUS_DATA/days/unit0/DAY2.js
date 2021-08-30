@@ -212,6 +212,10 @@ const DAY2 = {
             linkText: 'calculating the resistor value for an led',
             linkSrc: 'https://www.etechnog.com/2019/01/resistor-value-calculation-for-led.html',
         },
+        {
+            linkText: 'understanding forward voltage',
+            linkSrc:'https://learn.adafruit.com/all-about-leds/forward-voltage-and-kvl',
+        }
 
     ],
 
