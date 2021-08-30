@@ -79,8 +79,8 @@ const RESOURCES = {
                 linkSrc: '',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'a nice series of CPE tutorials',
+                linkSrc: 'https://core-electronics.com.au/tutorials/circuit-playground-express-workshop-for-beginners-and-educators.html',
             },
 
             {

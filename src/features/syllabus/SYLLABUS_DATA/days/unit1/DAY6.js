@@ -7,11 +7,48 @@ const DAY6 = {
     description: "",
     videos: [
         {
-            linkText: '',
+            linkText: 'improvisation',
+            linkSrc: '',
+        },
+        {
+            linkText: 'I/O on the CPE',
             linkSrc: '',
         },
     ],
+    discussionQuestions: [
+        `Is it possible or useful to 'compose' improvisation?`,
+        `What is are some of the differences between a 'score' and a 'document'?`,
+        `Share a personal recipe for improvisation.`,
+    ],
+
+    inClassDemo: [
+        {
+            title: 'improv games'
+        },
+    ],
+    reading: [
+        {
+            linkText: 'Fred Frith: Tapped Teeth: try different speeds',
+            linkSrc: ''
+        }
+    ],
     inspirationLinks: [
+        {
+            linkText: 'unknown devices',
+            linkSrc: 'https://www.youtube.com/watch?v=za8-tw4fndQ',
+        },
+        {
+            linkText: 'david toop on making sound',
+            linkSrc: 'https://www.youtube.com/watch?v=-nYdsNqHo1g',
+        },
+        {
+            linkText: '3 random strangers make a song',
+            linkSrc: 'https://www.youtube.com/watch?v=jr478w--dpE',
+        },
+        {
+            linkText: 'celeste boursier mougenot: birds',
+            linkSrc: 'https://www.artnews.com/artnews/news/french-pavilion-artist-celeste-boursier-mougenot-teaches-the-world-to-sing-4036/',
+        },
         {
             linkText: 'thingamajigs festival 2013 video',
             linkSrc: 'https://www.youtube.com/watch?v=K0ZZ3mVlYD8',
@@ -39,15 +76,15 @@ const DAY6 = {
     ],
     techLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'using external devices on the CPE',
+            linkSrc: 'https://core-electronics.com.au/videos/circuit-playground-express-workshop-chapter-4-using-external-devices',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'capacitive touch on the CPE',
+            linkSrc: 'https://youtu.be/BxlbKu-WGok',
         },
         {
-            linkText: '',
+            linkText: '',https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e
             linkSrc: '',
         },
         {

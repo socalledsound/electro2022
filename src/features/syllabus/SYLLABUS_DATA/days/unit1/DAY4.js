@@ -14,9 +14,9 @@ const DAY4 = {
     
     `,
     discussionQuestions: [
-        `Is 'blind' listening possible?`,
-        ``,
-        ``,
+        `Is 'blind' listening possible?  Is it desirable?  `,
+        `What is the distinction between a 'sound' and a 'sound effect'`,
+        `Is the same sound under two different names actually the same sound?`,
     ],
     inClassDemo: [
         {
