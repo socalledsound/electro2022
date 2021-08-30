@@ -84,8 +84,8 @@ const DAY6 = {
             linkSrc: 'https://youtu.be/BxlbKu-WGok',
         },
         {
-            linkText: '',https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e
-            linkSrc: '',
+            linkText: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
+            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
         },
         {
             linkText: '',
