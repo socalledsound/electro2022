@@ -20,7 +20,7 @@ const DAY3 = {
         `If it's not music, what is it?  (...as John Cage said)`,
         `Is it possible to 'compose' listening?  Is it possible to compose improvisation?
         What does it mean to 'compose' improvisation, or what is the role of a composer of improvisation?`,
-        ``,
+        `talk about your own 'deep listening' experience.`,
     ],
     inClassDemo: [
         {

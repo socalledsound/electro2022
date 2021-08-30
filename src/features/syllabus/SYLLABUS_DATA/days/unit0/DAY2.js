@@ -25,6 +25,7 @@ const DAY2 = {
         `In 'the work of art in the age of mechanical reproduction', Walter Benjamin advances the argument that,
         in our technological world, art must be political or it sides with fascism and leads inexorably to war.
         Is this a fair assessment of apolitical art?  Can you make an argument in favor of 'sublime' art?`,
+        
         `Have you seen/noticed either Leo Villareal's 'bay bridge lights' or Jim Campbell's artwork at the 
         top of the tallest building in downtown SF?  Reactions/opinions?  And, what would Walter Benjamin have
         to say about those works?`,
