@@ -5,22 +5,30 @@ const DAY4 = {
     date: 'September 7, 2021',
     title: 'mic check',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1603689412/side-effects/HNND2_lw07um.jpg',
-    description: `The title says 'mic check' -- because we're going to build mics in class -- but really, today's class 
-    is about listening.  Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva', just put it 
-    on in the background for a while at some point.  Also listen to untitled # read
-    his 'profound listening article.  `,
+    description: `
+    Today we're going to build contact mics in class and talk about what it means to record sounds.
+    I'll also introduce you to the zoom recorder and talk a bit about converting sound data into computer data.
+    Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva'; just put it 
+    on in the background for a while at some point and read his 'profound listening article.  
+   
+    
+    `,
     discussionQuestions: [
         `Is 'blind' listening possible?`,
         ``,
         ``,
     ],
-    videos: [
+    inClassDemo: [
         {
-            linkText: '',
-            linkSrc: '',
-        },  
+            title: 'how to make a contact microphone'
+        },
         {
-            linkText: 'working with sound',
+            title: 'working with a zoom recorder'
+        }
+    ],
+    videos: [ 
+        {
+            linkText: 'sound => data',
             linkSrc: '',
         },
         {
@@ -58,6 +66,10 @@ const DAY4 = {
             linkSrc:"https://www.youtube.com/watch?v=_MahrtRVhkA"
         },
         {
+            linkText: 'jacob kirkegaard, labyrinthitis',
+            linkSrc: 'https://fonik.dk/works/labyrinthitis.html',
+        },
+        {
             linkText: "the ghost in the mp3: tom's diner",
             linkSrc: 'https://www.youtube.com/watch?v=4-ISLpKhQJI',
         },
@@ -73,22 +85,23 @@ const DAY4 = {
             linkText: 'Chris Watson - The Colour Of Sound',
             linkSrc: 'https://www.youtube.com/watch?v=sL-nTv5LL9g',
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'musique concrete',
+            linkSrc: 'https://en.wikipedia.org/wiki/Musique_concr%C3%A8te',
+        },
+        {
+            linkText: 'sound effect library page',
+            linkSrc: 'https://en.wikipedia.org/wiki/Sound_effect',
+        },
+        {
+            linkText: 'the earliest recording was never intended to be listened to',
+            linkSrc: 'http://www.firstsounds.org/sounds/scott.php',
+        },
+
+        {
+            linkText: 'the first recording',
+            linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630345471/scott_phonautograph_anigvo.png',
+        },
         // {
         //     linkText: '',
         //     linkSrc: '',
@@ -104,36 +117,38 @@ const DAY4 = {
     ],
     techLinks: [
         {
+            linkText: 'loudness necklace on the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=g5894PVYOF4',
+        },  
+        {
             linkText:"how to make a contact microphone",
             linkSrc:"http://www.instructables.com/id/Make-a-Contact-Microphone/"
         },
+      
         {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'zoom recorder h4n manual',
+            linkSrc: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
     ],
 
 }

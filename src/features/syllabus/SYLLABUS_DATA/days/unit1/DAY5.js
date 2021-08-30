@@ -16,9 +16,21 @@ const DAY5 = {
         ``,
         ``,
     ],
+    inClassDemo: [
+        {
+            title: ''
+        },
+        {
+            title: ''
+        }
+    ],
     videos: [
         {
             linkText: 'collection',
+            linkSrc: '',
+        },
+        {
+            linkText: 'arrays of sounds on the CPE',
             linkSrc: '',
         },
     ],
@@ -157,6 +169,26 @@ const DAY5 = {
         {
             linkText: 'a simple looping sequencer in js',
             linkSrc: 'https://github.com/socalledsound/js-sequencer',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
         },
     ],
 

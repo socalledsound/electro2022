@@ -155,6 +155,10 @@ const DAY2 = {
             linkSrc: 'https://makecode.com/_Ves2qjRivLRa',
         },
         {
+            linkText: 'using the speaker on the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=JjJ-KGwKh_4',
+        },
+        {
             linkText: 'CPE: using the pins',
             linkSrc: 'https://makecode.adafruit.com/learnsystem/pins-tutorial',
         },

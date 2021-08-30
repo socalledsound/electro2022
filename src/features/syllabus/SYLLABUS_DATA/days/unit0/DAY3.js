@@ -65,6 +65,10 @@ const DAY3 = {
             linkSrc: 'https://www.diaart.org/visit/visit-our-locations-sites/max-neuhaus-times-square',
         },
         {
+            linkText: 'video about max neuhaus times square',
+            linkSrc:'https://www.youtube.com/watch?v=kA-fihBFWBI',
+        }
+        {
             linkText: `4' 33" on a bus`,
             linkSrc: 'https://www.youtube.com/watch?v=WYQhXN1UFbU&t=55s',
         }, 
@@ -117,6 +121,18 @@ const DAY3 = {
             linkText: 'interactive and or nand nor xor nxor',
             linkSrc: 'https://www.advanced-ict.info/interactive/circuits.html',
         },  
+        {
+            linkSrc: 'https://makecode.adafruit.com/javascript',
+            linkText: 'javascript on the CPE',
+        },
+        {
+            linkText: 'the make code library API',
+            linkSrc: 'https://makecode.adafruit.com/reference',
+        },
+        {
+            linkText: 'set all lights to a hex color',
+            linkSrc: 'https://makecode.adafruit.com/reference/light/set-all',
+        },
         {
             linkText: 'make code: logic lab',
             linkSrc: 'https://makecode.adafruit.com/learnsystem/logic-lab',
