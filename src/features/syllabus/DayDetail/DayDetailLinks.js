@@ -10,7 +10,7 @@ const DayDetailLinks = ({day}) => {
 
             {
                 inClassDemo&&
-                <div className={styles.linksListContainer}>
+                <div className={styles.linksListContainer} >
                 <ul  className={styles.linksList}>
                     {
                          inClassDemo.map((item, index) => (
@@ -20,7 +20,7 @@ const DayDetailLinks = ({day}) => {
                         ))
                     }
                 </ul>
-                <div className={styles.listTitleContainer}>
+                <div className={styles.listTitleContainer}  style={{backgroundColor: 'rgba(132, 18, 231, 0.9)'}}>
                     <p className={styles.videoListTitle}>d</p> 
                     <p className={styles.videoListTitle}>e</p> 
                     <p className={styles.videoListTitle}>m</p> 
@@ -31,7 +31,7 @@ const DayDetailLinks = ({day}) => {
 
             {
             videos.length > 0 &&
-            <div className={styles.videoLinksContainer} >
+            <div className={styles.linksListContainer} style={{backgroundColor: 'rgba(248, 248, 161,)'}}>
                 <ul  className={styles.linksList}>
                 {/* <span className={styles.linksTitle}>tools & techniques :</span> */}
                 {
@@ -40,7 +40,7 @@ const DayDetailLinks = ({day}) => {
                             <li key={index} className={styles.dayDetailLink}><a href={link.linkSrc}>{link.linkText}</a></li>            
                     ))}
                 </ul>
-                <div className={styles.videoListTitleContainer}>
+                <div className={styles.listTitleContainer}  style={{backgroundColor: 'rgba(232, 18, 131, 0.9)'}}>
                     <p className={styles.videoListTitle}>v</p> 
                     <p className={styles.videoListTitle}>i</p> 
                     <p className={styles.videoListTitle}>d</p> 

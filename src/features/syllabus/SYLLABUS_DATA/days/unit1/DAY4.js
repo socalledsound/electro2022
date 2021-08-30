@@ -10,11 +10,15 @@ const DAY4 = {
     on in the background for a while at some point.  Also listen to untitled # read
     his 'profound listening article.  `,
     discussionQuestions: [
-        ``,
+        `Is 'blind' listening possible?`,
         ``,
         ``,
     ],
     videos: [
+        {
+            linkText: '',
+            linkSrc: '',
+        },  
         {
             linkText: 'working with sound',
             linkSrc: '',
@@ -23,10 +27,7 @@ const DAY4 = {
             linkText: 'a brief intro to audacity',
             linkSrc: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },        
+      
     ],
     reading: [
         {
@@ -41,7 +42,11 @@ const DAY4 = {
             linkSrc:"https://www.youtube.com/watch?v=1_slk9NmgGM"
         },
         {
-            linkText:'',
+            linkText: 'francisco lopez tecnical rider',
+            linkSrc: 'http://www.franciscolopez.net/live.html',
+        },
+        {
+            linkText:'airport symphony (a collection of pieces inspired by airports)',
             linkSrc: 'https://room40.bandcamp.com/album/airport-symphony',
         },
         {
@@ -60,15 +65,14 @@ const DAY4 = {
             linkText:"Janet Cardiff and George Bures Miller, Sound Walks",
             linkSrc:"http://www.cardiffmiller.com/artworks/walks/"
         },
-
         {
             linkText: `a selection of Chris Watson's work at the BBC`,
             linkSrc: 'https://www.bbc.co.uk/programmes/p01qcldf',
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'Chris Watson - The Colour Of Sound',
+            linkSrc: 'https://www.youtube.com/watch?v=sL-nTv5LL9g',
+        },
         // {
         //     linkText: '',
         //     linkSrc: '',

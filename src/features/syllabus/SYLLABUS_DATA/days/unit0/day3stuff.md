@@ -1,5 +1,7 @@
 # switches + binary + if/then + variable + arrays
 
+Deep listening
+
 what the heck is a computer, anyway?
 
 basically, a bunch of switches. and some memory.
