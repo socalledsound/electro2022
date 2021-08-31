@@ -32,16 +32,20 @@ const DAY3 = {
     ],
     videos: [
         {
-            linkText: 'listen!',
-            linkSrc: '',
+            linkText: '3.1 : listen!',
+            linkSrc: 'https://youtu.be/vTYjGfJCMB8',
         },  
         {
-            linkText: 'switches',
-            linkSrc: '',
+            linkText: '3.2 : switches+listeners',
+            linkSrc: 'https://youtu.be/m-2VbSgHgP0',
         },      
         {
-            linkText: 'switches and listeners for the CPE',
-            linkSrc: '',
+            linkText: '3.3 coding a volume graph for the CPE',
+            linkSrc: 'https://youtu.be/ULldzqSlt0A',
+        }, 
+        {
+            linkText: '3.4 coding an AND sound gate for the CPE',
+            linkSrc: 'https://youtu.be/dEffjyXvPEg',
         },        
     ],
     reading : [
@@ -106,9 +110,30 @@ const DAY3 = {
           linkText: 'an introduction to the smalltalk language',
           linkSrc: 'https://www.codeproject.com/Articles/1241904/Introduction-to-the-Smalltalk-Programming-Language',
       },
+      {
+          linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
+            linkSrc: 'https://supercollider.github.io/'
+        },
+        {
+            linkText: 'the three body problem by Liu Cixin',
+            linkSrc: 'https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)'
+        },
+
+
 
     ],
     techLinks: [
+
+      
+        {
+            linkText: 'CPE: volume controls',
+            linkSrc: 'https://makecode.com/_8wtVw8L0pAJc',
+        },   
+             
+        {
+            linkText: 'CPE: AND gate sound player',
+            linkSrc: 'https://makecode.com/_XR6M9fXYjCmA',
+        }, 
         {
             linkText: 'my binary color abacus (written in javascript!)',
             linkSrc: 'https://suspicious-shockley-333ae2.netlify.app/',
@@ -165,18 +190,12 @@ const DAY3 = {
             linkText: 'linux signals',
             linkSrc: 'https://wizardzines.com/comics/signals/',
         },
-
-      
+       
         {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
+            linkText: 'make code API reference',
+            linkSrc: 'https://makecode.adafruit.com/reference',
+        },        
+        {
             linkText: '',
             linkSrc: '',
         },
