@@ -9,6 +9,7 @@ const GalleryItemDetail = ({ item, history }) => {
 
             <img className={styles.galleryItemDetailImage} src={item.imageURL} alt="artwork" />
             <h4>{item.title}</h4>
+            <h6>{item.user.displayName}</h6>
             <p>{item.description}</p>
             {
                 item.linkURL &&

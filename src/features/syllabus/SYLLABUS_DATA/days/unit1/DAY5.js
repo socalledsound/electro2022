@@ -38,7 +38,7 @@ const DAY5 = {
             linkSrc: '',
         },
         {
-            linkText: 'a little sampler written incircuit pyton on the CPE',
+            linkText: 'a little sampler written in circuit pyton on the CPE',
             linkSrc: '',
         },
 
