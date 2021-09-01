@@ -2,6 +2,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import styles from './GalleryItemDetail.module.css'
 const GalleryItemDetail = ({ item, history }) => {
+
     return ( 
         <div
             className={styles.galleryItemDetailWrapper} 

@@ -196,8 +196,8 @@ const DAY3 = {
             linkSrc: 'https://makecode.adafruit.com/reference',
         },        
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'random color loop',
+            linkSrc: 'https://makecode.com/_hfqDD8TYYWVz',
         },
     ],
 

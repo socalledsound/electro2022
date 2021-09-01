@@ -29,7 +29,7 @@ const DAY4 = {
     videos: [ 
         {
             linkText: 'sound => data',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/Bh1O7OzetJU',
         },
         {
             linkText: 'a brief intro to audacity',
@@ -73,6 +73,10 @@ const DAY4 = {
             linkText: "the ghost in the mp3: tom's diner",
             linkSrc: 'https://www.youtube.com/watch?v=4-ISLpKhQJI',
         },
+                {
+            linkText: 'sound recording genius Anne Kroeber',
+            linkSrc: 'https://www.soundandpicture.com/2017/10/ann-kroeber-cinematic-winds/',
+        },
         {
             linkText:"Janet Cardiff and George Bures Miller, Sound Walks",
             linkSrc:"http://www.cardiffmiller.com/artworks/walks/"
@@ -103,8 +107,8 @@ const DAY4 = {
             linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630345471/scott_phonautograph_anigvo.png',
         },
         // {
-        //     linkText: '',
-        //     linkSrc: '',
+        //     linkText: 'sound recording genius Anne Kroeber',
+        //     linkSrc: 'https://www.soundandpicture.com/2017/10/ann-kroeber-cinematic-winds/',
         // },
         // {
         //     linkText: '',
@@ -129,16 +133,18 @@ const DAY4 = {
             linkText: 'zoom recorder h4n manual',
             linkSrc: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },        {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },        {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },        {
+        {
+            linkText: 'How do audio analogue to digital converters work?',
+            linkSrc: 'http://www.planetoftunes.com/digital-audio/how-do-analogue-to-digital-converters-work.php',
+        },        {
+            linkText: 'audio file formats',
+            linkSrc: 'https://en.wikipedia.org/wiki/Audio_file_format',
+        },        
+        {
+            linkText: 'converting sound files in audacity',
+            linkSrc: 'https://learn.adafruit.com/microcontroller-compatible-audio-file-conversion',
+        },        
+        //{
         //     linkText: '',
         //     linkSrc: '',
         // },
