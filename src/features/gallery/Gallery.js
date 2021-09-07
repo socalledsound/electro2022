@@ -36,13 +36,7 @@ const Gallery = ({history}) => {
                 {
                     galleryCategories.map((category) => {
                         // console.log(category)
-                        const categoryWorks = works.filter(work => {
-                        //    console.log(category, work.assignment)
-                           if(work.assignment === category){
-                            //    console.log(category, work)
-                           }
-                            return work.assignment === category
-                        })
+                        const categoryWorks = works.filter(work => work.assignment === category)
                         
                             // console.log(categoryWorks)
                         if(categoryWorks.length > 0){

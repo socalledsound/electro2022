@@ -26,6 +26,9 @@ const DAY5 = {
     ],
     inClassDemo: [
         {
+            title: 'arrays and array methods'
+        },
+        {
             title: 'getting started with circuit python and the CPE'
         },
         {
@@ -34,11 +37,11 @@ const DAY5 = {
     ],
     videos: [
         {
-            linkText: 'collection',
+            linkText: 'collection -- sorry not recorded yet!',
             linkSrc: '',
         },
         {
-            linkText: 'a little sampler written in circuit pyton on the CPE',
+            linkText: 'a little sampler written in circuit pyton on the CPE  -- sorry not recorded yet!',
             linkSrc: '',
         },
 

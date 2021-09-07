@@ -147,7 +147,10 @@ const DAY2 = {
             linkText: 'Robert Morris: box with the sound of its own making',
             linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
         },
-
+        {
+            linkText: 'Meeth the college student who makes his own chips',
+            linkSrc: 'https://thenewstack.io/meet-the-college-student-who-makes-his-own-chips/',
+        }
 
     ],
     techLinks: [

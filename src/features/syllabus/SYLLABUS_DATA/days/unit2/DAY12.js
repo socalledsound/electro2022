@@ -132,6 +132,10 @@ const DAY12 = {
         {
             linkText: 'a different kind of generative landscape',
             linkSrc: 'https://p5js.org/examples/simulate-penrose-tiles.html',
+        },
+        {
+            linkText: 'Plans for $400-billion new city in the American desert unveiled',
+            linkSrc: 'https://www.cnn.com/style/article/telosa-marc-lore-blake-ingels-new-city/index.html',
         }
 
         ],

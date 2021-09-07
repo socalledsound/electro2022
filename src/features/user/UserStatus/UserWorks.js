@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 // import { selectWorks } from '../../gallery/gallerySlice'
 import { selectCompletedAssignments } from '../userSlice'
-
 import styles from './UserWorks.module.css'
 
 const UserWorks = ({history}) => {

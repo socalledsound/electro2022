@@ -1,14 +1,15 @@
 import React from 'react'
+import { randomizeArray } from '../../utils/utils'
 import styles from './Gallery.module.css'
 import GalleryItem from './GalleryItem'
 
 const GalleryRow = ({ category, works}) => {
-    // console.log(works)
+    const shuffledWorks = randomizeArray(works)
     return ( 
         <div className={styles.galleryRowContainer}> 
            
             {
-                works.map(((item, idx) => {
+                shuffledWorks.map(((item, idx) => {
                     return (
                         <GalleryItem key={`gallery-item-${idx}`} item={item} category={category} />
                     )
