@@ -8,19 +8,19 @@ const DAY6 = {
     videos: [
         {
             linkText: 'getting set up with circuit python',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/ZM4Mb5LqzLM',
         },
         {
-            linkText: 'converting/editing sounds in audacity',
+            linkText: 'converting/editing sounds in audacity and adding them to the CPE',
             linkSrc: '',
         },
         {
             linkText: 'playing sounds with circuit python',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/4FIODOg9G7Q',
         },
         {
             linkText: 'connecting things to the capacitive inputs on the CPE',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/brPlZSnxDQU',
         },
     ],
     discussionQuestions: [
@@ -84,12 +84,8 @@ const DAY6 = {
     ],
     techLinks: [
         {
-            linkText: 'using external devices on the CPE',
-            linkSrc: 'https://core-electronics.com.au/videos/circuit-playground-express-workshop-chapter-4-using-external-devices',
-        },
-        {
-            linkText: 'capacitive touch on the CPE',
-            linkSrc: 'https://youtu.be/BxlbKu-WGok',
+            linkText: 'github repo with python code and sounds',
+            linkSrc: 'https://github.com/socalledsound/circuit-python-sampler',
         },
         {
             linkText: 'circuit python made easy on the playground express',
@@ -100,13 +96,41 @@ const DAY6 = {
             linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/capacitive-touch',
         },
         {
+            linkText: 'updating the bootloader -- you may not need to do this',
+            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/updating-the-bootloader',
+        },
+        {
+            linkText: 'download circuit python',
+            linkSrc: 'https://circuitpython.org/board/circuitplayground_express/',
+        },
+        {
+            linkText: 'mu editor for circuit python',
+            linkSrc: 'https://codewith.mu/en/download',
+        },
+        {
+            linkText: 'download visual studio code',
+            linkSrc: 'https://code.visualstudio.com/download',
+        },
+        {
+            linkText:'download audacity',
+            linkSrc: 'https://www.audacityteam.org/download/',
+        },
+
+        {
+            linkText: 'using external devices on the CPE',
+            linkSrc: 'https://core-electronics.com.au/videos/circuit-playground-express-workshop-chapter-4-using-external-devices',
+        },
+        {
+            linkText: 'capacitive touch on the CPE',
+            linkSrc: 'https://youtu.be/BxlbKu-WGok',
+        },
+
+
+        {
             linkText: 'circuit python play sound file',
             linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-file',
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+
         {
             linkText: 'alligator clips',
             linkSrc: 'https://www.adafruit.com/product/1008',
@@ -115,6 +139,14 @@ const DAY6 = {
             linkText: 'copper foil tape',
             linkSrc: 'https://www.adafruit.com/product/1128',
         },
+        {
+            linkText:'lithium ion batteries from adafruit',
+            linkSrc:'https://www.adafruit.com/category/44_138',
+        },
+        {
+            linkText: 'lithium ion batteries at amazon',
+            linkSrc: 'https://www.amazon.com/phone-battery-backup/s?k=phone+battery+backup&i=mobile&rh=n%3A2335752011%2Cp_36%3A-2000&dc&qid=1631133504&rnid=2491154011&ref=sr_nr_p_36_1'
+        }
     ],
 
 }
