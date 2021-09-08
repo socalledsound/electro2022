@@ -55,8 +55,12 @@ const DAY5 = {
     inspirationLinks: [
         {
             linkText:"Christian Marclay mini documentary",
-            linkSrc:"https://www.youtube.com/watch?v=boWmP0os2e8"
+            linkSrc:"https://www.youtube.com/watch?v=4yqM3dAqTzs"
         },	
+        {
+            linkText: 'freesound.org',
+            linkSrc: 'https://freesound.org/',
+        },
         {
             linkText:"Arthur Jafa, Love is the Message, the Message is Death",
             linkSrc:"https://www.youtube.com/watch?v=lKWmx0JNmqY"
@@ -158,9 +162,22 @@ const DAY5 = {
     ],
     techLinks: [
         {
-            linkText: 'freesound.org',
-            linkSrc: 'https://freesound.org/',
+            linkText: 'make code : array and array methods',
+            linkSrc: 'https://makecode.com/_C0t3D0EU3fXW',
+        },              
+        {
+            linkText: 'make code: looping lights',
+            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
         },
+        {
+            linkText: 'inspired by effie; this might be helpful for project 1!',
+            linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
+        }, 
+        {
+            linkText: 'make code : random looping music for the CPE',
+            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
+        },
+ 
 
         {
             linkText:"javascript array reference",
@@ -192,17 +209,7 @@ const DAY5 = {
         },        {
             linkText: 'sensors on the CPE',
             linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },
+        }, 
     ],
 
 }
