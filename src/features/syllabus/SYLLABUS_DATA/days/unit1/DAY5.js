@@ -37,11 +37,11 @@ const DAY5 = {
     ],
     videos: [
         {
-            linkText: 'collection -- sorry not recorded yet!',
-            linkSrc: '',
+            linkText: 'collection',
+            linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
         },
         {
-            linkText: 'a little sampler written in circuit pyton on the CPE  -- sorry not recorded yet!',
+            linkText: 'a little sampler written in circuit pyton on the CPE  -- sorry not recorded yet! check back later tonight',
             linkSrc: '',
         },
 

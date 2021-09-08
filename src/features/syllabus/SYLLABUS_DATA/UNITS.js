@@ -59,7 +59,20 @@ export const UNIT1 = {
     title: 'unit 1 : collection',
     unit: 'unit1',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
-    overview: "This unit is about collections, otherwise known as data.  What makes a meaningful collection?  What are some of the strategies we can use to tame data, or set it free?  Data is to coding as paint is to painting.  In this unit we will learn some things about storing and manipulating data but also spend a good ammount of time thinking about why we should do this, and explore various approaches to organizing and presenting collections.  Most importantly, we'll discuss how to introduce just enough fuckery to keep things spicy and fun.  We'll look at the work of a wide range of artists who have tackled these problems in interesting ways: Eva Hesse, Agnes Martin, Francis Alys, Joseph Kosuth and, of course, Iggy Azalea.   And many others  .  Wait, what?  Data, Eva Hesse, you ask?  All will be made clear, and I hope it will be a fun process.",
+    overview: `
+    This unit is about collections, otherwise known as data.  
+    What makes a meaningful collection?  
+    What are some of the strategies we can use to tame data, or set it free?  
+    Data is to coding as paint is to painting.  
+    In this unit we will learn some things about storing and manipulating data but also spend a good ammount of time 
+    thinking about why we should do this, and explore various approaches to organizing and presenting collections.  
+    Most importantly, we'll discuss how to introduce just enough fuckery to keep things spicy and fun.  
+    We'll look at the work of a wide range of artists who have tackled these problems in interesting ways: 
+    Eva Hesse, Agnes Martin, Francis Alys, Joseph Kosuth and, of course, Iggy Azalea.   
+    And many others  .  Wait, what?  Data, Eva Hesse, you ask?  
+    All will be made clear, and I hope it will be a fun process.
+    To see the details, click below:
+    `,
     project: PROJECT1,
     days: [DAY4, DAY5, DAY6, DAY7]
     
