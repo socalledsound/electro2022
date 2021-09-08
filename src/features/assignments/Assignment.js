@@ -18,7 +18,7 @@ const Assignment = ({match}) => {
     const currentUser = useSelector(selectCurrentUser)
 
     const assignmentDue = useSelector(selectAssignmentDue(match.params.dayId))
-  
+    console.log(assignmentDue)
     useEffect(() => {
         if(currentUser){
             if(completedAssignments && completedAssignments.length > 0){
