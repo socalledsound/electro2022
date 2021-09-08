@@ -2,16 +2,24 @@ const DAY6 = {
     id: 6,
     unit: 'unit1',
     date: 'September 14, 2021',
-    title: 'hardware',
+    title: 'SNAKES',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
     description: "",
     videos: [
         {
-            linkText: 'improvisation',
+            linkText: 'getting set up with circuit python',
             linkSrc: '',
         },
         {
-            linkText: 'I/O on the CPE',
+            linkText: 'converting/editing sounds in audacity',
+            linkSrc: '',
+        },
+        {
+            linkText: 'playing sounds with circuit python',
+            linkSrc: '',
+        },
+        {
+            linkText: 'connecting things to the capacitive inputs on the CPE',
             linkSrc: '',
         },
     ],
@@ -84,20 +92,28 @@ const DAY6 = {
             linkSrc: 'https://youtu.be/BxlbKu-WGok',
         },
         {
-            linkText: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
+            linkText: 'circuit python made easy on the playground express',
             linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'circuit python capacitive touch',
+            linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/capacitive-touch',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'circuit python play sound file',
+            linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-file',
+        },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        {
+            linkText: 'alligator clips',
+            linkSrc: 'https://www.adafruit.com/product/1008',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'copper foil tape',
+            linkSrc: 'https://www.adafruit.com/product/1128',
         },
     ],
 

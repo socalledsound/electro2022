@@ -41,8 +41,16 @@ const DAY5 = {
             linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
         },
         {
-            linkText: 'collections (arrays) on the CPE -- check back in a bit! still working on this one.',
-            linkSrc: '',
+            linkText: 'collections (arrays) on the CPE',
+            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+        },
+        {
+            linkText: 'array methods',
+            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+        },
+        {
+            linkText: 'arrays of sounds',
+            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
         },
 
     ],
@@ -163,7 +171,7 @@ const DAY5 = {
     techLinks: [
         {
             linkText: 'make code : array and array methods',
-            linkSrc: 'https://makecode.com/_C0t3D0EU3fXW',
+            linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
         },              
         {
             linkText: 'make code: looping lights',
@@ -177,7 +185,10 @@ const DAY5 = {
             linkText: 'make code : random looping music for the CPE',
             linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
         },
- 
+        {
+            linkText: 'objects and arrays in eloquent javascript',
+            linkSrc: 'https://eloquentjavascript.net/04_data.html',
+        },
 
         {
             linkText:"javascript array reference",
