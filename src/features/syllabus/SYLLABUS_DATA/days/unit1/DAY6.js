@@ -12,7 +12,7 @@ const DAY6 = {
         },
         {
             linkText: 'converting/editing sounds in audacity and adding them to the CPE',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/jlnznBslEHg',
         },
         {
             linkText: 'playing sounds with circuit python',
@@ -31,8 +31,15 @@ const DAY6 = {
 
     inClassDemo: [
         {
-            title: 'improv games'
+            title: 'getting started with circuit python'
         },
+        {
+            title: 'loading sounds onto the CPE'
+        },
+        {
+            title: 'capacitive touch sensors on the CPE'
+        },
+
     ],
     reading: [
         {
