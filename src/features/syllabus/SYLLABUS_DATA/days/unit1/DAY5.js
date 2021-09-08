@@ -41,7 +41,7 @@ const DAY5 = {
             linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
         },
         {
-            linkText: 'a little sampler written in circuit pyton on the CPE  -- sorry not recorded yet! check back later tonight',
+            linkText: 'collections (arrays) on the CPE -- check back in a bit! still working on this one.',
             linkSrc: '',
         },
 
