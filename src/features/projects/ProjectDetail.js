@@ -5,10 +5,11 @@ import MarkdownView from 'react-showdown';
 import {selectProject, selectProjectOpen, selectProjectDue } from './projectsSlice'
 import { selectCompletedProjects, selectCurrentUser } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
+import SubmitProject from './SubmitProject'
 import SubmitWork from '../submitWork/SubmitWork'
-import styles from './Project.module.css'
+import styles from './ProjectDetail.module.css'
 
-const Project = ({match}) => {
+const ProjectDetail = ({match}) => {
     
     const [ projectMarkdown, setProjectMarkdown ] = useState(null)
     const [ completed, setCompleted ] = useState(false)
@@ -59,55 +60,37 @@ const Project = ({match}) => {
     console.log(projectMarkdown)
     
     return ( 
-        <div className={styles.projectWrapper}>
+        <div className={styles.projectDetailWrapper}>
 
             {!modal ?
-            <div className={styles.projectContainer}>
-            <h3 className={styles.projectTitle}>{project.title}</h3>
-            
-            
-            {projectMarkdown && 
-                <MarkdownView 
-                    markdown={projectMarkdown}
-                    options={{ tables: true, emoji: true }}
-                    className={styles.markdown}
-                />
-            }
-            
-            {
-            !currentUser ? 
-                <div className={styles.noSubmitButton}>
-                    <p>please log in to see the project</p>
+            <div className={styles.projectDetailContainer}>
+                <div className={styles.titleRowContainer}>
+                    <p className={styles.projectTitle}>{project.title}</p>
+                    
+                    <SubmitProject 
+                        currentUser={currentUser} 
+                        completed={completed}
+                        projectDue={projectDue}
+                        handleClick={handleClick}
+                    />
                 </div>
-                :
-                projectOpen ?
-
-
-                    completed ? 
-                            <div className={styles.noSubmitButton}>
-                                <p>you already completed this project</p>
-                                <button>edit submission</button>
-                            
-                            </div>
-                            :
-                            
-                                <button 
-                                onClick={handleClick}
-                                className={styles.submitButton}
-                            >
-                                submit project
-                            </button>
-                :
-                <div className={styles.noSubmitButton}>
-                <p>this project isn't due yet!</p>
+                <div>
+                    {projectMarkdown && 
+                    <MarkdownView 
+                        markdown={projectMarkdown}
+                        options={{ tables: true, emoji: true }}
+                        className={styles.projectDescription}
+                    />
+                    }
+                </div>
             
+  
             
-            </div>
-            }
+           
                 
-                </div>
-                :
-                null
+            </div>
+            :
+            null
             }
 
             <ModalContent>
@@ -118,4 +101,4 @@ const Project = ({match}) => {
      );
 }
  
-export default withRouter(Project);
+export default withRouter(ProjectDetail);

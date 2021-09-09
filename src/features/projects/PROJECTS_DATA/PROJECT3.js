@@ -5,7 +5,7 @@ export const PROJECT3 = {
     title: 'project 3: sockets',
     teaser: '',
     markdown: PROJECT3_MARKDOWN,
-    due: null,
+    due: '11/03',
     inspirationLinks: [
         {
             linkText: 'Daniel Rozin',

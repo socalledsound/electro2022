@@ -5,7 +5,7 @@ export const MIDTERM_PROJECT = {
     title: 'midterm project : goldberg machine',
     teaser: '',
     markdown: MIDTERM_PROJECT_MARKDOWN,
-    due: null,
+    due: '10/13',
     inspirationLinks : [
        
             {

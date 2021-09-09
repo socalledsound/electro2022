@@ -1,0 +1,112 @@
+.projectDetailWrapper {
+  /* background-color: rgb(240, 235, 235); */
+  border: 5px solid rgba(154, 205, 50, 0.7);
+  border-radius: 1.2rem;
+  max-width: 98%;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  /* margin-left: 1.2rem; */
+  /* margin-right: 1.2rem; */
+  /* padding: 1.2rem; */
+  /* max-width: 95%; */
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  padding: 2rem;
+}
+
+.projectDetailContainer {
+  /* background-color: #c67204; */
+  border: 2px solid rgb(82, 12, 12);
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  color: white;
+  /* margin-left: 1.2rem; */
+  /* display: flex; */
+  /* min-width: 0; */
+  /* flex: 1 0 auto; */
+  /* flex-grow: 4; */
+  flex: 1 0 auto;
+}
+
+.titleRowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1.2rem;
+}
+
+.projectTitle {
+  /* margin: 0 auto; */
+  margin-bottom: 1.2rem;
+  color: yellow;
+  width: 5rem;
+}
+
+.projectContent {
+  margin: 0 auto;
+  border: 2px solid rgb(57, 171, 107);
+}
+
+.projectMarkdown {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  border: 2px solid rgb(57, 171, 107);
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  width: 45%;
+}
+
+.projectDescription {
+  font-family: "Martel", serif;
+  font-weight: 300;
+  margin-top: 0 auto;
+  padding: 0.6rem;
+  background-color: rgb(161, 109, 12);
+  background-color: #c67204;
+  background-color: rgba(129, 80, 16, 0.1);
+  border: 1px solid brown;
+  border-radius: 1.2rem;
+  max-width: 85vw;
+}
+
+.markdown img {
+  max-width: 60vw;
+}
+/* .submitButtonContainer {
+  
+} */
+
+.submitButton {
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  background-color: rgb(57, 101, 37);
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: rgb(57, 171, 107);
+  border: 2px solid rgb(57, 101, 37);
+}
+
+.noSubmitButton {
+  margin: 0 auto;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: rgb(157, 101, 137, 0.2);
+  color: white;
+}

@@ -5,8 +5,7 @@ export const PROJECT1 = {
     title: 'project 1',
     teaser: 'create a collection of sounds and an instrument that lets us explore it',
     markdown: PROJECT1_MARKDOWN,
-    due: '09/16',
-    open: '09/01',
+    due: '09/15',
     imageURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',
     inspirationLinks : [
         {

@@ -5,7 +5,7 @@ export const FINAL_PROJECT = {
     title: 'final project',
     teaser: 'you do you',
     markdown: FINAL_PROJECT_MARKDOWN,
-    due: null,
+    due: '10/06',
     inspirationLinks : [
        
         {
