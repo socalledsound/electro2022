@@ -5,7 +5,8 @@ export const PROJECT1 = {
     title: 'project 1',
     teaser: 'create a collection of sounds and an instrument that lets us explore it',
     markdown: PROJECT1_MARKDOWN,
-    due: null,
+    due: '09/16',
+    open: '09/01',
     inspirationLinks : [
         {
             linkText: 'Lorna Simpson, Easy To Remember',

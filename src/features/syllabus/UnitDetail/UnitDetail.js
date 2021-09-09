@@ -6,10 +6,14 @@ import styles from './UnitDetail.module.css'
 const UnitDetail = ({ unit, history }) => {
 
     const dispatch = useDispatch()
-    const { title, illustrationURL, overview, days } = unit
+    const { title, illustrationURL, overview, days, project } = unit
     const handleDayClick = (unit, day) => {
         history.push(`/syllabus/${unit.unit}/${day.id}`)
         dispatch(setCurrentDayIdx(day.id));
+    }
+    const handleProjectClick = (id) => {
+        history.push(`/projects/${id}`)
+        // dispatch(setCurrentProjIdx(day.id));
     }
 
 
@@ -58,6 +62,14 @@ const UnitDetail = ({ unit, history }) => {
                         <p className={styles.descriptionText}>
                             {overview}       
                         </p>
+                        <div>
+                            <button
+                                onClick={() => handleProjectClick(project.id)}
+                                >
+                                    project 1 details
+                                </button>
+                        </div>
+                        
                         </div>
                     </div>
                     

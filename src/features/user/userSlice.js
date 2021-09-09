@@ -81,6 +81,10 @@ export const selectCompletedAssignments = state => {
     }
 }
 
+export const selectCompletedProjects = state => {
+    return null
+}
+
 export const selectUserCritMessages = state => {
     
     const user = selectCurrentUser(state)

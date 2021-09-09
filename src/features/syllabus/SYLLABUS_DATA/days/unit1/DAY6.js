@@ -3,8 +3,15 @@ const DAY6 = {
     unit: 'unit1',
     date: 'September 14, 2021',
     title: 'SNAKES',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631218847/MKOK6843_nqbjpx.jpg',
+    description: `
+    BE SURE TO BRING YOUR SOUND FILES TO CLASS IN SOME WAY SHAPE OR FORM!
+    One good way is to have them all on a usb drive; you could also use google drive or similar, or bring them
+    on a zoom recorder.  Or bring your laptop, with the files on it.
+    I'd like to make sure that everyone is able to get their sound files on their CPE, along with the python code
+    we need to trigger them!
+    Consider it a test run for our big performance on Thursday!
+    `,
     videos: [
         {
             linkText: 'getting set up with circuit python',

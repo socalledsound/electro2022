@@ -46,11 +46,11 @@ const DAY5 = {
         },
         {
             linkText: 'array methods',
-            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+            linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
         },
         {
             linkText: 'arrays of sounds',
-            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+            linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
         },
 
     ],

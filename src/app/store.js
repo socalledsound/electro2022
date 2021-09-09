@@ -19,6 +19,7 @@ import warningsReducer from '../features/warnings/warningsSlice'
 import galleryReducer from '../features/gallery/gallerySlice'
 import peopleReducer from '../features/people/peopleSlice'
 import assignmentReducer from '../features/assignments/assignmentSlice'
+import projectsReducer from '../features/projects/projectsSlice'
 import submitWorkReducer from '../features/submitWork/submitWorkSlice'
 import critMessagesReducer from '../features/critMessages/critMessagesSlice'
 import logger from 'redux-logger'
@@ -33,13 +34,14 @@ const reducer = combineReducers({
   assignment: assignmentReducer,
   submitWork: submitWorkReducer,
   critMessages: critMessagesReducer,
+  project: projectsReducer
 })
 
 const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  blacklist:['syllabus','warnings', 'assignment', 'submitWork']
+  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project']
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
