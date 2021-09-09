@@ -1,12 +1,12 @@
-import PROJECT1_MARKDOWN from './PROJECT1.md'
+import PROJECT0_MARKDOWN from './PROJECT1.md'
 
-export const PROJECT1 = {
-    id: 'proj1',
-    title: 'project 1',
-    teaser: 'create a collection of sounds and an instrument that lets us explore it',
-    markdown: PROJECT1_MARKDOWN,
-    due: '09/16',
-    open: '09/01',
+export const PROJECT0 = {
+    id: 'proj0',
+    title: 'project 0',
+    teaser: 'there is no project 0',
+    markdown: PROJECT0_MARKDOWN,
+    due: '12/30',
+    open: '12/25',
     imageURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',
     inspirationLinks : [
         {

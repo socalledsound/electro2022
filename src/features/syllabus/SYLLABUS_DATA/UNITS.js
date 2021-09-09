@@ -34,6 +34,7 @@ import DAY27 from './days/unit5/DAY27'
 import DAY28 from './days/unit5/DAY28'
 import DAY29 from './days/unit5/DAY29'
 import DAY30 from './days/unit5/DAY30'
+import { PROJECT0 } from '../../projects/PROJECTS_DATA/PROJECT0'
 import { PROJECT1 } from '../../projects/PROJECTS_DATA/PROJECT1'
 import { MIDTERM_PROJECT } from '../../projects/PROJECTS_DATA/MIDTERM_PROJECT'
 import { PROJECT3 } from '../../projects/PROJECTS_DATA/PROJECT3'
@@ -51,7 +52,8 @@ export const UNIT0 = {
     our bearings with the tools that we'll use: electical circuits, inputs, outputs, code.  
     We'll start by learning how to use this thing called the circuit playground express, learn
     how to wire up speakers and LEDs, and also learn about event listeners.`,
-    days: [DAY1, DAY2, DAY3]
+    days: [DAY1, DAY2, DAY3],
+    project: PROJECT0,
 }
 
 export const UNIT1 = {

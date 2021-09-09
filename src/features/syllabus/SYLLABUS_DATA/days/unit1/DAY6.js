@@ -138,7 +138,10 @@ const DAY6 = {
             linkText: 'capacitive touch on the CPE',
             linkSrc: 'https://youtu.be/BxlbKu-WGok',
         },
-
+        {
+            linkText: 'another nice capacitive touch keyboard with copper strips',
+            linkSrc: 'https://www.youtube.com/watch?v=tE_-8evzGoI',
+        },
 
         {
             linkText: 'circuit python play sound file',

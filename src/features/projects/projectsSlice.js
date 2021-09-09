@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+import { PROJECT0 } from './PROJECTS_DATA/PROJECT0'
 import { PROJECT1 } from './PROJECTS_DATA/PROJECT1'
 import { MIDTERM_PROJECT } from './PROJECTS_DATA/MIDTERM_PROJECT'
 
 export const PROJECTS = [
+    PROJECT0,
     PROJECT1,
     MIDTERM_PROJECT
 ]

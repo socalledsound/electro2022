@@ -92,7 +92,7 @@ export const selectAssignment = (id) => state => state.assignment.assignments[id
 export const selectAssignmentDue = (dayId) => state => {
     const allDays = selectAllDays(state)
     //console.log(allDays, dayId)
-    const thisDayDue = new Date(allDays[dayId].date)
+    const thisDayDue = new Date(allDays[dayId-1].date)
     const currentDay = selectCurrentDay(state)
     const currentDue = new Date(currentDay.date)
     let today = new Date()

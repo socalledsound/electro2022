@@ -62,12 +62,17 @@ const UnitDetail = ({ unit, history }) => {
                         <p className={styles.descriptionText}>
                             {overview}       
                         </p>
-                        <div>
-                            <button
+                        <div className={styles.projectButtonContainer}>
+                            {
+                                project.title !== 'project 0' &&
+                                <button
                                 onClick={() => handleProjectClick(project.id)}
+                                className={styles.projectButton}
                                 >
-                                    project 1 details
+                                   {project.title} : {project.teaser} (click for more)
                                 </button>
+                            }
+  
                         </div>
                         
                         </div>

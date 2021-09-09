@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import {selectCurrentUser } from '../../user/userSlice'
 import UnitButton from './UnitButton'
 import AssignmentButton from './AssignmentButton'
-import LoginButton from './LoginButton'
+import LoginButton from '../../../components/LoginButton/LoginButton'
 import DayDetailLinks from './DayDetailLinks'
 import styles from './DayDetail.module.css'
 
