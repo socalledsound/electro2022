@@ -26,6 +26,7 @@ export const selectAssignmentWarnings = state => {
     // state.warnings.assignmentWarnings
     const previousDays = selectPreviousDays(state)
     const completedAssignments = selectCompletedAssignments(state)
+    console.log(completedAssignments)
     const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title)
     console.log(assignmentsDue, completedAssignments)
     // const warnings = assignmentsDue.filter(item => item.)
@@ -40,8 +41,8 @@ export const selectAssignmentWarnings = state => {
     const warnings = needed.map((el, idx) => previousDays[idx])
     console.log(warnings)
 
-    if(warnings.length > 0){
-        return warnings
+    if(needed.length > 0){
+        return needed
     } else {
         return null
     }

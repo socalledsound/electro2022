@@ -5,9 +5,10 @@ const AssignmentWarning = ({item, history}) => {
     return ( 
         <div 
             className={styles.assignmentWarningContainer}
-            onClick={() => history.push(`/assignments/${item.id}`)}
+            // onClick={() => history.push(`/assignments/${item.id}`)}
         >
-            <p>{item.title}</p>
+            {/* <p>{item.title}</p> */}
+            <p>{item}</p>
         </div>
      );
 }
