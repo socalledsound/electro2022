@@ -1,5 +1,7 @@
 ### a circuit playground sampler
 
+<img src='https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png' alt='a circuit playground sampler'>
+
 For this first project, you will record, gather, borrow, steal or find a collection of sounds.
 
 You can record your own sounds using a zoom recorder or any other recording device, and any microphones that you want to use, including the contact mic that we will make in class. But...there is no need to record your own sounds if you don't want to! You can get sounds from <a href='https://freesound.org/'>freesound</a>, or any other place that you want to!

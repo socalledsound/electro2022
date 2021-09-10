@@ -60,7 +60,7 @@
   border: 2px solid rgb(57, 171, 107);
 }
 
-.projectMarkdown {
+/* .projectMarkdown {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.4);
   padding: 2rem;
@@ -68,23 +68,28 @@
   border-radius: 0.8rem;
   margin-bottom: 1.2rem;
   width: 45%;
-}
+} */
 
 .projectDescription {
   font-family: "Martel", serif;
   font-weight: 300;
   margin-top: 0 auto;
-  padding: 0.6rem;
+  padding: 2rem;
   background-color: rgb(161, 109, 12);
   background-color: #c67204;
   background-color: rgba(129, 80, 16, 0.1);
   border: 1px solid brown;
   border-radius: 1.2rem;
-  max-width: 85vw;
+  max-width: 75vw;
 }
 
-.markdown img {
-  max-width: 60vw;
+.projectDescription img {
+  /* max-width: 60vw; */
+  max-width: 50%;
+  margin-bottom: 1.2rem;
+  margin-left: 1.2rem;
+
+  float: right;
 }
 /* .submitButtonContainer {
   

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './DayDetail.module.css'
+import styles from './DayDetailLinks.module.css'
 
 const DayDetailLinks = ({day}) => {
     
