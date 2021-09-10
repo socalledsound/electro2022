@@ -4,6 +4,7 @@ const DAY5 = {
     unit: 'unit1',
     date: 'September 9, 2021',
     title: 'collection',
+    assignment: 'collection',
     description: `
     Today we're going to look at a bunch of art that involves this idea of collecting that I want you to explore 
     in this first project.  We'll start by talking about the Tacita Dean article you read, which talks about the 

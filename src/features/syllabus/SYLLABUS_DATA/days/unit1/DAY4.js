@@ -4,6 +4,7 @@ const DAY4 = {
     unit: 'unit1',
     date: 'September 7, 2021',
     title: 'mic check',
+    assignment: 'sensing',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1603689412/side-effects/HNND2_lw07um.jpg',
     description: `
     Today we're going to build contact mics in class and talk about what it means to record sounds.

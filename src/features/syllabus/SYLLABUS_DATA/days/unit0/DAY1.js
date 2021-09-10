@@ -3,6 +3,7 @@ const DAY1 = {
     unit: 'unit0',
     date: 'August 26, 2021',
     title: 'hello! world',
+    assignment: 'intro',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
     description: ` Hello!  And welcome to electro-crafting.  
                     What's electrocrafting? Come to class to find out!  

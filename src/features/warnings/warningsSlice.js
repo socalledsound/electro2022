@@ -38,11 +38,14 @@ export const selectAssignmentWarnings = state => {
        needed = assignmentsDue
     }
     console.log(needed)
-    const warnings = needed.map((el, idx) => previousDays[idx])
+    console.log(previousDays)
+    const warnings = needed.reduce((acc, cur) => {
+        return acc.concat(previousDays.filter((day) => day.assignment === cur))
+    }, [])
     console.log(warnings)
 
-    if(needed.length > 0){
-        return needed
+    if(warnings.length > 0){
+        return warnings
     } else {
         return null
     }

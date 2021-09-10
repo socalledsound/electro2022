@@ -3,6 +3,7 @@ const DAY6 = {
     unit: 'unit1',
     date: 'September 14, 2021',
     title: 'SNAKES',
+    assignment: 'hardware',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631218847/MKOK6843_nqbjpx.jpg',
     description: `
     BE SURE TO BRING YOUR SOUND FILES TO CLASS IN SOME WAY SHAPE OR FORM!

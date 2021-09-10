@@ -4,6 +4,7 @@ const DAY3 = {
     unit: 'unit0',
     date: 'September 2, 2021',
     title: 'listen!',
+    assignment: 'switches',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597030532/side-effects/neuhaus1_jggnxk.jpg',
     description: `
     Today we'll take a quick tour of computer history and a little look inside how they actually work.  

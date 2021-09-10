@@ -4,6 +4,7 @@ const DAY7 = {
     unit: 'unit1',
     date: 'September 16, 2021',
     title: 'first project crit/performance',
+    assignment: 'jamz',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',
     description: `
     okay gang!  it's time for our first crit.  

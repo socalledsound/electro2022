@@ -4,6 +4,7 @@ const DAY2 = {
     unit: 'unit0',
     date: 'August 31, 2021',
     title: 'the resistance needs you',
+    assignment: 'resistance',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1629990026/tiananmen-square-anniversary-01-file-gty-jef-190529_hpMain_4x3t_992_s73ehp.jpg',
     description: `
     Today we'll talk about resistance.  Is it possible to 'resist', with art?  Is it possible to not 'resist' with art? 
