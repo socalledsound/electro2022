@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
+// import useModal from '../../components/Modal/useModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit as pencil} from '@fortawesome/free-solid-svg-icons'
 import { faTrash as trash} from '@fortawesome/free-solid-svg-icons'
@@ -10,8 +11,9 @@ import styles from './CritMessages.module.css'
 
 
 const CritMessage = ({item}) => {
-    // console.log(message.id)
-    // console.log(message.user)
+
+    //  const { modal, toggleModal, ModalContent } = useModal();
+
     const user = useSelector(selectUserById(item.user))
     const currentUser = useSelector(selectCurrentUser)
 
@@ -23,7 +25,7 @@ const CritMessage = ({item}) => {
     }
 
     const handleDelete = (id) => {
-        console.log('deleting', id)
+        
     }
 
 

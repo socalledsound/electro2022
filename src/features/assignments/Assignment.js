@@ -13,7 +13,7 @@ const Assignment = ({match}) => {
     
     const [ assignmentMarkdown, setAssignmentMarkdown ] = useState(null)
     const [ completed, setCompleted ] = useState(false)
-    const { submitModal, toggleSubmitModal, ModalContent } = useModal();
+    const { modal, toggleModal, ModalContent } = useModal();
     const assignment = useSelector(selectAssignment(match.params.dayId))
     const completedAssignments = useSelector(selectCompletedAssignments)
     const currentUser = useSelector(selectCurrentUser)
@@ -52,7 +52,7 @@ const Assignment = ({match}) => {
 
     const handleSubmitWorkClick = () => {
         // console.log(toggleModal)
-        toggleSubmitModal(true)
+        toggleModal(true)
         console.log('clicked')
         window.scrollTo(0,0)
        
@@ -62,7 +62,7 @@ const Assignment = ({match}) => {
     return ( 
         <div className={styles.assignmentWrapper}>
 
-            {!submitModal ?
+            {!modal ?
             <div className={styles.assignmentContainer}>
             <h3 className={styles.assignmentTitle}>{assignment.title}</h3>
             
