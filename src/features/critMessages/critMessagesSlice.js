@@ -15,6 +15,38 @@ export const critMessagesSlice = createSlice({
         startUpdateCritMessage(){},
         startSubmitCritMessage(){},
         startDeleteCritMessage(){},
+        updateCritMessageSuccess: (state, action) => {
+            console.log(action.payload, 'in update success')
+            const otherMessages = state.messages.filter( msg => msg.id !== action.payload.id)
+            const thisMessage = state.messages.filter(msg => msg.id === action.payload.id)[0]
+            const newMessage = {...thisMessage, message: action.payload.update.message}
+            return {
+                ...state,
+                messages: otherMessages.concat(newMessage)
+            }
+        }, 
+        updateCritMessageFailure : (state, action) => {
+            console.log(action.payload)
+            return {
+                ...state,
+                errors : action.payload
+            }
+        },
+        deleteCritMessageSuccess: (state, action) => {    
+            console.log('delete crit message success', action.payload)
+            const newMessages = state.messages.filter((item) => item.id !== action.payload)
+            console.log(newMessages)
+            return {
+                ...state,
+                messages: newMessages
+            }
+        }, 
+        deleteCritMessageFailure : (state, action) => {
+            return {
+                ...state,
+                errors : action.payload
+            }
+        },
         submitCritMessageFailure  : (state, action) => {
             return {
                 ...state,
@@ -23,7 +55,6 @@ export const critMessagesSlice = createSlice({
         },
 
         submitCritMessageSuccess  : (state, action) => {
-           
             return {
                 ...state,
 
@@ -39,6 +70,7 @@ export const critMessagesSlice = createSlice({
             }
         },
         fetchCritMessagesFailure : (state, action) => {
+            console.log(action.payload)
             return {
                 ...state,
                 errors: action.payload,
@@ -88,7 +120,9 @@ export const selectCritMessagesForUserId = id => state => {
 
 
 export const { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
-    fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure,
+    fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure, 
+    deleteCritMessageSuccess, deleteCritMessageFailure,
+    updateCritMessageSuccess, updateCritMessageFailure,
  } = critMessagesSlice.actions
 
 export default critMessagesSlice.reducer

@@ -19,3 +19,4 @@ export const createCritMessageSubmission = (data) => {
     console.log(submission)
     return submission
 }
+

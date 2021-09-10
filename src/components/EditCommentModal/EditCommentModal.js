@@ -21,7 +21,7 @@ const EditCommentModal = ({item, toggleModal}) => {
     const submitCritMessage = (message) => {
         
         console.log(message, 'in submitCM')
-        const data = { message, itemId: item.id }
+        const data = { message: message.message, itemId: item.id }
         console.log(data)
         dispatch(startUpdateCritMessage(data))
         //resetForm()

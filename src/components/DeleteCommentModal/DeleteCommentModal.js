@@ -7,6 +7,7 @@ const DeleteCommentModal = ({item, toggleModal}) => {
     const dispatch = useDispatch()
 
     const handleConfirm = () => {
+        console.log('confirm')
         dispatch(startDeleteCritMessage(item.id))
         toggleModal(false)
     }
@@ -25,7 +26,7 @@ const DeleteCommentModal = ({item, toggleModal}) => {
             <div className={styles.buttonRow}>
                 <button
                     className={styles.confirmButton}
-                    onClick={() => handleConfirm}
+                    onClick={handleConfirm}
                 >
                     confirm
                 </button>

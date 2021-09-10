@@ -2,10 +2,11 @@ import { all, call, put, takeLatest } from 'redux-saga/effects'
 import { firestore, convertMessagesSnapshotToMap } from '../../firebase/firebase.utils'
 import { loginLoading } from '../../features/user/userSlice'
 import { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
-    fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure,
+    fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure, 
+    deleteCritMessageSuccess, deleteCritMessageFailure, updateCritMessageSuccess, updateCritMessageFailure,
 } from '../../features/critMessages/critMessagesSlice'
 // import { addSubmissionToWorks } from '../../features/gallery/gallerySlice'
-import { addItemToFirestore} from '../../firebase/firebase.utils'
+import { addItemToFirestore, updateItemInFirestore, deleteItemInFirestore} from '../../firebase/firebase.utils'
 import { createCritMessageSubmission } from '../../features/critMessages/critMessages.utils'
 
 export function* fetchCritMessages(action){
@@ -48,10 +49,43 @@ function* submitCritMessage(action){
 
 function* updateCritMessage(action){
     yield console.log('updating crit message', action.payload)
+   const update = {message: action.payload.message}
+    if(update){
+        yield put(loginLoading(true))
+        try{
+            yield call(updateItemInFirestore, 'critMessages', action.payload.itemId, update)
+            yield put(updateCritMessageSuccess({id: action.payload.itemId, update}))
+            //  yield put(fetchCritMessagesStart(action.payload.workId))
+            yield put(loginLoading(false))
+        } 
+        catch(error){
+            console.error(error)
+            yield put(updateCritMessageFailure(error.message))
+            yield put(loginLoading(false))
+        }
+        
+    }
 }
 
 function* deleteCritMessage(action){
     yield console.log('deleting crit message', action.payload)
+    const itemId = action.payload
+    if(itemId){
+        yield put(loginLoading(true))
+        try{
+            yield call(deleteItemInFirestore, 'critMessages', itemId)
+            yield put(deleteCritMessageSuccess(itemId))  
+            console.log('before login loading reset')
+            yield put(loginLoading(false))
+        } 
+        catch(error){
+            console.error(error)
+            yield put(deleteCritMessageFailure(error.message))
+            yield put(loginLoading(false))
+        }
+        
+    }
+
 }
 
 

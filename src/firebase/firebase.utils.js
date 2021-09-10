@@ -44,6 +44,19 @@ export const addItemToFirestore = async(collectionKey, objectToAdd) => {
     await collectionRef.add(objectToAdd)
     return
 }
+
+export const updateItemInFirestore = async(collectionKey, itemToUpdate, update) => {
+    console.log(update)
+    const collectionRef = firestore.collection(collectionKey)
+    await collectionRef.doc(itemToUpdate).update(update)
+}
+
+export const deleteItemInFirestore  = async(collectionKey, itemToDelete) => {
+    const collectionRef = firestore.collection(collectionKey)
+    await collectionRef.doc(itemToDelete).delete()
+}
+
+
 export const convertUsersSnapshotToMap = (users) => {
     console.log(users)
     const transformedUsers = users.docs.map(doc => {

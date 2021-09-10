@@ -93,7 +93,11 @@ const CritMessage = ({item}) => {
                            
                            <p className={styles.elapsedTime}>{elapsed}</p>
                     </div>
-                {item.message}
+                    {
+                       typeof item.message !== 'object' && item.message !== null&& 
+                       item.message
+                    }
+                
                 
             </div>
         </div>
