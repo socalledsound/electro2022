@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import useForm from '../../utils/useForm'
 import { selectCurrentUser } from '../user/userSlice'
 import { startSubmitCritMessage } from './critMessagesSlice'
-// import { validateAssignmentSubmission } from '../assignments/validateAssignmentSubmission'
 import TextArea from '../../components/TextArea/TextArea'
 import styles from './CritMessages.module.css'
 
@@ -43,7 +42,7 @@ const SubmitCritMessageForm = ({item}) => {
         <div className={styles.submitCritMessageWrapper}>
             <div className={styles.formWrapper}>
                 <form onSubmit={handleSubmit}>
-                                         <TextArea 
+                    <TextArea 
                         rows={4} 
                         cols={50} 
                         value={message}

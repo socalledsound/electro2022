@@ -12,9 +12,9 @@ export const critMessagesSlice = createSlice({
     name: 'critMessages',
     initialState,
     reducers: {
-
+        startUpdateCritMessage(){},
         startSubmitCritMessage(){},
-
+        startDeleteCritMessage(){},
         submitCritMessageFailure  : (state, action) => {
             return {
                 ...state,
@@ -87,7 +87,7 @@ export const selectCritMessagesForUserId = id => state => {
 }
 
 
-export const { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
+export const { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
     fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure,
  } = critMessagesSlice.actions
 

@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
-// import useModal from '../../components/Modal/useModal'
+import useNewModal from '../../components/Modal/useNewModal'
+import DeleteCommentModal from '../../components/DeleteCommentModal/DeleteCommentModal'
+import EditCommentModal from '../../components/EditCommentModal/EditCommentModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit as pencil} from '@fortawesome/free-solid-svg-icons'
 import { faTrash as trash} from '@fortawesome/free-solid-svg-icons'
@@ -10,55 +12,65 @@ import { selectCurrentUser } from '../user/userSlice'
 import styles from './CritMessages.module.css'
 
 
+
 const CritMessage = ({item}) => {
 
-    //  const { modal, toggleModal, ModalContent } = useModal();
+    const [ deleteModal, toggleDeleteModal, DeleteModalContent ] = useNewModal();
+    const [ editModal, toggleEditModal, EditModalContent ] = useNewModal();
 
     const user = useSelector(selectUserById(item.user))
     const currentUser = useSelector(selectCurrentUser)
-
+    console.log(user, currentUser)
     const elapsed = createTimeElapsed(item.timestamp)
 
-
-    const handleEdit = (id) => {
-        console.log('editing', id)
+    const handleEdit = () => {
+        toggleEditModal(true)
     }
 
-    const handleDelete = (id) => {
-        
+    const handleDelete = () => {
+        toggleDeleteModal(true)
     }
 
 
     return ( 
-        <div className={styles.critMessageWrapper}>
-
-        
+        <div className={styles.critMessageWrapper}>     
         <div className={styles.critMessageContainer}>
             <div className={styles.userFlexWrapper}>
 
-           
                 {
+                    deleteModal &&
+                    <DeleteModalContent>
+                        <DeleteCommentModal item={item} toggleModal={toggleDeleteModal}/>
+                    </DeleteModalContent>
+                }    
+                {
+                    editModal && 
+                    <EditModalContent>
+                        <EditCommentModal item={item} toggleModal={toggleEditModal}/>
+                    </EditModalContent>    
+                }
+                        
+                    
+                    
+                    <Fragment>
+                    {
                     user&&
                     <Fragment>
                         <div className={styles.critMessageImageContainer}>
                             <img src={user.avatar} alt='user avatar' className={styles.avatar}/> 
                         </div>
-                        <div className={styles.critMessageTitleSecondaryContainer}>
-                           
-                            <h5 className={styles.userName}>{user.displayName}</h5>
-                            <p className={styles.elapsedTime}>{elapsed}</p>
-                        </div>
+
                         {
                             currentUser.id === user.id &&
                             <div>
                                <FontAwesomeIcon 
                                     icon={pencil}
-                                    onClick={()=> handleEdit(user.id)}
+                                    onClick={handleEdit}
                                     className={styles.pencil}
                                />
                                 <FontAwesomeIcon 
                                     icon={trash}
-                                    onClick={()=> handleDelete(user.id)}
+                                    onClick={handleDelete}
                                     className={styles.trash}
                                />
                             </div>
@@ -66,9 +78,21 @@ const CritMessage = ({item}) => {
 
                     </Fragment>
                 }
+                    </Fragment>
+                
+           
+                
             </div>
            
             <div className={styles.critMessageBodyContainer}>
+                    <div className={styles.critMessageTitleSecondaryContainer}>  
+                            {
+                                user &&
+                                <h5 className={styles.userName}>{user.displayName}</h5>
+                            }   
+                           
+                           <p className={styles.elapsedTime}>{elapsed}</p>
+                    </div>
                 {item.message}
                 
             </div>

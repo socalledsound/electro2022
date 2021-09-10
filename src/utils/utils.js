@@ -14,14 +14,24 @@ const convertElapsedTime = (millisec) => {
     let seconds = (millisec / 1000).toFixed(0)
     let minutes = Math.floor(seconds / 60)
     let hours = ''
+    let days = ''
+    
     if(minutes > 59){
         hours = Math.floor(minutes/60)
         minutes = minutes - (hours * 60)
+        if(hours > 24){
+            days = Math.floor(hours/24)
+            hours = hours - (days * 24)  
+        }
     }
+
+
     // seconds = Math.floor(seconds % 60);
     // seconds = (seconds >= 10) ? seconds : `0${seconds}`
     if(minutes < 1){
         return 'less than a minute ago'
+    } else if(days!== '') {
+        return `${days}days ${hours}hours and ${minutes}minutes ago`
     } else if(hours !== ''){
         return `${hours}hours and ${minutes}minutes ago`
     } else {

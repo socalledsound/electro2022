@@ -1,7 +1,7 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
 import { firestore, convertMessagesSnapshotToMap } from '../../firebase/firebase.utils'
 import { loginLoading } from '../../features/user/userSlice'
-import { startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
+import { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
     fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure,
 } from '../../features/critMessages/critMessagesSlice'
 // import { addSubmissionToWorks } from '../../features/gallery/gallerySlice'
@@ -46,18 +46,34 @@ function* submitCritMessage(action){
     }
 }
 
+function* updateCritMessage(action){
+    yield console.log('updating crit message', action.payload)
+}
+
+function* deleteCritMessage(action){
+    yield console.log('deleting crit message', action.payload)
+}
+
+
 export function* onFetchCritMessagesStart(){
     yield takeLatest(fetchCritMessagesStart.type, fetchCritMessages)
 }
-
 
 export function* onSubmitCritMessageStart(){
     // console.log(startSubmitCritMessage.type)
     yield takeLatest(startSubmitCritMessage.type, submitCritMessage)
 }
 
+export function* onUpdateCritMessageStart(){
+    yield takeLatest(startUpdateCritMessage.type, updateCritMessage)
+}
+
+export function* onDeleteCritMessageStart(){
+    yield takeLatest(startDeleteCritMessage.type, deleteCritMessage)
+}
+
 export function* critMessageSagas(){
-    yield all([call(onSubmitCritMessageStart), call(onFetchCritMessagesStart)])
+    yield all([call(onSubmitCritMessageStart), call(onFetchCritMessagesStart), call(onUpdateCritMessageStart), call(onDeleteCritMessageStart)])
 }
 
 
