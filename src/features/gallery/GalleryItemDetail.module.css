@@ -8,3 +8,19 @@
   width: 100%;
   max-height: 15rem;
 }
+
+.editPanel {
+  margin-top: 0.4rem;
+}
+
+.pencil:hover {
+  transform: scale(1.2);
+}
+
+.trash {
+  margin-left: 0.4rem;
+}
+
+.trash:hover {
+  transform: scale(1.2);
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ProjectDetail.module.css'
-const SubmitProject = ({currentUser, projectOpen, completed, handleClick}) => {
+const SubmitProject = ({currentUser, projectDue, completed, handleClick}) => {
     return ( 
         <div className={styles.submitButtonContainer}>
         {
@@ -9,7 +9,7 @@ const SubmitProject = ({currentUser, projectOpen, completed, handleClick}) => {
                     <p>please log in to see the project</p>
                 </div>
                 :
-                projectOpen ?
+                projectDue ?
 
 
                     completed ? 

@@ -80,3 +80,15 @@
   background-color: rgb(19, 88, 198);
   border: 2px solid rgb(61, 244, 238);
 }
+
+.pencil:hover {
+  transform: scale(1.2);
+}
+
+.trash {
+  margin-left: 0.4rem;
+}
+
+.trash:hover {
+  transform: scale(1.2);
+}

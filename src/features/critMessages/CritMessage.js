@@ -1,7 +1,11 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit as pencil} from '@fortawesome/free-solid-svg-icons'
+import { faTrash as trash} from '@fortawesome/free-solid-svg-icons'
 import { createTimeElapsed } from '../../utils/utils'
 import { selectUserById } from '../people/peopleSlice'
+import { selectCurrentUser } from '../user/userSlice'
 import styles from './CritMessages.module.css'
 
 
@@ -9,14 +13,27 @@ const CritMessage = ({item}) => {
     // console.log(message.id)
     // console.log(message.user)
     const user = useSelector(selectUserById(item.user))
+    const currentUser = useSelector(selectCurrentUser)
 
     const elapsed = createTimeElapsed(item.timestamp)
+
+
+    const handleEdit = (id) => {
+        console.log('editing', id)
+    }
+
+    const handleDelete = (id) => {
+        console.log('deleting', id)
+    }
+
 
     return ( 
         <div className={styles.critMessageWrapper}>
 
         
         <div className={styles.critMessageContainer}>
+            <div className={styles.userFlexWrapper}>
+
            
                 {
                     user&&
@@ -29,9 +46,25 @@ const CritMessage = ({item}) => {
                             <h5 className={styles.userName}>{user.displayName}</h5>
                             <p className={styles.elapsedTime}>{elapsed}</p>
                         </div>
+                        {
+                            currentUser.id === user.id &&
+                            <div>
+                               <FontAwesomeIcon 
+                                    icon={pencil}
+                                    onClick={()=> handleEdit(user.id)}
+                                    className={styles.pencil}
+                               />
+                                <FontAwesomeIcon 
+                                    icon={trash}
+                                    onClick={()=> handleDelete(user.id)}
+                                    className={styles.trash}
+                               />
+                            </div>
+                        }
+
                     </Fragment>
                 }
-
+            </div>
            
             <div className={styles.critMessageBodyContainer}>
                 {item.message}

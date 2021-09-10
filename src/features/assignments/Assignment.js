@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
 import {selectAssignment, selectAssignmentDue } from './assignmentSlice'
 import { selectCompletedAssignments, selectCurrentUser } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
 import SubmitWork from '../submitWork/SubmitWork'
+// import EditSubmissionButton from '../../components/EditSubmissionButton/EditSubmissionButton'
 import styles from './Assignment.module.css'
 
 const Assignment = ({match}) => {
     
     const [ assignmentMarkdown, setAssignmentMarkdown ] = useState(null)
     const [ completed, setCompleted ] = useState(false)
-    const { modal, toggleModal, ModalContent } = useModal();
+    const { submitModal, toggleSubmitModal, ModalContent } = useModal();
     const assignment = useSelector(selectAssignment(match.params.dayId))
     const completedAssignments = useSelector(selectCompletedAssignments)
     const currentUser = useSelector(selectCurrentUser)
@@ -49,9 +50,9 @@ const Assignment = ({match}) => {
         .then(text => setAssignmentMarkdown(text))   
     })
 
-    const handleClick = () => {
+    const handleSubmitWorkClick = () => {
         // console.log(toggleModal)
-        toggleModal(true)
+        toggleSubmitModal(true)
         console.log('clicked')
         window.scrollTo(0,0)
        
@@ -61,7 +62,7 @@ const Assignment = ({match}) => {
     return ( 
         <div className={styles.assignmentWrapper}>
 
-            {!modal ?
+            {!submitModal ?
             <div className={styles.assignmentContainer}>
             <h3 className={styles.assignmentTitle}>{assignment.title}</h3>
             
@@ -85,14 +86,16 @@ const Assignment = ({match}) => {
 
                     completed ? 
                             <div className={styles.noSubmitButton}>
-                                <p>you already completed this assignment</p>
-                                <button>edit submission</button>
+                                <p>you already completed this assignment, but you can edit it in the 
+                                    <Link to={`/gallery`}>  gallery</Link>
+                                </p>
+                                {/* <EditSubmissionButton /> */}
                             
                             </div>
                             :
                             
                                 <button 
-                                onClick={handleClick}
+                                onClick={handleSubmitWorkClick}
                                 className={styles.submitButton}
                             >
                                 submit assignment
