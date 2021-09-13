@@ -101,6 +101,10 @@ const DAY8 = {
                 linkSrc: 'https://p5js.org/reference/',
             },
             {
+                linkText: 'javascript morsels playlist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
+            },
+            {
                 linkText: 'Daniel Shiffman: programming in p5.js playist',
                 linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
             },
@@ -113,34 +117,25 @@ const DAY8 = {
                 linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'git and github for poets',
+                linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
             },
 
         ], 
         videos: [
-            // {
-            //     id : 'UB1O30fR-EE',
-            //     title:'html basics from traversy media',
-            //     description: 'an hour long dive into the basics of html'
-            // },
-            // {
-            //     id : 'yfoY53QXEnI',
-            //     title: 'css basics from traversy media',
-            //     description: 'a video about the basics of css from one of my favorite teachers of web coding'
-            // },
             {
-    
+                linkText: 'getting started with p5',
+                linkSrc: '',
             },
             {
-    
+                linkText: 'code-along: bringing things to life',
+                linkSrc: '',
             },
             {
-    
+                linkText: 'github basics',
+                linkSrc: '',
             },
-            {
-    
-            },
+            
         ],    
 
 }

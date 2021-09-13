@@ -338,6 +338,10 @@ const RESOURCES = {
             linkSrc: 'https://eloquentjavascript.net/',
         },
         {
+            linkText: 'javascript morsels playlist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
+        },
+        {
             linkText: 'Daniel Shiffman',
             linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
         },

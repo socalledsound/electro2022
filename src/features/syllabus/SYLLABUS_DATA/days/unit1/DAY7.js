@@ -23,10 +23,10 @@ const DAY7 = {
     BE SURE TO TAKE AT LEAST ONE PHOTOGRAPH TODAY AND ALSO A VIDEO, OF ANY LENGTH.  POST THEM TO THE GALLERY AS PART OF THIS ASSIGNMENT.
     `,
     videos: [
-        // {
-        //     linkText: 'getting ready to have a crit',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'javascript morsels playlist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
+        }
     ],
     inspirationLinks: [
        

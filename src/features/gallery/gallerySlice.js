@@ -1,3 +1,4 @@
+
 import { createSlice } from '@reduxjs/toolkit'
 import galleryCategories from './GALLERY_CATEGORIES'
 // import { tempWork1, tempWork2, tempWork3, tempWork4,tempWork5, tempWork6,tempWork7, tempWork8, tempWork9, tempWork10 } from './TEMP_WORKS'
@@ -52,8 +53,37 @@ export const gallerySlice = createSlice({
                 ...state,
                 errors: action.payload
             }
-        }
-
+        },
+        startDeleteGalleryItem(){},
+        deleteGalleryItemSuccess :  (state, action) => {
+            const newWorks = state.works.filter(item => item.id !== action.payload.id) 
+            console.log(newWorks)
+            return{
+                ...state,
+                works: newWorks
+            }
+        },  
+        deleteGalleryItemFailure : (state, action) => {
+            return{
+                ...state,
+                errors: action.payload
+            }
+        },
+        startUpdateGalleryItem(){},
+        updateGalleryItemSuccess:  (state, action) => {
+            const oldWorks = state.works.filter(item => item.id !== action.payload.id)
+            const newItem = {id: action.payload.id, ...action.payload.update, ...action.payload.rest}
+            return{
+                ...state,
+                works: oldWorks.concat(newItem)
+            }
+        }, 
+        updateGalleryItemFailure: (state, action) => {
+            return{
+                ...state,
+                errors: action.payload
+            }
+        },
     }
 })
 
@@ -65,6 +95,8 @@ export const selectWorksByCategory = category => state => state.gallery.works.fi
 
 export const {  addSubmissionToWorks,
     startFetchWorks, fetchWorksSuccess, fetchWorksFailure,
-    startFetchUserWorks, fetchUserWorksSuccess, fetchUserWorksFailure,  
+    startFetchUserWorks, fetchUserWorksSuccess, fetchUserWorksFailure,
+    startDeleteGalleryItem, deleteGalleryItemSuccess,  deleteGalleryItemFailure,
+    startUpdateGalleryItem,  updateGalleryItemSuccess, updateGalleryItemFailure,
 } = gallerySlice.actions
 export default gallerySlice.reducer

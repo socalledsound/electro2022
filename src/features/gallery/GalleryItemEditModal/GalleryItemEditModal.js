@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import useForm from '../../utils/useForm'
-import { startUpdateCritMessage } from '../../features/critMessages/critMessagesSlice'
-import TextArea from '../../components/TextArea/TextArea'
-import styles from './EditCommentModal.module.css'
-const EditCommentModal = ({item, toggleModal}) => {
+import useForm from '../../../utils/useForm'
+import { startUpdateGalleryItem } from '../gallerySlice'
+import TextArea from '../../../components/TextArea/TextArea'
+import styles from './GalleryItemEditModal.module.css'
+const GalleryItemEditModal = ({item, toggleModal}) => {
 
     const dispatch = useDispatch()
    
@@ -23,7 +23,7 @@ const EditCommentModal = ({item, toggleModal}) => {
         console.log(message, 'in submitCM')
         const data = { message: message.message, itemId: item.id }
         console.log(data)
-        dispatch(startUpdateCritMessage(data))
+        dispatch(startUpdateGalleryItem(data))
         //resetForm()
         toggleModal(false)
         
@@ -73,4 +73,4 @@ const EditCommentModal = ({item, toggleModal}) => {
      );
 }
  
-export default EditCommentModal;
+export default GalleryItemEditModal;

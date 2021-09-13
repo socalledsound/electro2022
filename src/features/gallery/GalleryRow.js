@@ -11,7 +11,12 @@ const GalleryRow = ({ category, works}) => {
             {
                 shuffledWorks.map(((item, idx) => {
                     return (
-                        <GalleryItem key={`gallery-item-${idx}`} item={item} category={category} />
+                        
+                        <GalleryItem 
+                            key={`gallery-item-${idx}`} 
+                            item={item} 
+                            category={category} 
+                        />
                     )
                 }))
             }

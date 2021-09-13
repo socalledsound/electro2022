@@ -2,13 +2,15 @@ import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCategories, selectWorks, startFetchWorks } from './gallerySlice'
+import { selectLoginLoading } from '../user/userSlice'
+import Loading from '../../components/Loading/Loading'
 import GalleryRow from './GalleryRow'
 import styles from './Gallery.module.css'
 
 const Gallery = ({history}) => {
 
     const dispatch = useDispatch()
-
+    const loading = useSelector(selectLoginLoading)
 
     useEffect(() => {
       dispatch(startFetchWorks())
@@ -23,6 +25,9 @@ const Gallery = ({history}) => {
     return ( 
         <div>
         {
+            loading ?
+            <Loading />
+            :
             works ?
         
             <div className={styles.galleryWrapper}>

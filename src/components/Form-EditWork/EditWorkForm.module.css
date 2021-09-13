@@ -1,0 +1,56 @@
+.formWrapper {
+  max-width: 20rem;
+  padding: 2rem;
+}
+
+.submitFormButton {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(29, 183, 197);
+  border: 2px solid rgba(61, 244, 238, 0);
+  color: white;
+}
+.submitFormButton:hover {
+  background-color: rgb(19, 88, 198);
+  border: 2px solid rgb(61, 244, 238);
+}
+
+.confirmButton {
+  border-radius: 0.3rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: 1px solid rgb(22, 8, 22);
+  background-color: rgba(234, 226, 226, 0.8);
+  color: black;
+  margin-left: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.confirmButton:hover {
+  background-color: rgb(232, 25, 229);
+  color: white;
+  box-shadow: 0 0 2px rgb(33, 21, 21);
+}
+
+.cancelButton {
+  border-radius: 0.3rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  border: 1px solid purple;
+  background-color: rgba(231, 57, 57, 0.8);
+  color: white;
+  margin-left: 0.6rem;
+}
+
+.cancelButton:hover {
+  background-color: rgba(234, 35, 35, 1);
+  box-shadow: 0 0 2px rgb(33, 21, 21);
+}

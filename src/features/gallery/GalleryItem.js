@@ -8,7 +8,7 @@ const GalleryItem = ({ item, category, history }) => {
             className={styles.galleryItemContainer}
             onClick={ () => history.push(`/gallery/${category}/${item.id}`)} >
                 <img className={styles.workImage} src={item.imageURL} alt={item.title}/>
-                {item.title}   
+                <p className={styles.galleryItemTitle}>{item.title}</p>   
         </div>
      );
 }

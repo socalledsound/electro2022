@@ -1,5 +1,7 @@
 ### SPRITES
 
+# focus on sequences of images and try to use array methods
+
 Today we're going to keep developing our game characters. So far, we've learned to animate our characters in a pretty simple way: we take an image or an illustration and we move it around the screen. But, our characters don't really look like they're moving, they just look like images that are moving on the screen. And, our game over state isn't great either, it just sort of happens. Shouldn't there be some sort of transition? Well, today we'll look at some ways to handle those things.
 
 To begin, I want you to do the work. I've given you a starter [sketch](https://github.com/socalledsound/SE-unit2-day13-alien/tree/01-starter). In it, you'll find a folder with a set of images and an empty sketch loaded with the p5 library. So everything is all ready to go. I want you to figure out how to animate those images, using what you already know! Don't worry, I've got more for you, but I'm not going to give it to you just yet! Get to work. I'll be here to talk things through with you and when we're done, we'll move on.

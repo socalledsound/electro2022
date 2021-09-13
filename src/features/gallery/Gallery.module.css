@@ -71,6 +71,11 @@
   padding: 0.6rem;
 }
 
+.galleryItemTitle {
+  width: 200px;
+  overflow: hidden;
+}
+
 .galleryItemContainer:hover {
   background-color: rgba(200, 200, 200, 0.772);
 }

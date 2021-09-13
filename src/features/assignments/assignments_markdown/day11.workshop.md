@@ -1,5 +1,7 @@
 # enemy mine
 
+### this is where i introduce classes and we can go back and refactor the hero.
+
 Today we talked about this concept of an enemy. Or, as I've said in the project description, foils. Which is to say, things that push back against our sense of self.
 
 What we're really talking about is an 'other', or, another. We're talking about people and experiences that change us.

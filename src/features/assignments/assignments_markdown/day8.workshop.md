@@ -1,5 +1,7 @@
 # animation: literally, bringing things to life
 
+### go back and make this shorter??
+
 ![soundgame1](https://res.cloudinary.com/chris-kubick/image/upload/v1599606598/side-effects/127.0.0.1_5501_index.html_vkz2zh.png)
 
 Today, we'll start using p5.js, one of my favorite javascript libraries. It's a port to javascript of a project called Processing, which is probably the best-known coding environment for artists. Although Processing uses java -- very different from javascript! -- as it's primary language, if you know Processing, learning/adapting to p5 will be a piece of cake, as it uses pretty much the same API, but written in a different language.

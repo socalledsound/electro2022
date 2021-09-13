@@ -1,0 +1,19 @@
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.attachImageButton {
+  height: 3rem;
+  padding: 0.6rem;
+  margin-top: 1.2rem;
+  border-radius: 0.8rem;
+  background-color: rgba(73, 91, 207, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.attachImageButton:hover {
+  background-color: rgb(153, 48, 209);
+  border: 2px solid purple;
+}

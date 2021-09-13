@@ -1,6 +1,77 @@
 # Player Player
 
+NEED TO REWRITE THIS. no classes here, just focus on keyboard interaction.
+
+<!--
+
 Today we'll make a character for a player to play; I'll make a basic version and a more complicated version and you will hopefully learn enough to be able to make your own! We'll look at handling mouse and keyboard actions and then turning those into movement on the screen, and we'll look at storing some values for our character. We're going to use object oriented programming in javascript and learn a few of the basics of object oriented programming.
+
+Let's start by looking again at what an object is in javascript: a collection of keys that we can use to store information.
+
+So if we have a hero, like Dorothy, in the Wizard of Oz, we can write an object to describe some things we know about her:
+
+```
+const Dorothy = {
+    name: 'Dorothy,
+    dogName: 'Toto',
+    birthplace: 'Kansas',
+    issue: 'needs to find her way home',
+    enemy: 'wicked with of the west',
+    friends: ['Tin Man', 'Lion', 'Scarecrow']
+}
+
+```
+
+Or, if we are talking about another Dorothy, the main character in The Wiz, we could write that similarly :
+
+```
+const Dorothy = {
+    name: 'Dorothy,
+    dogName: 'Toto',
+    birthplace: 'NYC',
+    issue: 'needs to find her way home',
+    enemy: 'wicked with of the west',
+    friends: ['Tin Man', 'Lion', 'Scarecrow']
+}
+```
+
+And immediately you can see that those characters named Dorothy have a lot in common. Now, let's say we want to make a game where people have the option to play either one of those Dorothies, or we want to make a game with both of them in it. One thing you should always be looking for when writing code, is to avoid repeating yourself. One of the key ways we can do this with our data, is by thinking about objects in terms of CLASSES.
+
+So, let's make a class named 'Dorothy', it will be like a blueprint for all the Dorothies to come. We know that these Dorothies have a lot in common, so let's put those commmon things in first.
+
+To write a class, we start with the class keyword, and we define the class between curly braces, like this
+
+```
+class Dorothy {
+
+}
+
+```
+
+Now, inside the class, we add a constructor function, which will build us a Dorothy.
+
+```
+class Dorothy {
+    constructor(){
+
+    }
+}
+
+```
+
+Inside that constructor, we can specify the properties that all Dorothies have:
+
+```
+class Dorothy {
+    constructor(){
+        this.name = 'Dorothy,
+        this.dogName: 'Toto',
+        this.issue: 'needs to find her way home',
+        this.enemy: 'wicked with of the west',
+        this.friends: ['Tin Man', 'Lion', 'Scarecrow']
+    }
+}
+```
 
 So, hopefully, you wrote a Hero object, based on what we learned about class syntax in javascript, and hopefully you posted it to the gallery.
 
@@ -339,7 +410,7 @@ function addRandomLittle(){
 
 ```
 
-Here, I'm using one of my favorite little shorthand syntaxes, which is called a ternary expression. It basically says, let's set a variable named object to one of two values, depending on whether the condition -- Math.random() being greater than 0.5, in this case.  
+Here, I'm using one of my favorite little shorthand syntaxes, which is called a ternary expression. It basically says, let's set a variable named object to one of two values, depending on whether the condition -- Math.random() being greater than 0.5, in this case.
 You can see the longer if/else version of it below that in a comment.
 
 Okay, I promised a game over state, didn't I? First, an easy one. Let's start the smiling totoro higher on the screen and if he gets down below a certain level, we end the game.
@@ -438,4 +509,4 @@ You don't have to upload these files, but you should organize them, numbered seq
 
 Do submit one of these images for this assignment submission!
 
-Have a great day and see you next class!
+Have a great day and see you next class! -->

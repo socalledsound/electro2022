@@ -14,8 +14,8 @@ const DayDetailLinks = ({day}) => {
                 <ul  className={styles.linksList}>
                     {
                          inClassDemo.map((item, index) => (
-                             <div>
-                            <li key={index} className={styles.dayDemoTitle}><p>{item.title}</p></li>     
+                             <div key={index}>
+                            <li  className={styles.dayDemoTitle}><p>{item.title}</p></li>     
                             </div>       
                         ))
                     }

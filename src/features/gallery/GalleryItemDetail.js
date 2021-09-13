@@ -1,27 +1,48 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import useNewModal from '../../components/Modal/useNewModal'
+import GalleryItemDeleteModal from './GalleryItemDeleteModal/GalleryItemDeleteModal'
+// import GalleryItemEditModal from './GalleryItemEditModal/GalleryItemEditModal'
 import { withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit as pencil} from '@fortawesome/free-solid-svg-icons'
 import { faTrash as trash} from '@fortawesome/free-solid-svg-icons'
 import { selectCurrentUser } from '../user/userSlice'
 import styles from './GalleryItemDetail.module.css'
+import EditWork from './EditWork/EditWork'
 const GalleryItemDetail = ({ item, history }) => {
 
     const currentUser = useSelector(selectCurrentUser)
 
-    const handleEdit = (id) => {
-        console.log('editing', id)
+    const [ deleteModal, toggleDeleteModal, DeleteModalContent ] = useNewModal();
+    const [ editModal, toggleEditModal, EditModalContent ] = useNewModal();
+
+    const handleEdit = () => {
+        toggleEditModal(true)
     }
 
-    const handleDelete = (id) => {
-        console.log('deleting', id)
+    const handleDelete = () => {
+        toggleDeleteModal(true)
     }
 
     return ( 
         <div
             className={styles.galleryItemDetailWrapper} 
         >
+
+{
+                deleteModal &&
+                    <DeleteModalContent>
+                        <GalleryItemDeleteModal item={item} toggleModal={toggleDeleteModal}/>
+                    </DeleteModalContent>
+                }    
+                {
+                    editModal && 
+                    <EditModalContent>
+                        {/* <GalleryItemEditModal item={item} toggleModal={toggleEditModal}/> */}
+                        <EditWork item={item} toggleModal={toggleEditModal}/>
+                    </EditModalContent>    
+                }
 
             <img className={styles.galleryItemDetailImage} src={item.imageURL} alt="artwork" />
             {

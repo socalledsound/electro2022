@@ -1,0 +1,40 @@
+.submitFormWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 0.5rem;
+  padding-left: 0;
+
+  border-radius: 0.6rem;
+  min-width: 30rem;
+}
+
+@media screen and (min-width: 300px) {
+  .submitFormWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .submitFormWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.attachImageDiv {
+  margin-bottom: 0;
+  padding: 2rem;
+  display: flex;
+  min-height: 225px;
+  flex-direction: column;
+  margin-right: 1.2rem;
+  border-radius: 0.6rem;
+  min-width: 4rem;
+}
+
+.formWrapper {
+  max-width: 30rem;
+}

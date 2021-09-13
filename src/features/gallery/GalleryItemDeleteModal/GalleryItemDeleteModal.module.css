@@ -1,0 +1,70 @@
+.deleteWrapper {
+  padding: 3rem;
+}
+
+.itemContainer {
+  border: 1px solid blue;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.galleryItemDeleteImage {
+  max-width: 4rem;
+  margin-right: 0.6rem;
+}
+
+.deleteItemRow {
+  padding: 0;
+  display: flex;
+  align-items: left;
+  flex-wrap: wrap;
+}
+.deleteItemInfo {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-left: 0.6rem;
+  width: 50%;
+}
+.deleteItemInfo h5 {
+  margin-top: 0;
+}
+
+.deleteItemLinks {
+  font-size: 0.6rem;
+}
+.confirmButton {
+  border-radius: 0.3rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: 1px solid rgb(22, 8, 22);
+  background-color: rgba(234, 226, 226, 0.8);
+  color: black;
+  margin-left: 0.6rem;
+}
+
+.confirmButton:hover {
+  background-color: rgb(232, 25, 229);
+  color: white;
+  box-shadow: 0 0 2px rgb(33, 21, 21);
+}
+
+.cancelButton {
+  border-radius: 0.3rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  border: 1px solid purple;
+  background-color: rgba(231, 57, 57, 0.8);
+  color: white;
+  margin-left: 0.6rem;
+}
+
+.cancelButton:hover {
+  background-color: rgba(234, 35, 35, 1);
+  box-shadow: 0 0 2px rgb(33, 21, 21);
+}
