@@ -9,10 +9,8 @@ const UserWarnings = ({currentUser}) => {
     // const dispatch = useDispatch()
     const projectWarnings = useSelector(selectProjectWarnings)
     const assignmentWarnings = useSelector(selectAssignmentWarnings)
-    let critMessageWarning = null
-    if(currentUser){
-        critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
-    }
+    let critMessageWarning = critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
+    
 
 
     return ( 
