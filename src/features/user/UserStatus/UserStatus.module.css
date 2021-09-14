@@ -18,6 +18,8 @@
 .logInAgainButton {
   color: white;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 .logInAgainContainer {
