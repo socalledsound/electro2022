@@ -26,6 +26,14 @@ const DAY7 = {
         {
             linkText: 'javascript morsels playlist',
             linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
+        },
+        {
+            linkText: 'a quick intro to github',
+            linkSrc: 'https://youtu.be/RpYKKYsG7Io',
+        },
+        {
+            linkText: 'a super fast intro to git',
+            linkSrc: 'https://youtu.be/qE7FkB2YGB8',
         }
     ],
     inspirationLinks: [
