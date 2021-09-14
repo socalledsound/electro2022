@@ -84,9 +84,8 @@ export const critMessagesSlice = createSlice({
                 ...state,
                 errors: action.payload,
             }
-        }
-
-
+        },
+        fetchUserCritMessagesStart(){}, 
     }
 })
 
@@ -132,6 +131,7 @@ export const { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMe
     fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure, 
     deleteCritMessageSuccess, deleteCritMessageFailure,
     updateCritMessageSuccess, updateCritMessageFailure,
+    fetchUserCritMessagesStart,
  } = critMessagesSlice.actions
 
 export default critMessagesSlice.reducer

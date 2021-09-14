@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCurrentUser, selectLoginLoading } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
-
+import { fetchUserCritMessagesStart } from '../../features/critMessages/critMessagesSlice'
 import { startFetchUserWorks } from '../../features/gallery/gallerySlice'
 import UserWarnings from '../../features/warnings/UserWarnings'
 // import UserNewMessages from '../../features/userNewMessages/UserNewMessages'
@@ -20,10 +20,11 @@ const HomePage = () => {
     const loading = useSelector(selectLoginLoading)
     // const warning = useSelector(selectWarningStatus)
     const currentDay = useSelector(selectCurrentDay)
-    console.log(currentUser, currentDay)
+    // console.log(currentUser, currentDay)
 
     useEffect(() => {
         dispatch(startFetchUserWorks(currentUser))
+        dispatch(fetchUserCritMessagesStart(currentUser.id))
     }, [currentUser, dispatch])
 
     // useEffect(() => {  

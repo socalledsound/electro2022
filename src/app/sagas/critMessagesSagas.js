@@ -1,16 +1,17 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
+// import { selectCurrentUser } from '../../features/user/userSlice'
 import { firestore, convertMessagesSnapshotToMap } from '../../firebase/firebase.utils'
 import { loginLoading } from '../../features/user/userSlice'
 import { startUpdateCritMessage, startDeleteCritMessage, startSubmitCritMessage, submitCritMessageSuccess, submitCritMessageFailure,
     fetchCritMessagesStart, fetchCritMessagesSuccess, fetchCritMessagesFailure, 
-    deleteCritMessageSuccess, deleteCritMessageFailure, updateCritMessageSuccess, updateCritMessageFailure,
+    deleteCritMessageSuccess, deleteCritMessageFailure, updateCritMessageSuccess, updateCritMessageFailure, fetchUserCritMessagesStart,
 } from '../../features/critMessages/critMessagesSlice'
 // import { addSubmissionToWorks } from '../../features/gallery/gallerySlice'
 import { addItemToFirestore, updateItemInFirestore, deleteItemInFirestore} from '../../firebase/firebase.utils'
 import { createCritMessageSubmission } from '../../features/critMessages/critMessages.utils'
 
 export function* fetchCritMessages(action){
-    console.log(action)
+    // console.log(action)
     const  workId = action.payload
     // console.log(workId)
     yield put(loginLoading(true))
@@ -23,6 +24,24 @@ export function* fetchCritMessages(action){
     }catch(err){
         yield put(fetchCritMessagesFailure(err))
         yield put(loginLoading(false))
+    }
+}
+
+export function* fetchUserCritMessages(action){
+    const userId = action.payload
+    // yield console.log(userId, 'fetching crit messages')
+    if(userId){
+        yield put(loginLoading(true))
+        try{
+            const snap = yield firestore.collection('critMessages').where(`user`, '==', userId).get()
+            const messages = yield(convertMessagesSnapshotToMap(snap))
+            yield put(fetchCritMessagesSuccess(messages))
+            yield put(loginLoading(false))
+        }
+        catch(err){
+            yield put(fetchCritMessagesFailure(err))
+            yield put(loginLoading(false))
+        }
     }
 }
 
@@ -106,8 +125,19 @@ export function* onDeleteCritMessageStart(){
     yield takeLatest(startDeleteCritMessage.type, deleteCritMessage)
 }
 
+export function* onFetchUserCritMessagesStart(){
+    yield takeLatest(fetchUserCritMessagesStart.type, fetchUserCritMessages)
+}
+
 export function* critMessageSagas(){
-    yield all([call(onSubmitCritMessageStart), call(onFetchCritMessagesStart), call(onUpdateCritMessageStart), call(onDeleteCritMessageStart)])
+    yield all(
+        [
+            call(onSubmitCritMessageStart), 
+            call(onFetchCritMessagesStart), 
+            call(onUpdateCritMessageStart), 
+            call(onDeleteCritMessageStart),
+            call(onFetchUserCritMessagesStart)
+        ])
 }
 
 

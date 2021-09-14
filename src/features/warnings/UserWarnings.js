@@ -1,16 +1,23 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectProjectWarnings, selectAssignmentWarnings, selectCritMessageWarning } from './warningsSlice'
+
 import AssignmentWarning from './AssignmentWarning'
 import CritMessageWarning from './CritMessageWarning'
 import styles from './UserWarnings.module.css'
 const UserWarnings = ({currentUser}) => {
-  
+    // const dispatch = useDispatch()
     const projectWarnings = useSelector(selectProjectWarnings)
     const assignmentWarnings = useSelector(selectAssignmentWarnings)
     const critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
+
+    // useEffect(() => {
+    //     console.log('use effect ran')
+    //     dispatch(fetchUserCritMessagesStart(currentUser.id))
+        
+    // }, [dispatch, currentUser.id])
     
-    console.log(assignmentWarnings)
+    // console.log(assignmentWarnings)
 
     return ( 
         <div className={styles.userWarningsWrapper}>
@@ -28,7 +35,7 @@ const UserWarnings = ({currentUser}) => {
                         <div className={styles.assignmentWarningsFlexWrapper}>
                     {
                     assignmentWarnings.map(item => {
-                        console.log(item)
+                        // console.log(item)
                        return  <AssignmentWarning key={`assignmentwarning-${item.id}`} item={item} />
                     }
                            

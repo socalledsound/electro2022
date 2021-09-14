@@ -57,8 +57,8 @@ const DayDetailLinks = ({day}) => {
                     {
                         reading.map((link, idx) => {
                             return (
-                                <div>
-                                     <li key={idx} className={styles.dayDetailLink}><a href={link.linkSrc}>{link.linkText}</a></li>
+                                <div key={idx}>
+                                     <li  className={styles.dayDetailLink}><a href={link.linkSrc}>{link.linkText}</a></li>
                                 </div>
                             )
                         })

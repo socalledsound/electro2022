@@ -35,7 +35,7 @@ export const userSlice = createSlice({
             }
         },
         loginLoading : (state, action) => {
-            console.log(action)
+            // console.log(action)
             return {
                 ...state,
                 loading: action.payload
