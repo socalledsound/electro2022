@@ -41,7 +41,7 @@ const UserWarnings = ({currentUser}) => {
             {
                 critMessageWarning && 
                 <div className={styles.critMessageWarningsWrapper}>
-                    ATTENTION!: please spend a little time responding to other peoples work in the gallery
+                    Hi there, please spend a little time responding to other peoples work in the gallery
                     <div className={styles.critMessageWarningsContainer}>
                         <CritMessageWarning warning={critMessageWarning}/>
                     </div>

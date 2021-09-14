@@ -54,6 +54,8 @@ export const selectAssignmentWarnings = state => {
     export const selectCritMessageWarning = userId => state => {
         
         const numMade = selectCritMessagesForUserId(userId)(state).length
+        const messages = selectCritMessagesForUserId(userId)(state)
+        console.log(messages)
         const completedDays = selectPreviousDays(state)
         const numNeeded = completedDays.length * 2
         if(numMade < numNeeded){

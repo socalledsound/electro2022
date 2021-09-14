@@ -62,11 +62,20 @@ export const critMessagesSlice = createSlice({
         },
         fetchCritMessagesStart(){},
         fetchCritMessagesSuccess : (state, action) => {
-            console.log(action.payload, 'sucess!')
-            // const previousCritMessages = 
+            // const oldMessages = booksData.filter(book => !newData.some(newBook => newBook.code === book.code));
+            // return oldBooks.concat(newData);
+            const oldMessages = state.messages
+            const result = [...action.payload, ...oldMessages].reduce((res, data, index, arr) => {
+                if (res.findIndex(message => message.id === data.id ) < 0) { 
+                    res.push(data);
+              
+                }  
+                return res;
+              }, [])
+
             return{
                 ...state,
-                messages: action.payload
+                messages: result
             }
         },
         fetchCritMessagesFailure : (state, action) => {

@@ -1,16 +1,11 @@
 .userWarningsWrapper {
   border-radius: 1.2rem;
-  padding: 1.2rem;
-  width: 75%;
-  /* margin: 0 auto; */
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
-  margin-left: 1rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: rgb(240, 235, 235); */
-  /* border: 3px solid rgba(248, 5, 5, 0.7); */
   color: white;
+  margin: 0;
+  max-width: 1000px;
 }
 
 .assignmentWarningsWrapper {
@@ -29,8 +24,7 @@
   background-color: hotpink;
   border-radius: 1.2rem;
   padding: 0.6rem;
-  margin-top: 0.2rem;
-  margin-right: 1.2rem;
+  margin: 0.4rem;
   width: 5rem;
   border: 2px solid red;
   color: white;
@@ -44,7 +38,6 @@
   border: 3px solid purple;
   padding: 1.2rem;
   border-radius: 1.2rem;
-  margin-top: 0.8rem;
 }
 
 .critMessageWarningContainer {

@@ -99,8 +99,8 @@ const DAY6 = {
     ],
     techLinks: [
         {
-            linkText: 'github repo with python code and sounds',
-            linkSrc: 'https://github.com/socalledsound/circuit-python-sampler',
+            linkText: 'github repo with python code and sounds for a bird sampler',
+            linkSrc: 'https://github.com/socalledsound/cpe-bird-sampler',
         },
         {
             linkText: 'circuit python made easy on the playground express',

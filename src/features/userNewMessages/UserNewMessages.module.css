@@ -1,0 +1,15 @@
+.userNewMessagesWrapper {
+  border-radius: 1.2rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.userNewMessagesContainer {
+  border: 3px solid rgb(60, 229, 82);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}

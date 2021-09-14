@@ -5,6 +5,7 @@ import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
 
 import { startFetchUserWorks } from '../../features/gallery/gallerySlice'
 import UserWarnings from '../../features/warnings/UserWarnings'
+// import UserNewMessages from '../../features/userNewMessages/UserNewMessages'
 import Loading from '../../components/Loading/Loading'
 import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
@@ -45,8 +46,12 @@ const HomePage = () => {
                     <Fragment>
                         {
                             currentUser &&
-                                <UserWarnings currentUser={currentUser}/>
+                            <UserWarnings currentUser={currentUser}/>                                
                         }
+                        {/* {
+                            currentUser &&
+                            <UserNewMessages currentUser={currentUser}/>
+                        } */}
                     <DayDetail day={currentDay}/>
                     </Fragment>
                   :

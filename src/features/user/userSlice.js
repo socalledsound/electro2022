@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { selectWorks } from '../gallery/gallerySlice'
+import { selectCritMessagesForItemId } from '../critMessages/critMessagesSlice'
 // import { tempUser2 } from './TEMP_USERS'
 const initialState = {
     currentUser: null,
@@ -86,17 +87,30 @@ export const selectCompletedProjects = state => {
     return null
 }
 
-export const selectUserCritMessages = state => {
+// export const selectUserCritMessages = state => {
     
-    const user = selectCurrentUser(state)
-    const messages = selectUserCritMessages(state)(user)
-    return messages
-}
+//     const user = selectCurrentUser(state)
+//     const messages = selectUserCritMessages(state)(user)
+//     return messages
+// }
 
 export const selectUserWarnings = state => {
     // want to write a selector to check the assignments and see what's missing
     return state.user.warnings
 }
+
+export const selectUnreadUserWorkMessages = (state) => {
+    const userWorks = selectCompletedAssignments(state)
+    
+    const messages = userWorks.reduce((acc, cur) => {
+        const messagesForWork = selectCritMessagesForItemId(cur.id)(state)
+        console.log(messagesForWork)
+        return acc.concat(messagesForWork)
+    }, [])
+    return messages
+
+}
+
 export const { addUser, logOutUser, resetLoginErrors, emailSignInSuccess, 
     emailSignInFailure, loginLoading, 
     submitUserUpdateStart, updateUserSuccess,updateUserFailure,
