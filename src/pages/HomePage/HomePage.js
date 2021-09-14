@@ -14,7 +14,7 @@ import styles from './HomePage.module.css'
 
 
 const HomePage = () => {
-    const dispatch = useDispatch()
+    
     const currentUser = useSelector(selectCurrentUser)
     const loading = useSelector(selectLoginLoading)
     // const warning = useSelector(selectWarningStatus)
