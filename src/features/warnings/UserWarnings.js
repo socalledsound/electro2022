@@ -9,15 +9,11 @@ const UserWarnings = ({currentUser}) => {
     // const dispatch = useDispatch()
     const projectWarnings = useSelector(selectProjectWarnings)
     const assignmentWarnings = useSelector(selectAssignmentWarnings)
-    const critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
+    let critMessageWarning = null
+    if(currentUser){
+        critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
+    }
 
-    // useEffect(() => {
-    //     console.log('use effect ran')
-    //     dispatch(fetchUserCritMessagesStart(currentUser.id))
-        
-    // }, [dispatch, currentUser.id])
-    
-    // console.log(assignmentWarnings)
 
     return ( 
         <div className={styles.userWarningsWrapper}>
