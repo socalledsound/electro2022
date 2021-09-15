@@ -28,21 +28,25 @@ export function* fetchCritMessages(action){
 }
 
 export function* fetchUserCritMessages(action){
-    const userId = action.payload.id
-    // yield console.log(userId, 'fetching crit messages')
-    if(userId){
-        yield put(loginLoading(true))
-        try{
-            const snap = yield firestore.collection('critMessages').where(`user`, '==', userId).get()
-            const messages = yield(convertMessagesSnapshotToMap(snap))
-            yield put(fetchCritMessagesSuccess(messages))
-            yield put(loginLoading(false))
-        }
-        catch(err){
-            yield put(fetchCritMessagesFailure(err))
-            yield put(loginLoading(false))
+    const currentUser = action.payload
+    if(currentUser){
+        const userId = action.payload.id
+        // yield console.log(userId, 'fetching crit messages')
+        if(userId){
+            yield put(loginLoading(true))
+            try{
+                const snap = yield firestore.collection('critMessages').where(`user`, '==', userId).get()
+                const messages = yield(convertMessagesSnapshotToMap(snap))
+                yield put(fetchCritMessagesSuccess(messages))
+                yield put(loginLoading(false))
+            }
+            catch(err){
+                yield put(fetchCritMessagesFailure(err))
+                yield put(loginLoading(false))
+            }
         }
     }
+    
 }
 
 function* submitCritMessage(action){
