@@ -28,7 +28,7 @@ export function* fetchCritMessages(action){
 }
 
 export function* fetchUserCritMessages(action){
-    const userId = action.payload
+    const userId = action.payload.id
     // yield console.log(userId, 'fetching crit messages')
     if(userId){
         yield put(loginLoading(true))

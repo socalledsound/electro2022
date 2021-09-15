@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, } from 'react'
 import { useSelector } from 'react-redux'
 import { selectCurrentUser, selectLoginLoading } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
@@ -21,11 +21,10 @@ const HomePage = () => {
     // console.log(currentUser, currentDay)
 
 
-
-    // useEffect(() => {  
-    //     dispatch(fetchUserCritMessagesStart())
-    // }, [dispatch, item.id])
-
+    useEffect(() => {
+        dispatch(startFetchUserWorks(currentUser))
+        dispatch(fetchUserCritMessagesStart(currentUser))
+    }, [currentUser, dispatch])
 
     return ( 
 
