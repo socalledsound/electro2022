@@ -24,7 +24,7 @@ const HomePage = () => {
 
     useEffect(() => {
         dispatch(startFetchUserWorks(currentUser))
-        dispatch(fetchUserCritMessagesStart(currentUser.id))
+        dispatch(fetchUserCritMessagesStart(currentUser))
     }, [currentUser, dispatch])
 
     // useEffect(() => {  
