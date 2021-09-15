@@ -41,7 +41,14 @@ const DAY7 = {
 
     ],
     techLinks: [
-        
+        {
+            linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
+            linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
+        },
+        {
+            linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
+            linkSrc: 'https://makecode.adafruit.com/#editor',
+        },
     ],
 
 }
