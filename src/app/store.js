@@ -41,7 +41,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project']
+  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project', 'people']
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
