@@ -42,6 +42,10 @@ const DAY7 = {
     ],
     techLinks: [
         {
+            linkText: 'CPE-python-playback-loop',
+            linkSrc: 'https://github.com/socalledsound/CPE-python-playback-loop',
+        },
+        {
             linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
             linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
         },
