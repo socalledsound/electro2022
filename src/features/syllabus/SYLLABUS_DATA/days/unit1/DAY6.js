@@ -52,7 +52,7 @@ const DAY6 = {
     reading: [
         {
             linkText: 'Fred Frith: Tapped Teeth: try different speeds',
-            linkSrc: ''
+            linkSrc: 'https://drive.google.com/file/d/1mGiOzTHgvvW85vFLXR1__pdNJ5ve2ng7/view?usp=sharing'
         }
     ],
     inspirationLinks: [

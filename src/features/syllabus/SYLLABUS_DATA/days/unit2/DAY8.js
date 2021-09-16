@@ -124,17 +124,26 @@ const DAY8 = {
         ], 
         videos: [
             {
-                linkText: 'getting started with p5',
-                linkSrc: '',
-            },
-            {
-                linkText: 'code-along: bringing things to life',
-                linkSrc: '',
-            },
-            {
                 linkText: 'github basics',
-                linkSrc: '',
+                linkSrc: 'https://youtu.be/RpYKKYsG7Io',
             },
+            {
+                linkText: 'getting started with p5',
+                linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
+            },
+            {
+                linkText: 'code-along: bringing things to life pt 1',
+                linkSrc: 'https://youtu.be/tk2TOlN4Qmw',
+            },
+            {
+                linkText: 'code-along: bringing things to life pt 2',
+                linkSrc: 'https://youtu.be/uSnvsfot_U4',
+            },
+            {
+                linkText: 'submitting an assignment',
+                linkSrc: 'https://youtu.be/EgPmpnQltt8',
+            },
+ 
             
         ],    
 
