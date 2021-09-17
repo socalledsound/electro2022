@@ -69,6 +69,10 @@ const DAY8 = {
             linkSrc:"http://nas.sr/handv%C3%A4ska/"
         },	
         {
+            linkText: 'js13k games',
+            linkSrc: 'https://js13kgames.com/',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

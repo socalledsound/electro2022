@@ -28,10 +28,7 @@ const DAY9 = {
             linkText: 'fluffy mover',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
         },
-        {
-            linkText: 'js13k games',
-            linkSrc: 'https://js13kgames.com/',
-        },
+
         {
             linkText: 'ricky desktop',
             linkSrc: 'https://www.theverge.com/21504619/ricky-desktop-tiktok-beat-creator-interview-musician-viral-hits',

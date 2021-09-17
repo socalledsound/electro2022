@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import MarkdownView from 'react-showdown';
+import ProjectLinks from './ProjectLinks'
 import {selectProject, selectProjectDue } from './projectsSlice'
 import { selectCompletedProjects, selectCurrentUser } from '../user/userSlice';
 import useModal from '../../components/Modal/useModal'
@@ -77,6 +78,12 @@ const ProjectDetail = ({match}) => {
                         options={{ tables: true, emoji: true }}
                         className={styles.projectDescription}
                     />
+                    }
+                </div>
+                <div>
+                    {
+                        project.inspirationLinks &&
+                        <ProjectLinks project={project}/>
                     }
                 </div>
             

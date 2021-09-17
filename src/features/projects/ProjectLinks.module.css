@@ -1,0 +1,54 @@
+.linksWrapper {
+  max-width: 90%;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksListContainer {
+  max-width: 80vw;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  padding: 1.2rem;
+  font-size: 0.7rem;
+  list-style-type: none;
+  /* background-color: lightyellow; */
+  /* margin-left: 1.4rem; */
+  border-radius: 1.2rem;
+}
+
+.linksList {
+  max-width: 80vw;
+  padding: 1.2rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thing {
+  background-color: rgb(176, 231, 105);
+}
+
+.projectLink {
+  padding-top: 0.2rem;
+  margin-right: 1.2rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid pink;
+  width: 10rem;
+}
+.projectLink:hover {
+  background-color: rgb(231, 100, 222);
+  color: white;
+  padding: 0.2rem;
+}
+.projectLink a {
+  color: rgb(89, 13, 95);
+  text-decoration: none;
+}
+
+.projectLink a:hover {
+  color: white;
+}
