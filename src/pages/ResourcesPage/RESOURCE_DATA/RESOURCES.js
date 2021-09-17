@@ -73,20 +73,20 @@ const RESOURCES = {
                 linkText: 'intro to circuit playground express',
                 linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express',
             },
-
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'the full circuit playground API for javascript',
+                linkSrc: 'https://makecode.adafruit.com/reference',
+            },
+            {
+                linkText: 'the full circuit playground API for circuit python',
+                linkSrc: 'https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html#',
             },
             {
                 linkText: 'a nice series of CPE tutorials',
                 linkSrc: 'https://core-electronics.com.au/tutorials/circuit-playground-express-workshop-for-beginners-and-educators.html',
             },
 
-            {
-                linkText: '',
-                linkSrc: '',
-            },
+
         ]
     },
     {
