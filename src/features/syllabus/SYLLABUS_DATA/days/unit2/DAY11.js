@@ -1,7 +1,7 @@
 const DAY11 = {
     id: 11,
     async: true,
-    unit: 'unit3',
+    unit: 'unit2',
     date: 'September 30, 2021',
     title: 'enemy mine',
     description: "The second part of the mid-term project assignment is to introduce a foil for your character.  Or, an enemy.  Or, a thing that the character wants but doesn't have.  Or, a thing that they have but don't want.  or, a thing that they don't want to have but have.  Wait a second...this is complicated!  Anyway, today we'll talk about foils, and spoils, and other things that our character might encounter as we make our way towards our midterm project crit day.",

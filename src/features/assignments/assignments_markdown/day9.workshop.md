@@ -1,11 +1,13 @@
 # Sprites
 
-For today's assignment, you need to create a javascript poem that describes a character.
+For today's assignment, you are going to create a character.
 
 Ideally, this should be a character for a game that you're thinking about developing for your midterm project, but it can also be a character from a movie that you've seen recently.
-Don't worry about creating good code; instead, write something that communicates a character to us.
 
-Also, be sure to submit an image. You can sketch this by hand, use the <a href=''>piskel editor I showed you</a>, take a photograph and use that, or use any other tool of your choice -- or you can steal someone else's image if you think you can get away with it! -- just be sure to submit an image with your poem.
+First, you need a name. Submit the name of your character as the title.
+
+Then, for the description, I want you to write a javascript poem that describes your character.
+Don't worry about creating good code; instead, write something that communicates a character to us.
 
 Be sure to include some properties that can change over time, one or more
 more boolean (true/false) attributes, and some functions that describe things that the character does.
@@ -54,9 +56,15 @@ const Douglas = {
 
 You can learn more about objects in <a href='https://www.youtube.com/watch?v=UQWpnXc3tPI'>this video</a> from the javascript morsels playlist that I made for you.
 
-Feel free to use javascript's class syntax for describing objects, also introduced in the video above, which we'll explore next week.
+And, feel free to use javascript's class syntax for describing objects, also introduced in the video above, which we'll explore next week.
 
 Have fun with it! And use it as an opportunity to explore the <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference'>javascript reference</a>.
+
+Next, you need to create a character animation. You can animate multiple photos, or animate a sprite sheet, as we talked about in class, and as shown in the videos. You can animate things you drew by hand, use the <a href=''>piskel editor I showed you</a>, or use any other tool of your choice -- or even steal someone else's images if you think you can get away with it!
+
+Use one of those still images as your gallery image, and submit a link to your animation, running on a live site, either at editor.p5.org or hosted at github.io.
+
+Ready to get started animating? <a href='youtube link here'>Let's do it together.</a>
 
 <!-- NEED TO REWRITE THIS. no classes here, just focus on keyboard interaction. -->
 

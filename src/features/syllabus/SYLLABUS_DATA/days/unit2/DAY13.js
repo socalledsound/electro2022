@@ -1,7 +1,7 @@
 const DAY13 = {
     id: 13,
     async: true,
-    unit: 'unit3',
+    unit: 'unit2',
     date: 'October 07, 2021',
     title: 'process',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
@@ -18,6 +18,14 @@ const DAY13 = {
         },
     ],
     inspirationLinks: [
+        {
+            linkText: 'ricky desktop',
+            linkSrc: 'https://www.theverge.com/21504619/ricky-desktop-tiktok-beat-creator-interview-musician-viral-hits',
+        },
+        {
+            linkText: 'how animation studios work their magic on tiktok',
+            linkSrc: 'https://submarinechannel.com/how-animation-studios-and-artists-work-their-magic-on-tiktok/',
+        },
         {
             linkText: `Francis Alys: 'the leak'`,
             linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',

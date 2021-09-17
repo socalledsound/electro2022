@@ -5,7 +5,11 @@ const DAY9OLD = {
     date: 'September 23, 2021',
     title: 'player player',
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
-    description: "For project 2, the first part of the assignment asks you to invent a character.  Today we're going to look at some artists who have grappled with this question of what a character is and what it means to play one.  ",
+    description: 
+    `For project 2, the first part of the assignment asks you to invent a character.  
+    Today we're going to look at some artists who have grappled with this question of 
+    what a character is and what it means to play one.  
+    `,
     inspirationLinks: [
         {
             linkText:"Introduction to Observing Kobito Hiding Peach Bottom Kobitos",

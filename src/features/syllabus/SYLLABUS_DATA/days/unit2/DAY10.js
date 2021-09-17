@@ -1,90 +1,22 @@
 const DAY10 = {
     id: 10,
     async: true,
-    unit: 'unit3',
+    unit: 'unit2',
     date: 'September 28, 2021',
-    title: 'player player',
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
-    description: "For project 2, the first part of the assignment asks you to invent a character.  Today we're going to look at some artists who have grappled with this question of what a character is and what it means to play one.  ",
+    title: 'objects of desire',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1631907629/22-color-coin-sprite-sheet-11563003777uevsziiqrr_wtyluo.png',
+    description: `
+    Today, we're going to go a little deeper with the idea of characters.
+    We'll start by looking at the characters that you've invented, then we'll build on those characters, by giving them something that they wantneed.
+    And, in our code exercise, we're going to look at classes in javascript, which are a really powerful
+    way of organizing characters.  We'll build a super simplified version of one of my favorite classic games,
+    super mario bros., and talk about some of the mechanics involved.
+    And for your gallery submission, I want you to take those ideas, replace our super mario
+    with your own character and replace the coins with something that your character gathers, whether that
+    be books, wind, or grains of sand.
+    `,
     inspirationLinks: [
-        {
-            linkText:"Introduction to Observing Kobito Hiding Peach Bottom Kobitos",
-            linkSrc:"https://www.youtube.com/watch?v=6c0hBQQRRJY"
-        },	
-        {
-            linkText:"william pope l as superman",
-            linkSrc:"https://www.google.com/search?q=william+pope+l+superman&sxsrf=ACYBGNRMAFa9qh7KPoltkCUrUYZoFI9-Aw:1572931878311&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjF9vLuq9LlAhVxFjQIHazWC7wQ_AUIEigB&biw=3164&bih=714"
-        },
-        {
-            linkText:"James Luna - take  Picture With a Real Indian",
-            linkSrc:"https://www.youtube.com/watch?v=dAa69BVwPYg"
-        },
-        {
-            linkText:"Rammellzee",
-            linkSrc:"https://www.youtube.com/watch?v=T52mHTpvSeA"
-        },	
-                               
-        {
-            linkText:"pierre Huyghe",
-            linkSrc:"https://www.youtube.com/watch?v=J3E8ioPg8xQ"
-        },
-        {
-            linkText:"Angela Washko - the game",
-            linkSrc:"https://angelawashko.com/home.html"
-        }
-        ,
-        {
-            linkText:"Adrian Piper, Mythic Being",
-            linkSrc:"http://www.adrianpiper.com/vs/video_tmb.shtml"
-        },
-        {
-            linkText: 'adrian piper - the probable trust registry',
-            linkSrc: 'https://hyperallergic.com/127622/adrian-piper-binds-us-with-impossible-trust/',
-        },
-        {
-            linkText:"Star Choir by Malik Gaines and Alexandro Segade",
-            linkSrc:"https://vimeo.com/193188303"
-        },		
-
-         {
-            linkText:"Nao Bustamente, 'Silver & Gold'",
-            linkSrc:"https://vimeo.com/86799096"
-        },
-        {
-            linkText:"Senga Nengudi",
-            linkSrc:"http://sengasenga.com/gallery.html"
-        },
-        {
-            linkText:"Mikka Rottenberg",
-            linkSrc:"https://www.youtube.com/watch?v=jQjZ-nZeWcE"
-        },
-        {
-            linkText:"Nick Cave, Until",
-            linkSrc:"http://massmoca.org/nick-cave-until/"
-        },
-
-        {
-            linkText:"Nikki S. Lee",
-            linkSrc:"https://www.youtube.com/watch?v=oI8xpJItPVI"
-        },
-        {
-            linkText:"scathing critique of Nikki S Lee",
-            linkSrc:"http://contemptorary.org/nikki-s-lees-projects-and-the-ongoing-circulation-of-blackface-brownface-in-art/"
-        },
-
-        {
-            linkText:"William Pope L - the will to exhaust",
-            linkSrc:"https://walkerart.org/magazine/william-popel-will-exhaust"
-        },
-        {
-            linkText: 'trenton doyle hancock on art 21',
-            linkSrc: 'https://art21.org/watch/art-in-the-twenty-first-century/s2/trenton-doyle-hancock-in-stories-segment/',
-        },
-
-        {
-            linkText: 'She created a fake Twitter persona — then she killed it with COVID-19',
-            linkSrc: 'https://www.theverge.com/21419820/fake-twitter-persona-covid-death-munchausen-metoostem-co-founder',
-        },
+       
 
 
         {
@@ -103,9 +35,41 @@ const DAY10 = {
             linkText: '',
             linkSrc: '',
         },
+
+        {
+            linkText: 'rotating circles in a grid',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/4idgiSHS4',
+        },
+        {
+            linkText: 'bezier bouncing ball',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ecrE28PMw',
+        },
+        {
+            linkText: 'fluffy mover',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
+        },
+
+
         ],
         techLinks: [
+            {
+                linkText:"a simple snake game in p5",
+                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+            },
 
+            {
+                linkText:"snake game tutorial",
+                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
+            },
+         
+            {
+                linkText: 'a slightly more complex p5 animation with various media',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+            },
+            {
+                linkText:"basic game mechanics in p5",
+                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
+            },
             {
                 linkText: 'javascript classes',
                 linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',

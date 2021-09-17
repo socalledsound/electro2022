@@ -1,7 +1,7 @@
 const DAY12 = {
     id: 12,
     async: true,
-    unit: 'unit3',
+    unit: 'unit2',
     date: 'October 05, 2021',
     title: 'games without players',
     description:"What happens when the landscape of a game wins?  In 'Gamic Action' the theorist Alexander Galloway describes a type of gameplay cslled non-diegetic machine acts, which to me seems a lot like generative art.  Today, as we focus on the setting for our game, we'll think about what can happen if we push that background into the foreground.",
