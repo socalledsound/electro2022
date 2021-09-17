@@ -131,23 +131,20 @@ const DAY9 = {
                 linkSrc: 'https://www.youtube.com/watch?v=HS2OaAu07MU'
             },
             {
-                linkText: 'using images in p5',
+                linkText: 'loading images and sprites in p5',
                 linkSrc: '',
             },
             {
-                linkText: 'spritesheets in p5',
+                linkText: 'getting started with p5.play',
                 linkSrc: '',
             },
             {
-                linkText: 'animating sprites with p5.play',
+                linkText: 'making a spritesheet with piskel and animating it with p5/p5.play',
                 linkSrc: '',
             },
             {
                 linkText: 'javascript morsels: objects and this',
                 linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
-            },
-            {
-    
             },
         ], 
 
