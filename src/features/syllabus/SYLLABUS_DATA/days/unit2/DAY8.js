@@ -8,15 +8,14 @@ const DAY8 = {
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
-    I'm taking the famous 'Goldberg Machines', or 'Pitagoru Suitchi', as they're called in Japan,
-     as inspiration for this unit, not just because those machines are senesless and wonderful, but also because they are 
-     processes.  We'll be focusing on artworks that are processes in this unit, and I hope what you learn here will cause 
-     you to look at all kinds of work differently.  We'll also switch gears slightly, and move our attention to the 
-     javascript in its native context, the web.  We'll use the p5 library, which has all kinds of useful tools for artists.  
+    We'll use the p5 library, which has all kinds of useful tools for artists.  
      And, we'll start actually composing software in javascript, using both the functional and the class-based style.
     `,
     inspirationLinks: [
-
+        {
+            linkText: 'homo ludens',
+            linkSrc: 'https://en.wikipedia.org/wiki/Homo_Ludens',
+        },
         {
             linkText:"Pitagoru Suitchi",
             linkSrc:"https://www.facebook.com/34842394274/videos/1054182998170/"
@@ -143,7 +142,10 @@ const DAY8 = {
                 linkText: 'submitting an assignment',
                 linkSrc: 'https://youtu.be/EgPmpnQltt8',
             },
- 
+            {
+                linkText: 'javascript morsels playlist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
+            },
             
         ],    
 

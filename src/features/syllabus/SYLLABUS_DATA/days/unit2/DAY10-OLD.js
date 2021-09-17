@@ -1,15 +1,10 @@
-const DAY9 = {
-    id: 9,
+const DAY10OLD = {
+    id: 10,
     async: true,
     unit: 'unit3',
-    date: 'September 23, 2021',
+    date: 'September 28, 2021',
     title: 'sprites',
-    description: `
-    Today we're going to continue animating, with sequences of images.  
-    We'll learn about images in p5, sprite sheets,  and another useful library, p5.play.
-    For today's assignment, you'll need to sketch out a character for your game.  Details 
-    on the assignment.
-    `,
+    description: "Today we're going to continue animating, with sequences of images.",
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1601955830/side-effects/horse-jump-00_e0rbxd.png',
     inspirationLinks: [
         {
@@ -126,25 +121,15 @@ const DAY9 = {
  
         ], 
         videos: [
+
             {
-                linkText: 'using piskel',
-                linkSrc: 'https://www.youtube.com/watch?v=HS2OaAu07MU'
+    
             },
             {
-                linkText: 'using images in p5',
-                linkSrc: '',
+    
             },
             {
-                linkText: 'spritesheets in p5',
-                linkSrc: '',
-            },
-            {
-                linkText: 'animating sprites with p5.play',
-                linkSrc: '',
-            },
-            {
-                linkText: 'javascript morsels: objects and this',
-                linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
+    
             },
             {
     
@@ -153,4 +138,4 @@ const DAY9 = {
 
 }
 
-export default DAY9
+export default DAY10OLD

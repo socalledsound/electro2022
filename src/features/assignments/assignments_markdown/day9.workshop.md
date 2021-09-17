@@ -1,6 +1,64 @@
-# Player Player
+# Sprites
 
-NEED TO REWRITE THIS. no classes here, just focus on keyboard interaction.
+For today's assignment, you need to create a javascript poem that describes a character.
+
+Ideally, this should be a character for a game that you're thinking about developing for your midterm project, but it can also be a character from a movie that you've seen recently.
+Don't worry about creating good code; instead, write something that communicates a character to us.
+
+Also, be sure to submit an image. You can sketch this by hand, use the <a href=''>piskel editor I showed you</a>, take a photograph and use that, or use any other tool of your choice -- or you can steal someone else's image if you think you can get away with it! -- just be sure to submit an image with your poem.
+
+Be sure to include some properties that can change over time, one or more
+more boolean (true/false) attributes, and some functions that describe things that the character does.
+
+Here's an example of a character from a movie that I saw recently, which was really good, The Farewell. This is Awkwafina's character Billi:
+
+```
+const Billi = {
+    home: 'Brooklyn',
+    currentLocation: 'Changchun',
+    identities: [Chinese, American]
+    currentIdentityIndex: 1,
+    oneTrueLove: 'Nai Nai',
+    emotions: ['crying', 'pouting'],
+    currentEmotionIndex: 1,
+    keepSecret: (idx) => {
+        if(emotions[idx] === 0){
+            return false
+        } else {
+            return true
+        }
+    }
+    secretKept: keepSecret(currentEmotionIndex)
+    deepMessageFromNaiNai: 'life is not about what things one does, but rather how one does them',
+}
+```
+
+And here's an example of a character like this, from a game that I'd like to make:
+
+```
+const Douglas = {
+    occupation: 'language removal',
+    location: {
+        x: 'Hollywood blvd.',
+        y: 'Vine blvd.
+    },
+    coins: Infinity,
+    mentalHealth: undefined,
+    soundCollection: HUGE_SOUND_COLLECTION,
+    createSound: (sound) => (process) => process(sound)(),
+    dreamAchieved: false,
+    acheiveDream: (world) => (process) => process(world)()
+}
+
+```
+
+You can learn more about objects in <a href='https://www.youtube.com/watch?v=UQWpnXc3tPI'>this video</a> from the javascript morsels playlist that I made for you.
+
+Feel free to use javascript's class syntax for describing objects, also introduced in the video above, which we'll explore next week.
+
+Have fun with it! And use it as an opportunity to explore the <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference'>javascript reference</a>.
+
+<!-- NEED TO REWRITE THIS. no classes here, just focus on keyboard interaction. -->
 
 <!--
 

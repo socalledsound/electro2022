@@ -32,6 +32,7 @@
   border: 2px solid rgb(57, 171, 107);
   border-radius: 0.8rem;
   margin-bottom: 1.2rem;
+  max-width: 80vw;
 }
 .markdown img {
   max-width: 60vw;

@@ -1,12 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { PROJECT0 } from './PROJECTS_DATA/PROJECT0'
 import { PROJECT1 } from './PROJECTS_DATA/PROJECT1'
+import { PROJECT3 } from './PROJECTS_DATA/PROJECT3'
 import { MIDTERM_PROJECT } from './PROJECTS_DATA/MIDTERM_PROJECT'
+import { FINAL_PROJECT } from './PROJECTS_DATA/FINAL_PROJECT'
 
 export const PROJECTS = [
     PROJECT0,
     PROJECT1,
-    MIDTERM_PROJECT
+    MIDTERM_PROJECT,
+    PROJECT3,
+    FINAL_PROJECT,
 ]
 
 const initialState = {

@@ -80,22 +80,22 @@ export const ASSIGNMENT7 = {
 }
 
 export const ASSIGNMENT8 = {
-    title : 'project 1',
-    description : "Keep working on those projects!  I've pushed the due date back until Sept 26, Saturday -- we're going to try foregoing the usual crit method.  Please submit your project by then, and then be sure to leave some thoughtful comments for at least ten of your peers... or for all of them!",
+    title : 'itLives',
+    description : "We'll kick off unit 2 today by introducing a new library, one of my favorites, p5.js.  P5 draws to a <canvas /> in the browser, which lets us do pretty amazing pixel-based animations, including fun things like webGL.  It has many great tools for an artist, like shapes and curves and image filters and sound and video capabilities.  Most of these things are available using various web APIs, but they're a little bit easier in p5, and I like easy!  We're also going to take a deeper dive into what I consider to be the most important and fundamental aspect of javascript: functions.",
     markdown: DAY8_WORKSHOP_MD,
     project: 1,
     projectRoute: '/unit1/project/project1',
 }
 
 export const ASSIGNMENT9 = {
-    title : 'whew',
-    description : "Finish project 1 if you haven't already!  If you need help with something leave a question in the discussion area or send me an email.  Leave comments for at least ten of your peers over the weekend, and remember to be honest.  Let them know what is and isn't working.  Be kind but truthful!  If someone looks great for the big dance but has a super long piece of toilet paper stuck on their shoe dragging behind them, be sure to let them know you love their shoes but they need to deal with that toilet paper.  And, if you have any unsubmitted assignments from project 1, go back and submit them!",
+    title : 'sprites',
+    description : "",
     markdown: DAY9_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT10 = {
-    title : 'fun fun function',
-    description : "We'll kick off unit 2 today by introducing a new library, one of my favorites, p5.js.  P5 draws to a <canvas /> in the browser, which lets us do pretty amazing pixel-based animations, including fun things like webGL.  It has many great tools for an artist, like shapes and curves and image filters and sound and video capabilities.  Most of these things are available using various web APIs, but they're a little bit easier in p5, and I like easy!  We're also going to take a deeper dive into what I consider to be the most important and fundamental aspect of javascript: functions.",
+    title : '',
+    description : "",
     markdown: DAY10_WORKSHOP_MD,
 }
 

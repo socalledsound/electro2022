@@ -86,12 +86,21 @@ export const UNIT2 = {
     unit: 'unit2',
     illustrationURL: UNIT2LOGO,
     overview: `
-    In this unit we'll be thinking about systems, using the idea of a 'pythagorean switch' or 'rube goldberg machine' 
-    as our model.  After getting a degree in engineering from UC Berkeley in 1904, Rube Goldberg quickly realized that 
-    working as an engineer for the fore-runner of EBMUD just wasn't for him.  
-    Instead, he did the sensible thing and became a cartoonist.  Over the years, his drawings of intricate and whimsical 
-    machines have become iconic.  We're going to try to make our own playful versions of Goldberg machines in this unit, 
-    using javascript.  These can be games, or they can just be playful interactions.
+    In 'Homo Ludens', Johan Huizinga argues that everything productive in human society comes from games. We create, by playing.
+    In this unit we'll be thinking about systems -- generative compositions which unfold in time -- such as animations and video games.
+    I'm taking the famous 'Goldberg Machines', or 'Pitagoru Suitchi', as they're called in Japan,
+     as inspiration for this unit, not just because those machines are senesless and wonderful, but also because they are 
+     processes.  We'll be focusing on artworks that are processes in this unit, and I hope what you learn here will cause 
+     you to look at all kinds of work differently.  We'll also switch gears slightly, and move our attention to the 
+     javascript in its native context, the web.  
+    You're probably familiar with a 'rube goldberg' machine, where the main character of a cartoon wakes up, stumbles out of bed,
+    and without doing anything at all, gets their teeth brushed and finds himself sitting at a table with breakfast and a cup of coffee in
+    front of them.  
+    In a lot of ways, these imaginary machines are the playful precursors to today's robotics startups.
+    We're going to try to make our own playful versions of Goldberg machines in this unit, 
+    using javascript.  These can be games, with scores and treasure chests and all the rest, 
+    or they can just be abstract playful interactions.  If you want to, you can even make physical, real-world
+    machines.  The key thing is, you must make a repeatable process, that unfolds in time  More details after the click.  
     `,
     project: MIDTERM_PROJECT,
     days: [DAY8, DAY9, DAY10, DAY11, DAY12, DAY13, DAY14, DAY15]
