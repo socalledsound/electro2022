@@ -16,34 +16,37 @@ export const storage = firebase.storage();
 export const onAuthStateChange = (dispatch, setCurrentUser) => {
     return auth.onAuthStateChanged(async userAuth => {
         if(userAuth){
-        //   const userRef = await createCurrentUser(userAuth);
-        //   userRef.onSnapshot(snapShot => {
-        //     const currentUser = {
-        //         id: snapShot.id,
-        //         ...snapShot.data()
-        //     }
-            //console.log(currentUser)
-            // dispatch(setCurrentUser(currentUser))
-          //   dispatch(setCurrentUser({
-          //       id: snapShot.id,
-          //       ...snapShot.data()
-          //   }))
-          // });
            console.log(userAuth)
            console.log('logged in')
+           convertUserAuthToMap(userAuth)
+           .then(user => dispatch(setCurrentUser(user)))
+           .catch(err => console.log(err))
+           
         } else {
             console.log('why am i not logged in')
+            dispatch(setCurrentUser(null))
         }
     })
 }
 
-export const convertUserAuthToMap = async(userAuth, additionalData) => {
-    // console.log(users)
-    const user = {
-        id: userAuth.uid
-        }
+export const convertUserAuthToMap = async(userAuth) => {
+    if(!userAuth) return;
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
+    const doc = await userRef.get();
+
+    if(!doc.exists){
+        return null
+    }else {
+
+        const { id, avatar, displayName, email } = doc.data();
+        return ({
+            id,
+            avatar, 
+            displayName,
+            email
+        })
+    }
     
-    return user
 }
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -51,6 +54,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!userAuth) return;
     const userRef = firestore.doc(`users/${userAuth.uid}`);
     const snapShot = await userRef.get();
+
+
+
+    
     // console.log(userAuth, 'in firebase');
     if(!snapShot.exists){
         const { displayName, email} = userAuth;
