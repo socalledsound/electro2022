@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 // import { selectCurrentUser, setCurrentUser } from './features/user/userSlice'
-import { selectCurrentUser, setCurrentUser } from './features/user/userSlice'
+import { setCurrentUser } from './features/user/userSlice'
 import { onAuthStateChange } from './firebase/firebase.utils'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
@@ -24,14 +24,14 @@ import { startSyncUsers } from './features/people/peopleSlice';
 
 const App = () => {
   const dispatch = useDispatch()
-  const currentUser = useSelector(selectCurrentUser)
+
   useEffect(() => {
     const unsubscribeFromAuth = onAuthStateChange(dispatch, setCurrentUser)
       return () => {
         unsubscribeFromAuth()
         
       }  
-  }, [dispatch, currentUser])
+  }, [dispatch])
   
 
   useEffect(() => {

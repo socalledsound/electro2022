@@ -32,7 +32,7 @@ export const onAuthStateChange = (dispatch, setCurrentUser) => {
            console.log(userAuth)
            console.log('logged in')
         } else {
-            console.log('not logged in')
+            console.log('why am i not logged in')
         }
     })
 }
