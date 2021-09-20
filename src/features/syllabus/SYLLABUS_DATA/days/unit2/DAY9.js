@@ -106,6 +106,14 @@ const DAY9 = {
         ],
         techLinks: [
             {
+                linkText: 'pixilart, nice editor for making pixel art characters',
+                linkSrc: 'https://www.pixilart.com/',
+            },
+            {
+                linkText: 'piskel is also nice',
+                linkSrc: 'https://www.piskelapp.com/',
+            },
+            {
                 linkText: 'p5.play',
                 linkSrc: 'https://molleindustria.github.io/p5.play/'
             },
@@ -169,8 +177,8 @@ const DAY9 = {
         ], 
         videos: [
             {
-                linkText: 'using piskel',
-                linkSrc: 'https://www.youtube.com/watch?v=HS2OaAu07MU'
+                linkText: 'using https://www.pixilart.com/',
+                linkSrc: ''
             },
             {
                 linkText: 'loading images and sprites in p5',
@@ -181,7 +189,7 @@ const DAY9 = {
                 linkSrc: '',
             },
             {
-                linkText: 'making a spritesheet with piskel and animating it with p5/p5.play',
+                linkText: 'making a spritesheet with piskilart and animating it with p5/p5.play',
                 linkSrc: '',
             },
             {

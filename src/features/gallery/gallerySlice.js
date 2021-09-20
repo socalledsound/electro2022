@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import galleryCategories from './GALLERY_CATEGORIES'
 // import { tempWork1, tempWork2, tempWork3, tempWork4,tempWork5, tempWork6,tempWork7, tempWork8, tempWork9, tempWork10 } from './TEMP_WORKS'
 
-
+console.log(galleryCategories)
 const initialState = {
     // works: [tempWork1, tempWork2, tempWork3, tempWork4,tempWork5, tempWork6,tempWork7, tempWork8, tempWork9, tempWork10],
     works: [],

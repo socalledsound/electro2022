@@ -75,16 +75,16 @@ export const ASSIGNMENT6 = {
 
 export const ASSIGNMENT7 = {
     title : 'jamz',
-    description : "Today we're going to get a little bit deeper with a pretty tricky kind of side effect: listening, which means, waiting for user input.  And we're going to build a sampler!  details after the click", 
+    description : '', 
     markdown: DAY7_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT8 = {
     title : 'itLives',
-    description : "We'll kick off unit 2 today by introducing a new library, one of my favorites, p5.js.  P5 draws to a <canvas /> in the browser, which lets us do pretty amazing pixel-based animations, including fun things like webGL.  It has many great tools for an artist, like shapes and curves and image filters and sound and video capabilities.  Most of these things are available using various web APIs, but they're a little bit easier in p5, and I like easy!  We're also going to take a deeper dive into what I consider to be the most important and fundamental aspect of javascript: functions.",
+    description : '',
     markdown: DAY8_WORKSHOP_MD,
-    project: 1,
-    projectRoute: '/unit1/project/project1',
+    // project: 1,
+    // projectRoute: '/unit1/project/project1',
 }
 
 export const ASSIGNMENT9 = {
@@ -94,42 +94,42 @@ export const ASSIGNMENT9 = {
 }
 
 export const ASSIGNMENT10 = {
-    title : '',
+    title : 'marioish',
     description : "",
     markdown: DAY10_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT11 = {
-    title : "pendulum music",
-    description : "Today we'll make a model of Steve Reich's pendulum music, which will also get us animating in more interesting ways.  Along the way, we'll also make models of waves in motion and explore the ultra-useful sin and cosin functions.  We'll build a nity pendulum in class.  But for your assignment submission, I want you to write, in psuedo-code, a Hero object, the hero of your unit 2 game.  I'll show you a few examples of what I mean in class, and at the end of the assignment page.",
+    title : 'boids',
+    description : '',
     markdown: DAY11_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT12 = {
-    title : 'new Player',
-    description : "Today we'll learn a little more about object-oriented programming in javascript as we create a player for the game that we're going to make over the next few classes. We'll also talk a bit about object oriented programming in javascript and learn about something called a sprite sheet.",
+    title : 'parallax',
+    description : '',
     markdown: DAY12_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT13 = {
-    title : 'SPRITES',
-    description : "Today we're going to learn a few ways to animate sequences of images, and also some ways to create short sequenced animations and chain them together or trigger them based on program state.  We'll make this horse to the right run and jump, we'll make an alien dance, and we'll animate the sprite sheets that you just made, too.  And we'll talk just a little about easing functions.",
+    title : 'process',
+    description : '',
     markdown: DAY13_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT14 = {
-    title : 'games without players',
-    description : "Today we work on landscapes, in multiple different ways.  We'll make landscapes use images, vector graphics, tile-based sprite sheets, and more.  You should submit a landscape (website) for your game today!",
+    title : 'control',
+    description : '',
     markdown: DAY14_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT15 = {
-    title : 'enemy mine',
-    description :  "Today we'll look at some foolproof ways to make enemies.  Fun, right?  ",
+    title : 'MIDTERM',
+    description :  '',
     markdown: DAY15_WORKSHOP_MD,
 }
 

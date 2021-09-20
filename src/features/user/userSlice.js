@@ -21,6 +21,12 @@ export const userSlice = createSlice({
                 currentUser: action.payload
             }
         },
+        setCurrentUser : (state, action) => {
+            return {
+                ...state, 
+                currentUser : action.payload,
+            }
+        },
         emailSignInFailure : (state, action) => {
             // console.log(action.payload)
             return {
@@ -111,8 +117,11 @@ export const selectUnreadUserWorkMessages = (state) => {
 
 }
 
-export const { addUser, logOutUser, resetLoginErrors, emailSignInSuccess, 
+export const { 
+    addUser, logOutUser, resetLoginErrors, emailSignInSuccess, 
+    setCurrentUser,
     emailSignInFailure, loginLoading, 
-    submitUserUpdateStart, updateUserSuccess,updateUserFailure,
+    submitUserUpdateStart, 
+    updateUserSuccess, updateUserFailure,
     } = userSlice.actions 
 export default userSlice.reducer

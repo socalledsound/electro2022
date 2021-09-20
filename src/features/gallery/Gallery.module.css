@@ -63,7 +63,7 @@
 
 .galleryItemContainer {
   margin-left: 0.6rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
   height: 200px;
   width: 200px;
   min-height: 200px;
@@ -72,6 +72,7 @@
 }
 
 .galleryItemTitle {
+  margin-top: 0;
   width: 200px;
   overflow: hidden;
 }

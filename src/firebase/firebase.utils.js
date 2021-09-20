@@ -11,6 +11,41 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
 
+// allow write: if request.auth != null;
+
+export const onAuthStateChange = (dispatch, setCurrentUser) => {
+    return auth.onAuthStateChanged(async userAuth => {
+        if(userAuth){
+        //   const userRef = await createCurrentUser(userAuth);
+        //   userRef.onSnapshot(snapShot => {
+        //     const currentUser = {
+        //         id: snapShot.id,
+        //         ...snapShot.data()
+        //     }
+            //console.log(currentUser)
+            // dispatch(setCurrentUser(currentUser))
+          //   dispatch(setCurrentUser({
+          //       id: snapShot.id,
+          //       ...snapShot.data()
+          //   }))
+          // });
+           console.log(userAuth)
+           console.log('logged in')
+        } else {
+            console.log('not logged in')
+        }
+    })
+}
+
+export const convertUserAuthToMap = async(userAuth, additionalData) => {
+    // console.log(users)
+    const user = {
+        id: userAuth.uid
+        }
+    
+    return user
+}
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
         // console.log(userAuth, additionalData)
     if(!userAuth) return;

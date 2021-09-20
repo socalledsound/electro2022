@@ -1,4 +1,8 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux'
+// import { selectCurrentUser, setCurrentUser } from './features/user/userSlice'
+import { selectCurrentUser, setCurrentUser } from './features/user/userSlice'
+import { onAuthStateChange } from './firebase/firebase.utils'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
@@ -15,11 +19,24 @@ import UserStatus from './features/user/UserStatus/UserStatus'
 import People from './features/people/People'
 import './App.css';
 import ResourcesPage from './pages/ResourcesPage/ResourcesPage'
+// import { updateUsers } from './features/people/peopleSlice';
+import { startSyncUsers } from './features/people/peopleSlice';
 
 const App = () => {
-
-
+  const dispatch = useDispatch()
+  const currentUser = useSelector(selectCurrentUser)
+  useEffect(() => {
+    const unsubscribeFromAuth = onAuthStateChange(dispatch, setCurrentUser)
+      return () => {
+        unsubscribeFromAuth()
+        
+      }  
+  }, [dispatch, currentUser])
   
+
+  useEffect(() => {
+    dispatch(startSyncUsers())
+}, [dispatch])
 
 
 

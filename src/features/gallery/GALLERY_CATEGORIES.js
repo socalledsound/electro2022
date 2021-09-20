@@ -1,4 +1,8 @@
 const galleryCategories = [
+    'boids',
+    'marioish',
+    'sprites',
+    'itLives',
     'jamz',
     'hardware',
     'collection',

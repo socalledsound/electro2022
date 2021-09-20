@@ -21,7 +21,7 @@ const Gallery = ({history}) => {
     const galleryCategories = useSelector(selectCategories)
     const works = useSelector(selectWorks)
     const featuredWorks = works.filter(item => item.featured)
-   
+   console.log(galleryCategories)
     return ( 
         <div>
         {
