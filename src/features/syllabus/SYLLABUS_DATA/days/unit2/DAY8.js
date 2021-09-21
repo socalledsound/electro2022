@@ -11,6 +11,13 @@ const DAY8 = {
     We'll use the p5 library, which has all kinds of useful tools for artists.  
      And, we'll start actually composing software in javascript, using both the functional and the class-based style.
     `,
+    discussionQuestions: [
+
+        `What makes a good game?`,
+        `Do you have any favorite games?  (digital or 'real')`,
+        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
+        `'gamification': evil, amazing or both?`,
+    ],
     inspirationLinks: [
         {
             linkText: 'homo ludens',

@@ -173,24 +173,28 @@ const DAY9 = {
                 linkText:"dancing alien sprite with p5.play mouse attraction",
                 linkSrc:"https://editor.p5js.org/socalledsound/sketches/rEHv8XTMk"
             },
+            {
+                linkText: 'mario spritesheet animation on github',
+                linkSrc: 'https://github.com/socalledsound/mario-simple-sprite',
+            }
  
         ], 
         videos: [
             {
-                linkText: 'using https://www.pixilart.com/',
-                linkSrc: ''
+                linkText: 'using piskel',
+                linkSrc: 'https://www.youtube.com/watch?v=HS2OaAu07MU'
             },
             {
-                linkText: 'loading images and sprites in p5',
-                linkSrc: '',
+                linkText: 'loading images in p5',
+                linkSrc: 'https://youtu.be/OGErT4-4Xpw',
             },
             {
-                linkText: 'getting started with p5.play',
-                linkSrc: '',
+                linkText: 'getting started/animating a sprite sheet with p5.play',
+                linkSrc: 'https://youtu.be/IeUdwaXhhaA',
             },
             {
-                linkText: 'making a spritesheet with piskilart and animating it with p5/p5.play',
-                linkSrc: '',
+                linkText: 'animating a mario spritesheet with p5',
+                linkSrc: 'https://youtu.be/cmzbjLPiD9I',
             },
             {
                 linkText: 'javascript morsels: objects and this',
