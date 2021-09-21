@@ -23,16 +23,16 @@ import projectsReducer from '../features/projects/projectsSlice'
 import submitWorkReducer from '../features/submitWork/submitWorkSlice'
 import critMessagesReducer from '../features/critMessages/critMessagesSlice'
 import logger from 'redux-logger'
-import galleryCategories from '../features/gallery/GALLERY_CATEGORIES';
+// import galleryCategories from '../features/gallery/GALLERY_CATEGORIES';
 const sagaMiddleware = createSagaMiddleware()
 
 
-const galleryPersistConfig = {
-  key: 'gallery',
-  version: 1,
-  storage,
-  blacklist: [galleryCategories]
-}
+// const galleryPersistConfig = {
+//   key: 'gallery',
+//   version: 1,
+//   storage,
+//   blacklist: [galleryCategories]
+// }
 
 const persistConfig = {
   key: 'root',
@@ -46,7 +46,7 @@ const reducer = combineReducers({
   user: userReducer,
   syllabus: syllabusReducer,
   warnings: warningsReducer,
-  gallery: persistReducer(galleryPersistConfig, galleryReducer),
+  gallery: galleryReducer,
   people: peopleReducer,
   assignment: assignmentReducer,
   submitWork: submitWorkReducer,

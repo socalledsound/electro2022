@@ -4,8 +4,10 @@
 
 live site: https://electro2021-84fab.web.app/
 
-
 ## to do
+
+-- FIX VIDEO IMAGE LINK
+-- APPLE LOGIN BUG
 
 -- set default value of imageURL from the EditUser
 -- make the image a require value for the image picker
@@ -17,7 +19,4 @@ live site: https://electro2021-84fab.web.app/
 
 -- get the critmessages working
 
-
 -- loading animation on gallery load and in userworks
-
-
