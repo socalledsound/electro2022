@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectCategories, selectWorks, startFetchWorks } from './gallerySlice'
+import { selectWorks, startFetchWorks } from './gallerySlice'
 import { selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 import GalleryRow from './GalleryRow'

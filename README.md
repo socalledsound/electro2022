@@ -7,6 +7,7 @@ live site: https://electro2021-84fab.web.app/
 ## to do
 
 -- need to set up listeners on firestore
+-- would like to figure out the gallery categories blacklist thing
 
 -- SUBMIT WORK FORM -- cache form data when selecting image?
 
