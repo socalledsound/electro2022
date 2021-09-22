@@ -119,7 +119,8 @@ export const convertUsersSnapshotToMap = (users) => {
 export const convertWorksSnapshotToMap = (works) => {
     
     const transformedArray = works.docs.map(doc => {
-        const { assignment, description, featured, random, imageURL, linkURL, codeURL, title, user, timestamp  } = doc.data();
+        const { assignment, description, featured, random, 
+            videoURL, imageURL, linkURL, codeURL, title, user, timestamp  } = doc.data();
 
         return {
             
@@ -131,6 +132,7 @@ export const convertWorksSnapshotToMap = (works) => {
             imageURL,
             linkURL,
             codeURL,
+            videoURL,
             title,
             user,
             timestamp,

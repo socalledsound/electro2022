@@ -31,7 +31,7 @@ const galleryPersistConfig = {
   key: 'gallery',
   version: 1,
   storage,
-  blacklist: ['galleryCategories']
+  blacklist: ['categories']
 }
 
 const persistConfig = {

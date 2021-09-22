@@ -63,6 +63,7 @@ const GalleryItemDetail = ({ item, history }) => {
             <h4>{item.title}</h4>
             <h6>{item.user.displayName}</h6>
             <p>{item.description}</p>
+
             {
                 item.linkURL &&
                 <p>live site: <a href={item.linkURL}>{item.linkURL}</a></p>
@@ -70,6 +71,10 @@ const GalleryItemDetail = ({ item, history }) => {
             {
                 item.codeURL &&
                 <p>code: <a href={item.codeURL}>{item.codeURL}</a></p>
+            }
+                        {
+                item.videoURL &&
+                <p>video: <a href={item.videoURL}>{item.videoURL}</a></p>
             }
             
         </div>
