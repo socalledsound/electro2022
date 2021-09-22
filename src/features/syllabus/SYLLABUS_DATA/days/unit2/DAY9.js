@@ -111,6 +111,14 @@ const DAY9 = {
         ],
         techLinks: [
             {
+                linkText: 'online editor: stop motion butterfly in p5 with comments',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/GsjmtEXH4',
+            },
+            {
+                linkText: 'stop motion butterfly in p5 with comments on github',
+                linkSrc: 'https://github.com/socalledsound/butterfly-stop-motion'
+            },
+            {
                 linkText: 'pixilart, nice editor for making pixel art characters',
                 linkSrc: 'https://www.pixilart.com/',
             },
