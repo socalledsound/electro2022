@@ -13,10 +13,9 @@ const DAY11 = {
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632266640/state-flowchart_ychpzf.png',
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        ``,
+        ``,
+
     ],
     inspirationLinks: [
         

@@ -16,10 +16,10 @@ const DAY10 = {
     whether that be books, wind, or grains of sand.
     `,
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        `What is 'state' and why is it good to have a 'single source of truth'?`,
+        `Give some examples of ways we can manage state in javascript.`,
+        ``,
+        ``,
     ],
     inspirationLinks: [
         {

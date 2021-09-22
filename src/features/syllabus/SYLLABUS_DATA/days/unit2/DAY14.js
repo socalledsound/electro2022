@@ -8,10 +8,10 @@ const DAY14 = {
     
     `,
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        ``,
+        ``,
+        ``,
+        ``,
     ],
     videos: [
         {

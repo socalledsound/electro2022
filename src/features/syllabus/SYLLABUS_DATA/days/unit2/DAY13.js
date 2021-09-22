@@ -11,10 +11,10 @@ const DAY13 = {
     make our way towards our midterm project crit day.`,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        ``,
+        ``,
+        ``,
+        ``,
     ],
     inspirationLinks: [   
         {

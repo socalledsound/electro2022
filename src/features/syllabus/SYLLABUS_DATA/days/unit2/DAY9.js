@@ -16,10 +16,10 @@ const DAY9 = {
     on the assignment.
     `,
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        `Is 'identity' different from 'character'?`,
+        ``,
+        ``,
+        ``,
     ],
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
     inspirationLinks: [

@@ -12,10 +12,10 @@ const DAY12 = {
     push that background into the foreground.`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597763128/side-effects/clouds2_ngznbn.png',
     discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
+        ``,
+        ``,
+        ``,
+        ``,
     ],
     inspirationLinks: [
         {
