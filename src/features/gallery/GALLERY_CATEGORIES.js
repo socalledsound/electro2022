@@ -1,4 +1,4 @@
-const galleryCategories = [
+export const galleryCategories = [
     'FINALFINAL',
     'working-final',
     'proto-final',

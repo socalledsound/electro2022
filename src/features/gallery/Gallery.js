@@ -5,6 +5,7 @@ import { selectCategories, selectWorks, startFetchWorks } from './gallerySlice'
 import { selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 import GalleryRow from './GalleryRow'
+import { galleryCategories } from './GALLERY_CATEGORIES'
 import styles from './Gallery.module.css'
 
 const Gallery = ({history}) => {
@@ -18,7 +19,7 @@ const Gallery = ({history}) => {
 
 
 
-    const galleryCategories = useSelector(selectCategories)
+    // const galleryCategories = useSelector(selectCategories)
     const works = useSelector(selectWorks)
     const featuredWorks = works.filter(item => item.featured)
    console.log(galleryCategories)
