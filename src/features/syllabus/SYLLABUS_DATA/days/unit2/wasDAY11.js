@@ -3,20 +3,39 @@ const DAY11 = {
     async: true,
     unit: 'unit2',
     date: 'September 30, 2021',
-    title: 'game on!',
-    description: `
-    Today we are going to step up our game a bit, literally, and talk about game STATE.
-    
-    `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632266640/state-flowchart_ychpzf.png',
-    discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
-    ],
+    title: 'enemy mine',
+    description: "The second part of the mid-term project assignment is to introduce a foil for your character.  Or, an enemy.  Or, a thing that the character wants but doesn't have.  Or, a thing that they have but don't want.  or, a thing that they don't want to have but have.  Wait a second...this is complicated!  Anyway, today we'll talk about foils, and spoils, and other things that our character might encounter as we make our way towards our midterm project crit day.",
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
     inspirationLinks: [
         
+        {
+            linkText: 'Handvaaska, by Ramsey Nasser and Jane Friedhoff',
+            linkSrc: 'https://nas.sr/handv%C3%A4ska/',
+        },
+        {
+            linkText: 'among us',
+            linkSrc: 'http://www.innersloth.com/gameAmongUs.php',
+        },
+        {
+            linkText: 'My Barbarian: Double Agency',
+            linkSrc: 'https://vimeo.com/124203527',
+        },
+        {
+            linkText: 'cow clicker',
+            linkSrc: 'https://cowclicker.com/',
+        },
+        {
+            linkText: 'angela washko, the game',
+            linkSrc: 'https://angelawashko.com/home.html',
+        },
+        {
+            linkText: 'star choir',
+            linkSrc: 'https://vimeo.com/441187530',
+        },
+        {
+            linkText: 'star choir: nomads dissolution',
+            linkSrc: 'https://vimeo.com/mybarbarian',
+        },
         {
             linkText: 'top 10 games from js13k 2020',
             linkSrc: 'https://github.blog/2020-10-11-top-ten-games-from-the-js13k-2020-competition/',
@@ -82,16 +101,16 @@ const DAY11 = {
         videos: [
 
             {
-                linkText: '',
-                linkSrc: '',
+    
             },
             {
-                linkText: '',
-                linkSrc: '',
+    
             },
             {
-                linkText: '',
-                linkSrc: '',
+    
+            },
+            {
+    
             },
         ],  
 

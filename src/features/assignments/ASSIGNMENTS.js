@@ -27,8 +27,7 @@ import DAY26_WORKSHOP_MD from './assignments_markdown/day26.workshop.md';
 import DAY27_WORKSHOP_MD from './assignments_markdown/day27.workshop.md';
 import DAY28_WORKSHOP_MD from './assignments_markdown/day28.workshop.md';
 import DAY29_WORKSHOP_MD from './assignments_markdown/day29.workshop.md';
-import DAY30_WORKSHOP_MD from './assignments_markdown/day30.workshop.md';
-import DAY31_WORKSHOP_MD from './assignments_markdown/day31.workshop.md';
+
 
 // import DAY8_WORKSHOP_MD from './assignments_markdown/day8.workshop.md';
 
@@ -94,27 +93,27 @@ export const ASSIGNMENT9 = {
 }
 
 export const ASSIGNMENT10 = {
-    title : 'marioish',
+    title : 'mario',
     description : "",
     markdown: DAY10_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT11 = {
-    title : 'boids',
+    title : 'goombas',
     description : '',
     markdown: DAY11_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT12 = {
-    title : 'parallax',
+    title : 'state',
     description : '',
     markdown: DAY12_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT13 = {
-    title : 'process',
+    title : 'landscape',
     description : '',
     markdown: DAY13_WORKSHOP_MD,
 }
@@ -135,23 +134,22 @@ export const ASSIGNMENT15 = {
 
 
 export const ASSIGNMENT16 = {
-    title : 'boids',
-    description : "Today we're going to build a classic game AI known as boids, which is one of the simplest examples of an emergent system.  It will be a deeper dive into object oriented programming and I think it'll be pretty fun.  After we're done with that, I'll work with you on your projects.  Don't be shy about reaching out to schedule some time outside of class, I'm here for you this week if you need some extra help!  The final final due date for this midterm project is this coming Saturday at midnight, but if you finish before Weds. at midnight, and want a crit, we'll do that Thursday!",
+    title : 'gpio',
+    description : '',
     markdown: DAY16_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT17 = {
-    title : 'loading....',
-    description : "Today we finish up project 2 by adding an intro page.  This is where we can orient people for the experience that they're about to have, and also where we can load files so that they're available for our site!  Upload your splash page, to the gallery when you're done with it.",
+    title : 'sockets',
+    description : '',
     markdown: DAY17_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT18 = {
-    title : 
-    'fun with fourier',
-    description : "Today we'll look at using microphone input in a browser.  We'll learn to use the p5.AudioIn, p5.Amplitude and p5.FFT objects to draw interesting shapes and lines on the screen, and make our first foray into visualizing music.  This will get even more interesting in a few weeks when we learn to use shaders!",
+    title : 'neopixels',
+    description : '',
     markdown:  DAY18_WORKSHOP_MD,
 }
 
@@ -164,81 +162,77 @@ export const ASSIGNMENT19 = {
 
 
 export const ASSIGNMENT20 = {
-    title : 'WEBGL',
-    description : "Today we'll get started learning about webGL, looking at the various ways that the WEBGL canvas is different from the 2d canvas, and drawing 3d shapes to the screen.  For your assignment, you should find (or make) an .obj file and load it into a p5 sketch.  And don't worry, I'll show you what an obj file is and how to make or get one!",
+    title : 'process',
+    description : '',
     markdown: DAY20_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT21 = {
-    title : 'shade',
-    description : "Today we look at materials, light and shaders!  Shaders are a bit tricky but they can create some amazing visual effects.  We'll learn the basics, apply them to our web models and even look at how to make them respond to sound.",
+    title : 'backend',
+    description : '',
     markdown: DAY21_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT22 = {
-    title : 'hiro',
+    title : 'webgl',
     description : "Today we look at aframe, and how it helps us create immersive and augmented realities.  We can use most of the ideas we've already learned about using p5 and as a bonus, we can even write aframe code in p5 using a the aframp5 library.",
     markdown: DAY22_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT23 = {
-    title : 'sockets and servers',
+    title : 'hiro',
     description : "Today in workshop we'll learn how to build a web server, host it at heroku, and then connect multiple browsers to that server.  ",
     markdown: DAY23_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT24 = {
-    title : 'sketchy-final', 
+    title : 'shade', 
     description : "Today we;ll use what we learned last class to use a library called johny five, that let's us connect our web sketches to inputs like volume knobs and switches and to putputs like LEDs and motors.",
     markdown: DAY24_WORKSHOP_MD,
 }
 
+
 export const ASSIGNMENT25 = {
-    title : 'proto-final',
+    title : 'matrix',
     description : "Today we're going learn how to use websockets to add a real-time chat client to our game or other projects.  But, first, we're going to have to learn how to take in text input!  I made a few videos showing you how to do that, and how to wire up a sockets chat with that input.  Click through for more.",
     markdown: DAY25_WORKSHOP_MD,
 }
  
 export const ASSIGNMENT26 = {
-    title : 'working-final',
-    description : "today we learn the basics of adding persistent data to our web sites.  if for instance, we want to have users, or give them the ability to upload images, or text, we can set up a backend database to keep track of that stuff.  it's surprisingly easy to do so these days, and we'll learn how, today.",
+    title : 'realtime',
+    description : '',
     markdown: DAY26_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT27 = {
-    title :  'testing-final',
-    description : "hopefully, you've finished your final project and are ready to test it!  but seriously, who am I kidding?  we'll do some last-minute coding today and also just generally polish stuff up, and if you have the bandwidth, be sure to check out the videos about Promises, CORS and using firebase console, all of which we will need to understand in order to use p5 and firebase successfully together.",
+    title :  'proto-final',
+    description : '',
     markdown: DAY27_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT28 = {
-    title : 'final-final',
+    title : 'working-final',
     description : 'final project!  yay!',
     markdown: DAY28_WORKSHOP_MD
     ,
 }
 
 export const ASSIGNMENT29 = {
-    title : '',
+    title : 'FINALFINAL',
+    description : '',
+    markdown: DAY29_WORKSHOP_MD,
+}
+
+export const ASSIGNMENT30 = {
+    title : 'FINALFINAL',
     description : '',
     markdown: DAY29_WORKSHOP_MD,
 }
 
 
-export const ASSIGNMENT30 = {
-    title : '',
-    description : '',
-    markdown: DAY30_WORKSHOP_MD,
-}
-
-export const ASSIGNMENT31 = {
-    title : '',
-    description : '',
-    markdown: DAY31_WORKSHOP_MD,
-}
 
 
 

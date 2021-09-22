@@ -15,6 +15,12 @@ const DAY9 = {
     For today's assignment, you'll need to sketch out a character for your game.  Details 
     on the assignment.
     `,
+    discussionQuestions: [
+        `What makes a good game?`,
+        `Do you have any favorite games?  (digital or 'real')`,
+        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
+        `'gamification': evil, amazing or both?`,
+    ],
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
     inspirationLinks: [
         {
@@ -199,6 +205,14 @@ const DAY9 = {
             {
                 linkText: 'javascript morsels: objects and this',
                 linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
+            },
+            {
+                linkText: 'live server links are not web links',
+                linkSrc : 'https://youtu.be/ahblxZfIRVA',
+            },
+            {
+                linkText: 'branching with git',
+                linkSrc: 'https://youtu.be/iioxcp7gC7Q',
             },
         ], 
 

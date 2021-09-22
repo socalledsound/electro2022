@@ -4,19 +4,8 @@ const DAY12 = {
     unit: 'unit2',
     date: 'October 05, 2021',
     title: 'games without players',
-    description: `
-    What happens when the landscape of a game wins?  In 'Gamic Action' the 
-    theorist Alexander Galloway describes a type of gameplay cslled non-diegetic 
-    machine acts, which to me seems a lot like generative art.  Today, as we 
-    focus on the setting for our game, we'll think about what can happen if we 
-    push that background into the foreground.`,
+    description:"What happens when the landscape of a game wins?  In 'Gamic Action' the theorist Alexander Galloway describes a type of gameplay cslled non-diegetic machine acts, which to me seems a lot like generative art.  Today, as we focus on the setting for our game, we'll think about what can happen if we push that background into the foreground.",
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597763128/side-effects/clouds2_ngznbn.png',
-    discussionQuestions: [
-        `What makes a good game?`,
-        `Do you have any favorite games?  (digital or 'real')`,
-        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
-        `'gamification': evil, amazing or both?`,
-    ],
     inspirationLinks: [
         {
             linkText: 'Alexander Gallowway: Gamic Action, Four Moments',

@@ -1,4 +1,10 @@
-# boids
+# goombas
+
+For today's assignment submission, please share your game up to this point! Hopefully you've got a character and some interactions happening!
+
+And in today's videos, I'm going to keep going with my Mario game and introduce, first, some bad guys, and then talk demonstrate detecting collisions.
+
+Keep working over the weekend! Don't be afraid to reach out if you need some help. See you next week.
 
 <!--
 # enemy mine
@@ -469,10 +475,6 @@ The same friendly swedish fellow also has a long series on making super mario in
 And here's a [game](https://github.com/socalledsound/soundgame-badlandsclone) that I've been working on, with p5. I was originally going to have the making of this game be the core tutorial of this unit but I realized it was maybe too specific and involved and I thought you'd appreciate the p5.play stuff so I branched out. But, I'm still slowly building it and I'll probably keep building it here and there for the rest of the semester, I'll share it with you as I go along.
 
 <!-- And finally, I made a little [video]() for you that goes through the process of drawing an animation by hand, digitizing it, and bringing it in to p5 or p5.play.  You probably don't need it at this point, but if you do, it's there. -->
-
-For today's assignment, please share your game up to this point! Hopefully you've got a landscape, a character and some interactions happening!
-
-Keep working over the weekend! Don't be afraid to reach out if you need some help. See you next week.
 
 <!--
 Today we talked about this concept of an enemy. Or, as I've said in the project description, foils. Which is to say, things that push back against our sense of self.

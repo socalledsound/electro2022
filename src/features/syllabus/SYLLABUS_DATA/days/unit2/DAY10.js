@@ -12,13 +12,16 @@ const DAY10 = {
     way of organizing characters.  We'll build a super simplified version of one of my favorite classic games,
     super mario bros., and talk about some of the mechanics involved.
     And for your gallery submission, I want you to take those ideas, replace our super mario
-    with your own character and replace the coins with something that your character gathers, whether that
-    be books, wind, or grains of sand.
+    with your own character and replace the coins with something that interests your character, 
+    whether that be books, wind, or grains of sand.
     `,
+    discussionQuestions: [
+        `What makes a good game?`,
+        `Do you have any favorite games?  (digital or 'real')`,
+        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
+        `'gamification': evil, amazing or both?`,
+    ],
     inspirationLinks: [
-       
-
-
         {
             linkText: '',
             linkSrc: '',
@@ -53,6 +56,10 @@ const DAY10 = {
         ],
         techLinks: [
             {
+                linkText: 'mario game github repo (with a branch for each video)',
+                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+            },
+            {
                 linkText:"a simple snake game in p5",
                 linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
             },
@@ -61,11 +68,18 @@ const DAY10 = {
                 linkText:"snake game tutorial",
                 linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
             },
-         
             {
-                linkText: 'a slightly more complex p5 animation with various media',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+                linkText: 'build space invaders with daniel shiffman',
+                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
             },
+            {
+                linkText: 'frogger in p5.js',
+                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
+            },
+            // {
+            //     linkText: 'a slightly more complex p5 animation with various media',
+            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+            // },
             {
                 linkText:"basic game mechanics in p5",
                 linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
@@ -85,15 +99,35 @@ const DAY10 = {
         ], 
         videos: [
             {
-                linkText: '',
+                linkText: 'javascript morsels: objects and this',
+                linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
+            },
+            {
+                linkText: 'branching with git',
+                linkSrc: 'https://youtu.be/iioxcp7gC7Q',
+            },
+            {
+                linkText: 'mario game 1: Coin  no class',
+                linkSrc: 'https://youtu.be/SPzJ84y4qxc',
+            },
+            {
+                linkText: 'mario game 2: Coin class',
+                linkSrc: 'https://youtu.be/_fVjGDlJqlo',
+            },
+            {
+                linkText: 'mario game 3: CHALLENGE: write Mario',
+                linkSrc: 'https://youtu.be/TJDZob2UPAI',
+            },
+            {
+                linkText: 'mario game 4: ANSWER: Mario Class ',
+                linkSrc: 'https://youtu.be/qlzRqo-_lRQ',
+            },
+            {
+                linkText: 'mario game 5: run, mario, run',
                 linkSrc: '',
             },
             {
-                linkText: '',
-                linkSrc: '',
-            },
-            {
-                linkText: '',
+                linkText: 'mario game 6: jump, mario',
                 linkSrc: '',
             },
         ],    

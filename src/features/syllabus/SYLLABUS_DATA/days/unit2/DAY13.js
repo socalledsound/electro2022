@@ -3,175 +3,125 @@ const DAY13 = {
     async: true,
     unit: 'unit2',
     date: 'October 07, 2021',
-    title: 'process',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
+    title: 'enemy mine',
     description: `
-    The notion that art can be a process rather than an object is, in my opinion, one of the most important art historical 
-    developments of the 20th century, and I think it is largely due to the technological and social changes that we've already
-    been discussing.  One of my favorite articulations of this idea came in the 60's in Steve Reich's 'Music As A Gradual Process'.  
-    We'll talk about this short text today, and explore some of the art works that I think are examples of these ideas in action.
-    `,
-    videos: [
-        {
-            linkText: `Francis Alys: 'the leak'`,
-            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
-        },
+    Today we'll add an enemy to our mario game.  And I want you to think about what an
+    enemy might mean in your own artwork/ game.  Today we'll talk 
+    about foils, and spoils, and other things that our character might encounter as we 
+    make our way towards our midterm project crit day.`,
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
+    discussionQuestions: [
+        `What makes a good game?`,
+        `Do you have any favorite games?  (digital or 'real')`,
+        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
+        `'gamification': evil, amazing or both?`,
     ],
-    inspirationLinks: [
+    inspirationLinks: [   
         {
-            linkText: 'ricky desktop',
-            linkSrc: 'https://www.theverge.com/21504619/ricky-desktop-tiktok-beat-creator-interview-musician-viral-hits',
+            linkText: 'Handvaaska, by Ramsey Nasser and Jane Friedhoff',
+            linkSrc: 'https://nas.sr/handv%C3%A4ska/',
         },
         {
-            linkText: 'how animation studios work their magic on tiktok',
-            linkSrc: 'https://submarinechannel.com/how-animation-studios-and-artists-work-their-magic-on-tiktok/',
+            linkText: 'among us',
+            linkSrc: 'http://www.innersloth.com/gameAmongUs.php',
         },
         {
-            linkText: `Francis Alys: 'the leak'`,
-            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
+            linkText: 'My Barbarian: Double Agency',
+            linkSrc: 'https://vimeo.com/124203527',
         },
         {
-            title: 'steve reich, music as a gradual process',
-            link : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
-        },        {
-            linkText:"Steve Reich, Music For 18 Musicians",
-            linkSrc:"https://www.youtube.com/watch?v=ZXJWO2FQ16c"
+            linkText: 'cow clicker',
+            linkSrc: 'https://cowclicker.com/',
         },
         {
-            linkText: 'steve reich - come out',
-            linkSrc: 'https://www.youtube.com/watch?v=g0WVh1D0N50',
+            linkText: 'angela washko, the game',
+            linkSrc: 'https://angelawashko.com/home.html',
         },
         {
-            linkText:"Pendulum Music",
-            linkSrc:"https://www.youtube.com/watch?v=fU6qDeJPT-w"
+            linkText: 'star choir',
+            linkSrc: 'https://vimeo.com/441187530',
         },
         {
-            linkText:"Steve Reich + Aphex Twin Pendulum Music",
-            linkSrc:"https://www.youtube.com/watch?v=xvdXc-7hkcE"
+            linkText: 'star choir: nomads dissolution',
+            linkSrc: 'https://vimeo.com/mybarbarian',
         },
         {
-            linkText: 'Camille Norment, Lull',
-            linkSrc: 'https://www.sfmoma.org/read/camille-norment/',
+            linkText: 'top 10 games from js13k 2020',
+            linkSrc: 'https://github.blog/2020-10-11-top-ten-games-from-the-js13k-2020-competition/',
+            
         },
         {
-            linkText:"Henry Flynt - Hillbilly Tape Music",
-            linkSrc:"https://www.youtube.com/watch?v=LstLpd_iVWA"
+            linkText: 'i really like this one!',
+            linkSrc: 'https://js13kgames.com/entries/choch',
         },
         {
-            linkText:"gifsound mashups",
-            linkSrc:"https://gifsound.com/"
-        },
-        {
-            linkText:"Pamela Z is a composer who works with loops a lot",
-            linkSrc:"https://vimeo.com/channels/pamelaz"
-        },
+            linkText: 'massively multipler tetris that i built with that meth meth method tutorial below',
+            linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
+        }
+        ],
+        techLinks: [
+           
+            
+            {
+                linkText:'keycode is deprecated, generally use key instead',
+                linkSrc: 'https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice',
+            },
+            {
+                linkText:'remember window.addEventListener() ? -- you can also use it for keyboard input!',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/NBosLc6cQ',
+            },
 
-        {
-            linkText:"WEB AUDIO LOOP MIXER",
-            linkSrc:"http://middleearmedia.com/webaudioloopmixer/"
-        },
-        {
-            linkText:"Yoshi Sodeoka -- 10 Years of Psychic TV's Frenetic Visuals Become Looping Video Art",
-            linkSrc:"https://creators.vice.com/en_us/article/d7475j/10-years-of-psychic-tv-become-looping-video-art"
-        },
+            {
+                linkText:"make angry birds with p5.js and matter.js",
+                linkSrc:"https://thecodingtrain.com/CodingChallenges/138-angry-birds.html"
+            },
 
-        {
-            linkText:"Richard Serra Throws Molten Lead Inside sfmoma",
-            linkSrc:"https://www.sfmoma.org/richard-serra-throws-molten-lead-inside-sfmoma/"
-        },				
-        {
-            linkText:"Michael Snow's Wavelength in 2.5 minutes",
-            linkSrc:"https://www.youtube.com/watch?v=d3nIQs52UXI"
-        },
-        {
-            linkText:"Bruce Naumann violin tuned dead",
-            linkSrc:"https://www.youtube.com/watch?v=yMYgZJBNsm0"
-        },
-        {
-            linkText:"Having Never Written a Note for Percussion -- James Tenney",
-            linkSrc:"https://www.youtube.com/watch?v=Zd5WNTiwiU8"
-        },
+            {
+                linkText: 'build space invaders with daniel shiffman',
+                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
+            },
+            {
+                linkText: 'frogger in p5.js',
+                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
+            },
+            {
+                linkText: 'code super mario in vanilla js (25 parts!  maybe save it for later?)',
+                linkSrc: 'https://www.youtube.com/watch?v=g-FpDQ8Eqw8',
+            },
 
-        {
-            linkText: 'Paul Pfeiffer, an artist who does great work with loops',
-            linkSrc: 'http://bombmagazine.org/article/2543/paul-pfeiffer',
-        },
-        {
-            linkText: '8 creativew coders who make amazing generative sketches',
-            linkSrc: 'https://blog.kadenze.com/creative-technology/8-creative-coders-who-create-amazing-algorithmic-sketches/',
-        },
+            {
+                linkText: 'come to think of it, an hour to build tetris is probably more appropriate!',
+                linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
+            },
+            {
+                linkText: 'collision detection book (processing)',
+                linkSrc: 'http://www.jeffreythompson.org/collision-detection/table_of_contents.php',
+            },
+            {
+                linkText: 'super stupid landscape game',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
+            },
+            {
+                linkText: "soundlands, a badlands clone I've been working on",
+                linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',
+            },
 
-    ],
-    techLinks: [
-        {
-            linkText: 'my pendulum on codepen',
-            linkSrc: 'https://codepen.io/Fleischut/pen/WNQYXVp',
-        },
-        {
-            linkText: 'three.js pendulum on codepen',
-            linkSrc: 'https://codepen.io/iondrimba/pen/zbOBRO?editors=1010',
-        },
+        ], 
+        videos: [
 
-        {
-            linkText:'wave pendulum in three.js',
-            linkSrc:'https://github.com/franspaco/pendulums',
-        },
-
-        {
-            linkText:"9.1: JavaScript setTimeout() Function - p5.js Tutorial",
-            linkSrc:"https://www.youtube.com/watch?v=nGfTjA8qNDA"
-        },
-
-        {
-            linkText:"9.2: JavaScript setInterval() Function - p5.js Tutorial",
-            linkSrc:"https://www.youtube.com/watch?v=CqDqHiamRHA"
-        },
-        {
-            linkText:"reich oscillators",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/SkjKp2Udm"
-        },
-        {
-            linkText:"ck mellow squares",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7"
-        },
-        {
-            linkText:"ck crickets waveforms",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/L2DeHDtUX"
-        },				
-        {
-            linkText:"intro to working with sound in p5.js",
-            linkSrc:"https://www.youtube.com/watch?v=Pn1g1wjxl_0&list=PLRqwX-V7Uu6aFcVjlDAkkGIixw70s7jpW"
-        },
-
-        {
-            linkText:"simple sine functions",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/B1YOirE_Q"
-        },
-        {
-            linkText:"simple fm synth",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/By2AbIN_m"
-        },
-        {
-            linkText:"fm synth with waveform",
-            linkSrc:"https://editor.p5js.org/socalledsound/sketches/Sy2oOU4uX"
-        },
-        {
-            linkText: 'harmonograph - 1',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/hzLiRa-5_',
-        },
-        {
-            linkText: 'harmonograph - 2',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/3yGgeN_3I',
-        },
-        {
-            linkText: 'github repo for our pendulum sketch',
-            linkSrc: 'https://github.com/socalledsound/side-effects-unit2-day11-pendulum',
-        },
-        {
-            linkText: 'p5.js sound reference',
-            linkSrc: 'https://p5js.org/reference/#/libraries/p5.sound',
-        },
-    ],
+            {
+    
+            },
+            {
+    
+            },
+            {
+    
+            },
+            {
+    
+            },
+        ],  
 
 }
 

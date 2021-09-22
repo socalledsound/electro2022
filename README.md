@@ -8,6 +8,8 @@ live site: https://electro2021-84fab.web.app/
 
 -- FIX VIDEO IMAGE LINK
 -- APPLE LOGIN BUG
+-- SUBMIT WORK IMAGE BUG
+-- back to gallery item not loading
 
 -- set default value of imageURL from the EditUser
 -- make the image a require value for the image picker
