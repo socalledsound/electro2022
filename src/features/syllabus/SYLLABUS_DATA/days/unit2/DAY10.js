@@ -34,10 +34,7 @@ const DAY10 = {
             linkText: '',
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
 
         {
             linkText: 'rotating circles in a grid',
@@ -55,6 +52,10 @@ const DAY10 = {
 
         ],
         techLinks: [
+            {
+                linkText: 'Objects and Classes Example: Butterfly in p5.js',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
+            },
             {
                 linkText: 'mario game github repo (with a branch for each video)',
                 linkSrc: 'https://github.com/socalledsound/p5-mario-game',
