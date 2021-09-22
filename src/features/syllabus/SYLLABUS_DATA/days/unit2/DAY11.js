@@ -6,7 +6,10 @@ const DAY11 = {
     title: 'game on!',
     description: `
     Today we are going to step up our game a bit, literally, and talk about game STATE.
-    
+    Just like we previously realized that we can back out and up of our code to make a Coin class
+    and a Mario class, we can back up and out even farther to make a Game.  We can store everything
+    in the game world in there, and this means we will have a single source of truth for our game,
+    which is always deeply satisfying.  Watch the vids and come to class for more on this very big topic.
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632266640/state-flowchart_ychpzf.png',
     discussionQuestions: [
