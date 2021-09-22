@@ -38,7 +38,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project', 'people', 'gallery']
+  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project', 'people']
 }
 
 

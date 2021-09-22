@@ -6,6 +6,8 @@ live site: https://electro2021-84fab.web.app/
 
 ## to do
 
+-- need to set up listeners on firestore
+
 -- SUBMIT WORK FORM -- cache form data when selecting image?
 
 -- make the image a require value for the image picker
