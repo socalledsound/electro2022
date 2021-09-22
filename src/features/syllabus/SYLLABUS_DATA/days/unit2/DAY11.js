@@ -13,6 +13,8 @@ const DAY11 = {
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632266640/state-flowchart_ychpzf.png',
     discussionQuestions: [
+        `What is 'state' and why is it good to have a 'single source of truth'?`,
+        `Give some examples of ways we can manage state in javascript.`,
         ``,
         ``,
 

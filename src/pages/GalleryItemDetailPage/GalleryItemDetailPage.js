@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectCurrentUser } from '../../features/user/userSlice'
-import { withRouter } from 'react-router-dom'
+import { withRouter, useParams } from 'react-router-dom'
 import { selectItemById } from '../../features/gallery/gallerySlice'
 import GalleryItemDetail from '../../features/gallery/GalleryItemDetail'
 import CritMessagesContainer from '../../features/critMessages/CritMessagesContainer'
@@ -11,9 +11,9 @@ import styles from './GalleryItemDetailPage.module.css'
 const GalleryItemDetailPage = ({match, history}) => {
 
     const currentUser = useSelector(selectCurrentUser)
-    const itemId = match.params.workId 
-    console.log(itemId)
-    const item = useSelector(selectItemById(itemId))
+    const { workId }  = useParams()
+    console.log(workId)
+    const item = useSelector(selectItemById(workId))
     console.log(item)
     return ( 
         <div className={styles.galleryDetailWrapper}>

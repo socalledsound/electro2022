@@ -16,9 +16,8 @@ const DAY10 = {
     whether that be books, wind, or grains of sand.
     `,
     discussionQuestions: [
-        `What is 'state' and why is it good to have a 'single source of truth'?`,
-        `Give some examples of ways we can manage state in javascript.`,
-        ``,
+        `What is a class in javascript?`,
+        `What are some of the benefits we get when we organize our code with classes?`,
         ``,
     ],
     inspirationLinks: [

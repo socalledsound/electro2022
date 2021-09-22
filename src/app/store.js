@@ -27,12 +27,12 @@ import logger from 'redux-logger'
 const sagaMiddleware = createSagaMiddleware()
 
 
-// const galleryPersistConfig = {
-//   key: 'gallery',
-//   version: 1,
-//   storage,
-//   blacklist: [galleryCategories]
-// }
+const galleryPersistConfig = {
+  key: 'gallery',
+  version: 1,
+  storage,
+  blacklist: ['galleryCategories']
+}
 
 const persistConfig = {
   key: 'root',
@@ -46,7 +46,7 @@ const reducer = combineReducers({
   user: userReducer,
   syllabus: syllabusReducer,
   warnings: warningsReducer,
-  gallery: galleryReducer,
+  gallery: persistReducer(galleryPersistConfig, galleryReducer),
   people: peopleReducer,
   assignment: assignmentReducer,
   submitWork: submitWorkReducer,
