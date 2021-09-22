@@ -17,9 +17,8 @@ const DAY9 = {
     `,
     discussionQuestions: [
         `Is 'identity' different from 'character'?`,
-        ``,
-        ``,
-        ``,
+        `Is it ok to borrow identity?  Character?  When, Why/not?`,
+        `Is it ok to invent?  to lie?  When, Why/not?`,
     ],
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
     inspirationLinks: [
