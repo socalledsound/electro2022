@@ -3,23 +3,17 @@ import { useDispatch } from 'react-redux'
 import validateLogin from '../../../utils/validateLogin'
 // import { addUser } from '../userSlice'
 import { emailSignInStart } from '../../../app/sagas/userActions'
-import Form from '../../../components/Form/Form'
+import LoginForm from '../../../components/Form-Login/LoginForm'
 import styles from './SignInPage.module.css'
 
 const Login = ({toggleRegistered}) => {
 
     const dispatch = useDispatch()
-    const initialFormState = {
-        email: '',
-        password: '',
-    }
+
 
     const submitUserData = (data) => {
         dispatch(emailSignInStart(data))
     }
-
-
-
 
     return ( 
         <div className={styles.loginBG}>
@@ -28,11 +22,10 @@ const Login = ({toggleRegistered}) => {
            <div className={styles.loginTitleCard}>
                 existing user login:
             </div>
-           <Form 
-                    initialFormState={initialFormState}
-                    validateForm={validateLogin} 
-                    submitFormData={submitUserData}  
-                />
+            <LoginForm 
+                validateForm={validateLogin} 
+                submitFormData={submitUserData}  
+            />
             <div 
                 className={styles.toggleRegisterButton}
                 onClick={() => toggleRegistered(false)}>
