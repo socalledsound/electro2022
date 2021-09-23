@@ -11,24 +11,24 @@ const DAY15 = {
         ``,
         ``,
     ],
-    videos: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-    ],
-    inspirationLinks: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-    ],
-    techLinks: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-    ],
+    // videos: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
+    // inspirationLinks: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
+    // techLinks: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
 
 }
 

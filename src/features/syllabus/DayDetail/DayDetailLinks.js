@@ -9,7 +9,8 @@ const DayDetailLinks = ({day}) => {
         <div className={styles.linksWrapper}>
 
             {
-                inClassDemo&&
+                inClassDemo &&
+                inClassDemo.length > 0 &&
                 <div className={styles.linksListContainer} >
                 <ul  className={styles.linksList}>
                     {
@@ -30,6 +31,7 @@ const DayDetailLinks = ({day}) => {
             }
 
             {
+            videos &&
             videos.length > 0 &&
             <div className={styles.linksListContainer} style={{backgroundColor: 'rgba(248, 248, 161,)'}}>
                 <ul  className={styles.linksList}>
@@ -75,6 +77,7 @@ const DayDetailLinks = ({day}) => {
 
             
                 {
+                    techLinks &&
                 techLinks.length > 0 &&
                 <div className={styles.linksListContainer} >
                 <ul  className={styles.linksList}>
@@ -97,6 +100,7 @@ const DayDetailLinks = ({day}) => {
                 
 
                 {
+                    inspirationLinks &&
                     inspirationLinks.length > 0 &&
                     <div className={styles.linksListContainer}>
                     <ul className={styles.linksList}>

@@ -54,6 +54,7 @@ const DayDetail = ({day}) => {
                     <div className={styles.questionsBorder}>
                         {
                             discussionQuestions && 
+                            discussionQuestions.length > 0 &&
                             discussionQuestions.map( (q, i) => {
                                 return (
                                     <div key={i}>
