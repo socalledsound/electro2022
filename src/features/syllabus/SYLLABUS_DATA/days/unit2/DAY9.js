@@ -19,6 +19,7 @@ const DAY9 = {
         `Is 'identity' different from 'character'?`,
         `Is it ok to borrow identity?  Character?  When, Why/not?`,
         `Is it ok to invent?  to lie?  When, Why/not?`,
+        `Is it possible to have a character without narrative?`
         `What are some ways to keep track of character transformation in javascript?`,
     ],
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
