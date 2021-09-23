@@ -4,7 +4,13 @@ const DAY21 = {
     unit: 'unit3',
     date: 'November 4, 2021',
     title: 'backend',
-    description: "Today we'll create a cloud-based database and learn how to upload images to it.  We'll also learn how to watch that database for changes, in our case, images.  We're going to buid an online gallery that people can drag and drop images to.  The images will be stored in perpetuity on our firebase database, and our gallery will dsiplay all of the images hosted there.",
+    description: `
+    Today we'll create a cloud-based database and learn how to upload images to it.  
+    We'll also learn how to watch that database for changes, in our case, images.  
+    We're going to buid an online gallery that people can drag and drop images to.  
+    The images will be stored in perpetuity on our firebase database, and our gallery 
+    will dsiplay all of the images hosted there.
+    `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597869193/side-effects/jim-campbell-eroding-wave_nf3txs.jpg',
    
     videos: [

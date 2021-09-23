@@ -3,8 +3,8 @@ const DAY29 = {
     unit: 'unit6',
     date: 'December 07, 2021',
     title: 'FINAL CRIT',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596959762/side-effects/irdune_cvypcv.jpg',
+    description: "FINAL CRIT!!!!!!",
     videos: [
         {
             linkText: '',

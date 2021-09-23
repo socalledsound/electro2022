@@ -4,8 +4,10 @@ const DAY20 = {
     unit: 'unit4',
     date: 'November 2, 2021',
     title: 'analyzing audio',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1598399217/side-effects/side-effect_jfkc1s.jpg',
+    description: `
+    
+    `,
     videos: [
         {
             linkText: '',

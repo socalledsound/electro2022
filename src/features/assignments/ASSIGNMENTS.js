@@ -189,20 +189,20 @@ export const ASSIGNMENT23 = {
 
 
 export const ASSIGNMENT24 = {
-    title : 'shade', 
-    description : "Today we;ll use what we learned last class to use a library called johny five, that let's us connect our web sketches to inputs like volume knobs and switches and to putputs like LEDs and motors.",
-    markdown: DAY24_WORKSHOP_MD,
+    title : 'matrix', 
+    description : '',
+     markdown: DAY24_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT25 = {
-    title : 'matrix',
-    description : "Today we're going learn how to use websockets to add a real-time chat client to our game or other projects.  But, first, we're going to have to learn how to take in text input!  I made a few videos showing you how to do that, and how to wire up a sockets chat with that input.  Click through for more.",
+    title : 'shade',
+    description: '',
     markdown: DAY25_WORKSHOP_MD,
 }
  
 export const ASSIGNMENT26 = {
-    title : 'realtime',
+    title : 'ripples',
     description : '',
     markdown: DAY26_WORKSHOP_MD,
 }

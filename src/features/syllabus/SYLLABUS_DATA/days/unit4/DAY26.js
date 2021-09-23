@@ -3,9 +3,9 @@ const DAY26 = {
     async: true,
     unit: 'unit3',
     date: 'November 23, 2021',
-    title: 'real time',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "",
+    title: 'ripples',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1604102337/side-effects/light-shade-ripples-pattern-swimming-pool-turquoise-clean-water-vivid-separatio-lines-separation-113595482_agwgav.jpg',
+    description: ``,
     videos: [
         {
             linkText: '',

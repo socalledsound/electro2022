@@ -3,8 +3,8 @@ const DAY28 = {
     unit: 'unit6',
     date: 'December 02, 2021',
     title: 'work on final project',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
-    description: "",
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596758233/side-effects/can-haz-original_kn5sko.jpg',
+    description: "let's work on our final projects together!!!",
     videos: [
         {
             linkText: '',

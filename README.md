@@ -6,7 +6,11 @@ live site: https://electro2021-84fab.web.app/
 
 ## to do
 
--- add student projects from last year
+-- data dashboard particularly for unsubmitted projects
+
+-- user warning for unsubmitted projects
+
+-- add more student projects from last year
 
 -- restructure main gallery page with featured, current assignment and load more
 

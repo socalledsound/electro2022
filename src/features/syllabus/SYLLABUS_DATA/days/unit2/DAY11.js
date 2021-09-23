@@ -11,7 +11,7 @@ const DAY11 = {
     in the game world in there, and this means we will have a single source of truth for our game,
     which is always deeply satisfying.  Watch the vids and come to class for more on this very big topic.
     `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632266640/state-flowchart_ychpzf.png',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1598458992/side-effects/B0B7D0BB-F967-4D6C-92EB-34B9E9DF164D_phz7by.jpg',
     discussionQuestions: [
         `What is 'state' and why is it good to have a 'single source of truth'?`,
         `Give some examples of ways we can manage state in javascript.`,
