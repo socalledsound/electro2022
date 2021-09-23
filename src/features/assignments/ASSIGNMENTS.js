@@ -99,14 +99,14 @@ export const ASSIGNMENT10 = {
 }
 
 export const ASSIGNMENT11 = {
-    title : 'goombas',
+    title : 'state',
     description : '',
     markdown: DAY11_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT12 = {
-    title : 'state',
+    title : 'goombas',
     description : '',
     markdown: DAY12_WORKSHOP_MD,
 }

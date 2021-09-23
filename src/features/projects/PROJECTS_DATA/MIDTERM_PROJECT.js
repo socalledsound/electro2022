@@ -6,6 +6,129 @@ export const MIDTERM_PROJECT = {
     teaser: '',
     markdown: MIDTERM_PROJECT_MARKDOWN,
     due: '10/13',
+    studentWorksLinks : [
+    {
+        linkText: `last year's course gallery`,
+        linkSrc: 'https://socalledsidefx.com/gallery',
+    },
+
+    {
+        linkText: 'art gallery game by Oliver Puffer',
+        linkSrc: 'https://opuffer.github.io/Class-Project-the-Game/',
+    },
+    {
+        linkText: 'trapped by zeyu yun',
+        linkSrc: 'https://zeyuyun1.github.io/game1/',
+    },
+    {
+        linkText: 'pink dolphin by david friesen',
+        linkSrc: 'https://bigsurface.github.io/PinkFreud/',
+    },
+    {
+        linkText: 'express yourself by robert hurley ',
+        linkSrc: 'https://rf-hurley.github.io/express-yourself/',
+    },
+    {
+        linkText: 'vegetables by ashley zhang',
+        linkSrc: 'https://hidden-beyond-00157.herokuapp.com/',
+    },
+    {
+        linkText: 'dog runner by jack randmaa',
+        linkSrc: 'https://jrandmaa.github.io/doggame/',
+    },  
+    {
+        linkText: 'flying shy shy onion by gloria yang',
+        linkSrc: 'https://zhixiny99.github.io/Onion-Info/',
+    },
+    {
+        linkText: 'camera interaction by ally zhu',
+        linkSrc: 'https://allyjzhu.github.io/project2/midtermproj2/index.html',
+    },  
+    {
+        linkText: '',
+        linkSrc: '',
+    },
+    {
+        linkText: '',
+        linkSrc: '',
+    },  
+    ],
+    javascriptLinks : [
+        {
+            linkText: 'make your first game with p5.js',
+            linkSrc: 'https://kellylougheed.medium.com/make-your-first-game-with-p5-js-38bfb308a671',
+        },
+        {
+            linkText: '15 awesome html+js gasmes',
+            linkSrc: 'https://www.digitaltrends.com/gaming/best-html-5-javascript-games/',
+        },
+
+        {
+            linkText: 'js13k: competition for really small javascript games',
+            linkSrc: 'https://js13kgames.com',
+        },
+        {
+            linkText: 'offline paradise, a game I like from the js13k competition',
+            linkSrc: 'https://js13kgames.com/games/offline-paradise/index.html',
+        },
+        {
+            linkText:"a simple snake game in p5",
+            linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+        },
+
+        {
+            linkText:"snake game tutorial",
+            linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
+        },
+        {
+            linkText: 'build space invaders with daniel shiffman',
+            linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
+        },
+        {
+            linkText: 'frogger in p5.js',
+            linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
+        },
+        {
+            linkText:"make angry birds with p5.js and matter.js",
+            linkSrc:"https://thecodingtrain.com/CodingChallenges/138-angry-birds.html"
+        },
+
+        {
+            linkText: 'code super mario in vanilla js (25 parts!  maybe save it for later?)',
+            linkSrc: 'https://www.youtube.com/watch?v=g-FpDQ8Eqw8',
+        },
+
+        {
+            linkText: 'come to think of it, an hour to build tetris is probably more appropriate!',
+            linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        }, 
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+        {
+            linkText:"molle industria",
+            linkSrc:"https://molleindustria.org/"
+        },
+        ],
     inspirationLinks : [
        
             {
@@ -33,15 +156,11 @@ export const MIDTERM_PROJECT = {
                 linkSrc: 'https://arcade.giphy.com/playlist/-LntTOeuqUo2uIjJwWjG',
             },
     
-    
             {
                 linkText:"artist jer thorp",
                 linkSrc:"https://www.jerthorp.com/"
             },
-            {
-                linkText:"molle industria",
-                linkSrc:"https://molleindustria.org/"
-            },
+
             {
                 linkText:"likelike",
                 linkSrc:"http://likelike.org/"
@@ -253,52 +372,9 @@ export const MIDTERM_PROJECT = {
                 linkText: 'darkgame 4.0 by Eddo Stern, notice the awesomely looping gameplay and sounds',
                 linkSrc: "http://eddostern.com/works/darkgame-4-0/",
             },
-            {
-                linkText: '15 awesome html+js gasmes',
-                linkSrc: 'https://www.digitaltrends.com/gaming/best-html-5-javascript-games/',
-            },
-    
-            {
-                linkText: 'js13k: competition for really small javascript games',
-                linkSrc: 'https://js13kgames.com',
-            },
-            {
-                linkText: 'offline paradise, a game I like from the js13k competition',
-                linkSrc: 'https://js13kgames.com/games/offline-paradise/index.html',
-            },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
 
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },  
-    ]
+       
+    ],
+
 
 }

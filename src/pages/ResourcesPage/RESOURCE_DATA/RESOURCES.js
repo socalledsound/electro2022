@@ -11,14 +11,6 @@ const RESOURCES = {
             },
 
             {
-                linkText: 'making a screenshot in the chrome browser',
-                linkSrc: 'https://youtu.be/lkBm5UPu5wg',
-            },
-            {
-                linkText: 'resizing an image using gimp',
-                linkSrc: 'https://youtu.be/8ukaQw6oPM8',
-            },
-            {
                 linkText: 'course discord channel',
                 linkSrc: 'https://discord.com/channels/786030089569304637',
             },
@@ -27,7 +19,14 @@ const RESOURCES = {
                 linkText:'discord invite link?',
                 linkSrc: 'https://discord.gg/a6zcqVpMJq',
             },
-
+            {
+                linkText: `last year's course gallery`,
+                linkSrc: 'https://socalledsidefx.com/gallery',
+            },
+            {
+                linkText: 'live server links are not web links',
+                linkSrc : 'https://youtu.be/ahblxZfIRVA',
+            },
             {
                 linkText: 'email me',
                 linkSrc: 'mailto:socalledsound@gmail.com',
@@ -167,6 +166,19 @@ const RESOURCES = {
         description: '',
         links: [
             {
+                linkText: 'github basics',
+                linkSrc: 'https://youtu.be/RpYKKYsG7Io',
+            },
+            {
+                linkText: 'a super fast intro to git',
+                linkSrc: 'https://youtu.be/qE7FkB2YGB8',
+            },
+            {
+                linkText: 'branching with git',
+                linkSrc: 'https://youtu.be/iioxcp7gC7Q',
+            },
+
+            {
                 linkText: 'learn git and github in five minutes',
                 linkSrc: 'https://www.educative.io/edpresso/learn-git-and-github-in-5-minutes',
             },
@@ -223,6 +235,14 @@ const RESOURCES = {
                 linkText: 'hex color picker',
                 linkSrc: 'https://www.google.com/search?q=hex+color+picker&oq=hex+color+picker&aqs=chrome.0.69i59.2266j0j7&sourceid=chrome&ie=UTF-8',
             }, 
+            {
+                linkText: 'making a screenshot in the chrome browser',
+                linkSrc: 'https://youtu.be/lkBm5UPu5wg',
+            },
+            {
+                linkText: 'resizing an image using gimp',
+                linkSrc: 'https://youtu.be/8ukaQw6oPM8',
+            },
             {
                 linkText: '',
                 linkSrc: '',

@@ -3,6 +3,7 @@ const DAY12 = {
     async: true,
     unit: 'unit2',
     date: 'October 05, 2021',
+ 
     title: 'games without players',
     description: `
     What happens when the landscape of a game wins?  In 'Gamic Action' the 
