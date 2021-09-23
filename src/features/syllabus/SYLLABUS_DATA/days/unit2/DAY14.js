@@ -16,9 +16,17 @@ const DAY14 = {
     ],
     videos: [
         {
-            linkText: '',
+            linkText: 'working with the accelerometer on the CPE',
             linkSrc: '',
         },
+        {
+            linkText: 'working with the microphone on the CPE',
+            linkSrc: '',
+        },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
     ],
     inspirationLinks: [
         {

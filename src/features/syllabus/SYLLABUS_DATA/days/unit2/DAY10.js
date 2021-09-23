@@ -123,11 +123,15 @@ const DAY10 = {
                 linkSrc: 'https://youtu.be/qlzRqo-_lRQ',
             },
             {
-                linkText: 'mario game 5: run, mario, run',
+                linkText: 'mario game 5: run, mario, run!',
                 linkSrc: 'https://youtu.be/YeUpImYgil8',
             },
             {
-                linkText: 'mario game 6: jump, mario',
+                linkText: 'mario game 6: run, better, mario!',
+                linkSrc: '',
+            },
+            {
+                linkText: 'mario game 7: jump, mario',
                 linkSrc: '',
             },
         ],    
