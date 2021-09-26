@@ -365,15 +365,27 @@ const RESOURCES = {
             linkText: 'Daniel Shiffman',
             linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
         },
+        {
+            linkText: 'the nature of code book',
+            linkSrc: 'https://natureofcode.com/book/',
+        },
+        {
+            linkText: 'the nature of code video playlist',
+            linkSrc: 'https://www.youtube.com/watch?v=70MQ-FugwbI&list=RDCMUCvjgXvBlbQiydffZU7m1_aw&start_radio=1&rv=70MQ-FugwbI&t=30',
+        },
+        {
+            linkText: 'the nature of code examples in p5',
+            linkSrc: 'https://github.com/nature-of-code/noc-examples-p5.js',
+        },
 
         {
             linkText: 'free code camp',
             linkSrc: 'https://www.freecodecamp.com',
         },
-        // {
-        //     linkText: 'educative',
-        //     linkSrc: 'https://www.educative.io/',
-        // },
+        {
+            linkText: 'the nature of code book',
+            linkSrc: 'https://natureofcode.com/book/',
+        },
         {
             linkText: 'go make things',
             linkSrc: 'https://gomakethings.com/',

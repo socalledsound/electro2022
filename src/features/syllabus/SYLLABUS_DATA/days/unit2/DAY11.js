@@ -31,7 +31,7 @@ const DAY11 = {
             linkSrc: 'https://js13kgames.com/entries/choch',
         },
         {
-            linkText: 'massively multipler tetris that i built with that meth meth method tutorial below',
+            linkText: 'massively multiplayer tetris that i built a while ago with that meth meth method tutorial below',
             linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
         }
         ],
@@ -86,17 +86,22 @@ const DAY11 = {
         videos: [
 
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'mario game 8: Game class, LONG one 😬',
+                linkSrc: 'https://youtu.be/0kA4oQx2PR8',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'mario game 9: scoreboard',
+                linkSrc: 'https://youtu.be/0i106wnVKhM',
             },
             {
-                linkText: '',
+                linkText: 'mario game 10: start button',
+                linkSrc: 'https://youtu.be/06c5h0InwcY',
+            },
+            {
+                linkText: 'mario game 10: add sounds',
                 linkSrc: '',
             },
+ 
         ],  
 
 }

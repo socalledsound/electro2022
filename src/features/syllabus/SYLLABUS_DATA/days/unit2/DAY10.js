@@ -21,19 +21,11 @@ const DAY10 = {
         ``,
     ],
     inspirationLinks: [
+ 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'fluffy mover',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-
 
         {
             linkText: 'rotating circles in a grid',
@@ -43,12 +35,20 @@ const DAY10 = {
             linkText: 'bezier bouncing ball',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ecrE28PMw',
         },
+
+
         {
-            linkText: 'fluffy mover',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
+            linkText: 'drawing a butterfly with just html and css',
+            linkSrc: 'https://www.youtube.com/watch?v=olYdXtPhbvw',
         },
-
-
+        {
+            linkText: 'parabolic curves in p5',
+            linkSrc: 'https://ewanbeckett.com/2020/09/20/parabolic-curves-using-p5-js/',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         ],
         techLinks: [
             {
