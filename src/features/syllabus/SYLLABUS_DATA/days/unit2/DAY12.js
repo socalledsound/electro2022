@@ -8,7 +8,7 @@ const DAY12 = {
     description: `
         We're back in the flesh today!  Hopefully you've got enough of a 'game' by this point that you can start thinking about
         how you want people to be able to control your character.  Today, we'll look at how to wire up our CPE to our games so that we can
-        have novel forms of input, and generally troubleshoot our projects.
+        have novel forms of input, and generally troubleshoot our projects up to this point.
     `,
     discussionQuestions: [
         ``,
@@ -37,19 +37,27 @@ const DAY12 = {
             linkSrc: 'https://www.youtube.com/watch?v=K9ckzHUt7Es',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'lucid dreaming mask with a CPE',
+            linkSrc: 'https://hackaday.com/tag/circuit-playground-express/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'sound reactive lights with the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=cNxQ9dT0kqY',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'using the accelerometer on adafruit CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=IHdzu_rq46Y',
+        },
+        {
+            linkText: 'actually not a circuit playground express, but it would be nice to do this with one',
+            linkSrc: 'https://www.youtube.com/watch?v=hqYMLTT3pms',
         },
     ],
     techLinks: [
+        {
+            linkText: 'turn your CPE into an HID device',
+            linkSrc: 'https://www.youtube.com/watch?v=w8uepWkAZZs',
+        },
         {
             linkText: 'Circuit playground express: accelerometer',
             linkSrc: 'https://learn.adafruit.com/circuit-playground-lesson-number-0/accelerometer',
@@ -58,10 +66,7 @@ const DAY12 = {
             linkText: 'circuit playground express: sound sensor',
             linkSrc: 'https://learn.adafruit.com/circuit-playground-lesson-number-0/sound-sensor',
         },
-        {
-            linkText: 'turn your CPE into an HID device',
-            linkSrc: 'https://www.youtube.com/watch?v=w8uepWkAZZs',
-        },
+
         {
             linkText: 'infrared control with CPE',
             linkSrc: 'https://www.youtube.com/watch?v=Gxiwltvkx5E',

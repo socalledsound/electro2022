@@ -60,7 +60,10 @@ const DAY13 = {
         }
         ],
         techLinks: [
-           
+            {
+                linkText: 'collision detection book (processing)',
+                linkSrc: 'http://www.jeffreythompson.org/collision-detection/table_of_contents.php',
+            },
             
             {
                 linkText:'keycode is deprecated, generally use key instead',
@@ -93,10 +96,7 @@ const DAY13 = {
                 linkText: 'come to think of it, an hour to build tetris is probably more appropriate!',
                 linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
             },
-            {
-                linkText: 'collision detection book (processing)',
-                linkSrc: 'http://www.jeffreythompson.org/collision-detection/table_of_contents.php',
-            },
+
             {
                 linkText: 'super stupid landscape game',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
