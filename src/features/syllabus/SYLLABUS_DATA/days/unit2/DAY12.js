@@ -3,9 +3,6 @@ const DAY12 = {
     async: false,
     unit: 'unit2',
     date: 'October 05, 2021',
-   
-
-
     title: 'control',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',
     description: `

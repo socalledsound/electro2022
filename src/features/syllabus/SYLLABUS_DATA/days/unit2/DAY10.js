@@ -21,7 +21,10 @@ const DAY10 = {
         ``,
     ],
     inspirationLinks: [
- 
+        {
+            linkText: 'a butterfly animation I made with p5 this weekend',
+            linkSrc: 'https://socalledsound.github.io/better-butterflies/',
+        },
         {
             linkText: 'fluffy mover',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
