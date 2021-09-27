@@ -6,6 +6,7 @@ import { onAuthStateChange } from './firebase/firebase.utils'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage/HomePage'
+import GalleryPage from './pages/GalleryPage/GalleryPage'
 import Gallery from './features/gallery/Gallery'
 import GalleryCategoryPage from './pages/GalleryCategoryPage/GalleryCategoryPage'
 import GalleryItemDetailPage from './pages/GalleryItemDetailPage/GalleryItemDetailPage'
@@ -45,7 +46,8 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path ='/' component={HomePage}/>
-          <Route exact path='/gallery' component={Gallery}/>
+          <Route exact path='/gallery' component={GalleryPage}/>
+          <Route exact path='/fullgallery' component={Gallery}/>
           <Route exact path ={'/gallery/:categoryName'} component={GalleryCategoryPage} />
           <Route path ={'/gallery/:categoryName/:workId'} component={GalleryItemDetailPage} />
           <Route exact path='/syllabus' component={Syllabus}/>

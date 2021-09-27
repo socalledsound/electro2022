@@ -1,5 +1,5 @@
 .galleryItemDetailWrapper {
-  margin-left: 0.6rem;
+  margin-left: 1.2rem;
   max-width: 60vw;
 }
 
@@ -22,4 +22,60 @@
 
 .trash:hover {
   transform: scale(1.2);
+}
+
+.featuredButton {
+  margin: 0;
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.6rem;
+  width: 8rem;
+  height: 4rem;
+  background-color: rgb(118, 5, 128);
+  border: 2px solid rgba(61, 244, 238, 0);
+  color: white;
+}
+
+.featuredButton:hover {
+  margin: 0;
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.6rem;
+  width: 8rem;
+  height: 4rem;
+  background-color: rgba(118, 5, 128, 0.5);
+  border: 6px solid rgb(118, 5, 128);
+  color: white;
+}
+
+.featureButton {
+  margin-top: 0.2rem;
+  padding: 1.2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 1.2rem;
+  width: 8rem;
+  height: 4rem;
+  /* background-color: rgb(29, 183, 197); */
+  background-color: rgba(0, 0, 0, 0);
+  border: 6px solid rgb(29, 183, 197);
+  color: white;
+}
+.featureButton:hover {
+  margin-top: 0.2rem;
+  padding: 1.2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 1.2rem;
+  width: 8rem;
+  height: 4rem;
+  background-color: rgb(29, 183, 197);
+
+  color: white;
+}
+
+.featuredTitle {
+  background-color: rgba(118, 5, 128, 0.5);
+  padding: 2rem;
+  color: white;
 }

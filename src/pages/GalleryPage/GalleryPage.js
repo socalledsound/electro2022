@@ -1,10 +1,11 @@
 import React from 'react'
-import Gallery from '../../features/gallery/Gallery'
+import GalleryNew from '../../features/gallery/GalleryNew'
 
 const GalleryPage = () => {
     return ( 
         <div>
-            <Gallery />
+           
+            <GalleryNew />
         </div>
      );
 }

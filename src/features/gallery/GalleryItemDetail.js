@@ -1,5 +1,6 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { startUpdateFeatured } from './gallerySlice'
 import useNewModal from '../../components/Modal/useNewModal'
 import GalleryItemDeleteModal from './GalleryItemDeleteModal/GalleryItemDeleteModal'
 // import GalleryItemEditModal from './GalleryItemEditModal/GalleryItemEditModal'
@@ -11,11 +12,28 @@ import { selectCurrentUser } from '../user/userSlice'
 import styles from './GalleryItemDetail.module.css'
 import EditWork from './EditWork/EditWork'
 const GalleryItemDetail = ({ item, history }) => {
-
+   
+    const dispatch = useDispatch()
+    
     const currentUser = useSelector(selectCurrentUser)
+    console.log(typeof currentUser.id)
+    console.log(currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2')
 
     const [ deleteModal, toggleDeleteModal, DeleteModalContent ] = useNewModal();
     const [ editModal, toggleEditModal, EditModalContent ] = useNewModal();
+
+
+    const [ featured, toggleFeatured ] = useState(false)
+
+    const handleToggleFeatured = () => {
+            toggleFeatured(!featured)
+            dispatch(startUpdateFeatured(item.id))
+
+        
+
+        
+    }
+
 
     const handleEdit = () => {
         toggleEditModal(true)
@@ -58,9 +76,23 @@ const GalleryItemDetail = ({ item, history }) => {
                                     onClick={()=> handleDelete(item.user.id)}
                                     className={styles.trash}
                                />
+                              
                             </div>
                         }
-            <h4>{item.title}</h4>
+                        <div>
+                        {
+                            currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2' &&
+                            <button 
+                                className={featured ? styles.featuredButton : styles.featureButton} 
+                                onClick={handleToggleFeatured}
+                            >
+                               {featured ? 'unfeature' : 'feature'}
+                            </button>
+                        }
+                        </div>
+
+
+            <h4 className={featured ? styles.featuredTitle : ''}>{item.title}</h4>
             <h6>{item.user.displayName}</h6>
             <p>{item.description}</p>
 

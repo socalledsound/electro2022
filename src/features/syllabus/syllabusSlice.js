@@ -76,6 +76,10 @@ export const selectCurrentDay = (state) => {
     return lowestDay
 }
 
+
+
+
+
 export const selectPreviousDays = (state) => {
     const allDays = selectAllDays(state)
     // console.log(allDays)

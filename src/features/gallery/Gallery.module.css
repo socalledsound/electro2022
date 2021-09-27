@@ -89,3 +89,37 @@
 .workTitle {
   width: 100%;
 }
+
+.moreWorksWrapper {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border: 2px solid green;
+  padding: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  width: 10rem;
+}
+
+.loadMoreButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid blue;
+  color: white;
+  width: 6rem;
+  padding: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 1.2rem;
+}
+
+.loadMoreButton:hover {
+  background-color: blue;
+  border: 2px solid white;
+  color: white;
+  width: 6rem;
+  padding: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 1.2rem;
+}
