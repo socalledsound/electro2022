@@ -15,8 +15,8 @@ const DAY11 = {
     discussionQuestions: [
         `What is 'state' and why is it good to have a 'single source of truth'?`,
         `Give some examples of ways we can manage state in javascript.`,
-        ``,
-        ``,
+        `Why is it nice or good to have a 'Game' object?`,
+        `What is 'refactoring'?  What are some signs that you need to think about it?`,
 
     ],
     inspirationLinks: [
@@ -27,7 +27,11 @@ const DAY11 = {
             
         },
         {
-            linkText: 'i really like this one!',
+            linkText: 'and you can still vote in the 2021 games....',
+            linkSrc: 'https://js13kgames.com/entries/2021',
+        },
+        {
+            linkText: 'i really liked this one!',
             linkSrc: 'https://js13kgames.com/entries/choch',
         },
         {
