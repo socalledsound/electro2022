@@ -71,7 +71,7 @@ const DAY11 = {
             },
 
             {
-                linkText: 'come to think of it, an hour to build tetris is probably more appropriate!',
+                linkText: `come to think of it, an hour to build tetris is probably more appropriate! (but it's still pretty hard!)`,
                 linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
             },
 
@@ -88,7 +88,7 @@ const DAY11 = {
         videos: [
 
             {
-                linkText: 'mario game 8: Game class, LONG one 😬',
+                linkText: 'mario game 8: Game class, LONG one 😬sorry',
                 linkSrc: 'https://youtu.be/0kA4oQx2PR8',
             },
             {
