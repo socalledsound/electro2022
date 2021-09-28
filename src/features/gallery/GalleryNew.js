@@ -26,7 +26,7 @@ const GalleryNew = ({history}) => {
         currentAssignmentTitle = currentAssignmentWorks[0].assignment
     }
     const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignmentTitle)
-
+    console.log(featuredWorks)
     return ( 
         <div>
         {
@@ -39,6 +39,7 @@ const GalleryNew = ({history}) => {
                 {
                     featuredWorks.length > 0 && 
                     <div className={styles.galleryRowWrapper}>
+                         <h5 className={styles.galleryHeading2}>you're all making cool stuff but, don't miss these ::  </h5>
                         <GalleryRow category={'featured'} works={featuredWorks}/>
                     </div>
                 }

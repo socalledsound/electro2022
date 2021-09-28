@@ -88,7 +88,14 @@ export const gallerySlice = createSlice({
         },
         startUpdateFeatured(){},
         updateFeaturedSuccess: (state, action) => {
-            state.works[action.payload].featured = true
+            const oldWorks = state.works.filter(item => item.id !== action.payload.id)
+            const itemToUpdate = state.works.filter(item => item.id === action.payload.id)
+            itemToUpdate.featured = true
+            console.log(itemToUpdate)
+            return {
+                ...state,
+                works: oldWorks.concat(itemToUpdate)
+            }
         },
         updateFeaturedFailure : (state, action) => {
             return {
@@ -114,11 +121,11 @@ export const selectFeaturedWorks = state => {
 export const selectCurrentWorks = state => {
    
     const currentDay = selectCurrentDay(state)
-    console.log(currentDay.id)
+    //console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
     const assignment = selectAssignment(currentMinus1)(state)
     const currentWorks = selectWorks(state).filter(item => item.assignment === assignment.title)
-    console.log(currentWorks)
+    //console.log(currentWorks)
     return currentWorks
 }
 // want to return recently posted works here

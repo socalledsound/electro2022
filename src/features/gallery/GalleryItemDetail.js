@@ -26,8 +26,10 @@ const GalleryItemDetail = ({ item, history }) => {
     const [ featured, toggleFeatured ] = useState(false)
 
     const handleToggleFeatured = () => {
-            toggleFeatured(!featured)
-            dispatch(startUpdateFeatured(item.id))
+        const newFeatured = !featured
+            dispatch(startUpdateFeatured({id: item.id, featured: newFeatured}))
+            toggleFeatured(newFeatured)
+            
     }
 
 

@@ -76,7 +76,7 @@ export function* updateFeatured(action){
     if(id){
         yield put(loginLoading(true))
         try{
-            yield call(updateItemInFirestore, 'works', update)
+            yield call(updateItemInFirestore, 'works', action.payload.id, update)
             yield put(updateFeaturedSuccess(id))
             yield put(loginLoading(false))
         }catch(error){
