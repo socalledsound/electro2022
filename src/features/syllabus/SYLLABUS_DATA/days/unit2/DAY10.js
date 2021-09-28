@@ -49,8 +49,8 @@ const DAY10 = {
             linkSrc: 'https://ewanbeckett.com/2020/09/20/parabolic-curves-using-p5-js/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: `that RainCircle code that I modified from Tucker's submission`,
+            linkSrc: 'https://github.com/socalledsound/tucker-thing',
         },
         ],
         techLinks: [
