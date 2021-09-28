@@ -1,10 +1,11 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
-import { firestore, convertWorksSnapshotToMap, updateItemInFirestore, deleteItemInFirestore } from '../../firebase/firebase.utils'
+import { firestore, convertWorksSnapshotToMap, updateItemInFirestore, deleteItemInFirestore  } from '../../firebase/firebase.utils'
 import { loginLoading } from '../../features/user/userSlice'
 import { startFetchWorks, fetchWorksSuccess, 
     fetchWorksFailure, startUpdateGalleryItem, 
     updateGalleryItemFailure, updateGalleryItemSuccess, 
     startDeleteGalleryItem, deleteGalleryItemSuccess, deleteGalleryItemFailure,
+    startUpdateFeatured, updateFeaturedSuccess, updateFeaturedFailure,
 } from '../../features/gallery/gallerySlice'
 
 function* fetchWorks(){
@@ -67,6 +68,25 @@ export function* deleteGalleryItem(action){
     }
 }
 
+export function* updateFeatured(action){
+    const id = action.payload.id
+    const update = {
+        featured: action.payload.featured
+    }
+    if(id){
+        yield put(loginLoading(true))
+        try{
+            yield call(updateItemInFirestore, 'works', update)
+            yield put(updateFeaturedSuccess(id))
+            yield put(loginLoading(false))
+        }catch(error){
+            console.log(error)
+            yield put(updateFeaturedFailure(error.message))
+            yield put(loginLoading(false))
+        }
+    }
+}
+
 
 export function* onFetchWorksStart(){
     yield takeLatest(startFetchWorks.type, fetchWorks)
@@ -80,6 +100,10 @@ export function* onDeleteGalleryItemStart(){
     yield takeLatest(startDeleteGalleryItem.type, deleteGalleryItem)
 }
 
+export function* onUpdateFeaturedStart(){
+    yield takeLatest( startUpdateFeatured.type, updateFeatured)
+}
+
 export function* gallerySagas(){
-    yield all([call(onFetchWorksStart), call(onUpdateGalleryItemStart), call(onDeleteGalleryItemStart)])
+    yield all([call(onFetchWorksStart), call(onUpdateGalleryItemStart), call(onDeleteGalleryItemStart), call(onUpdateFeaturedStart)])
 }

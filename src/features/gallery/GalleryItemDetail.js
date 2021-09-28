@@ -28,10 +28,6 @@ const GalleryItemDetail = ({ item, history }) => {
     const handleToggleFeatured = () => {
             toggleFeatured(!featured)
             dispatch(startUpdateFeatured(item.id))
-
-        
-
-        
     }
 
 

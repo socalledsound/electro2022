@@ -11,4 +11,4 @@ In today's videos, I'll show you how to move a character around, and also how to
 
 Submit your code, a description and a screen shot at the link below.
 
-Make sense? Yes? No? At times like this, I often like to quote <a href='https://www.youtube.com/watch?v=nRKkoI0HUKc'>Bill Callahan</a> and say, 'I could tell you about the river, or we could just get in.' So...let's get <a href='youtube link here'>started</a>!
+Make sense? Yes? No? At times like this, I often like to quote <a href='https://www.youtube.com/watch?v=nRKkoI0HUKc'>Bill Callahan</a> and say, 'I could tell you about the river, or we could just get in.' So...let's get <a href='https://www.youtube.com/watch?v=SPzJ84y4qxc'>started</a>!
