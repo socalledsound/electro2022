@@ -4,6 +4,7 @@ const DAY21 = {
     unit: 'unit3',
     date: 'November 4, 2021',
     title: 'analyzing audio',
+    assignment : 'visualization',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1598399217/side-effects/side-effect_jfkc1s.jpg',
     description: `
     

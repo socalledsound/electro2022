@@ -4,6 +4,7 @@ const DAY9 = {
     unit: 'unit2',
     date: 'September 23, 2021',
     title: 'player player',
+    assignment: 'sprites',
     description: `
     Today we're going to create characters.  
     We'll start by looking at some artists who have grappled with this question of 

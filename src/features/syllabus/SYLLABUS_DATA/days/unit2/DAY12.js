@@ -4,6 +4,7 @@ const DAY12 = {
     unit: 'unit2',
     date: 'October 05, 2021',
     title: 'enemy mine',
+    assignment: 'goombas',
     description: `
     Today we'll add an enemy to our mario game.  And I want you to think about what an
     enemy might mean in your own artwork/ game.  Today we'll talk 

@@ -4,6 +4,7 @@ const DAY10 = {
     unit: 'unit2',
     date: 'September 28, 2021',
     title: 'objects of desire',
+    assignment: 'mario',
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1631907629/22-color-coin-sprite-sheet-11563003777uevsziiqrr_wtyluo.png',
     description: `
     Today, we're going to go a little deeper with the idea of characters.

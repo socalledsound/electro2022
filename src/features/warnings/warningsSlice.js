@@ -25,10 +25,11 @@ export const selectProjectWarnings  = state => false
 export const selectAssignmentWarnings = state => {
     // state.warnings.assignmentWarnings
     const previousDays = selectPreviousDays(state)
+    console.log(previousDays)
     const completedAssignments = selectCompletedAssignments(state)
-    // console.log(completedAssignments)
+     console.log(completedAssignments)
     const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title)
-    // console.log(assignmentsDue, completedAssignments)
+     console.log(assignmentsDue, completedAssignments)
     // const warnings = assignmentsDue.filter(item => item.)
     // const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
     let needed = []
@@ -37,12 +38,12 @@ export const selectAssignmentWarnings = state => {
     }else {
        needed = assignmentsDue
     }
-    // console.log(needed)
+     console.log(needed)
     // console.log(previousDays)
     const warnings = needed.reduce((acc, cur) => {
         return acc.concat(previousDays.filter((day) => day.assignment === cur))
     }, [])
-    // console.log(warnings)
+     console.log(warnings)
 
     if(warnings.length > 0){
         return warnings

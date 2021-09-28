@@ -4,6 +4,7 @@ const DAY22 = {
     unit: 'unit3',
     date: 'November 9, 2021',
     title: 'expanded realities',
+    assignment: 'webgl',
     description: "XR, or expanded reality, has been one of the biggest buzzwords in digital media lately.  And, by lately, I mean, for the last fifty years or so.  Today we'll start to talk about XR in all of it's various forms: interactive mulitmedia ad campaigns, interdimensional participatory art projects, virtual reality and augmented reality, and more. ",
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869455/side-effects/saraceno-cloud-cities-2_jfdp7z.jpg',
    

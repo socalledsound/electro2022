@@ -4,6 +4,7 @@ const DAY20 = {
     unit: 'unit4',
     date: 'November 2, 2021',
     title: 'motion',
+    assignment: 'process',
     // description: `
     // Today we'll create a cloud-based database and learn how to upload images to it.  
     // We'll also learn how to watch that database for changes, in our case, images.  

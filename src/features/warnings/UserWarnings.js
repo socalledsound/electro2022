@@ -11,7 +11,7 @@ const UserWarnings = ({currentUser}) => {
     const assignmentWarnings = useSelector(selectAssignmentWarnings)
     const critMessageWarning = useSelector(selectCritMessageWarning(currentUser.id))
     
-
+    console.log(assignmentWarnings)
 
     return ( 
         <div className={styles.userWarningsWrapper}>

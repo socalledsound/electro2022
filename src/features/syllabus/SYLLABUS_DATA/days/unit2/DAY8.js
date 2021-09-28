@@ -4,6 +4,7 @@ const DAY8 = {
     unit: 'unit2',
     date: 'September 21, 2021',
     title: 'fun fun function',
+    assignment: 'itLives',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  

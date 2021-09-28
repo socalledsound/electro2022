@@ -4,6 +4,7 @@ const DAY11 = {
     unit: 'unit2',
     date: 'September 30, 2021',
     title: 'game on!',
+    assignment: 'state',
     description: `
     Today we are going to step up our game a bit, literally, and talk about game STATE.
     Just like we previously realized that we can back out and up of our code to make a Coin class

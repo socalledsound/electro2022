@@ -4,6 +4,7 @@ const DAY19 = {
     unit: 'unit4',
     date: 'October 28, 2021',
     title: 'camera input',
+    assignment: 'selfies',
     description: `
     Today we'll learn how to use a camera to take data in to the web browser.  We'll also learn how to maipulate that data at the pixel level.  
     This means we'll work in nested for loops, to create grids of color info.

@@ -3,6 +3,7 @@ const DAY18 = {
     unit: 'unit3',
     date: 'October 26, 2021',
     title: 'neopixels revisited',
+    assignment: 'neopixels',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
     description: `
     

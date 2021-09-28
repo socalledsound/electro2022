@@ -4,6 +4,7 @@ const DAY23 = {
     unit: 'unit3',
     date: 'November 11, 2021',
     title: 'augmented',
+    assignment: 'hiro',
     description: "Augmented reality is, in my view, the most interesting of the versions of virtual reality that exist, because it doesn't try to deny reality, it enhances it.  We can experience an augmented reality with other people and we can do it without ignoring the world.  Today we'll look at one of the easiest ways to get started in AR, a tool called A-frame.",
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
    

@@ -118,8 +118,7 @@ export const selectFeaturedWorks = state => {
 }
 
 //want to return the most recent assignment here
-export const selectCurrentWorks = state => {
-   
+export const selectCurrentWorks = state => { 
     const currentDay = selectCurrentDay(state)
     //console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
@@ -128,6 +127,15 @@ export const selectCurrentWorks = state => {
     //console.log(currentWorks)
     return currentWorks
 }
+
+export const selectCurrentGalleryAssignment = state => {
+    const currentDay = selectCurrentDay(state)
+    //console.log(currentDay.id)
+    const currentMinus1 = currentDay.id - 1
+    const assignment = selectAssignment(currentMinus1)(state)
+    return assignment
+}
+
 // want to return recently posted works here
 export const selectRecentWorks = state => {
     const aWeekAgo = new Date().getTime() - 604800000

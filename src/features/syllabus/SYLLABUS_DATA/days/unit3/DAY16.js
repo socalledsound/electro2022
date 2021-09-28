@@ -3,6 +3,7 @@ const DAY16 = {
     unit: 'unit3',
     date: 'October 19, 2021',
     title: 'G PI O',
+    assignment: 'gpio',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632428208/side-effects/gpio_asgkmt.png',
     description: `
     Today I'm going to demonstrate some of the neat things that are possible with a raspberry pi.

@@ -4,6 +4,7 @@ const DAY17 = {
     unit: 'unit4',
     date: 'October 21, 2021',
     title: 'sockets',
+    assignment: 'sockets',
     description: `
     Hold onto your hats.  Today we are going to learn how to connect one browser to another browser, using a technology called web sockets.  
     These let us do things like have real time chats, or play mutliplayer games.  I'll also introduce you to a key pillar of the javascript world, 

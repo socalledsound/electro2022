@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectFeaturedWorks, selectCurrentWorks, selectRecentWorks, startFetchWorks } from './gallerySlice'
+import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, startFetchWorks } from './gallerySlice'
 import { selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 import GalleryRow from './GalleryRow'
@@ -21,11 +21,11 @@ const GalleryNew = ({history}) => {
 
     const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
-    let currentAssignmentTitle  ='whoops'
-    if(currentAssignmentWorks && currentAssignmentWorks.length){
-        currentAssignmentTitle = currentAssignmentWorks[0].assignment
-    }
-    const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignmentTitle)
+    let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
+    // if(currentAssignmentWorks && currentAssignmentWorks.length){
+    //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
+    // }
+    const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
     console.log(featuredWorks)
     return ( 
         <div>
@@ -44,19 +44,22 @@ const GalleryNew = ({history}) => {
                     </div>
                 }
 
-                {
-                    currentAssignmentWorks.length > 0 && 
+                
+                    
                     <div className={styles.galleryRowWrapper}>
                          <h5 className={styles.galleryHeading2}>the current assignment: </h5>
                         <div 
                                         className={styles.galleryCategoryButton}
-                                        onClick={() => history.push(`/gallery/${currentAssignmentTitle}`)}
+                                        onClick={() => history.push(`/assignments/${currentAssignment.id}`)}
                                     >
-                                        <h5 className={styles.galleryHeading}>{currentAssignmentTitle}</h5>
+                                        <h5 className={styles.galleryHeading}>{currentAssignment.title}</h5>
                                     </div>
-                        <GalleryRowRecent category={currentAssignmentTitle} works={currentAssignmentWorks}/>
+                                    {
+                                    currentAssignmentWorks.length > 0 && 
+                        <GalleryRowRecent category={currentAssignment.title} works={currentAssignmentWorks}/>
+                                    }
                     </div>
-                }
+                
 
 {
                     recentWorks.length > 0 && 

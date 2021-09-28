@@ -3,7 +3,7 @@ const DAY25 = {
     async: true,
     unit: 'unit3',
     date: 'November 18, 2021',
-    
+    assignment: 'shade',
     title: 'throwing shade',
     description: `
     Today we'll continue our WEBGL explorations by looking at materials, lighting and...shaders.  

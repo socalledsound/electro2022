@@ -4,6 +4,7 @@ const DAY13 = {
     unit: 'unit2',
     date: 'October 07, 2021',
     title: 'games without players',
+    assignment: 'landscape',
     description: `
     What happens when the landscape of a game wins?  In 'Gamic Action' the 
     theorist Alexander Galloway describes a type of gameplay cslled non-diegetic 

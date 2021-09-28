@@ -4,6 +4,7 @@ const DAY14 = {
     date: 'October 12, 2021',
     async: false,
     title: 'control',
+    assignment: 'control',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',
     description: `
         We're back in the flesh today!  BE SURE TO BRING YOUR BEST 'GAME' TO CLASS TODAY.  I want to talk with you about your project and help you work out any 

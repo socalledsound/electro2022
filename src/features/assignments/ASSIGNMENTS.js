@@ -42,43 +42,49 @@ export const ASSIGNMENT1 = {
 }
 
 export const ASSIGNMENT2 = {
+    id: 2,
     title : 'resistance',
     description : ``,
     markdown: DAY2_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT3 = {
+    id: 3,
     title : 'switches',
     description : ``,
-
     markdown: DAY3_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT4 = {
+    id: 4,
     title : 'sensing',
     description: ``, 
     markdown: DAY4_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT5 = {
+    id: 5,
     title : 'collection',
     description :``,
     markdown: DAY5_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT6 = {
+    id: 6,
     title : 'hardware',
     description : ``,
     markdown: DAY6_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT7 = {
+    id: 7,
     title : 'jamz',
     description : '', 
     markdown: DAY7_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT8 = {
+    id: 8,
     title : 'itLives',
     description : '',
     markdown: DAY8_WORKSHOP_MD,
@@ -87,18 +93,21 @@ export const ASSIGNMENT8 = {
 }
 
 export const ASSIGNMENT9 = {
+    id: 9,
     title : 'sprites',
     description : "",
     markdown: DAY9_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT10 = {
+    id: 10,
     title : 'mario',
     description : "",
     markdown: DAY10_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT11 = {
+    id: 11,
     title : 'state',
     description : '',
     markdown: DAY11_WORKSHOP_MD,
@@ -106,6 +115,7 @@ export const ASSIGNMENT11 = {
 
 
 export const ASSIGNMENT12 = {
+    id: 12,
     title : 'goombas',
     description : '',
     markdown: DAY12_WORKSHOP_MD,
@@ -113,6 +123,7 @@ export const ASSIGNMENT12 = {
 
 
 export const ASSIGNMENT13 = {
+    id: 13,
     title : 'landscape',
     description : '',
     markdown: DAY13_WORKSHOP_MD,
@@ -120,6 +131,7 @@ export const ASSIGNMENT13 = {
 
 
 export const ASSIGNMENT14 = {
+    id: 14,
     title : 'control',
     description : '',
     markdown: DAY14_WORKSHOP_MD,
@@ -127,6 +139,7 @@ export const ASSIGNMENT14 = {
 
 
 export const ASSIGNMENT15 = {
+    id: 15,
     title : 'MIDTERM',
     description :  '',
     markdown: DAY15_WORKSHOP_MD,
@@ -134,6 +147,7 @@ export const ASSIGNMENT15 = {
 
 
 export const ASSIGNMENT16 = {
+    id: 16,
     title : 'gpio',
     description : '',
     markdown: DAY16_WORKSHOP_MD,
@@ -141,6 +155,7 @@ export const ASSIGNMENT16 = {
 
 
 export const ASSIGNMENT17 = {
+    id: 17,
     title : 'sockets',
     description : '',
     markdown: DAY17_WORKSHOP_MD,
@@ -148,6 +163,7 @@ export const ASSIGNMENT17 = {
 
 
 export const ASSIGNMENT18 = {
+    id: 18,
     title : 'neopixels',
     description : '',
     markdown:  DAY18_WORKSHOP_MD,
@@ -155,6 +171,7 @@ export const ASSIGNMENT18 = {
 
 
 export const ASSIGNMENT19 = {
+    id: 19,
     title : 'selfies',
     description : "Today we turn to camera input.  We'll look at some ways to gather, respond to and manipulate pixels.  We'll finish by making a rudimentary version of those selfie filters that are so popular on snapchat and insta.",
     markdown:  DAY19_WORKSHOP_MD,
@@ -162,19 +179,22 @@ export const ASSIGNMENT19 = {
 
 
 export const ASSIGNMENT20 = {
+    id: 20,
     title : 'process',
     description : '',
     markdown: DAY20_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT21 = {
-    title : 'backend',
+    id: 21,
+    title : 'visualization',
     description : '',
     markdown: DAY21_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT22 = {
+    id: 22,
     title : 'webgl',
     description : "Today we look at aframe, and how it helps us create immersive and augmented realities.  We can use most of the ideas we've already learned about using p5 and as a bonus, we can even write aframe code in p5 using a the aframp5 library.",
     markdown: DAY22_WORKSHOP_MD,
@@ -182,6 +202,7 @@ export const ASSIGNMENT22 = {
 
 
 export const ASSIGNMENT23 = {
+    id: 23,
     title : 'hiro',
     description : "Today in workshop we'll learn how to build a web server, host it at heroku, and then connect multiple browsers to that server.  ",
     markdown: DAY23_WORKSHOP_MD,
@@ -189,6 +210,7 @@ export const ASSIGNMENT23 = {
 
 
 export const ASSIGNMENT24 = {
+    id: 24,
     title : 'matrix', 
     description : '',
      markdown: DAY24_WORKSHOP_MD,
@@ -196,24 +218,28 @@ export const ASSIGNMENT24 = {
 
 
 export const ASSIGNMENT25 = {
+    id: 25,
     title : 'shade',
     description: '',
     markdown: DAY25_WORKSHOP_MD,
 }
  
 export const ASSIGNMENT26 = {
+    id: 26,
     title : 'ripples',
     description : '',
     markdown: DAY26_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT27 = {
+    id: 27,
     title :  'proto-final',
     description : '',
     markdown: DAY27_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT28 = {
+    id: 28,
     title : 'working-final',
     description : 'final project!  yay!',
     markdown: DAY28_WORKSHOP_MD
@@ -221,12 +247,14 @@ export const ASSIGNMENT28 = {
 }
 
 export const ASSIGNMENT29 = {
+    id: 29,
     title : 'FINALFINAL',
     description : '',
     markdown: DAY29_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT30 = {
+    id: 30,
     title : 'FINALFINAL',
     description : '',
     markdown: DAY29_WORKSHOP_MD,
