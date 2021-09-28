@@ -51,9 +51,17 @@ const DAY14 = {
             linkSrc: 'https://www.youtube.com/watch?v=IHdzu_rq46Y',
         },
         {
+            linkText : 'CPE usb midi controller and synth',
+            linkSrc : 'https://learn.adafruit.com/cpx-midi-controller',
+        },
+        {
             linkText: 'actually not a circuit playground express, but it would be nice to do this with one',
             linkSrc: 'https://www.youtube.com/watch?v=hqYMLTT3pms',
         },
+        {
+            linkText: 'custom controllers for make code arcade',
+            linkSrc: 'https://learn.adafruit.com/custom-controllers-for-makecode-arcade?view=all'
+        }
     ],
     techLinks: [
         {
