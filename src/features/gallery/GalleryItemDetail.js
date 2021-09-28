@@ -23,7 +23,7 @@ const GalleryItemDetail = ({ item, history }) => {
     const [ editModal, toggleEditModal, EditModalContent ] = useNewModal();
 
 
-    const [ featured, toggleFeatured ] = useState(false)
+    const [ featured, toggleFeatured ] = useState(item.featured)
 
     const handleToggleFeatured = () => {
         const newFeatured = !featured
