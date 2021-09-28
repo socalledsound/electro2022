@@ -6,7 +6,8 @@ const DAY12 = {
     title: 'control',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',
     description: `
-        We're back in the flesh today!  Hopefully you've got enough of a 'game' by this point that you can start thinking about
+        We're back in the flesh today!  BE SURE TO BRING YOUR BEST 'GAME' TO CLASS TODAY.  I want to talk with you about your project and help you work out any 
+        issues that you're having. And, hopefully you've got enough of a 'game' by this point that you can start thinking about
         how you want people to be able to control your character.  Today, we'll look at how to wire up our CPE to our games so that we can
         have novel forms of input, and generally troubleshoot our projects up to this point.
     `,

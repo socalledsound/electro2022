@@ -3,7 +3,7 @@ import { randomizeArray } from '../../utils/utils'
 import styles from './Gallery.module.css'
 import GalleryItem from './GalleryItem'
 
-const GalleryRow = ({ category, works}) => {
+const GalleryRow = ({ category, works }) => {
     const shuffledWorks = randomizeArray(works)
     return ( 
         <div className={styles.galleryRowContainer}> 

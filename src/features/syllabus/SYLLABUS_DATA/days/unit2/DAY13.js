@@ -11,10 +11,10 @@ const DAY13 = {
     make our way towards our midterm project crit day.`,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
     discussionQuestions: [
-        ``,
-        ``,
-        ``,
-        ``,
+        `are you an alien?  would you become one?  if not, why not?`,
+        `do you have an enemy?`,
+        `are trees sentient beings?`,
+        `do robots deserve rights?`,
     ],
     inspirationLinks: [   
         {
@@ -110,20 +110,20 @@ const DAY13 = {
         videos: [
 
             {
-                linkText: 'mario game 11: bounding box',
-                linkSrc: '',
+                linkText: 'mario game 11: coin collisions (+bounding box)',
+                linkSrc: 'https://youtu.be/45tkBBKOi2o',
             },
             {
-                linkText: 'mario game 12: goomba',
-                linkSrc: '',
+                linkText: 'mario game 12: goomba 1',
+                linkSrc: 'https://youtu.be/IODifDMBgUQ',
             },
             {
-                linkText: 'mario game 13: coin collisions',
-                linkSrc: '',
+                linkText: 'mario game 13: goomba collisions',
+                linkSrc: 'https://youtu.be/2JpxgyoOI_I',
             },
             {
-                linkText: 'mario game 14: goomba collisions = game over',
-                linkSrc: '',
+                linkText: 'mario game 14: game over - last steps',
+                linkSrc: 'https://youtu.be/ieVixlQGzDY',
             },
         ],  
 

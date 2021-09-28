@@ -123,7 +123,30 @@ export const selectCurrentWorks = state => {
 }
 // want to return recently posted works here
 export const selectRecentWorks = state => {
-   return false
+    const aWeekAgo = new Date().getTime() - 604800000
+ 
+   const recentWorks = selectWorks(state).filter(item => item.timestamp > aWeekAgo)
+//    console.log(recentWorks)
+
+    // const recentWorksByAssignment = recentWorks.reduce((acc, cur) => {
+    //     return 
+    // },[])
+
+    // function groupBy(arr, property) {
+    //     return arr.reduce(function(memo, x) {
+    //       if (!memo[x[property]]) { memo[x[property]] = []; }
+    //       memo[x[property]].push(x);
+    //       return memo;
+    //     }, {});
+    //   }
+      
+    //   var o = groupBy(arr, 'type'); // => {orange:[...], banana:[...]}
+    //   o.orange; // => [{"type":"orange","title":"First"},{"type":"orange","title":"Second"}]
+    //   o.banana; // => [{"type":"banana","title":"Third"},{"type":"banana","title":"Fourth"}]
+      
+
+
+   return recentWorks
 }
 
 
