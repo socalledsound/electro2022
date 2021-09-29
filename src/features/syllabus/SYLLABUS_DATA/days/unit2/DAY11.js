@@ -41,8 +41,14 @@ const DAY11 = {
         }
         ],
         techLinks: [
-           
-            
+           {
+               linkText: `I took Tucker's noisy raindrops and turned them into a small heart system game`,
+               linkSrc: 'https://github.com/socalledsound/tucker-thing'
+           },
+           {
+               linkText: 'heart system live site',
+               linkSrc: 'https://socalledsound.github.io/tucker-thing/',
+           },
             {
                 linkText:'keycode is deprecated, generally use key instead',
                 linkSrc: 'https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice',
