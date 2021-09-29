@@ -193,7 +193,7 @@ const DAY13 = {
                 
             },
             {
-                linkText:"tilesheet repo from today's class",
+                linkText:"tilesheet repo in multiple branches with an accompanying text tutorial if interested in tilesheet landscape for your game",
                 linkSrc:"https://github.com/socalledsound/SE-unit2-day14-spritescape/tree/master"
             }
         ], 
