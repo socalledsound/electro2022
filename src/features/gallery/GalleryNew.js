@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, startFetchWorks } from './gallerySlice'
 import { selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
-import GalleryRow from './GalleryRow'
+// import GalleryRow from './GalleryRow'
 import GalleryRowRecent from './GalleryRowRecent'
 // import { galleryCategories } from './GALLERY_CATEGORIES'
 import styles from './Gallery.module.css'
@@ -40,7 +40,7 @@ const GalleryNew = ({history}) => {
                     featuredWorks.length > 0 && 
                     <div className={styles.galleryRowWrapper}>
                          <h5 className={styles.galleryHeading2}>you're all making cool stuff but, don't miss these ::  </h5>
-                        <GalleryRow category={'featured'} works={featuredWorks}/>
+                        <GalleryRowRecent category={'featured'} works={featuredWorks}/>
                     </div>
                 }
 
