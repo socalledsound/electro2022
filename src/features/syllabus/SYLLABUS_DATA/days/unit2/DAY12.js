@@ -19,6 +19,10 @@ const DAY12 = {
     ],
     inspirationLinks: [   
         {
+            linkText: '"the music of our times" (a thing I made this weekend thinking about this stuff)',
+            linkSrc: 'https://socalledsound.github.io/music-of-our-times/',
+        },
+        {
             linkText: 'Handvaaska, by Ramsey Nasser and Jane Friedhoff',
             linkSrc: 'https://nas.sr/handv%C3%A4ska/',
         },
@@ -65,6 +69,10 @@ const DAY12 = {
                 linkText: 'collision detection book (processing)',
                 linkSrc: 'http://www.jeffreythompson.org/collision-detection/table_of_contents.php',
             },
+            {
+                linkText:'nice but complicated collision example from p5 reference',
+                linkSrc:'https://p5js.org/examples/motion-circle-collision.html',
+            },  
             
             {
                 linkText:'keycode is deprecated, generally use key instead',
