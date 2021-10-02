@@ -195,7 +195,23 @@ const DAY13 = {
             {
                 linkText:"tilesheet repo in multiple branches with an accompanying text tutorial if interested in tilesheet landscape for your game",
                 linkSrc:"https://github.com/socalledsound/SE-unit2-day14-spritescape/tree/master"
+            },
+            {
+                linkText: 'p5 oscillator sketch inspired by Steve Reich',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/SkjKp2Udm',
+            },
+            {
+                linkText: 'bubble herd',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/S1mjGCLOQ',
+            },
+            {
+                linkText: 'a pendulum in p5',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/zJ3nVmVRA'
             }
+            {
+                linkText: 'color pendulums',
+                linkSrc: '',
+            },
         ], 
         videos: [
 

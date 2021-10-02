@@ -23,6 +23,10 @@ const DAY12 = {
             linkSrc: 'https://socalledsound.github.io/music-of-our-times/',
         },
         {
+            linkText: 'the original ball sketch from unit 2 day 1 but, reproducible....',
+            linkSrc: 'https://github.com/socalledsound/ball-system',
+        },
+        {
             linkText: 'Handvaaska, by Ramsey Nasser and Jane Friedhoff',
             linkSrc: 'https://nas.sr/handv%C3%A4ska/',
         },
