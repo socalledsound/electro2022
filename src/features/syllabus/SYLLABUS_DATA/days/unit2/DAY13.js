@@ -215,14 +215,14 @@ const DAY13 = {
         ], 
         videos: [
             {
-                linkText: 'what the heck is a vector and how do we use it in p5?',
+                linkText: 'no videos today!  i did it as a text file instead, click the assignment button to read it.  let me know what you prefere!',
                 linkSrc: '',
             },
 
-            {
-                linkText: 'make a pendulum in p5',
-                linkSrc: '',
-            },
+            // {
+            //     linkText: 'make a pendulum in p5',
+            //     linkSrc: '',
+            // },
 
         ],    
 }
