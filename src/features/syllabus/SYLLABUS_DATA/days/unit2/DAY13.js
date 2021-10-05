@@ -207,13 +207,17 @@ const DAY13 = {
             {
                 linkText: 'a pendulum in p5',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/zJ3nVmVRA'
-            }
+            },
             {
-                linkText: 'color pendulums',
-                linkSrc: '',
+                linkText: 'color pendulums, also inspired by Steve Reich',
+                linkSrc: 'https://github.com/socalledsound/pendulum-colors',
             },
         ], 
         videos: [
+            {
+                linkText: 'what the heck is a vector and how do we use it in p5?',
+                linkSrc: '',
+            },
 
             {
                 linkText: 'make a pendulum in p5',
