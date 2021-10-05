@@ -114,10 +114,14 @@ const DAY12 = {
                 linkText: 'super stupid landscape game',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
             },
+            // {
+            //     linkText: "soundlands, a badlands clone I've been working on",
+            //     linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',
+            // },
             {
-                linkText: "soundlands, a badlands clone I've been working on",
-                linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',
-            },
+                linkText: 'happy wanderer code from class',
+                linkSrc: 'https://github.com/socalledsound/happy-wanderer',
+            }
 
         ], 
         videos: [
