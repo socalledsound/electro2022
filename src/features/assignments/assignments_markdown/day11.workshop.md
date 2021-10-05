@@ -1,10 +1,10 @@
-# game on!2
+# game on!
 
-<!-- For today's assignment submission, please share your game up to this point! Hopefully you've got a character and some interactions happening!
+For today's assignment submission, please share your game up to this point! Hopefully you've got a character and some interactions happening!
 
 And in today's videos, I'm going to keep going with my Mario game and introduce, first, some bad guys, and then talk demonstrate detecting collisions.
 
-Keep working over the weekend! Don't be afraid to reach out if you need some help. See you next week. -->
+Keep working over the weekend! Don't be afraid to reach out if you need some help. See you next week.
 
 <!--
 # enemy mine
