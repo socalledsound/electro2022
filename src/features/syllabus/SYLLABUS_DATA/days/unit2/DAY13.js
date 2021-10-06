@@ -161,12 +161,32 @@ const DAY13 = {
 
         ],
         techLinks: [
+            {
+                linkText: 'a super simple game with no classes!',
+                linkSrc: 'https://github.com/socalledsound/game-no-classes-1'
+            },
+            {
+                linkText: 'that same simple game with no classes but now with some draw functions!',
+                linkSrc: 'https://github.com/socalledsound/game-no-classes-2'
+            },
 
-
+            {
+                linkText: 'that same simple game with some images for the characters!',
+                linkSrc: 'https://github.com/socalledsound/game-no-classes-3'
+            },
+            {
+                linkText: 'and one last time, with a scoreboard!',
+                linkSrc: 'https://github.com/socalledsound/game-no-classes-4'
+            },
+            {
+                linkText: 'and finally, still no classes, but a little more complicated and a little more gamey....',
+                linkSrc: 'https://github.com/socalledsound/game-no-classes-5'
+            },
             {
                 linkText: 'make an infinitely scrolling background for your game',
                 linkSrc: 'https://www.geeksforgeeks.org/html5-game-development-infinitely-scrolling-background/',
             },
+            
             {
                 linkText: 'parallax scrolling',
                 linkSrc: 'https://gamedevelopment.tutsplus.com/tutorials/parallax-scrolling-a-simple-effective-way-to-add-depth-to-a-2d-game--cms-21510',
