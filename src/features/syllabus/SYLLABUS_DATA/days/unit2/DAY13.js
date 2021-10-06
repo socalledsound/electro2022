@@ -232,6 +232,14 @@ const DAY13 = {
                 linkText: 'color pendulums, also inspired by Steve Reich',
                 linkSrc: 'https://github.com/socalledsound/pendulum-colors',
             },
+            {
+                linkText: `blake's really nice game`,
+                linkSrc: 'https://github.com/MrGenius55/bench-game-2',
+            },
+            {
+                linkText: 'my rewrite using a very small class',
+                linkSrc: 'https://github.com/socalledsound/blake-bench-game'
+            }
         ], 
         videos: [
             {
