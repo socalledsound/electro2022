@@ -235,15 +235,22 @@ const DAY13 = {
         ], 
         videos: [
             {
-                linkText: 'no videos today!  i did it as a text file instead, click the assignment button to read it.  let me know what you prefere!',
+                linkText: `ALERT!  if you've been happily working your way through the mario videos, click the assignment link for a text tutorial.  if you've been struggling with those mario videos...try the more basic mario game videos below!`,
                 linkSrc: '',
             },
 
-            // {
-            //     linkText: 'make a pendulum in p5',
-            //     linkSrc: '',
-            // },
-
+            {
+                linkText: `an even simpler mario game!  in three parts.  part 1, let's call this the green square slope, just your basic p5 game`,
+                linkSrc: 'https://youtu.be/1IJcFoWWk_Y',
+            },
+            {
+                linkText: `now, let's add some images, we'll call this the red dot slope...`,
+                linkSrc: 'https://youtu.be/4khPuL1O61c',
+            },
+            {
+                linkText: `and finally that same game, but a little tricker, let's call this the baby diamond slope`,
+                linkSrc: 'https://youtu.be/VHcpYE0d3rw',
+            },
         ],    
 }
 
