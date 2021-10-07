@@ -239,6 +239,10 @@ const DAY13 = {
             {
                 linkText: 'my rewrite using a very small class',
                 linkSrc: 'https://github.com/socalledsound/blake-bench-game'
+            },
+            {
+                linkText: `shayne's nifty spiderman idea`,
+                linkSrc: 'https://github.com/socalledsound/shayne-spidey'
             }
         ], 
         videos: [

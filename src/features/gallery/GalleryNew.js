@@ -1,8 +1,8 @@
 import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, startFetchWorks } from './gallerySlice'
-import { selectLoginLoading } from '../user/userSlice'
+import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, selectUncommentedWorks, startFetchWorks } from './gallerySlice'
+import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 // import GalleryRow from './GalleryRow'
 import GalleryRowRecent from './GalleryRowRecent'
@@ -26,6 +26,10 @@ const GalleryNew = ({history}) => {
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }
     const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
+    console.log(recentWorks)
+    const currentUser = useSelector(selectCurrentUser)
+    const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
+
     console.log(featuredWorks)
     return ( 
         <div>
@@ -61,12 +65,19 @@ const GalleryNew = ({history}) => {
                     </div>
                 
 
-{
+                {
                     recentWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                          <h5 className={styles.galleryHeading2}>other works submitted in the last week: </h5>
                         <GalleryRowRecent category={'submitted recently'} works={recentWorks} recent={true}/>
                     </div>
+                }
+                {
+                    unCommentedWorks.length > 0 && currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2' &&
+                    <div className={styles.galleryRowRecentWrapper}>
+                    <h5 className={styles.galleryHeading2}>hin Chris, make comments on these please: </h5>
+                   <GalleryRowRecent category={'submitted recently'} works={unCommentedWorks} recent={true}/>
+               </div>
                 }
     
 

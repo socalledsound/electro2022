@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { selectCurrentDay } from '../syllabus/syllabusSlice'
 import { selectAssignment } from '../assignments/assignmentSlice'
 import galleryCategories from './GALLERY_CATEGORIES'
+import { selectUserCritMessages } from '../critMessages/critMessagesSlice'
 // import { tempWork1, tempWork2, tempWork3, tempWork4,tempWork5, tempWork6,tempWork7, tempWork8, tempWork9, tempWork10 } from './TEMP_WORKS'
 
 console.log(galleryCategories)
@@ -139,14 +140,19 @@ export const selectCurrentGalleryAssignment = state => {
 // want to return recently posted works here
 export const selectRecentWorks = state => {
     const aWeekAgo = new Date().getTime() - 604800000
- 
+    const aWeekAgoDate = new Date(aWeekAgo)
+    console.log(aWeekAgoDate)
+    // let works = []
    const recentWorks = selectWorks(state).filter(item => item.timestamp > aWeekAgo)
 //    console.log(recentWorks)
+//    works.concat(recentWorks)
+//    console.log(works, recentWorks)
 
     // const recentWorksByAssignment = recentWorks.reduce((acc, cur) => {
     //     return 
     // },[])
 
+    // one of these down below will be great for sorting them into categories
     // function groupBy(arr, property) {
     //     return arr.reduce(function(memo, x) {
     //       if (!memo[x[property]]) { memo[x[property]] = []; }
@@ -159,9 +165,18 @@ export const selectRecentWorks = state => {
     //   o.orange; // => [{"type":"orange","title":"First"},{"type":"orange","title":"Second"}]
     //   o.banana; // => [{"type":"banana","title":"Third"},{"type":"banana","title":"Fourth"}]
       
-
-
    return recentWorks
+}
+
+
+export   const selectUncommentedWorks = currentUser => state => {
+    const recentWorks = selectRecentWorks(state)
+    const myComments = selectUserCritMessages(currentUser)
+    // const uncommentWorks = myComments.reduce((acc, cur) => {
+    //     if(cur.)
+    // }, [])
+    console.log(recentWorks, myComments)
+    return []
 }
 
 

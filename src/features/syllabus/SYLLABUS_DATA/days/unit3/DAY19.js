@@ -3,7 +3,7 @@ const DAY19 = {
     async: true,
     unit: 'unit4',
     date: 'October 28, 2021',
-    title: 'camera input',
+    title: 'camera',
     assignment: 'selfies',
     description: `
     Today we'll learn how to use a camera to take data in to the web browser.  We'll also learn how to maipulate that data at the pixel level.  

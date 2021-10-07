@@ -111,11 +111,14 @@ export const UNIT2 = {
 
 export const UNIT3 = {
     id: 103,
-    title: 'unit 3 : net.work',
+    title: 'unit 3 : sensing',
     unit: 'unit3',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     overview: `
-    
+        In this unit we are going to take some of the things that we learned in unit 2 and apply them to the realm of user input.
+       Where before we were able to take in some input from a button, and output it to an led to tell us what the value of that input was;
+       now we will take in streams of data and similarly output streams of data.  We've moved from singular inputs and outputs and into the
+       realm of SYSTEMS.  I know it probably doesn't sound like that much fun, but it is!   
     `,
     project: PROJECT3,
     days: [DAY16, DAY17, DAY18, DAY19, DAY20, DAY21]

@@ -89,7 +89,7 @@ export const critMessagesSlice = createSlice({
     }
 })
 
-export const selectUserCritMessages = state => user => {
+export const selectUserCritMessages = user => state => {
     if(user !== null){
         return state.critMessages.messages.filter(msg => msg.user === user.id)
     } else {

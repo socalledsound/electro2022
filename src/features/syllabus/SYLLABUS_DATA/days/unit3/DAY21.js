@@ -1,33 +1,37 @@
 const DAY21 = {
     id: 21,
-    async: true,
+    async: false,
     unit: 'unit3',
     date: 'November 4, 2021',
-    title: 'analyzing audio',
-    assignment : 'visualization',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1598399217/side-effects/side-effect_jfkc1s.jpg',
-    description: `
-    
-    `,
-    videos: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+    title: 'sensing crit',
+    assignment: 'poroject3',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
+    description: "let's see what you've made!",
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+        ``,
     ],
-    inspirationLinks: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-    ],
-    techLinks: [
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-    ],
+    // videos: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
+    // inspirationLinks: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
+    // techLinks: [
+    //     {
+    //         linkText: '',
+    //         linkSrc: '',
+    //     },
+    // ],
+
 
 }
-   
 export default DAY21

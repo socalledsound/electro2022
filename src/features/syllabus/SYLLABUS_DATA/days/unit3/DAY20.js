@@ -1,23 +1,19 @@
 const DAY20 = {
     id: 20,
-    async: false,
+    async: true,
     unit: 'unit4',
     date: 'November 2, 2021',
-    title: 'motion',
-    assignment: 'process',
-    // description: `
-    // Today we'll create a cloud-based database and learn how to upload images to it.  
-    // We'll also learn how to watch that database for changes, in our case, images.  
-    // We're going to buid an online gallery that people can drag and drop images to.  
-    // The images will be stored in perpetuity on our firebase database, and our gallery 
-    // will dsiplay all of the images hosted there.
-    // `,
+    title: 'sockets',
+    assignment: 'sockets',
     description: `
-    Today we'll look at various kinds of motion sensors, including cameras that use various methods to read the 'depth' of their surroundings.
-    To the right you can see one possible output of this kind of camera.
+    Hold onto your hats.  Today we are going to learn how to connect one browser to another browser, using a technology called web sockets.  
+    These let us do things like have real time chats, or play mutliplayer games.  I'll also introduce you to a key pillar of the javascript world, 
+    node, and the node package manager, and we'll use it to quickly and easily build our own web server.
+    Why do we care about this? I mean, really?  A) your whole life runs like this.  Your bank and your government and all your bases run off of web servers.
+    and B) we can use web servers to serve interactive p5 sketches on our raspberry pies, which is kinda nifty! 
     `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632431430/side-effects/pointcloud_0_myssvc.gif',
-   
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',
+  
     videos: [
         {
             linkText: '',
@@ -26,62 +22,88 @@ const DAY20 = {
     ],
     inspirationLinks: [
 
-        // {
-        //     linkText: 'raiders of the lost web',
-        //     linkSrc: 'https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/',
-        // },
-        // {
-        //     linkText: "why there's so little left of the early internet",
-        //     linkSrc: 'https://www.bbc.com/future/article/20190401-why-theres-so-little-left-of-the-early-internet',
-        // },
-        // {
-        //     linkText: 'the wayback machine at archive.org',
-        //     linkSrc: 'https://archive.org/',
-        // },
-        // {
-        //     linkText: 'this website will self-destruct',
-        //     linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
-        // },
-        // {
-        //     linkText: 'my image gallery app, working',
-        //     linkSrc: 'https://new-image-gallery.web.app/',
-        // },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'hvbrd game',
+            linkSrc: 'https://github.com/charliegerard/hvbrd-sockets',
+        },
+        {
+            linkText:"a multiplayer simon game I made with sockets",
+            linkSrc:"https://github.com/socalledsound/mmm-simon-heroku"
+        },
+        {
+            linkText: 'my version of the multiplayer tetris game (tutorial below)',
+            linkSrc: 'https://tetris-clone-6000.herokuapp.com/#n4agum',
+        },
+        {
+            linkText: 'a little multiplayer sound instrument',
+            linkSrc: 'https://sound-circles.herokuapp.com/',
         },
         {
             linkText: '',
             linkSrc: '',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+
     ],
     techLinks: [
-  
-        // {
-        //     linkText: 'how to make a drag and drop file uploader with vanilla js',
-        //     linkSrc: 'https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/',
-        // },
-        // {
-        //     linkText: 'firebase (you need an account, use your berkeley email so you get yourt free credits)',
-        //     linkSrc: 'https://firebase.google.com/',
-        // },
-        // {
-        //     linkText: 'install firebase command line tools',
-        //     linkSrc: 'https://firebase.google.com/docs/cli',
-        // },
+        {
+            linkText: 'download node',
+            linkSrc: 'https://nodejs.org/en/download/',
+        },
 
-        // {
-        //     linkText: 'firebase',
-        //     linkSrc: 'https://firebase.google.com/',
-        // },
-        // {
-        //     linkText: 'FileReader object api',
-        //     linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/API/FileReader',
-        // },
-        // {
-        //     linkText: 'get started with firebase hosting',
-        //     linkSrc: 'https://firebase.google.com/docs/hosting/quickstart',
-        // },
+        {
+            linkText: 'Getting started with Node and VS code',
+            linkSrc: 'https://code.visualstudio.com/docs/nodejs/nodejs-tutorial',
+        },
+        {
+            linkText: 'the node package manager',
+            linkSrc: 'https://www.npmjs.com/',
+        },
+        {
+            linkText: 'a nice intro to node and p5.js',
+            linkSrc: 'https://creative-coding.decontextualize.com/node/',
+        },    
+        {
+            linkText: 'what are web sockets?',
+            linkSrc: 'https://pusher.com/websockets',
+        },
+
+        {
+            linkText:"make agar.io with DS",
+            linkSrc:"https://www.youtube.com/watch?v=JXuxYMGe4KI&vl=en"
+        },
+        {
+            linkText: 'making an interactive skateboarding game using web sockets',
+            linkSrc: 'https://medium.com/@devdevcharlie/hvbrd-c6266ee31461',
+        },
+        {
+            linkText: 'great multiplayer tetris game tutorial (in 3 parts)(uses websockets but not socket.io)',
+            linkSrc: 'https://www.youtube.com/watch?list=PLS8HfBXv9ZWW49tOAbvxmKy17gpsqWXaX&v=H2aW5V46khA',
+        },
+        {
+            linkText: 'nice tutorial on making a smartphone controlled game',
+            linkSrc: 'https://css-tricks.com/how-to-make-a-smartphone-controlled-3d-web-game/',
+        },
+        {
+            linkText: 'https://github.com/socalledsound/simple-sound-circle-game',
+            linkSrc: 'simple sound circle game repo',
+        },
+        {
+            linkText: 'multiplayer sound circle game repo',
+            linkSrc: 'https://github.com/socalledsound/sound-circle-server',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
     ],
 
 }
