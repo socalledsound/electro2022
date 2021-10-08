@@ -21,16 +21,16 @@ const DAY14 = {
     videos: [
         {
             linkText: 'handling input from your CPE: buttons => keyboard',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/FOZO5N4sJcs',
         },
         {
             linkText: 'working with the accelerometer on the CPE',
-            linkSrc: '',
+            linkSrc: 'https://youtu.be/GyTN5BzdS-0',
         },
-        {
-            linkText: 'working with the microphone on the CPE',
-            linkSrc: '',
-        },
+        // {
+        //     linkText: 'working with the microphone on the CPE',
+        //     linkSrc: '',
+        // },
 
     ],
     inspirationLinks: [
@@ -61,16 +61,34 @@ const DAY14 = {
         {
             linkText: 'custom controllers for make code arcade',
             linkSrc: 'https://learn.adafruit.com/custom-controllers-for-makecode-arcade?view=all'
-        }
+        },
+                {
+            linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
+            linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
+        },
+        {
+            linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
+            linkSrc: 'https://makecode.adafruit.com/#editor',
+        },
     ],
+
+    
     techLinks: [
         {
             linkText: 'turn your CPE into an HID device',
             linkSrc: 'https://www.youtube.com/watch?v=w8uepWkAZZs',
         },
         {
+            linkText: 'use the CPE to type A or D',
+            linkSrc: 'https://makecode.com/_6wmEuJb9Xeka',   
+        },
+        {
             linkText: 'Circuit playground express: accelerometer',
-            linkSrc: 'https://learn.adafruit.com/circuit-playground-lesson-number-0/accelerometer',
+            linkSrc: 'https://learn.adafruit.com/make-it-shake-rattle-and-roll?view=all',
+        },
+        {
+            linkText: 'basic shake code for CPE',
+            linkSrc: 'https://makecode.com/_LF2cpq2jcVzr',
         },
         {
             linkText: 'circuit playground express: sound sensor',
