@@ -10,7 +10,7 @@ import Loading from '../../components/Loading/Loading'
 import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
 import SignInPage from '../../features/user/SignInPage/SignInPage'
-import Poll from '../../features/poll/Poll'
+// import Poll from '../../features/poll/Poll'
 
 import styles from './HomePage.module.css'
 
@@ -24,7 +24,7 @@ const HomePage = () => {
     const currentDay = useSelector(selectCurrentDay)
     // console.log(currentUser, currentDay)
 
-    const poll = true
+    // const poll = true
 
     useEffect(() => {
         dispatch(startFetchUserWorks(currentUser))
@@ -44,10 +44,10 @@ const HomePage = () => {
                     <Loading />
                     :
                     <Fragment>
-                        {
+                        {/* {
                             poll &&
                             <Poll />
-                        }
+                        } */}
                         {
                             currentUser &&
                             <UserWarnings currentUser={currentUser}/>                                
