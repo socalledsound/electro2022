@@ -27,10 +27,14 @@ const DAY14 = {
             linkText: 'working with the accelerometer on the CPE',
             linkSrc: 'https://youtu.be/GyTN5BzdS-0',
         },
-        // {
-        //     linkText: 'working with the microphone on the CPE',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'handling some common image loading problems',
+            linkSrc: 'https://youtu.be/l0gNeNaECxs',
+        },
+        {
+            linkText: 'a very simple image clicking game!',
+            linkSrc: 'https://youtu.be/lAWNDNddAzg',
+        },
 
     ],
     inspirationLinks: [

@@ -2,15 +2,11 @@ const DAY16 = {
     id: 16,
     unit: 'unit3',
     date: 'October 19, 2021',
-    title: 'neopixels',
-    assignment: 'neopixels',
+    title: 'sound is motion',
+    assignment: 'pendulum',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
     description: `
-        Today we're going to return to LEDs, but we're going to apply what we've been learning.
-        We'll learn about addressing our neopixels, and some interesting ways to use them in lieu of a monitor. 
-        I'm also going to demonstrate some of the neat things that are possible with a raspberry pi.
-        Maybe you bought one, maybe you will after today.  Or maybe it's just a nice thing to know about.
-       
+        this will be the accelerometer and steve reich
     `,
     videos: [
         {
@@ -40,8 +36,8 @@ const DAY16 = {
     ],
     inspirationLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'neopixel strip',
+            linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
         },
         {
             linkText: '',

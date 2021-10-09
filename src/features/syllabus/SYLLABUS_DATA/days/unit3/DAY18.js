@@ -1,52 +1,61 @@
 const DAY18 = {
     id: 18,
     unit: 'unit3',
-    date: 'October 26, 2021', 
-    title: 'motion',
-    assignment: 'process',
-    // description: `
-    // Today we'll create a cloud-based database and learn how to upload images to it.  
-    // We'll also learn how to watch that database for changes, in our case, images.  
-    // We're going to buid an online gallery that people can drag and drop images to.  
-    // The images will be stored in perpetuity on our firebase database, and our gallery 
-    // will dsiplay all of the images hosted there.
-    // `,
+    date: 'October 26, 2021',
+    title: 'neopixels',
+    assignment: 'neopixels',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
     description: `
-    Today we'll look at various kinds of motion sensors, including cameras that use various methods to read the 'depth' of their surroundings.
-    To the right you can see one possible output of this kind of camera.
-    We'll also return to Steve Reich's pendulum music, because we gave it short shrift before.
-    We'll talk about art as a process, and turn our CPEs into pendulums.
+        Today we're going to return to LEDs, but we're going to apply what we've been learning.
+        We'll learn about addressing our neopixels, and some interesting ways to use them in lieu of a monitor. 
+        I'm also going to demonstrate some of the neat things that are possible with a raspberry pi.
+        Maybe you bought one, maybe you will after today.  Or maybe it's just a nice thing to know about.
+       
     `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632431430/side-effects/pointcloud_0_myssvc.gif',
-   
     videos: [
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         {
             linkText: '',
             linkSrc: '',
         },
     ],
     inspirationLinks: [
+        {
+            linkText: 'neopixel strip',
+            linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'LED neopixel corset',
+            linkSrc: 'https://learn.adafruit.com/led-corset-with-circuit-playground-and-makecode',
+        },
 
-        // {
-        //     linkText: 'raiders of the lost web',
-        //     linkSrc: 'https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/',
-        // },
-        // {
-        //     linkText: "why there's so little left of the early internet",
-        //     linkSrc: 'https://www.bbc.com/future/article/20190401-why-theres-so-little-left-of-the-early-internet',
-        // },
-        // {
-        //     linkText: 'the wayback machine at archive.org',
-        //     linkSrc: 'https://archive.org/',
-        // },
-        // {
-        //     linkText: 'this website will self-destruct',
-        //     linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
-        // },
-        // {
-        //     linkText: 'my image gallery app, working',
-        //     linkSrc: 'https://new-image-gallery.web.app/',
-        // },
         {
             linkText: '',
             linkSrc: '',
@@ -55,37 +64,76 @@ const DAY18 = {
             linkText: '',
             linkSrc: '',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
     ],
     techLinks: [
-  
-        // {
-        //     linkText: 'how to make a drag and drop file uploader with vanilla js',
-        //     linkSrc: 'https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/',
-        // },
-        // {
-        //     linkText: 'firebase (you need an account, use your berkeley email so you get yourt free credits)',
-        //     linkSrc: 'https://firebase.google.com/',
-        // },
-        // {
-        //     linkText: 'install firebase command line tools',
-        //     linkSrc: 'https://firebase.google.com/docs/cli',
-        // },
+        {
+            linkText: 'neopixels with accelerometer',
+            linkSrc: 'https://makecode.com/_1PM81L8V7LPR',
+        },
+        {
+            linkText: 'neopixels with make code',
+            linkSrc: 'https://learn.adafruit.com/neopixels-with-makecode/overview',
+        },
+        {
+            linkText: 'how to drive neopixels with the CPE',
+            linkSrc: 'https://www.digikey.com/en/maker/blogs/2018/how-to-drive-neopixels-using-circuit-playground-express',
+        },
+        {
+            linkText: 'circuit python neopixel',
+            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-neopixel',
+        },
+        {
+            linkText: 'Adafruit NeoPixel LED Strip w/ Alligator Clips',
+            linkSrc: 'https://www.adafruit.com/product/3811',
+        },
 
-        // {
-        //     linkText: 'firebase',
-        //     linkSrc: 'https://firebase.google.com/',
-        // },
-        // {
-        //     linkText: 'FileReader object api',
-        //     linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/API/FileReader',
-        // },
-        // {
-        //     linkText: 'get started with firebase hosting',
-        //     linkSrc: 'https://firebase.google.com/docs/hosting/quickstart',
-        // },
+
+
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
     ],
-
-} 
-
-
+}
 export default DAY18
+
+
+  
+// title: 'G PI O',
+// assignment: 'gpio',
+// illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632428208/side-effects/gpio_asgkmt.png',
+// description: `
+// Today I'm going to demonstrate some of the neat things that are possible with a raspberry pi.
+// Maybe you bought one, maybe you will after today.  Or maybe it's just a nice thing to know about.
+// However which way you slice it, it's what we're going to be talking about for a few days!
+// `,
+// videos: [
+//     {
+//         linkText: '',
+//         linkSrc: '',
+//     },
+// ],
+// inspirationLinks: [
+//     {
+//         linkText: 'Clock Clock 24 on a Raspberry Pi using Web Technologies',
+//         linkSrc: 'https://manu.ninja/clock-clock-24-on-a-raspberry-pi-using-web-technologies/',
+//     },
+// ],
+// techLinks: [
+//     {
+//         linkText: 'Clock Clock 24 on a Raspberry Pi using Web Technologies',
+//         linkSrc: 'https://manu.ninja/clock-clock-24-on-a-raspberry-pi-using-web-technologies/',
+//     },
+// ],
+
+// }
