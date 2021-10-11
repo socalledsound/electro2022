@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useMemo } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCurrentUser, selectLoginLoading } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
@@ -10,9 +10,10 @@ import Loading from '../../components/Loading/Loading'
 import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
 import SignInPage from '../../features/user/SignInPage/SignInPage'
-// import Poll from '../../features/poll/Poll'
+import Poll from '../../features/poll/Poll'
 
 import styles from './HomePage.module.css'
+import { startSyncPollAnswers } from '../../features/poll/pollSlice'
 
 
 
@@ -23,12 +24,13 @@ const HomePage = () => {
     // const warning = useSelector(selectWarningStatus)
     const currentDay = useSelector(selectCurrentDay)
     // console.log(currentUser, currentDay)
-
-    // const poll = true
+    const memo = useMemo()
+    const poll = true
 
     useEffect(() => {
         dispatch(startFetchUserWorks(currentUser))
         dispatch(fetchUserCritMessagesStart(currentUser))
+        dispatch(startSyncPollAnswers())
     }, [currentUser, dispatch])
 
     return ( 
@@ -44,10 +46,10 @@ const HomePage = () => {
                     <Loading />
                     :
                     <Fragment>
-                        {/* {
+                        {
                             poll &&
                             <Poll />
-                        } */}
+                        }
                         {
                             currentUser &&
                             <UserWarnings currentUser={currentUser}/>                                

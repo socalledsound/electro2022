@@ -116,6 +116,19 @@ export const convertUsersSnapshotToMap = (users) => {
     return transformedUsers
 }
 
+export const convertPollAnswersSnapshotToMap = polls => {
+    const pollAnswers = polls.docs.map(doc => {
+        const { userId, pollId, answerId } = doc.data()
+        
+        return{
+            id: pollId,
+            userId: userId,
+            answerId: answerId, 
+        }
+    })
+    return pollAnswers
+}
+
 export const convertWorksSnapshotToMap = (works) => {
     
     const transformedArray = works.docs.map(doc => {

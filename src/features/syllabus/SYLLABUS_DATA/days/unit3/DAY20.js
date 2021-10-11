@@ -3,14 +3,10 @@ const DAY20 = {
     async: true,
     unit: 'unit4',
     date: 'November 2, 2021',
-    title: 'sockets',
-    assignment: 'not sockets',
+    title: 'location',
+    assignment: 'location',
     description: `
-    Hold onto your hats.  Today we are going to learn how to connect one browser to another browser, using a technology called web sockets.  
-    These let us do things like have real time chats, or play mutliplayer games.  I'll also introduce you to a key pillar of the javascript world, 
-    node, and the node package manager, and we'll use it to quickly and easily build our own web server.
-    Why do we care about this? I mean, really?  A) your whole life runs like this.  Your bank and your government and all your bases run off of web servers.
-    and B) we can use web servers to serve interactive p5 sketches on our raspberry pies, which is kinda nifty! 
+    today we'll look at various ways of getting and using location-based services 
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',
   

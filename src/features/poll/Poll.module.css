@@ -1,0 +1,35 @@
+.pollWrapper {
+  border-radius: 1.2rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.pollAnswersWrapper {
+  border: 3px solid rgb(96, 239, 83);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.pollFormWrapper {
+  border: 3px solid rgb(96, 239, 83);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pollQuestion {
+}
+
+input {
+  width: 4rem;
+  margin-top: 1.2rem;
+}
+
+button {
+  margin-top: 1.2rem;
+}

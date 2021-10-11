@@ -22,6 +22,7 @@ import assignmentReducer from '../features/assignments/assignmentSlice'
 import projectsReducer from '../features/projects/projectsSlice'
 import submitWorkReducer from '../features/submitWork/submitWorkSlice'
 import critMessagesReducer from '../features/critMessages/critMessagesSlice'
+import pollsReducer from '../features/poll/pollSlice'
 import logger from 'redux-logger'
 // import galleryCategories from '../features/gallery/GALLERY_CATEGORIES';
 const sagaMiddleware = createSagaMiddleware()
@@ -38,7 +39,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project', 'people']
+  blacklist:['syllabus','warnings', 'assignment', 'submitWork', 'project', 'people', 'polls']
 }
 
 
@@ -51,7 +52,8 @@ const reducer = combineReducers({
   assignment: assignmentReducer,
   submitWork: submitWorkReducer,
   critMessages: critMessagesReducer,
-  project: projectsReducer
+  project: projectsReducer,
+  polls: pollsReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, reducer)
