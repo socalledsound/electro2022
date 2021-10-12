@@ -5,6 +5,7 @@ import { selectCurrentUser } from '../user/userSlice'
 import PollForm from './PollForm'
 import PollAnswers from './PollAnswers'
 import styles from './Poll.module.css'
+import { selectAllPeople } from '../people/peopleSlice'
 
 // const pollItem = {
 //     id: 0,
@@ -30,8 +31,14 @@ const Poll = () => {
     const currentQuestion = useSelector(selectCurrentPollQuestion)
     const alreadySubmitted  = useSelector(selectSubmittedPollAnswer(currentUser))
     const pollAnswers = useSelector(selectPollAnswers)
-    
-
+    const students = useSelector(selectAllPeople)
+    const responses = pollAnswers.map(answer => ({
+        student: students.filter(student => student.id === answer.userId),
+        answer: currentQuestion.answers[answer.answerId]
+        })
+    )
+    console.log(responses)
+   
 
 
     return ( 
