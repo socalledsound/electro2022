@@ -23,6 +23,13 @@
 }
 
 .pollQuestion {
+  margin: 1.2rem;
+}
+
+.flexFormCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -30,6 +37,18 @@ input {
   margin-top: 1.2rem;
 }
 
-button {
+.pollButton {
   margin-top: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(2, 168, 16);
+  color: white;
+}
+
+.answer {
+  background-color: rgb(61, 224, 61);
+  height: 1.2rem;
+  display: inline-block;
+  width: 2rem;
 }

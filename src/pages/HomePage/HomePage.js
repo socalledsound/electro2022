@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useMemo } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCurrentUser, selectLoginLoading } from '../../features/user/userSlice'
 import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
@@ -24,7 +24,7 @@ const HomePage = () => {
     // const warning = useSelector(selectWarningStatus)
     const currentDay = useSelector(selectCurrentDay)
     // console.log(currentUser, currentDay)
-    const memo = useMemo()
+   
     const poll = true
 
     useEffect(() => {

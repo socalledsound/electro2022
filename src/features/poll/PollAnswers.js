@@ -2,8 +2,13 @@ import styles from './Poll.module.css'
 
 const PollAnswers = ({currentQuestion, pollAnswers}) => {
     const pollAnswersTotals = pollAnswers.reduce((acc, cur) => {
-        return 3
-    }, [])
+        const idx = cur.answerId
+        acc[idx] = acc[idx] + 1
+        return acc
+    }, [0,0,0])
+    console.log(pollAnswersTotals)
+    // const pollAnswersTotals = [10,5,5]
+    // console.log()
     return ( 
         <div class={styles.pollAnswersWrapper}>
             
@@ -21,9 +26,8 @@ const PollAnswers = ({currentQuestion, pollAnswers}) => {
                                             <p>{answer}</p>
                                             <div 
                                                 className={styles.answer}
-                                                style={{
-                                                    backgroundColor: 'red',
-                                                    width: pollAnswersTotals[idx] * 10
+                                                style={{           
+                                                    width: `${pollAnswersTotals[idx] > 0 ? pollAnswersTotals[idx] * 30 : 0}px`
                                                 }}
                                             ></div>
                                         </div>

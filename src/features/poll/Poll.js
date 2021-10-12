@@ -36,6 +36,7 @@ const Poll = () => {
 
     return ( 
         <div className={styles.pollWrapper}>
+           
             {
                 alreadySubmitted ? 
                 <PollAnswers currentQuestion={currentQuestion} pollAnswers={pollAnswers}/>

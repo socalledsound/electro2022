@@ -27,10 +27,12 @@ const PollForm = ({currentUser, currentQuestion}) => {
         {
             currentUser ?
             <div className={styles.pollFormWrapper}>
+                 a little poll for you
             <div className={styles.pollQuestion}>{currentQuestion.question}</div>
             
                 
                 <form>
+                   
                     {
                     currentQuestion.answers.map((answer, idx) => 
                                 <div key={idx}  className={styles.pollQuestionSelections}>
@@ -41,7 +43,9 @@ const PollForm = ({currentUser, currentQuestion}) => {
                                 </div>  
                                 
                     )}
-                    <button type='submit' onClick={handleSubmit}>submit</button>
+                     <div className={styles.flexFormCenter}>
+                    <button className={styles.pollButton} type='submit' onClick={handleSubmit}>submit</button>
+                    </div>
                 </form>
         
                       

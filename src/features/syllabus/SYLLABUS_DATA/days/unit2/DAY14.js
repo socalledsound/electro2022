@@ -74,6 +74,10 @@ const DAY14 = {
             linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
             linkSrc: 'https://makecode.adafruit.com/#editor',
         },
+        {
+            linkText: 'tic tac toe with no classes?',
+            linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
+        }
     ],
 
     
