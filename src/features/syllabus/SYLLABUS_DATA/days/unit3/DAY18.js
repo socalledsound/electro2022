@@ -14,7 +14,7 @@ const DAY18 = {
     `,
     videos: [
         {
-            linkText: '',
+            linkText: 'COMING SOON',
             linkSrc: '',
         },
         {

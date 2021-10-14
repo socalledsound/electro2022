@@ -12,6 +12,10 @@ const DAY19 = {
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1603987612/zombie_jts9s0.jpg',
     videos: [
         {
+            linkText: 'COMING SOON',
+            linkSrc: '',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

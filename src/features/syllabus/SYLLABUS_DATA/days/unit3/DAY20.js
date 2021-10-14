@@ -12,6 +12,10 @@ const DAY20 = {
   
     videos: [
         {
+            linkText: 'COMING SOON',
+            linkSrc: '',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

@@ -4,7 +4,7 @@ const DAY21 = {
     unit: 'unit3',
     date: 'November 4, 2021',
     title: 'sensing crit',
-    assignment: 'poroject3',
+    assignment: 'project3',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     description: "let's see what you've made!",
     discussionQuestions: [

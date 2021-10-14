@@ -15,5 +15,13 @@ export const POLLQUESTIONS = [
         `the mix is pretty good`,
         `a little more remote would be good`
     ]
+    },
+    {
+        id:1,
+        question: `should we shift to all classes in person with mandatory attendance?`,
+        answers: [
+            `yes`,
+            `no`,
+        ]
     }
 ]
