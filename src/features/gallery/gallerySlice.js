@@ -132,8 +132,8 @@ export const selectCurrentWorks = state => {
 export const selectCurrentGalleryAssignment = state => {
     const currentDay = selectCurrentDay(state)
     //console.log(currentDay.id)
-    const currentMinus1 = currentDay.id - 1
-    const assignment = selectAssignment(currentMinus1)(state)
+    // const currentMinus1 = currentDay.id - 1
+    const assignment = selectAssignment(currentDay.id)(state)
     return assignment
 }
 
