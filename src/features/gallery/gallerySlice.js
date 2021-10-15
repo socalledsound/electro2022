@@ -122,8 +122,8 @@ export const selectFeaturedWorks = state => {
 export const selectCurrentWorks = state => { 
     const currentDay = selectCurrentDay(state)
     //console.log(currentDay.id)
-    // const currentMinus1 = currentDay.id - 1
-    const assignment = selectAssignment(currentDay.id)(state)
+    const currentMinus1 = currentDay.id - 1
+    const assignment = selectAssignment(currentMinus1)(state)
     const currentWorks = selectWorks(state).filter(item => item.assignment === assignment.title)
     //console.log(currentWorks)
     return currentWorks
@@ -132,8 +132,8 @@ export const selectCurrentWorks = state => {
 export const selectCurrentGalleryAssignment = state => {
     const currentDay = selectCurrentDay(state)
     //console.log(currentDay.id)
-    // const currentMinus1 = currentDay.id - 1
-    const assignment = selectAssignment(currentDay.id)(state)
+    const currentMinus1 = currentDay.id - 1
+    const assignment = selectAssignment(currentMinus1)(state)
     return assignment
 }
 
