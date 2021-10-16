@@ -1,7 +1,8 @@
 import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, selectUncommentedWorks, startFetchWorks } from './gallerySlice'
+import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
+    selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
 import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 // import GalleryRow from './GalleryRow'
@@ -19,6 +20,10 @@ const GalleryNew = ({history}) => {
       dispatch(startFetchWorks())
   }, [dispatch])
 
+    const midtermWorks = useSelector(selectMidtermWorks)
+    console.log(midtermWorks)
+    const gpioWorks = useSelector( selectGPIOWorks)
+    console.log(gpioWorks)
     const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
     let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
@@ -71,6 +76,20 @@ const GalleryNew = ({history}) => {
                          <h5 className={styles.galleryHeading2}>other works submitted in the last week: </h5>
                         <GalleryRowRecent category={'submitted recently'} works={recentWorks} recent={true}/>
                     </div>
+                }
+                {
+                    midtermWorks.length > 0 && 
+                    <div className={styles.galleryRowRecentWrapper}>
+                    <h5 className={styles.galleryHeading2}>midterm projects: </h5>
+                   <GalleryRowRecent category={'submitted recently'} works={midtermWorks} recent={true}/>
+               </div>
+                }
+                                {
+                    gpioWorks.length > 0 && 
+                    <div className={styles.galleryRowRecentWrapper}>
+                    <h5 className={styles.galleryHeading2}>midterm projects: </h5>
+                   <GalleryRowRecent category={'submitted recently'} works={gpioWorks} recent={true}/>
+               </div>
                 }
                 {
                     unCommentedWorks.length > 0 && currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2' &&

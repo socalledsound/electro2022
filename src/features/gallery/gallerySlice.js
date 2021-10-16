@@ -118,6 +118,15 @@ export const selectFeaturedWorks = state => {
     return selectWorks(state).filter(item => item.featured)
 }
 
+export const selectMidtermWorks = state => {
+    return selectWorks(state).filter(item => item.assignment === 'MIDTERM')
+}
+
+export const selectGPIOWorks = state => {
+    return selectWorks(state).filter(item => item.assignment === 'pendulum')
+}
+
+
 //want to return the most recent assignment here
 export const selectCurrentWorks = state => { 
     const currentDay = selectCurrentDay(state)

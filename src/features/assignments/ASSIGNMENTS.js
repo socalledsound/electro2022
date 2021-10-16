@@ -102,14 +102,18 @@ export const ASSIGNMENT9 = {
 export const ASSIGNMENT10 = {
     id: 10,
     title : 'mario',
-    description : "",
+    description : `
+    
+    `,
     markdown: DAY10_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT11 = {
     id: 11,
     title : 'state',
-    description : '',
+    description :`
+    
+    `,
     markdown: DAY11_WORKSHOP_MD,
 }
 
@@ -117,7 +121,9 @@ export const ASSIGNMENT11 = {
 export const ASSIGNMENT12 = {
     id: 12,
     title : 'goombas',
-    description : '',
+    description : `
+    
+    `,
     markdown: DAY12_WORKSHOP_MD,
 }
 
@@ -125,7 +131,9 @@ export const ASSIGNMENT12 = {
 export const ASSIGNMENT13 = {
     id: 13,
     title : 'landscape',
-    description : '',
+    description : `
+    
+    `,
     markdown: DAY13_WORKSHOP_MD,
 }
 
@@ -141,14 +149,16 @@ export const ASSIGNMENT14 = {
 export const ASSIGNMENT15 = {
     id: 15,
     title : 'MIDTERM',
-    description :  '',
+    description :  `
+    `,
     markdown: DAY15_WORKSHOP_MD,
 }
 
 
 export const ASSIGNMENT16 = {
     id: 16,
-    title : 'gpio',
+    title : 'pendulum',
+    // was gpio
     description : '',
     markdown: DAY16_WORKSHOP_MD,
 }
@@ -156,7 +166,7 @@ export const ASSIGNMENT16 = {
 
 export const ASSIGNMENT17 = {
     id: 17,
-    title : 'sockets',
+    title : 'visualization',
     description : '',
     markdown: DAY17_WORKSHOP_MD,
 }
@@ -180,14 +190,14 @@ export const ASSIGNMENT19 = {
 
 export const ASSIGNMENT20 = {
     id: 20,
-    title : 'process',
+    title : 'location',
     description : '',
     markdown: DAY20_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT21 = {
     id: 21,
-    title : 'visualization',
+    title : 'project3',
     description : '',
     markdown: DAY21_WORKSHOP_MD,
 }
@@ -196,7 +206,11 @@ export const ASSIGNMENT21 = {
 export const ASSIGNMENT22 = {
     id: 22,
     title : 'webgl',
-    description : "Today we look at aframe, and how it helps us create immersive and augmented realities.  We can use most of the ideas we've already learned about using p5 and as a bonus, we can even write aframe code in p5 using a the aframp5 library.",
+    description : `
+    Today we look at aframe, and how it helps us create immersive and augmented realities.  
+    We can use most of the ideas we've already learned about using p5 and as a bonus, 
+    we can even write aframe code in p5 using a the aframep5 library.
+    `,
     markdown: DAY22_WORKSHOP_MD,
 }
 
@@ -204,7 +218,9 @@ export const ASSIGNMENT22 = {
 export const ASSIGNMENT23 = {
     id: 23,
     title : 'hiro',
-    description : "Today in workshop we'll learn how to build a web server, host it at heroku, and then connect multiple browsers to that server.  ",
+    description : `
+     
+    `,
     markdown: DAY23_WORKSHOP_MD,
 }
 
@@ -212,7 +228,9 @@ export const ASSIGNMENT23 = {
 export const ASSIGNMENT24 = {
     id: 24,
     title : 'matrix', 
-    description : '',
+    description : `
+    
+    `,
      markdown: DAY24_WORKSHOP_MD,
 }
 
@@ -220,14 +238,18 @@ export const ASSIGNMENT24 = {
 export const ASSIGNMENT25 = {
     id: 25,
     title : 'shade',
-    description: '',
+    description: `
+    
+    `,
     markdown: DAY25_WORKSHOP_MD,
 }
  
 export const ASSIGNMENT26 = {
     id: 26,
     title : 'ripples',
-    description : '',
+    description : `
+    
+    `,
     markdown: DAY26_WORKSHOP_MD,
 }
 
