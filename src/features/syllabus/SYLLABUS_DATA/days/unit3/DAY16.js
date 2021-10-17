@@ -60,6 +60,11 @@ const DAY16 = {
             linkText:"Steve Reich, Music For 18 Musicians",
             linkSrc:"https://www.youtube.com/watch?v=ZXJWO2FQ16c"
         },
+
+        {
+            linkText: 'steve reich : drumming',
+            linkSrc: 'https://www.youtube.com/watch?v=uDhwFTw4VnI',
+        },
         {
             linkText: 'steve reich - come out',
             linkSrc: 'https://www.youtube.com/watch?v=g0WVh1D0N50',
@@ -70,14 +75,10 @@ const DAY16 = {
         },
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'the pendulum seqeuncer',
+            linkSrc: 'https://www.musiconerd.com/the-pendulum-sequencer/',
         },
 
-        {
-            linkText: '',
-            linkSrc: '',
-        },
 
         {
             linkText: '',

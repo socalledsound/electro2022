@@ -91,12 +91,9 @@ const DAY18 = {
             linkText: 'Adafruit NeoPixel LED Strip w/ Alligator Clips',
             linkSrc: 'https://www.adafruit.com/product/3811',
         },
-
-
-
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'Pixel Mapping with cicuit python',
+            linkSrc: 'https://learn.adafruit.com/circuitpython-led-animations/pixel-mapping',
         },
         {
             linkText: '',
