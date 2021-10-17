@@ -70,7 +70,7 @@ const DAY17 = {
         {
             linkText: 'a trippy kick/snare analysis thing I made a few years ago',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/5Q5wh4RZj'
-        }
+        },
         {
             linkText: 'drawing a complex wave form',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/vUuH6dvCj',
