@@ -8,8 +8,8 @@ import styles from './UserCritMessages.module.css'
 
 const UserCritMessages = ({ user }) => {
 
-    const critMessages = useSelector(selectUserCritMessages)(user)
-    const numCritMessages = critMessages.length
+    const critMessages = useSelector(selectUserCritMessages(user))
+    const numCritMessages = critMessages.length || 0
     const assignmentsCompleted = 1
     const critsPerAssignment = (critMessages.length / assignmentsCompleted * 2)
     const critMessagePercent = critsPerAssignment/100*30
