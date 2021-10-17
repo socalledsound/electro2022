@@ -6,10 +6,10 @@ const DAY16 = {
     assignment: 'pendulum',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
     description: `
-        We're going to start our exploration of data visualization by visualizing motion.  We're going to take in readings from 
-        the built-in accelerometer on our CPE and bring those into p5, where we can do various things with them, like draw
-        pretty pictures, or make sounds.  We'll also discuss that favoritest of (very short!) artist writings of mine,
-        'music as a gradual process' by Steve Reich, so if you haven't read it yet, do it now!  Seriously.  
+        We're going to start our exploration of data visualization by visualizing motion.  We're going to discuss that 
+        favoritest of (very short!) artist writings of mine,
+        'music as a gradual process' by Steve Reich, so if you haven't read it yet, do it now!  Seriously!
+        We'll also learn how to make a pendulum simulation in p5.  
     `,
     reading: [
         {

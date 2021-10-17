@@ -315,21 +315,21 @@ Then, in draw, we use that to .analyze() the sound playing:
 and then we draw the spectrum:
 
 ```
-    for(let i = 0; i < spectrum.length; i++){
+    // loop over that data and draw a circle using the data
+    spectrum.forEach((item,idx) => {
       strokeWeight(5);
-      stroke(i, 0, 120);
-      fill(spectrum[i],200,200);
-      ellipse(i*10, height/2, 10, spectrum[i]);
-
-    }
+      stroke(idx, 0, 120);
+      fill(item,200,200);
+      ellipse(idx * 10, height/2, 10, item * 2)
+    })
 
 ```
 
-Each time through the draw loop, we riun through all 1024 values of the specturm that is pulled from the sound at each time through the draw loop. We set the fill color to be a shade of red that is deriverd from the value of the spectrum at each buffer, and set the size of each ellipse on y axis to be equal to the value of the spectrum at that buffer. Each buffer is a frequency range.
+Each time through the draw loop, we run through all 1024 values of the specturm that is pulled from the sound at each time through the draw loop. We set the fill color to be a shade of red that is deriverd from the value of the spectrum at each buffer, and set the size of each ellipse on y axis to be equal to the value of the spectrum at that buffer. Each buffer is a frequency range.
 
 And that's it for today!
 
-Or almost it for today. I'll leave you with one more link, in case you are interested in exploring speech in the browser, which is pretty well supported, even if it is a little bit less than precise. There's a library called [p5.speech](https://idmnyu.github.io/p5.js-speech/) that can help you access the [speech api](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). Robert used it in his [midterm](https://github.com/rf-hurley/express-yourself), ask him about it! Or follow up with me and I'll show you how to use it.
+Or almost it for today. I'll leave you with one more link, in case you are interested in exploring speech in the browser, which is pretty well supported, even if it is a little bit less than precise. There's a library called [p5.speech](https://idmnyu.github.io/p5.js-speech/) that can help you access the [speech api](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). Last year a student named Robert Hurley used it in his [midterm](https://github.com/rf-hurley/express-yourself), it's not that hard to implement! Follow up with me and I'll show you how to use it if you're interested.
 
 Please take some time to explore these ideas! Use the microphone or a sound to generate an interesting visual pattern. You can take my examples and tweak them a bit or you can come up with your own idea for deriving visual output from a sound!
 
