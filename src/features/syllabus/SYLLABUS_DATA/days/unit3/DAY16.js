@@ -11,19 +11,30 @@ const DAY16 = {
         pretty pictures, or make sounds.  We'll also discuss that favoritest of (very short!) artist writings of mine,
         'music as a gradual process' by Steve Reich, so if you haven't read it yet, do it now!  Seriously.  
     `,
+    reading: [
+        {
+            linkText:`Steve Reich: Music As A Gradual Process`,
+            linkSrc : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
+        },
+    ],
+    discussionQuestions: [
+        `What does this Steve Reich article have to do with art, anyway??  I thought it was about music`,
+        `What does this mean: 'Then, the composer isn't privy to anything'?`,
+        `How would you characterize this idea of 'music as a process' and how is it different from other types of music?`,
+    ],
     videos: [
         {
-            linkText: 'coming soon',
-            linkSrc: '',
+            linkText: 'pendulums 1 -- sinning',
+            linkSrc: 'https://youtu.be/P3yjUGc1M_s',
         },
         {
-            linkText: 'coming soon',
-            linkSrc: '',
+            linkText: 'pendulums 2 -- waveforms',
+            linkSrc: 'https://youtu.be/1J1MFk3htlk',
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'pendulums 3 -- pendulums, actually',
+            linkSrc: 'https://youtu.be/dD3-OpvQs28',
+        },
         // {
         //     linkText: '',
         //     linkSrc: '',
@@ -62,17 +73,72 @@ const DAY16 = {
             linkText: '',
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
         {
             linkText: '',
             linkSrc: '',
         },
 
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+
     ],
     techLinks: [
+
+        {
+            linkText: 'sinning circles',
+            linkSrc: 'https://github.com/socalledsound/sinning-circles',
+        },
+        {
+            linkText: 'noisy pendulums at github',
+            linkSrc: 'https://github.com/socalledsound/noisy-pendulums',
+        },
+        {
+            linkText: 'a pendulum in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/zJ3nVmVRA'
+        },
+        {
+            linkText: 'color pendulums, also inspired by Steve Reich',
+            linkSrc: 'https://github.com/socalledsound/pendulum-colors',
+        },
+        {
+            linkText: 'wavey oscillations',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/DDN5qjcrE',
+        },
+        {
+            linkText: 'a bird with osciallting waves that I made',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EYQmgTJuZ',
+        },
+        {
+            linkText: 'a little thing I made recently with fm synthesis',
+            linkSrc: 'https://github.com/socalledsound/music-of-our-times',
+        },
+        {
+            linkText: 'FM synthesis',
+            linkSrc: 'https://editor.p5js.org/p5/sketches/Sound:_FreqModulation',
+        },
+
+        {
+            linkText: 'p5 oscillator',
+            linkSrc: 'https://p5js.org/reference/#/p5.Oscillator',
+        },
+        {
+            linkText: 'P5 reverb',
+            linkSrc: 'https://p5js.org/reference/#/p5.Reverb',
+        },
+        {
+            linkText: 'harmonic oscillator',
+            linkSrc: 'https://editor.p5js.org/claesjohnson/sketches/oDs_BdFS',
+        },
+
         {
             linkText: 'my pendulum on codepen',
             linkSrc: 'https://codepen.io/Fleischut/pen/WNQYXVp',
