@@ -96,6 +96,14 @@ const DAY17 = {
             linkText:"no input mixer setup guide",
             linkSrc:"https://www.youtube.com/watch?v=Hv1VQL4zTKc"
         },
+        {
+            linkText: `draw shape: let's take another look at that heart system code from a few weeks ago`,
+            linkSrc: `https://github.com/socalledsound/tucker-thing`,
+        },
+        {
+            linkText: `draw shape: i guess that (now without classes!) heart beats now?  `,
+            linkSrc: `https://github.com/socalledsound/beating-heart`,
+        },
     ],
 
 }

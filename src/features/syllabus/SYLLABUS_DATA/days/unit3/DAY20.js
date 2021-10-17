@@ -3,10 +3,11 @@ const DAY20 = {
     async: true,
     unit: 'unit4',
     date: 'November 2, 2021',
-    title: 'location',
-    assignment: 'location',
+    title: 'mapping and translating',
+    assignment: 'translating',
     description: `
-    today we'll look at various ways of getting and using location-based services 
+    In preparation for working in three dimensions, today we're going to look at the transformation matrix.
+    It's a pretty nifty, super useful but also slightly confusing way to think about drawing things onto a canvas.
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',
   
