@@ -168,15 +168,9 @@ const DAY16 = {
             linkSrc:"https://editor.p5js.org/socalledsound/sketches/SkjKp2Udm"
         },
 
-
-
         {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'a little multilooper thing I got started the other day',
+            linkSrc: 'https://github.com/socalledsound/multi-looper',
         },
 
     ],

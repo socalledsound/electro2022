@@ -104,6 +104,11 @@ const DAY17 = {
             linkText: `draw shape: i guess that (now without classes!) heart beats now?  `,
             linkSrc: `https://github.com/socalledsound/beating-heart`,
         },
+
+        {
+            linkText: 'granular synthesis in p5',
+            linkSrc: 'https://github.com/socalledsound/p5-multi-grains',
+        },
     ],
 
 }
