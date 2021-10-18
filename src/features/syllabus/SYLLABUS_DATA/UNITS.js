@@ -129,7 +129,18 @@ export const UNIT4 = {
     title: 'unit 4 : three D',
     unit: 'unit4',
     illustrationURL: UNIT4LOGO,
-    overview: "into x dimensional spaces",
+    overview: `So far, we've been in flatland.  
+    We've dealt with, first, binary or ranged values, and the things
+    we can do with them, like trigger sound files; then, two
+    dimensional values, where we have x and y axes and shapes
+    like circles and squares.
+    In this unit, we go to planet Z, the third dimension, which let's 
+    us make shapes that have depth, or the illusion of depth.
+    This also lets us intereact with our world in...'deeper' ways.
+    IN this unit we'll explore 'expanded' realities, in other words,
+    augmented realy, virtual reality and all the other realities
+    that we can dream up.
+    `,
     project: FINAL_PROJECT,
     days: [DAY22, DAY23, DAY24, DAY25, DAY26]   
 }
