@@ -4,9 +4,10 @@ const DAY20 = {
     unit: 'unit4',
     date: 'November 2, 2021',
     title: 'mapping and translating',
-    assignment: 'translating',
+    assignment: 'mapping',
     description: `
-    In preparation for working in three dimensions, today we're going to look at the transformation matrix.
+    In preparation for working in three dimensions, today we're going to look at projection, in two different ways.
+    We'll start by looking at projection mapping.
     It's a pretty nifty, super useful but also slightly confusing way to think about drawing things onto a canvas.
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',

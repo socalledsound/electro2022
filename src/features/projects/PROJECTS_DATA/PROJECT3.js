@@ -2,7 +2,7 @@ import PROJECT3_MARKDOWN from './PROJECT3.md';
 
 export const PROJECT3 = {
     id: 3,
-    title: 'project 3: sockets',
+    title: 'project 3: data',
     teaser: '',
     markdown: PROJECT3_MARKDOWN,
     due: '11/03',

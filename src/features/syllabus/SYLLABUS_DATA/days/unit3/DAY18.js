@@ -2,15 +2,15 @@ const DAY18 = {
     id: 18,
     unit: 'unit3',
     date: 'October 26, 2021',
-    title: 'neopixels',
-    assignment: 'neopixels',
+    title: 'pixels and projection',
+    assignment: 'pixels',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
     description: `
-        Today we're going to return to LEDs, but we're going to apply what we've been learning.
-        We'll learn about addressing our neopixels, and some interesting ways to use them in lieu of a monitor. 
-        I'm also going to demonstrate some of the neat things that are possible with a raspberry pi.
-        Maybe you bought one, maybe you will after today.  Or maybe it's just a nice thing to know about.
-       
+        Today we're going to look at two different ways to output the nifty things we've been creating with data.
+        First, we'll return to where we started this course --  LED's -- but with several new and fun twists.
+        Then, we'll take look at projectors and some of the fun you can have with them, including something I really
+        enjoy: projection mappping, where you attempt to distort an image in fascinating ways by projecting it onto
+        real-life things rather than a screen.
     `,
     videos: [
         {

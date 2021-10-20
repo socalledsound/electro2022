@@ -3,7 +3,7 @@ const DAY21 = {
     async: false,
     unit: 'unit3',
     date: 'November 4, 2021',
-    title: 'sensing crit',
+    title: 'projection mapping',
     assignment: 'project3',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     description: "let's see what you've made!",
