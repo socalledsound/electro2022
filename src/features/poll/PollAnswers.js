@@ -5,7 +5,7 @@ const PollAnswers = ({currentQuestion, pollAnswers}) => {
         const idx = cur.answerId
         acc[idx] = acc[idx] + 1
         return acc
-    }, [0,6,0])
+    }, [0,0,0])
     console.log(pollAnswersTotals)
     // const pollAnswersTotals = [10,5,5]
     // console.log()
