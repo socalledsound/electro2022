@@ -4,7 +4,7 @@ import { POLLQUESTIONS } from './POLLQUESTIONS'
 const initialState = {
     pollQuestions: POLLQUESTIONS,
     pollAnswers: [],
-    currentPollQuestionIdx: 0,
+    currentPollQuestionIdx: 1,
 }
 
 export const pollSlice = createSlice({
@@ -49,6 +49,7 @@ export const selectPollAnswers = state => {
     }
     
 }
+
 
 export const selectSubmittedPollAnswer = currentUser => state => {
     const submittedAnswers = selectPollAnswers(state)

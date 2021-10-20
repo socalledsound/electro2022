@@ -18,10 +18,20 @@ export const POLLQUESTIONS = [
     },
     {
         id:1,
-        question: `should we shift to all classes in person with mandatory attendance?`,
+        question: 
+            `I find myself wondering if it would make more sense to NOT have an official project 3.
+            A) because people seem kind of stressed/behind this year;
+            B) because it would give you more time to focus on your final project and
+            C) because project 3 often feels a little rushed, squeezed in between the midterm and the final.
+            So I guess the question is, should we remove that weight?
+            The things you're learning now will almost surely be useful to you in your final 
+            project, but rather than have the weight of a 'project' and a 'crit', we can just 
+            do these as assignment submissions, provided that everyone commit to having a final project
+            proposal to submit in the gallery by November 4?
+            `,
         answers: [
-            `yes`,
-            `no`,
+            `yes! that sounds right to me!`,
+            `no!  I was really looking forward to that extra crit!`,
         ]
     }
 ]

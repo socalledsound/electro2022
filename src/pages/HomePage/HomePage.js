@@ -11,7 +11,6 @@ import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
 // import UserHomePage from '../../features/user/UserHomePage/UserHomePage'
 import SignInPage from '../../features/user/SignInPage/SignInPage'
 import Poll from '../../features/poll/Poll'
-
 import styles from './HomePage.module.css'
 import { startSyncPollAnswers } from '../../features/poll/pollSlice'
 
