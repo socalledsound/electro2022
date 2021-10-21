@@ -84,13 +84,13 @@ const GalleryNew = ({history}) => {
                    <GalleryRowRecent category={'submitted recently'} works={midtermWorks} recent={true}/>
                </div>
                 }
-                                {
+                                {/* {
                     gpioWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                     <h5 className={styles.galleryHeading2}>midterm projects: </h5>
                    <GalleryRowRecent category={'submitted recently'} works={gpioWorks} recent={true}/>
                </div>
-                }
+                } */}
                 {
                     unCommentedWorks.length > 0 && currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2' &&
                     <div className={styles.galleryRowRecentWrapper}>
