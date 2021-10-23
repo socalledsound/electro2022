@@ -32,10 +32,17 @@ const DAY19 = {
             linkSrc: '',
         },
         {
-            linkText: 'pixel sorting example',
+            linkText: 'pixel sorting is a neat thing you can do with the pixel array',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yapFC24FG',
         },
-
+        {
+            linkText: 'pixelate video example',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MHpS_is5i',
+        },
+        {
+            linkText: 'video particles',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/f3mHA8cO2',
+        },
         {
             linkText: '',
             linkSrc: '',
@@ -54,14 +61,7 @@ const DAY19 = {
             linkText: 'Daniel Shiffman; painting with pixels',
             linkSrc: 'https://www.youtube.com/watch?v=NbX3RnlAyGU&vl=en',
         },
-        {
-            linkText: 'pixelate video example',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MHpS_is5i',
-        },
-        {
-            linkText: 'video particles',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/f3mHA8cO2',
-        },
+  
         {
             linkText: 'clmtrackr',
             linkSrc: 'https://github.com/auduno/clmtrackr',

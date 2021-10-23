@@ -486,25 +486,26 @@ const RESOURCES = {
                 linkSrc: 'https://www.blender.org/',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'my favorite blender channel for beginners',
+                linkSrc: 'https://www.youtube.com/c/BornCG',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'another really good one',
+                linkSrc: 'https://www.youtube.com/c/CGCookieBlender',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'but this guy has the best accent of all the blender channels',
+                linkSrc: 'https://www.youtube.com/c/SardiPax',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'free blender models downloads',
+                linkSrc: 'https://free3d.com/3d-models/blender',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'blender python',
+                linkSrc: 'https://blenderscripting.blogspot.com/',
             },
+            
 
     ]
     },

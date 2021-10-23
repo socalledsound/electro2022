@@ -107,10 +107,7 @@ const DAY22 = {
             linkText: 'webGL stars no p5',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/_zWj2yPRT',
         },
-        {
-            linkText: 'webGL stars in p5',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/HDnzYOp4d',
-        },
+
 
         {
             linkText: 'creating a scene in three.js',
@@ -120,7 +117,10 @@ const DAY22 = {
             linkText: 'a basic scene in aframe',
             linkSrc: 'https://aframe.io/docs/1.0.0/guides/building-a-basic-scene.html',
         },
-
+        {
+            linkText: 'webGL stars in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/HDnzYOp4d',
+        },
         {
             linkText: 'coding train series of videos on webGL',
             linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&list=PLRqwX-V7Uu6bPhi8sS1hHJ77n3zRO9FR_',
@@ -130,23 +130,17 @@ const DAY22 = {
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/px9HYA5rm',
         },
         {
-            linkText: 'collapsing gradient cubes',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
-        },
-
-        {
             linkText: 'webGL sound boxes, pixels, fft',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
         },
+        // {
+        //     linkText: 'collapsing gradient cubes',
+        //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
+        // },
 
-        {
-            linkText: 'cat model',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/4TtAlFgQv',
-        },
-        {
-            linkText: 'cat model translated rotated',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yWFxTir8t',
-        },
+ 
+
+
     ],
 
 }

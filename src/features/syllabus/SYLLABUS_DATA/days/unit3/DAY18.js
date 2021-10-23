@@ -39,14 +39,6 @@ const DAY18 = {
         },
 
         {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
             linkText: 'ryoju ikeda test pattern',
             linkSrc: 'https://www.youtube.com/watch?v=XwjlYpJCBgk&t=74s',
         },
@@ -78,6 +70,14 @@ const DAY18 = {
         },
 
 
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
 
     ],
     techLinks: [

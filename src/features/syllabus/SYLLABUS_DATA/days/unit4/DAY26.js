@@ -3,7 +3,7 @@ const DAY26 = {
     async: true,
     unit: 'unit3',
     date: 'November 23, 2021',
-    title: 'ripples',
+    title: 'ripples and noise',
     assignment: 'ripples',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1604102337/side-effects/light-shade-ripples-pattern-swimming-pool-turquoise-clean-water-vivid-separatio-lines-separation-113595482_agwgav.jpg',
     description: `
@@ -18,9 +18,10 @@ const DAY26 = {
     ],
     inspirationLinks: [
         {
-            linkText: '',
-            linkSrc: '',
-        },
+            linkText: 'perlin noise mountains landscape',
+            linkSrc: 'https://github.com/socalledsound/perlin-mountains',
+        }, 
+        {
     ],
     techLinks: [
         {

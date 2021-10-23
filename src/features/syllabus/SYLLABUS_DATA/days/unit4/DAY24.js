@@ -53,6 +53,14 @@ const DAY24 = {
             linkSrc: 'https://en.wikipedia.org/wiki/Wavefront_.obj_file',
         },
         {
+            linkText: 'cat model - upside down, like most models',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/4TtAlFgQv',
+        },
+        {
+            linkText: 'cat model translated rotated',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yWFxTir8t',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

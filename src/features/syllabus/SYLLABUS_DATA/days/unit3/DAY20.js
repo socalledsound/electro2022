@@ -24,12 +24,12 @@ const DAY20 = {
 
     videos: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'intro to web GL and transforms 1 -- solar system',
+            linkSrc: 'https://youtu.be/pb1oA9D_LPo',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'intro to web GL and transforms 2 -- landscape',
+            linkSrc: 'hhttps://youtu.be/cT7Yurmp5yY',
         },
         {
             linkText: '',
@@ -61,7 +61,18 @@ const DAY20 = {
             linkText: 'bees and bombs on twitter',
             linkSrc: 'https://twitter.com/beesandbombs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
         },
-
+        {
+            linkText: 'butterflies',
+            linkSrc: 'https://github.com/socalledsound/better-butterflies',
+        },
+        {
+            linkText: 'gradient cubes',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
+        },
+        {
+            linkText: '&& more dimensional boxes',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/0nfVTRe8e',
+        },
 
         {
             linkText: 'hvbrd game',
@@ -98,37 +109,30 @@ const DAY20 = {
     ],
     techLinks: [
         {
+            linkText: `code from today's videos`,
+            linkSrc: 'https://github.com/socalledsound/landscape-solar-system',
+        },  
+        {
+            linkText: 'perlin noise mountains landscape',
+            linkSrc: 'https://github.com/socalledsound/perlin-mountains',
+        }, 
+        {
             linkText: 'blender - see resources page for more blender links!',
             linkSrc: 'https://www.blender.org/',
         },
         {
             linkText: 'daniel shiffman series of videos on webgl and p5.js',
             linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&t=6s',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
+        },      
+       
+        {
             linkText: '',
             linkSrc: '',
         },        {
             linkText: '',
             linkSrc: '',
         }, 
-        {
-            linkText: 'butterflies',
-            linkSrc: 'https://github.com/socalledsound/better-butterflies',
-        },
-        {
-            linkText: 'gradient cubes',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
-        },
-        {
-            linkText: '&& more dimensional boxes',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/0nfVTRe8e',
-        },
+
       
         {
             linkText: '',
