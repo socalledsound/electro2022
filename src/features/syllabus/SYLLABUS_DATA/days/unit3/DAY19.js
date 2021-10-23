@@ -16,15 +16,33 @@ const DAY19 = {
             linkText: 'NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....',
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
     ],
     inspirationLinks: [
         {
             linkText: 'live face projection mapping',
             linkSrc: 'https://www.youtube.com/watch?v=MZ9MoF5QowM',
+        },
+        {
+            linkText: 'basic pixel array',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/lWZR5BN-o',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'pixel sorting example',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yapFC24FG',
+        },
+
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
         },
     ],
     techLinks: [
@@ -53,6 +71,22 @@ const DAY19 = {
             linkSrc: 'https://github.com/socalledsound/clmtrackr-mask',
         },
 
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         {
             linkText: '',
             linkSrc: '',

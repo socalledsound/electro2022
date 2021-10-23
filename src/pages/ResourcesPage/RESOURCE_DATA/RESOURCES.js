@@ -477,7 +477,37 @@ const RESOURCES = {
             },
     ]
     },
- 
+    {
+        title: 'blender',
+        description: '',
+        links: [
+            {
+                linkText: 'blender.org',
+                linkSrc: 'https://www.blender.org/',
+            },
+            {
+                linkText: '',
+                linkSrc: '',
+            },
+            {
+                linkText: '',
+                linkSrc: '',
+            },
+            {
+                linkText: '',
+                linkSrc: '',
+            },
+            {
+                linkText: '',
+                linkSrc: '',
+            },
+            {
+                linkText: '',
+                linkSrc: '',
+            },
+
+    ]
+    },
 
     {
         title: 'node',

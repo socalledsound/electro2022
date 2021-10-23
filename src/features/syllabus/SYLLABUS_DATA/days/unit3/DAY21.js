@@ -54,8 +54,8 @@ const DAY21 = {
     ],
     techLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'edge detection in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MrysOMgrc',
         },
         {
             linkText: '',

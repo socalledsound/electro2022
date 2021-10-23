@@ -7,8 +7,12 @@ const DAY20 = {
     assignment: 'transform',
     description: `
     Today we're going to help our little squares and circles realize that they can grow into cubes and spheres.
-
-    
+    With the help of WEBGL, we're going to start using a third dimension.
+    So we'll learn about some basic 3d shapes, and also how to position them in 3d space.
+    To do this, we'll use the transformation matrix, which allows us to translate
+    and rotate the space in which the canvas is drawn.  
+    It's kind of nifty, but there are a few pitfalls, and it really helps to remember a thing or two about perspective. 
+    So check out the videos, then make your own 3d landscape and go to the assignment page and submit it!
     `,
     // In p5, that process is actually pretty straightforward, we just tell the canvas that we want it to be a WEBGL
     // canvas
@@ -24,11 +28,27 @@ const DAY20 = {
             linkSrc: '',
         },
         {
-            linkText: 'bees and bombs on twitter',
-            linkSrc: 'https://twitter.com/beesandbombs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
         },
     ],
     inspirationLinks: [
+        {
+            linkText: 'CPU vs GPU mona lisa paint gun video',
+            linkSrc: 'https://www.youtube.com/watch?v=fKK933KK6Gg',
+        },
+        {
+            linkText: 'bees and bombs on twitter',
+            linkSrc: 'https://twitter.com/beesandbombs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
+        },
         {
             linkText: 'nicolas felton: creating meaningful stories out of data',
             linkSrc: 'http://videos.theconference.se/nicholas-felton-creating-meaningful-stories-out',
@@ -42,10 +62,23 @@ const DAY20 = {
             linkSrc: 'https://twitter.com/beesandbombs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
         },
 
-        // {
-        //     linkText: 'hvbrd game',
-        //     linkSrc: 'https://github.com/charliegerard/hvbrd-sockets',
-        // },
+
+        {
+            linkText: 'hvbrd game',
+            linkSrc: 'https://github.com/charliegerard/hvbrd-sockets',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         // {
         //     linkText:"a multiplayer simon game I made with sockets",
         //     linkSrc:"https://github.com/socalledsound/mmm-simon-heroku"
@@ -64,11 +97,55 @@ const DAY20 = {
 
     ],
     techLinks: [
-        // {
-        //     linkText: 'download node',
-        //     linkSrc: 'https://nodejs.org/en/download/',
-        // },
-
+        {
+            linkText: 'blender - see resources page for more blender links!',
+            linkSrc: 'https://www.blender.org/',
+        },
+        {
+            linkText: 'daniel shiffman series of videos on webgl and p5.js',
+            linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&t=6s',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        }, 
+        {
+            linkText: 'butterflies',
+            linkSrc: 'https://github.com/socalledsound/better-butterflies',
+        },
+        {
+            linkText: 'gradient cubes',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
+        },
+        {
+            linkText: '&& more dimensional boxes',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/0nfVTRe8e',
+        },
+      
+        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },        {
+            linkText: '',
+            linkSrc: '',
+        },
         // {
         //     linkText: 'Getting started with Node and VS code',
         //     linkSrc: 'https://code.visualstudio.com/docs/nodejs/nodejs-tutorial',
@@ -115,8 +192,8 @@ const DAY20 = {
             linkSrc: '',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'gradient cubes',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
         },
     ],
 
