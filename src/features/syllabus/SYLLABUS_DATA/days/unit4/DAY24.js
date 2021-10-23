@@ -48,8 +48,8 @@ const DAY24 = {
             linkSrc: 'https://amf.fyi/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'joe ryba, commercial designer, these are all virtual objects...',
+            linkSrc: 'https://www.josephryba.com/',
         },
         {
             linkText: '',

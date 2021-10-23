@@ -62,6 +62,10 @@ const DAY20 = {
             linkSrc: 'https://twitter.com/beesandbombs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
         },
         {
+            linkText: 'a nice cube of cubes by Joe Ryba',
+            linkSrc: 'https://twitter.com/joe_ryba/status/1451739405383835650',
+        },
+        {
             linkText: 'butterflies',
             linkSrc: 'https://github.com/socalledsound/better-butterflies',
         },
@@ -91,10 +95,7 @@ const DAY20 = {
             linkText: 'sound-circle-waves on a sphere',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Lv1ebN2QBg',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
         {
             linkText: '',
             linkSrc: '',

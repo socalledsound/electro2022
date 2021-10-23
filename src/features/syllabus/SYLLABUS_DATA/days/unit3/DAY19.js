@@ -25,6 +25,14 @@ const DAY19 = {
     ],
     inspirationLinks: [
         {
+            linkText: 'nobumichi asai - face projection mapping',
+            linkSrc: 'https://www.youtube.com/watch?v=4hTxi2cyHhw',
+        },
+        {
+            linkText: 'interview with nobumichi asai',
+            linkSrc: 'https://www.annamonteverdi.it/digital/the-poetry-and-philosophy-of-face-mapping-my-interview-to-nobumichi-asai-author-of-the-omote-project/',
+        },
+        {
             linkText: 'jacolby satherwaite at art 21',
             linkSrc: 'https://art21.org/artist/jacolby-satterwhite/',
         },

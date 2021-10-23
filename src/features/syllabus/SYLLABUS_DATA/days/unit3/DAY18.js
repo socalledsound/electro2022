@@ -55,7 +55,10 @@ const DAY18 = {
             linkText: 'tiny police chase projection mapping fun',
             linkSrc: 'https://www.youtube.com/watch?v=cwL3PEeE0sU',
         },
-
+        {
+            linkText: 'a car wrapped in neopixels (by a design firm)',
+            linkSrc: 'https://www.arrayofstars.com/case_study/infiniti-qx50',
+        },
         {
             linkText: 'box',
             linkSrc: 'https://www.youtube.com/watch?v=lX6JcybgDFo',
@@ -71,6 +74,10 @@ const DAY18 = {
         {
             linkText: 'cute space invader jewelry',
             linkSrc: 'https://learn.adafruit.com/trinket-slash-gemma-space-invader-pendant'
+        },
+        {
+            linkText: 'neopixel curtain',
+            linkSrc: 'https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy/fadecandy-clients?view=all',
         },
         {
             linkText: 'obscura digitall at the exploratorium',
@@ -104,6 +111,14 @@ const DAY18 = {
         {
             linkText: 'adafruit light sensor',
             linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
+        },
+        {
+            linkText: 'light sensor <-> neopixels on the CPE',
+            linkSrc: 'https://makecode.com/_Td57Yd78X76V',
+        },
+        {
+            linkText:'batteries and power for external neopixels',
+            linkSrc: 'https://learn.adafruit.com/battery-power-for-led-pixels-and-strips/overview',
         },
         {
             linkText: 'neopixels with accelerometer',
@@ -144,7 +159,8 @@ const DAY18 = {
         {
             linkText: 'pixel resolution and aspect ratio explained',
             linkSrc: 'https://www.youtube.com/watch?v=npbsI8-nD-4',
-        }
+        },
+
 
     ],
 }
