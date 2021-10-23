@@ -7,8 +7,10 @@ const DAY21 = {
     assignment: '',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     description: `
-    
-    
+        Today we're going to continue looking at camera input and the ways that we can interact with that input.
+        Maybe you've seen installations where you can interact with a projected image?  Today we're going to put together
+        some things that we've already learned with a few new ideas and learn how that's done!
+
     `,
     discussionQuestions: [
         ``,

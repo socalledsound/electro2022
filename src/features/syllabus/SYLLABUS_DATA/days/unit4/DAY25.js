@@ -9,7 +9,10 @@ const DAY25 = {
     Today we'll continue our WEBGL explorations by looking at materials, lighting and...shaders.  
     Shaders are a bit daunting, written in a variant of C called shader language, as they are.  
     But, tapping into the power of shaders lets us render images a LOT faster, with more resolution, detail and speed.  
-    We'll look at the basics of working with shaders today, and use a simplex noise algorithm to make a wood grain pattern.`,
+    We'll look at the basics of working with shaders today. 
+    WE'll learn how to add images as textures and also how to generate shaders using code --  
+    we'll use a simplex noise algorithm (aka perlin noise...) to make a wood grain pattern.
+    `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632429353/side-effects/LGwood1_xo8ez7.png',
 
     videos: [
@@ -53,17 +56,18 @@ const DAY25 = {
             linkSrc: 'http://nuclear.mutantstargoat.com/articles/sdr_fract/',
         },
         {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
             linkText: 'the book of shaders',
             linkSrc: 'https://thebookofshaders.com/00/',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
         {
             linkText: '',
             linkSrc: '',

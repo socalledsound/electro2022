@@ -25,6 +25,10 @@ const DAY19 = {
     ],
     inspirationLinks: [
         {
+            linkText: 'jacolby satherwaite at art 21',
+            linkSrc: 'https://art21.org/artist/jacolby-satterwhite/',
+        },
+        {
             linkText: 'live face projection mapping',
             linkSrc: 'https://www.youtube.com/watch?v=MZ9MoF5QowM',
         },
@@ -49,13 +53,17 @@ const DAY19 = {
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/f3mHA8cO2',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'yodel pixels',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: `we'll learn this version of pixel manipulation in a few weeks, with shaders...`,
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
         },
+        {
+            linkText: `another shader-based camera manipulation, running slow for some reason`,
+            linkSrc: `https://editor.p5js.org/socalledsound/sketches/kVWQKkuNt`
+        }
     ],
     techLinks: [
         {
@@ -77,12 +85,12 @@ const DAY19 = {
         },
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'building a kitty cam with face detection!',
+            linkSrc: 'https://girliemac.com/blog/2015/12/25/kittycam-raspberrypi-camera-cat-face-recog-nodejs/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'a nice little p5 code repo for glitching images',
+            linkSrc: 'https://github.com/phillipdavidstearns/aYearInCode/tree/master/p5/projects/imageGlitch',
         },
         {
             linkText: '',

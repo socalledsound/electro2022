@@ -68,22 +68,42 @@ const DAY18 = {
             linkText: 'LED neopixel corset',
             linkSrc: 'https://learn.adafruit.com/led-corset-with-circuit-playground-and-makecode',
         },
-
-
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'cute space invader jewelry',
+            linkSrc: 'https://learn.adafruit.com/trinket-slash-gemma-space-invader-pendant'
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'obscura digitall at the exploratorium',
+            linkSrc: 'https://www.youtube.com/watch?v=N2ZMH1XIxBI',
         },
+        {
+            linkText: 'projecting on warped surfaces',
+            linkSrc: 'https://gizmodo.com/this-real-time-image-warping-projector-will-blow-your-m-1788032732',
+        },
+        {
+            linkText: 'a cathedral of light in a gas tank',
+            linkSrc: ' https://www.youtube.com/watch?v=9AsIplUJbdE',
+        },
+        {
+            linkText: 'amon tobin isam trailer',
+            linkSrc: 'https://www.youtube.com/watch?v=WLrt7-kIgIM',
+        },
+
+        {
+            linkText: 'adafruit light sensor',
+            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
+        },
+       
 
     ],
     techLinks: [
         {
             linkText: 'neopixel strip',
             linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+        },
+        {
+            linkText: 'adafruit light sensor',
+            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
         },
         {
             linkText: 'neopixels with accelerometer',
@@ -116,6 +136,14 @@ const DAY18 = {
         {
             linkText: 'projection mapping onto a house',
             linkSrc: 'https://www.youtube.com/watch?v=bqjx9J6nPc8',
+        },
+        {
+            linkText: 'projection mapping on a bottle',
+            linkSrc: 'https://www.youtube.com/watch?v=7ZHef-hAvOM&list=PLnC9-BmaDSFrrhW_jP5os7bk2LJ-VKWjD&index=4'
+        },
+        {
+            linkText: 'pixel resolution and aspect ratio explained',
+            linkSrc: 'https://www.youtube.com/watch?v=npbsI8-nD-4',
         }
 
     ],

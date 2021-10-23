@@ -30,8 +30,8 @@ const DAY26 = {
             linkSrc: 'https://github.com/socalledsound/perlin-mountains',
         }, 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'sound circle waves on a sphere',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Lv1ebN2QBg',
         },
         {
             linkText: '',

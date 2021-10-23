@@ -79,8 +79,17 @@ const DAY20 = {
             linkSrc: 'https://github.com/charliegerard/hvbrd-sockets',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'webGL stars in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/HDnzYOp4d',
+        },
+
+        {
+            linkText: 'webGL sound boxes, pixels, fft',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
+        },
+        {
+            linkText: 'sound-circle-waves on a sphere',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Lv1ebN2QBg',
         },
         {
             linkText: '',
@@ -121,16 +130,16 @@ const DAY20 = {
             linkSrc: 'https://www.blender.org/',
         },
         {
-            linkText: 'daniel shiffman series of videos on webgl and p5.js',
-            linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&t=6s',
-        },      
+            linkText: 'coding train series of videos on webGL',
+            linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&list=PLRqwX-V7Uu6bPhi8sS1hHJ77n3zRO9FR_',
+        },   
        
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'p5.js transformations',
+            linkSrc: 'https://genekogan.com/code/p5js-transformations/',
         },        {
-            linkText: '',
-            linkSrc: '',
+            linkText: `a little more math on transformation matrixes if you're interested`,
+            linkSrc: 'https://forum.patagames.com/posts/t501-What-Is-Transformation-Matrix-and-How-to-Use-It',
         }, 
 
       

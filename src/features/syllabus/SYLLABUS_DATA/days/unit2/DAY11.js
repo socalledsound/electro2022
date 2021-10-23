@@ -88,7 +88,10 @@ const DAY11 = {
             {
                 linkText: "soundlands, a badlands clone I've been working on",
                 linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',
-            },
+            },{
+                linkText: 'entity component system at wikipedia',
+                linkSrc: 'https://en.wikipedia.org/wiki/Entity_component_system',
+            }
 
         ], 
         videos: [

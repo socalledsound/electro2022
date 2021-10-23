@@ -12,10 +12,14 @@ const DAY22 = {
     interdimensional participatory art projects, virtual reality and augmented reality, and more. 
     `,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869455/side-effects/saraceno-cloud-cities-2_jfdp7z.jpg',
-   
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
-            linkText: '',
+            linkText: 'a-frame basics',
             linkSrc: '',
         },
     ],
@@ -107,8 +111,6 @@ const DAY22 = {
             linkText: 'webGL stars no p5',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/_zWj2yPRT',
         },
-
-
         {
             linkText: 'creating a scene in three.js',
             linkSrc: 'https://threejs.org/docs/#manual/en/introduction/Creating-a-scene',
@@ -118,25 +120,21 @@ const DAY22 = {
             linkSrc: 'https://aframe.io/docs/1.0.0/guides/building-a-basic-scene.html',
         },
         {
-            linkText: 'webGL stars in p5',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/HDnzYOp4d',
+            linkText: 'this website will self-destruct',
+            linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
         },
         {
-            linkText: 'coding train series of videos on webGL',
-            linkSrc: 'https://www.youtube.com/watch?v=nqiKWXUX-o8&list=PLRqwX-V7Uu6bPhi8sS1hHJ77n3zRO9FR_',
+            linkText: "a game designer's analysis of qanon",
+            linkSrc: 'https://medium.com/curiouserinstitute/a-game-designers-analysis-of-qanon-580972548be5',
         },
         {
-            linkText: 'three spheres in p5',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/px9HYA5rm',
+            linkText: 'inside a dali painting in web VR',
+            linkSrc: 'https://thedali.org/dreams-of-dali-2/',
         },
         {
-            linkText: 'webGL sound boxes, pixels, fft',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
+            linkText: 'make a 3d maze in 20 lines of code with roblox studio',
+            linkSrc: 'https://docs.google.com/document/d/1OZPtHp6Q_flbjMSNQqMTNYr2s3HCjyNHlA3OCMaSz8M/edit#heading=h.6uqyvfaia3e2',
         },
-        // {
-        //     linkText: 'collapsing gradient cubes',
-        //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
-        // },
 
  
 

@@ -11,6 +11,11 @@ const DAY24 = {
     Models are 
 
     `,
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
             linkText: '',
@@ -25,6 +30,22 @@ const DAY24 = {
         {
             linkText: 'blender - see resources page for more blender links!',
             linkSrc: 'https://www.blender.org/',
+        },
+        {
+            linkText: 'nothing is more fun than a hypercube full of monkeys',
+            linkSrc: 'https://blogs.scientificamerican.com/roots-of-unity/nothing-is-more-fun-than-a-hypercube-of-monkeys/',
+        },
+        {
+            linkText: 'stereophonic projection with henry segerman',
+            linkSrc: 'https://artthescience.com/blog/2016/11/11/creators-henry-segerman/',
+        },
+        {
+            linkText: 'the pure metal asteroid, Psyche',
+            linkSrc: 'https://observer.com/2020/10/nasa-discover-asteroid-pysche-metal-10-quadrillion/',
+        },
+        {
+            linkText: 'Andrew ferris web site',
+            linkSrc: 'https://amf.fyi/',
         },
         {
             linkText: '',

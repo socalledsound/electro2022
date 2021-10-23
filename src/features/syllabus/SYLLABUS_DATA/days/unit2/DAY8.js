@@ -81,6 +81,10 @@ const DAY8 = {
             linkSrc: 'https://js13kgames.com/',
         },
         {
+            linkText: 'this website will self-destruct',
+            linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

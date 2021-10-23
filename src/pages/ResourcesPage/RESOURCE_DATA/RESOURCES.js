@@ -467,10 +467,7 @@ const RESOURCES = {
                 linkText: 'raspberry pi imager',
                 linkSrc: 'https://www.raspberrypi.org/software/',
             },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
+
             {
                 linkText: 'google coder: A simple way to make web stuff on Raspberry Pi',
                 linkSrc: 'http://googlecreativelab.github.io/coder/',
@@ -492,6 +489,10 @@ const RESOURCES = {
             {
                 linkText: 'another really good one',
                 linkSrc: 'https://www.youtube.com/c/CGCookieBlender',
+            },
+            {
+                linkText: 'and another good blender channel',
+                linkSrc: 'https://www.youtube.com/user/AndrewPPrice',
             },
             {
                 linkText: 'but this guy has the best accent of all the blender channels',

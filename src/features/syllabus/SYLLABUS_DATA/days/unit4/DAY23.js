@@ -5,12 +5,21 @@ const DAY23 = {
     date: 'November 11, 2021',
     title: 'augmented',
     assignment: 'hiro',
-    description: "Augmented reality is, in my view, the most interesting of the versions of virtual reality that exist, because it doesn't try to deny reality, it enhances it.  We can experience an augmented reality with other people and we can do it without ignoring the world.  Today we'll look at one of the easiest ways to get started in AR, a tool called A-frame.",
+    description: `
+    Augmented reality is, in my view, the most interesting of the versions of virtual reality that exist, 
+    because it doesn't try to deny reality, it enhances it.  
+    We can experience an augmented reality with other people and we can do it without ignoring the world.  
+    Today we'll take a deeper look at one of the easiest ways to get started in AR, a tool called A-frame,
+    and import some panoramic photos into a VR scene.`,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
-   
+    discussionQuestions: [
+        ``,
+        ``,
+        ``,
+    ],
     videos: [
         {
-            linkText: '',
+            linkText: 'a-frame landscape with pano background',
             linkSrc: '',
         },
     ],
@@ -42,7 +51,7 @@ const DAY23 = {
         },
 
         {
-            linkText: 'entity component system',
+            linkText: `'entity component system' (aframe is described as being that) on wiki`,
             linkSrc: 'https://en.wikipedia.org/wiki/Entity_component_system',
         },
         {
@@ -53,14 +62,30 @@ const DAY23 = {
             linkText: 'four seasons total landscaping in vr',
             linkSrc: 'https://twitter.com/thecoopertom/status/1325710953305026560',
         },
+        {
+            linkText: 'my image gallery app, working',
+            linkSrc: 'https://new-image-gallery.web.app/',
+        },
+        {
+            linkText:"a multiplayer simon game I made with sockets",
+            linkSrc:"https://github.com/socalledsound/mmm-simon-heroku"
+        },
+        {
+            linkText: 'my version of the multiplayer tetris game (tutorial below)',
+            linkSrc: 'https://tetris-clone-6000.herokuapp.com/#n4agum',
+        },
+        {
+            linkText: 'a little multiplayer sound instrument',
+            linkSrc: 'https://sound-circles.herokuapp.com/',
+        },
     ],
     techLinks: [
- {
-                linkText: 'sound-circle-waves from last class',
+            {
+                linkText: 'sound-circle-waves on a sphere',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Lv1ebN2QBg',
             },
             {
-                linkText: 'perlin noise generative landscape in p5 from friday',
+                linkText: 'perlin noise generative landscape in p5',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/daLyawjn-',
             },
             {
