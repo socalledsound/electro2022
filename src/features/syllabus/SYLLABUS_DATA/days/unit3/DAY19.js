@@ -9,11 +9,16 @@ const DAY19 = {
     Today we'll learn how to use a camera to take data in to the web browser.  
     We'll also learn how to manipulate that data at the pixel level.  
     This means we'll work in nested for loops, to create grids of color info.
+    This makes all kinds of amazing manipulations possible!  Like, pixel sorting, and edge
+    detection, and all sort of filtering and re-sampling, a few examples are in the links.
+    We're also going to work with some motion tracking software today!  And you will add a mask image
+    (happy halloween!) to your own face, please submit an image of yourself in your clmtracker mask to 
+    the gallery!
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1603987612/zombie_jts9s0.jpg',
     videos: [
         {
-            linkText: 'NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....',
+            linkText: 'NO VIDEOS TODAY, click the assignment button for the text tutorial, on pixels and motion tracking. please let me know if you prefer text or videos....',
             linkSrc: '',
         },
 
