@@ -19,8 +19,8 @@ const DAY24 = {
     ],
     inspirationLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'Johnathan Monaghan, robot ninja',
+            linkSrc: 'https://vimeo.com/97867590',
         },
     ],
     techLinks: [

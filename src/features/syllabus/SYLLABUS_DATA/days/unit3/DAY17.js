@@ -53,6 +53,15 @@ const DAY17 = {
             linkText:"Celeste Boursier Mougenot",
             linkSrc:"http://www.artnews.com/2015/04/30/french-pavilion-artist-celeste-boursier-mougenot-teaches-the-world-to-sing/"
         },
+        {
+            linkText: 'hans jenny and carsten nicolai',
+            linkSrc:'https://rhizome.org/editorial/2008/aug/06/other-convergences-hans-jenny-and-carsten-nicolai-/',
+        },
+        {
+            linkText: 'echoes made visible, bill fontana',
+            linkSrc: 'https://www.youtube.com/watch?v=6ymrP6uFlFw',
+        }
+        
     ],
     techLinks: [
         {

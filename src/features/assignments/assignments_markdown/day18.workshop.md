@@ -1,4 +1,8 @@
-# drawing with sound
+# neo pixels and neo projectors
+
+I decided we all deserve a break today! So, submit something if you want to, but, there is no assignment.
+
+<!-- # drawing with sound
 
 Today we're going to start our journey into exanded realities by exploring sound a bit more.
 
@@ -343,4 +347,4 @@ y = cos(angle) * radius;
 
 Try plotting the spectum values over time. Try new forumlas using the values we get from amplitude or fft to generate new color values or new patterns.
 
-Just make sure that it looks different from what other people (including me) are doing and have fun!
+Just make sure that it looks different from what other people (including me) are doing and have fun! -->

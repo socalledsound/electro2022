@@ -6,13 +6,14 @@ const DAY19 = {
     title: 'camera',
     assignment: 'selfies',
     description: `
-    Today we'll learn how to use a camera to take data in to the web browser.  We'll also learn how to maipulate that data at the pixel level.  
+    Today we'll learn how to use a camera to take data in to the web browser.  
+    We'll also learn how to manipulate that data at the pixel level.  
     This means we'll work in nested for loops, to create grids of color info.
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1603987612/zombie_jts9s0.jpg',
     videos: [
         {
-            linkText: 'COMING SOON',
+            linkText: 'NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....',
             linkSrc: '',
         },
         {
@@ -22,8 +23,8 @@ const DAY19 = {
     ],
     inspirationLinks: [
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'live face projection mapping',
+            linkSrc: 'https://www.youtube.com/watch?v=MZ9MoF5QowM',
         },
     ],
     techLinks: [

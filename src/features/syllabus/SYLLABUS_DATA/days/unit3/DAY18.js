@@ -2,7 +2,7 @@ const DAY18 = {
     id: 18,
     unit: 'unit3',
     date: 'October 26, 2021',
-    title: 'pixels and projection',
+    title: 'neopixels and neoprojection',
     assignment: 'pixels',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
     description: `
@@ -14,35 +14,30 @@ const DAY18 = {
     `,
     videos: [
         {
-            linkText: 'COMING SOON',
+            linkText: `let's take a break from videos for a day`,
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+ 
+
     ],
     inspirationLinks: [
         {
-            linkText: 'neopixel strip',
-            linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+            linkText: 'daniel rozin wooden mirror',
+            linkSrc: 'https://vimeo.com/101408845',
         },
+        {
+            linkText: 'daniel rhozin penguins mirror',
+            linkSrc: 'https://vimeo.com/129674054',
+        },
+        {
+            linkText: 'sara sze: how we experience time and memory through art',
+            linkSrc: 'https://www.youtube.com/watch?v=lEjegKJwI0M',
+        },
+        {
+            linkText: 'anthony mccall line describing a cone',
+            linkSrc: 'https://www.youtube.com/watch?v=1-HWsxPnNNY',
+        },
+
         {
             linkText: '',
             linkSrc: '',
@@ -50,27 +45,46 @@ const DAY18 = {
         {
             linkText: '',
             linkSrc: '',
+        },
+        {
+            linkText: 'ryoju ikeda test pattern',
+            linkSrc: 'https://www.youtube.com/watch?v=XwjlYpJCBgk&t=74s',
+        },
+        {
+            linkText: 'flying lotus stage setup',
+            linkSrc: 'https://www.youtube.com/watch?v=rbuQuvoc0YE&list=PLnC9-BmaDSFrrhW_jP5os7bk2LJ-VKWjD',
+        },
+        {
+            linkText: 'bioluminescent forest',
+            linkSrc: 'https://www.youtube.com/watch?v=1I-_yCEhd2w',
+        },
+
+        {
+            linkText: 'tiny police chase projection mapping fun',
+            linkSrc: 'https://www.youtube.com/watch?v=cwL3PEeE0sU',
+        },
+
+        {
+            linkText: 'box',
+            linkSrc: 'https://www.youtube.com/watch?v=lX6JcybgDFo',
+        },
+        {
+            linkText: 'neopixel infinity mirror',
+            linkSrc: 'https://www.youtube.com/watch?v=SFuh2ApT50o',
         },
         {
             linkText: 'LED neopixel corset',
             linkSrc: 'https://learn.adafruit.com/led-corset-with-circuit-playground-and-makecode',
         },
 
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
 
     ],
     techLinks: [
+        {
+            linkText: 'neopixel strip',
+            linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+        },
         {
             linkText: 'neopixels with accelerometer',
             linkSrc: 'https://makecode.com/_1PM81L8V7LPR',
@@ -96,9 +110,13 @@ const DAY18 = {
             linkSrc: 'https://learn.adafruit.com/circuitpython-led-animations/pixel-mapping',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: `beginner's guide to projection mapping`,
+            linkSrc: 'https://www.youtube.com/watch?v=skU3T8bgEIM',
         },
+        {
+            linkText: 'projection mapping onto a house',
+            linkSrc: 'https://www.youtube.com/watch?v=bqjx9J6nPc8',
+        }
 
     ],
 }
