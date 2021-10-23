@@ -15,6 +15,14 @@ const DAY26 = {
             linkText: '',
             linkSrc: '',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
     ],
     inspirationLinks: [
         {
@@ -22,8 +30,32 @@ const DAY26 = {
             linkSrc: 'https://github.com/socalledsound/perlin-mountains',
         }, 
         {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        
     ],
     techLinks: [
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
         {
             linkText: '',
             linkSrc: '',
