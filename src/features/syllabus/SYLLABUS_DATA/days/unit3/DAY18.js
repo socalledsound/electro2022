@@ -160,7 +160,14 @@ const DAY18 = {
             linkText: 'pixel resolution and aspect ratio explained',
             linkSrc: 'https://www.youtube.com/watch?v=npbsI8-nD-4',
         },
-
+        {
+            linkText: 'connecting CPE to another device over serial connection',
+            linkSrc: 'https://learn.adafruit.com/circuit-playground-express-serial-communications?view=all#usb-converter-connections'
+        },
+        {
+            linkText: 'using a CPE to control animation in p5',
+            linkSrc: 'https://www.youtube.com/watch?v=J8c2yRgZiGI',
+        }
 
     ],
 }

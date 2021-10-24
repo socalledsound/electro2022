@@ -56,13 +56,13 @@ const DAY21 = {
             linkSrc: 'https://www.arrayofstars.com/case_study/infiniti-qx50',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'a little deeper dive into the intel depth sensing cameras for computer vision',
+            linkSrc: 'https://www.youtube.com/watch?v=tcJHnHpwCXk',
         },
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'a pretty detailed paper on developing a painting robot',
+            linkSrc: 'https://www.mdpi.com/2076-3417/11/4/1467/pdf',
         },
 
     ],
