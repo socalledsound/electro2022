@@ -5,12 +5,13 @@ const DAY21 = {
     date: 'November 4, 2021',
     title: 'depth',
     assignment: '',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1607399858/side-effects/images_2Fcef6ae13-4401-4b04-bbf2-c64f36c17af6_cn8kno.png',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632431430/side-effects/pointcloud_0_myssvc.gif',
     description: `
         Today we're going to continue looking at camera input and the ways that we can interact with that input.
         Maybe you've seen installations where you can interact with a projected image?  Today we're going to put together
-        some things that we've already learned with a few new ideas and learn how that's done!
-
+        some things that we've already learned with a few new ideas and learn how that's done!  First, we'll look at some basic
+        ways to understand the 'depth' of an by looking at color changes.  Then, we'll dip our toes into depth sensing, point clouds,
+        real-time-appearance-based-mapping, lidar and SLAM (simultaneous localization and mapping).
     `,
     discussionQuestions: [
         ``,

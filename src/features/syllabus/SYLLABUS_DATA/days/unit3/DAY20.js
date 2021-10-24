@@ -97,8 +97,8 @@ const DAY20 = {
         },
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'audio fabric in 3d',
+            linkSrc: 'https://tbaldw.in/audiofabric/',
         },
         // {
         //     linkText:"a multiplayer simon game I made with sockets",
