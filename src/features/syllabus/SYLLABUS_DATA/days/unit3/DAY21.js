@@ -11,7 +11,17 @@ const DAY21 = {
         Maybe you've seen installations where you can interact with a projected image?  Today we're going to put together
         some things that we've already learned with a few new ideas and learn how that's done!  First, we'll look at some basic
         ways to understand the 'depth' of an by looking at color changes.  Then, we'll dip our toes into depth sensing, point clouds,
-        real-time-appearance-based-mapping, lidar and SLAM (simultaneous localization and mapping).
+        real-time-appearance-based-mapping, lidar and SLAM (simultaneous localization and mapping).  Combinations of these techniques
+        is how images like the one on the right are made.
+
+
+
+
+
+
+
+
+        
     `,
     discussionQuestions: [
         ``,
