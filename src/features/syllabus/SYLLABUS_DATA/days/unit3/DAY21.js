@@ -5,7 +5,7 @@ const DAY21 = {
     date: 'November 4, 2021',
     title: 'depth',
     assignment: '',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1607399858/side-effects/images_2Fcef6ae13-4401-4b04-bbf2-c64f36c17af6_cn8kno.png',
     description: `
         Today we're going to continue looking at camera input and the ways that we can interact with that input.
         Maybe you've seen installations where you can interact with a projected image?  Today we're going to put together
@@ -64,6 +64,10 @@ const DAY21 = {
             linkText: 'a pretty detailed paper on developing a painting robot',
             linkSrc: 'https://www.mdpi.com/2076-3417/11/4/1467/pdf',
         },
+        {
+            linkText: 'what are point clouds and how are they used?',
+            linkSrc: 'https://www.dronegenuity.com/point-clouds/',
+        },
 
     ],
     techLinks: [
@@ -77,10 +81,10 @@ const DAY21 = {
         },
         {
             linkText: 'handheld 3d scanning using raspberry pi and intel realsense camera',
-            linkSrc: 'https://hackaday.com/2020/03/31/handheld-3d-scanning-using-raspberry-pi-4-and-intel-realsense-camera/',
+            linkSrc: 'https://eleccelerator.com/pi-handheld-3d-scanner/',
         },
         {
-            linkText: 'step by step handheld 3d scanning using raspberry pi and intel realsense camera',
+            linkText: 'a differnet step by step handheld 3d scanning using raspberry pi and intel realsense camera',
             linkSrc: 'https://www.instructables.com/3D-Printable-3D-Scanner-Using-Intel-Realsense-D435/',
         },
         {

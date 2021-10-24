@@ -20,7 +20,7 @@ const DAY20 = {
     // So far, all of these techniques we've been using in this unit perform a kind of mapping.
     // We take in an input of some sort, say, a bunch of 
     // In preparation for working in three dimensions, we need to think about our canvas a little differently. 
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1605154288/side-effects/kissclipart-diagram-clipart-diagram-client-amazon-elasticache-2e20865f5cfcf417_fjydbg.png',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1607400295/side-effects/images_2Fdb637365-55fc-4477-a8eb-9faf08a77361_l17u4o.png',
 
     videos: [
         {
