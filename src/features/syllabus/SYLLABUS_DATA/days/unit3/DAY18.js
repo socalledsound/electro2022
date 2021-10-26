@@ -104,7 +104,10 @@ const DAY18 = {
             linkText: 'oscilloscope music',
             linkSrc: 'https://www.youtube.com/watch?v=4gibcRfp4zA'
         },
-       
+        {
+            linkText:'(nice round monitor) Raspberry Pi Helps 3D Printed Gorilla to Recite Shakespeare',
+            linkSrc:'https://www.tomshardware.com/news/raspberry-pi-gorilla-round-display-head',
+        }
 
     ],
     techLinks: [
