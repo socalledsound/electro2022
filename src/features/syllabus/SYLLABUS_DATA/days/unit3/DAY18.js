@@ -97,8 +97,12 @@ const DAY18 = {
         },
 
         {
-            linkText: 'adafruit light sensor',
-            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
+            linkText: 'jerobeam fenderson: nuclear black noise',
+            linkSrc: 'https://www.youtube.com/watch?v=YqSvkNjWnnQ'
+        },
+        {
+            linkText: 'oscilloscope music',
+            linkSrc: 'https://www.youtube.com/watch?v=4gibcRfp4zA'
         },
        
 
@@ -115,6 +119,11 @@ const DAY18 = {
         {
             linkText: 'light sensor <-> neopixels on the CPE',
             linkSrc: 'https://makecode.com/_Td57Yd78X76V',
+        },
+
+        {
+            linkText: 'adafruit light sensor',
+            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
         },
         {
             linkText:'batteries and power for external neopixels',
@@ -167,6 +176,14 @@ const DAY18 = {
         {
             linkText: 'using a CPE to control animation in p5',
             linkSrc: 'https://www.youtube.com/watch?v=J8c2yRgZiGI',
+        },
+        {
+            linkText: 'troubleshooting your CPE - erase file',
+            linkSrc: 'https://learn.adafruit.com/welcome-to-circuitpython/troubleshooting',
+        },
+        {
+            linkText: 'a few examples in circuit python',
+            linkSrc: 'https://github.com/socalledsound/circuit-python-examples',
         }
 
     ],

@@ -1,34 +1,33 @@
 looking back looking forward
 
-# NEED TO SUBMIT
+# NEED TO SUBMIT MIDTERM
 
 kelly
-sam
 
 #
 
-# sent
+# ready
 
 sana
-
-# TO DO
-
+sam
 sravya
 shayne
-tucker
 arthur
 blake
 nadia
-fei
-effie
-
-pinyaki/mrinal
-dylan
-daniel
-
-ashley
-quincy
 nora
+fei
+quincy
+effie
+tucker
+pinyaki/mrinal
+daniel
+dylan
 geli
 jasmine
+
+ashley
 ahyeon
+kelly
+
+# TO DO

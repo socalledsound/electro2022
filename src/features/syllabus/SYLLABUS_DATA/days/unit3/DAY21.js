@@ -13,14 +13,6 @@ const DAY21 = {
         ways to understand the 'depth' of an by looking at color changes.  Then, we'll dip our toes into depth sensing, point clouds,
         real-time-appearance-based-mapping, lidar and SLAM (simultaneous localization and mapping).  Combinations of these techniques
         is how images like the one on the right are made.
-
-
-
-
-
-
-
-
         
     `,
     discussionQuestions: [

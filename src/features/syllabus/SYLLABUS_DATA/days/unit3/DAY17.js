@@ -60,6 +60,14 @@ const DAY17 = {
         {
             linkText: 'echoes made visible, bill fontana',
             linkSrc: 'https://www.youtube.com/watch?v=6ymrP6uFlFw',
+        },
+        {
+            linkText: 'jerobeam fenderson: nuclear black noise',
+            linkSrc: 'https://www.youtube.com/watch?v=YqSvkNjWnnQ'
+        },
+        {
+            linkText: 'oscilloscope music',
+            linkSrc: 'https://www.youtube.com/watch?v=4gibcRfp4zA'
         }
         
     ],
