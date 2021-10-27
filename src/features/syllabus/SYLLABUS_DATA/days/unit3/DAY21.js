@@ -24,12 +24,16 @@ const DAY21 = {
     videos: [
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 1',
+            linkSrc: 'https://www.youtube.com/watch?v=nCVZHROb_dE',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 2',
+            linkSrc: 'https://www.youtube.com/watch?v=QLHMtE5XsMs',
+        },
+        {
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 3',
+            linkSrc: 'https://www.youtube.com/watch?v=ce-2l2wRqO8',
         },
     ],
     inspirationLinks: [
@@ -74,9 +78,22 @@ const DAY21 = {
 
     ],
     techLinks: [
+
+        {
+            linkText: 'color tracking, motion detection and blob tracking (adapted from the video above)',
+            linkSrc: 'https://github.com/socalledsound/computer-vision-p5',
+        },
         {
             linkText: 'edge detection in p5',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MrysOMgrc',
+        },
+        {
+            linkText: 'pretty serious paper on edge detection for motion tracking',
+            linkSrc: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321341/',
+        },
+        {
+            linkText: 'video edge detection in p5 by child coder simon tiger',
+            linkSrc: 'https://editor.p5js.org/simontiger/sketches/a94yVnaRn',
         },
         {
             linkText: 'intel d435 with raspberry pi',
@@ -90,13 +107,18 @@ const DAY21 = {
             linkText: 'a differnet step by step handheld 3d scanning using raspberry pi and intel realsense camera',
             linkSrc: 'https://www.instructables.com/3D-Printable-3D-Scanner-Using-Intel-Realsense-D435/',
         },
+
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 1',
+            linkSrc: 'https://www.youtube.com/watch?v=nCVZHROb_dE',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 2',
+            linkSrc: 'https://www.youtube.com/watch?v=QLHMtE5XsMs',
+        },
+        {
+            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 3',
+            linkSrc: 'https://www.youtube.com/watch?v=ce-2l2wRqO8',
         },
     ],
 

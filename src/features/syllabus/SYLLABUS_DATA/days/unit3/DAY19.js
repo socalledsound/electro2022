@@ -18,7 +18,7 @@ const DAY19 = {
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1603987612/zombie_jts9s0.jpg',
     videos: [
         {
-            linkText: 'NO VIDEOS TODAY, click the assignment button for the text tutorial, on pixels and motion tracking. please let me know if you prefer text or videos....',
+            linkText: 'click the assignment button for the text tutorial, on pixels and motion tracking. videos are linked from there....',
             linkSrc: '',
         },
 

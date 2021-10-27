@@ -163,4 +163,4 @@ For the assignment I want you to use the clmtrackr library and create your own f
 
 Ok that's it for today! See if you can make your own 'face filter' and submit it in the gallery!
 
-And if you're feeling really ambitious, see if you can implement some of the other effects available via clmtrackr in your own p5 sketch! Face deform is kind of cool. We can also return to these next week when we look at augmented reality some more.
+And if you're feeling really ambitious, see if you can implement some of the other effects available via clmtrackr in your own p5 sketch! Face deform is kind of cool. We'll also return to a lot of these ideas -- in a very new light -- when we get down to using shaders.
