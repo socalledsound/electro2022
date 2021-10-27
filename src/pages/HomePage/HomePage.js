@@ -45,10 +45,10 @@ const HomePage = () => {
                     <Loading />
                     :
                     <Fragment>
-                        {
+                        {/* {
                             poll &&
                             <Poll />
-                        }
+                        } */}
                         {
                             currentUser &&
                             <UserWarnings currentUser={currentUser}/>                                
