@@ -5,7 +5,7 @@ const DAY24 = {
     date: 'November 16, 2021',
     title: 'OBJ',
     assignment: 'obj',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632428938/c3891f0eae8dae683732a60f8a9d7802dc-wachowskis.rhorizontal.w700_d7lylm.jpg',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597870067/side-effects/crossy-road-web-gl-1_guc4dm.jpg',
     description: `
     As we continue our exploration of three dimensions, it's time to do some work with models, in the .obj format.
     Models are 

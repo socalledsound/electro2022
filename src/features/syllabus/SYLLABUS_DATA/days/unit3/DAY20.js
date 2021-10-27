@@ -144,67 +144,67 @@ const DAY20 = {
         }, 
 
       
-        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },        {
-            linkText: '',
-            linkSrc: '',
-        },
         // {
-        //     linkText: 'Getting started with Node and VS code',
-        //     linkSrc: 'https://code.visualstudio.com/docs/nodejs/nodejs-tutorial',
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },        {
+        //     linkText: '',
+        //     linkSrc: '',
         // },
-        // {
-        //     linkText: 'the node package manager',
-        //     linkSrc: 'https://www.npmjs.com/',
-        // },
-        // {
-        //     linkText: 'a nice intro to node and p5.js',
-        //     linkSrc: 'https://creative-coding.decontextualize.com/node/',
-        // },    
-        // {
-        //     linkText: 'what are web sockets?',
-        //     linkSrc: 'https://pusher.com/websockets',
-        // },
+        // // {
+        // //     linkText: 'Getting started with Node and VS code',
+        // //     linkSrc: 'https://code.visualstudio.com/docs/nodejs/nodejs-tutorial',
+        // // },
+        // // {
+        // //     linkText: 'the node package manager',
+        // //     linkSrc: 'https://www.npmjs.com/',
+        // // },
+        // // {
+        // //     linkText: 'a nice intro to node and p5.js',
+        // //     linkSrc: 'https://creative-coding.decontextualize.com/node/',
+        // // },    
+        // // {
+        // //     linkText: 'what are web sockets?',
+        // //     linkSrc: 'https://pusher.com/websockets',
+        // // },
 
+        // // {
+        // //     linkText:"make agar.io with DS",
+        // //     linkSrc:"https://www.youtube.com/watch?v=JXuxYMGe4KI&vl=en"
+        // // },
+        // // {
+        // //     linkText: 'making an interactive skateboarding game using web sockets',
+        // //     linkSrc: 'https://medium.com/@devdevcharlie/hvbrd-c6266ee31461',
+        // // },
+        // // {
+        // //     linkText: 'great multiplayer tetris game tutorial (in 3 parts)(uses websockets but not socket.io)',
+        // //     linkSrc: 'https://www.youtube.com/watch?list=PLS8HfBXv9ZWW49tOAbvxmKy17gpsqWXaX&v=H2aW5V46khA',
+        // // },
+        // // {
+        // //     linkText: 'nice tutorial on making a smartphone controlled game',
+        // //     linkSrc: 'https://css-tricks.com/how-to-make-a-smartphone-controlled-3d-web-game/',
+        // // },
+        // // {
+        // //     linkText: 'https://github.com/socalledsound/simple-sound-circle-game',
+        // //     linkSrc: 'simple sound circle game repo',
+        // // },
+        // // {
+        // //     linkText: 'multiplayer sound circle game repo',
+        // //     linkSrc: 'https://github.com/socalledsound/sound-circle-server',
+        // // },
         // {
-        //     linkText:"make agar.io with DS",
-        //     linkSrc:"https://www.youtube.com/watch?v=JXuxYMGe4KI&vl=en"
+        //     linkText: '',
+        //     linkSrc: '',
         // },
-        // {
-        //     linkText: 'making an interactive skateboarding game using web sockets',
-        //     linkSrc: 'https://medium.com/@devdevcharlie/hvbrd-c6266ee31461',
-        // },
-        // {
-        //     linkText: 'great multiplayer tetris game tutorial (in 3 parts)(uses websockets but not socket.io)',
-        //     linkSrc: 'https://www.youtube.com/watch?list=PLS8HfBXv9ZWW49tOAbvxmKy17gpsqWXaX&v=H2aW5V46khA',
-        // },
-        // {
-        //     linkText: 'nice tutorial on making a smartphone controlled game',
-        //     linkSrc: 'https://css-tricks.com/how-to-make-a-smartphone-controlled-3d-web-game/',
-        // },
-        // {
-        //     linkText: 'https://github.com/socalledsound/simple-sound-circle-game',
-        //     linkSrc: 'simple sound circle game repo',
-        // },
-        // {
-        //     linkText: 'multiplayer sound circle game repo',
-        //     linkSrc: 'https://github.com/socalledsound/sound-circle-server',
-        // },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
         {
             linkText: 'gradient cubes',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EbBW9bjW-',
