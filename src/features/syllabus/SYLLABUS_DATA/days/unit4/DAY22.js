@@ -19,7 +19,7 @@ const DAY22 = {
     ],
     videos: [
         {
-            linkText: 'a-frame basics',
+            linkText: 'click assignment button for the assignment',
             linkSrc: '',
         },
     ],
