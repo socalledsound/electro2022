@@ -25,6 +25,19 @@ const DAY22 = {
     ],
     inspirationLinks: [
         {
+            linkText: 'Metaverse: Augmented reality inventor warns it could be far worse than social media',
+            linkSrc: 'https://bigthink.com/the-future/metaverse-augmented-reality-danger/',
+        },
+
+        {
+            linkText: 'The metaverse will mostly be for work',
+            linkSrc: 'https://qz.com/2083099/the-metaverse-will-mostly-be-for-work/',
+        },
+        {
+            linkText: 'The Zoo of Extinct Animals',
+            linkSrc: 'https://www.cnn.com/2021/11/05/world/zoo-extinct-animals-augmented-reality-spc-intl-scn/index.html',
+        },
+        {
             linkText:"The Participatory Act of Giving up Control",
             linkSrc:"https://thirdspacenetwork.com/symposium2018/participatory-act-giving-up-control/"
         },

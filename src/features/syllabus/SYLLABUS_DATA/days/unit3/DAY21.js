@@ -108,18 +108,18 @@ const DAY21 = {
             linkSrc: 'https://www.instructables.com/3D-Printable-3D-Scanner-Using-Intel-Realsense-D435/',
         },
 
-        {
-            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 1',
-            linkSrc: 'https://www.youtube.com/watch?v=nCVZHROb_dE',
-        },
-        {
-            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 2',
-            linkSrc: 'https://www.youtube.com/watch?v=QLHMtE5XsMs',
-        },
-        {
-            linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 3',
-            linkSrc: 'https://www.youtube.com/watch?v=ce-2l2wRqO8',
-        },
+        // {
+        //     linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 1',
+        //     linkSrc: 'https://www.youtube.com/watch?v=nCVZHROb_dE',
+        // },
+        // {
+        //     linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 2',
+        //     linkSrc: 'https://www.youtube.com/watch?v=QLHMtE5XsMs',
+        // },
+        // {
+        //     linkText: 'shiffman videos (processing) that I based my p5 versions on (below), pt 3',
+        //     linkSrc: 'https://www.youtube.com/watch?v=ce-2l2wRqO8',
+        // },
     ],
 
 
