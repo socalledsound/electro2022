@@ -13,9 +13,9 @@ const DAY22 = {
     `,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869455/side-effects/saraceno-cloud-cities-2_jfdp7z.jpg',
     discussionQuestions: [
-        ``,
-        ``,
-        ``,
+        `metaverse -- mundane dystopia?  the end of life as we know it?  just a dumb passing fad?`,
+        `is the metaverse all that different from the internet as we know it?`,
+        `what does your ideal user interface in AR/VR look like?  ie how do we control stuff in three dimensions?`,
     ],
     videos: [
         {
