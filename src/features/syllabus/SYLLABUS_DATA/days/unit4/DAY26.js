@@ -45,6 +45,10 @@ const DAY26 = {
     ],
     techLinks: [
         {
+            linkText: 'sound ripple image shader',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },

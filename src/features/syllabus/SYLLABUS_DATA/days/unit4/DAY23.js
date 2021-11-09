@@ -1,6 +1,6 @@
 const DAY23 = {
     id: 23,
-    async: true,
+    async: false,
     unit: 'unit3',
     date: 'November 11, 2021',
     title: 'augmented',
@@ -9,8 +9,7 @@ const DAY23 = {
     Augmented reality is, in my view, the most interesting of the versions of virtual reality that exist, 
     because it doesn't try to deny reality, it enhances it.  
     We can experience an augmented reality with other people and we can do it without ignoring the world.  
-    Today we'll take a deeper look at one of the easiest ways to get started in AR, a tool called A-frame,
-    and import some panoramic photos into a VR scene.`,
+    Today we'll add AR.js to our aframe project, which will allow us to layer realities.`,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     discussionQuestions: [
         ``,
@@ -19,7 +18,7 @@ const DAY23 = {
     ],
     videos: [
         {
-            linkText: 'a-frame landscape with pano background',
+            linkText: 'augmenting a-frame',
             linkSrc: '',
         },
     ],

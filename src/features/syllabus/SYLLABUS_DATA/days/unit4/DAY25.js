@@ -112,10 +112,7 @@ const DAY25 = {
             linkText: "fly's eye mosaic on a fox",
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/rD7vvfHUX',
         },
-        {
-            linkText: 'sound ripple image shader',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
-        },
+
     ],
 
 
