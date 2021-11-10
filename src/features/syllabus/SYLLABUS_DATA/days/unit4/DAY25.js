@@ -6,10 +6,14 @@ const DAY25 = {
     assignment: 'shade',
     title: 'throwing shade',
     description: `
-    Today we'll continue our WEBGL explorations by looking at materials, lighting and...shaders.  
+    Today we'll continue our WEBGL explorations by looking at materials, lighting and...shaders. 
+    We'll start by making sure that importing obj files is working for you, then we'll add
+    images, aka 'texture' to those models.  Then, we'll look at some of the lights we can add
+    to a scene, and talk about   
     Shaders are a bit daunting, written in a variant of C called shader language, as they are.  
     But, tapping into the power of shaders lets us render images a LOT faster, with more resolution, detail and speed.  
-    We'll look at the basics of working with shaders today. 
+    We'll look at the basics of working with shaders today. First, we'll learn about a little about lighting,
+    and we'll learn how to apply textures.  
     WE'll learn how to add images as textures and also how to generate shaders using code --  
     we'll use a simplex noise algorithm (aka perlin noise...) to make a wood grain pattern.
     `,
@@ -60,8 +64,8 @@ const DAY25 = {
             linkSrc: 'https://thebookofshaders.com/00/',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'basic lighting in opengl (webgl is based on opengl)',
+            linkSrc: 'https://learnopengl.com/Lighting/Basic-Lighting',
         },
         {
             linkText: '',

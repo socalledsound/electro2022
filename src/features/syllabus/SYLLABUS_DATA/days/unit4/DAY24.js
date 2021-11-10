@@ -16,11 +16,15 @@ const DAY24 = {
 
     `,
     discussionQuestions: [
-        ``,
+        `let's discuss your project!`,
         ``,
         ``,
     ],
     videos: [
+        {
+            linkText: 'shiffman on working with the obj format in p5',
+            linkSrc: 'https://www.youtube.com/watch?v=FUI7HEEz9B0',
+        },
         {
             linkText: '',
             linkSrc: '',
@@ -85,10 +89,7 @@ const DAY24 = {
             linkText: 'cat model translated rotated',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yWFxTir8t',
         },
-        {
-            linkText: 'shiffman on working with the obj format in p5',
-            linkSrc: 'https://www.youtube.com/watch?v=FUI7HEEz9B0',
-        },
+
         {
             linkText: '',
             linkSrc: '',

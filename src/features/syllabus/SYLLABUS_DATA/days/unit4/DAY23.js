@@ -1,11 +1,15 @@
 const DAY23 = {
     id: 23,
-    async: false,
+    async: true,
     unit: 'unit3',
     date: 'November 11, 2021',
-    title: 'augmented',
+    title: 'HOLIDAY',
     assignment: 'hiro',
     description: `
+    Whoops!  I missed that this is a holiday! Leaving this material here anyway.  See you Tuesday, with your final project
+    progress/proposals!!  
+
+
     Augmented reality is, in my view, the most interesting of the versions of virtual reality that exist, 
     because it doesn't try to deny reality, it enhances it.  
     We can experience an augmented reality with other people and we can do it without ignoring the world.  
