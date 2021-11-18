@@ -1,4 +1,6 @@
-# text input + chatting over sockets
+# work on your final projects!!
+
+<!-- # text input + chatting over sockets
 
 As I mentioned last class, I'm not going to be writing any more big tutorials for you, I want you to focus on your projects at this point and I want to focus on helping you with your projects!
 
@@ -15,4 +17,4 @@ Submit what you've got so far below!
 
 
 
-
+ -->

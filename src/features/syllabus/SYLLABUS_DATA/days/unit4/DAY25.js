@@ -6,16 +6,10 @@ const DAY25 = {
     assignment: 'shade',
     title: 'throwing shade',
     description: `
-    Today we'll continue our WEBGL explorations by looking at materials, lighting and...shaders. 
-    We'll start by making sure that importing obj files is working for you, then we'll add
-    images, aka 'texture' to those models.  Then, we'll look at some of the lights we can add
-    to a scene, and talk about   
-    Shaders are a bit daunting, written in a variant of C called shader language, as they are.  
-    But, tapping into the power of shaders lets us render images a LOT faster, with more resolution, detail and speed.  
-    We'll look at the basics of working with shaders today. First, we'll learn about a little about lighting,
-    and we'll learn how to apply textures.  
-    WE'll learn how to add images as textures and also how to generate shaders using code --  
-    we'll use a simplex noise algorithm (aka perlin noise...) to make a wood grain pattern.
+    Today we'll continue our WEBGL explorations by looking at materials, lighting and a pretty nifty thing
+    called perlin noise. We'll start by reviewing what we learned last time: importing an obj model and then adding
+    an image, aka 'texture' to that models.  Then, we'll look at some of the lights we can add
+    to a scene, and talk about ambient and directional lighting.  
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1632429353/side-effects/LGwood1_xo8ez7.png',
 

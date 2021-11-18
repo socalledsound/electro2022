@@ -9,6 +9,15 @@ const DAY26 = {
     description: `
     We'll continue our exploration of shaders today and use them with sound to make nifty visualizations that re-arrange 
     the pixels of an image into ripples.
+
+    Finally, we'll pull back the curtain
+    just a bit and look at what we can do with shaders, by adding a generative wood pattern to our model.   
+    Shaders are a bit daunting, written in a variant of C called shader language, as they are.  
+    But, tapping into the power of shaders lets us render images a LOT faster, with more resolution, detail and speed.  
+    
+    WE'll learn how to add images as textures and also how to generate shaders using code --  
+    we'll use a simplex noise algorithm (aka perlin noise...) to make a wood grain pattern.
+
     `,
     videos: [
         {

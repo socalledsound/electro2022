@@ -26,9 +26,18 @@ const DAY24 = {
             linkSrc: 'https://www.youtube.com/watch?v=FUI7HEEz9B0',
         },
         {
-            linkText: '',
+            linkText: 'download an obj model and bring it in to p5',
             linkSrc: '',
         },
+        {
+            linkText: 'correctly aligning an obj model in p5',
+            linkSrc: '',
+        },
+        {
+            linkText: 'adding a texture to an obj model in p5',
+            linkSrc: '',
+        },
+
     ],
     inspirationLinks: [
         {
