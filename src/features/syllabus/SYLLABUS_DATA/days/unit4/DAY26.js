@@ -43,6 +43,50 @@ const DAY26 = {
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Lv1ebN2QBg',
         },
         {
+            linkText: 'nothing is more fun than a hypercube full of monkeys',
+            linkSrc: 'https://blogs.scientificamerican.com/roots-of-unity/nothing-is-more-fun-than-a-hypercube-of-monkeys/',
+        },
+        {
+            linkText: 'stereophonic projection with henry segerman',
+            linkSrc: 'https://artthescience.com/blog/2016/11/11/creators-henry-segerman/',
+        },
+        {
+            linkText: 'the pure metal asteroid, Psyche',
+            linkSrc: 'https://observer.com/2020/10/nasa-discover-asteroid-pysche-metal-10-quadrillion/',
+        },
+        {
+            linkText: 'Andrew ferris web site',
+            linkSrc: 'https://amf.fyi/',
+        },
+        {
+            linkText: 'animate 10,000 points with shaders',
+            linkSrc: 'https://bl.ocks.org/pbeshai/66f1a837ec33f787dace43e1b5039e31',
+        },
+        {
+            linkText: 'shadertoy website',
+            linkSrc: 'https://www.shadertoy.com/',
+        },
+        {
+            linkText: 'how to port a shadertoy example to p5.js',
+            linkSrc: 'https://itp-xstory.github.io/p5js-shaders/#/./docs/examples/shadertoy',
+        },
+        {
+            linkText: 'Audio-based Image Distortion Effects with WebGL',
+            linkSrc: 'https://tympanus.net/codrops/2020/02/24/audio-based-image-distortion-effects-with-webgl/',
+        },
+        {
+            linkText: 'Fast and easy high resolution fractals with a pixel shader',
+            linkSrc: 'http://nuclear.mutantstargoat.com/articles/sdr_fract/',
+        },
+        {
+            linkText: 'the book of shaders',
+            linkSrc: 'https://thebookofshaders.com/00/',
+        },
+        {
+            linkText: 'basic lighting in opengl (webgl is based on opengl)',
+            linkSrc: 'https://learnopengl.com/Lighting/Basic-Lighting',
+        },
+        {
             linkText: '',
             linkSrc: '',
         },
@@ -54,8 +98,27 @@ const DAY26 = {
     ],
     techLinks: [
         {
-            linkText: 'sound ripple image shader',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
+            linkText: 'mandelbrot shader',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/8R_8wlC5G',
+        },
+
+        {
+            linkText: 'pixelate camera input using a shader',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/-wnTyH5Dz',
+        },
+
+
+        {
+            linkText: 'pixel mosaic shadera cam',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/kVWQKkuNt',
+        },
+        {
+            linkText: 'gradient shader on a sphere',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/8XlSP85TX',
+        },
+        {
+            linkText: "fly's eye mosaic on a fox",
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/rD7vvfHUX',
         },
         {
             linkText: '',
