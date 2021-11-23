@@ -90,10 +90,7 @@ const DAY26 = {
             linkText: '',
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
         
     ],
     techLinks: [
@@ -104,6 +101,10 @@ const DAY26 = {
         {
             linkText: 'learn perlin noise in p5 by example',
             linkSrc: 'https://gorillasun.de/blog/Introduction-to-Perlin-Noise-in-P5JS-and-Processing',
+        },
+        {
+            linkText: 'daniel shiffman on perlin noise',
+            linkSrc: 'https://www.youtube.com/watch?v=8ZEMLCnn8v0',
         },
         {
             linkText: 'mandelbrot shader',
