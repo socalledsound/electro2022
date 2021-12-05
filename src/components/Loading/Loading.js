@@ -3,7 +3,11 @@ import React from 'react'
 const Loading = () => {
     return ( 
         <div>
-            loading animation here
+            <p id="html-para">{`loading spinner for electro website :) by sana`}</p>
+                <div class="loader one">
+                <div class="first circle"></div>
+                <div class="second circle"></div>
+            </div>
         </div>
      );
 }

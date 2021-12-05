@@ -1,0 +1,33 @@
+#html-para {
+  padding: 100px;
+}
+.loader.one .circle {
+  height: 100px;
+  width: 100px;
+  background: #e427f9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.second.circle {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
