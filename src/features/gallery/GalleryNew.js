@@ -1,8 +1,10 @@
 import React, { useEffect} from 'react'
 import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
-    selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
+// import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
+//     selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
+    import { selectFeaturedWorks, selectCurrentWorks, selectFinalGalleryAssignment, selectRecentWorks, 
+        selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
 import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 // import GalleryRow from './GalleryRow'
@@ -26,7 +28,7 @@ const GalleryNew = ({history}) => {
     console.log(gpioWorks)
     const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
-    let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
+    let currentAssignment  = useSelector(selectFinalGalleryAssignment)
     // if(currentAssignmentWorks && currentAssignmentWorks.length){
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }

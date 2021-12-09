@@ -1,6 +1,6 @@
 
 import { createSlice } from '@reduxjs/toolkit'
-import { selectCurrentDay } from '../syllabus/syllabusSlice'
+import { selectFinalDay, selectCurrentDay } from '../syllabus/syllabusSlice'
 import { selectAssignment } from '../assignments/assignmentSlice'
 import galleryCategories from './GALLERY_CATEGORIES'
 import { selectUserCritMessages } from '../critMessages/critMessagesSlice'
@@ -129,7 +129,7 @@ export const selectGPIOWorks = state => {
 
 //want to return the most recent assignment here
 export const selectCurrentWorks = state => { 
-    const currentDay = selectCurrentDay(state)
+    const currentDay = selectFinalDay(state)
     //console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
     const assignment = selectAssignment(currentMinus1)(state)
@@ -143,6 +143,14 @@ export const selectCurrentGalleryAssignment = state => {
     //console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
     const assignment = selectAssignment(currentMinus1)(state)
+    return assignment
+}
+
+export const selectFinalGalleryAssignment = state => {
+    const finalDay = selectFinalDay(state)
+    //console.log(currentDay.id)
+    const finalMinus1 = finalDay.id - 1
+    const assignment = selectAssignment(finalMinus1)(state)
     return assignment
 }
 
