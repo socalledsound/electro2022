@@ -76,6 +76,13 @@ export const selectCurrentDay = (state) => {
     return lowestDay
 }
 
+export const selectFinalDay = (state) => {
+    const allDays = selectAllDays(state)
+    // console.log(remaining)
+    const finalDay = allDays[allDays.length-1]
+    return finalDay
+}
+
 
 
 
