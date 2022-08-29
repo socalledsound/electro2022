@@ -1,8 +1,8 @@
-const DAY25 = {
-    id: 25,
+const DAY24 = {
+    id: 24,
     async: true,
-    unit: 'unit3',
-    date: 'November 18, 2021',
+    unit: 'unit6',
+    date: 'November 17, 2022',
     assignment: 'shade',
     title: 'throwing shade',
     description: `
@@ -116,4 +116,4 @@ const DAY25 = {
 
 }
 
-export default DAY25
+export default DAY24

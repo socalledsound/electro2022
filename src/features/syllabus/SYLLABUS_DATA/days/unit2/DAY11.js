@@ -1,6 +1,6 @@
 const DAY11 = {
     id: 11,
-    async: true,
+    async: false,
     unit: 'unit2',
     date: 'September 30, 2021',
     title: 'game on!',

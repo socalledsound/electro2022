@@ -1,170 +1,204 @@
 const DAY6 = {
     id: 6,
+    async: false,
     unit: 'unit1',
-    date: 'September 14, 2021',
-    title: 'SNAKES',
-    assignment: 'hardware',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631218847/MKOK6843_nqbjpx.jpg',
+    date: 'September 15, 2022',
+    title: 'listen!',
+    assignment: 'switches',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597030532/side-effects/neuhaus1_jggnxk.jpg',
     description: `
-    BE SURE TO BRING YOUR SOUND FILES TO CLASS IN SOME WAY SHAPE OR FORM!
-    One good way is to have them all on a usb drive; you could also use google drive or similar, or bring them
-    on a zoom recorder.  Or bring your laptop, with the files on it.
-    I'd like to make sure that everyone is able to get their sound files on their CPE, along with the python code
-    we need to trigger them!
-    Consider it a test run for our big performance on Thursday!
-    `,
-    videos: [
-        {
-            linkText: 'getting set up with circuit python',
-            linkSrc: 'https://youtu.be/ZM4Mb5LqzLM',
-        },
-        {
-            linkText: 'converting/editing sounds in audacity and adding them to the CPE',
-            linkSrc: 'https://youtu.be/jlnznBslEHg',
-        },
-        {
-            linkText: 'playing sounds with circuit python',
-            linkSrc: 'https://youtu.be/4FIODOg9G7Q',
-        },
-        {
-            linkText: 'connecting things to the capacitive inputs on the CPE',
-            linkSrc: 'https://youtu.be/brPlZSnxDQU',
-        },
-    ],
-    discussionQuestions: [
-        `Is it possible or useful to 'compose' improvisation?`,
-        `What is are some of the differences between a 'score' and a 'document'?`,
-        `Share a personal recipe for improvisation.`,
-    ],
+    Today we'll take a quick tour of computer history and a little look inside how they actually work.  
+    We'll talk about what object oriented programming is and what it was supposed to be.  
+    We'll talk about listening and artists and composers who do it, and then we'll talk about how to do it 
+    in javascript (and on our CPE).
+    And when I say, 'listen' with our CPE, I don't mean in the sonic sense; we'll do that soon enough.  
+    No, in this class, we'll learn about listening for event messages, using 'event listeners',
+    which are pretty essential to all forms of machine/human interfaces.  
+    For the assignment we're going to build a simple but evolving interface that can exist in multiple states.
+    Watch the videos to find out what I mean!`,
 
+    discussionQuestions: [
+        `Is 'blind' listening possible?  Is it desirable?  `,
+        `What is the distinction between a 'sound' and a 'sound effect'`,
+        `Is the same sound under two different names actually the same sound?`,
+    ],
     inClassDemo: [
         {
-            title: 'getting started with circuit python'
+            title: 'how to make a contact microphone'
         },
         {
-            title: 'loading sounds onto the CPE'
-        },
-        {
-            title: 'capacitive touch sensors on the CPE'
-        },
-
-    ],
-    reading: [
-        {
-            linkText: 'Fred Frith: Tapped Teeth: try different speeds',
-            linkSrc: 'https://drive.google.com/file/d/1mGiOzTHgvvW85vFLXR1__pdNJ5ve2ng7/view?usp=sharing'
+            title: 'working with a zoom recorder'
         }
+    ],
+    videos: [
+        {
+            linkText: '3.1 : listen!',
+            linkSrc: 'https://youtu.be/vTYjGfJCMB8',
+        },  
+        {
+            linkText: '3.2 : switches+listeners',
+            linkSrc: 'https://youtu.be/m-2VbSgHgP0',
+        },      
+        {
+            linkText: '3.3 coding a volume graph for the CPE',
+            linkSrc: 'https://youtu.be/ULldzqSlt0A',
+        }, 
+        {
+            linkText: '3.4 coding an AND sound gate for the CPE',
+            linkSrc: 'https://youtu.be/dEffjyXvPEg',
+        },        
+    ],
+    reading : [
+        {
+            linkText: 'Pauline Oliveros: some sound observations',
+            linkSrc: 'https://drive.google.com/file/d/1OAnH99RQi2uKMdw5ri6_RB7UzNi98p6y/view',
+        },
     ],
     inspirationLinks: [
+
         {
-            linkText: 'unknown devices',
-            linkSrc: 'https://www.youtube.com/watch?v=za8-tw4fndQ',
+            linkText: 'The watts prophets: listen',
+            linkSrc: 'https://www.youtube.com/watch?v=kU8X3GQOOqo',
         },
         {
-            linkText: 'david toop on making sound',
-            linkSrc: 'https://www.youtube.com/watch?v=-nYdsNqHo1g',
+            linkText: 'Pauline Oliveros: the difference between hearing and listening',
+            linkSrc: 'https://www.youtube.com/watch?v=_QHfOuRrJB8',
         },
         {
-            linkText: '3 random strangers make a song',
-            linkSrc: 'https://www.youtube.com/watch?v=jr478w--dpE',
+            linkText: 'max neuhaus, times square',
+            linkSrc: 'https://www.diaart.org/visit/visit-our-locations-sites/max-neuhaus-times-square',
         },
         {
-            linkText: 'celeste boursier mougenot: birds',
-            linkSrc: 'https://www.artnews.com/artnews/news/french-pavilion-artist-celeste-boursier-mougenot-teaches-the-world-to-sing-4036/',
+            linkText: 'video about max neuhaus times square',
+            linkSrc:'https://www.youtube.com/watch?v=kA-fihBFWBI',
         },
         {
-            linkText: 'thingamajigs festival 2013 video',
-            linkSrc: 'https://www.youtube.com/watch?v=K0ZZ3mVlYD8',
+            linkText: `4' 33" on a bus`,
+            linkSrc: 'https://www.youtube.com/watch?v=WYQhXN1UFbU&t=55s',
+        }, 
+        {
+            linkText: 'earl brown, december 1952',
+            linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630297036/Earle-Browns-December-1952_upbwoj.png',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"yoko ono bicycle piece",
+            linkSrc:"https://socalledsound.github.io/gap2018/images/non-sense/yokoBicycle.jpg"
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"open that window",
+            linkSrc:"http://www.openthatwindow.com/"
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'Scientists Invent Noise-Canceling Windows',
+            linkSrc: 'https://www.insidescience.org/news/scientists-invent-noise-canceling-windows#:~:text=(Inside%20Science)%20%2D%2D%20A%20device,a%20microphone%20outside%20the%20window.',
+        },
+      
+        {
+            linkText: 'computerhistory.org',
+            linkSrc: 'https://www.computerhistory.org/revolution/topics#exhibition',
+        },        
+       
+        {
+            linkText: 'What Are Semiconductors? And How Do They Work?',
+          linkSrc: 'https://www.scienceabc.com/innovation/what-are-semiconductors-and-how-do-they-work.html'
+      },    
+       {
+        linkText: 'How transistors work, a basic explanation',
+        linkSrc: 'https://www.youtube.com/watch?v=0CvdruTMH1c&t=51s',
+    },      
+      {
+          linkText: 'an introduction to the smalltalk language',
+          linkSrc: 'https://www.codeproject.com/Articles/1241904/Introduction-to-the-Smalltalk-Programming-Language',
+      },
+      {
+          linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
+            linkSrc: 'https://supercollider.github.io/'
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'the three body problem by Liu Cixin',
+            linkSrc: 'https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)'
         },
-        {
-            linkText: 'this marble machine is kinda cool but...the video is lame-ish',
-            linkSrc: 'https://www.youtube.com/watch?v=IvUU8joBb1Q',
-        },
+
+
+
     ],
     techLinks: [
-        {
-            linkText: 'github repo with python code and sounds for a bird sampler',
-            linkSrc: 'https://github.com/socalledsound/cpe-bird-sampler',
-        },
-        {
-            linkText: 'circuit python made easy on the playground express',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
-        },
-        {
-            linkText: 'circuit python capacitive touch',
-            linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/capacitive-touch',
-        },
-        {
-            linkText: 'updating the bootloader -- you may not need to do this',
-            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/updating-the-bootloader',
-        },
-        {
-            linkText: 'download circuit python',
-            linkSrc: 'https://circuitpython.org/board/circuitplayground_express/',
-        },
-        {
-            linkText: 'mu editor for circuit python',
-            linkSrc: 'https://codewith.mu/en/download',
-        },
-        {
-            linkText: 'download visual studio code',
-            linkSrc: 'https://code.visualstudio.com/download',
-        },
-        {
-            linkText:'download audacity',
-            linkSrc: 'https://www.audacityteam.org/download/',
-        },
 
+      
         {
-            linkText: 'using external devices on the CPE',
-            linkSrc: 'https://core-electronics.com.au/videos/circuit-playground-express-workshop-chapter-4-using-external-devices',
+            linkText: 'CPE: volume controls',
+            linkSrc: 'https://makecode.com/_8wtVw8L0pAJc',
+        },   
+             
+        {
+            linkText: 'CPE: AND gate sound player',
+            linkSrc: 'https://makecode.com/_XR6M9fXYjCmA',
+        }, 
+        {
+            linkText: 'my binary color abacus (written in javascript!)',
+            linkSrc: 'https://suspicious-shockley-333ae2.netlify.app/',
         },
         {
-            linkText: 'capacitive touch on the CPE',
-            linkSrc: 'https://youtu.be/BxlbKu-WGok',
+            linkText: 'an interactive abacus (it inspired my thing above!)',
+            linkSrc: 'https://www.advanced-ict.info/mathematics/abacus.html',
+        }, 
+        {
+            linkText: 'interactive and or nand nor xor nxor',
+            linkSrc: 'https://www.advanced-ict.info/interactive/circuits.html',
+        },  
+        {
+            linkSrc: 'https://makecode.adafruit.com/javascript',
+            linkText: 'javascript on the CPE',
         },
         {
-            linkText: 'another nice capacitive touch keyboard with copper strips',
-            linkSrc: 'https://www.youtube.com/watch?v=tE_-8evzGoI',
-        },
-
-        {
-            linkText: 'circuit python play sound file',
-            linkSrc: 'https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-file',
-        },
-
-        {
-            linkText: 'alligator clips',
-            linkSrc: 'https://www.adafruit.com/product/1008',
+            linkText: 'the make code library API',
+            linkSrc: 'https://makecode.adafruit.com/reference',
         },
         {
-            linkText: 'copper foil tape',
-            linkSrc: 'https://www.adafruit.com/product/1128',
+            linkText: 'set all lights to a hex color',
+            linkSrc: 'https://makecode.adafruit.com/reference/light/set-all',
         },
         {
-            linkText:'lithium ion batteries from adafruit',
-            linkSrc:'https://www.adafruit.com/category/44_138',
+            linkText: 'make code: logic lab',
+            linkSrc: 'https://makecode.adafruit.com/learnsystem/logic-lab',
+        },        
+        {
+            linkText: 'addEventListener() method at MDN',
+            linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener',
         },
         {
-            linkText: 'lithium ion batteries at amazon',
-            linkSrc: 'https://www.amazon.com/phone-battery-backup/s?k=phone+battery+backup&i=mobile&rh=n%3A2335752011%2Cp_36%3A-2000&dc&qid=1631133504&rnid=2491154011&ref=sr_nr_p_36_1'
-        }
+    
+            linkText: 'web events @ MDN',
+            linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/Events',
+        },
+        
+  {
+            linkText: 'make a Transistor NAND Gate Circuit on a breadboard',
+            linkSrc: 'https://www.dummies.com/programming/electronics/diy-projects/electronics-projects-how-to-create-a-transistor-nand-gate-circuit/',
+        },        {
+            linkText: 'intro to logic gates in javascript',
+            linkSrc: 'https://blog.nona.digital/introduction-to-boolean-logic-gates-in-javascript/',
+        },        {
+            linkText: 'nand2tetris',
+            linkSrc: 'https://www.nand2tetris.org/',
+        },              
+        {
+            linkText: 'this looks cool if you prefer python on your CPE',
+            linkSrc: 'https://www.hanselman.com/blog/adafruits-circuit-playground-express-simulated-visual-studio-codes-device-simulator-express',
+        },        
+        {
+            linkText: 'linux signals',
+            linkSrc: 'https://wizardzines.com/comics/signals/',
+        },
+       
+        {
+            linkText: 'make code API reference',
+            linkSrc: 'https://makecode.adafruit.com/reference',
+        },        
+        {
+            linkText: 'random color loop',
+            linkSrc: 'https://makecode.com/_hfqDD8TYYWVz',
+        },
     ],
 
 }

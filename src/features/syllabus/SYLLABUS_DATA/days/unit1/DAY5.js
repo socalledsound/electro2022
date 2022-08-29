@@ -1,227 +1,226 @@
 const DAY5 = {
     id: 5,
-    async: true,
-    unit: 'unit1',
-    date: 'September 9, 2021',
-    title: 'collection',
-    assignment: 'collection',
+    async: false,
+    unit: 'unit0',
+    date: 'September 13, 2021',
+    title: 'the resistance needs you',
+    assignment: 'resistance',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1629990026/tiananmen-square-anniversary-01-file-gty-jef-190529_hpMain_4x3t_992_s73ehp.jpg',
     description: `
-    Today we're going to look at a bunch of art that involves this idea of collecting that I want you to explore 
-    in this first project.  We'll start by talking about the Tacita Dean article you read, which talks about the 
-    magic and the burden of collecting.  We'll talk about ambergris and we'll talk about that one sock in the drawer 
-    that doesn't match anything and sort of makes the whole drawer sing, as a result.  We'll also explore loops and arrays
-    in javascript and learn how to load our own sounds onto the circuit playground express.  (which, as it turns out, is
-    impossible using their stripped down version of javascript!  So we'll learn how to do it in...python!).`,
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
-    discussionQuestions: [
-
-        `Do you have a collection?  Tell us about it.`,
-        `What is a collection and how is it different from, just, a bunch of stuff?`,
-        `'The problem is realizing that you've started one', says Tacita Dean.
-        What are the 'problems' that she's talking about?  
-        `,
-        `She also talks about 'living' vs 'dead' collections, which, in the context of
-        art, or making an art practice from collecting, seems like a particularly
-        important distinction.  How do you understand this distinction?
-        `,
+    Today we'll talk about resistance.  Is it possible to 'resist', with art?  Is it possible to not 'resist' with art? 
+    Your own answer to this question will no doubt have a lot to do with what kind of art -- and ultimately, life -- you make.
+    I don't have any answers for you, but I look forward to the discussion.  
+    What I do know, is that electrical circuits absolutely and positively can't function without resistance.
+    We'll look at a few types of resistors, including that most recognizable of very large resistors, the audio speaker.
+    We'll learn how to wire up speakers and also LEDs and we'll talk about some artists that use them.
+    Read Walter Benjamin's 'art in the age of mechanical reproduction' (in the linkds) if you haven't before, and come
+    to class ready to talk about class warfare....and also speakers and LEDS. ; ) 
+    `,
+    reading: [
+        {
+            linkText: `Walter Benjamin, 'the work of art in the age of mechanical reproduction`,
+            linkSrc: 'https://monoskop.org/images/6/6d/Benjamin_Walter_1936_2008_The_Work_of_Art_in_the_Age_of_Its_Technological_Reproducibility_Second_Version.pdf',
+        },
     ],
-    inClassDemo: [
-        {
-            title: 'arrays and array methods'
-        },
-        {
-            title: 'getting started with circuit python and the CPE'
-        },
-        {
-            title: 'loading sounds onto your CPE'
-        }
+    discussionQuestions: [
+        `In 'the work of art in the age of mechanical reproduction', Walter Benjamin advances the argument that,
+        in our technological world, art must be political or it sides with fascism and leads inexorably to war.
+        Is this a fair assessment of apolitical art?  Can you make an argument in favor of 'sublime' art?`,
+        
+        `Have you seen/noticed either Leo Villareal's 'bay bridge lights' or Jim Campbell's artwork at the 
+        top of the tallest building in downtown SF?  Reactions/opinions?  And, what would Walter Benjamin have
+        to say about those works?`,
+
+
     ],
     videos: [
         {
-            linkText: 'collection',
-            linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
+            linkText: '2.1 : speaker circuit, multimeter',
+            linkSrc: 'https://youtu.be/VeIOYwJd3Is',
         },
         {
-            linkText: 'collections (arrays) on the CPE',
-            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+            linkText: '2.2 : fight the power',
+            linkSrc: 'https://youtu.be/vZB9bfWPHOY',
         },
-        {
-            linkText: 'array methods',
-            linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
-        },
-        {
-            linkText: 'arrays of sounds',
-            linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
-        },
-
+        // {
+        //     linkText: 'IN CLASS: hooking up an LED',
+        //     linkSrc: '',
+        // },
     ],
-    reading: [
+    inClassDemo: [
         {
-            linkText:"Tacita Dean, 'Collections and Childhood'",
-            linkSrc : 'https://drive.google.com/file/d/1xGCnGF_bqDqtF8u83OrKUbtSOprsSVSE/view?usp=sharing',
+            title: 'making an LED circuit'
         },
+        {
+            title: 'hooking up an external LED to a CPE'
+        }
     ],
     inspirationLinks: [
         {
-            linkText:"Christian Marclay mini documentary",
-            linkSrc:"https://www.youtube.com/watch?v=4yqM3dAqTzs"
-        },	
-        {
-            linkText: 'freesound.org',
-            linkSrc: 'https://freesound.org/',
+            linkText: 'tank man (wikipedia)',
+            linkSrc: 'https://en.wikipedia.org/wiki/Tank_Man',
         },
         {
-            linkText:"Arthur Jafa, Love is the Message, the Message is Death",
-            linkSrc:"https://www.youtube.com/watch?v=lKWmx0JNmqY"
+            linkText: 'shake: inflatable tank man',
+            linkSrc: 'https://www.artandobject.com/news/inflatable-tank-man-commemorates-tiananmen-square-30th-anniversary',
         },
         {
-            linkText:"Experience the horror of 90 solid minutes of The Grateful Dead tuning its instruments",
-            linkSrc:"http://news.avclub.com/experience-the-horror-of-90-solid-minutes-of-the-gratef-1798273081"
-        },
-        {
-            linkText: 'MSCHF Cuts Up $30,000 USD Damien Hirst Spot Print Into 88 Dots',
-            linkSrc: 'https://hypebeast.com/2020/4/mschf-damien-hirst-severed-spots-project',
+            linkText: `Public Enemy: 'fight the power'`,
+            linkSrc: `https://www.youtube.com/watch?v=mmo3HFa2vjg`,
         },
 
         {
-            linkText: 'the green ray, tacita dean',
-            linkSrc: 'https://vimeo.com/38026163',
+            linkText: 'Muir Woods park staff annotates own signs with historical corrections for racism, misogyny',
+            linkSrc: 'https://www.sfgate.com/california-parks/article/muir-woods-national-park-history-timeline-project-16414800.php',
         },
         {
-            linkText: 'monet haystacks',
-            linkSrc: 'https://www.google.com/search?q=monet+haystacks&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjAqvDCuLnWAhWJxVQKHc85A5YQ_AUICigB&biw=1382&bih=1279',
-        },  
-
-
-        {
-            linkText: 'edward burtynsky',
-            linkSrc: 'https://www.edwardburtynsky.com/',
+            linkText: `jodi.org`,
+            linkSrc: 'http://wwwwwwwww.jodi.org/',
         },
         {
-            linkText: 'Lorna Simpson, Easy To Remember',
-            linkSrc: 'https://vimeo.com/91549843',
-        },
-        {
-            linkText: 'Christian Marclay, the clock',
-            linkSrc: 'https://www.youtube.com/watch?v=BXbQw0rE5UE&list=PLWZ5fzURD_c2XUmveT2oF0SNMPB_f291a',
-        },
-        {
-            linkText: 'Lauren Woods, American Monument',
-            linkSrc: 'https://hyperallergic.com/461150/american-monument-lauren-woods-kimberli-meyer-california-state-university-long-beach/',
-        },
-        {
-            linkText: 'working on my novel, corey arcangel',
-            linkSrc: 'https://twitter.com/WrknOnMyNovel',
-        },
-        {
-            linkText: 'food that looks likek iggy azalea',
-            linkSrc: 'http://foodthatlookslikeiggyazalea.tumblr.com/',
-        },
-        {
-            linkText: 'zimoun',
-            linkSrc: 'https://www.zimoun.net/',
+            linkText: 'Wafa Bilal : domestic tension',
+            linkSrc: 'https://wafaabilal.com/domestic-tension/',
         },
 
         {
-            linkText:"Martin Creed - half the air in a given space",
-            linkSrc:"https://www.artsy.net/artwork/martin-creed-work-no-dot-200-half-the-air-in-a-given-space"
+            linkText: 'Guillermo Gomez Pena: border interrogation; la pocha nostra',
+            linkSrc: 'https://www.youtube.com/watch?v=txaY7ZAV5ck',
         },
         {
-            linkText: 'every episode of friends (link works for now)',
-            linkSrc: 'https://www.youtube.com/watch?v=c5h3qXAQOQI',
+            linkText: 'Rael San Fratello : transforming the border wall into a teeter totter',
+            linkSrc: 'https://www.youtube.com/watch?v=1bbeBo3te5E',
         },
         {
-            linkText: 'eva hesse repetition nineteen III',
-            linkSrc: 'https://www.moma.org/learn/moma_learning/eva-hesse-repetition-nineteen-iii-1968',
+            linkText: 'Banksy in palestine',
+            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
         },
         {
-            linkText: 'one and three chairs, joseph kosuth',
-            linkSrc: 'https://www.moma.org/learn/moma_learning/joseph-kosuth-one-and-three-chairs-1965',
+            linkText: 'palestine thanks Banksy',
+            linkSrc: 'https://www.theguardian.com/global-development/2020/aug/21/palestinians-stage-surprise-thank-you-event-for-banksy-in-bethlehem',
         },
         {
-            linkText: 'martin creed work no. 223 (three metronomes)',
-            linkSrc: 'http://martincreed.com/site/works/work-no-223',
+            linkText: '33 powerful black lives matter murals',
+            linkSrc: 'https://www.theverge.com/2020/7/5/21304985/black-lives-matter-murals-round-up-artists',
+        },
+        {
+            linkText: 'Jenny Holzer, works with LEDs',
+            linkSrc: 'https://projects.jennyholzer.com/LEDs',
+        },
+        {
+            linkText: 'Jenny Holzer : nowness',
+            linkSrc: 'https://www.nowness.com/story/jenny-holzer-light-stream',
         },
 
         {
-            linkText: 'agnes martin: drawing as idea and process',
-            linkSrc: 'http://notations.aboutdrawing.org/agnes-martin/',
+            linkText: 'jim campbell',
+            linkSrc: 'https://www.jimcampbell.tv/',
+        },
+        {
+            linkText: `Jim Campbell's LED images swim through space`,
+            linkSrc: 'https://www.youtube.com/watch?v=4x48aCX1uK8',
+        },
+        {
+            linkText: 'Leo Villareal : bay lights',
+            linkSrc: 'http://villareal.net/the-bay-lights-2013-the-bay-bridge-sf-ca',
         },
 
         {
-            linkText: 'warhol soup cans',
-            linkSrc: 'https://www.moma.org/collection/works/79809',
+            linkText: 'anne walsh and chris kubick: flesh ++ blood',
+            linkSrc: 'http://doublearchive.com/projects/flesh_blood.php',
         },
         {
-            linkText:"Richard Serra Throws Molten Lead Inside SFMOMA",
-            linkSrc:"https://www.sfmoma.org/richard-serra-throws-molten-lead-inside-sfmoma/"
+            linkText: 'Christina Kubisch, Abgehangt',
+            linkSrc: 'http://www.christinakubisch.de/en/works/installations/5',
         },
         {
-            linkText: 'Francis Alÿs: The Fabiola Project',
-            linkSrc: 'https://www.menil.org/exhibitions/242-francis-alys-the-fabiola-project',
-        },				
-        {
-            linkText:"Aaron Koblin, 'Artfully Visualizing Our Humanity'",
-            linkSrc:"https://www.youtube.com/watch?v=4v4XxlfVk3o"
+            linkText: 'Gary Hill, soundings',
+            linkSrc: 'https://vimeo.com/111166472',
         },
         {
-            linkText: 'alejandro duran',
-            linkSrc: 'https://alejandroduran.com/',
+            linkText: 'works by steve roden',
+            linkSrc : 'http://www.inbetweennoise.com/works/',
         },
+        {
+            linkText: 'terry fox: cone of silence',
+            linkSrc: 'https://www.artsy.net/artwork/terry-fox-cones-of-silence',
+        },
+        {
+            linkText: 'Robert Morris: box with the sound of its own making',
+            linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
+        },
+        {
+            linkText: 'Meeth the college student who makes his own chips',
+            linkSrc: 'https://thenewstack.io/meet-the-college-student-who-makes-his-own-chips/',
+        }
+
     ],
     techLinks: [
         {
-            linkText: 'make code : array and array methods',
-            linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
-        },              
-        {
-            linkText: 'make code: looping lights',
-            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
+            linkText: 'my make code code for turning an LED on and off with a button',
+            linkSrc: 'https://makecode.com/_Ves2qjRivLRa',
         },
         {
-            linkText: 'inspired by effie; this might be helpful for project 1!',
-            linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
-        }, 
-        {
-            linkText: 'make code : random looping music for the CPE',
-            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
+            linkText: 'using the speaker on the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=JjJ-KGwKh_4',
         },
         {
-            linkText: 'objects and arrays in eloquent javascript',
-            linkSrc: 'https://eloquentjavascript.net/04_data.html',
+            linkText: 'CPE: using the pins',
+            linkSrc: 'https://makecode.adafruit.com/learnsystem/pins-tutorial',
+        },
+        {
+            linkText: 'touch sensors on the CPE',
+            linkSrc: 'https://makecode.adafruit.com/learnsystem/pins-tutorial/touch-input/sensor-objects',
+        },
+        {
+            linkText: 'adafruit: all about LEDs',
+            linkSrc: 'https://learn.adafruit.com/all-about-leds/overview',
+        },
+        {
+            linkText: 'electronic Basics #8: Everything about LEDs and current limiting resistors',
+            linkSrc: 'https://www.youtube.com/watch?v=Qlayua3yjuE&list=PLAROrg3NQn7cyu01HpOv5BWo217XWBZu0&index=24&t=47s',
+        },
+        {
+            linkText: 'multimeters, measuring resistance',
+            linkSrc: 'https://learn.adafruit.com/multimeters/resistance',
+        },
+        {
+            linkText: 'how speakers make sound',
+            linkSrc: 'https://animagraffs.com/loudspeaker/',
+        },
+        {
+            linkText: 'how to make a home-made speaker',
+            linkSrc: 'http://www.josepino.com/?homemade-hifi-speaker',
+        },
+        {
+            linkText: 'one button to rule them all',
+            linkSrc: 'https://venturebeat.com/community/2010/09/14/one-button-to-rule-them-all/',
+        },
+        {
+            linkText: 'piezoelectricty',
+            linkSrc: 'https://en.wikipedia.org/wiki/Piezoelectricity',
         },
 
         {
-            linkText:"javascript array reference",
-            linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
-        },	
-        {
-            linkText: 'objects and arrays in javascript',
-            linkSrc: 'https://medium.com/javascript-in-plain-english/introduction-to-javascript-data-structures-af1ecb2d38eb',
-        },				                
-        {
-            linkText:"array methods",
-            linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+            linkText: 'an acoustic feedback system',
+            linkSrc: 'https://www.instructables.com/Acoustic-Feedback-System-With-Snare-Drum-or-Any-Ot/',
         },
+        {
+            linkText: 'parts express website',
+            linkSrc: 'https://www.parts-express.com/',
+        },
+        {
+            linkText: 'meditations on speaker impedance',
+            linkSrc: 'http://www.prestonelectronics.com/audio/Impedance.htm'
+        },
+        {
+            linkText: 'calculating the resistor value for an led',
+            linkSrc: 'https://www.etechnog.com/2019/01/resistor-value-calculation-for-led.html',
+        },
+        {
+            linkText: 'understanding forward voltage',
+            linkSrc:'https://learn.adafruit.com/all-about-leds/forward-voltage-and-kvl',
+        }
 
-        {
-            linkText: 'How To Correctly Shuffle An Array in JavaScript',
-            linkSrc: 'https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb',
-        },
-        {
-            linkText: 'a simple looping sequencer in js',
-            linkSrc: 'https://github.com/socalledsound/js-sequencer',
-        },
-        {
-            linkText: 'circuit python made easy on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
-        },        {
-            linkText: 'circuit python sound box on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
-        },        {
-            linkText: 'sensors on the CPE',
-            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        }, 
     ],
 
 }

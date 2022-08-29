@@ -1,231 +1,170 @@
-const DAY9 = {
-    id: 9,
-    async: true,
+const DAY8 = {
+    id: 8,
+    async: false,
     unit: 'unit2',
-    date: 'September 23, 2021',
-    title: 'player player',
-    assignment: 'sprites',
+    date: 'September 21, 2021',
+    title: 'fun fun function',
+    assignment: 'itLives',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
     description: `
-    Today we're going to create characters.  
-    We'll start by looking at some artists who have grappled with this question of 
-    what a character is and what it means to play one.
-    Then, we'll make our own.  
-    For our code assignment, we're going to continue our experiments with animation, but
-    this time we'll use sequences of images, so we can create animating characters. 
-    We'll learn about images in p5, sprite sheets,  and another useful library, p5.play.
-    For today's assignment, you'll need to sketch out a character for your game.  Details 
-    on the assignment.
+    Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
+    Or, choose your own adventure books, like the one shown on the right.
+    We'll use the p5 library, which has all kinds of useful tools for artists.  
+     And, we'll start actually composing software in javascript, using both the functional and the class-based style.
     `,
     discussionQuestions: [
-        `Is 'identity' different from 'character'?`,
-        `Is it ok to borrow identity?  Character?  When, Why/not?`,
-        `Is it ok to invent?  to lie?  When, Why/not?`,
-        `Is it possible to have a character without narrative?`,
-        `What are some ways to keep track of character transformation in javascript?`,
+        
+        `What makes a good game?`,
+        `Do you have any favorite games?  (digital or 'real')`,
+        `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
+        `'gamification': evil, amazing or both?`,
     ],
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597703164/side-effects/trent5_o835fq.jpg',
     inspirationLinks: [
         {
-            linkText: 'stop motion animation by some kids with water!',
-            linkSrc: 'https://thumbs.gfycat.com/TenderFrayedHagfish-size_restricted.gif',
+            linkText: 'homo ludens',
+            linkSrc: 'https://en.wikipedia.org/wiki/Homo_Ludens',
         },
         {
-            linkText: 'the best new animators are making their names on tiktok',
-            linkSrc: 'https://www.theverge.com/21436768/tiktok-cartoons-animators-creators-king-science-tootymcnooty-maddi-winter-alex-rabbit',
+            linkText:"Pitagoru Suitchi",
+            linkSrc:"https://www.facebook.com/34842394274/videos/1054182998170/"
         },
         {
-            linkText:"Introduction to Observing Kobito Hiding Peach Bottom Kobitos",
-            linkSrc:"https://www.youtube.com/watch?v=6c0hBQQRRJY"
+            linkText: 'fischli and weiss:the way things go',
+            linkSrc: 'https://vimeo.com/463685768',
+        },
+        {
+            linkText: '748時間かけたピタゴラ装置（short ver.）Rube Goldberg Machine made in 748 hours',
+            linkSrc: 'https://www.youtube.com/watch?v=IfEWIT_pHPk',
+        },
+        {
+            linkText:"sound shapes game",
+            linkSrc:"https://www.youtube.com/watch?v=FIxKLZHFThE"
+        },
+        {
+            linkText: 'badlands gameplay',
+            linkSrc: 'https://www.youtube.com/watch?v=JwOkJs0jh2A',
+        },
+        {
+            linkText:"giphy arcade",
+            linkSrc:"https://arcade.giphy.com/"
+        },
+        {
+            linkText: 'giphy arcade nose',
+            linkSrc: 'https://arcade.giphy.com/playlist/-LntTOeuqUo2uIjJwWjG',
+        },
+        {
+            linkText:"Designing For Play | Meet Hellicar & Lewis",
+            linkSrc:"https://www.youtube.com/watch?v=Xxdg2H9DvXg"
+        },
+        {
+            linkText:"Ludic Interfaces, Matthias Fuchs et al",
+            linkSrc:"http://creativegames.org.uk/publications/pdf_files/Ludic_Interfaces-2013.pdf"
+        },
+        {
+            linkText:"Indie Game Development with Jane Friedhoff",
+            linkSrc:"https://www.youtube.com/watch?v=VIEwBm7PWQM"
+        },
+        {
+            linkText:"Jane Friedhoff",
+            linkSrc:"http://janefriedhoff.com/"
+        },
+        {
+            linkText:"jane friedhoff- scream em up",
+            linkSrc:"https://vimeo.com/41629022"
         },	
         {
-            linkText:"william pope l as superman",
-            linkSrc:"https://www.google.com/search?q=william+pope+l+superman&sxsrf=ACYBGNRMAFa9qh7KPoltkCUrUYZoFI9-Aw:1572931878311&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjF9vLuq9LlAhVxFjQIHazWC7wQ_AUIEigB&biw=3164&bih=714"
-        },
-        {
-            linkText:"James Luna - take  Picture With a Real Indian",
-            linkSrc:"https://www.youtube.com/watch?v=dAa69BVwPYg"
-        },
-        {
-            linkText:"Rammellzee",
-            linkSrc:"https://www.youtube.com/watch?v=T52mHTpvSeA"
+            linkText:"handvaska by Ramsey nasser and Jane Friedhof",
+            linkSrc:"http://nas.sr/handv%C3%A4ska/"
         },	
-                               
         {
-            linkText:"pierre Huyghe",
-            linkSrc:"https://www.youtube.com/watch?v=J3E8ioPg8xQ"
+            linkText: 'js13k games',
+            linkSrc: 'https://js13kgames.com/',
         },
         {
-            linkText:"Angela Washko - the game",
-            linkSrc:"https://angelawashko.com/home.html"
-        }
-        ,
-        {
-            linkText:"Adrian Piper, Mythic Being",
-            linkSrc:"http://www.adrianpiper.com/vs/video_tmb.shtml"
+            linkText: 'this website will self-destruct',
+            linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
         },
         {
-            linkText: 'adrian piper - the probable trust registry',
-            linkSrc: 'https://hyperallergic.com/127622/adrian-piper-binds-us-with-impossible-trust/',
-        },
-        {
-            linkText:"Star Choir by Malik Gaines and Alexandro Segade",
-            linkSrc:"https://vimeo.com/193188303"
-        },		
-
-         {
-            linkText:"Nao Bustamente, 'Silver & Gold'",
-            linkSrc:"https://vimeo.com/86799096"
-        },
-        {
-            linkText:"Senga Nengudi",
-            linkSrc:"http://sengasenga.com/gallery.html"
-        },
-        {
-            linkText:"Mikka Rottenberg",
-            linkSrc:"https://www.youtube.com/watch?v=jQjZ-nZeWcE"
-        },
-        {
-            linkText:"Nick Cave, Until",
-            linkSrc:"http://massmoca.org/nick-cave-until/"
+            linkText: '',
+            linkSrc: '',
         },
 
         {
-            linkText:"Nikki S. Lee",
-            linkSrc:"https://www.youtube.com/watch?v=oI8xpJItPVI"
+            linkText: '',
+            linkSrc: '',
         },
-        {
-            linkText:"scathing critique of Nikki S Lee",
-            linkSrc:"http://contemptorary.org/nikki-s-lees-projects-and-the-ongoing-circulation-of-blackface-brownface-in-art/"
-        },
-
-        {
-            linkText:"William Pope L - the will to exhaust",
-            linkSrc:"https://walkerart.org/magazine/william-popel-will-exhaust"
-        },
-        {
-            linkText: 'trenton doyle hancock on art 21',
-            linkSrc: 'https://art21.org/watch/art-in-the-twenty-first-century/s2/trenton-doyle-hancock-in-stories-segment/',
-        },
-
-        {
-            linkText: 'She created a fake Twitter persona — then she killed it with COVID-19',
-            linkSrc: 'https://www.theverge.com/21419820/fake-twitter-persona-covid-death-munchausen-metoostem-co-founder',
-        },
+        // {
+        //     linkText: 'On Music and Tech with Holly Herndon & Mat Dryhurst',
+        //     linkSrc: 'https://www.classicalcontemporary.art/episoden/on-music-and-tech-with-holly-herndon-amp-mat-dryhurst',
+        // },
+        // {
+        //     linkText:"Gabriel Orozco - horses running endlessly",
+        //     linkSrc:"https://www.moma.org/collection/works/81977"
+        // },
+        // {
+        //     linkText:"rethinking wargames - chess where pawns win?",
+        //     linkSrc:"http://ruthcatlow.net/?works=rethinking-wargames"
+        // },
         ],
         techLinks: [
             {
-                linkText: 'online editor: stop motion butterfly in p5 with comments',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/GsjmtEXH4',
+                linkText: 'download p5.js',
+                linkSrc: 'https://p5js.org/download/',
             },
             {
-                linkText: 'stop motion butterfly in p5 with comments on github',
-                linkSrc: 'https://github.com/socalledsound/butterfly-stop-motion'
+                linkText: 'p5.js reference',
+                linkSrc: 'https://p5js.org/reference/',
             },
             {
-                linkText: 'pixilart, nice editor for making pixel art characters',
-                linkSrc: 'https://www.pixilart.com/',
+                linkText: 'javascript morsels playlist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
             },
             {
-                linkText: 'piskel is also nice',
-                linkSrc: 'https://www.piskelapp.com/',
+                linkText: 'Daniel Shiffman: programming in p5.js playist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
             },
             {
-                linkText: 'p5.play',
-                linkSrc: 'https://molleindustria.github.io/p5.play/'
+                linkText: 'p5 online editor - check examples under file menu',
+                linkSrc: 'https://editor.p5js.org/',
             },
             {
-                linkText:"walking sprite in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/bZBw_u4p6"
+                linkText: 'github repo for our first animation',
+                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
             },
             {
-                linkText:"dancing alien in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/k5r2dvTpg"
-            },
-            {
-                linkText:"piskel example",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/zLpcIXltI"
-            },
-  
-
-            {
-                linkText:"animated sprites in p5",
-                linkSrc:"https://www.youtube.com/watch?v=3noMeuufLZY"
-            },
-            {
-                linkText:"sprites in p5.play",
-                linkSrc:"https://molleindustria.github.io/p5.play/docs/classes/Sprite.html"
-            },
-    
-            {
-                linkText: 'setTimeout, explained by Daniel Shiffman',
-                linkSrc: 'https://www.youtube.com/watch?v=nGfTjA8qNDA',
-            },
-            {
-                linkText: 'setInterval, explained by Daniel Shiffman',
-                linkSrc: 'https://www.youtube.com/watch?v=CqDqHiamRHA',
+                linkText: 'git and github for poets',
+                linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
             },
 
-            {
-                linkText: 'dancing alien repo from today',
-                linkSrc: 'https://github.com/socalledsound/SE-unit2-day13-alien',
-            },
-            {
-                linkText: 'sprite sheet repo from today',
-                linkSrc: 'https://github.com/socalledsound/SE-unit2-day13-spritesheet',
-            },
-            {
-                linkText: 'p5.play spritesheet repo',
-                linkSrc: 'https://github.com/socalledsound/SE-unit2-day13-p5play',
-            },
-            {
-                linkText:"dancing alien sprite with p5.play mouse attraction",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/rEHv8XTMk"
-            },
-            {
-                linkText:"dancing alien sprite with p5.play bounce",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/GGPGwFghg"
-            },
-            {
-                linkText:"dancing alien sprite with p5.play mouse attraction",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/rEHv8XTMk"
-            },
-            {
-                linkText: 'mario spritesheet animation on github',
-                linkSrc: 'https://github.com/socalledsound/mario-simple-sprite',
-            }
- 
         ], 
         videos: [
             {
-                linkText: 'using piskel',
-                linkSrc: 'https://www.youtube.com/watch?v=HS2OaAu07MU'
+                linkText: 'github basics',
+                linkSrc: 'https://youtu.be/RpYKKYsG7Io',
             },
             {
-                linkText: 'loading images in p5',
-                linkSrc: 'https://youtu.be/OGErT4-4Xpw',
+                linkText: 'getting started with p5',
+                linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
             },
             {
-                linkText: 'getting started/animating a sprite sheet with p5.play',
-                linkSrc: 'https://youtu.be/IeUdwaXhhaA',
+                linkText: 'code-along: bringing things to life pt 1',
+                linkSrc: 'https://youtu.be/tk2TOlN4Qmw',
             },
             {
-                linkText: 'animating a mario spritesheet with p5',
-                linkSrc: 'https://youtu.be/cmzbjLPiD9I',
+                linkText: 'code-along: bringing things to life pt 2',
+                linkSrc: 'https://youtu.be/uSnvsfot_U4',
             },
             {
-                linkText: 'javascript morsels: objects and this',
-                linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
+                linkText: 'submitting an assignment',
+                linkSrc: 'https://youtu.be/EgPmpnQltt8',
             },
             {
-                linkText: 'live server links are not web links',
-                linkSrc : 'https://youtu.be/ahblxZfIRVA',
+                linkText: 'javascript morsels playlist',
+                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
             },
-            {
-                linkText: 'branching with git',
-                linkSrc: 'https://youtu.be/iioxcp7gC7Q',
-            },
-        ], 
+            
+        ],    
 
 }
 
-export default DAY9
+export default DAY8

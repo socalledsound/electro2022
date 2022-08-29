@@ -1,9 +1,9 @@
-const DAY22 = {
-    id: 22,
+const DAY23 = {
+    id: 23,
     async: false,
-    unit: 'unit3',
-    date: 'November 9, 2021',
-    title: 'expanded realities',
+    unit: 'unit6',
+    date: 'November 15, 2022',
+    title: 'into the multiverse',
     assignment: 'webgl',
     description: `
     XR, or expanded reality, has been one of the biggest buzzwords in digital media lately.  
@@ -156,4 +156,4 @@ const DAY22 = {
 
 }
 
-export default DAY22
+export default DAY23

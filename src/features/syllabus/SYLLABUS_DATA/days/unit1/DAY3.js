@@ -1,13 +1,12 @@
-const DAY4 = {
-    id: 4,
-    async: false,
+const DAY3 = {
+    id: 3,
     unit: 'unit1',
-    date: 'September 8, 2022',
-    title: 'boundaries and booleans',
-    assignment: 'boundaries',
+    date: 'September 6, 2022',
+    title: 'can haz meme?',
+    assignment: 'meme',
     description: `
-    boundaries and booleans description here
-    `,
+   can haz meme description here
+   `,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     discussionQuestions: [
 
@@ -222,4 +221,4 @@ const DAY4 = {
 
 }
 
-export default DAY4
+export default DAY3

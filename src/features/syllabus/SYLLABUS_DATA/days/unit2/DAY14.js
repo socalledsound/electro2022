@@ -1,10 +1,10 @@
 const DAY14 = {
     id: 14,
     unit: 'unit2',
-    date: 'October 12, 2021',
+    date: 'October 13, 2022',
     async: false,
-    title: 'control',
-    assignment: 'control',
+    title: 'game of life',
+    assignment: 'gol',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',
     description: `
         We're back in the flesh today!  BE SURE TO BRING YOUR BEST 'GAME' TO CLASS TODAY.  I want to talk with you about your project and help you work out any 

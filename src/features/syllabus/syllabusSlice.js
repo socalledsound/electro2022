@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-import { UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5 } from './SYLLABUS_DATA/UNITS.js'
+import { UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7 } from './SYLLABUS_DATA/UNITS.js'
 
 
 const initialState = {
-    units : [UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5 ],
+    units : [UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7 ],
     currentUnitIdx: 0,
     currentDayIdx: 0,
 }

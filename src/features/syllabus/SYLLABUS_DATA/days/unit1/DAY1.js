@@ -1,7 +1,7 @@
 const DAY1 = {
     id: 1,
-    unit: 'unit0',
-    date: 'August 26, 2021',
+    unit: 'unit1',
+    date: 'August 30, 2022',
     title: 'hello! world',
     assignment: 'intro',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',

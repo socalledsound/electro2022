@@ -1,39 +1,32 @@
-const DAY7 = {
-    id: 7,
+const DAY4 = {
+    id: 4,
     async: false,
     unit: 'unit1',
-    date: 'September 20, 2022',
-    title: 'play time',
-    assignment: 'collection',
+    date: 'September 7, 2021',
+    title: 'mic check',
+    assignment: 'sensing',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1603689412/side-effects/HNND2_lw07um.jpg',
     description: `
     Today we're going to build contact mics in class and talk about what it means to record sounds.
     I'll also introduce you to the zoom recorder and talk a bit about converting sound data into computer data.
     Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva'; just put it 
     on in the background for a while at some point and read his 'profound listening article.  
+   
+    
     `,
-    // description: `
-    // Today we're going to build contact mics in class and talk about what it means to record sounds.
-    // I'll also introduce you to the zoom recorder and talk a bit about converting sound data into computer data.
-    // Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva'; just put it 
-    // on in the background for a while at some point and read his 'profound listening article.  
-    // `,
     discussionQuestions: [
-        
-        `If it's not music, what is it?  (...as John Cage said)`,
-        `Is it possible to 'compose' listening?  Is it possible to compose improvisation?
-        What does it mean to 'compose' improvisation, or what is the role of a composer of improvisation?`,
-        `be ready to talk about your own 'deep listening' experience.`,
+        `Is 'blind' listening possible?  Is it desirable?  `,
+        `What is the distinction between a 'sound' and a 'sound effect'`,
+        `Is the same sound under two different names actually the same sound?`,
     ],
     inClassDemo: [
         {
-            title: 'deep listening'
+            title: 'how to make a contact microphone'
         },
         {
-            title: 'writing event listeners in javascript for the CPE'
+            title: 'working with a zoom recorder'
         }
     ],
-
     videos: [ 
         {
             linkText: 'sound => data',
@@ -167,4 +160,4 @@ const DAY7 = {
 
 }
 
-export default DAY7
+export default DAY4

@@ -1,13 +1,17 @@
-const DAY4 = {
-    id: 4,
+const DAY2 = {
+    id: 2,
     async: false,
     unit: 'unit1',
-    date: 'September 8, 2022',
-    title: 'boundaries and booleans',
-    assignment: 'boundaries',
+    date: 'September 1, 2022',
+    title: 'collection',
+    assignment: 'collection',
     description: `
-    boundaries and booleans description here
-    `,
+    Today we're going to look at a bunch of art that involves this idea of collecting that I want you to explore 
+    in this first project.  We'll start by talking about the Tacita Dean article you read, which talks about the 
+    magic and the burden of collecting.  We'll talk about ambergris and we'll talk about that one sock in the drawer 
+    that doesn't match anything and sort of makes the whole drawer sing, as a result.  We'll also explore loops and arrays
+    in javascript and learn how to load our own sounds onto the circuit playground express.  (which, as it turns out, is
+    impossible using their stripped down version of javascript!  So we'll learn how to do it in...python!).`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
     discussionQuestions: [
 
@@ -222,4 +226,4 @@ const DAY4 = {
 
 }
 
-export default DAY4
+export default DAY2

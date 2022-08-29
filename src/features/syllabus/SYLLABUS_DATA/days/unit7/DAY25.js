@@ -1,7 +1,7 @@
-const DAY29 = {
-    id: 29,
-    unit: 'unit6',
-    date: 'December 07, 2021',
+const DAY25 = {
+    id: 25,
+    unit: 'unit7',
+    date: 'December 06, 2022',
     title: 'FINAL CRIT',
     assignment: 'FINALFINAL',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596959762/side-effects/irdune_cvypcv.jpg',
@@ -41,4 +41,4 @@ const DAY29 = {
 
 }
 
-export default DAY29
+export default DAY25

@@ -1,193 +1,174 @@
 const DAY18 = {
     id: 18,
     unit: 'unit3',
-    date: 'October 26, 2021',
-    title: 'neopixels and neoprojection',
-    assignment: 'pixels',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597770099/side-effects/neopixel_pehggt.jpg',
+    date: 'October 27, 2022',
+    title: 'sensing',
+    assignment: 'final project proposal',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
     description: `
-        Today we're going to look at two different ways to output the nifty things we've been creating with data.
-        First, we'll return to where we started this course --  LED's -- but with several new and fun twists.
-        Then, we'll take look at projectors and some of the fun you can have with them, including something I really
-        enjoy: projection mappping, where you attempt to distort an image in fascinating ways by projecting it onto
-        real-life things rather than a screen.
+        need description here  
     `,
+    reading: [
+        {
+            linkText:`Steve Reich: Music As A Gradual Process`,
+            linkSrc : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
+        },
+    ],
+    discussionQuestions: [
+        `What does this Steve Reich article have to do with art, anyway??  I thought it was about music`,
+        `What does this mean: 'Then, the composer isn't privy to anything'?`,
+        `How would you characterize this idea of 'music as a process' and how is it different from other types of music?`,
+    ],
     videos: [
         {
-            linkText: `let's take a break from videos for a day`,
-            linkSrc: '',
+            linkText: 'pendulums 1 -- sinning',
+            linkSrc: 'https://youtu.be/P3yjUGc1M_s',
         },
- 
-
+        {
+            linkText: 'pendulums 2 -- waveforms',
+            linkSrc: 'https://youtu.be/1J1MFk3htlk',
+        },
+        {
+            linkText: 'pendulums 3 -- pendulums, actually',
+            linkSrc: 'https://youtu.be/dD3-OpvQs28',
+        },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
     ],
     inspirationLinks: [
         {
-            linkText: 'daniel rozin wooden mirror',
-            linkSrc: 'https://vimeo.com/101408845',
+            linkText: `Francis Alys: 'the leak'`,
+            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
         },
         {
-            linkText: 'daniel rhozin penguins mirror',
-            linkSrc: 'https://vimeo.com/129674054',
-        },
-        {
-            linkText: 'sara sze: how we experience time and memory through art',
-            linkSrc: 'https://www.youtube.com/watch?v=lEjegKJwI0M',
-        },
-        {
-            linkText: 'anthony mccall line describing a cone',
-            linkSrc: 'https://www.youtube.com/watch?v=1-HWsxPnNNY',
+            title: 'steve reich, music as a gradual process',
+            link : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
+        },        {
+            linkText:"Steve Reich, Music For 18 Musicians",
+            linkSrc:"https://www.youtube.com/watch?v=ZXJWO2FQ16c"
         },
 
         {
-            linkText: 'ryoju ikeda test pattern',
-            linkSrc: 'https://www.youtube.com/watch?v=XwjlYpJCBgk&t=74s',
+            linkText: 'steve reich : drumming',
+            linkSrc: 'https://www.youtube.com/watch?v=uDhwFTw4VnI',
         },
         {
-            linkText: 'flying lotus stage setup',
-            linkSrc: 'https://www.youtube.com/watch?v=rbuQuvoc0YE&list=PLnC9-BmaDSFrrhW_jP5os7bk2LJ-VKWjD',
+            linkText: 'steve reich - come out',
+            linkSrc: 'https://www.youtube.com/watch?v=g0WVh1D0N50',
         },
         {
-            linkText: 'bioluminescent forest',
-            linkSrc: 'https://www.youtube.com/watch?v=1I-_yCEhd2w',
-        },
-
-        {
-            linkText: 'tiny police chase projection mapping fun',
-            linkSrc: 'https://www.youtube.com/watch?v=cwL3PEeE0sU',
-        },
-        {
-            linkText: 'a car wrapped in neopixels (by a design firm)',
-            linkSrc: 'https://www.arrayofstars.com/case_study/infiniti-qx50',
-        },
-        {
-            linkText: 'box',
-            linkSrc: 'https://www.youtube.com/watch?v=lX6JcybgDFo',
-        },
-        {
-            linkText: 'neopixel infinity mirror',
-            linkSrc: 'https://www.youtube.com/watch?v=SFuh2ApT50o',
-        },
-        {
-            linkText: 'LED neopixel corset',
-            linkSrc: 'https://learn.adafruit.com/led-corset-with-circuit-playground-and-makecode',
-        },
-        {
-            linkText: 'cute space invader jewelry',
-            linkSrc: 'https://learn.adafruit.com/trinket-slash-gemma-space-invader-pendant'
-        },
-        {
-            linkText: 'neopixel curtain',
-            linkSrc: 'https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy/fadecandy-clients?view=all',
-        },
-        {
-            linkText: 'obscura digitall at the exploratorium',
-            linkSrc: 'https://www.youtube.com/watch?v=N2ZMH1XIxBI',
-        },
-        {
-            linkText: 'projecting on warped surfaces',
-            linkSrc: 'https://gizmodo.com/this-real-time-image-warping-projector-will-blow-your-m-1788032732',
-        },
-        {
-            linkText: 'a cathedral of light in a gas tank',
-            linkSrc: ' https://www.youtube.com/watch?v=9AsIplUJbdE',
-        },
-        {
-            linkText: 'amon tobin isam trailer',
-            linkSrc: 'https://www.youtube.com/watch?v=WLrt7-kIgIM',
+            linkText:"Pendulum Music",
+            linkSrc:"https://www.youtube.com/watch?v=fU6qDeJPT-w"
         },
 
         {
-            linkText: 'jerobeam fenderson: nuclear black noise',
-            linkSrc: 'https://www.youtube.com/watch?v=YqSvkNjWnnQ'
+            linkText: 'the pendulum seqeuncer',
+            linkSrc: 'https://www.musiconerd.com/the-pendulum-sequencer/',
         },
+
+
         {
-            linkText: 'oscilloscope music',
-            linkSrc: 'https://www.youtube.com/watch?v=4gibcRfp4zA'
+            linkText: 'one of my favorite process oriented pieces of music',
+            linkSrc: 'https://www.youtube.com/watch?v=mjnAE5go9dI',
         },
+
         {
-            linkText:'(nice round monitor) Raspberry Pi Helps 3D Printed Gorilla to Recite Shakespeare',
-            linkSrc:'https://www.tomshardware.com/news/raspberry-pi-gorilla-round-display-head',
-        }
+            linkText: '',
+            linkSrc: '',
+        },
+
 
     ],
     techLinks: [
+
         {
-            linkText: 'neopixel strip',
-            linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+            linkText: 'sinning circles',
+            linkSrc: 'https://github.com/socalledsound/sinning-circles',
         },
         {
-            linkText: 'adafruit light sensor',
-            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
+            linkText: 'noisy pendulums at github',
+            linkSrc: 'https://github.com/socalledsound/noisy-pendulums',
         },
         {
-            linkText: 'light sensor <-> neopixels on the CPE',
-            linkSrc: 'https://makecode.com/_Td57Yd78X76V',
+            linkText: 'a pendulum in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/zJ3nVmVRA'
+        },
+        {
+            linkText: 'color pendulums, also inspired by Steve Reich',
+            linkSrc: 'https://github.com/socalledsound/pendulum-colors',
+        },
+        {
+            linkText: 'wavey oscillations',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/DDN5qjcrE',
+        },
+        {
+            linkText: 'a bird with osciallting waves that I made',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/EYQmgTJuZ',
+        },
+        {
+            linkText: 'a little thing I made recently with fm synthesis',
+            linkSrc: 'https://github.com/socalledsound/music-of-our-times',
+        },
+        {
+            linkText: 'FM synthesis',
+            linkSrc: 'https://editor.p5js.org/p5/sketches/Sound:_FreqModulation',
         },
 
         {
-            linkText: 'adafruit light sensor',
-            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/playground-light-sensor',
+            linkText: 'p5 oscillator',
+            linkSrc: 'https://p5js.org/reference/#/p5.Oscillator',
         },
         {
-            linkText:'batteries and power for external neopixels',
-            linkSrc: 'https://learn.adafruit.com/battery-power-for-led-pixels-and-strips/overview',
+            linkText: 'P5 reverb',
+            linkSrc: 'https://p5js.org/reference/#/p5.Reverb',
         },
         {
-            linkText: 'neopixels with accelerometer',
-            linkSrc: 'https://makecode.com/_1PM81L8V7LPR',
+            linkText: 'harmonic oscillator',
+            linkSrc: 'https://editor.p5js.org/claesjohnson/sketches/oDs_BdFS',
+        },
+
+        {
+            linkText: 'my pendulum on codepen',
+            linkSrc: 'https://codepen.io/Fleischut/pen/WNQYXVp',
         },
         {
-            linkText: 'neopixels with make code',
-            linkSrc: 'https://learn.adafruit.com/neopixels-with-makecode/overview',
+            linkText: 'three.js pendulum on codepen',
+            linkSrc: 'https://codepen.io/iondrimba/pen/zbOBRO?editors=1010',
+        },
+
+        {
+            linkText:'wave pendulum in three.js',
+            linkSrc:'https://github.com/franspaco/pendulums',
+        },
+
+        {
+            linkText:"9.1: JavaScript setTimeout() Function - p5.js Tutorial",
+            linkSrc:"https://www.youtube.com/watch?v=nGfTjA8qNDA"
+        },
+
+        {
+            linkText:"9.2: JavaScript setInterval() Function - p5.js Tutorial",
+            linkSrc:"https://www.youtube.com/watch?v=CqDqHiamRHA"
         },
         {
-            linkText: 'how to drive neopixels with the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/blogs/2018/how-to-drive-neopixels-using-circuit-playground-express',
+            linkText:"reich oscillators",
+            linkSrc:"https://editor.p5js.org/socalledsound/sketches/SkjKp2Udm"
         },
+
         {
-            linkText: 'circuit python neopixel',
-            linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-neopixel',
+            linkText: 'a little multilooper thing I got started the other day',
+            linkSrc: 'https://github.com/socalledsound/multi-looper',
         },
-        {
-            linkText: 'Adafruit NeoPixel LED Strip w/ Alligator Clips',
-            linkSrc: 'https://www.adafruit.com/product/3811',
-        },
-        {
-            linkText: 'Pixel Mapping with cicuit python',
-            linkSrc: 'https://learn.adafruit.com/circuitpython-led-animations/pixel-mapping',
-        },
-        {
-            linkText: `beginner's guide to projection mapping`,
-            linkSrc: 'https://www.youtube.com/watch?v=skU3T8bgEIM',
-        },
-        {
-            linkText: 'projection mapping onto a house',
-            linkSrc: 'https://www.youtube.com/watch?v=bqjx9J6nPc8',
-        },
-        {
-            linkText: 'projection mapping on a bottle',
-            linkSrc: 'https://www.youtube.com/watch?v=7ZHef-hAvOM&list=PLnC9-BmaDSFrrhW_jP5os7bk2LJ-VKWjD&index=4'
-        },
-        {
-            linkText: 'pixel resolution and aspect ratio explained',
-            linkSrc: 'https://www.youtube.com/watch?v=npbsI8-nD-4',
-        },
-        {
-            linkText: 'connecting CPE to another device over serial connection',
-            linkSrc: 'https://learn.adafruit.com/circuit-playground-express-serial-communications?view=all#usb-converter-connections'
-        },
-        {
-            linkText: 'using a CPE to control animation in p5',
-            linkSrc: 'https://www.youtube.com/watch?v=J8c2yRgZiGI',
-        },
-        {
-            linkText: 'troubleshooting your CPE - erase file',
-            linkSrc: 'https://learn.adafruit.com/welcome-to-circuitpython/troubleshooting',
-        },
-        {
-            linkText: 'a few examples in circuit python',
-            linkSrc: 'https://github.com/socalledsound/circuit-python-examples',
-        }
 
     ],
 }

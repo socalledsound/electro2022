@@ -1,7 +1,7 @@
-const DAY15 = {
-    id: 15,
+const DAY16 = {
+    id: 16,
     unit: 'unit2',
-    date: 'October 18, 2022',
+    date: 'October 20, 2022',
     title: 'MIDTERM CRIT',
     assignment: 'MIDTERM',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1599086544/side-effects/goldberg_ucbesg.jpg',
@@ -33,4 +33,4 @@ const DAY15 = {
 
 }
 
-export default DAY15
+export default DAY16

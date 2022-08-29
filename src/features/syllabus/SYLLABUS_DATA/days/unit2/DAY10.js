@@ -1,6 +1,6 @@
 const DAY10 = {
     id: 10,
-    async: true,
+    async: false,
     unit: 'unit2',
     date: 'September 28, 2021',
     title: 'objects of desire',

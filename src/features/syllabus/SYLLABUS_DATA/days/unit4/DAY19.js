@@ -1,7 +1,8 @@
-const DAY16 = {
-    id: 16,
-    unit: 'unit3',
-    date: 'October 19, 2021',
+const DAY19 = {
+    id: 19,
+    async: true,
+    unit: 'unit4',
+    date: 'November 1, 2022',
     title: 'sound is motion',
     assignment: 'pendulum',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
@@ -175,7 +176,7 @@ const DAY16 = {
 
     ],
 }
-export default DAY16
+export default DAY19
 
 
   

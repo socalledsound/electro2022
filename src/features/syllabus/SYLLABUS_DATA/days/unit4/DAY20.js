@@ -1,13 +1,16 @@
-const DAY17 = {
-    id: 17,
+const DAY20 = {
+    id: 20,
     async: false,
     unit: 'unit4',
-    date: 'October 25, 2022',
-    title: 'circuit playground',
-    assignment : 'final project proposal',
+    date: 'November 3, 2022',
+    title: 'visualizing audio',
+    assignment : 'visualization',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1598399217/side-effects/side-effect_jfkc1s.jpg',
     description: `
-        need description here
+        Today we'll take some steps into visualizing audio.  Soon, we'll be doing this in more dimensions, and using sounds
+        to manipulate images and video and all of that but for now, let's just learn how it's done.  We'll look at both
+        amplitude and frequency analysis.  When we're done,you should be able to take your favorite track by the Beib and
+        make it make pretty pictures.  
     `,
     videos: [
         {
@@ -129,4 +132,4 @@ const DAY17 = {
     
    
 
-export default DAY17
+export default DAY20
