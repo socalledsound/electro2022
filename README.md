@@ -2,7 +2,6 @@
 
 #### course website for electrocrafting fall 2022 at UC Berkeley
 
-<!-- live site: https://electro2021-84fab.web.app/ -->
 live site: https://electro2022-29cb6.web.app
 
 ## to do
