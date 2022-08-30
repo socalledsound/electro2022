@@ -5,49 +5,48 @@ const DAY3 = {
     title: 'can haz meme?',
     assignment: 'meme',
     description: `
-   can haz meme description here
+    Today we'll look at some artists that made memes long before the internet made it a ubiquitous practice.  
+    Then, we'll make our own.  
+    To do that we're going to have to learn about using text and images in p5.
    `,
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597205509/side-effects/FA8224F5-0759-480F-B9FF-38D9320412C4_ycjanr.jpg',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1596773243/side-effects/what-if_zxos1x.jpg',
     discussionQuestions: [
 
-        `Do you have a collection?  Tell us about it.`,
-        `What is a collection and how is it different from, just, a bunch of stuff?`,
-        `'The problem is realizing that you've started one', says Tacita Dean.
-        What are the 'problems' that she's talking about?  
+        ``,
+        ``,
+        `
         `,
-        `She also talks about 'living' vs 'dead' collections, which, in the context of
-        art, or making an art practice from collecting, seems like a particularly
-        important distinction.  How do you understand this distinction?
+        `
         `,
     ],
     inClassDemo: [
         {
-            title: 'arrays and array methods'
+            title: ''
         },
         {
-            title: 'getting started with circuit python and the CPE'
+            title: ''
         },
         {
-            title: 'loading sounds onto your CPE'
+            title: ''
         }
     ],
     videos: [
-        {
-            linkText: 'collection',
-            linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
-        },
-        {
-            linkText: 'collections (arrays) on the CPE',
-            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
-        },
-        {
-            linkText: 'array methods',
-            linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
-        },
-        {
-            linkText: 'arrays of sounds',
-            linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
-        },
+        // {
+        //     linkText: 'collection',
+        //     linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
+        // },
+        // {
+        //     linkText: 'collections (arrays) on the CPE',
+        //     linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
+        // },
+        // {
+        //     linkText: 'array methods',
+        //     linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
+        // },
+        // {
+        //     linkText: 'arrays of sounds',
+        //     linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
+        // },
 
     ],
     reading: [
@@ -57,166 +56,81 @@ const DAY3 = {
         },
     ],
     inspirationLinks: [
+       
         {
-            linkText:"Christian Marclay mini documentary",
-            linkSrc:"https://www.youtube.com/watch?v=4yqM3dAqTzs"
-        },	
-        {
-            linkText: 'freesound.org',
-            linkSrc: 'https://freesound.org/',
+            linkText:'image macros as public discourse',
+            linkSrc : 'http://www.rhizomes.net/issue32/memes/publicdiscourse.html',
         },
         {
-            linkText:"Arthur Jafa, Love is the Message, the Message is Death",
-            linkSrc:"https://www.youtube.com/watch?v=lKWmx0JNmqY"
+            linkText:'art has its own memes',
+            linkSrc : 'https://blog.indiewalls.com/2016/10/art-has-its-own-memes',
         },
         {
-            linkText:"Experience the horror of 90 solid minutes of The Grateful Dead tuning its instruments",
-            linkSrc:"http://news.avclub.com/experience-the-horror-of-90-solid-minutes-of-the-gratef-1798273081"
+            linkText:'facebook memes and situationist slogans',
+            linkSrc : 'https://tenderardour.com/2012/08/12/facebook-memes-situationist-slogans/',
         },
         {
-            linkText: 'MSCHF Cuts Up $30,000 USD Damien Hirst Spot Print Into 88 Dots',
-            linkSrc: 'https://hypebeast.com/2020/4/mschf-damien-hirst-severed-spots-project',
-        },
-
-        {
-            linkText: 'the green ray, tacita dean',
-            linkSrc: 'https://vimeo.com/38026163',
+            linkText:'meme, at wikipedia',
+            linkSrc : 'https://en.wikipedia.org/wiki/Meme#:~:text=The%20word%20meme%20is%20a%20shortening%20(modeled%20on%20gene)%20of,a%20concept%20for%20discussion%20of',
         },
         {
-            linkText: 'monet haystacks',
-            linkSrc: 'https://www.google.com/search?q=monet+haystacks&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjAqvDCuLnWAhWJxVQKHc85A5YQ_AUICigB&biw=1382&bih=1279',
-        },  
-
-
-        {
-            linkText: 'edward burtynsky',
-            linkSrc: 'https://www.edwardburtynsky.com/',
+            linkText:'can haz cheezburger',
+            linkSrc : 'https://icanhas.cheezburger.com/',
         },
         {
-            linkText: 'Lorna Simpson, Easy To Remember',
-            linkSrc: 'https://vimeo.com/91549843',
+            linkText:'marcel duchamp, the creative act',
+            linkSrc : 'http://www.ubu.com/papers/duchamp_creative.html',
         },
         {
-            linkText: 'Christian Marclay, the clock',
-            linkSrc: 'https://www.youtube.com/watch?v=BXbQw0rE5UE&list=PLWZ5fzURD_c2XUmveT2oF0SNMPB_f291a',
-        },
-        {
-            linkText: 'Lauren Woods, American Monument',
-            linkSrc: 'https://hyperallergic.com/461150/american-monument-lauren-woods-kimberli-meyer-california-state-university-long-beach/',
-        },
-        {
-            linkText: 'working on my novel, corey arcangel',
-            linkSrc: 'https://twitter.com/WrknOnMyNovel',
-        },
-        {
-            linkText: 'food that looks likek iggy azalea',
-            linkSrc: 'http://foodthatlookslikeiggyazalea.tumblr.com/',
-        },
-        {
-            linkText: 'zimoun',
-            linkSrc: 'https://www.zimoun.net/',
+            linkText:'barbara kruger: WARCOOTUJ',
+            linkSrc : 'https://www.thecut.com/2017/11/i-think-about-when-barbara-kruger-dragged-supreme-a-lot.html',
         },
 
         {
-            linkText:"Martin Creed - half the air in a given space",
-            linkSrc:"https://www.artsy.net/artwork/martin-creed-work-no-dot-200-half-the-air-in-a-given-space"
+            linkText:'guerilla girls',
+            linkSrc : 'http://www.guerrillagirls.com/',
         },
         {
-            linkText: 'every episode of friends (link works for now)',
-            linkSrc: 'https://www.youtube.com/watch?v=c5h3qXAQOQI',
+            linkText:'poor meme, rich meme',
+            linkSrc : 'https://reallifemag.com/poor-meme-rich-meme/',
         },
         {
-            linkText: 'eva hesse repetition nineteen III',
-            linkSrc: 'https://www.moma.org/learn/moma_learning/eva-hesse-repetition-nineteen-iii-1968',
-        },
-        {
-            linkText: 'one and three chairs, joseph kosuth',
-            linkSrc: 'https://www.moma.org/learn/moma_learning/joseph-kosuth-one-and-three-chairs-1965',
-        },
-        {
-            linkText: 'martin creed work no. 223 (three metronomes)',
-            linkSrc: 'http://martincreed.com/site/works/work-no-223',
-        },
 
-        {
-            linkText: 'agnes martin: drawing as idea and process',
-            linkSrc: 'http://notations.aboutdrawing.org/agnes-martin/',
-        },
-
-        {
-            linkText: 'warhol soup cans',
-            linkSrc: 'https://www.moma.org/collection/works/79809',
-        },
-        {
-            linkText:"Richard Serra Throws Molten Lead Inside SFMOMA",
-            linkSrc:"https://www.sfmoma.org/richard-serra-throws-molten-lead-inside-sfmoma/"
-        },
-        {
-            linkText: 'Francis Alÿs: The Fabiola Project',
-            linkSrc: 'https://www.menil.org/exhibitions/242-francis-alys-the-fabiola-project',
-        },				
-        {
-            linkText:"Aaron Koblin, 'Artfully Visualizing Our Humanity'",
-            linkSrc:"https://www.youtube.com/watch?v=4v4XxlfVk3o"
-        },
-        {
-            linkText: 'alejandro duran',
-            linkSrc: 'https://alejandroduran.com/',
-        },
+            linkText: 'Hito Steyerl - In Defense of the Poor Image',
+            linkSrc: 'https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/',
+        }
     ],
     techLinks: [
-        {
-            linkText: 'make code : array and array methods',
-            linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
-        },              
-        {
-            linkText: 'make code: looping lights',
-            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
-        },
-        {
-            linkText: 'inspired by effie; this might be helpful for project 1!',
-            linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
-        }, 
-        {
-            linkText: 'make code : random looping music for the CPE',
-            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
-        },
-        {
-            linkText: 'objects and arrays in eloquent javascript',
-            linkSrc: 'https://eloquentjavascript.net/04_data.html',
-        },
+       
 
         {
-            linkText:"javascript array reference",
-            linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
-        },	
-        {
-            linkText: 'objects and arrays in javascript',
-            linkSrc: 'https://medium.com/javascript-in-plain-english/introduction-to-javascript-data-structures-af1ecb2d38eb',
-        },				                
-        {
-            linkText:"array methods",
-            linkSrc:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
-        },
-
-        {
-            linkText: 'How To Correctly Shuffle An Array in JavaScript',
-            linkSrc: 'https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb',
+            linkText:'google fonts',
+            linkSrc : 'https://fonts.google.com/',
         },
         {
-            linkText: 'a simple looping sequencer in js',
-            linkSrc: 'https://github.com/socalledsound/js-sequencer',
+            linkText: 'fontology',
+            linkSrc: 'https://www.fonts.com/content/learning/fontology',
         },
         {
-            linkText: 'circuit python made easy on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
-        },        {
-            linkText: 'circuit python sound box on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
-        },        {
-            linkText: 'sensors on the CPE',
-            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        }, 
+            linkText: 'a great online book about web typography -- book mark it!',
+            linkSrc: 'https://prowebtype.com/',
+        },
+        {
+            linkText: 'cloudinary : a nice platform for hosting images',
+            linkSrc: 'https://cloudinary.com/',
+        },
+        {
+            linkText: 'getting started with cloudinary video',
+            linkSrc: 'https://youtu.be/VbOUK3WmVqo',
+        },
+        {
+            linkText: 'kitten meme',
+            linkSrc: 'https://codepen.io/Fleischut/pen/LYNVjqx',
+        },
+        {
+            linkText: 'banker meme',
+            linkSrc:'https://codepen.io/Fleischut/pen/LYNEojd',
+        }
     ],
 
 }

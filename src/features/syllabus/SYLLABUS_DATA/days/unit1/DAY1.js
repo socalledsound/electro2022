@@ -4,7 +4,7 @@ const DAY1 = {
     date: 'August 30, 2022',
     title: 'hello! world',
     assignment: 'intro',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596822596/side-effects/handswtf_p5ubjn.jpg',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596752658/side-effects/DcKNQ4kVMAArzMi_cr4aiq.jpg',
     description: ` Hello!  And welcome to electro-crafting.  
                     What's electrocrafting? Come to class to find out!  
                     Today I want to talk a little about you, and me, and some art that I like, 
@@ -65,11 +65,50 @@ const DAY1 = {
             linkSrc: 'https://p5js.org/download/',
         },
 
+        {
+            linkText: 'Josef Albers box painting with p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/eRJP1dKog',
+        },
+        {
+            linkText: 'ice cream cone with p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/eRJP1dKog',
+        },
+
+        {
+            linkText: 'html color codes',
+            linkSrc: 'https://htmlcolorcodes.com/'
+        },
+     
+        {
+            linkText: 'color hexa',
+            linkSrc: 'https://www.colorhexa.com/ff0000',
+        },
+        {
+            linkText: 'encycolorpedia',
+            linkSrc: 'https://encycolorpedia.com/',
+        },
+        {
+            linkText: 'color hexa, another great color reference',
+            linkSrc: 'https://www.colorhexa.com/ff0000',
+        },
+
+        {
+            linkText: 'my binary color abacus (written in javascript!)',
+            linkSrc: 'https://suspicious-shockley-333ae2.netlify.app/',
+        },
 
     ],
     
     inspirationLinks: [
- 
+        {
+            linkText: 'This Stunning Image Made With Pure Code Is Like a Mood Ring For Your Browser',
+            linkSrc: 'https://www.vice.com/en_us/article/9kgx7p/painting-made-with-code-html-pure-css-browser-art-diana-smith',
+        },
+        {   
+            linkText:'some butterflies I made with p5',
+            linkSrc: 'https://socalledsound.github.io/better-butterflies/'
+        },
+
         {
 linkText:"socalled sound website",
 linkSrc:"http://socalledsound.com/"
@@ -158,6 +197,23 @@ linkSrc:"https://experiments.withgoogle.com/ai/drum-machine/view/"
 linkText: 'citizen dj - remixing the library of congress',
 linkSrc: 'https://citizen-dj.labs.loc.gov/',
 },    
+{
+    linkText: 'Josef Albers and the science of seeing',
+    linkSrc: 'https://acpress.amherst.edu/books/intersectingcolors/chapter/josef-albers-and-the-science-of-seeing/',
+},
+{
+    linkText: 'Why Josef Albers painted his squares',
+    linkSrc: 'https://www.phaidon.com/agenda/art/articles/2019/march/18/why-josef-albers-painted-his-squares/',
+},
+{
+    linkText: "'sensational color' website",
+    linkSrc: 'https://www.sensationalcolor.com/',
+},
+{
+    linkText: "trianglify",
+    linkSrc: 'https://trianglify.io/',
+},
+
 ],
         
 }
