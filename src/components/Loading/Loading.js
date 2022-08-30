@@ -3,7 +3,7 @@ import React from 'react'
 const Loading = () => {
     return ( 
         <div>
-            <p id="html-para">{`loading spinner for electro website :) by sana`}</p>
+            <p id="html-para">{`loading spinner will be here`}</p>
                 <div class="loader one">
                 <div class="first circle"></div>
                 <div class="second circle"></div>

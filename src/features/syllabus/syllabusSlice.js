@@ -70,15 +70,15 @@ export const selectRemainingDays = (state) => {
 
 
 export const selectCurrentDay = (state) => {
-    // const remaining = selectRemainingDays(state)
-    // // console.log(remaining)
-    // const lowestDay = remaining[0]
-    // return lowestDay
-
-    const allDays = selectAllDays(state)
+    const remaining = selectRemainingDays(state)
     // console.log(remaining)
-    const finalDay = allDays[allDays.length-1]
-    return finalDay
+    const lowestDay = remaining[0]
+    return lowestDay
+
+    // const allDays = selectAllDays(state)
+    // // console.log(remaining)
+    // const finalDay = allDays[allDays.length-1]
+    // return finalDay
 }
 
 export const selectFinalDay = (state) => {
