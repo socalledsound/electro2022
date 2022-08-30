@@ -8,8 +8,7 @@ const DAY1 = {
     description: ` Hello!  And welcome to electro-crafting.  
                     What's electrocrafting? Come to class to find out!  
                     Today I want to talk a little about you, and me, and some art that I like, 
-                    and lay out my vision for the course.  I'll also give you a circuit playground express
-                    and introduce you to our first coding platform, makeCode.
+                    and lay out my vision for the course.  We'll also get started coding javascript using p5.js.
                     `, 
     discussionQuestions: [
         `why are you here and`,
@@ -17,10 +16,10 @@ const DAY1 = {
         `; ) `,
     ],
                     videos: [
-                        {
-                            linkText: 'electrocrafting : intro',
-                            linkSrc: 'https://youtu.be/UjmrI5l0voM',
-                        },
+                        // {
+                        //     linkText: 'electrocrafting : intro',
+                        //     linkSrc: 'https://youtu.be/UjmrI5l0voM',
+                        // },
                         // {   linkText: 'some stuff you might want',
                         //     linkSrc: '',
                         // },
@@ -43,22 +42,28 @@ const DAY1 = {
                 
                     ], 
     techLinks: [
+
+ 
         {
-            linkText: 'make code website',
-            linkSrc: 'https://makecode.adafruit.com/',
+            linkText: 'p5 online editor - check examples under file menu',
+            linkSrc: 'https://editor.p5js.org/',
         },
         {
-            linkText: 'what is makeCode?',
-            linkSrc: 'https://learn.adafruit.com/makecode/',
+            linkText: 'p5.js reference',
+            linkSrc: 'https://p5js.org/reference/',
         },
         {
-            linkText: `you'll need a 'data' usbA -> usb mini cable to power/connect your cpe!`,
-            linkSrc: 'https://learn.adafruit.com/circuit-playground-lesson-number-0/usb-connection',
+            linkText: 'javascript morsels playlist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
         },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+        {
+            linkText: 'Daniel Shiffman: programming in p5.js playist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
+        },
+        {
+            linkText: 'download p5.js',
+            linkSrc: 'https://p5js.org/download/',
+        },
 
 
     ],
