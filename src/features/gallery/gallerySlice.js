@@ -129,10 +129,10 @@ export const selectGPIOWorks = state => {
 
 //want to return the most recent assignment here
 export const selectCurrentWorks = state => { 
-    const currentDay = selectFinalDay(state)
+    // const currentDay = selectCurrentDay(state)
     //console.log(currentDay.id)
-    const currentMinus1 = currentDay.id - 1
-    const assignment = selectAssignment(currentMinus1)(state)
+    // const currentMinus1 = currentDay.id - 1
+    const assignment = selectAssignment(1)(state)
     const currentWorks = selectWorks(state).filter(item => item.assignment === assignment.title)
     //console.log(currentWorks)
     return currentWorks
@@ -140,9 +140,10 @@ export const selectCurrentWorks = state => {
 
 export const selectCurrentGalleryAssignment = state => {
     const currentDay = selectCurrentDay(state)
-    //console.log(currentDay.id)
-    const currentMinus1 = currentDay.id - 1
+    console.log(currentDay.id)
+    const currentMinus1 = currentDay.id
     const assignment = selectAssignment(currentMinus1)(state)
+    console.log(assignment)
     return assignment
 }
 

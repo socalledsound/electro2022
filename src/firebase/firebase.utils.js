@@ -103,6 +103,7 @@ export const convertUsersSnapshotToMap = (users) => {
     // console.log(users)
     const transformedUsers = users.docs.map(doc => {
         const { avatar, displayName, email } = doc.data();
+        console.log(doc.id)
         return {
             
             id: doc.id,

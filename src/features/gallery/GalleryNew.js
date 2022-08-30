@@ -3,9 +3,12 @@ import { withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 // import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
 //     selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
-    import { selectFeaturedWorks, selectCurrentWorks, selectFinalGalleryAssignment, selectRecentWorks, 
-        selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
-import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
+    // import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
+    //     selectUncommentedWorks, startFetchWorks} from './gallerySlice'
+        import { selectCurrentWorks, selectCurrentGalleryAssignment, 
+             startFetchWorks} from './gallerySlice'
+// import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
+import { selectLoginLoading } from '../user/userSlice'
 import Loading from '../../components/Loading/Loading'
 // import GalleryRow from './GalleryRow'
 import GalleryRowRecent from './GalleryRowRecent'
@@ -22,22 +25,26 @@ const GalleryNew = ({history}) => {
       dispatch(startFetchWorks())
   }, [dispatch])
 
-    const midtermWorks = useSelector(selectMidtermWorks)
-    console.log(midtermWorks)
-    const gpioWorks = useSelector( selectGPIOWorks)
-    console.log(gpioWorks)
-    const featuredWorks = useSelector(selectFeaturedWorks)
+    // const midtermWorks = useSelector(selectMidtermWorks)
+    // console.log(midtermWorks)
+    // const gpioWorks = useSelector( selectGPIOWorks)
+    // console.log(gpioWorks)
+    // const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
-    let currentAssignment  = useSelector(selectFinalGalleryAssignment)
+    console.log(currentAssignmentWorks)
+    let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
+    console.log(currentAssignment)
+    // let currentAssignment = currentAssignmentWorks[0]
+    // let currentAssignmentTitle = null
     // if(currentAssignmentWorks && currentAssignmentWorks.length){
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }
-    const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
-    console.log(recentWorks)
-    const currentUser = useSelector(selectCurrentUser)
-    const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
+    // const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
+    // console.log(recentWorks)
+    // const currentUser = useSelector(selectCurrentUser)
+    // const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
 
-    console.log(featuredWorks)
+    // console.log(featuredWorks)
     return ( 
         <div>
         {
@@ -47,13 +54,13 @@ const GalleryNew = ({history}) => {
            
         
             <div className={styles.galleryWrapper}>
-                {
+                {/* {
                     featuredWorks.length > 0 && 
                     <div className={styles.galleryRowWrapper}>
                          <h5 className={styles.galleryHeading2}>you're all making cool stuff but, don't miss these ::  </h5>
                         <GalleryRowRecent category={'featured'} works={featuredWorks}/>
                     </div>
-                }
+                } */}
 
                 
                     
@@ -72,20 +79,20 @@ const GalleryNew = ({history}) => {
                     </div>
                 
 
-                {
+                {/* {
                     recentWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                          <h5 className={styles.galleryHeading2}>other works submitted in the last week: </h5>
                         <GalleryRowRecent category={'submitted recently'} works={recentWorks} recent={true}/>
                     </div>
-                }
-                {
+                } */}
+                {/* {
                     midtermWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                     <h5 className={styles.galleryHeading2}>midterm projects: </h5>
                    <GalleryRowRecent category={'submitted recently'} works={midtermWorks} recent={true}/>
                </div>
-                }
+                } */}
                                 {/* {
                     gpioWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
@@ -93,13 +100,13 @@ const GalleryNew = ({history}) => {
                    <GalleryRowRecent category={'submitted recently'} works={gpioWorks} recent={true}/>
                </div>
                 } */}
-                {
+                {/* {
                     unCommentedWorks.length > 0 && currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2' &&
                     <div className={styles.galleryRowRecentWrapper}>
                     <h5 className={styles.galleryHeading2}>hin Chris, make comments on these please: </h5>
                    <GalleryRowRecent category={'submitted recently'} works={unCommentedWorks} recent={true}/>
                </div>
-                }
+                } */}
     
 
                 <div className={styles.moreWorksWrapper}>

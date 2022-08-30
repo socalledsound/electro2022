@@ -33,11 +33,14 @@ export const selectAssignmentWarnings = state => {
     // const warnings = assignmentsDue.filter(item => item.)
     // const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
     let needed = []
-    if(completedAssignments.length > 0){
-        needed = assignmentsDue.filter((ass, idx) => !completedAssignments.some(comp => comp.assignment === ass))
-    }else {
-       needed = assignmentsDue
+    if(completedAssignments){
+        if(completedAssignments.length > 0){
+            needed = assignmentsDue.filter((ass, idx) => !completedAssignments.some(comp => comp.assignment === ass))
+        }else {
+           needed = assignmentsDue
+        }
     }
+
      console.log(needed)
     // console.log(previousDays)
     const warnings = needed.reduce((acc, cur) => {

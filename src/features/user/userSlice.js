@@ -78,15 +78,24 @@ export const selectCompletedAssignments = state => {
     const allWorks = selectWorks(state)
     const user = selectCurrentUser(state)
     // console.log(allWorks, user)
-    if(allWorks && user){
-        const userWorks = allWorks.filter(item => {
-            // console.log(item, user.id)
-            return item.user.id === user.id
-        })
-        return userWorks
-    } else {
-        return null
-    }
+    if(allWorks){
+        if(allWorks.length > 0 && user){
+            const userWorks = allWorks.filter(item => {
+                if(item.user){
+                    return item.user.id === user.id
+                }
+                else return null
+            })
+            return userWorks
+        } else {
+            return null
+        }
+        }
+        else{
+            return null
+        }
+    
+
 }
 
 export const selectCompletedProjects = state => {
