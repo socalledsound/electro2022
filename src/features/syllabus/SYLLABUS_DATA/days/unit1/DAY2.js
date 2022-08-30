@@ -27,7 +27,7 @@ const DAY2 = {
     ],
     inClassDemo: [
         {
-            title: 'data => '
+            title: 'data => fun'
         },
 
     ],

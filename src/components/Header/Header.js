@@ -11,7 +11,7 @@ const Header = () => {
     return ( 
         <div className={styles.mainNavWrapper}>
             <div className={styles.leftSide}>
-                <NavLink className={styles.homeLink} to='/'>electrocrafting 2021</NavLink>
+                <NavLink className={styles.homeLink} to='/'>electrocrafting 2022</NavLink>
             </div>
             <div className={styles.rightSide}>
                 {/* {onClick={() => toggleModal} */

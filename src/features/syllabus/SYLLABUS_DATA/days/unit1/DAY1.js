@@ -4,7 +4,7 @@ const DAY1 = {
     date: 'August 30, 2022',
     title: 'hello! world',
     assignment: 'intro',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596752658/side-effects/DcKNQ4kVMAArzMi_cr4aiq.jpg',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1661865590/side-effects/smaller_uw9vmw.jpg',
     description: ` Hello!  And welcome to electro-crafting.  
                     What's electrocrafting? Come to class to find out!  
                     Today I want to talk a little about you, and me, and some art that I like, 
@@ -71,7 +71,7 @@ const DAY1 = {
         },
         {
             linkText: 'ice cream cone with p5',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/eRJP1dKog',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/tmQ-MYCmt',
         },
 
         {

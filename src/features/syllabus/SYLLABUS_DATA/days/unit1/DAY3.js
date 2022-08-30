@@ -51,16 +51,12 @@ const DAY3 = {
     ],
     reading: [
         {
-            linkText:"Tacita Dean, 'Collections and Childhood'",
-            linkSrc : 'https://drive.google.com/file/d/1xGCnGF_bqDqtF8u83OrKUbtSOprsSVSE/view?usp=sharing',
+            linkText:'image macros as public discourse',
+            linkSrc : 'http://www.rhizomes.net/issue32/memes/publicdiscourse.html',
         },
     ],
     inspirationLinks: [
        
-        {
-            linkText:'image macros as public discourse',
-            linkSrc : 'http://www.rhizomes.net/issue32/memes/publicdiscourse.html',
-        },
         {
             linkText:'art has its own memes',
             linkSrc : 'https://blog.indiewalls.com/2016/10/art-has-its-own-memes',
