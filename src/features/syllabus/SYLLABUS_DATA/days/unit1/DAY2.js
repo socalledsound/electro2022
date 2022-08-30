@@ -27,32 +27,24 @@ const DAY2 = {
     ],
     inClassDemo: [
         {
-            title: 'arrays and array methods'
+            title: 'data => output'
         },
-        {
-            title: 'getting started with circuit python and the CPE'
-        },
-        {
-            title: 'loading sounds onto your CPE'
-        }
+
     ],
     videos: [
-        {
-            linkText: 'collection',
-            linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
-        },
-        {
-            linkText: 'collections (arrays) on the CPE',
-            linkSrc: 'https://youtu.be/Kq7y_eSm2cE',
-        },
-        {
-            linkText: 'array methods',
-            linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
-        },
-        {
-            linkText: 'arrays of sounds',
-            linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
-        },
+        // {
+        //     linkText: 'collection',
+        //     linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
+        // },
+
+        // {
+        //     linkText: 'array methods',
+        //     linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
+        // },
+        // {
+        //     linkText: 'arrays of sounds',
+        //     linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
+        // },
 
     ],
     reading: [
@@ -170,22 +162,7 @@ const DAY2 = {
         },
     ],
     techLinks: [
-        {
-            linkText: 'make code : array and array methods',
-            linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
-        },              
-        {
-            linkText: 'make code: looping lights',
-            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
-        },
-        {
-            linkText: 'inspired by effie; this might be helpful for project 1!',
-            linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
-        }, 
-        {
-            linkText: 'make code : random looping music for the CPE',
-            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
-        },
+
         {
             linkText: 'objects and arrays in eloquent javascript',
             linkSrc: 'https://eloquentjavascript.net/04_data.html',
@@ -212,16 +189,7 @@ const DAY2 = {
             linkText: 'a simple looping sequencer in js',
             linkSrc: 'https://github.com/socalledsound/js-sequencer',
         },
-        {
-            linkText: 'circuit python made easy on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
-        },        {
-            linkText: 'circuit python sound box on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
-        },        {
-            linkText: 'sensors on the CPE',
-            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        }, 
+
     ],
 
 }
