@@ -14,11 +14,25 @@ const DayDetailLinks = ({day}) => {
                 <div className={styles.linksListContainer} >
                 <ul  className={styles.linksList}>
                     {
-                         inClassDemo.map((item, index) => (
-                             <div key={index}>
+                         inClassDemo.map((item, index) => {
+                            
+                            return (
+                                item.link ?
+                                <div key={index}>
+                                <li key={index} className={styles.dayDemoTitle}><a href={item.link}>{item.title}</a></li> 
+                                    
+                                </div>    
+                        
+  
+                            :
+ 
+                            <div key={index}>
                             <li  className={styles.dayDemoTitle}><p>{item.title}</p></li>     
-                            </div>       
-                        ))
+                            </div>  
+                            )
+                         }
+   
+                        )
                     }
                 </ul>
                 <div className={styles.listTitleContainer}  style={{backgroundColor: 'rgba(132, 18, 231, 0.9)'}}>

@@ -26,25 +26,46 @@ const DAY2 = {
         `,
     ],
     inClassDemo: [
+
         {
-            title: 'data => fun'
+            title: 'variables and data types',
+            link: 'https://editor.p5js.org/socalledsound/sketches/WKpssCf9v',
+        },
+        {
+            title: 'for loops',
+            link: 'https://editor.p5js.org/socalledsound/sketches/t73olgru6',
+        },
+
+        {
+            title: 'ice => cream code',
+            link: 'https://editor.p5js.org/socalledsound/sketches/f6mZ3c8PO',
+        },
+
+        {
+            title: 'ice => cream => gloops code',
+            link: 'https://editor.p5js.org/socalledsound/sketches/TIMOpNhWh',
+        },
+        
+        {
+            title: 'color grid code',
+            link: 'https://editor.p5js.org/socalledsound/sketches/hqCzW8AEl'
         },
 
     ],
     videos: [
-        // {
-        //     linkText: 'collection',
-        //     linkSrc: 'https://youtu.be/Ftsk2t4NHHI',
-        // },
+        {
+            linkText: 'daniel shiffman intro to coding with p5 playlist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
+        },
 
-        // {
-        //     linkText: 'array methods',
-        //     linkSrc: 'https://www.youtube.com/watch?v=CSACDSLFlIY',
-        // },
-        // {
-        //     linkText: 'arrays of sounds',
-        //     linkSrc: 'https://www.youtube.com/watch?v=_iEtN4fN-cY',
-        // },
+        {
+            linkText: 'daniel shiffman on defining variables in javascript',
+            linkSrc: 'https://www.youtube.com/watch?v=dRhXIIFp-ys&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=10',
+        },
+        {
+            linkText: 'daniel shiffman on nested for loops',
+            linkSrc: 'https://www.youtube.com/watch?v=1c1_TMdf8b8&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=19',
+        },
 
     ],
     reading: [
@@ -162,6 +183,20 @@ const DAY2 = {
         },
     ],
     techLinks: [
+        
+        {
+            linkText: 'a simple looping sequencer in js',
+            linkSrc: 'https://github.com/socalledsound/js-sequencer',
+        },
+        {
+            linkText: 'a simple looping sequencer in js',
+            linkSrc: 'https://github.com/socalledsound/js-sequencer',
+        },
+
+        {
+            linkText: 'types of data from eloquent javascript',
+            linkSrc: ' https://eloquentjavascript.net/01_values.html',
+        },
 
         {
             linkText: 'objects and arrays in eloquent javascript',
@@ -185,10 +220,7 @@ const DAY2 = {
             linkText: 'How To Correctly Shuffle An Array in JavaScript',
             linkSrc: 'https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb',
         },
-        {
-            linkText: 'a simple looping sequencer in js',
-            linkSrc: 'https://github.com/socalledsound/js-sequencer',
-        },
+
 
     ],
 

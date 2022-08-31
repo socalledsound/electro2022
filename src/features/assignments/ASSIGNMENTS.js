@@ -24,9 +24,9 @@ import DAY23_WORKSHOP_MD from './assignments_markdown/day23.workshop.md';
 import DAY24_WORKSHOP_MD from './assignments_markdown/day24.workshop.md';
 import DAY25_WORKSHOP_MD from './assignments_markdown/day25.workshop.md';
 import DAY26_WORKSHOP_MD from './assignments_markdown/day26.workshop.md';
-import DAY27_WORKSHOP_MD from './assignments_markdown/day27.workshop.md';
-import DAY28_WORKSHOP_MD from './assignments_markdown/day28.workshop.md';
-import DAY29_WORKSHOP_MD from './assignments_markdown/day29.workshop.md';
+// import DAY27_WORKSHOP_MD from './assignments_markdown/day27.workshop.md';
+// import DAY28_WORKSHOP_MD from './assignments_markdown/day28.workshop.md';
+// import DAY29_WORKSHOP_MD from './assignments_markdown/day29.workshop.md';
 
 
 // import DAY8_WORKSHOP_MD from './assignments_markdown/day8.workshop.md';
@@ -43,49 +43,49 @@ export const ASSIGNMENT1 = {
 
 export const ASSIGNMENT2 = {
     id: 2,
-    title : 'resistance',
+    title : 'grids',
     description : ``,
     markdown: DAY2_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT3 = {
     id: 3,
-    title : 'switches',
+    title : 'meme',
     description : ``,
     markdown: DAY3_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT4 = {
     id: 4,
-    title : 'sensing',
+    title : 'boundaries',
     description: ``, 
     markdown: DAY4_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT5 = {
     id: 5,
-    title : 'collection',
+    title : 'resistance',
     description :``,
     markdown: DAY5_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT6 = {
     id: 6,
-    title : 'hardware',
+    title : 'listen',
     description : ``,
     markdown: DAY6_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT7 = {
     id: 7,
-    title : 'jamz',
+    title : 'playtime',
     description : '', 
     markdown: DAY7_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT8 = {
     id: 8,
-    title : 'itLives',
+    title : 'project1',
     description : '',
     markdown: DAY8_WORKSHOP_MD,
     // project: 1,
@@ -253,34 +253,34 @@ export const ASSIGNMENT26 = {
     markdown: DAY26_WORKSHOP_MD,
 }
 
-export const ASSIGNMENT27 = {
-    id: 27,
-    title :  'proto-final',
-    description : '',
-    markdown: DAY27_WORKSHOP_MD,
-}
+// export const ASSIGNMENT27 = {
+//     id: 27,
+//     title :  'proto-final',
+//     description : '',
+//     markdown: DAY27_WORKSHOP_MD,
+// }
 
-export const ASSIGNMENT28 = {
-    id: 28,
-    title : 'working-final',
-    description : 'final project!  yay!',
-    markdown: DAY28_WORKSHOP_MD
-    ,
-}
+// export const ASSIGNMENT28 = {
+//     id: 28,
+//     title : 'working-final',
+//     description : 'final project!  yay!',
+//     markdown: DAY28_WORKSHOP_MD
+//     ,
+// }
 
-export const ASSIGNMENT29 = {
-    id: 29,
-    title : 'FINALFINAL',
-    description : '',
-    markdown: DAY29_WORKSHOP_MD,
-}
+// export const ASSIGNMENT29 = {
+//     id: 29,
+//     title : 'FINALFINAL',
+//     description : '',
+//     markdown: DAY29_WORKSHOP_MD,
+// }
 
-export const ASSIGNMENT30 = {
-    id: 30,
-    title : 'FINALFINAL',
-    description : '',
-    markdown: DAY29_WORKSHOP_MD,
-}
+// export const ASSIGNMENT30 = {
+//     id: 30,
+//     title : 'FINALFINAL',
+//     description : '',
+//     markdown: DAY29_WORKSHOP_MD,
+// }
 
 
 

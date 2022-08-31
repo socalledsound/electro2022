@@ -5,32 +5,33 @@ const RESOURCES = {
         description: "",
         links: [
 
-            {
-                linkText: 'electrocrafting youtube video playlist',
-                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBZFnp3rMM2Qah53Hs0XMJD',
-            },
+            // {
+            //     linkText: 'electrocrafting youtube video playlist',
+            //     linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBZFnp3rMM2Qah53Hs0XMJD',
+            // },
 
-            {
-                linkText: 'course discord channel',
-                linkSrc: 'https://discord.com/channels/786030089569304637',
-            },
+            // {
+            //     linkText: 'course discord channel',
+            //     linkSrc: 'https://discord.com/channels/786030089569304637',
+            // },
 
+            // {
+            //     linkText:'discord invite link?',
+            //     linkSrc: 'https://discord.gg/a6zcqVpMJq',
+            // },
+            // {
+            //     linkText: `last year's course gallery`,
+            //     linkSrc: 'https://socalledsidefx.com/gallery',
+            // },
             {
-                linkText:'discord invite link?',
-                linkSrc: 'https://discord.gg/a6zcqVpMJq',
-            },
-            {
-                linkText: `last year's course gallery`,
-                linkSrc: 'https://socalledsidefx.com/gallery',
+                linkText: 'email me',
+                linkSrc: 'mailto:socalledsound@gmail.com',
             },
             {
                 linkText: 'live server links are not web links',
                 linkSrc : 'https://youtu.be/ahblxZfIRVA',
             },
-            {
-                linkText: 'email me',
-                linkSrc: 'mailto:socalledsound@gmail.com',
-            },
+ 
         ]
     },
     {
@@ -354,16 +355,16 @@ const RESOURCES = {
     description: '',
     links: [
         {
+            linkText: 'daniel shiffman intro to coding with p5 playlist',
+            linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
+        },
+        {
             linkText: 'eloquent javascript',
             linkSrc: 'https://eloquentjavascript.net/',
         },
         {
             linkText: 'javascript morsels playlist',
             linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
-        },
-        {
-            linkText: 'Daniel Shiffman',
-            linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
         },
         {
             linkText: 'the nature of code book',
