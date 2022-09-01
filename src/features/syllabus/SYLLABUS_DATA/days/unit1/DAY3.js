@@ -11,13 +11,11 @@ const DAY3 = {
    `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1596773243/side-effects/what-if_zxos1x.jpg',
     discussionQuestions: [
-
-        ``,
-        ``,
-        `
-        `,
-        `
-        `,
+        `can you recall any memorable memes?`,
+        `why are 'advice animals' so successful?`,
+        `and why is the internet so sarcastic/sardonic?`,
+        `why do we use 'characters' or stars or hapless folks, or third world people or black people for memes, instead of pictures of ourselves?`,
+        
     ],
     inClassDemo: [
 
