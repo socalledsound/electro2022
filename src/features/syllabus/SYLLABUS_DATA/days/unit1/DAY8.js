@@ -1,7 +1,7 @@
 const DAY8 = {
     id: 8,
     unit: 'unit1',
-    date: 'September 9, 2022',
+    date: 'September 22, 2022',
     title: 'CRIT1',
     assignment: 'COLLECTION',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',

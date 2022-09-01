@@ -2,7 +2,7 @@ const DAY13 = {
     id: 13,
     async: false,
     unit: 'unit2',
-    date: 'October 07, 2021',
+    date: 'October 11, 2022',
     title: 'games without players',
     assignment: 'landscape',
     description: `

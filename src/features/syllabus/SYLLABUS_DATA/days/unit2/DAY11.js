@@ -2,7 +2,7 @@ const DAY11 = {
     id: 11,
     async: false,
     unit: 'unit2',
-    date: 'September 30, 2021',
+    date: 'October 4, 2022',
     title: 'game on!',
     assignment: 'state',
     description: `

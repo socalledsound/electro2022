@@ -2,7 +2,7 @@ const DAY8 = {
     id: 8,
     async: false,
     unit: 'unit2',
-    date: 'September 21, 2021',
+    date: 'September 27, 2022',
     title: 'fun fun function',
     assignment: 'itLives',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
