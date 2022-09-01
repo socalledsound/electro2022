@@ -55,6 +55,10 @@ const DAY2 = {
             title: 'color grid code',
             link: 'https://editor.p5js.org/socalledsound/sketches/hqCzW8AEl'
         },
+        {
+            title: 'refactored Talya code',
+            link: 'https://editor.p5js.org/socalledsound/sketches/ZIAqQh5yk',
+        }
 
     ],
     videos: [
