@@ -20,14 +20,10 @@ const DAY3 = {
         `,
     ],
     inClassDemo: [
+
         {
-            title: ''
-        },
-        {
-            title: ''
-        },
-        {
-            title: ''
+            title: 'a p5 meme',
+            link: 'https://editor.p5js.org/socalledsound/sketches/ojHqOkv1B'
         }
     ],
     videos: [
@@ -119,14 +115,6 @@ const DAY3 = {
             linkText: 'getting started with cloudinary video',
             linkSrc: 'https://youtu.be/VbOUK3WmVqo',
         },
-        {
-            linkText: 'kitten meme',
-            linkSrc: 'https://codepen.io/Fleischut/pen/LYNVjqx',
-        },
-        {
-            linkText: 'banker meme',
-            linkSrc:'https://codepen.io/Fleischut/pen/LYNEojd',
-        }
     ],
 
 }
