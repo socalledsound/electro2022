@@ -37,6 +37,11 @@ const DAY2 = {
         },
 
         {
+            title: 'looping circles code',
+            link: 'https://editor.p5js.org/socalledsound/sketches/CLi8ATZ6V',
+        },
+
+        {
             title: 'ice => cream code',
             link: 'https://editor.p5js.org/socalledsound/sketches/f6mZ3c8PO',
         },

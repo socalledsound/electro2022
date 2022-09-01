@@ -17,7 +17,7 @@ As a reminder, a for loop in javascript looks like this:
 </div>
 We can use the integer named 'i' in our loops, it will have a value of 0 in our first loop and then increment each time the loop runs.
 
-So we can make a row of rectangles like this:
+We can make a row of rectangles like this:
 
 <div class='workshop-code'>
 
@@ -29,7 +29,8 @@ So we can make a row of rectangles like this:
     }
 ```
 </div>
-And then we can nest that loop inside another loop to create 10 rows :
+
+We can nest that loop inside another loop to create 10 rows :
 
 <div class='workshop-code'>
 
@@ -71,6 +72,65 @@ for(let y = 0; y < numRows; y++){
     }
 }
 }
+```
+</div>
+
+And here's some code that plots out an array of circle data: 
+
+<div class='workshop-code'>
+
+```c
+const circles = [
+  {
+    x: 100,
+    y: 200,
+    size: 300,
+    col: [220,0,0],
+  },
+  {
+    x: 500,
+    y: 400,
+    size: 480,
+    col: [0,220,0],
+  },
+  {
+    x: 300,
+    y: 200,
+    size: 120,
+    col: [0,0, 220],
+  }
+]
+
+
+function setup() {
+  createCanvas(600, 600);
+}
+
+function draw() {
+  background(220);
+  
+  // we can do it this way
+  // for(let i = 0; i < circles.length; i++){
+  //   fill(circles[i].col)
+  //   ellipse(circles[i].x, circles[i].y, circles[i].size)
+  // }
+  
+  // or we can use a function to clean things up a little
+  for(let i = 0; i < circles.length; i++){
+    createCircle(circles[i])
+  }
+  
+  
+}
+
+
+function createCircle({x, y, size, col}){
+  fill(col)
+  ellipse(x, y, size)
+}
+
+
+
 ```
 
 
