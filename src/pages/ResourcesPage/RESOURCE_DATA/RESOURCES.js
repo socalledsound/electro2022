@@ -10,15 +10,15 @@ const RESOURCES = {
             //     linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBZFnp3rMM2Qah53Hs0XMJD',
             // },
 
-            // {
-            //     linkText: 'course discord channel',
-            //     linkSrc: 'https://discord.com/channels/786030089569304637',
-            // },
+            {
+                linkText: 'course discord channel',
+                linkSrc: 'https://discord.com/channels/786030089569304637',
+            },
 
-            // {
-            //     linkText:'discord invite link?',
-            //     linkSrc: 'https://discord.gg/a6zcqVpMJq',
-            // },
+            {
+                linkText:'discord invite link?',
+                linkSrc: 'https://discord.gg/a6zcqVpMJq',
+            },
             // {
             //     linkText: `last year's course gallery`,
             //     linkSrc: 'https://socalledsidefx.com/gallery',

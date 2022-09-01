@@ -3,9 +3,9 @@ import PROJECT1_MARKDOWN from './PROJECT1.md'
 export const PROJECT1 = {
     id: 'proj1',
     title: 'project 1',
-    teaser: 'create a collection of sounds and an instrument that lets us explore it',
+    teaser: 'create a collection of sounds and images and an interface/instrument that lets us explore it',
     markdown: PROJECT1_MARKDOWN,
-    due: '09/15',
+    due: '09/22',
     imageURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',
     inspirationLinks : [
         {
