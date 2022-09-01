@@ -190,6 +190,14 @@ const DAY2 = {
             linkText: 'alejandro duran',
             linkSrc: 'https://alejandroduran.com/',
         },
+        {
+            linkText: `'photos' of Jupiter`,
+            linkSrc: 'https://petapixel.com/2022/08/30/then-and-now-first-jupiter-photo-vs-james-webbs-latest-shot/',
+        },
+        {
+            linkText: 'early urban landscapes have no people',
+            linkSrc: 'https://en.wikipedia.org/wiki/Boulevard_du_Temple_(photograph)#:~:text=The%20Boulevard%20du%20Temple%20photograph,an%20image%20of%20a%20human',
+        }
     ],
     techLinks: [
         
