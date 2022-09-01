@@ -197,6 +197,10 @@ const DAY2 = {
         {
             linkText: 'early urban landscapes have no people',
             linkSrc: 'https://en.wikipedia.org/wiki/Boulevard_du_Temple_(photograph)#:~:text=The%20Boulevard%20du%20Temple%20photograph,an%20image%20of%20a%20human',
+        },
+        {
+            linkText: 'Nick Felton, photoviz',
+            linkSrc: 'http://feltron.com/PhotoViz.html',
         }
     ],
     techLinks: [
