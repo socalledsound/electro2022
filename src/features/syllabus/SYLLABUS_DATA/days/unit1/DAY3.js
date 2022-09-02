@@ -18,11 +18,22 @@ const DAY3 = {
         
     ],
     inClassDemo: [
-
+        {
+            title: 'arrays in javascript',
+            link: 'https://editor.p5js.org/socalledsound/sketches/_AH84gc_L',
+        },
         {
             title: 'a p5 meme',
-            link: 'https://editor.p5js.org/socalledsound/sketches/ojHqOkv1B'
-        }
+            link: 'https://editor.p5js.org/socalledsound/sketches/ojHqOkv1B',
+        },
+        {
+            title: 'image grid gallery',
+            link: 'https://editor.p5js.org/socalledsound/sketches/khB3mhoN7',
+        },
+        {
+            title: 'sequential images',
+            link: 'https://editor.p5js.org/socalledsound/sketches/rdqlj06TJ',
+        },
     ],
     videos: [
         // {
@@ -50,7 +61,10 @@ const DAY3 = {
         },
     ],
     inspirationLinks: [
-       
+        {
+            linkText:'marcel duchamp, the creative act',
+            linkSrc : 'http://www.ubu.com/papers/duchamp_creative.html',
+        },
         {
             linkText:'art has its own memes',
             linkSrc : 'https://blog.indiewalls.com/2016/10/art-has-its-own-memes',
@@ -67,10 +81,7 @@ const DAY3 = {
             linkText:'can haz cheezburger',
             linkSrc : 'https://icanhas.cheezburger.com/',
         },
-        {
-            linkText:'marcel duchamp, the creative act',
-            linkSrc : 'http://www.ubu.com/papers/duchamp_creative.html',
-        },
+
         {
             linkText:'barbara kruger: WARCOOTUJ',
             linkSrc : 'https://www.thecut.com/2017/11/i-think-about-when-barbara-kruger-dragged-supreme-a-lot.html',
@@ -79,6 +90,26 @@ const DAY3 = {
         {
             linkText:'guerilla girls',
             linkSrc : 'http://www.guerrillagirls.com/',
+        },
+        {
+            linkText: `a user's guide to detournement`,
+            linkSrc: 'http://www.bopsecrets.org/SI/detourn.htm'
+        },
+        {
+            linkText: 'detournement images per google',
+            linkSrc: 'https://www.google.com/search?q=detournement&sxsrf=ALiCzsaIn2yIIuL_lrakgad97txEp9ZqfQ:1662079067916&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi74LmD7_T5AhV8CTQIHd9lBM8Q_AUoAnoECAIQBA&biw=1449&bih=865&dpr=2',
+        },
+        {
+            linkText: 'Magritte, the treachery of images',
+            linkSrc: 'https://en.wikipedia.org/wiki/The_Treachery_of_Images',
+        },
+        {
+            linkText: 'banksy in palestine',
+            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
+        },
+        {
+            linkText: 'after banksy: the parkour guide to gaza',
+            linkSrc: 'https://www.theguardian.com/cities/video/2015/mar/10/banksy-parkour-gaza-shadia-mansour-video',
         },
         {
             linkText:'poor meme, rich meme',
@@ -101,21 +132,33 @@ const DAY3 = {
             linkText: 'yung jake embedded',
             linkSrc: 'http://e.m-bed.de/d/',
         },
-        {
-            linkText: 'situationism',
-            linkSrc: null
-        },
-        {
-            linkText: 'banksy in palestine',
-            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
-        },
-        {
-            linkText: 'after banksy: the parkour guide to gaza',
-            linkSrc: 'https://www.theguardian.com/cities/video/2015/mar/10/banksy-parkour-gaza-shadia-mansour-video',
-        }
+
     ],
     techLinks: [
-       
+       {
+        linkText: 'Arrays in Javascript, from MDN',
+        linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array',
+       },
+
+       {
+        linkText: 'loading images in p5',
+        linkSrc: 'https://p5js.org/reference/#/p5/loadImage',
+       },
+
+       {
+        linkText: 'displaying images in p5',
+        linkSrc: 'https://p5js.org/reference/#/p5/image',
+       },
+
+       {
+        linkText: 'loading fonts in p5',
+        linkSrc: 'https://p5js.org/reference/#/p5/loadFont',
+       },
+
+       {
+        linkText: 'displaying text in p5',
+        linkSrc: 'https://p5js.org/reference/#/p5/text',
+       },
 
         {
             linkText:'google fonts',

@@ -1,12 +1,16 @@
-const DAY26 = {
-    id: 26,
+const DAY28 = {
+    id: 28,
     unit: 'unit7',
-    date: 'December 1, 2022',
-    title: 'work on final project!',
-    assignment: 'PROTO-FINAL',
+    date: 'December 8, 2022',
+    title: 'FINAL CRIT',
+    assignment: 'FINALFINAL',
     illustrationURL: '',
     description: `
-    let's work on those final projects
+    FINAL CRIT!!!!!!  
+    Crits start at 9:30 sharp, please arrive early, set up, and prepare yourselves.
+    Sorry, no donuts and coffee this year.  Sad face.
+    Today Thursday schedule:
+
     `,
     videos: [
         {
@@ -29,4 +33,4 @@ const DAY26 = {
 
 }
 
-export default DAY26
+export default DAY28

@@ -120,7 +120,8 @@
 .illustration {
   /* width: 40%; */
   min-width: 100px;
-  max-width: 200px;
+  max-width: 175px;
+  max-height: 150px;
   margin-bottom: 1.2rem;
   margin-left: 1.2rem;
   float: right;

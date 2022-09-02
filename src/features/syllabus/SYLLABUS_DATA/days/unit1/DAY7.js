@@ -5,115 +5,39 @@ const DAY7 = {
     date: 'September 20, 2022',
     title: 'play time',
     assignment: 'collection',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1603689412/side-effects/HNND2_lw07um.jpg',
+    illustrationURL: '',
     description: `
-    Today we're going to build contact mics in class and talk about what it means to record sounds.
-    I'll also introduce you to the zoom recorder and talk a bit about converting sound data into computer data.
-    Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva'; just put it 
-    on in the background for a while at some point and read his 'profound listening article.  
+     
     `,
-    // description: `
-    // Today we're going to build contact mics in class and talk about what it means to record sounds.
-    // I'll also introduce you to the zoom recorder and talk a bit about converting sound data into computer data.
-    // Before you watch today's lecture, be sure to listen to Francisco Lopez's 'La Selva'; just put it 
-    // on in the background for a while at some point and read his 'profound listening article.  
-    // `,
+
     discussionQuestions: [
         
-        `If it's not music, what is it?  (...as John Cage said)`,
+        
         `Is it possible to 'compose' listening?  Is it possible to compose improvisation?
         What does it mean to 'compose' improvisation, or what is the role of a composer of improvisation?`,
         `be ready to talk about your own 'deep listening' experience.`,
     ],
     inClassDemo: [
         {
-            title: 'deep listening'
-        },
-        {
-            title: 'writing event listeners in javascript for the CPE'
+            title:'javascript review videos',
+            link: ''
         }
     ],
 
     videos: [ 
-        {
-            linkText: 'sound => data',
-            linkSrc: 'https://youtu.be/Bh1O7OzetJU',
-        },
-        {
-            linkText: 'a brief intro to audacity',
-            linkSrc: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
-        },
+        // {
+        //     linkText: 'sound => data',
+        //     linkSrc: 'https://youtu.be/Bh1O7OzetJU',
+        // },
+ 
       
     ],
     reading: [
-        {
-           linkText: `Francisco Lopez, 'profound listening'`,
-           linkSrc: 'https://drive.google.com/file/d/1JaJP-WHN08ReQ05Lm3jHr89HNr8-kb-g/view?usp=sharing', 
-        }
+
 
     ],
     inspirationLinks: [
-        {
-            linkText:"Francisco Lopez, La Selva",
-            linkSrc:"https://www.youtube.com/watch?v=1_slk9NmgGM"
-        },
-        {
-            linkText: 'francisco lopez tecnical rider',
-            linkSrc: 'http://www.franciscolopez.net/live.html',
-        },
-        {
-            linkText:'airport symphony (a collection of pieces inspired by airports)',
-            linkSrc: 'https://room40.bandcamp.com/album/airport-symphony',
-        },
-        {
-            linkText:"this is not la selva",
-            linkSrc:"http://thisisnotlaselva.net/"
-        },
-        {
-            linkText:"Head Rhythm 1 and Plaything 2 - Maryanne Amacher",
-            linkSrc:"https://www.youtube.com/watch?v=_MahrtRVhkA"
-        },
-        {
-            linkText: 'jacob kirkegaard, labyrinthitis',
-            linkSrc: 'https://fonik.dk/works/labyrinthitis.html',
-        },
-        {
-            linkText: "the ghost in the mp3: tom's diner",
-            linkSrc: 'https://www.youtube.com/watch?v=4-ISLpKhQJI',
-        },
-                {
-            linkText: 'sound recording genius Anne Kroeber',
-            linkSrc: 'https://www.soundandpicture.com/2017/10/ann-kroeber-cinematic-winds/',
-        },
-        {
-            linkText:"Janet Cardiff and George Bures Miller, Sound Walks",
-            linkSrc:"http://www.cardiffmiller.com/artworks/walks/"
-        },
-        {
-            linkText: `a selection of Chris Watson's work at the BBC`,
-            linkSrc: 'https://www.bbc.co.uk/programmes/p01qcldf',
-        },
-        {
-            linkText: 'Chris Watson - The Colour Of Sound',
-            linkSrc: 'https://www.youtube.com/watch?v=sL-nTv5LL9g',
-        },
-        {
-            linkText: 'musique concrete',
-            linkSrc: 'https://en.wikipedia.org/wiki/Musique_concr%C3%A8te',
-        },
-        {
-            linkText: 'sound effect library page',
-            linkSrc: 'https://en.wikipedia.org/wiki/Sound_effect',
-        },
-        {
-            linkText: 'the earliest recording was never intended to be listened to',
-            linkSrc: 'http://www.firstsounds.org/sounds/scott.php',
-        },
-
-        {
-            linkText: 'the first recording',
-            linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630345471/scott_phonautograph_anigvo.png',
-        },
+  
         // {
         //     linkText: 'sound recording genius Anne Kroeber',
         //     linkSrc: 'https://www.soundandpicture.com/2017/10/ann-kroeber-cinematic-winds/',
@@ -136,22 +60,7 @@ const DAY7 = {
             linkText:"how to make a contact microphone",
             linkSrc:"http://www.instructables.com/id/Make-a-Contact-Microphone/"
         },
-      
-        {
-            linkText: 'zoom recorder h4n manual',
-            linkSrc: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
-        },
-        {
-            linkText: 'How do audio analogue to digital converters work?',
-            linkSrc: 'http://www.planetoftunes.com/digital-audio/how-do-analogue-to-digital-converters-work.php',
-        },        {
-            linkText: 'audio file formats',
-            linkSrc: 'https://en.wikipedia.org/wiki/Audio_file_format',
-        },        
-        {
-            linkText: 'converting sound files in audacity',
-            linkSrc: 'https://learn.adafruit.com/microcontroller-compatible-audio-file-conversion',
-        },        
+     
         //{
         //     linkText: '',
         //     linkSrc: '',
