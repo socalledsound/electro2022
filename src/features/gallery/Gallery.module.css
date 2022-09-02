@@ -153,3 +153,10 @@
   padding-bottom: 0.8rem;
   border-radius: 1.2rem;
 }
+
+
+.galleryInstruction{
+  color:rgb(43, 4, 53);
+  font-size: 0.8rem;
+  margin-left: 2rem;
+}

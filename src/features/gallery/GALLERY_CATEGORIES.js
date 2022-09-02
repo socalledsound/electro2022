@@ -25,8 +25,8 @@ export const galleryCategories = [
     'hardware',
     'collection',
     'sensing',
-    'switches',
-    'resistance',
+    'meme',
+    'grids',
     'intro',
 ]
 

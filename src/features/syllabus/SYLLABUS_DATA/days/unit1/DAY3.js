@@ -88,6 +88,30 @@ const DAY3 = {
 
             linkText: 'Hito Steyerl - In Defense of the Poor Image',
             linkSrc: 'https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/',
+        },
+        {
+            linkText: 'Hito Steyerl: This is the future',
+            linkSrc: 'https://www.youtube.com/watch?v=WyIWLvyzcH4',
+        },
+        {
+            linkText: 'Hito Steyerl, Liquidity Inc',
+            linkSrc: 'https://macm.org/en/collections/oeuvre/liquidity-inc/'
+        },
+        {
+            linkText: 'yung jake embedded',
+            linkSrc: 'http://e.m-bed.de/d/',
+        },
+        {
+            linkText: 'situationism',
+            linkSrc: null
+        },
+        {
+            linkText: 'banksy in palestine',
+            linkSrc: 'https://www.thenationalnews.com/arts-culture/art/banksy-in-palestine-a-look-at-the-street-artist-s-work-in-gaza-and-the-west-bank-1.1031618',
+        },
+        {
+            linkText: 'after banksy: the parkour guide to gaza',
+            linkSrc: 'https://www.theguardian.com/cities/video/2015/mar/10/banksy-parkour-gaza-shadia-mansour-video',
         }
     ],
     techLinks: [

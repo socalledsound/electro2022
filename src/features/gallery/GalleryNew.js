@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 //     selectUncommentedWorks, startFetchWorks, selectMidtermWorks, selectGPIOWorks } from './gallerySlice'
     // import { selectFeaturedWorks, selectCurrentWorks, selectCurrentGalleryAssignment, selectRecentWorks, 
     //     selectUncommentedWorks, startFetchWorks} from './gallerySlice'
-        import { selectCurrentWorks, selectCurrentGalleryAssignment, 
+        import { selectCurrentWorks, selectRecentWorks, selectCurrentGalleryAssignment, selectFeaturedWorks,
              startFetchWorks} from './gallerySlice'
 // import { selectCurrentUser, selectLoginLoading } from '../user/userSlice'
 import { selectLoginLoading } from '../user/userSlice'
@@ -29,7 +29,7 @@ const GalleryNew = ({history}) => {
     // console.log(midtermWorks)
     // const gpioWorks = useSelector( selectGPIOWorks)
     // console.log(gpioWorks)
-    // const featuredWorks = useSelector(selectFeaturedWorks)
+    const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
     console.log(currentAssignmentWorks)
     let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
@@ -39,8 +39,8 @@ const GalleryNew = ({history}) => {
     // if(currentAssignmentWorks && currentAssignmentWorks.length){
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }
-    // const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
-    // console.log(recentWorks)
+    const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
+    console.log(recentWorks)
     // const currentUser = useSelector(selectCurrentUser)
     // const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
 
@@ -54,13 +54,13 @@ const GalleryNew = ({history}) => {
            
         
             <div className={styles.galleryWrapper}>
-                {/* {
+                {
                     featuredWorks.length > 0 && 
                     <div className={styles.galleryRowWrapper}>
                          <h5 className={styles.galleryHeading2}>you're all making cool stuff but, don't miss these ::  </h5>
                         <GalleryRowRecent category={'featured'} works={featuredWorks}/>
                     </div>
-                } */}
+                }
 
                 
                     
@@ -68,7 +68,9 @@ const GalleryNew = ({history}) => {
                          <h5 className={styles.galleryHeading2}>the current assignment: </h5>
                         <div 
                                         className={styles.galleryCategoryButton}
-                                        onClick={() => history.push(`/assignments/${currentAssignment.id}`)}
+                                        // onClick={() => history.push(`/assignments/${currentAssignment.id}`)}
+                                        // onClick={() => history.push('/fullgallery')}
+                                        onClick={() => history.push(`/gallery/${currentAssignment.title}`)}
                                     >
                                         <h5 className={styles.galleryHeading}>{currentAssignment.title}</h5>
                                     </div>
@@ -79,13 +81,13 @@ const GalleryNew = ({history}) => {
                     </div>
                 
 
-                {/* {
+                {
                     recentWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                          <h5 className={styles.galleryHeading2}>other works submitted in the last week: </h5>
                         <GalleryRowRecent category={'submitted recently'} works={recentWorks} recent={true}/>
                     </div>
-                } */}
+                }
                 {/* {
                     midtermWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>

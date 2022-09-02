@@ -25,6 +25,7 @@ const Gallery = ({history}) => {
    console.log(galleryCategories)
     return ( 
         <div>
+            <p className={styles.galleryInstruction}>click on any assignment title to see more work from that assignment</p>
         {
             loading ?
             <Loading />
@@ -56,7 +57,7 @@ const Gallery = ({history}) => {
                                         className={styles.galleryCategoryButton}
                                         onClick={() => history.push(`/gallery/${category}`)}
                                     >
-                                        <h5 className={styles.galleryHeading}>{category}</h5>
+                                        <h5 className={styles.galleryHeading}>{category} </h5>
                                     </div>
                                      
                                     <GalleryRow category={category} works={categoryWorks}/>

@@ -15,7 +15,7 @@ const GalleryCategoryPage = ({match, history}) => {
         <div className={styles.galleryCategoryPageWrapper}>
             <div 
                 className={styles.returnToMainGalleryButton}
-                onClick={() => history.push('/gallery')}
+                onClick={() => history.push('/fullgallery')}
                 > 
                 {`<---`}main gallery page
             </div>
