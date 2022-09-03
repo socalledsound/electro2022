@@ -1,10 +1,10 @@
 const DAY10 = {
     id: 10,
-    async: false,
+    async: true,
     unit: 'unit2',
     date: 'September 29, 2022',
     title: 'objects of desire',
-    assignment: 'mario',
+    assignment: 'change',
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1631907629/22-color-coin-sprite-sheet-11563003777uevsziiqrr_wtyluo.png',
     description: `
     Today, we're going to go a little deeper with the idea of characters.
@@ -17,9 +17,7 @@ const DAY10 = {
     whether that be books, wind, or grains of sand.
     `,
     discussionQuestions: [
-        `What is a class in javascript?`,
-        `What are some of the benefits we get when we organize our code with classes?`,
-        ``,
+
     ],
     inspirationLinks: [
         {

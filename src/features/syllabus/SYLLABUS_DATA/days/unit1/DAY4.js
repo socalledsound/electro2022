@@ -4,24 +4,24 @@ const DAY4 = {
     unit: 'unit1',
     date: 'September 8, 2022',
     title: 'boundaries and booleans',
-    assignment: 'images',
+    assignment: 'gallery',
     description: `
-    boundaries and booleans description here
+    Today we will talk about borders, boundaries and booleans, which are so essential to designing any kind of useful interface.  
+    In order to establish boundaries, we need to set one or more conditions, which we do in javascript with....yes, conditionals.
     `,
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596959762/side-effects/irdune_cvypcv.jpg',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1662163101/giving-tree_nyah4o.webp',
     discussionQuestions: [
 
-        ``,
-        ``,
+        `what is the modulo operator????!?`,
+        `is it possible -- or positive -- to live without boundaries?  what about borders?`,
+        `what are some creative or useful strategies for moving borders or boundaries?`
    
     ],
     inClassDemo: [
         {
             title: 'conditionals',
-            link: '',
+            link: 'https://editor.p5js.org/socalledsound/sketches/puGss88vP',
         },
-
-
         {
             title: 'image carousel 1',
             link: 'https://editor.p5js.org/socalledsound/sketches/YwNYDCZ4O',
@@ -103,7 +103,10 @@ const DAY4 = {
         
     ],
     techLinks: [
-
+        {
+            linkText: 'conditionals in js at MDN',
+            linkSrc: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals',
+        },
         {
             linkText:"the modulo operator with Golan Levin",
             linkSrc:"https://www.youtube.com/watch?v=r5Iy3v1co0A"

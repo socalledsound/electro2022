@@ -2,8 +2,8 @@ const DAY18 = {
     id: 18,
     unit: 'unit3',
     date: 'October 27, 2022',
-    title: 'sensing',
-    assignment: 'final project proposal',
+    title: 'circuit playground 2',
+    assignment: 'proposal',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
     description: `
         need description here  

@@ -28,12 +28,13 @@ import DAY22 from './days/unit5/DAY22'
 // unit 6 three
 import DAY23 from './days/unit6/DAY23'
 import DAY24 from './days/unit6/DAY24'
-
+import DAY25 from './days/unit6/DAY25'
 //unit 7 finally
-import DAY25 from './days/unit7/DAY25'
+
 import DAY26 from './days/unit7/DAY26'
 import DAY27 from './days/unit7/DAY27'
 import DAY28 from './days/unit7/DAY28'
+import DAY29 from './days/unit7/DAY29'
 // import DAY29 from './days/unit5/DAY29'
 // import DAY30 from './days/unit5/DAY30'
 // import { PROJECT0 } from '../../projects/PROJECTS_DATA/PROJECT0'
@@ -170,7 +171,7 @@ export const UNIT6 = {
     that we can dream up.
     `,
     project: FINAL_PROJECT,
-    days: [DAY23, DAY24]   
+    days: [DAY23, DAY24, DAY25]   
 }
 
 export const UNIT7 = {
@@ -180,5 +181,5 @@ export const UNIT7 = {
     illustrationURL: UNIT2LOGO,
     overview: "FINAL PROJECT",
     project: FINAL_PROJECT,
-    days: [DAY25, DAY26,DAY27, DAY28]   
+    days: [ DAY26, DAY27, DAY28, DAY29]   
 }

@@ -1,16 +1,12 @@
 const DAY27 = {
     id: 27,
     unit: 'unit7',
-    date: 'December 06, 2022',
-    title: 'FINAL CRIT',
-    assignment: 'FINALFINAL',
+    date: 'December 1, 2022',
+    title: 'work on final project!',
+    assignment: 'PROTO-FINAL',
     illustrationURL: '',
     description: `
-    FINAL CRIT!!!!!!  
-    Crits start at 9:30 sharp, please arrive early, set up, and prepare yourselves.
-    Sorry, no donuts and coffee this year.  Sad face.
-    Today Tuesday schedule:
-
+    let's work on those final projects
     `,
     videos: [
         {

@@ -3,14 +3,15 @@ const DAY8 = {
     async: false,
     unit: 'unit2',
     date: 'September 27, 2022',
-    title: 'fun fun function',
-    assignment: 'itLives',
+    title: 'player player',
+    assignment: 'character',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
     We'll use the p5 library, which has all kinds of useful tools for artists.  
      And, we'll start actually composing software in javascript, using both the functional and the class-based style.
+     Today we'll
     `,
     discussionQuestions: [
         

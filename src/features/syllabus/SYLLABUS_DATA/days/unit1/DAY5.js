@@ -4,23 +4,30 @@ const DAY5 = {
     unit: 'unit1',
     date: 'September 13, 2022',
     title: 'memory',
-    assignment: 'sound boxes',
-    illustrationURL: '',
+    assignment: 'soundings',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596758237/side-effects/feline-fact-why-do-cats-purr-bees-comicconverse-bees-illustration-of-a-cat-full-of-bees_oi0r4a.jpg',
     description: `
-    
+        Today we'll look at various strategies for creating more flexible and comprehensive data structures, so we can pair images and sound, and also attach state to those pairings.
+        If that sounds like a mouthful, don't worry, it is.  These are complicated and important ideas!  And also, somewhat contentious.  But, just take a look at the image
+        to the left, breathe, and remember, cats are your friends.  Oh - we'll also learn how to play sound in our sketches!  And we'll talk about the nature of sound, and listening.
     `,
     reading: [
+        {
+            linkText: `Francisco Lopez, 'profound listening'`,
+            linkSrc: 'https://drive.google.com/file/d/1JaJP-WHN08ReQ05Lm3jHr89HNr8-kb-g/view?usp=sharing', 
+         },
         // {
         //     linkText: `Walter Benjamin, 'the work of art in the age of mechanical reproduction`,
         //     linkSrc: 'https://monoskop.org/images/6/6d/Benjamin_Walter_1936_2008_The_Work_of_Art_in_the_Age_of_Its_Technological_Reproducibility_Second_Version.pdf',
         // },
     ],
     discussionQuestions: [
-        `
+        `Is 'blind' listening possible?  Is it desirable?  `,
+        `What is the distinction between a 'sound' and a 'sound effect'`,
+        `Is the same sound under two different names actually the same sound?`,
+        `What is a class in javascript?`,
+        `What are some of the benefits we get when we organize our code with classes?`,
         
-        `,
-
-
     ],
     videos: [
         // {
@@ -47,19 +54,80 @@ const DAY5 = {
         },
     ],
     inspirationLinks: [
-  
-      {
-          linkText: 'an introduction to the smalltalk language',
-          linkSrc: 'https://www.codeproject.com/Articles/1241904/Introduction-to-the-Smalltalk-Programming-Language',
-      },
-      {
-          linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
-            linkSrc: 'https://supercollider.github.io/'
+        {
+            linkText: 'musique concrete',
+            linkSrc: 'https://en.wikipedia.org/wiki/Musique_concr%C3%A8te',
         },
+        {
+            linkText: 'sound effect library page',
+            linkSrc: 'https://en.wikipedia.org/wiki/Sound_effect',
+        },
+        {
+            linkText: 'the earliest recording was never intended to be listened to',
+            linkSrc: 'http://www.firstsounds.org/sounds/scott.php',
+        },
+
+        {
+            linkText: 'the first recording',
+            linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630345471/scott_phonautograph_anigvo.png',
+        },
+        {
+            linkText:"yoko ono bicycle piece",
+            linkSrc:"https://socalledsound.github.io/gap2018/images/non-sense/yokoBicycle.jpg"
+        },
+        {
+            linkText:"open that window",
+            linkSrc:"http://www.openthatwindow.com/"
+        },
+        {
+            linkText: 'Scientists Invent Noise-Canceling Windows',
+            linkSrc: 'https://www.insidescience.org/news/scientists-invent-noise-canceling-windows#:~:text=(Inside%20Science)%20%2D%2D%20A%20device,a%20microphone%20outside%20the%20window.',
+        },
+        {
+            linkText: 'anne walsh and chris kubick: flesh ++ blood',
+            linkSrc: 'http://doublearchive.com/projects/flesh_blood.php',
+        },
+        {
+            linkText: 'Gary Hill, soundings',
+            linkSrc: 'https://vimeo.com/111166472',
+        },
+        {
+            linkText: 'terry fox: cone of silence',
+            linkSrc: 'https://www.artsy.net/artwork/terry-fox-cones-of-silence',
+        },
+        {
+            linkText: 'Robert Morris: box with the sound of its own making',
+            linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
+        },
+    //   {
+    //       linkText: 'an introduction to the smalltalk language',
+    //       linkSrc: 'https://www.codeproject.com/Articles/1241904/Introduction-to-the-Smalltalk-Programming-Language',
+    //   },
+    //   {
+    //       linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
+    //         linkSrc: 'https://supercollider.github.io/'
+    //     },
  
 
     ],
     techLinks: [
+        {
+            linkText: 'classes in javascript from mdn',
+            linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',
+        },
+        {
+            linkText: 'the secret life of objects from eloquent javascript',
+            linkSrc: 'https://eloquentjavascript.net/06_object.html',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+
+        {
+            linkText: 'p5.sound library reference',
+            linkSrc: 'https://p5js.org/reference/#/libraries/p5.sound',
+        },
               {
           linkText: 'an introduction to the smalltalk language',
           linkSrc: 'https://www.codeproject.com/Articles/1241904/Introduction-to-the-Smalltalk-Programming-Language',

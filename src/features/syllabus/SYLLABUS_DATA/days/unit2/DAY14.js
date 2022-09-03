@@ -2,7 +2,7 @@ const DAY14 = {
     id: 14,
     unit: 'unit2',
     date: 'October 13, 2022',
-    async: false,
+    async: true,
     title: 'game of life',
     assignment: 'gol',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',

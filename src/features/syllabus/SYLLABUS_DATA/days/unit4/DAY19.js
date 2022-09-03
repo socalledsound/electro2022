@@ -1,6 +1,6 @@
 const DAY19 = {
     id: 19,
-    async: true,
+    async: false,
     unit: 'unit4',
     date: 'November 1, 2022',
     title: 'sound is motion',

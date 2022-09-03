@@ -57,35 +57,35 @@ export const ASSIGNMENT3 = {
 
 export const ASSIGNMENT4 = {
     id: 4,
-    title : 'boundaries',
+    title : 'gallery',
     description: ``, 
     markdown: DAY4_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT5 = {
     id: 5,
-    title : 'resistance',
+    title : 'soundings',
     description :``,
     markdown: DAY5_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT6 = {
     id: 6,
-    title : 'listen',
+    title : 'listen!',
     description : ``,
     markdown: DAY6_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT7 = {
     id: 7,
-    title : 'playtime',
+    title : 'proto-collection',
     description : '', 
     markdown: DAY7_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT8 = {
     id: 8,
-    title : 'project1',
+    title : 'collection',
     description : '',
     markdown: DAY8_WORKSHOP_MD,
     // project: 1,

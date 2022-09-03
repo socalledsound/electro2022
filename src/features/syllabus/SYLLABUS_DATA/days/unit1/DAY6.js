@@ -4,16 +4,16 @@ const DAY6 = {
     unit: 'unit1',
     date: 'September 15, 2022',
     title: 'listen!',
-    assignment: 'listen',
+    assignment: 'listen!',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597030532/side-effects/neuhaus1_jggnxk.jpg',
     description: `
+    In this class we'll explore the 'deep listening' techniques of Pauline Oliveros, and learn how to use the zoom recorders that we have at our disposal.
+    We'll also learn about sound and how it becomes digitized, and we'll look at how to edit and import our own recordings into a p5 sketch. 
     `,
 
     discussionQuestions: [
         `If it's not music, what is it?  (...as John Cage said)`,
-        `Is 'blind' listening possible?  Is it desirable?  `,
-        `What is the distinction between a 'sound' and a 'sound effect'`,
-        `Is the same sound under two different names actually the same sound?`,
+
     ],
     inClassDemo: [
         {
@@ -21,14 +21,15 @@ const DAY6 = {
             link: '',
         },
         {
-            title: '',
-            link: '',
+            title: 'a brief intro to audacity',
+            link: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
         },
         // {
         //     title: 'how to make a contact microphone'
         // },
         {
-            title: 'working with a zoom recorder'
+            title: 'zoom h4n manual',
+            link: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
         }
     ],
     videos: [
@@ -50,14 +51,11 @@ const DAY6 = {
         // },        
     ],
     reading : [
+
         {
-            linkText: `Francisco Lopez, 'profound listening'`,
-            linkSrc: 'https://drive.google.com/file/d/1JaJP-WHN08ReQ05Lm3jHr89HNr8-kb-g/view?usp=sharing', 
-         },
-        // {
-        //     linkText: 'Pauline Oliveros: some sound observations',
-        //     linkSrc: 'https://drive.google.com/file/d/1OAnH99RQi2uKMdw5ri6_RB7UzNi98p6y/view',
-        // },
+            linkText: 'Pauline Oliveros: some sound observations',
+            linkSrc: 'https://drive.google.com/file/d/1OAnH99RQi2uKMdw5ri6_RB7UzNi98p6y/view',
+        },
     ],
     inspirationLinks: [
 
@@ -113,23 +111,7 @@ const DAY6 = {
             linkText: 'Chris Watson - The Colour Of Sound',
             linkSrc: 'https://www.youtube.com/watch?v=sL-nTv5LL9g',
         },
-        {
-            linkText: 'musique concrete',
-            linkSrc: 'https://en.wikipedia.org/wiki/Musique_concr%C3%A8te',
-        },
-        {
-            linkText: 'sound effect library page',
-            linkSrc: 'https://en.wikipedia.org/wiki/Sound_effect',
-        },
-        {
-            linkText: 'the earliest recording was never intended to be listened to',
-            linkSrc: 'http://www.firstsounds.org/sounds/scott.php',
-        },
 
-        {
-            linkText: 'the first recording',
-            linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630345471/scott_phonautograph_anigvo.png',
-        },
         {
             linkText: 'max neuhaus, times square',
             linkSrc: 'https://www.diaart.org/visit/visit-our-locations-sites/max-neuhaus-times-square',
@@ -146,42 +128,17 @@ const DAY6 = {
             linkText: 'earl brown, december 1952',
             linkSrc: 'https://res.cloudinary.com/chris-kubick/image/upload/v1630297036/Earle-Browns-December-1952_upbwoj.png',
         },
-        {
-            linkText:"yoko ono bicycle piece",
-            linkSrc:"https://socalledsound.github.io/gap2018/images/non-sense/yokoBicycle.jpg"
-        },
-        {
-            linkText:"open that window",
-            linkSrc:"http://www.openthatwindow.com/"
-        },
-        {
-            linkText: 'Scientists Invent Noise-Canceling Windows',
-            linkSrc: 'https://www.insidescience.org/news/scientists-invent-noise-canceling-windows#:~:text=(Inside%20Science)%20%2D%2D%20A%20device,a%20microphone%20outside%20the%20window.',
-        },
-        {
-            linkText: 'anne walsh and chris kubick: flesh ++ blood',
-            linkSrc: 'http://doublearchive.com/projects/flesh_blood.php',
-        },
+
         {
             linkText: 'Christina Kubisch, Abgehangt',
             linkSrc: 'http://www.christinakubisch.de/en/works/installations/5',
         },
-        {
-            linkText: 'Gary Hill, soundings',
-            linkSrc: 'https://vimeo.com/111166472',
-        },
+ 
         {
             linkText: 'works by steve roden',
             linkSrc : 'http://www.inbetweennoise.com/works/',
         },
-        {
-            linkText: 'terry fox: cone of silence',
-            linkSrc: 'https://www.artsy.net/artwork/terry-fox-cones-of-silence',
-        },
-        {
-            linkText: 'Robert Morris: box with the sound of its own making',
-            linkSrc: 'https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961',
-        },
+
         // {
         //     linkText: 'the three body problem by Liu Cixin',
         //     linkSrc: 'https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)'
@@ -191,14 +148,14 @@ const DAY6 = {
 
     ],
     techLinks: [
-        {
-            linkText: 'a brief intro to audacity',
-            linkSrc: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
-        },
-        {
-            linkText: 'zoom recorder h4n manual',
-            linkSrc: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
-        },
+        // {
+        //     linkText: 'a brief intro to audacity',
+        //     linkSrc: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
+        // },
+        // {
+        //     linkText: 'zoom recorder h4n manual',
+        //     linkSrc: 'https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_H4nSP_0.pdf',
+        // },
         {
             linkText: 'How do audio analogue to digital converters work?',
             linkSrc: 'http://www.planetoftunes.com/digital-audio/how-do-analogue-to-digital-converters-work.php',

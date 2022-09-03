@@ -1,6 +1,6 @@
 const DAY20 = {
     id: 20,
-    async: false,
+    async: true,
     unit: 'unit4',
     date: 'November 3, 2022',
     title: 'visualizing audio',

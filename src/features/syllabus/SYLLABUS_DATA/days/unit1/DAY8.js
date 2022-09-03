@@ -6,9 +6,13 @@ const DAY8 = {
     assignment: 'collection',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1631224416/NewImage66_kljsa7.png',
     // illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1599086544/side-effects/goldberg_ucbesg.jpg',
-    description: "time for our first crit!!!  be sure to come to class early!",
+    description: `
+    time for our first crit!!!  be sure to come to class early!
+    this is the one day when you MUST be here, or you will lose a letter grade.
+    some important things to remember for crit: 1) 
+    `,
     discussionQuestions: [
-        ``,
+        `?`,
         ``,
         ``,
         ``,
