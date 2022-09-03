@@ -45,13 +45,27 @@ const DAY5 = {
     ],
     inClassDemo: [
         {
-            title: 'classes in javascript',
-            link: ''
+            title: 'classes in javascript (w Bike class)',
+            link: 'https://editor.p5js.org/socalledsound/sketches/GrtXchNgh'
+        },
+
+        {
+            title: 'challenge solution 1: clickable gallery',
+            link: 'https://editor.p5js.org/socalledsound/sketches/mxgJdeqQY',
+        },   
+        {
+            title: 'challenge solution w CLASS: clickable gallery',
+            link: 'https://editor.p5js.org/socalledsound/sketches/dYxzC03uI',
+        },        
+        {
+            title: 'playing sounds in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/Nvv4ySbwr',
         },
         {
-            title: 'working with sound in p5',
-            link: '',
+            title: 'sound-image grid',
+            link: 'https://editor.p5js.org/socalledsound/sketches/toJCdCgnX'
         },
+    
     ],
     inspirationLinks: [
         {
@@ -107,8 +121,34 @@ const DAY5 = {
     //       linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
     //         linkSrc: 'https://supercollider.github.io/'
     //     },
- 
-
+    {
+        linkText: 'sound bubbles',
+        linkSrc: 'https://editor.p5js.org/socalledsound/sketches/U0Olkxy-V'
+    },
+    {
+        linkText: 'planetSoundz in p5',
+        linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Sk1J8qCim',
+    },
+    {
+        linkText: 'l-system snowflake sound',
+        linkSrc: 'https://editor.p5js.org/socalledsound/sketches/Rg2rndRKo',
+    },
+        {
+            linkText: 'crazy eyes -- sound/image p5 thing',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/5Q5wh4RZj',
+        },
+        {
+            linkText: 'music of our times',
+            linkSrc: 'https://github.com/socalledsound/music-of-our-times',
+        },
+        {
+            linkText: 'beating heart',
+            linkSrc: 'https://github.com/socalledsound/beating-heart',
+        },
+        {
+            linkText: 'heart system',
+            linkSrc: 'https://github.com/socalledsound/heart-system',
+        },
     ],
     techLinks: [
         {
@@ -120,8 +160,8 @@ const DAY5 = {
             linkSrc: 'https://eloquentjavascript.net/06_object.html',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'freesound.org',
+            linkSrc: 'https://freesound.org/',
         },
 
         {

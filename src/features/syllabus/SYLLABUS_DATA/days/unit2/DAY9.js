@@ -9,9 +9,10 @@ const DAY8 = {
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
-    We'll use the p5 library, which has all kinds of useful tools for artists.  
-     And, we'll start actually composing software in javascript, using both the functional and the class-based style.
-     Today we'll
+    We'll look at some art games today.
+     And, we'll start actually composing software in javascript.  
+     Today we'll talk about characters, and vectors and sprites, and we'll get a start building our midterm projects,
+     by making a Player class.
     `,
     discussionQuestions: [
         
@@ -19,6 +20,12 @@ const DAY8 = {
         `Do you have any favorite games?  (digital or 'real')`,
         `Is Johan Huizinga right?  Do games have meaning?  Does life have meaning with them?`,
         `'gamification': evil, amazing or both?`,
+    ],
+    inClassDemo: [
+        {
+            title:'Vectors  in p5',
+            link: '',
+        }
     ],
     inspirationLinks: [
         {

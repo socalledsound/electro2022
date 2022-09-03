@@ -132,6 +132,10 @@ const DAY3 = {
             linkText: 'yung jake embedded',
             linkSrc: 'http://e.m-bed.de/d/',
         },
+        {   
+            linkText: 'bird in p5 w image bg',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/n0x9l5kWl',
+        }
 
     ],
     techLinks: [
@@ -180,6 +184,7 @@ const DAY3 = {
             linkText: 'getting started with cloudinary video',
             linkSrc: 'https://youtu.be/VbOUK3WmVqo',
         },
+        
     ],
 
 }

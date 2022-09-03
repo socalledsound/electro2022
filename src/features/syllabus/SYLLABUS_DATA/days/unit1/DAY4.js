@@ -35,6 +35,14 @@ const DAY4 = {
             link: 'https://editor.p5js.org/socalledsound/sketches/M6JtG0G3K',
         },
         {
+            title: 'using the mouse: simple mouse pen',
+            link: 'https://editor.p5js.org/socalledsound/sketches/ZBSFv0Yu4',
+        },
+        {
+            title: 'toggle switch for mouse pen',
+            link: 'https://editor.p5js.org/socalledsound/sketches/M8tZsN1yf',
+        },
+        {
             title: 'CHALLENGE : select an image with mouse',
             link: 'https://editor.p5js.org/socalledsound/sketches/dYxzC03uI',
         },

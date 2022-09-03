@@ -16,10 +16,10 @@ const DAY6 = {
 
     ],
     inClassDemo: [
-        {
-            title: '',
-            link: '',
-        },
+        // {
+        //     title: '',
+        //     link: '',
+        // },
         {
             title: 'a brief intro to audacity',
             link: 'https://www.youtube.com/watch?v=6fL3t7S8AU0',
