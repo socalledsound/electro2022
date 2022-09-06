@@ -9,7 +9,7 @@ const DAY3 = {
     Then, we'll make our own.  
     To do that we're going to have to learn about using text and images in p5.
    `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1596773243/side-effects/what-if_zxos1x.jpg',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1662470056/wonka-ai_av532l.png',
     discussionQuestions: [
         `can you recall any memorable memes?`,
         `why are 'advice animals' so successful?`,
@@ -34,6 +34,10 @@ const DAY3 = {
             title: 'sequential images',
             link: 'https://editor.p5js.org/socalledsound/sketches/rdqlj06TJ',
         },
+        {
+            title: 'mellow squares (looping image/sound sketch in p5)',
+            link: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+        }
     ],
     videos: [
         // {
@@ -136,6 +140,7 @@ const DAY3 = {
             linkText: 'bird in p5 w image bg',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/n0x9l5kWl',
         }
+        
 
     ],
     techLinks: [
@@ -184,6 +189,14 @@ const DAY3 = {
             linkText: 'getting started with cloudinary video',
             linkSrc: 'https://youtu.be/VbOUK3WmVqo',
         },
+        {
+            linkText: 'running stable diffusion on your mac',
+            linkSrc: 'https://replicate.com/blog/run-stable-diffusion-on-m1-mac',
+        },
+        {
+            linkText: 'stable diffusion on reddit',
+            linkSrc: 'https://www.reddit.com/r/StableDiffusion/',
+        }
         
     ],
 

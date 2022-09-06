@@ -3,15 +3,13 @@ const DAY13 = {
     async: false,
     unit: 'unit2',
     date: 'October 11, 2022',
-    title: 'games without players',
+    title: 'enemy mine',
     assignment: 'boids',
     description: `
-    What happens when the landscape of a game wins?  In 'Gamic Action' the 
-    theorist Alexander Galloway describes a type of gameplay cslled non-diegetic 
-    machine acts, which to me seems a lot like generative art.  I had originally planned to discuss this article and I'm happy to,
-    but I realized that one of my favorite essays ever written about the practice of art, by Steve Reich, is basically asking similar
-    questions.  So, read that instead, and let's see if we understand things similarly.  
-    `,
+    Let's talk about the baddies.  
+    I want you to think about what an enemy might mean in your own artwork/ game.  
+    Today we'll talk about foils, and spoils, and other things that our character might encounter as we 
+    make our way towards our midterm project crit day.`,
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597763128/side-effects/clouds2_ngznbn.png',
     reading: [
         {
@@ -20,9 +18,10 @@ const DAY13 = {
         },
     ],
     discussionQuestions: [
-        `Is it possible to have a game without players??`,
-        `What does this Steve Reich article have to do with games and players??`,
-        `How would you characterize this idea of 'music as a process' and how is it different from other types of music?`,
+        `are you an alien?  would you become one?  if not, why not?`,
+        `do you have an enemy?`,
+        `are trees sentient beings?`,
+        `do robots deserve rights?`,
     ],
     inspirationLinks: [
         {
@@ -260,6 +259,10 @@ const DAY13 = {
                 linkText: `and finally that same game, but a little tricker, let's call this the baby diamond slope`,
                 linkSrc: 'https://youtu.be/VHcpYE0d3rw',
             },
+            {
+                linkText: 'flow field',
+                linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2',
+            }
         ],    
 }
 

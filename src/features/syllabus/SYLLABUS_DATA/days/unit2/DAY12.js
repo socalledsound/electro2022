@@ -3,20 +3,13 @@ const DAY12 = {
     async: true,
     unit: 'unit2',
     date: 'October 06, 2022',
-    title: 'enemy mine',
-    assignment: 'goombas',
+    title: 'expansion',
+    assignment: '',
     description: `
-    Today we'll add an enemy to our mario game.  And I want you to think about what an
-    enemy might mean in your own artwork/ game.  Today we'll talk 
-    about foils, and spoils, and other things that our character might encounter as we 
-    make our way towards our midterm project crit day.`,
+    `
+    ,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
-    discussionQuestions: [
-        `are you an alien?  would you become one?  if not, why not?`,
-        `do you have an enemy?`,
-        `are trees sentient beings?`,
-        `do robots deserve rights?`,
-    ],
+    discussionQuestions: ,
     inspirationLinks: [   
         {
             linkText: '"the music of our times" (a thing I made this weekend thinking about this stuff)',
@@ -147,3 +140,12 @@ const DAY12 = {
 }  
 
 export default DAY12
+
+
+
+
+// Today we are going to step up our game a bit, literally, and talk about game STATE.
+// Just like we previously realized that we can back out and up of our code to make a Coin class
+// and a Mario class, we can back up and out even farther to make a Game.  We can store everything
+// in the game world in there, and this means we will have a single source of truth for our game,
+// which is always deeply satisfying.  Watch the vids and come to class for more on this very big topic.

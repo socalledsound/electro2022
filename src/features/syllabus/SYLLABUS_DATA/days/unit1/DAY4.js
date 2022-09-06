@@ -107,6 +107,10 @@ const DAY4 = {
             linkText: 'Wafa Bilal : domestic tension',
             linkSrc: 'https://wafaabilal.com/domestic-tension/',
         },
+        {
+            linkText: 'stepping out sequencer game in p5',
+            linkSrc: 'https://socalledsound.github.io/stepping-out/',
+        }
 
         
     ],

@@ -3,20 +3,20 @@ const DAY14 = {
     unit: 'unit2',
     date: 'October 13, 2022',
     async: true,
-    title: 'game of life',
-    assignment: 'gol',
+    title: 'games without players',
+    assignment: 'proto-midterm',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1632426987/nes_t7dxfv.jpg',
     description: `
-        We're back in the flesh today!  BE SURE TO BRING YOUR BEST 'GAME' TO CLASS TODAY.  I want to talk with you about your project and help you work out any 
-        issues that you're having. And, hopefully you've got enough of a 'game' by this point that you can start thinking about
-        how you want people to be able to control your character.  Today, we'll look at how to wire up our CPE to our games so that we can
-        have novel forms of input, and generally troubleshoot our projects up to this point.
+    What happens when the landscape of a game wins?  In 'Gamic Action' the 
+    theorist Alexander Galloway describes a type of gameplay cslled non-diegetic 
+    machine acts, which to me seems a lot like generative art.  
     `,
     discussionQuestions: [
-        ``,
-        ``,
-        ``,
-        ``,
+        [
+            `Is it possible to have a game without players??`,
+            `What does this Steve Reich article have to do with games and players??`,
+            `How would you characterize this idea of 'music as a process' and how is it different from other types of music?`,
+        ]
     ],
     videos: [
         {

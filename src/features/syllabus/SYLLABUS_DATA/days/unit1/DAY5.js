@@ -48,6 +48,10 @@ const DAY5 = {
             title: 'classes in javascript (w Bike class)',
             link: 'https://editor.p5js.org/socalledsound/sketches/GrtXchNgh'
         },
+        {
+            title: 'MyArray class',
+            link: 'https://editor.p5js.org/socalledsound/sketches/qPI1FYicD',
+        },
 
         {
             title: 'challenge solution 1: clickable gallery',

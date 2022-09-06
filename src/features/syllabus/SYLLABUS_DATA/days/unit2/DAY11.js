@@ -3,22 +3,24 @@ const DAY11 = {
     async: false,
     unit: 'unit2',
     date: 'October 4, 2022',
-    title: 'game on!',
-    assignment: 'state',
+    title: 'player player',
+    assignment: 'character',
     description: `
-    Today we are going to step up our game a bit, literally, and talk about game STATE.
-    Just like we previously realized that we can back out and up of our code to make a Coin class
-    and a Mario class, we can back up and out even farther to make a Game.  We can store everything
-    in the game world in there, and this means we will have a single source of truth for our game,
-    which is always deeply satisfying.  Watch the vids and come to class for more on this very big topic.
+    Today, we're going to go a little deeper with the idea of characters.
+    We'll start by looking at the characters that you've invented, then we'll build on those characters, 
+    by giving them something that they wantneed.
+    
+    For your gallery submission, I want you to take those ideas and make
+    your own character. 
+    that interests your character, 
+    whether that be books, wind, or grains of sand.
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1598458992/side-effects/B0B7D0BB-F967-4D6C-92EB-34B9E9DF164D_phz7by.jpg',
     discussionQuestions: [
-        `What is 'state' and why is it good to have a 'single source of truth'?`,
-        `Give some examples of ways we can manage state in javascript.`,
-        `Why is it nice or good to have a 'Game' object?`,
-        `What is 'refactoring'?  What are some signs that you need to think about it?`,
-
+        // `What is 'state' and why is it good to have a 'single source of truth'?`,
+        // `Give some examples of ways we can manage state in javascript.`,
+        // `Why is it nice or good to have a 'Game' object?`,
+        // `What is 'refactoring'?  What are some signs that you need to think about it?`,
     ],
     inspirationLinks: [
         
@@ -38,6 +40,10 @@ const DAY11 = {
         {
             linkText: 'massively multiplayer tetris that i built a while ago with that meth meth method tutorial below',
             linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
+        },
+        {
+            linkText: 'asteroids in p5',
+            linkSrc: 'https://editor.p5js.org/simontiger/sketches/r16tcHq3e',       
         }
         ],
         techLinks: [
@@ -91,7 +97,11 @@ const DAY11 = {
             },{
                 linkText: 'entity component system at wikipedia',
                 linkSrc: 'https://en.wikipedia.org/wiki/Entity_component_system',
-            }
+            },
+            {
+                linkText:'wander steering',
+                linkSrc: 'https://www.youtube.com/watch?v=ujsR2vcJlLk',
+            },
 
         ], 
         videos: [

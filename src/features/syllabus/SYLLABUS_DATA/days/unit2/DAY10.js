@@ -3,18 +3,11 @@ const DAY10 = {
     async: true,
     unit: 'unit2',
     date: 'September 29, 2022',
-    title: 'objects of desire',
-    assignment: 'change',
+    title: 'level up',
+    assignment: 'proposal',
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1631907629/22-color-coin-sprite-sheet-11563003777uevsziiqrr_wtyluo.png',
     description: `
-    Today, we're going to go a little deeper with the idea of characters.
-    We'll start by looking at the characters that you've invented, then we'll build on those characters, by giving them something that they wantneed.
-    And, in our code exercise, we're going to look at classes in javascript, which are a really powerful
-    way of organizing characters.  We'll build a super simplified version of one of my favorite classic games,
-    super mario bros., and talk about some of the mechanics involved.
-    And for your gallery submission, I want you to take those ideas, replace our super mario
-    with your own character and replace the coins with something that interests your character, 
-    whether that be books, wind, or grains of sand.
+
     `,
     discussionQuestions: [
 
@@ -135,6 +128,14 @@ const DAY10 = {
             {
                 linkText: 'mario game 7: jump, mario',
                 linkSrc: 'https://youtu.be/73GudfuavTk',
+            },
+            {
+                linkText: 'non orthogonal reflection',
+                linkSrc: 'https://p5js.org/examples/motion-non-orthogonal-reflection.html',
+            },
+            {
+                linkText: 'bouncy vectors directional heading',
+                linkSrc: 'https://editor.p5js.org/jonfroehlich/sketches/A6t4YPD3',
             },
         ],    
 

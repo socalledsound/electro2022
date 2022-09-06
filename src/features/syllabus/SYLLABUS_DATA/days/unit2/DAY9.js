@@ -3,8 +3,8 @@ const DAY8 = {
     async: false,
     unit: 'unit2',
     date: 'September 27, 2022',
-    title: 'player player',
-    assignment: 'character',
+    title: 'transformation',
+    assignment: 'movement',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
@@ -22,10 +22,32 @@ const DAY8 = {
         `'gamification': evil, amazing or both?`,
     ],
     inClassDemo: [
+
         {
-            title:'Vectors  in p5',
+            title:'Vector basics in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/DC8MWdJ95',
+        },
+        {
+            title: 'two moving circles no classes',
+            link: 'https://editor.p5js.org/socalledsound/sketches/cMlTybiLM',
+        },
+        {
+            title:'circle/circle collisions in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/8KZz6c-aN',
+        },
+        {
+            title:'circle/rectangle collisions in p5',
             link: '',
-        }
+        },
+
+        {
+            title: 'breakout game in p5',
+            link: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
+        },
+        {
+            title: 'stepping out : step sequencer + breakout',
+            link: 'https://github.com/socalledsound/stepping-out',
+        },
     ],
     inspirationLinks: [
         {
@@ -92,10 +114,7 @@ const DAY8 = {
             linkText: 'this website will self-destruct',
             linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
 
         {
             linkText: '',
@@ -131,14 +150,14 @@ const DAY8 = {
                 linkText: 'Daniel Shiffman: programming in p5.js playist',
                 linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
             },
-            {
-                linkText: 'p5 online editor - check examples under file menu',
-                linkSrc: 'https://editor.p5js.org/',
-            },
-            {
-                linkText: 'github repo for our first animation',
-                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
-            },
+            // {
+            //     linkText: 'p5 online editor - check examples under file menu',
+            //     linkSrc: 'https://editor.p5js.org/',
+            // },
+            // {
+            //     linkText: 'github repo for our first animation',
+            //     linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
+            // },
             {
                 linkText: 'git and github for poets',
                 linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
@@ -150,26 +169,34 @@ const DAY8 = {
                 linkText: 'github basics',
                 linkSrc: 'https://youtu.be/RpYKKYsG7Io',
             },
+            // {
+            //     linkText: 'getting started with p5',
+            //     linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
+            // },
+            // {
+            //     linkText: 'code-along: bringing things to life pt 1',
+            //     linkSrc: 'https://youtu.be/tk2TOlN4Qmw',
+            // },
+            // {
+            //     linkText: 'code-along: bringing things to life pt 2',
+            //     linkSrc: 'https://youtu.be/uSnvsfot_U4',
+            // },
+            // {
+            //     linkText: 'submitting an assignment',
+            //     linkSrc: 'https://youtu.be/EgPmpnQltt8',
+            // },
+            // {
+            //     linkText: 'javascript morsels playlist',
+            //     linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
+            // },
             {
-                linkText: 'getting started with p5',
-                linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
+                linkText: 'shiffman: angles and vectors',
+                linkSrc: 'https://www.youtube.com/watch?v=oXwCVDXS2Lg'
             },
             {
-                linkText: 'code-along: bringing things to life pt 1',
-                linkSrc: 'https://youtu.be/tk2TOlN4Qmw',
-            },
-            {
-                linkText: 'code-along: bringing things to life pt 2',
-                linkSrc: 'https://youtu.be/uSnvsfot_U4',
-            },
-            {
-                linkText: 'submitting an assignment',
-                linkSrc: 'https://youtu.be/EgPmpnQltt8',
-            },
-            {
-                linkText: 'javascript morsels playlist',
-                linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
-            },
+                linkText: 'bouncing sequencer',
+                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed'
+            }
             
         ],    
 
