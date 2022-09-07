@@ -81,6 +81,7 @@
   font-weight: 300;
   margin-top: 0 auto;
   padding: 0.6rem;
+  min-height: 210px;
   background-color: rgb(161, 109, 12);
   background-color: #c67204;
   background-color: rgba(129, 80, 16, 0.1);
@@ -102,7 +103,8 @@
   border: 1px solid white;
   padding: 1.2rem;
   border-radius: 1.2rem;
-  min-height: 10rem;
+  /* min-height: 10rem; */
+  min-height: 210px;
 }
 
 .questionsBorder {
@@ -121,7 +123,7 @@
   /* width: 40%; */
   min-width: 100px;
   max-width: 175px;
-  max-height: 150px;
+  max-height: 200px;
   margin-bottom: 1.2rem;
   margin-left: 1.2rem;
   float: right;

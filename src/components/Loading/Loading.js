@@ -1,12 +1,19 @@
 import React from 'react'
+import styles from './Loading.module.css'
 
 const Loading = () => {
     return ( 
-        <div>
-            <p id="html-para">{`loading spinner will be here`}</p>
-                <div class="loader one">
-                <div class="first circle"></div>
-                <div class="second circle"></div>
+        <div className={styles.loader}>
+            {/* <p id="html-para">{`loading spinner will be here`}</p> */}
+                <div className={styles.anim}>
+                    <div className={styles.circle1}></div>
+                    <div className={styles.circle2}></div>
+                    <div className={styles.circle3}></div>
+                </div>
+
+            
+            <div>
+                <p>...loading</p>
             </div>
         </div>
      );

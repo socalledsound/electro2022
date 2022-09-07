@@ -10,7 +10,7 @@ const DAY10 = {
 
     `,
     discussionQuestions: [
-
+        ``
     ],
     inspirationLinks: [
         {

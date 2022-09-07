@@ -3,13 +3,15 @@ const DAY12 = {
     async: true,
     unit: 'unit2',
     date: 'October 06, 2022',
-    title: 'expansion',
-    assignment: '',
+    title: 'world building',
+    assignment: 'landscape',
     description: `
     `
     ,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1597762563/side-effects/uncanny-valley_fvwqg0.jpg',
-    discussionQuestions: ,
+    discussionQuestions: [
+        ``
+    ],
     inspirationLinks: [   
         {
             linkText: '"the music of our times" (a thing I made this weekend thinking about this stuff)',

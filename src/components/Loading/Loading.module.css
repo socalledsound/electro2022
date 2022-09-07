@@ -1,33 +1,87 @@
 #html-para {
   padding: 100px;
 }
-.loader.one .circle {
-  height: 100px;
-  width: 100px;
-  background: #e427f9;
+
+.loader {
+  /* margin-top: 15vh;
+  margin-left: 4rem; */
+  display: flex;
+  flex-direction: row;
+}
+
+.anim{
+  
+}
+.circle1{
   position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50px;
+  top: 40vh;
+  left: 25vw;
+  /* margin-left: 2rem; */
+  height: 250px;
+  width: 250px;
+  background-color: #e427f9;
+  /* position: absolute;
+  top: 100px;
+  left: 100px; */
+  border-radius: 150px;
+  color: #e427f9;
   animation-name: pulse;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-.second.circle {
+.circle2 {
+  position: absolute;
+  top: 40vh;
+  left: 30vw;
+  /* margin-left: 2rem; */
+  height: 50px;
+  width:  50px;
+  background-color: #276df9;
+  /* position: absolute;
+  top: 100px;
+  left: 100px; */
+  border-radius: 150px;
+  color: #e427f9;
   animation-name: pulse;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
+ 
+}
+
+
+
+.circle3 {
+  position: absolute;
+  top: 40vh;
+  left: 30vw;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  height: 150px;
+  width: 150px;
+  background-color: #6df927;
+  /* position: absolute;
+  top: 100px;
+  left: 100px; */
+  border-radius: 150px;
+  color: #e427f9;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+ 
 }
 
 @keyframes pulse {
-  from {
-    transform: scale(0);
+  0% {
+    transform: scale(0.1);
     opacity: 1;
   }
-  to {
-    transform: scale(1);
+  50% {
+    transform: scale(1.0);
     opacity: 0;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 1;
   }
 }
