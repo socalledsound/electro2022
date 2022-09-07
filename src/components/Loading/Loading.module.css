@@ -3,10 +3,10 @@
 }
 
 .loadingText{
-  font-size: 6rem;
+  font-size: 2rem;
   position: absolute;
-  top: 40vh;
-  left: 25vw;
+  top: 50vh;
+  left: 35vw;
   color:white;
   text-transform: uppercase;
 }

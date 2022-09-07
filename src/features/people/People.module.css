@@ -6,8 +6,8 @@
 }
 
 .personContainer {
-  width: 7rem;
-  height: 7rem;
+  width: 9rem;
+  height: 9rem;
   margin-right: 0.8rem;
   margin-bottom: 0.8rem;
 }
@@ -19,6 +19,24 @@
 
 .personDetailContainer {
   background-color: yellowgreen;
-  padding: 0.8rem;
-  border-radius: 0.3rem;
+  margin-right: 0;
+  padding: 0.6rem;
+  max-width: 7rem;
 }
+  
+  .worksButton{
+    background-color: rgb(121, 190, 114);
+    border: 1px solid darkgreen;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    margin-top: 0.7rem;
+  }
+
+  .worksButton:hover{
+    background-color: rgb(188, 210, 186);
+    border: 1px solid darkgreen;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    margin-top: 0.7rem;
+   box-shadow: 1px 1px rgba(165, 42, 42, 0.4);
+  }

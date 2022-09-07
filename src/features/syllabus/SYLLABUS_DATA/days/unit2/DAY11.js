@@ -3,8 +3,8 @@ const DAY11 = {
     async: false,
     unit: 'unit2',
     date: 'October 4, 2022',
-    title: 'player player',
-    assignment: 'character',
+    title: 'breakout',
+    assignment: 'breaking out',
     description: `
     Today, we're going to go a little deeper with the idea of characters.
     We'll start by looking at the characters that you've invented, then we'll build on those characters, 
@@ -22,21 +22,34 @@ const DAY11 = {
         // `Why is it nice or good to have a 'Game' object?`,
         // `What is 'refactoring'?  What are some signs that you need to think about it?`,
     ],
+    inClassDemo: [
+
+        {
+            title:'Vector basics in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/DC8MWdJ95',
+        },
+        {
+            title: 'two moving circles no classes',
+            link: 'https://editor.p5js.org/socalledsound/sketches/cMlTybiLM',
+        },
+        {
+            title:'circle/circle collisions in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/8KZz6c-aN',
+        },
+        {
+            title:'circle/rectangle collisions in p5',
+            link: '',
+        },
+
+
+        {
+            title: 'stepping out : step sequencer + breakout',
+            link: 'https://github.com/socalledsound/stepping-out',
+        },
+    ],
     inspirationLinks: [
         
-        {
-            linkText: 'top 10 games from js13k 2020',
-            linkSrc: 'https://github.blog/2020-10-11-top-ten-games-from-the-js13k-2020-competition/',
-            
-        },
-        {
-            linkText: 'and you can still vote in the 2021 games....',
-            linkSrc: 'https://js13kgames.com/entries/2021',
-        },
-        {
-            linkText: 'i really liked this one!',
-            linkSrc: 'https://js13kgames.com/entries/choch',
-        },
+
         {
             linkText: 'massively multiplayer tetris that i built a while ago with that meth meth method tutorial below',
             linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
@@ -47,6 +60,18 @@ const DAY11 = {
         }
         ],
         techLinks: [
+            {
+                linkText: 'article on collision detection physics',
+                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics',
+            },
+            {
+                linkText: 'online book about collision detection',
+                linkSrc: 'https://www.jeffreythompson.org/collision-detection/table_of_contents.php',
+            },
+            {
+                linkText: 'another breakout game in the online editor',
+                linkSrc: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
+            },
            {
                linkText: `I took Tucker's noisy raindrops and turned them into a small heart system game`,
                linkSrc: 'https://github.com/socalledsound/tucker-thing'
@@ -105,23 +130,30 @@ const DAY11 = {
 
         ], 
         videos: [
-
             {
-                linkText: 'mario game 8: Game class, LONG one 😬sorry',
-                linkSrc: 'https://youtu.be/0kA4oQx2PR8',
+                linkText: 'shiffman: angles and vectors',
+                linkSrc: 'https://www.youtube.com/watch?v=oXwCVDXS2Lg'
             },
             {
-                linkText: 'mario game 9: scoreboard',
-                linkSrc: 'https://youtu.be/0i106wnVKhM',
+                linkText: 'bouncing sequencer',
+                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed'
             },
-            {
-                linkText: 'mario game 10: start button',
-                linkSrc: 'https://youtu.be/06c5h0InwcY',
-            },
-            {
-                linkText: 'mario game 10: add sounds',
-                linkSrc: 'https://www.youtube.com/watch?v=UoLU_D8KgZw',
-            },
+            // {
+            //     linkText: 'mario game 8: Game class, LONG one 😬sorry',
+            //     linkSrc: 'https://youtu.be/0kA4oQx2PR8',
+            // },
+            // {
+            //     linkText: 'mario game 9: scoreboard',
+            //     linkSrc: 'https://youtu.be/0i106wnVKhM',
+            // },
+            // {
+            //     linkText: 'mario game 10: start button',
+            //     linkSrc: 'https://youtu.be/06c5h0InwcY',
+            // },
+            // {
+            //     linkText: 'mario game 10: add sounds',
+            //     linkSrc: 'https://www.youtube.com/watch?v=UoLU_D8KgZw',
+            // },
  
         ],  
 

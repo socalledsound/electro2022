@@ -38,7 +38,7 @@ const People = () => {
                   key={person.id}
                   className={styles.personContainer}
                   onClick={() => selectPerson(person)}
-                  style={{width: `${selected ? '20rem' : '7rem'}`, height: `${selected ? '20rem' : '7rem'}`}}
+                  style={{width: `${selected ? '7rem' : '7rem'}`, height: `${selected ? '7rem' : '7rem'}`}}
                 >
                   {
                     selected ?

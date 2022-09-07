@@ -4,7 +4,7 @@ const DAY13 = {
     unit: 'unit2',
     date: 'October 11, 2022',
     title: 'enemy mine',
-    assignment: '',
+    assignment: 'boids',
     description: `
     Let's talk about the baddies.  
     I want you to think about what an enemy might mean in your own artwork/ game.  

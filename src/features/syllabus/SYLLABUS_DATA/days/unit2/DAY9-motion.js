@@ -1,16 +1,16 @@
-const DAY9 = {
-    id: 9,
+const DAY8 = {
+    id: 8,
     async: false,
     unit: 'unit2',
     date: 'September 27, 2022',
-    title: 'player player',
-    assignment: 'player',
+    title: 'transformation',
+    assignment: 'motion',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/c_scale,h_526/v1596997450/side-effects/billy-trips_hr3eoy.jpg',
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
     We'll look at some art games today.
-    
+     And, we'll start actually composing software in javascript.  
 
     `,
     discussionQuestions: [
@@ -21,19 +21,29 @@ const DAY9 = {
         `'gamification': evil, amazing or both?`,
     ],
     inClassDemo: [
+
         {
-            title:'Player: importing images, sprites and sounds',
-            link: '',
+            title:'Vector basics in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/DC8MWdJ95',
         },
         {
-            title:'Player: moving a character',
-            link: '',
+            title: 'two moving circles no classes',
+            link: 'https://editor.p5js.org/socalledsound/sketches/cMlTybiLM',
         },
         {
-            title:'Game: scoring and dying',
+            title:'circle/circle collisions in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/8KZz6c-aN',
+        },
+        {
+            title:'circle/rectangle collisions in p5',
             link: '',
         },
 
+
+        {
+            title: 'stepping out : step sequencer + breakout',
+            link: 'https://github.com/socalledsound/stepping-out',
+        },
     ],
     inspirationLinks: [
         {
@@ -97,23 +107,6 @@ const DAY9 = {
             linkSrc: 'https://js13kgames.com/',
         },
         {
-            linkText: 'top 10 games from js13k 2020',
-            linkSrc: 'https://2021.js13kgames.com/#winners',
-            
-        },
-        {
-            linkText: 'and you can vote in the 2021 games....',
-            linkSrc: 'https://js13kgames.com/entries/2022',
-        },
-        {
-            linkText: 'i really liked this one!',
-            linkSrc: 'https://js13kgames.com/entries/choch',
-        },
-        {
-            linkText: 'anopther fun one',
-            linkSrc: 'https://js13kgames.com/games/the-adventures-of-captain-callisto/index.html'
-        },
-        {
             linkText: 'this website will self-destruct',
             linkSrc: 'https://www.thiswebsitewillselfdestruct.com/',
         },
@@ -153,7 +146,14 @@ const DAY9 = {
                 linkText: 'Daniel Shiffman: programming in p5.js playist',
                 linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
             },
-           
+            {
+                linkText: 'article on collision detection physics',
+                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics',
+            },
+            {
+                linkText: 'online book about collision detection',
+                linkSrc: 'https://www.jeffreythompson.org/collision-detection/table_of_contents.php',
+            },
             {
                 linkText: 'github repo for our breakout game',
                 linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
@@ -162,7 +162,10 @@ const DAY9 = {
                 linkText: 'git and github for poets',
                 linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
             },
-
+            {
+                linkText: 'another breakout game in the online editor',
+                linkSrc: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
+            }
 
 
         ], 
@@ -191,10 +194,17 @@ const DAY9 = {
             //     linkText: 'javascript morsels playlist',
             //     linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
             // },
-
+            {
+                linkText: 'shiffman: angles and vectors',
+                linkSrc: 'https://www.youtube.com/watch?v=oXwCVDXS2Lg'
+            },
+            {
+                linkText: 'bouncing sequencer',
+                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed'
+            }
             
         ],    
 
 }
 
-export default DAY9
+export default DAY8

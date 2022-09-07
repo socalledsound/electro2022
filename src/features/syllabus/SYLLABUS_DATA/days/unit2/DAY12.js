@@ -3,7 +3,7 @@ const DAY12 = {
     async: true,
     unit: 'unit2',
     date: 'October 06, 2022',
-    title: 'world building',
+    title: 'maze-ing',
     assignment: 'landscape',
     description: `
     `
