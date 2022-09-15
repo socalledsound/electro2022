@@ -30,6 +30,10 @@ const DAY5 = {
         
     ],
     videos: [
+        {
+            linkText: 'handling some common image loading problems',
+            linkSrc: 'https://youtu.be/l0gNeNaECxs',
+        },
         // {
         //     linkText: '2.1 : speaker circuit, multimeter',
         //     linkSrc: 'https://youtu.be/VeIOYwJd3Is',
@@ -52,7 +56,10 @@ const DAY5 = {
             title: 'MyArray class',
             link: 'https://editor.p5js.org/socalledsound/sketches/qPI1FYicD',
         },
-
+        {
+            title: 'Objects and Classes Example: Butterfly in p5.js',
+            link: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
+        },  
         {
             title: 'challenge solution 1: clickable gallery',
             link: 'https://editor.p5js.org/socalledsound/sketches/mxgJdeqQY',
@@ -60,7 +67,8 @@ const DAY5 = {
         {
             title: 'challenge solution w CLASS: clickable gallery',
             link: 'https://editor.p5js.org/socalledsound/sketches/dYxzC03uI',
-        },        
+        },   
+   
         {
             title: 'playing sounds in p5',
             link: 'https://editor.p5js.org/socalledsound/sketches/Nvv4ySbwr',
@@ -180,6 +188,10 @@ const DAY5 = {
           linkText: 'supercollider is a truly beautiful audio programming language/environment, based on smalltalk!',
             linkSrc: 'https://supercollider.github.io/'
         },
+        {
+            linkText: `sonic pi : 'the live-coding synth for everyone'`,
+            linkSrc: 'https://sonic-pi.net/'  
+        }
         // {
         //     linkText: 'my make code code for turning an LED on and off with a button',
         //     linkSrc: 'https://makecode.com/_Ves2qjRivLRa',

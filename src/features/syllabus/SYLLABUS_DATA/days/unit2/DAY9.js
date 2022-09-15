@@ -9,10 +9,23 @@ const DAY9 = {
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
-    We'll look at some art games today.
-    
-
+    We'll start by looking at some games for inspiration.  Then, I'll show you a simple online tool for making pixel art,
+    which you can use to make a character.  But, you can also make a character using any tool you prefer, including drawing
+    by hand -- you just have to be sure you can export an image or several images so you can bring them in to p5.
+    WE'll look at loading those in, making characters move with the keyboard, and giving the character items to collect
+    so that the game can progress and also a way or ways to die, so the game can end.  
+    To get started, you need a character.  What should it/they look like?  What do they want/need/collect?  What are they afraid of
+    and how do they die?
+    You should upload your small beginning proto game to the gallery.
     `,
+    // Today, we're going to go a little deeper with the idea of characters.
+    // We'll start by looking at the characters that you've invented, then we'll build on those characters, 
+    // by giving them something that they wantneed.
+    
+    // For your gallery submission, I want you to take those ideas and make
+    // your own character. 
+    // that interests your character, 
+    // whether that be books, wind, or grains of sand.
     discussionQuestions: [
         
         `What makes a good game?`,
@@ -22,11 +35,11 @@ const DAY9 = {
     ],
     inClassDemo: [
         {
-            title:'Player: importing images, sprites and sounds',
+            title:'Player.render(): importing images, sprites and sounds',
             link: '',
         },
         {
-            title:'Player: moving a character',
+            title:'Player.move(): moving a character',
             link: '',
         },
         {
@@ -153,17 +166,57 @@ const DAY9 = {
                 linkText: 'Daniel Shiffman: programming in p5.js playist',
                 linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
             },
-           
-            {
-                linkText: 'github repo for our breakout game',
-                linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
-            },
+
             {
                 linkText: 'git and github for poets',
                 linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
             },
+      
+            {
+                linkText: 'tic tac toe game',
+                linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
+            },
+            {
+                linkText: 'Objects and Classes Example: Butterfly in p5.js',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
+            },
+            {
+                linkText: 'mario game github repo (with a branch for each video)',
+                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+            },
+            {
+                linkText:"a simple snake game in p5",
+                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+            },
 
-
+            {
+                linkText:"snake game tutorial",
+                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
+            },
+            {
+                linkText: 'build space invaders with daniel shiffman',
+                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
+            },
+            {
+                linkText: 'frogger in p5.js',
+                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
+            },
+            // {
+            //     linkText: 'a slightly more complex p5 animation with various media',
+            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+            // },
+            {
+                linkText:"basic game mechanics in p5",
+                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
+            },
+            {
+                linkText: 'javascript classes',
+                linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',
+            },
+            {
+                linkText: 'classes in javascript with daniel shiffman',
+                linkSrc: 'https://www.youtube.com/watch?v=T-HGdc8L-7w',
+            },
 
         ], 
         videos: [

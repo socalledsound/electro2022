@@ -58,6 +58,10 @@ const DAY6 = {
         },
     ],
     inspirationLinks: [
+        {
+            linkText: 'the ghost in the mp3',
+            linkSrc: 'https://www.youtube.com/watch?v=98TTIeiNrl0'
+        },
 
         {
             linkText: 'The watts prophets: listen',

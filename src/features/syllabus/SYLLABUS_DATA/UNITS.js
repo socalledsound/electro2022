@@ -108,9 +108,7 @@ export const UNIT2 = {
     We're going to try to make our own playful versions of Goldberg machines in this unit, 
     using javascript.  These can be games, with scores and treasure chests and all the rest, 
     or they can just be abstract playful interactions.  If you want to, you can even make physical, real-world
-    machines.  
-    And I will be showing you how to use your CPE to control your games, if they're written in p5!
-    So you can use things like an accelerometer, microphone input, or the touch sensitive buttons to control a screen. 
+    machines.   
     The key thing is, you must make a repeatable process, that unfolds in time  More details after the click.  
     `,
     project: MIDTERM_PROJECT,

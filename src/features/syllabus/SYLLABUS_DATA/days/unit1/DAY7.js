@@ -7,14 +7,20 @@ const DAY7 = {
     assignment: 'collection',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1596758239/side-effects/situationist-graffiti_pgafdj.jpg',
     description: `
-        finish those collection projects!  i'm available to help!!  and looking forward to seeing what you come up with.
+        finish those collection projects!  i'm available to help!!  
+        and looking forward to seeing what you come up with.
+        there are a few pieces over to the right for inspiration.
     `,
 
     discussionQuestions: [
         
         `why are you making this piece?`,
-        ``,
-        ``,
+        `does this piece speak specifically to your experience?  how can you make it do so?`,
+        `what about this piece is uniquely you?`,
+        `in what way does this piece represent something people might not have considered before?`,
+        `Where is the ambergris???!?!`,
+        `does your piece ask questions???`,
+        `does it explain too much?  is it mysterious??  problematic??`,
         // `Is it possible to 'compose' listening?  Is it possible to compose improvisation?
         // What does it mean to 'compose' improvisation, or what is the role of a composer of improvisation?`,
         // `be ready to talk about your own 'deep listening' experience.`,
@@ -39,6 +45,28 @@ const DAY7 = {
 
     ],
     inspirationLinks: [
+        {
+            linkText: 'a butterfly animation I made with p5',
+            linkSrc: 'https://socalledsound.github.io/better-butterflies/',
+        },
+        {
+            linkText: 'fluffy mover',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
+        },
+
+        {
+            linkText: 'rotating circles in a grid',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/4idgiSHS4',
+        },
+        {
+            linkText: 'bezier bouncing ball',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ecrE28PMw',
+        },
+
+        {
+            linkText: `heart system`,
+            linkSrc: 'https://github.com/socalledsound/tucker-thing',
+        },
   
         // {
         //     linkText: 'sound recording genius Anne Kroeber',
@@ -54,6 +82,15 @@ const DAY7 = {
         // },
     ],
     techLinks: [
+
+        {
+            linkText: 'drawing a butterfly with just html and css',
+            linkSrc: 'https://www.youtube.com/watch?v=olYdXtPhbvw',
+        },
+        {
+            linkText: 'parabolic curves in p5',
+            linkSrc: 'https://ewanbeckett.com/2020/09/20/parabolic-curves-using-p5-js/',
+        },
         // {
         //     linkText: 'loudness necklace on the CPE',
         //     linkSrc: 'https://www.youtube.com/watch?v=g5894PVYOF4',

@@ -23,30 +23,15 @@ const DAY18 = {
         // `How would you characterize this idea of 'music as a process' and how is it different from other types of music?`,
     ],
     videos: [
-        // {
-        //     linkText: 'pendulums 1 -- sinning',
-        //     linkSrc: 'https://youtu.be/P3yjUGc1M_s',
-        // },
-        // {
-        //     linkText: 'pendulums 2 -- waveforms',
-        //     linkSrc: 'https://youtu.be/1J1MFk3htlk',
-        // },
-        // {
-        //     linkText: 'pendulums 3 -- pendulums, actually',
-        //     linkSrc: 'https://youtu.be/dD3-OpvQs28',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
-        // {
-        //     linkText: '',
-        //     linkSrc: '',
-        // },
+
+           {
+            linkText: 'handling input from your CPE: buttons => keyboard',
+            linkSrc: 'https://youtu.be/FOZO5N4sJcs',
+        },
+        {
+            linkText: 'working with the accelerometer on the CPE',
+            linkSrc: 'https://youtu.be/GyTN5BzdS-0',
+        },
     ],
     inspirationLinks: [
         {
@@ -108,6 +93,31 @@ const DAY18 = {
         {
             linkText: 'make code : random looping music for the CPE',
             linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
+        },
+        {
+            linkText: 'turn your CPE into an HID device',
+            linkSrc: 'https://www.youtube.com/watch?v=w8uepWkAZZs',
+        },
+        {
+            linkText: 'use the CPE to type A or D',
+            linkSrc: 'https://makecode.com/_6wmEuJb9Xeka',   
+        },
+        {
+            linkText: 'Circuit playground express: accelerometer',
+            linkSrc: 'https://learn.adafruit.com/make-it-shake-rattle-and-roll?view=all',
+        },
+        {
+            linkText: 'basic shake code for CPE',
+            linkSrc: 'https://makecode.com/_LF2cpq2jcVzr',
+        },
+        {
+            linkText: 'circuit playground express: sound sensor',
+            linkSrc: 'https://learn.adafruit.com/circuit-playground-lesson-number-0/sound-sensor',
+        },
+
+        {
+            linkText: 'infrared control with CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=Gxiwltvkx5E',
         },
 
     ],

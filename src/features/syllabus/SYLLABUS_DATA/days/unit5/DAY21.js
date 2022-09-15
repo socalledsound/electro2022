@@ -13,10 +13,7 @@ const DAY21 = {
         real-life things rather than a screen.
     `,
     videos: [
-        {
-            linkText: `let's take a break from videos for a day`,
-            linkSrc: '',
-        },
+
  
 
     ],

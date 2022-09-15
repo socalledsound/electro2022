@@ -10,9 +10,13 @@ const DAY17 = {
         need description here
     `,
     videos: [
+               // {
+        //     linkText: 'handling input from your CPE: buttons => keyboard',
+        //     linkSrc: 'https://youtu.be/FOZO5N4sJcs',
+        // },
         // {
-        //     linkText: `NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....`,
-        //     linkSrc: '',
+        //     linkText: 'working with the accelerometer on the CPE',
+        //     linkSrc: 'https://youtu.be/GyTN5BzdS-0',
         // },
     ],
     inspirationLinks: [        
@@ -36,7 +40,43 @@ const DAY17 = {
         },        {
             linkText: 'sensors on the CPE',
             linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        }, 
+        },
+        {
+            linkText: 'CPE guitar hero controller',
+            linkSrc: 'https://www.youtube.com/watch?v=K9ckzHUt7Es',
+        },
+        {
+            linkText: 'lucid dreaming mask with a CPE',
+            linkSrc: 'https://hackaday.com/tag/circuit-playground-express/',
+        },
+        {
+            linkText: 'sound reactive lights with the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=cNxQ9dT0kqY',
+        },
+        {
+            linkText: 'using the accelerometer on adafruit CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=IHdzu_rq46Y',
+        },
+        {
+            linkText : 'CPE usb midi controller and synth',
+            linkSrc : 'https://learn.adafruit.com/cpx-midi-controller',
+        },
+        {
+            linkText: 'actually not a circuit playground express, but it would be nice to do this with one',
+            linkSrc: 'https://www.youtube.com/watch?v=hqYMLTT3pms',
+        },
+        {
+            linkText: 'custom controllers for make code arcade',
+            linkSrc: 'https://learn.adafruit.com/custom-controllers-for-makecode-arcade?view=all'
+        },
+                {
+            linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
+            linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
+        },
+        {
+            linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
+            linkSrc: 'https://makecode.adafruit.com/#editor',
+        },
     ],
 
 }

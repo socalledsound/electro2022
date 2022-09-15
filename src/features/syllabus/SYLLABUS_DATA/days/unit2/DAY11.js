@@ -6,16 +6,12 @@ const DAY11 = {
     title: 'breakout',
     assignment: 'breaking out',
     description: `
-    Today, we're going to go a little deeper with the idea of characters.
-    We'll start by looking at the characters that you've invented, then we'll build on those characters, 
-    by giving them something that they wantneed.
-    
-    For your gallery submission, I want you to take those ideas and make
-    your own character. 
-    that interests your character, 
-    whether that be books, wind, or grains of sand.
+        Today we are going to look at a snazzy way to work with moving entities in p5: vectors.
+        We'll use vectors to make a clone of the classic breakout game.
+        We'll take some time to dive a little deeper into the physics of collision and get some practice 
+        writing code!  
     `,
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1598458992/side-effects/B0B7D0BB-F967-4D6C-92EB-34B9E9DF164D_phz7by.jpg',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1662597810/pink-kool-aid_i4g1nh.jpg',
     discussionQuestions: [
         // `What is 'state' and why is it good to have a 'single source of truth'?`,
         // `Give some examples of ways we can manage state in javascript.`,
@@ -45,6 +41,11 @@ const DAY11 = {
         {
             title: 'stepping out : step sequencer + breakout',
             link: 'https://github.com/socalledsound/stepping-out',
+        },
+                   
+        {
+            linkText: 'github repo for our breakout game',
+            linkSrc: 'https://github.com/socalledsound/sound-game-1-starter',
         },
     ],
     inspirationLinks: [
@@ -112,10 +113,6 @@ const DAY11 = {
                 linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
             },
 
-            {
-                linkText: 'super stupid landscape game',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
-            },
             {
                 linkText: "soundlands, a badlands clone I've been working on",
                 linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',

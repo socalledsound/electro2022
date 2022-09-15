@@ -3,47 +3,28 @@ const DAY10 = {
     async: true,
     unit: 'unit2',
     date: 'September 29, 2022',
-    title: 'level up',
+    title: 'landscapes',
     assignment: 'proposal',
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1631907629/22-color-coin-sprite-sheet-11563003777uevsziiqrr_wtyluo.png',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1598458992/side-effects/B0B7D0BB-F967-4D6C-92EB-34B9E9DF164D_phz7by.jpg',
     description: `
 
     `,
     discussionQuestions: [
         ``
     ],
+    inClassDemo: [
+
+        {
+            title: 'super stupid landscape game',
+            link: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
+        },
+        {
+            title: 'scrolling landscape game',
+            link: ''
+        }
+    ],
     inspirationLinks: [
-        {
-            linkText: 'a butterfly animation I made with p5 this weekend',
-            linkSrc: 'https://socalledsound.github.io/better-butterflies/',
-        },
-        {
-            linkText: 'fluffy mover',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/KsPjzaFSH',
-        },
 
-        {
-            linkText: 'rotating circles in a grid',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/4idgiSHS4',
-        },
-        {
-            linkText: 'bezier bouncing ball',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ecrE28PMw',
-        },
-
-
-        {
-            linkText: 'drawing a butterfly with just html and css',
-            linkSrc: 'https://www.youtube.com/watch?v=olYdXtPhbvw',
-        },
-        {
-            linkText: 'parabolic curves in p5',
-            linkSrc: 'https://ewanbeckett.com/2020/09/20/parabolic-curves-using-p5-js/',
-        },
-        {
-            linkText: `that RainCircle code that I modified from Tucker's submission`,
-            linkSrc: 'https://github.com/socalledsound/tucker-thing',
-        },
         ],
         techLinks: [
             {
@@ -93,50 +74,50 @@ const DAY10 = {
             },
         ], 
         videos: [
-            {
-                linkText: 'javascript morsels: objects and this',
-                linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
-            },
-            {
-                linkText: 'branching with git',
-                linkSrc: 'https://youtu.be/iioxcp7gC7Q',
-            },
-            {
-                linkText: 'mario game 1: Coin  no class',
-                linkSrc: 'https://youtu.be/SPzJ84y4qxc',
-            },
-            {
-                linkText: 'mario game 2: Coin class',
-                linkSrc: 'https://youtu.be/_fVjGDlJqlo',
-            },
-            {
-                linkText: 'mario game 3: CHALLENGE: write Mario',
-                linkSrc: 'https://youtu.be/TJDZob2UPAI',
-            },
-            {
-                linkText: 'mario game 4: ANSWER: Mario Class ',
-                linkSrc: 'https://youtu.be/qlzRqo-_lRQ',
-            },
-            {
-                linkText: 'mario game 5: run, mario, run!',
-                linkSrc: 'https://youtu.be/YeUpImYgil8',
-            },
-            {
-                linkText: 'mario game 6: run, better, mario!',
-                linkSrc: 'https://youtu.be/c52epUJghsg',
-            },
-            {
-                linkText: 'mario game 7: jump, mario',
-                linkSrc: 'https://youtu.be/73GudfuavTk',
-            },
-            {
-                linkText: 'non orthogonal reflection',
-                linkSrc: 'https://p5js.org/examples/motion-non-orthogonal-reflection.html',
-            },
-            {
-                linkText: 'bouncy vectors directional heading',
-                linkSrc: 'https://editor.p5js.org/jonfroehlich/sketches/A6t4YPD3',
-            },
+            // {
+            //     linkText: 'javascript morsels: objects and this',
+            //     linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
+            // },
+            // {
+            //     linkText: 'branching with git',
+            //     linkSrc: 'https://youtu.be/iioxcp7gC7Q',
+            // },
+            // {
+            //     linkText: 'mario game 1: Coin  no class',
+            //     linkSrc: 'https://youtu.be/SPzJ84y4qxc',
+            // },
+            // {
+            //     linkText: 'mario game 2: Coin class',
+            //     linkSrc: 'https://youtu.be/_fVjGDlJqlo',
+            // },
+            // {
+            //     linkText: 'mario game 3: CHALLENGE: write Mario',
+            //     linkSrc: 'https://youtu.be/TJDZob2UPAI',
+            // },
+            // {
+            //     linkText: 'mario game 4: ANSWER: Mario Class ',
+            //     linkSrc: 'https://youtu.be/qlzRqo-_lRQ',
+            // },
+            // {
+            //     linkText: 'mario game 5: run, mario, run!',
+            //     linkSrc: 'https://youtu.be/YeUpImYgil8',
+            // },
+            // {
+            //     linkText: 'mario game 6: run, better, mario!',
+            //     linkSrc: 'https://youtu.be/c52epUJghsg',
+            // },
+            // {
+            //     linkText: 'mario game 7: jump, mario',
+            //     linkSrc: 'https://youtu.be/73GudfuavTk',
+            // },
+            // {
+            //     linkText: 'non orthogonal reflection',
+            //     linkSrc: 'https://p5js.org/examples/motion-non-orthogonal-reflection.html',
+            // },
+            // {
+            //     linkText: 'bouncy vectors directional heading',
+            //     linkSrc: 'https://editor.p5js.org/jonfroehlich/sketches/A6t4YPD3',
+            // },
         ],    
 
 }
