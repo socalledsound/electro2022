@@ -29,7 +29,56 @@ const DAY7 = {
         {
             title:'javascript morsels - video playlist',
             link: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-',
-        }
+        },
+        {
+            title: 'p5 sketch : monas heiroglyphica',
+            link: 'https://editor.p5js.org/socalledsound/sketches/Sd_dOXoLh',
+        },
+        {
+            title: 'p5 sketch : squared circle',
+            link: 'https://editor.p5js.org/socalledsound/sketches/TukENYqmZ',
+        },
+        {
+            title: 'p5 sketch : chaos symbol',
+            link: 'https://editor.p5js.org/socalledsound/sketches/mXPV9QgF6',
+        },
+        {
+            title: ' p5 sketch : icelandic rune',
+            link: 'https://editor.p5js.org/socalledsound/sketches/nRv1MppzP',
+        },
+        {
+            title: 'midnight gospel (four symbols in a collection w/sound )/ draft',
+            link: 'https://github.com/socalledsound/runes',
+        },
+        {
+            title: 'project 1 by oliver puffer',
+            link: 'https://opuffer.github.io/CowGoesMoo/',
+        },
+        {
+            title: 'project 1 by robert hurley',
+            link: 'https://rf-hurley.github.io/Out-of-your-breath/',
+        },
+        {
+            title: 'proj 1 by david friesen',
+            link: 'https://bigsurface.github.io/FalseFlagOperation/',
+        },
+        {
+            title: 'proj 1 by mc demartino',
+            link: 'https://mcdemartino.github.io/ready2bseen/',
+        },
+        {
+            title: 'proj 1 by albie cartagenes',
+            link: 'https://acartagenes.github.io/MasUmDiaSemVoce/',
+        },
+        {
+            title: 'proj 1 by zeyu yun',
+            link: 'https://zeyuyun1.github.io/project1/',
+        },
+        {
+            title: '',
+            link: '',
+        },
+
     ],
 
     videos: [ 

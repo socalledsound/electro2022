@@ -21,6 +21,10 @@ const DAY10 = {
         {
             title: 'scrolling landscape game',
             link: ''
+        },
+        {
+            title: 'tile puzzle game',
+            link: ''
         }
     ],
     inspirationLinks: [
@@ -118,7 +122,20 @@ const DAY10 = {
             //     linkText: 'bouncy vectors directional heading',
             //     linkSrc: 'https://editor.p5js.org/jonfroehlich/sketches/A6t4YPD3',
             // },
-        ],    
+        ],   
+        
+        videos: [
+
+            {
+                linkText: 'handling some common image loading problems',
+                linkSrc: 'https://youtu.be/l0gNeNaECxs',
+            },
+            {
+                linkText: 'a very simple image clicking game!',
+                linkSrc: 'https://youtu.be/lAWNDNddAzg',
+            },
+    
+        ],
 
 }
 

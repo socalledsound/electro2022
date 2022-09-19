@@ -34,15 +34,49 @@ const DAY14 = {
     ],
     inspirationLinks: [
         //https://www.rudyrucker.com/oldhomepage/msprojects.htm
+        {
+            linkText: 'neighbor averaging pixels',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/oGqWRe4ce',
+        },
+        {
+            linkText: 'using Cellular Automata to manipulate an image -- and map it onto 3d spheres',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/P6carzfO4',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'cellular automata with random rulesets',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/WNqA9SeZe',
+        },
     ],
 
     
     techLinks: [
         {
+            linkText: 'cellular automaton',
+            linkSrc: 'https://en.wikipedia.org/wiki/Cellular_automaton',
+        },
+        {
+            linkText: 'cellular automata with random rulesets',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/WNqA9SeZe',
+        },
+        {
             linkText: 'the game of life in p5',
             linkSrc: 'https://p5js.org/examples/simulate-game-of-life.html',
         },
-        
+        {
+            linkText: 'game of life with '
+        }
 
     ],
 
