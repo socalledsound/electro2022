@@ -9,13 +9,14 @@ const DAY9 = {
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
-    We'll start by looking at some games for inspiration.  Then, I'll show you a simple online tool for making pixel art,
-    which you can use to make a character.  But, you can also make a character using any tool you prefer, including drawing
-    by hand -- you just have to be sure you can export an image or several images so you can bring them in to p5.
-    WE'll look at loading those in, making characters move with the keyboard, and giving the character items to collect
-    so that the game can progress and also a way or ways to die, so the game can end.  
-    To get started, you need a character.  What should it/they look like?  What do they want/need/collect?  What are they afraid of
-    and how do they die?
+    We'll start by looking at some games for inspiration.  Then, we'll make one, with p5, a simple snake-like game.
+    You'll learn how to move a character around and how to make it interact with it's environment, in this case, just eating some
+    food.  
+    After we've done that, I'll show you a simple online tool for making pixel art, which you can use to make a character.  
+    But, you can also make a character using any tool you prefer, including drawing by hand -- you just have to be sure you can export 
+    an image or several images so you can eventually bring them in to p5.
+    See if you can replace the snake of our snake game with your own character!!  
+    And if you struggle, don't worry, it's part of the process, and we'll get things sorted out next class.
     You should upload your small beginning proto game to the gallery.
     `,
     // Today, we're going to go a little deeper with the idea of characters.
@@ -35,16 +36,40 @@ const DAY9 = {
     ],
     inClassDemo: [
         {
-            title:'Player.render(): importing images, sprites and sounds',
-            link: '',
+            title:'memory game',
+            link: 'https://github.com/socalledsound/memory-game'
         },
         {
-            title:'Player.move(): moving a character',
-            link: '',
+            title:'vectors: position',
+            link: 'https://editor.p5js.org/socalledsound/sketches/VG0KPVY8u',
         },
         {
-            title:'Game: scoring and dying',
-            link: '',
+            title:'vectors: motion (velocity + acceleration)',
+            link: 'https://editor.p5js.org/socalledsound/sketches/mkRp7gGn2',
+        },
+        {
+            title:'snakey - starter',
+            link: 'https://editor.p5js.org/socalledsound/sketches/qerJq6jSZ',
+        },
+        {
+            title:'snakey w/Player -- ADD FOOD',
+            link: 'https://editor.p5js.org/socalledsound/sketches/Y1uWBLF-Z',
+        },
+        {
+            title:'circle circle collision',
+            link: 'https://editor.p5js.org/socalledsound/sketches/nhI2uDnRC',
+        },
+        {
+            title:'more complex circle collision with bounce!',
+            link: 'https://p5js.org/examples/motion-circle-collision.html',
+        },
+        {
+            title:'snakey w/Player and Food',
+            link: 'https://editor.p5js.org/socalledsound/sketches/nPO2P1QDV',
+        },
+        {
+            title: 'sprite animation example',
+            link: 'https://editor.p5js.org/socalledsound/sketches/0FFFlg-U6'
         },
 
     ],
@@ -151,6 +176,10 @@ const DAY9 = {
         ],
         techLinks: [
             {
+                linkText: 'pixilart.com',
+                linkSrc: 'https://www.pixilart.com/'
+            },
+            {
                 linkText: 'download p5.js',
                 linkSrc: 'https://p5js.org/download/',
             },
@@ -162,61 +191,29 @@ const DAY9 = {
                 linkText: 'javascript morsels playlist',
                 linkSrc: 'https://www.youtube.com/playlist?list=PL1Kp_s25fdCBJS2x_RkZ4r80GUcniHyU-'
             },
-            {
-                linkText: 'Daniel Shiffman: programming in p5.js playist',
-                linkSrc: 'https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA',
-            },
 
-            {
-                linkText: 'git and github for poets',
-                linkSrc: 'https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV',
-            },
-      
-            {
-                linkText: 'tic tac toe game',
-                linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
-            },
-            {
-                linkText: 'Objects and Classes Example: Butterfly in p5.js',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
-            },
-            {
-                linkText: 'mario game github repo (with a branch for each video)',
-                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
-            },
             {
                 linkText:"a simple snake game in p5",
                 linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
             },
+            {
+                linkText: '3d snake game in p5!!  (nice!)',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/N1syHlF1W'
+            },
+            {
+                linkText: 'tree rings in p5',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf'
+            },
+            {
+                linkText: 'circle circle collision',
+                linkSrc: 'https://www.jeffreythompson.org/collision-detection/circle-circle.php'
+            },
+            {
+                linkText: 'nice collision detection article',
+                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics'
+            },
 
-            {
-                linkText:"snake game tutorial",
-                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
-            },
-            {
-                linkText: 'build space invaders with daniel shiffman',
-                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
-            },
-            {
-                linkText: 'frogger in p5.js',
-                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
-            },
-            // {
-            //     linkText: 'a slightly more complex p5 animation with various media',
-            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
-            // },
-            {
-                linkText:"basic game mechanics in p5",
-                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
-            },
-            {
-                linkText: 'javascript classes',
-                linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',
-            },
-            {
-                linkText: 'classes in javascript with daniel shiffman',
-                linkSrc: 'https://www.youtube.com/watch?v=T-HGdc8L-7w',
-            },
+
 
         ], 
         videos: [
@@ -224,10 +221,10 @@ const DAY9 = {
                 linkText: 'github basics',
                 linkSrc: 'https://youtu.be/RpYKKYsG7Io',
             },
-            // {
-            //     linkText: 'getting started with p5',
-            //     linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
-            // },
+            {
+                linkText: 'getting started with p5',
+                linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
+            },
             // {
             //     linkText: 'code-along: bringing things to life pt 1',
             //     linkSrc: 'https://youtu.be/tk2TOlN4Qmw',

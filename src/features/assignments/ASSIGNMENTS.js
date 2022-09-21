@@ -94,14 +94,14 @@ export const ASSIGNMENT8 = {
 
 export const ASSIGNMENT9 = {
     id: 9,
-    title : 'sprites',
+    title : 'player',
     description : "",
     markdown: DAY9_WORKSHOP_MD,
 }
 
 export const ASSIGNMENT10 = {
     id: 10,
-    title : 'mario',
+    title : '',
     description : `
     
     `,
@@ -110,7 +110,7 @@ export const ASSIGNMENT10 = {
 
 export const ASSIGNMENT11 = {
     id: 11,
-    title : 'state',
+    title : '',
     description :`
     
     `,
@@ -120,7 +120,7 @@ export const ASSIGNMENT11 = {
 
 export const ASSIGNMENT12 = {
     id: 12,
-    title : 'goombas',
+    title : '',
     description : `
     
     `,
@@ -130,7 +130,7 @@ export const ASSIGNMENT12 = {
 
 export const ASSIGNMENT13 = {
     id: 13,
-    title : 'landscape',
+    title : '',
     description : `
     
     `,
@@ -140,7 +140,7 @@ export const ASSIGNMENT13 = {
 
 export const ASSIGNMENT14 = {
     id: 14,
-    title : 'control',
+    title : '',
     description : '',
     markdown: DAY14_WORKSHOP_MD,
 }

@@ -28,6 +28,14 @@ const DAY8 = {
         `I like the way you used color but {this one specific detail is messing it all up}`,
         `I think you should consider...{something specific about my experience}`,
     ],
+    inClassDemo: [
+        {
+            title:'pixilart',
+            link: 'https://www.pixilart.com/',
+        },
+
+
+    ],
 
 }
 
