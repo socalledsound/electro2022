@@ -1,5 +1,6 @@
 const DAY18 = {
     id: 18,
+    async: false,
     unit: 'unit3',
     date: 'October 27, 2022',
     title: 'circuit playground 2',

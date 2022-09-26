@@ -1,157 +1,114 @@
-const DAY10 = {
-    id: 10,
+const DAY11 = {
+    id: 11,
     async: true,
     unit: 'unit2',
     date: 'September 29, 2022',
-    title: 'landscapes',
-    assignment: 'proposal',
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1598458992/side-effects/B0B7D0BB-F967-4D6C-92EB-34B9E9DF164D_phz7by.jpg',
+    title: 'noisy shapes',
+    assignment: 'shapes',
     description: `
-
+        Today we're going to learn how to make more complex shapes -- and more complex collisions.
     `,
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1662597810/pink-kool-aid_i4g1nh.jpg',
     discussionQuestions: [
-        ``
+        // `What is 'state' and why is it good to have a 'single source of truth'?`,
+        // `Give some examples of ways we can manage state in javascript.`,
+        // `Why is it nice or good to have a 'Game' object?`,
+        // `What is 'refactoring'?  What are some signs that you need to think about it?`,
     ],
     inClassDemo: [
 
         {
-            title: 'super stupid landscape game',
-            link: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
+            title: 'Array.from ',
+            link: 'https://editor.p5js.org/socalledsound/sketches/Z8A_VuDs2'
         },
         {
-            title: 'scrolling landscape game',
-            link: ''
+            title: 'circle with slider',
+            link: 'https://editor.p5js.org/socalledsound/sketches/MaajoyZbw'
         },
         {
-            title: 'tile puzzle game',
-            link: ''
-        }
+            title: 'noisy circle',
+            link: 'https://editor.p5js.org/socalledsound/sketches/yr-5mAmHh'
+        },
+        {
+            title: 'noisy line',
+            link: 'https://editor.p5js.org/socalledsound/sketches/HqEIfeqyy'
+        },
+        {
+            title: 'asteroidscape',
+            link: 'https://editor.p5js.org/socalledsound/sketches/2tzHTK6Cc'
+        },
+
+
+        {
+            linkText: 'tree rings in p5',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf'
+        },
+    
+
+
+
+                   
+        // {
+        //     title: 'github repo for our breakout game',
+        //     link: 'https://github.com/socalledsound/sound-game-1-starter',
+        // },
     ],
     inspirationLinks: [
+        {
+            title: 'stepping out : step sequencer + breakout',
+            link: 'https://github.com/socalledsound/stepping-out',
+        },
+        {
+            linkText: 'a simpler bouncing sequencer',
+            linkSrc: 'https://github.com/socalledsound/sound-game-1-starter/tree/07-finsihed'
+        },
 
+
+        {
+            linkText: 'asteroids in p5',
+            linkSrc: 'https://editor.p5js.org/simontiger/sketches/r16tcHq3e',       
+        }
         ],
         techLinks: [
             {
-                linkText: 'Objects and Classes Example: Butterfly in p5.js',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
+                linkText: 'shiffman: angles and vectors',
+                linkSrc: 'https://www.youtube.com/watch?v=oXwCVDXS2Lg'
+            },
+ 
+            {
+                linkText: 'article on collision detection physics',
+                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics',
             },
             {
-                linkText: 'mario game github repo (with a branch for each video)',
-                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+                linkText: 'online book about collision detection',
+                linkSrc: 'https://www.jeffreythompson.org/collision-detection/table_of_contents.php',
             },
             {
-                linkText:"a simple snake game in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+                linkText: 'another breakout game in the online editor',
+                linkSrc: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
             },
-
-            {
-                linkText:"snake game tutorial",
-                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
-            },
-            {
-                linkText: 'build space invaders with daniel shiffman',
-                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
-            },
-            {
-                linkText: 'frogger in p5.js',
-                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
-            },
+           {
+               linkText: `I took Tucker's noisy raindrops and turned them into a small heart system game`,
+               linkSrc: 'https://github.com/socalledsound/tucker-thing'
+           },
+           {
+               linkText: 'heart system live site',
+               linkSrc: 'https://socalledsound.github.io/tucker-thing/',
+           },
             // {
-            //     linkText: 'a slightly more complex p5 animation with various media',
-            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+            //     linkText:'keycode is deprecated, generally use key instead',
+            //     linkSrc: 'https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice',
             // },
             {
-                linkText:"basic game mechanics in p5",
-                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
+                linkText:'remember window.addEventListener() ? -- you can also use it for keyboard input!',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/NBosLc6cQ',
             },
-            {
-                linkText: 'javascript classes',
-                linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',
-            },
-            {
-                linkText: 'classes in javascript with daniel shiffman',
-                linkSrc: 'https://www.youtube.com/watch?v=T-HGdc8L-7w',
-            },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
-        ], 
-        // videos: [
-        //     // {
-        //     //     linkText: 'javascript morsels: objects and this',
-        //     //     linkSrc : 'https://www.youtube.com/watch?v=UQWpnXc3tPI',
-        //     // },
-        //     // {
-        //     //     linkText: 'branching with git',
-        //     //     linkSrc: 'https://youtu.be/iioxcp7gC7Q',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 1: Coin  no class',
-        //     //     linkSrc: 'https://youtu.be/SPzJ84y4qxc',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 2: Coin class',
-        //     //     linkSrc: 'https://youtu.be/_fVjGDlJqlo',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 3: CHALLENGE: write Mario',
-        //     //     linkSrc: 'https://youtu.be/TJDZob2UPAI',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 4: ANSWER: Mario Class ',
-        //     //     linkSrc: 'https://youtu.be/qlzRqo-_lRQ',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 5: run, mario, run!',
-        //     //     linkSrc: 'https://youtu.be/YeUpImYgil8',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 6: run, better, mario!',
-        //     //     linkSrc: 'https://youtu.be/c52epUJghsg',
-        //     // },
-        //     // {
-        //     //     linkText: 'mario game 7: jump, mario',
-        //     //     linkSrc: 'https://youtu.be/73GudfuavTk',
-        //     // },
-        //     // {
-        //     //     linkText: 'non orthogonal reflection',
-        //     //     linkSrc: 'https://p5js.org/examples/motion-non-orthogonal-reflection.html',
-        //     // },
-        //     // {
-        //     //     linkText: 'bouncy vectors directional heading',
-        //     //     linkSrc: 'https://editor.p5js.org/jonfroehlich/sketches/A6t4YPD3',
-        //     // },
-        // ],   
-        
-        videos: [
 
             {
-                linkText: 'handling some common image loading problems',
-                linkSrc: 'https://youtu.be/l0gNeNaECxs',
+                linkText:"make angry birds with p5.js and matter.js",
+                linkSrc:"https://thecodingtrain.com/CodingChallenges/138-angry-birds.html"
             },
-            {
-                linkText: 'a very simple image clicking game!',
-                linkSrc: 'https://youtu.be/lAWNDNddAzg',
-            },
-    
-      
-            {
-                linkText: 'tic tac toe game',
-                linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
-            },
-            {
-                linkText: 'Objects and Classes Example: Butterfly in p5.js',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
-            },
-            {
-                linkText: 'mario game github repo (with a branch for each video)',
-                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
-            },
-            {
-                linkText:"snake game tutorial",
-                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
-            },
+
             {
                 linkText: 'build space invaders with daniel shiffman',
                 linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
@@ -160,24 +117,59 @@ const DAY10 = {
                 linkText: 'frogger in p5.js',
                 linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
             },
-                        // {
-            //     linkText: 'a slightly more complex p5 animation with various media',
-            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/BkEc6TIO7',
+            {
+                linkText: 'code super mario in vanilla js (25 parts!  maybe save it for later?)',
+                linkSrc: 'https://www.youtube.com/watch?v=g-FpDQ8Eqw8',
+            },
+
+            {
+                linkText: `come to think of it, an hour to build tetris is probably more appropriate! (but it's still pretty hard!)`,
+                linkSrc: 'https://www.youtube.com/watch?v=H2aW5V46khA',
+            },
+
+            // {
+            //     linkText: "soundlands, a badlands clone I've been working on",
+            //     linkSrc: 'https://github.com/socalledsound/soundgame-badlandsclone',
             // },
+            // {
+            //     linkText: 'entity component system at wikipedia',
+            //     linkSrc: 'https://en.wikipedia.org/wiki/Entity_component_system',
+            // },
+            // {
+            //     linkText:'wander steering',
+            //     linkSrc: 'https://www.youtube.com/watch?v=ujsR2vcJlLk',
+            // },
+
+        ], 
+        videos: [
             {
-                linkText:"basic game mechanics in p5",
-                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
+                linkText: 'code-along: bringing things to life pt 1',
+                linkSrc: 'https://youtu.be/tk2TOlN4Qmw',
             },
             {
-                linkText: 'javascript classes',
-                linkSrc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes',
+                linkText: 'code-along: bringing things to life pt 2',
+                linkSrc: 'https://youtu.be/uSnvsfot_U4',
             },
-            {
-                linkText: 'classes in javascript with daniel shiffman',
-                linkSrc: 'https://www.youtube.com/watch?v=T-HGdc8L-7w',
-            },
-        ],
+
+            // {
+            //     linkText: 'mario game 8: Game class, LONG one 😬sorry',
+            //     linkSrc: 'https://youtu.be/0kA4oQx2PR8',
+            // },
+            // {
+            //     linkText: 'mario game 9: scoreboard',
+            //     linkSrc: 'https://youtu.be/0i106wnVKhM',
+            // },
+            // {
+            //     linkText: 'mario game 10: start button',
+            //     linkSrc: 'https://youtu.be/06c5h0InwcY',
+            // },
+            // {
+            //     linkText: 'mario game 10: add sounds',
+            //     linkSrc: 'https://www.youtube.com/watch?v=UoLU_D8KgZw',
+            // },
+ 
+        ],  
 
 }
 
-export default DAY10
+export default DAY11

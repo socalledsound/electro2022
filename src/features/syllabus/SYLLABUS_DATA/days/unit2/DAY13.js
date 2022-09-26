@@ -36,6 +36,10 @@ const DAY13 = {
     ],
     inClassDemo: [
         {
+
+        },
+
+        {
             title: 'seek behavior (slowly to a point)',
             link: '',
            
@@ -223,6 +227,19 @@ const DAY13 = {
                 linkText: 'boids with sound!  and step by step tutorial (by me), at github',
                 linkSrc: 'https://github.com/socalledsound/SE-unit2-day16-boids'
             },
+            {
+                linkText: 'flow-field',
+                linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2'
+            },
+            {
+                linkText: '',
+                linkSrc: ''
+            },
+            {
+                linkText: '',
+                linkSrc: ''
+            },
+            
 
             // {
             //     linkText: 'a super simple game with no classes!',

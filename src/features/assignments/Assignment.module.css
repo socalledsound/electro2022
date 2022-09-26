@@ -27,7 +27,7 @@
 
 .markdown {
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 2rem;
   border: 2px solid rgb(57, 171, 107);
   border-radius: 0.8rem;
@@ -49,4 +49,16 @@
 .submitButton:hover {
   background-color: rgb(57, 171, 107);
   border: 2px solid rgb(57, 101, 37);
+}
+
+.markdown code {
+  /* background-color: black; */
+  /* color: white; */
+  font-size: 0.8rem;
+}
+
+.md-code{
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
 }

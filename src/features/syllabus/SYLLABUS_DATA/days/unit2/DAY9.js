@@ -9,15 +9,13 @@ const DAY9 = {
     description: `
     Today we begin unit 2, which will focus on generative compositions which unfold in time, such as animation and video games.  
     Or, choose your own adventure books, like the one shown on the right.
-    We'll start by looking at some games for inspiration.  Then, we'll make one, with p5, a simple snake-like game.
+    We'll start by looking at some games for inspiration.  Over the next few classes, we'll make one, a simple snake-like game.
     You'll learn how to move a character around and how to make it interact with it's environment, in this case, just eating some
     food.  
-    After we've done that, I'll show you a simple online tool for making pixel art, which you can use to make a character.  
-    But, you can also make a character using any tool you prefer, including drawing by hand -- you just have to be sure you can export 
-    an image or several images so you can eventually bring them in to p5.
-    See if you can replace the snake of our snake game with your own character!!  
-    And if you struggle, don't worry, it's part of the process, and we'll get things sorted out next class.
-    You should upload your small beginning proto game to the gallery.
+    I'll show you a simple online tool for making pixel art, which you can use to make a character-like drawing.
+    You'll make a sprite sheet, and we'll bring it into p5 as an animation -- you'll replace
+    the snake of our snake game with your own character.
+    You should upload your small beginning proto game/animation to the gallery.
     `,
     // Today, we're going to go a little deeper with the idea of characters.
     // We'll start by looking at the characters that you've invented, then we'll build on those characters, 
@@ -40,6 +38,15 @@ const DAY9 = {
             link: 'https://github.com/socalledsound/memory-game'
         },
         {
+            title: 'super simple landscape game with timer',
+            link: 'https://editor.p5js.org/socalledsound/sketches/cjxO852kb',
+        },
+        {
+            title: 'timer game',
+            link: 'https://editor.p5js.org/socalledsound/sketches/Rd9lhRdjk',
+           
+        },
+        {
             title:'vectors: position',
             link: 'https://editor.p5js.org/socalledsound/sketches/VG0KPVY8u',
         },
@@ -51,24 +58,19 @@ const DAY9 = {
             title:'snakey - starter',
             link: 'https://editor.p5js.org/socalledsound/sketches/qerJq6jSZ',
         },
+  
         {
-            title:'snakey w/Player -- ADD FOOD',
-            link: 'https://editor.p5js.org/socalledsound/sketches/Y1uWBLF-Z',
+            title:'snakey - moving',
+            link: 'https://editor.p5js.org/socalledsound/sketches/EAPnrxGY1',
         },
+  
         {
-            title:'circle circle collision',
-            link: 'https://editor.p5js.org/socalledsound/sketches/nhI2uDnRC',
+            title: 'snakey sprite animation example',
+            link: 'https://editor.p5js.org/socalledsound/sketches/0FFFlg-U6'
         },
+
         {
-            title:'more complex circle collision with bounce!',
-            link: 'https://p5js.org/examples/motion-circle-collision.html',
-        },
-        {
-            title:'snakey w/Player and Food',
-            link: 'https://editor.p5js.org/socalledsound/sketches/nPO2P1QDV',
-        },
-        {
-            title: 'sprite animation example',
+            title: 'snakey sprites - Player Class',
             link: 'https://editor.p5js.org/socalledsound/sketches/0FFFlg-U6'
         },
 
@@ -158,8 +160,8 @@ const DAY9 = {
 
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'snake.io',
+            linkSrc: 'https://snake.io/',
         },
         // {
         //     linkText: 'On Music and Tech with Holly Herndon & Mat Dryhurst',
@@ -193,30 +195,32 @@ const DAY9 = {
             },
 
             {
-                linkText:"a simple snake game in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+                linkText: 'handling some common image loading problems',
+                linkSrc: 'https://youtu.be/l0gNeNaECxs',
             },
             {
-                linkText: '3d snake game in p5!!  (nice!)',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/N1syHlF1W'
-            },
-            {
-                linkText: 'tree rings in p5',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf'
-            },
-            {
-                linkText: 'circle circle collision',
-                linkSrc: 'https://www.jeffreythompson.org/collision-detection/circle-circle.php'
-            },
-            {
-                linkText: 'nice collision detection article',
-                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics'
+                linkText: 'a very simple image clicking game!',
+                linkSrc: 'https://youtu.be/lAWNDNddAzg',
             },
 
-
-
+            {
+                linkText:"basic game mechanics in p5",
+                linkSrc:"https://medium.com/@kellylougheed/make-your-first-game-with-p5-js-38bfb308a671"
+            },
+            {
+                linkText: 'massively multiplayer tetris that i built a while ago with that meth meth method tutorial below',
+                linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
+            },
+            {
+                linkText: 'mario game github repo (with a branch for each video)',
+                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+            },
         ], 
         videos: [
+            {
+                linkText: 'handling some common image loading problems',
+                linkSrc: 'https://youtu.be/l0gNeNaECxs',
+            },
             {
                 linkText: 'github basics',
                 linkSrc: 'https://youtu.be/RpYKKYsG7Io',

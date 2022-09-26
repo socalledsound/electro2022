@@ -3,7 +3,7 @@ const DAY25 = {
     async: true,
     unit: 'unit6',
     date: 'November 22, 2022',
-    assignment: '',
+    assignment: 'update',
     title: 'Artificially',
     description: `
   
@@ -21,12 +21,16 @@ const DAY25 = {
         },
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'diffusion bee',
+            linkSrc: 'https://www.howtogeek.com/832763/diffusion-bee-is-the-easiest-way-to-make-ai-art-on-mac/',
         },
     ],
     techLinks: [
 
+        {
+            linkText: 'diffusion bee',
+            linkSrc: 'https://www.howtogeek.com/832763/diffusion-bee-is-the-easiest-way-to-make-ai-art-on-mac/',
+        },
 
     ],
 

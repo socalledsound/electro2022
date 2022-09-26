@@ -3,10 +3,11 @@ const DAY12 = {
     async: true,
     unit: 'unit2',
     date: 'October 06, 2022',
-    title: 'maze-ing',
+    title: 'landscapes',
     assignment: 'landscape',
     description: `
-    Today we're going to make a maze game.
+    So far, we've focused our attention on the player avatar, and the mechanics of moving around.  Maybe now it's time to give our player somewhere to go.
+    
     `
     ,
     // add maze photo here 
@@ -14,69 +15,45 @@ const DAY12 = {
     discussionQuestions: [
         ``
     ],
+    inClassDemo: [
+
+
+
+        {
+            title: 'simple block based room game',
+            link: ''
+        },
+        {
+            title: 'tiled game with spritesheet',
+            link: ''
+        },
+
+    
+        {
+            title: 'scrolling landscape game',
+            link: 'https://editor.p5js.org/socalledsound/sketches/-FCpkdk0E'
+        },
+        {
+            title: 'mario clouds with castle at end',
+            link: ''
+        },
+       
+    ],
     inspirationLinks: [   
 
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'four fold',
+            linkSrc: 'https://js13kgames.com/games/fourfold/index.html',
+        },
+        {
+            linkText: '404 laundry not found',
+            linkSrc: 'https://js13kgames.com/games/404-laundry-not-found/index.html',
         },
         {
             linkText: '',
             linkSrc: '',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
-        // {
-        //     linkText: '"the music of our times" (a thing I made this weekend thinking about this stuff)',
-        //     linkSrc: 'https://socalledsound.github.io/music-of-our-times/',
-        // },
-        // {
-        //     linkText: 'the original ball sketch from unit 2 day 1 but, reproducible....',
-        //     linkSrc: 'https://github.com/socalledsound/ball-system',
-        // },
-        // {
-        //     linkText: 'Handvaaska, by Ramsey Nasser and Jane Friedhoff',
-        //     linkSrc: 'https://nas.sr/handv%C3%A4ska/',
-        // },
-        // {
-        //     linkText: 'among us',
-        //     linkSrc: 'http://www.innersloth.com/gameAmongUs.php',
-        // },
-        // {
-        //     linkText: 'My Barbarian: Double Agency',
-        //     linkSrc: 'https://vimeo.com/124203527',
-        // },
-        // {
-        //     linkText: 'cow clicker',
-        //     linkSrc: 'https://cowclicker.com/',
-        // },
-        // {
-        //     linkText: 'angela washko, the game',
-        //     linkSrc: 'https://angelawashko.com/home.html',
-        // },
-        // {
-        //     linkText: 'star choir',
-        //     linkSrc: 'https://vimeo.com/441187530',
-        // },
-        // {
-        //     linkText: 'star choir: nomads dissolution',
-        //     linkSrc: 'https://vimeo.com/mybarbarian',
-        // },
-        // {
-        //     linkText: 'top 10 games from js13k 2020',
-        //     linkSrc: 'https://github.blog/2020-10-11-top-ten-games-from-the-js13k-2020-competition/',
-            
-        // },
-        // {
-        //     linkText: 'i really like this one!',
-        //     linkSrc: 'https://js13kgames.com/entries/choch',
-        // },
-        // {
-        //     linkText: 'massively multipler tetris that i built with that meth meth method tutorial below',
-        //     linkSrc: 'https://tetris-clone-6000.herokuapp.com/'
-        // }
+       
         ],
         techLinks: [
             {
@@ -107,14 +84,7 @@ const DAY12 = {
                 linkText: 'flow field',
                 linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2',
             },
-            // {
-            //     linkText: 'collision detection book (processing)',
-            //     linkSrc: 'http://www.jeffreythompson.org/collision-detection/table_of_contents.php',
-            // },
-            // {
-            //     linkText:'nice but complicated collision example from p5 reference',
-            //     linkSrc:'https://p5js.org/examples/motion-circle-collision.html',
-            // },  
+   
             
             // {
             //     linkText:'keycode is deprecated, generally use key instead',

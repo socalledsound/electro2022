@@ -3,7 +3,7 @@ const DAY28 = {
     unit: 'unit7',
     date: 'December 06, 2022',
     title: 'FINAL CRIT',
-    assignment: 'FINALFINAL',
+    assignment: 'FINAL',
     illustrationURL: '',
     description: `
     FINAL CRIT!!!!!!  

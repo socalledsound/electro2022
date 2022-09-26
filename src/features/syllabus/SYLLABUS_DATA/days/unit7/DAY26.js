@@ -3,7 +3,7 @@ const DAY26 = {
     unit: 'unit7',
     date: 'November 29, 2022',
     title: 'work on final project!',
-    assignment: 'FINALFINAL',
+    assignment: 'proto-final',
     illustrationURL: '',
     description: `
     Let's work on your final project
