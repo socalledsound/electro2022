@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { selectPreviousDays } from '../syllabus/syllabusSlice'
+import { selectPreviousDaysAfterCutoff, selectPreviousDays } from '../syllabus/syllabusSlice'
 import { selectCompletedAssignments } from '../user/userSlice'
 import { selectCritMessagesForUserId } from '../critMessages/critMessagesSlice'
 import { ASSIGNMENTS } from '../assignments/assignmentSlice'
@@ -24,12 +24,25 @@ export const selectWarningStatus = state => state.warnings.currentWarning
 export const selectProjectWarnings  = state => false
 export const selectAssignmentWarnings = state => {
     // state.warnings.assignmentWarnings
-    const previousDays = selectPreviousDays(state)
-    console.log(previousDays)
+    const previousDays = selectPreviousDaysAfterCutoff(state)
+    //console.log(previousDays)
     const completedAssignments = selectCompletedAssignments(state)
-     console.log(completedAssignments)
-    const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title)
-     console.log(assignmentsDue, completedAssignments)
+     //console.log(completedAssignments)
+     
+    // const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx].title).filter(day => {
+    //     const thisDate = new Date(day.date)
+    //     console.log(day.date)
+    //     console.log(thisDate > cutoff)
+    //     if(thisDate > cutoff){
+    //         return day.title
+    //     }else{
+    //         return null
+    //     }
+    // })
+   const cutoffBuffer = 8
+    const assignmentsDue = previousDays.map((day, idx) => ASSIGNMENTS[idx + cutoffBuffer].title)
+    //console.log(assignmentsDue)
+     //console.log(assignmentsDue, completedAssignments)
     // const warnings = assignmentsDue.filter(item => item.)
     // const oldWorks = action.payload.filter(work => !action.payload.some(newWork => newWork.id === work.id));
     let needed = []
@@ -41,12 +54,12 @@ export const selectAssignmentWarnings = state => {
         }
     }
 
-     console.log(needed)
+     //console.log(needed)
     // console.log(previousDays)
     const warnings = needed.reduce((acc, cur) => {
         return acc.concat(previousDays.filter((day) => day.assignment === cur))
     }, [])
-     console.log(warnings)
+    // console.log(warnings)
 
     if(warnings.length > 0){
         return warnings
@@ -58,8 +71,8 @@ export const selectAssignmentWarnings = state => {
     export const selectCritMessageWarning = userId => state => {
         
         const numMade = selectCritMessagesForUserId(userId)(state).length
-        const messages = selectCritMessagesForUserId(userId)(state)
-        console.log(messages.length)
+        //const messages = selectCritMessagesForUserId(userId)(state)
+       // console.log(messages.length)
         const completedDays = selectPreviousDays(state)
         const numNeeded = completedDays.length * 2
         if(numMade < numNeeded){

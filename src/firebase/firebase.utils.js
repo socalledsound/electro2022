@@ -16,14 +16,14 @@ export const storage = firebase.storage();
 export const onAuthStateChange = (dispatch, setCurrentUser) => {
     return auth.onAuthStateChanged(async userAuth => {
         if(userAuth){
-           console.log(userAuth)
-           console.log('logged in')
+           //console.log(userAuth)
+           //console.log('logged in')
            convertUserAuthToMap(userAuth)
            .then(user => dispatch(setCurrentUser(user)))
            .catch(err => console.log(err))
            
         } else {
-            console.log('why am i not logged in')
+           // console.log('why am i not logged in')
             dispatch(setCurrentUser(null))
         }
     })
@@ -103,7 +103,7 @@ export const convertUsersSnapshotToMap = (users) => {
     // console.log(users)
     const transformedUsers = users.docs.map(doc => {
         const { avatar, displayName, email } = doc.data();
-        console.log(doc.id)
+        //console.log(doc.id)
         return {
             
             id: doc.id,

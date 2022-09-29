@@ -5,7 +5,7 @@ In this assignment, we're going to explore the god of CHANGE.
 ![my snake game](https://res.cloudinary.com/chris-kubick/image/upload/v1664171723/Screen_Shot_2022-09-25_at_10.54.52_PM_wewriq.png)
 
 
-We'll do it with this cute little snake game, which is a lot bit of a ripoff of games like [snake.io](https://snake.io/) and [slither.io](https://slither.io/).  
+We'll do it with this cute little [snake game](https://editor.p5js.org/socalledsound/sketches/pU0hI6j1i), which is a lot bit of a ripoff of games like [snake.io](https://snake.io/) and [slither.io](https://slither.io/).  
 
 I really don't know which one was first, and there's probably a ton of other clones too.  It's a fun and simple game that's based on the original [snake game](https://www.mikusa.com/snake/snake.html) from way back.  Here's another [chill version](https://www.onemotion.com/snake-game/) that i just found.  Daniel Shiffman made a [video](https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html) on how to make it in p5 if you want to watch it, and there are a million million clones of it. 
 
@@ -22,7 +22,7 @@ happens on screen.
 
 # 1. to start
 
-I've made a little [starter sketch]() that blocks out some stuff that we've already talked about.  
+I've made a little [starter sketch](https://editor.p5js.org/socalledsound/sketches/uytzSu7kX) that blocks out some stuff that we've already talked about.  
 
 It's basically a ball that you can move around with your mouse. There's also a scoreboard: 
 
@@ -109,7 +109,7 @@ Also notice that there's a litle red eye which points in the direction that the 
 ```
 
 
-# 2. Food
+### 2. Food
 
 You can also find a Food class in this sketch.  We're not using it just yet and we're going to have to add some stuff to it, but the basics are there:
 
@@ -161,31 +161,336 @@ Now, try not to peek, and see if you can create an array of Food objects using A
 ***
 
 
-If you tried doing that on your own and were able to do it, that is AWESOME.  If not, no worries.  Here we go:
+If you tried doing that on your own and were able to do it, that is AWESOME.  If not, no worries.  Let's start by making the foods array:
+
+
+```
+
+        foods = Array.from({length: numFoods}, () => {
+        return new Food(random(foodSize, width  - foodSize), scoreboardPadding + random(foodSize, height - scoreboardPadding- foodSize) , foodSize)
+        })
+
+
+```
+
+It probably doesn't need to be that complicated, but I wanted to make sure that the food wasn't right on the edge of the screen, and obviously wanted to make sure that it wasn't on the scoreboard.
+
+Next, render it:
+
+```
+
+        foods.forEach(food => {
+        food.render()
+        })
+
+```
+
+And that's it!  We have some food.  Now, let's eat.
+
+
+
+### 3. Eating the Food
+
+To eat the food, we need to check for a collision.  Fortunately, both our chracter and the food are circles, and circle/circle collisions are the easiest ones.  They're also kind of sort of the most useful, because we can use them in a lot of cases that aren't quite circles, like for instance, in that asteroids game from last time -- even though the shapes involved aren't circles, that game just uses a circle with the same radius as the asteroid to detect collisions -- not perfect but, still, good enough to be playable.  
+
+
+![bounding circles](https://res.cloudinary.com/chris-kubick/image/upload/v1664322501/Screen_Shot_2022-09-27_at_4.47.56_PM_azwltx.png)
+
+[asteroids with bounding circles](https://editor.p5js.org/socalledsound/sketches/7WsndMRlZ-)
+
+If we really wanted to nail the collisions, we could of course do it, but the collision formula would look something like [this](https://www.jeffreythompson.org/collision-detection/poly-poly.php) -- a couple of hundred lines.  
+
+
+
+Whereas, to do circle/circle collision is really very straightforward.  We just have to check the distance between the circles and see if it's less than the length of the combined radii.
+
+
+![circle collision image](https://res.cloudinary.com/chris-kubick/image/upload/v1664322759/Screen_Shot_2022-09-27_at_4.52.28_PM_efbawu.png)
+
+[circle collisions](https://editor.p5js.org/socalledsound/sketches/A0LTXpa9Y)
+
+[circle circle collisions moving](https://editor.p5js.org/socalledsound/sketches/nhI2uDnRC)
+
+So, we can add a method to our Food class, in Food.js, that takes in the player, checks the distance between the player and each food item, and then checks if that distance is less than the radius of the player's circle plus the radius of this piece of food.  If the distance between them is less, guess what?  They're colliding.  
+
+
+```
+
+                checkCollision(player){
+                // if this nugget hasn't been eaten
+                    if(!this.eaten){
+                    // get the distance between it and the player
+                    const d = this.pos.dist(player.pos)
+                    // if that distance is less than the combined radii
+                        if(d < (player.r + this.size)){
+                            // do some stuff
+                            this.eaten = true
+                            //player.grow()
+                            score++
+                        }
+                    }
+                }
 
 
 
 ```
 
+If they're colliding, we'll set the food to an 'eaten' state, grow the player (we'll get to that next, for now we'll just leave it commented out), and add one to the player's score.
+
+Notice -- we're already using 'this.eaten' in the render method of our Food class, so, if the food has been eaten, it won't show up on the screen.
+
+Now we just have to call this checkCollision each food item in the draw loop:
+
+```
+
+                foods.forEach(food => {
+                    food.checkCollision(player)
+                    food.render()
+                })
+
+
+```
+
+Now, check it out and see if it works -- you should be able to eat food, see it disappear and see your score grow.
+
+
+But, we're interested in real growth, not just imaginary points.  Let's make this Player grow, adding a tail segment each time the player consumes some food.  This is actually the neat part!  It's a little bit tricky, but not too much.  
+
+Can you imagine how we might accomplish it?  Give it a shot!!!  But don't spend too long on it.  Honestly, it took me a few hours to make it work reasonably well, and it's still a little bit off.  So, if you can't figure it out right away, don't worry.
+
+
+### 4. Adding a Tail
+
+You may have noticed that there's one more class definition in the starter sketch -- a TailSegment.  It's pretty simple:
+
+
+```
+
+            class TailSegment {
+            constructor(pos, r){
+                this.col = [120, 200, 90]
+                this.pos = pos
+                this.r = r
+            }
+            
+            render(){
+                fill(this.col)
+                ellipse(this.pos.x, this.pos.y, this.r * 2)
+            }
+
+            }
 
 
 ```
 
 
+We're going to add an array of these to our Player.  In Player.js, in the constructor definition, let's add a tail :
+
+```
+
+            class Player {
+                constructor(){
+                    this.playerColor = [120, 200, 90]
+                    this.growColor = [220, 0, 0]
+                    this.eyeColor = [220,0,0]
+                    this.pos = createVector(width/2, height/2)
+                    this.vel = createVector(0,0);
+                    this.acc = createVector(0,0)
+                    // this.friction = 0.99
+                    this.maxForce = 0.1
+                    this.maxVel = 2.0
+                    this.r = 20 
+                    // this is the tail
+                    this.tail = Array.from({length: 6}, (e, i) => {
+                        const loc = createVector(
+                            this.pos.x - this.r * (i + 1), 
+                            this.pos.y 
+                            )
+                        return new TailSegment(loc, this.r)
+                    })
+                
+
+                }
+
+```
+
+It might look slightly gnarly, but it's not really anything you haven't done before.
+
+We're just making an array of 6 TailSegments, and offsetting each one to the left at a distance of the radius of the playuer, so, half the size of the player.  
+
+
+Now in player.render(), let's draw that tail on the screen : 
+
+```
+
+            render(){
+
+                // draw the player
+                fill(this.playerColor)
+                ellipse(this.pos.x, this.pos.y, this.r * 2)
+                //draw the eye
+                this.renderEye()
+                // draw the tail
+                this.tail.forEach(segment => {
+                    segment.render()
+                })
+            }
+
+
+```
+
+If you check it out, you should see a tail!  
+
+
+![snake with tail](https://res.cloudinary.com/chris-kubick/image/upload/v1664327517/Screen_Shot_2022-09-27_at_6.11.48_PM_znx9nq.png)
+
+
+Just -- if you move the player, the tail doesn't move.  Let's fix that.
+
+Let's add some stuff to the player.update() method.  First, let's make a copy of the player's position before it moves.  This way we can check to see if the player is moving; if it isn't moving, we don't have to move the tail.
+
+```
+
+    update(){
+       
+        this.acc.mult(0)
+        this.vel.mult(friction)
+        // make a copy of the player position before we add velocity.
+        this.oldPos = this.pos.copy()
+        this.pos.add(this.vel)
+
+
+```
+
+Next, we have to get the distance between those two points, and if that distance is greater than some small amount -- I used 1 but 0.5 or even 0.1 probably would work too -- then we'll move the tail. 
+
+
+```
+
+    update(){
+       
+        this.acc.mult(0)
+        this.vel.mult(friction)
+        // make a copy of the player position before we add velocity.
+        this.oldPos = this.pos.copy()
+        this.pos.add(this.vel)
+        const d1 = this.pos.dist(this.oldPos)
+        if(d1 > 1){
+                // move the tail in here
+            }
+
+```
+
+To move the tail, we're basically going to swap a whole bunch of positions.  
+
+I'm going to set a key of closest on the one at the end.  It'll make it red, so we can see it clearly -- and also because I like the way it looks
+
+We'll get the distance between that one and the new head position and if it's greater than some arbitray amount -- I chose r/4 but you can play with this.  I played around with these values for a while, I decided I like it better when it's tight together weird looking but you can tweak it as you like.  
+
+
+```
+
+            if(d1 > 1){
+                    // let's find the newclosest tail segment
+                    this.closest = this.tail.length - 1
+                    this.tail[this.closest].col=this.growColor
+                    const d2 = this.tail[this.closest].pos.dist(this.oldPos) 
+                        if((d2 > this.r/2 )){
+                        // if the closest segment is too far away, update the positions    
+                        this.tail[this.closest].pos = this.oldPos
+                        for(let i = 0; i < this.tail.length - 1; i++){
+                            this.tail[i].pos = this.tail[i+1].pos
+                        }
+
+                    }
+                    } 
+
+```
+
+If the closest segment is far enough away, update it's position to be the old head position, and then update all of the other items in the tail to be the position of the one immediately closest to them.
+
+So now we've got this red dot near the front of our snake, which actually marks the end of our array called tail, right?  The next step is to add more segments, which we'll do in a method called player.grow().
+
+[tail](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF)
+
+### 5. Growing the Tail
+
+Growing the tail is actually not that hard.  We have a TailSegment class, so when we want to grow, we just push a new TailSegment to our tail.
+
+```
+
+            grow(){
+                    this.tail.push(new TailSegment())        
+            }
+
+```
+
+And I want to admit something here: I actually wasted a bit of time trying to figure out where the new tail segment should be positioned.  I came up with something that works reasonably well, which basically takes the direction of the current velocity and projects backward in time, by mutliplying it by a negative value.
+
+```
+
+    grow(){
+      let behind = this.vel.copy()
+      behind.mult(-15).setMag(20) 
+      let initPos
+      if(this.tail.length > 0){
+         initPos = this.tail[this.tail.length-1].pos.copy()
+      } else {
+        initPos = this.pos.copy()
+      }
+       initPos.add(behind)
+        //const initPos = createVector(-100, -100)
+      this.tail.push(new TailSegment(initPos,this.r/1.5))
+    }
+
+```
+
+But then I realized -- this is totally unnecessary and pretty inaccurate and it's better to just let the previous tail segment tell the new one where it needs to go!  We can litterly start the new segment anywhere we want, and that's a lot shorter and easier.  So let's start it offscreen, at -100, -100, and let the update function put it into place.  Notice, I made the new segments a little bit smaller, which I think has a cool effect.
+
+```
+
+        grow(){
+
+            const initPos = createVector(-100, -100)
+            this.tail.push(new TailSegment(initPos,this.r/1.5))
+        }
+
+```
+And that's pretty much it!  To make the snake grow, we just have to go into Food.js and call player.grow() when a piece of food gets eaten, in the checkCollision method of Food, so we need to uncomment that line.
+
+```
+(Food.js)
+
+                checkCollision(player){
+                    // if this nugget hasn't been eaten
+                    if(!this.eaten){
+                    // get the distance between it and the player
+                    const d = this.pos.dist(player.pos)
+                    // if that distance is less than the combined radii
+                        if(d < (player.r + this.size)){
+                            // do some stuff
+                            this.eaten = true
+                            player.grow()
+                            score++
+                        }
+                    }
+                }
+
+
+```
+
+[finished code](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF)
 
 
 
-
-# 3. Eating the Food
-
-# 4. Growing a Tail
-
-Now this last part is a little tricky.  When the Player eats some food, we want it to grow a tail.  Honestly, it took me the better part of a Sunday afternoon to figure out how to do it and make it work reasonably well, and it's still a little bit off.
+### 6. build your own snake
 
 
+So now you've mastered circle/circle collisions and did some other cool stuff too.  I hope it's working for you!  
 
+What I want you to do now is, design your own render method for this snake.  Different colors, sizes, even shapes.  Each segment could be a different rainbow color -- the whole snake could be diamond shaped -- the snake could have six or twelve eyes, really it's up to you.  And when we make our connected game, we'll try and bring in all of these different snakes!!
 
-
+To do this, you'll focus on the render methods of the Player class and the TailSegment class.  Feel free to also make a better Food!  Have fun and upload your work to the gallery.
 
 
 

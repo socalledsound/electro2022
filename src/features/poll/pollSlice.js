@@ -16,7 +16,7 @@ export const pollSlice = createSlice({
         submitPollAnswerFailure(){},
         startSyncPollAnswers(){},
         updatePollAnswers: (state, action) => {
-            console.log(action.payload)
+            //console.log(action.payload)
             return{
                 ...state,
                 pollAnswers: action.payload
@@ -30,18 +30,18 @@ export const pollSlice = createSlice({
 
 export const selectCurrentPollQuestion = state => {
     const currentIdx = state.polls.currentPollQuestionIdx
-    console.log(currentIdx)
-    console.log(state.polls)
-    console.log(state.polls.pollQuestions)
+   // console.log(currentIdx)
+   // console.log(state.polls)
+   // console.log(state.polls.pollQuestions)
     const currentQuestion = state.polls.pollQuestions[currentIdx]
-    console.log(currentQuestion)
+    //console.log(currentQuestion)
     return currentQuestion
 }
 export const selectPollAnswers = state => {
     const currentPoll = selectCurrentPollQuestion(state)
     const answers = state.polls.pollAnswers
-    console.log(currentPoll)
-    console.log(answers)
+   // console.log(currentPoll)
+   // console.log(answers)
     if(answers.length > 0){
         return answers.filter(answer => answer.id === currentPoll.id)
     }else {

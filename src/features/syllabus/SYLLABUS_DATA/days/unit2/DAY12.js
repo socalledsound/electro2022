@@ -11,7 +11,7 @@ const DAY12 = {
     `
     ,
     // add maze photo here 
-    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1662609591/maze_ujjvjl.png',
+    illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1664478910/Screen_Shot_2022-09-29_at_12.14.55_PM_rllqph.png',
     discussionQuestions: [
         ``
     ],

@@ -5,7 +5,7 @@ import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
 // import { selectFinalDay } from '../../features/syllabus/syllabusSlice'
 import { fetchUserCritMessagesStart } from '../../features/critMessages/critMessagesSlice'
 import { startFetchUserWorks } from '../../features/gallery/gallerySlice'
-// import UserWarnings from '../../features/warnings/UserWarnings'
+import UserWarnings from '../../features/warnings/UserWarnings'
 // import UserNewMessages from '../../features/userNewMessages/UserNewMessages'
 import Loading from '../../components/Loading/Loading'
 import DayDetail from '../../features/syllabus/DayDetail/DayDetail'
@@ -51,10 +51,10 @@ const HomePage = () => {
                             poll &&
                             <Poll />
                         } */}
-                        {/* {
+                        {
                             currentUser &&
                             <UserWarnings currentUser={currentUser}/>                                
-                        } */}
+                        }
                         {/* {
                             currentUser &&
                             <UserNewMessages currentUser={currentUser}/>

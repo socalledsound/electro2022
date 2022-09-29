@@ -12,7 +12,7 @@ but it opens up a lot of possibilities.  And, to really effectively make use of 
 But, just so we understand the syntax let's start with a really simple example:  a square.  
 
 
-![square with points]()
+![square with points](https://res.cloudinary.com/chris-kubick/image/upload/v1664202715/Screen_Shot_2022-09-26_at_7.31.47_AM_qpbkhh.png)
 
 [square code](https://editor.p5js.org/socalledsound/sketches/5nfnlo2Vh)
 
@@ -55,10 +55,15 @@ If we know the point at the center of a circle and we know it's radius, we can f
 
 For every point on that circle, x and y are defined by
 
-x = centerX + cos(angle) * r
-y = centerY + sin(angle) * r
+---
+### x = centerX + cos(angle) * r
 
-So, let's make some variables.
+### y = centerY + sin(angle) * r
+
+---
+
+It might seem daunting at first, but once you use it a few times, it really starts to make sense.  
+So, let's start by making some variables.
 
 ```
 
@@ -167,7 +172,7 @@ Now, let's draw those points.  We'll call beginShape and then draw each vertex u
 
 ```
 
-Try changing the value assigned to numPoints and you'll seee that pretty much every other shape is just a lower resolution circle.
+Try changing the value assigned to numPoints and you'll seee that prety much any shape which has sides of an equal length is just a lower resolution circle.
 Amazing stuff.
 
 [circle with slider](https://editor.p5js.org/socalledsound/sketches/MaajoyZbw)
@@ -296,9 +301,11 @@ Here's a sketch where you can use a slider to play with the amount of noise:
 
 [noisy circle](https://editor.p5js.org/socalledsound/sketches/yr-5mAmHh).
 
+We'll use noise again later in the semester and talk about it more then, but if you want to learn more about it and some nifty ways to use it in p5, here's a [series of videos](https://www.youtube.com/watch?v=Qf4dIN99e2w) by Daniel Shiffman on the topic!
+
 # 6 in conclusion
 
-SO, that was a lot.  But I hope you can see how fun working with your own shapes can be.
+SO, that was a lot.  But I hope you can see how fun working with your own shapes can be!
 
 Here are some [animated tree rings](https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf)
 
@@ -310,4 +317,4 @@ But.... if you refresh the page, you get a completely new noise pattern.
 
 # 7 ok now it's your turn.  
 
-Use beginShape and endShape to make a nifty shape or shapes with vertexes -- and throw in some noise if you feel like it!  See if you can add that new shape to the game/animation that you started making in the last assignment, or start over your new shape.  
+Use beginShape and endShape to make a nifty shape or shapes with vertexes -- and throw in some noise if you feel like it!  See if you can add that new shape to the game/animation that you started making in the last assignment, or start over your new shape.  You may want to use Array.from() to generate your points!  Try some stuff and see what happens.

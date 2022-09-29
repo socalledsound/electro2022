@@ -101,7 +101,7 @@ export const ASSIGNMENT9 = {
 
 export const ASSIGNMENT10 = {
     id: 10,
-    title : 'proposal',
+    title : 'sketchy',
     description : `
     
     `,
@@ -110,7 +110,7 @@ export const ASSIGNMENT10 = {
 
 export const ASSIGNMENT11 = {
     id: 11,
-    title : 'breaking',
+    title : 'change',
     description :`
     
     `,
@@ -120,7 +120,7 @@ export const ASSIGNMENT11 = {
 
 export const ASSIGNMENT12 = {
     id: 12,
-    title : 'maze-ing',
+    title : 'landscape',
     description : `
     
     `,

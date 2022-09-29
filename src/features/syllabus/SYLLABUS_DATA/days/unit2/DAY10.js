@@ -1,12 +1,15 @@
-const DAY11 = {
-    id: 11,
+const DAY10 = {
+    id: 10,
     async: true,
     unit: 'unit2',
     date: 'September 29, 2022',
     title: 'noisy shapes',
-    assignment: 'shapes',
+    assignment: 'sketchy',
     description: `
-        Today we're going to learn how to make more complex shapes -- and more complex collisions.
+        Today we're going to learn how to make more complex shapes, and breakout of the boring simplicity of circles and squares.
+        We'll learn how to use code to generate strings of vertexes, about beginning and ending shapes, and we'll also learn
+        a little bit about something called Perlin noise, which is a super nifty algorithm for generating somewhat less
+        random randomness. 
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1662597810/pink-kool-aid_i4g1nh.jpg',
     discussionQuestions: [
@@ -40,8 +43,8 @@ const DAY11 = {
 
 
         {
-            linkText: 'tree rings in p5',
-            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf'
+            title: 'tree rings in p5',
+            link: 'https://editor.p5js.org/socalledsound/sketches/ZdabVpSPf'
         },
     
 
@@ -67,9 +70,45 @@ const DAY11 = {
         {
             linkText: 'asteroids in p5',
             linkSrc: 'https://editor.p5js.org/simontiger/sketches/r16tcHq3e',       
-        }
+        },  
+        {
+            linkText: `I took Tucker's noisy raindrops and turned them into a small heart system game`,
+            linkSrc: 'https://github.com/socalledsound/tucker-thing'
+        },        
+         {
+            linkText: 'heart system live site',
+            linkSrc: 'https://socalledsound.github.io/tucker-thing/',
+        },
+        {
+            linkText: 'another breakout game in the online editor',
+            linkSrc: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
+        },
+        {
+            linkText: 'a scaly drawing I made with p5 yesterday',
+            linkSrc: 'https://socalledsound.github.io/noisy-circles/',
+        },
+        {
+            linkText: 'fourier series - waves with circles',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/GiQgCoOei',
+        },
+        {
+            linkText: 'you can draw anything with circles',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/deqkKFzOq',
+        },
+        {
+            linkText: 'perlin noise flow field',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/FYPmKW_06',
+        },
+        {
+            linkText: 'perlin noise 3d terrain',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/daLyawjn-',
+        },
         ],
         techLinks: [
+            {
+                linkText: 'Daniel Shiffman series of videos on Perlin noise',
+                linkSrc: 'https://www.youtube.com/watch?v=Qf4dIN99e2w',
+            },
             {
                 linkText: 'shiffman: angles and vectors',
                 linkSrc: 'https://www.youtube.com/watch?v=oXwCVDXS2Lg'
@@ -83,18 +122,9 @@ const DAY11 = {
                 linkText: 'online book about collision detection',
                 linkSrc: 'https://www.jeffreythompson.org/collision-detection/table_of_contents.php',
             },
-            {
-                linkText: 'another breakout game in the online editor',
-                linkSrc: 'https://editor.p5js.org/bansal321/sketches/HJAFXebeV',
-            },
-           {
-               linkText: `I took Tucker's noisy raindrops and turned them into a small heart system game`,
-               linkSrc: 'https://github.com/socalledsound/tucker-thing'
-           },
-           {
-               linkText: 'heart system live site',
-               linkSrc: 'https://socalledsound.github.io/tucker-thing/',
-           },
+
+
+
             // {
             //     linkText:'keycode is deprecated, generally use key instead',
             //     linkSrc: 'https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice',
@@ -120,6 +150,14 @@ const DAY11 = {
             {
                 linkText: 'code super mario in vanilla js (25 parts!  maybe save it for later?)',
                 linkSrc: 'https://www.youtube.com/watch?v=g-FpDQ8Eqw8',
+            },
+            {
+                linkText: 'or code mario with me, in p5!',
+                linkSrc: 'https://www.youtube.com/watch?v=SPzJ84y4qxc&list=PL1Kp_s25fdCBZFnp3rMM2Qah53Hs0XMJD&index=29',
+            },
+            {
+                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+                linkText: 'my mario game github repo',
             },
 
             {
@@ -172,4 +210,4 @@ const DAY11 = {
 
 }
 
-export default DAY11
+export default DAY10

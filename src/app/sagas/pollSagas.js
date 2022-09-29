@@ -24,7 +24,7 @@ function* submitPollAnswer(action){
             //  yield put(fetchCritMessagesStart(action.payload.workId))
             yield put(loginLoading(false))
         }catch(err){
-            console.error(err)
+            //console.error(err)
             yield put(submitPollAnswerFailure(err.message))
             yield put(loginLoading(false))
         }
@@ -37,12 +37,12 @@ function* submitPollAnswer(action){
 function* syncPollAnswers () {
     const ref = firestore.collection('polls')
     const channel = eventChannel(emit => ref.onSnapshot(emit))
-    console.error('here we are in syncing poll answers')
+    //console.error('here we are in syncing poll answers')
     try {
       while (true) {
         const data = yield take(channel)
         const pollAnswers = yield convertPollAnswersSnapshotToMap(data)
-        console.error(pollAnswers)
+        //console.error(pollAnswers)
         yield put(updatePollAnswers(pollAnswers))
       }
     } catch (err) {
@@ -55,7 +55,7 @@ function* onStartSubmitPollAnswer(){
 }
 
 function* onStartSyncPollAnswers(){
-    yield console.log('starting syncing poll answers')
+    //yield console.log('starting syncing poll answers')
     yield takeLatest(startSyncPollAnswers.type, syncPollAnswers)
 }
 

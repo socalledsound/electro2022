@@ -23,7 +23,7 @@ import projectsReducer from '../features/projects/projectsSlice'
 import submitWorkReducer from '../features/submitWork/submitWorkSlice'
 import critMessagesReducer from '../features/critMessages/critMessagesSlice'
 import pollsReducer from '../features/poll/pollSlice'
-import logger from 'redux-logger'
+//import logger from 'redux-logger'
 // import galleryCategories from '../features/gallery/GALLERY_CATEGORIES';
 const sagaMiddleware = createSagaMiddleware()
 
@@ -68,8 +68,21 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }), 
-    sagaMiddleware, logger],
+    sagaMiddleware],
 });
+
+// with logger
+// export const store = configureStore({
+//   reducer: persistedReducer,
+//   // reducer,
+//   middleware: (getDefaultMiddleware) => [...getDefaultMiddleware({ 
+//       thunk: false,
+//       serializableCheck: {
+//         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+//       },
+//     }), 
+//     sagaMiddleware, logger],
+// });
 
 sagaMiddleware.run(rootSaga)
 

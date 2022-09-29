@@ -229,6 +229,10 @@ const DAY9 = {
                 linkText: 'getting started with p5',
                 linkSrc: 'https://youtu.be/iLZZ5O4HN9A',
             },
+            {
+                linkText: 'a very simple image clicking game!',
+                linkSrc: 'https://youtu.be/lAWNDNddAzg',
+            },
             // {
             //     linkText: 'code-along: bringing things to life pt 1',
             //     linkSrc: 'https://youtu.be/tk2TOlN4Qmw',

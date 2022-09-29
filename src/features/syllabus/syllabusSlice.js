@@ -94,7 +94,7 @@ export const selectFinalDay = (state) => {
 
 export const selectPreviousDays = (state) => {
     const allDays = selectAllDays(state)
-    // console.log(allDays)
+    
     const today = new Date()
     today.setHours(today.getHours() - 12)
     const previousDays = allDays.filter(day => {
@@ -104,9 +104,35 @@ export const selectPreviousDays = (state) => {
         }
         return null
     })
-    // console.log(remainingDays)
+   
     return previousDays
 }
+
+
+export const selectPreviousDaysAfterCutoff = (state) => {
+    const allDays = selectAllDays(state)
+    const cutoff = new Date("2022-09-24");
+    const today = new Date()
+    today.setHours(today.getHours() - 12)
+    const previousDaysAfterCutoff = allDays.filter(day => {
+        const date = new Date(day.date);
+        const date2 = new Date(day.date)
+        //console.log(date > cutoff)
+        if(date > cutoff){
+            //console.log('hi:  ', date < today)
+            if(date2 < today){
+                return day 
+            }
+            //console.log('yes')
+           
+        }
+        return null
+    })
+   // console.log(previousDaysAfterCutoff.length)
+    return previousDaysAfterCutoff
+}
+
+
 
 
 export const { setCurrentDayIdx } = syllabusSlice.actions

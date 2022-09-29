@@ -1,5 +1,5 @@
-const DAY10 = {
-    id: 10,
+const DAY11 = {
+    id: 11,
     async: false,
     unit: 'unit2',
     date: 'October 4, 2022',
@@ -19,31 +19,53 @@ const DAY10 = {
     inClassDemo: [
 
         {
-            title:'snakey w/Player -- ADD FOOD',
-            link: 'https://editor.p5js.org/socalledsound/sketches/Y1uWBLF-Z',
+            title:'snakey w/Player -- day 11 starter',
+            link: 'https://editor.p5js.org/socalledsound/sketches/uytzSu7kX',
         },
         {
             title:'snakey w/Player and Food',
-            link: 'https://editor.p5js.org/socalledsound/sketches/nPO2P1QDV',
+            link: 'https://editor.p5js.org/socalledsound/sketches/s9yba6BwI',
         },
+
+        {
+            title:'snakey - with growing tail',
+            link: 'https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF',
+        },
+
+
         {
             title:'circle circle collision',
+            link: 'https://editor.p5js.org/socalledsound/sketches/A0LTXpa9Y',
+        },
+        {
+            title:'circle circle collision moving',
             link: 'https://editor.p5js.org/socalledsound/sketches/nhI2uDnRC',
         },
         {
-            title:'circles and squares colliding 1',
-            link: '',
+            title:'bounding circles - asteroids',
+            link: 'https://editor.p5js.org/socalledsound/sketches/7WsndMRlZ-',
         },
 
         {
-            title:'circles and squares colliding 2',
-            link: '',
+            title:'circles and squares with gravity + ground',
+            link: 'https://editor.p5js.org/socalledsound/sketches/IU_gaDARe',
         },
-
         {
             title:'more complex circle collision with bounce',
             link: 'https://p5js.org/examples/motion-circle-collision.html',
         },
+
+        {
+            title:'circle + lines collision',
+            link: 'https://editor.p5js.org/socalledsound/sketches/27UZFZRxW',
+        },
+
+
+        {
+            title:'rolling circles with sloped ground',
+            link: 'https://editor.p5js.org/socalledsound/sketches/5uaSJy5g1',
+        },
+
         // {
         //     title:'snakey w/ Tail and death',
         //     link: '',
@@ -51,6 +73,30 @@ const DAY10 = {
 
     ],
     inspirationLinks: [
+        {
+            linkText:'fluid box physics',
+            linkSrc: 'https://labs.fluuu.id/box-physics/'
+        },
+        {
+            linkText: '1000 unique postcards',
+            linkSrc:'https://twitter.com/andreasgysin/status/956131218386509824',
+        },
+        {
+            linkText: 'planck examples',
+            linkSrc:'https://piqnt.com/planck.js/',
+        },
+        {
+            linkText: 'a rube goldberg machine project',
+            linkSrc:'https://sites.google.com/bedford.k12.va.us/fms-stem/activities/engineering/rube-goldberg-machine',
+        },
+        {
+            linkText: 'in the modulator game',
+            linkSrc:'https://socalledsound.github.io/scaly/',
+        },
+        {
+            linkText: '',
+            linkSrc:'',
+        }
 
         ],
         techLinks: [
@@ -62,19 +108,20 @@ const DAY10 = {
                 linkText: 'Objects and Classes Example: Butterfly in p5.js',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
             },
-            {
-                linkText: 'mario game github repo (with a branch for each video)',
-                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
-            },
-            {
-                linkText:"a simple snake game in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
-            },
 
             {
                 linkText:"snake game tutorial",
                 linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
             },
+            {
+                linkText:"a simple snake game in p5",
+                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
+            },
+            {
+                linkText: '3d snake game in p5!!  (nice!)',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/N1syHlF1W'
+            },
+
             {
                 linkText: 'build space invaders with daniel shiffman',
                 linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
@@ -100,59 +147,57 @@ const DAY10 = {
                 linkSrc: 'https://www.youtube.com/watch?v=T-HGdc8L-7w',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'planck.js is a nice physics library',
+                linkSrc: 'https://github.com/shakiba/planck.js/',
+            },
+            {
+                linkText: 'animated dashed lines in p5',
+                linkSrc: 'https://gorillasun.de/blog/animated-dashed-lines-in-p5js'
+            },
+            {
+                linkText: 'nice collision detection article',
+                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics'
             },
         ], 
        
         
         videos: [
 
-            {
-                linkText:"a simple snake game in p5",
-                linkSrc:"https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh"
-            },
-            {
-                linkText: '3d snake game in p5!!  (nice!)',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/N1syHlF1W'
-            },
+        //    {
+        //         linkText: 'mario game github repo (with a branch for each video)',
+        //         linkSrc: 'https://github.com/socalledsound/p5-mario-game',
+        //     },
 
-            {
-                linkText: 'circle circle collision',
-                linkSrc: 'https://www.jeffreythompson.org/collision-detection/circle-circle.php'
-            },
-            {
-                linkText: 'nice collision detection article',
-                linkSrc: 'https://spicyyoghurt.com/tutorials/html5-javascript-game-development/collision-detection-physics'
-            },
+            // {
+            //     linkText: 'circle circle collision',
+            //     linkSrc: 'https://www.jeffreythompson.org/collision-detection/circle-circle.php'
+            // },
+  
 
 
     
       
-            {
-                linkText: 'tic tac toe game',
-                linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
-            },
-            {
-                linkText: 'Objects and Classes Example: Butterfly in p5.js',
-                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
-            },
-            {
-                linkText: 'mario game github repo (with a branch for each video)',
-                linkSrc: 'https://github.com/socalledsound/p5-mario-game',
-            },
-            {
-                linkText:"snake game tutorial",
-                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
-            },
-            {
-                linkText: 'build space invaders with daniel shiffman',
-                linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
-            },
-            {
-                linkText: 'frogger in p5.js',
-                linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
-            },
+            // {
+            //     linkText: 'tic tac toe game',
+            //     linkSrc: 'https://github.com/socalledsound/classless-tic-tac-toe',
+            // },
+            // {
+            //     linkText: 'Objects and Classes Example: Butterfly in p5.js',
+            //     linkSrc: 'https://editor.p5js.org/socalledsound/sketches/s_M6cyyxN',
+            // },
+ 
+            // {
+            //     linkText:"snake game tutorial",
+            //     linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
+            // },
+            // {
+            //     linkText: 'build space invaders with daniel shiffman',
+            //     linkSrc: 'https://thecodingtrain.com/CodingChallenges/005-space-invaders-p5.html',
+            // },
+            // {
+            //     linkText: 'frogger in p5.js',
+            //     linkSrc: 'https://editor.p5js.org/codingtrain/sketches/crMMFw8vD',
+            // },
         ]
                         // {
             //     linkText: 'a slightly more complex p5 animation with various media',
@@ -171,7 +216,7 @@ const DAY10 = {
 
         }
 
-export default DAY10
+export default DAY11
 
   // videos: [
         //     // {

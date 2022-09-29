@@ -11,13 +11,13 @@ const peopleSlice = createSlice({
     reducers: {
         startFetchUsers(){},
         fetchUsersSuccess : (state, action) => {
-            console.log(action.payload)
+            //console.log(action.payload)
             return {
                 allPeople: action.payload
             }
         },
         fetchUsersFailure : (state, action) => {
-            console.log(action.payload)
+            //console.log(action.payload)
             return {
                 ...state,
                 errors: action.payload
@@ -31,7 +31,7 @@ const peopleSlice = createSlice({
             }
         },
         updateUsers: (state, action) => {
-            console.log(action.payload)
+          //  console.log(action.payload)
             return {
                 ...state,
                 allPeople: action.payload,
