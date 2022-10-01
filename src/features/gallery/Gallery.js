@@ -22,7 +22,7 @@ const Gallery = ({history}) => {
     // const galleryCategories = useSelector(selectCategories)
     const works = useSelector(selectWorks)
     const featuredWorks = works.filter(item => item.featured)
-   console.log(galleryCategories)
+  // console.log(galleryCategories)
     return ( 
         <div>
             <p className={styles.galleryInstruction}>click on any assignment title to see more work from that assignment</p>

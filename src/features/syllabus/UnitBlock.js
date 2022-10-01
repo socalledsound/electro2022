@@ -15,7 +15,7 @@ const UnitBlock = ({unit, idx, history}) => {
             <h3 onClick={() => history.push(`/syllabus/${unit.unit}`)}>{unit.title}</h3>
             {
                 unit.days.map((day, idx) => {
-                console.log(day.async)
+                //console.log(day.async)
                 return (
                     <div 
                         className={day.async ? styles.asyncDayContainer : styles.dayContainer} 

@@ -9,7 +9,7 @@ const DayHeader = ({ history }) => {
     const dispatch = useDispatch()
     const units = useSelector(selectUnits)
     const currentDayIdx = useSelector(selectCurrentDayIdx)
-    console.log(currentDayIdx)
+    //console.log(currentDayIdx)
     // const days = useSelector(selectDays)
     
     const handleClick = (unit, dayId) => {
@@ -27,7 +27,7 @@ const DayHeader = ({ history }) => {
                         unit.days.map( (day, idx)  => {
                             const thisDate = new Date(day.date)
                             const currentDay = day.id === currentDayIdx
-                            console.log(currentDay)
+                            //console.log(currentDay)
                             return (
                                 <div 
                                 key={day.id} 

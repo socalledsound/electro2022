@@ -16,9 +16,9 @@ const GalleryItemDetail = ({ item, history }) => {
     const dispatch = useDispatch()
     
     const currentUser = useSelector(selectCurrentUser)
-    console.log('CURRENT USER:  ' + currentUser)
-    console.log(typeof currentUser.id)
-    console.log(currentUser.displayName)
+    //console.log('CURRENT USER:  ' + currentUser)
+    //console.log(typeof currentUser.id)
+    //console.log(currentUser.displayName)
     // console.log(currentUser.id === '9yg75keL2KdTSQCRNavncDhBN9I2')
 
     const [ deleteModal, toggleDeleteModal, DeleteModalContent ] = useNewModal();

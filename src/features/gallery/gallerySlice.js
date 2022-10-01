@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { selectFinalDay, selectCurrentDay } from '../syllabus/syllabusSlice'
 import { selectAssignment } from '../assignments/assignmentSlice'
 import galleryCategories from './GALLERY_CATEGORIES'
-import { selectUserCritMessages } from '../critMessages/critMessagesSlice'
+//import { selectUserCritMessages } from '../critMessages/critMessagesSlice'
 // import { tempWork1, tempWork2, tempWork3, tempWork4,tempWork5, tempWork6,tempWork7, tempWork8, tempWork9, tempWork10 } from './TEMP_WORKS'
 
 //console.log(galleryCategories)
@@ -18,7 +18,7 @@ export const gallerySlice = createSlice({
     initialState,
     reducers : {
         addSubmissionToWorks : (state, action) => {
-            console.log(action)
+           // console.log(action)
             return {
                 ...state,
                 works:  state.works.concat(action.payload)
@@ -60,7 +60,7 @@ export const gallerySlice = createSlice({
         startDeleteGalleryItem(){},
         deleteGalleryItemSuccess :  (state, action) => {
             const newWorks = state.works.filter(item => item.id !== action.payload.id) 
-            console.log(newWorks)
+          //  console.log(newWorks)
             return{
                 ...state,
                 works: newWorks
@@ -92,7 +92,7 @@ export const gallerySlice = createSlice({
             const oldWorks = state.works.filter(item => item.id !== action.payload.id)
             const itemToUpdate = state.works.filter(item => item.id === action.payload.id)
             itemToUpdate.featured = true
-            console.log(itemToUpdate)
+           // console.log(itemToUpdate)
             return {
                 ...state,
                 works: oldWorks.concat(itemToUpdate)
@@ -130,7 +130,7 @@ export const selectGPIOWorks = state => {
 //want to return the most recent assignment here
 export const selectCurrentWorks = state => { 
     const currentDay = selectCurrentDay(state)
-    console.log(currentDay.id)
+   // console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
     const assignment = selectAssignment(currentMinus1)(state)
     const currentWorks = selectWorks(state).filter(item => item.assignment === assignment.title)
@@ -140,10 +140,10 @@ export const selectCurrentWorks = state => {
 
 export const selectCurrentGalleryAssignment = state => {
     const currentDay = selectCurrentDay(state)
-    console.log(currentDay.id)
+   // console.log(currentDay.id)
     const currentMinus1 = currentDay.id - 1
     const assignment = selectAssignment(currentMinus1)(state)
-    console.log(assignment)
+   // console.log(assignment)
     return assignment
 }
 
@@ -158,8 +158,8 @@ export const selectFinalGalleryAssignment = state => {
 // want to return recently posted works here
 export const selectRecentWorks = state => {
     const aWeekAgo = new Date().getTime() - 604800000
-    const aWeekAgoDate = new Date(aWeekAgo)
-    console.log(aWeekAgoDate)
+    //const aWeekAgoDate = new Date(aWeekAgo)
+    //console.log(aWeekAgoDate)
     // let works = []
    const recentWorks = selectWorks(state).filter(item => item.timestamp > aWeekAgo)
 //    console.log(recentWorks)
@@ -188,12 +188,12 @@ export const selectRecentWorks = state => {
 
 
 export   const selectUncommentedWorks = currentUser => state => {
-    const recentWorks = selectRecentWorks(state)
-    const myComments = selectUserCritMessages(currentUser)
+    //const recentWorks = selectRecentWorks(state)
+   // const myComments = selectUserCritMessages(currentUser)
     // const uncommentWorks = myComments.reduce((acc, cur) => {
     //     if(cur.)
     // }, [])
-    console.log(recentWorks, myComments)
+   // console.log(recentWorks, myComments)
     return []
 }
 

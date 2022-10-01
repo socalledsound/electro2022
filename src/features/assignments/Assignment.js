@@ -22,7 +22,7 @@ const Assignment = ({match}) => {
 
 
 
-    console.log(assignmentDue)
+    //console.log(assignmentDue)
     useEffect(() => {
         if(currentUser){
             if(completedAssignments && completedAssignments.length > 0){
@@ -53,7 +53,7 @@ const Assignment = ({match}) => {
     const handleSubmitWorkClick = () => {
         // console.log(toggleModal)
         toggleModal(true)
-        console.log('clicked')
+        //console.log('clicked')
         window.scrollTo(0,0)
        
     }

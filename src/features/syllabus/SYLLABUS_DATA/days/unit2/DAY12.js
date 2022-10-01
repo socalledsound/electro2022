@@ -18,6 +18,41 @@ const DAY12 = {
     inClassDemo: [
 
 
+        {
+            title: 'snakey with game class',
+            link: 'https://editor.p5js.org/socalledsound/sketches/oMnOAV7Zd'
+        },
+        {
+            title: 'snakey with start button',
+            link: 'https://editor.p5js.org/socalledsound/sketches/w2PDNwf4z'
+        },
+        {
+            title: 'snakey with wider scrolling landscape',
+            link: 'https://editor.p5js.org/socalledsound/sketches/FLcIvyL6K'
+        },
+        {
+            title: 'snakey with dying',
+            link: 'https://editor.p5js.org/socalledsound/sketches/evy_GaDiQ'
+        },
+        {
+            title: '',
+            link: ''
+        },
+        {
+            title: '',
+            link: ''
+        },
+        {
+            title: '',
+            link: ''
+        },
+        {
+            title: 'maze game',
+            link: ''
+        },
+
+
+
 
         {
             title: 'simple block based room game',
@@ -53,6 +88,26 @@ const DAY12 = {
             linkText: '',
             linkSrc: '',
         },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: '',
+            linkSrc: '',
+        },
+        {
+            linkText: 'flow field',
+            linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2',
+        },
        
         ],
         techLinks: [
@@ -80,10 +135,7 @@ const DAY12 = {
                 linkText: '',
                 linkSrc: '',
             },
-            {
-                linkText: 'flow field',
-                linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2',
-            },
+
    
             
             // {

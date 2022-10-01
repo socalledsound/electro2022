@@ -10,7 +10,7 @@ We'll do it with this cute little [snake game](https://editor.p5js.org/socalleds
 I really don't know which one was first, and there's probably a ton of other clones too.  It's a fun and simple game that's based on the original [snake game](https://www.mikusa.com/snake/snake.html) from way back.  Here's another [chill version](https://www.onemotion.com/snake-game/) that i just found.  Daniel Shiffman made a [video](https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html) on how to make it in p5 if you want to watch it, and there are a million million clones of it. 
 
 [snake game in p5](https://editor.p5js.org/socalledsound/sketches/Rtk-3emZh)
-[a nifty snake game in 3d, also in p5!]()
+[a nifty snake game in 3d, also in p5!](https://editor.p5js.org/socalledsound/sketches/N1syHlF1W)
 
 But we're going to do it more like slither.io or snake.io, and, in a few weeks, we're actually going to set our version up as a multiplayer online game that we can all play together from whereever we happen to be, like slither.io.
 
@@ -411,7 +411,7 @@ If the closest segment is far enough away, update it's position to be the old he
 
 So now we've got this red dot near the front of our snake, which actually marks the end of our array called tail, right?  The next step is to add more segments, which we'll do in a method called player.grow().
 
-[tail](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF)
+[tail](https://editor.p5js.org/socalledsound/sketches/QQ76nHvIZ)
 
 ### 5. Growing the Tail
 
@@ -479,11 +479,136 @@ And that's pretty much it!  To make the snake grow, we just have to go into Food
 
 ```
 
-[finished code](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF)
+[snake with growing tail](https://editor.p5js.org/socalledsound/sketches/UMHDWR0cm)
 
 
+### 6. multiple types of food
 
-### 6. build your own snake
+Now, this has been a pretty long one, so congratulations for making it this far.  We're almost done.  But I just want to make one more change, which is to make another type of food.  It's going to be a different color, and it's going to make our snake grow much more than the other one.  There will be less of this type of food.  And the good news is, since we've been pretty smart about how we wrote this code, it's pretty easy to achieve all of that.  
+
+First, in our food class, let's add a type, for every food, and instead of one color, let's have two colors defined in the constructor.  And also, a new property called this.inc, which we'll set to 0.  Remember to bring the type in to the constructor, along with the position and size of the food.
+
+```
+
+        class Food {
+            constructor(x, y, size, type){
+                this.color1 = [220, 0 , 200]
+                this.color2 = '#E5B80B'
+                
+                this.pos = createVector(x, y)
+                this.size = size
+                this.eaten = false
+                // 1 or 2
+                this.type = type
+                this.inc = 0
+            }
+
+
+```
+
+Next, this new golden colored type of food is going to blink a little bit, so let's make an animate method for our food class.  Notice that the first thing I do in here is increment this.inc by a little bit every time this method is called.  Then, I check to see which type of food this is, and if it's a type 2 food, I reset the size of this food item, using the inc value and our new friend sin().  Which means that the size of this food will appear to grow and shrink, within a range.
+
+```
+
+  animate(){
+    this.inc += 0.1
+    if(this.type === 2){
+      this.size = (this.size + sin(this.inc)/4)
+    }
+  }
+
+```
+
+
+NExt, let's handle the color.  IN render, we'll add a conditional:
+
+```
+
+
+    render(){
+        if(!this.eaten){
+          if(this.type === 2){
+            fill(this.color2)
+            stroke(this.color1)
+          }else{
+            fill(this.color1)
+            noStroke()
+          }
+            
+            
+            ellipse(this.pos.x, this.pos.y, this.size)
+        }
+
+    }
+
+```
+
+And finally, we want to go into the checkCollision method, and make the player grow more when this type of food is eaten.  We just check which type of food the player has collided with.   
+
+I'm going to use a ternary, which is great in cases like this where there are two options.  This says, I want a new variable called num.  If the type of this food is 1 then set num to 3. Otherwise (the type is 2) then set num to 3.  Then, we'll pass that num into player.grow() and suddenly the gold food makes the player grow 30!   Nifty, right?  
+
+
+```
+
+    checkCollision(player){
+        // if this nugget hasn't been eaten
+        if(!this.eaten){
+          // get the distance between it and the player
+          const d = this.pos.dist(player.pos)
+          // if that distance is less than the combined radii
+            if(d < (player.r + this.size)){
+                // do some stuff
+                this.eaten = true
+                const num = this.type === 1 ? 3 : 30
+                player.grow(num)
+                score++
+            }
+        }
+    }
+
+
+```
+
+Ok, that's it for the Food class!  The entire new Food class is [here](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF), if you want to compare.
+
+Now, we just have to make some of these new foods.  IN setup, we'll add a conditional, in the place where we make our Food array.  I'm going to use a ternary again, which will make the type 2 20% of the time.  Then, we pass that type in to our Food constructor.
+
+
+```
+    foods = Array.from({length: numFoods}, () => {
+      const type = random(100) > 80 ? 2 : 1 
+      return new Food(random(foodSize, width  - foodSize), scoreboardPadding + random(foodSize, height - scoreboardPadding- foodSize) , foodSize, type)
+
+```
+
+And now, we have to call that food.animate() method, in the draw loop:
+
+```
+
+            function draw(){
+                background(200)
+                drawScore()
+                foods.forEach(food => {
+                food.checkCollision(player)
+                food.animate()
+                food.render()
+                
+                })
+                player.checkEdges()
+                player.update()
+                player.render()
+            
+
+            }
+
+```
+
+And that's it!  This new type of food provides just a little but of variety for our game.  Add more types of food if you want!  Add one that makes the player die immediately!  Or makes the player grow uncontrollably.  You can add more food in this way, with more types, or just write a new class/es.  Have fun with it!
+
+
+[multi food/ final for day 11](https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF)
+
+### 7. build your own snake
 
 
 So now you've mastered circle/circle collisions and did some other cool stuff too.  I hope it's working for you!  

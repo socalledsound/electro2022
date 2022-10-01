@@ -32,6 +32,11 @@ const DAY11 = {
             link: 'https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF',
         },
 
+        {
+            title:'snakey - with multifoods',
+            link: 'https://editor.p5js.org/socalledsound/sketches/6ReWoLBvF',
+        },
+
 
         {
             title:'circle circle collision',
@@ -66,11 +71,6 @@ const DAY11 = {
             link: 'https://editor.p5js.org/socalledsound/sketches/5uaSJy5g1',
         },
 
-        // {
-        //     title:'snakey w/ Tail and death',
-        //     link: '',
-        // },
-
     ],
     inspirationLinks: [
         {
@@ -90,13 +90,23 @@ const DAY11 = {
             linkSrc:'https://sites.google.com/bedford.k12.va.us/fms-stem/activities/engineering/rube-goldberg-machine',
         },
         {
-            linkText: 'in the modulator game',
-            linkSrc:'https://socalledsound.github.io/scaly/',
+            linkText: ' game : in the modulator',
+            linkSrc:'https://socalledsound.github.io/modulator-game/',
         },
         {
-            linkText: '',
-            linkSrc:'',
-        }
+            linkText: 'badland game that inspired the game above',
+            linkSrc: 'https://www.youtube.com/watch?v=Cs-9F3xAyqc',
+        },
+        {
+            linkText: 'music of our times, a song with collisions',
+            linkSrc:'https://github.com/socalledsound/music-of-our-times',
+        },
+        {
+            linkText: 'step sequencer that you can modify by playing breakout',
+            linkSrc:'https://github.com/socalledsound/stepping-out',
+        },
+
+        
 
         ],
         techLinks: [

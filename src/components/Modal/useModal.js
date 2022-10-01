@@ -3,7 +3,7 @@ import Modal from './Modal'
 
 export default function useModal() {
   let [modal, toggleModal] = useState(false);
-console.log(modal)
+//console.log(modal)
     const ModalContent = ({children}) => {
         return (
             <Fragment>

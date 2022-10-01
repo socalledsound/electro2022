@@ -20,7 +20,7 @@ const CritMessage = ({item}) => {
 
     const user = useSelector(selectUserById(item.user))
     const currentUser = useSelector(selectCurrentUser)
-    console.log(user, currentUser)
+    //console.log(user, currentUser)
     const elapsed = createTimeElapsed(item.timestamp)
 
     const handleEdit = () => {

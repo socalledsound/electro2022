@@ -10,10 +10,10 @@ const UnitsHeader = ({history}) => {
     return ( 
         <div className={styles.unitHeaderWrapper}>
             {
-                units.map( (unit ) => {
+                units.map( (unit, idx) => {
                     return (
                         <div 
-                            key={unit.id} 
+                            key={`${unit.id}-${idx}`} 
                             className={styles.unitHeaderItem}
                             onClick={() => history.push(`/syllabus/${unit.unit}`)}
                         >

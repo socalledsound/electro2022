@@ -13,7 +13,7 @@ const CritMessagesContainer = ({item}) => {
         dispatch(fetchCritMessagesStart(item.id))
     }, [dispatch, item.id])
 
-    console.log(critMessages)
+    //console.log(critMessages)
 
     const sortedCritMessages = critMessages.sort((a, b) => {
         const time1 = new Date(a.timestamp)

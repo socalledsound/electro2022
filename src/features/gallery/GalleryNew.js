@@ -31,16 +31,16 @@ const GalleryNew = ({history}) => {
     // console.log(gpioWorks)
     const featuredWorks = useSelector(selectFeaturedWorks)
     const currentAssignmentWorks = useSelector(selectCurrentWorks)
-    console.log(currentAssignmentWorks)
+    //console.log(currentAssignmentWorks)
     let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
-    console.log(currentAssignment)
+   // console.log(currentAssignment)
     // let currentAssignment = currentAssignmentWorks[0]
     // let currentAssignmentTitle = null
     // if(currentAssignmentWorks && currentAssignmentWorks.length){
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }
     const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
-    console.log(recentWorks)
+    //console.log(recentWorks)
     // const currentUser = useSelector(selectCurrentUser)
     // const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
 

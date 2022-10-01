@@ -12,9 +12,9 @@ const GalleryItemDetailPage = ({match, history}) => {
 
     const currentUser = useSelector(selectCurrentUser)
     const { workId }  = useParams()
-    console.log(workId)
+    //console.log(workId)
     const item = useSelector(selectItemById(workId))
-    console.log(item)
+    //console.log(item)
     return ( 
         <div className={styles.galleryDetailWrapper}>
                     {item &&
