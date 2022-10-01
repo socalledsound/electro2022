@@ -35,25 +35,67 @@ const DAY13 = {
         `do robots deserve rights?`,
     ],
     inClassDemo: [
-        {
 
+
+        { 
+            title: 'wandering boids',
+            link: 'https://editor.p5js.org/socalledsound/sketches/naiEO_W9g',
+        },
+        {
+            title: 'snakey boids',
+            link: 'https://editor.p5js.org/socalledsound/sketches/aU2h8E-Ul',
         },
 
         {
-            title: 'seek behavior (slowly to a point)',
-            link: '',
+            title: 'seek behavior (slowly to a point)', 
+            link: 'https://editor.p5js.org/socalledsound/sketches/CgIeAQP_p',
            
         },
+
+        {
+            title: 'pursue behavior',
+            link: 'https://editor.p5js.org/socalledsound/sketches/MGivGyea3',
+        },
+
         {
             title: 'wander behavior',
-            link: '',
+            link: 'https://editor.p5js.org/socalledsound/sketches/G2d-xJOJm',
            
         },
         {
-            title: 'boids: alignment, cohesion, seperation',
-            link: '',
-            
+            title: 'pursue + wander behavior',
+            link: 'https://editor.p5js.org/socalledsound/sketches/8LzleTCkA',
         },
+        {
+            title: 'wander brush',
+            link: ' https://editor.p5js.org/socalledsound/sketches/VMm2cEoq0',
+        },
+
+        {
+            title: 'wander brush 3D',
+            link: 'https://editor.p5js.org/socalledsound/sketches/AfkQ8ySO1',
+        },
+       
+
+        {
+            title: 'snakey -- adding autonomous player 1',
+            link: 'https://editor.p5js.org/socalledsound/sketches/eSIXuN3_g',
+           
+        },
+
+        {
+            title: 'snakey -- collisions with other player',
+            link: 'https://editor.p5js.org/socalledsound/sketches/CpZEjIzNs',
+           
+        },
+
+        {
+            title: 'snakey -- autonomous player with wander + seek',
+            link: 'https://editor.p5js.org/socalledsound/sketches/FFRrW8a5N',
+           
+        },
+
+
             
     ],
     inspirationLinks: [
