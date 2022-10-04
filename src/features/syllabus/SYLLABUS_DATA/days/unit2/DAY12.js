@@ -6,7 +6,11 @@ const DAY12 = {
     title: 'landscapes',
     assignment: 'landscape',
     description: `
-    So far, we've focused our attention on the player avatar, and the mechanics of moving around.  Maybe now it's time to give our player somewhere to go.
+    So far, we've focused our attention on the player avatar, and the mechanics of moving around.  
+    Maybe now it's time to give our player somewhere to go.
+    Today we're going to give our little snake a way to go off the edges of it's world...and learn how
+    we can follow it off the edge.
+    We'll learn about the translation matrix: translating, rotating, scaling the view of a p5 sketch.
     
     `
     ,
@@ -35,43 +39,47 @@ const DAY12 = {
             link: 'https://editor.p5js.org/socalledsound/sketches/evy_GaDiQ'
         },
         {
-            title: '',
-            link: ''
+            linkText: 'perlin noise mountains',
+            linkSrc: 'https://github.com/socalledsound/perlin-mountains-2',
         },
         {
-            title: '',
-            link: ''
+            linkText: 'a (very) simple 3d driving game in p5',
+            linkSrc: 'https://github.com/socalledsound/simple-3d-driving-game',
         },
-        {
-            title: '',
-            link: ''
-        },
+        // {
+        //     title: '',
+        //     link: ''
+        // },
+        // {
+        //     title: '',
+        //     link: ''
+        // },
         {
             title: 'maze game',
-            link: ''
+            link: 'https://editor.p5js.org/socalledsound/sketches/S0saQ1QzL'
         },
 
 
 
 
-        {
-            title: 'simple block based room game',
-            link: ''
-        },
-        {
-            title: 'tiled game with spritesheet',
-            link: ''
-        },
+        // {
+        //     title: 'simple block based room game',
+        //     link: ''
+        // },
+        // {
+        //     title: 'tiled game with spritesheet',
+        //     link: ''
+        // },
 
     
         {
             title: 'scrolling landscape game',
             link: 'https://editor.p5js.org/socalledsound/sketches/-FCpkdk0E'
         },
-        {
-            title: 'mario clouds with castle at end',
-            link: ''
-        },
+        // {
+        //     title: 'mario clouds with castle at end',
+        //     link: ''
+        // },
        
     ],
     inspirationLinks: [   
@@ -85,25 +93,51 @@ const DAY12 = {
             linkSrc: 'https://js13kgames.com/games/404-laundry-not-found/index.html',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'astray',
+            linkSrc: 'https://games.wwwtyro.net/astray-2/index.html',
+        },
+   
+        {
+            title: 'geoguessr',
+            link: 'https://www.geoguessr.com/'
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"Bill Viola - the night journey",
+            linkSrc:"https://www.youtube.com/watch?v=zL1_twK2NDc"
+        },
+
+        {
+            linkText:"Corey Arcangel - Super mario Clouds",
+            linkSrc:"http://www.coryarcangel.com/things-i-made/2002-001-super-mario-clouds"
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"San Andreas Animal Cam",
+            linkSrc:"http://sanandreasanimalcams.com/"
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"Burn Out",
+            linkSrc:"https://vimeo.com/53038609"
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText:"city of drones",
+            linkSrc:"http://cityofdrones.io/"
         },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
+        // {
+        //     linkText: '',
+        //     linkSrc: '',
+        // },
         {
             linkText: 'flow field',
             linkSrc: 'https://editor.p5js.org/enickles/sketches/JBjMz8Ph2',
@@ -111,30 +145,26 @@ const DAY12 = {
        
         ],
         techLinks: [
+            
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'maze generator in p5 with daniel shiffman',
+                linkSrc: 'https://www.youtube.com/watch?v=HyK_Q5rrcr4',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'pausing maze generator (use arrow key to step through)',
+                linkSrc: 'https://socalledsound.github.io/maze-generator-pausing/',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'perlin noise 3d landscape with daniel shiffman',
+                linkSrc: 'https://www.youtube.com/watch?v=IKB1hWWedMk',
             },
             {
-                linkText: '',
-                linkSrc: '',
+                linkText: 'my p5 version of that perlin noise landscape',
+                linkSrc: 'https://editor.p5js.org/socalledsound/sketches/daLyawjn-',
             },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
-            {
-                linkText: '',
-                linkSrc: '',
-            },
+
+
+
 
    
             

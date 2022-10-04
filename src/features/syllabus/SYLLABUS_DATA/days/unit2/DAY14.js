@@ -61,19 +61,24 @@ const DAY14 = {
     ],
     inspirationLinks: [
         //https://www.rudyrucker.com/oldhomepage/msprojects.htm
+        {
+            linkText: 'hvbrd game',
+            linkSrc: 'https://github.com/charliegerard/hvbrd-sockets',
+        },
 
         {
-            linkText: '',
+            linkText: 'a multiplayer simon game over sockets - (sockets + p5)',
+            linkSrc: 'https://mmm-simon-6000.herokuapp.com/',
+        },
+        {
+            linkText: 'sounding among us game - (sockets + p5)',
             linkSrc: '',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'multiplayer online tetris (from a tutorial)',
+            linkSrc: 'https://tetris-clone-6000.herokuapp.com/#a5747s',
         },
-        {
-            linkText: '',
-            linkSrc: '',
-        },
+
 
         {
             linkText: '',

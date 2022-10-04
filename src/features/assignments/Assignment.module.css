@@ -36,6 +36,7 @@
 }
 .markdown img {
   max-width: 60vw;
+  max-height: 50vh
 }
 
 .submitButton {

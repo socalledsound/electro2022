@@ -122,13 +122,10 @@ const DAY10 = {
                 linkText: 'online book about collision detection',
                 linkSrc: 'https://www.jeffreythompson.org/collision-detection/table_of_contents.php',
             },
-
-
-
-            // {
-            //     linkText:'keycode is deprecated, generally use key instead',
-            //     linkSrc: 'https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice',
-            // },
+            {
+                linkText:`procedural shapes, from 'programming design systems'`,
+                linkSrc: 'https://programmingdesignsystems.com/shape/procedural-shapes/index.html#procedural-shapes-qYPzCLg',
+            },
             {
                 linkText:'remember window.addEventListener() ? -- you can also use it for keyboard input!',
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/NBosLc6cQ',

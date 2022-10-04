@@ -14,7 +14,14 @@ const DAY11 = {
         and how to add some collisions to our evolving project.
     `,
     discussionQuestions: [
-        ``
+        `
+        You should be thinking about how you want to make your character or
+        game experience evolve -- and how various types of collisions or
+        clicks can help your game player accomplish those evolutions.
+        Designing user experiences is really just about how you help
+        people collide with your software!
+        
+        `
     ],
     inClassDemo: [
 
@@ -121,7 +128,7 @@ const DAY11 = {
 
             {
                 linkText:"snake game tutorial",
-                linkSrc:"https://thecodingtrain.com/CodingChallenges/115-snake-game-redux.html"
+                linkSrc:"https://www.youtube.com/watch?v=OMoVcohRgZA"
             },
             {
                 linkText:"a simple snake game in p5",

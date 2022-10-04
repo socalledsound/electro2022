@@ -210,7 +210,9 @@ But what if we could slide the actual piece of paper around?????!!???
 
 That's basically what we do with the transformation matrix.  We can scale, rotate and move the origin coordinates, so that the numbers that we give are offset by the amount that we've moved the piece of paper.  
 
-That's how I make the frame follow the ball in the [bouncing balls sketch](https://editor.p5js.org/socalledsound/sketches/5uaSJy5g1) up above.  And it's also how I make the entire game slide constantly to the left in this [modulator game]() that I made.
+That's how I make the frame follow the ball in the [bouncing balls sketch](https://editor.p5js.org/socalledsound/sketches/5uaSJy5g1) up above.  And it's also how I make the entire game slide constantly to the left in this [modulator game](https://socalledsound.github.io/modulator-game/) that I made.
+
+![modulator image](https://res.cloudinary.com/chris-kubick/image/upload/v1664478941/Screen_Shot_2022-09-29_at_12.14.55_PM_rllqph.png)
 
 Here's a super simple [example](https://editor.p5js.org/socalledsound/sketches/FSBy1OGff).
 
@@ -234,14 +236,21 @@ I draw a circle at a give position, but you can notice that even though that pos
 
 ```
 
+
+
+
+
+
 Here's another [slightly more complicated example](https://editor.p5js.org/socalledsound/sketches/-FCpkdk0E) that's more like a game, but it's the same idea, scroll the landscape to the left by translating the x coordinates in a negative direction.  (If you click the mouse, the little ball moves forward).
+
+![cloudy game](https://res.cloudinary.com/chris-kubick/image/upload/v1664661739/Screen_Shot_2022-10-01_at_3.02.01_PM_wccktc.png)
 
 
 Now, a few important things.
 
 First of all, the transformations in any given draw loop are cumulative.  Meaning, if you call translate, and then call it again, your second translation will begin where the first one ended.  
 
-UNLESS -- you use push() before your transformatino and pop() after it.
+UNLESS -- you use push() before your transformation and pop() after it.
 
 ### 5 push and pop
  
