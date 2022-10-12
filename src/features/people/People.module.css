@@ -33,8 +33,8 @@
   }
 
   .worksButton:hover{
-    background-color: rgb(188, 210, 186);
-    border: 1px solid darkgreen;
+    background-color: rgb(181, 17, 183);
+    border: 1px solid rgb(43, 17, 43);
     padding: 0.7rem;
     border-radius: 0.7rem;
     margin-top: 0.7rem;

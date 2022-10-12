@@ -5,11 +5,11 @@ const PersonDetail = ({person, history}) => {
     return ( 
         <div className={styles.personDetailContainer}>
             name: {person.displayName}
-            {/* <div className={styles.worksButton}
-            onClick={() => history.push(`/gallery/${person.id}`)}
+            <div className={styles.worksButton}
+            onClick={() => history.push(`/people/${person.id}`)}
             >
                 what i do
-            </div> */}
+            </div>
             
         </div>
      );

@@ -198,6 +198,14 @@ export   const selectUncommentedWorks = currentUser => state => {
 }
 
 
+export const selectWorksByUserId = id => state => {
+    console.log(id)
+    console.log(selectWorks(state))
+    const userWorks = selectWorks(state).filter(work => work.user.id === id)
+    return userWorks
+}
+
+
 
 export const {  addSubmissionToWorks,
     startFetchWorks, fetchWorksSuccess, fetchWorksFailure,

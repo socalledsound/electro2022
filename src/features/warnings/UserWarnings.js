@@ -24,8 +24,10 @@ const UserWarnings = ({currentUser}) => {
             {
                 assignmentWarnings && 
                 <div className={styles.assignmentWarningsWrapper}>
-                    ATTENTION!: the following assignments require your immediate attention: 
-                    
+                    You are missing the following mandatory assignments.
+                    Your grade for the course is (at best) currently a C.
+                    BUt good news! Complete the following assignments and it'll bounce right up: 
+                    REACH OUT TO ME IF YOU NEED HELP
                         <div className={styles.assignmentWarningsFlexWrapper}>
                     {
                     assignmentWarnings.map(item => {

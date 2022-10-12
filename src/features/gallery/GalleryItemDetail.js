@@ -11,6 +11,8 @@ import { faTrash as trash} from '@fortawesome/free-solid-svg-icons'
 import { selectCurrentUser } from '../user/userSlice'
 import styles from './GalleryItemDetail.module.css'
 import EditWork from './EditWork/EditWork'
+
+
 const GalleryItemDetail = ({ item, history }) => {
    
     const dispatch = useDispatch()

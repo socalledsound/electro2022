@@ -92,6 +92,10 @@ export function* onFetchWorksStart(){
     yield takeLatest(startFetchWorks.type, fetchWorks)
 }
 
+export function* onFetchWorksByUserIdStart(){
+
+}
+
 export function* onUpdateGalleryItemStart(){
     yield takeLatest(startUpdateGalleryItem.type, updateGalleryItem)
 }

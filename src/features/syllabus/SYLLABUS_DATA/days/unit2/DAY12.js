@@ -21,7 +21,14 @@ const DAY12 = {
     ],
     inClassDemo: [
 
-
+        {
+            title: 'transformations',
+            link: 'https://editor.p5js.org/socalledsound/sketches/UGQE7kkJm'
+        },
+        {
+            title: 'scrolling landscape game',
+            link: 'https://editor.p5js.org/socalledsound/sketches/-FCpkdk0E'
+        },
         {
             title: 'snakey with game class',
             link: 'https://editor.p5js.org/socalledsound/sketches/oMnOAV7Zd'
@@ -38,18 +45,8 @@ const DAY12 = {
             title: 'snakey with dying',
             link: 'https://editor.p5js.org/socalledsound/sketches/evy_GaDiQ'
         },
-        {
-            linkText: 'perlin noise mountains',
-            linkSrc: 'https://github.com/socalledsound/perlin-mountains-2',
-        },
-        {
-            linkText: 'a (very) simple 3d driving game in p5',
-            linkSrc: 'https://github.com/socalledsound/simple-3d-driving-game',
-        },
-        // {
-        //     title: '',
-        //     link: ''
-        // },
+
+
         // {
         //     title: '',
         //     link: ''
@@ -58,24 +55,17 @@ const DAY12 = {
             title: 'maze game',
             link: 'https://editor.p5js.org/socalledsound/sketches/S0saQ1QzL'
         },
-
-
-
-
-        // {
-        //     title: 'simple block based room game',
-        //     link: ''
-        // },
+        {
+            title: 'two types of food',
+            link: 'https://editor.p5js.org/socalledsound/sketches/v4sO9NgKy'
+        },
         // {
         //     title: 'tiled game with spritesheet',
         //     link: ''
         // },
 
     
-        {
-            title: 'scrolling landscape game',
-            link: 'https://editor.p5js.org/socalledsound/sketches/-FCpkdk0E'
-        },
+
         // {
         //     title: 'mario clouds with castle at end',
         //     link: ''
@@ -98,8 +88,8 @@ const DAY12 = {
         },
    
         {
-            title: 'geoguessr',
-            link: 'https://www.geoguessr.com/'
+            linkText: 'geoguessr',
+            linkSrc: 'https://www.geoguessr.com/'
         },
         {
             linkText:"Bill Viola - the night journey",
@@ -163,9 +153,19 @@ const DAY12 = {
                 linkSrc: 'https://editor.p5js.org/socalledsound/sketches/daLyawjn-',
             },
 
+            {
+                linkText: 'perlin noise mountains',
+                linkSrc: 'https://github.com/socalledsound/perlin-mountains-2',
+            },
+            {
+                linkText: 'a (very) simple 3d driving game in p5',
+                linkSrc: 'https://github.com/socalledsound/simple-3d-driving-game',
+            },
 
-
-
+            {
+                linkText: ' game : in the modulator',
+                linkSrc:'https://socalledsound.github.io/modulator-game/',
+            },
    
             
             // {
