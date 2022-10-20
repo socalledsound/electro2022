@@ -3,7 +3,7 @@ const DAY19 = {
     async: false,
     unit: 'unit4',
     date: 'November 1, 2022',
-    title: 'sound is motion',
+    title: 'oscillation',
     assignment: 'pendulum',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
     description: `

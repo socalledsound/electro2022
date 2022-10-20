@@ -3,7 +3,7 @@ const DAY18 = {
     async: false,
     unit: 'unit3',
     date: 'October 27, 2022',
-    title: 'circuit playground 2',
+    title: 'circuit playground',
     assignment: 'proposal',
     illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1634153049/Steve-Reich-pendulum-music_ngz850.gif',
     description: `
@@ -35,41 +35,79 @@ const DAY18 = {
         },
     ],
     inspirationLinks: [
+                
         {
-            linkText: `Francis Alys: 'the leak'`,
-            linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
+            linkText: 'CPE guitar hero controller',
+            linkSrc: 'https://www.youtube.com/watch?v=K9ckzHUt7Es',
         },
         {
-            title: 'steve reich, music as a gradual process',
-            link : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
-        },        {
-            linkText:"Steve Reich, Music For 18 Musicians",
-            linkSrc:"https://www.youtube.com/watch?v=ZXJWO2FQ16c"
+            linkText: 'lucid dreaming mask with a CPE',
+            linkSrc: 'https://hackaday.com/tag/circuit-playground-express/',
         },
+        {
+            linkText: 'sound reactive lights with the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=cNxQ9dT0kqY',
+        },
+        {
+            linkText: 'make code: looping lights',
+            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
+        },
+        {
+            linkText: 'make code : random looping music for the CPE',
+            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
+        },
+        {
+            linkText: 'custom controllers for make code arcade',
+            linkSrc: 'https://learn.adafruit.com/custom-controllers-for-makecode-arcade?view=all'
+        },
+                {
+            linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
+            linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
+        },
+        {
+            linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
+            linkSrc: 'https://makecode.adafruit.com/#editor',
+        },
+        {
+            linkText: 'loudness necklace on the CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=g5894PVYOF4',
+        },  
 
-        {
-            linkText: 'steve reich : drumming',
-            linkSrc: 'https://www.youtube.com/watch?v=uDhwFTw4VnI',
-        },
-        {
-            linkText: 'steve reich - come out',
-            linkSrc: 'https://www.youtube.com/watch?v=g0WVh1D0N50',
-        },
-        {
-            linkText:"Pendulum Music",
-            linkSrc:"https://www.youtube.com/watch?v=fU6qDeJPT-w"
-        },
+        // {
+        //     linkText: `Francis Alys: 'the leak'`,
+        //     linkSrc: 'https://www.youtube.com/watch?v=NQy6Ih1x4jc',
+        // },
+        // {
+        //     title: 'steve reich, music as a gradual process',
+        //     link : 'https://drive.google.com/file/d/1clbQPUwUO2FBwk4dfUnQH0XXuS-b0ORr/view?usp=sharing',
+        // },        {
+        //     linkText:"Steve Reich, Music For 18 Musicians",
+        //     linkSrc:"https://www.youtube.com/watch?v=ZXJWO2FQ16c"
+        // },
 
-        {
-            linkText: 'the pendulum seqeuncer',
-            linkSrc: 'https://www.musiconerd.com/the-pendulum-sequencer/',
-        },
+        // {
+        //     linkText: 'steve reich : drumming',
+        //     linkSrc: 'https://www.youtube.com/watch?v=uDhwFTw4VnI',
+        // },
+        // {
+        //     linkText: 'steve reich - come out',
+        //     linkSrc: 'https://www.youtube.com/watch?v=g0WVh1D0N50',
+        // },
+        // {
+        //     linkText:"Pendulum Music",
+        //     linkSrc:"https://www.youtube.com/watch?v=fU6qDeJPT-w"
+        // },
+
+        // {
+        //     linkText: 'the pendulum seqeuncer',
+        //     linkSrc: 'https://www.musiconerd.com/the-pendulum-sequencer/',
+        // },
 
 
-        {
-            linkText: 'one of my favorite process oriented pieces of music',
-            linkSrc: 'https://www.youtube.com/watch?v=mjnAE5go9dI',
-        },
+        // {
+        //     linkText: 'one of my favorite process oriented pieces of music',
+        //     linkSrc: 'https://www.youtube.com/watch?v=mjnAE5go9dI',
+        // },
 
         {
             linkText: '',
@@ -79,22 +117,15 @@ const DAY18 = {
 
     ],
     techLinks: [
-        {
-            linkText: 'make code : array and array methods',
-            linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
-        },              
-        {
-            linkText: 'make code: looping lights',
-            linkSrc: 'https://makecode.com/_EdjRwb7aeat0',
-        },
-        {
-            linkText: 'inspired by effie; this might be helpful for project 1!',
-            linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
-        }, 
-        {
-            linkText: 'make code : random looping music for the CPE',
-            linkSrc: 'https://makecode.com/_WXvEt45uM1tU',
-        },
+        // {
+        //     linkText: 'make code : array and array methods',
+        //     linkSrc: 'https://makecode.com/_W8eFLe5tV6bV',
+        // },              
+
+        // {
+        //     linkText: 'inspired by effie; this might be helpful for project 1!',
+        //     linkSrc: 'https://makecode.com/_f6m4X5hh1A15',
+        // }, 
         {
             linkText: 'turn your CPE into an HID device',
             linkSrc: 'https://www.youtube.com/watch?v=w8uepWkAZZs',
@@ -119,6 +150,23 @@ const DAY18 = {
         {
             linkText: 'infrared control with CPE',
             linkSrc: 'https://www.youtube.com/watch?v=Gxiwltvkx5E',
+        },  {
+            linkText: 'circuit python made easy on the CPE',
+            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
+        },        {
+            linkText: 'circuit python sound box on the CPE',
+            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
+        },        {
+            linkText: 'sensors on the CPE',
+            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
+        },
+        {
+            linkText: 'using the accelerometer on adafruit CPE',
+            linkSrc: 'https://www.youtube.com/watch?v=IHdzu_rq46Y',
+        },
+        {
+            linkText : 'CPE usb midi controller and synth',
+            linkSrc : 'https://learn.adafruit.com/cpx-midi-controller',
         },
 
     ],

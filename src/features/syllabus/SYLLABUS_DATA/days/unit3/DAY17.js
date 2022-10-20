@@ -3,11 +3,16 @@ const DAY17 = {
     async: false,
     unit: 'unit4',
     date: 'October 25, 2022',
-    title: 'circuit playground',
-    assignment : 'final project proposal',
-    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1598399217/side-effects/side-effect_jfkc1s.jpg',
+    title: 'electrical circuits 101',
+    assignment : 'none',
+    illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1666217519/images_vmmtyb.jpg',
     description: `
-        need description here
+        Light, sound, sensors, motors -- and computers -- all of these tools that we can use to add an immersive quality 
+        to our artworks are, fundamentally, electrical in nature.  Before computers were digital, they were analog; first, 
+        as looms that created fabric patterns and later as electrical circuits that could be wired up to create logical
+        structures that look a lot like the code that we've been writing.  Today, we'll look at the basic tools that we 
+        use to wire up circuits of various kinds, and learn the basics of how electricity works.
+    
     `,
     videos: [
                // {
@@ -19,8 +24,65 @@ const DAY17 = {
         //     linkSrc: 'https://youtu.be/GyTN5BzdS-0',
         // },
     ],
-    inspirationLinks: [        
-              {
+    inspirationLinks: [   
+        {
+            linkText: `Wafa Bilal: domestic tension`,
+            linkSrc: 'https://wafaabilal.com/domestic-tension/',
+        },
+        {
+            linkText: 'Jenny Holzer : nowness',
+            linkSrc: 'https://www.nowness.com/story/jenny-holzer-light-stream',
+        },
+
+        {
+            linkText: 'jim campbell',
+            linkSrc: 'https://www.jimcampbell.tv/',
+        },
+        {
+            linkText: `Jim Campbell's LED images swim through space`,
+            linkSrc: 'https://www.youtube.com/watch?v=4x48aCX1uK8',
+        },
+        {
+            linkText: 'Leo Villareal : bay lights',
+            linkSrc: 'http://villareal.net/the-bay-lights-2013-the-bay-bridge-sf-ca',
+        },
+        {
+            linkText: 'anne walsh and chris kubick: flesh ++ blood',
+            linkSrc: 'http://doublearchive.com/projects/flesh_blood.php',
+        },
+        {
+            linkText: 'Christina Kubisch, Abgehangt',
+            linkSrc: 'http://www.christinakubisch.de/en/works/installations/5',
+        },
+        {
+            linkText: 'Gary Hill, soundings',
+            linkSrc: 'https://vimeo.com/111166472',
+        },
+        {
+            linkText: 'works by steve roden',
+            linkSrc : 'http://www.inbetweennoise.com/works/',
+        },
+        {
+            linkText: 'Meeth the college student who makes his own chips',
+            linkSrc: 'https://thenewstack.io/meet-the-college-student-who-makes-his-own-chips/',
+        },
+        {
+            linkText: `Wafa Bilal: domestic tension`,
+            linkSrc: 'https://wafaabilal.com/domestic-tension/',
+        },
+                     {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
             linkText: ``,
             linkSrc: '',
         },
@@ -28,55 +90,72 @@ const DAY17 = {
     ],
     techLinks: [
         {
-            title: 'getting started with circuit python and the CPE'
+            linkText: 'multimeters, measuring resistance',
+            linkSrc: 'https://learn.adafruit.com/multimeters/resistance',
+        },
+        {
+            linkText: 'how speakers make sound',
+            linkSrc: 'https://animagraffs.com/loudspeaker/',
+        },
+        {
+            linkText: 'how to make a home-made speaker',
+            linkSrc: 'http://www.josepino.com/?homemade-hifi-speaker',
+        },
+        {
+            linkText:"how to make a contact microphone",
+            linkSrc:"http://www.instructables.com/id/Make-a-Contact-Microphone/"
+        },     
+        {
+            linkText: `how to make a square wave oscillator`,
+            linkSrc: 'https://www.instructables.com/Build-a-Square-Wave-Oscillator-Part-1-of-DIY-Mod/',
+        },
+        {
+            linkText: `intro to electrical circuits at khan academy`,
+            linkSrc: 'khanacademy.org/science/physics/circuits-topic/circuits-resistance/v/circuits-part-1',
+        },
+        {
+            linkText: 'parts express website',
+            linkSrc: 'https://www.parts-express.com/',
+        },
+        {
+            linkText: 'meditations on speaker impedance',
+            linkSrc: 'http://www.prestonelectronics.com/audio/Impedance.htm'
+        },
+        {
+            linkText: 'calculating the resistor value for an led',
+            linkSrc: 'https://www.etechnog.com/2019/01/resistor-value-calculation-for-led.html',
+        },
+        {
+            linkText: 'What Are Semiconductors? And How Do They Work?',
+          linkSrc: 'https://www.scienceabc.com/innovation/what-are-semiconductors-and-how-do-they-work.html'
+      },    
+       {
+        linkText: 'How transistors work, a basic explanation',
+        linkSrc: 'https://www.youtube.com/watch?v=0CvdruTMH1c&t=51s',
+    },  
+        {
+            linkText: ``,
+            linkSrc: '',
+        },
+                     {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
+            linkText: ``,
+            linkSrc: '',
+        },
+        {
+            linkText: ``,
+            linkSrc: '',
         },
 
-        {
-            linkText: 'circuit python made easy on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-made-easy-on-circuit-playground-express/4d50de0ed2b6427b92e50e1a60165d1e',
-        },        {
-            linkText: 'circuit python sound box on the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/projects/circuitpython-sound-box/203bfe5c039647bb934d4f8f43d8daed',
-        },        {
-            linkText: 'sensors on the CPE',
-            linkSrc: 'https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/sound',
-        },
-        {
-            linkText: 'CPE guitar hero controller',
-            linkSrc: 'https://www.youtube.com/watch?v=K9ckzHUt7Es',
-        },
-        {
-            linkText: 'lucid dreaming mask with a CPE',
-            linkSrc: 'https://hackaday.com/tag/circuit-playground-express/',
-        },
-        {
-            linkText: 'sound reactive lights with the CPE',
-            linkSrc: 'https://www.youtube.com/watch?v=cNxQ9dT0kqY',
-        },
-        {
-            linkText: 'using the accelerometer on adafruit CPE',
-            linkSrc: 'https://www.youtube.com/watch?v=IHdzu_rq46Y',
-        },
-        {
-            linkText : 'CPE usb midi controller and synth',
-            linkSrc : 'https://learn.adafruit.com/cpx-midi-controller',
-        },
-        {
-            linkText: 'actually not a circuit playground express, but it would be nice to do this with one',
-            linkSrc: 'https://www.youtube.com/watch?v=hqYMLTT3pms',
-        },
-        {
-            linkText: 'custom controllers for make code arcade',
-            linkSrc: 'https://learn.adafruit.com/custom-controllers-for-makecode-arcade?view=all'
-        },
-                {
-            linkText:'tutorial : Simon Game Clone with Circuit Playground Express and CircuitPython',
-            linkSrc: 'https://learn.adafruit.com/simon-game-clone-with-circuitplayground-express-and-circuitpython',
-        },
-        {
-            linkText:'javascript code for Simon Game Clone with Circuit Playground Express ',
-            linkSrc: 'https://makecode.adafruit.com/#editor',
-        },
+      
+
     ],
 
 }
