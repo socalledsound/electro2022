@@ -1,14 +1,14 @@
 import styles from './ProjectLinks.module.css'
 
 const ProjectLinks = ({project}) => {
-    const { studentWorksLinks, javascriptLinks, inspirationLinks } = project
+    const { studentWorksLinks, inspirationLinks } = project
     return (
         <>
         <div 
             className={styles.linksListContainer} 
             style={{border: '3px solid rgba(176, 231, 105, 1.0'}}
         >
-        <h3>some neat projects from last year:</h3>
+        <h3>some neat projects from previous years:</h3>
         <ul  className={styles.linksList}>
            
         {
@@ -24,11 +24,11 @@ const ProjectLinks = ({project}) => {
         </ul>
         </div>
 
-        <div 
+        {/* <div 
             className={styles.linksListContainer} 
             style={{border: '3px solid rgba(106, 101, 205, 1.0'}}
         >
-            <h3>some games in javascript:</h3>
+            <h3>some art to inspire you:</h3>
         <ul  className={styles.linksList}>
            
         {
@@ -42,7 +42,7 @@ const ProjectLinks = ({project}) => {
             })
         }
         </ul>
-        </div>
+        </div> */}
 
 
         <div 

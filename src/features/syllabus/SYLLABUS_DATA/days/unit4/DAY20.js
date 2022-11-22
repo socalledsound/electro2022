@@ -12,12 +12,12 @@ const DAY20 = {
         amplitude and frequency analysis.  When we're done,you should be able to take your favorite track by the Beib and
         make it make pretty pictures.  
     `,
-    videos: [
-        {
-            linkText: `NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....`,
-            linkSrc: '',
-        },
-    ],
+    // videos: [
+    //     {
+    //         linkText: `NO VIDEOS TODAY, click the assignment button for a text tutorial. please let me know if you prefer text or videos....`,
+    //         linkSrc: '',
+    //     },
+    // ],
     inspirationLinks: [        
         {
         linkText:"I am Sitting in A Room",
@@ -28,19 +28,6 @@ const DAY20 = {
         linkSrc:"https://www.youtube.com/watch?v=v9XJWBZBzq4"
     },
 
-        {
-            linkText:"toshimaru nakamaru, no input mixing board",
-            linkSrc:"https://www.youtube.com/watch?v=qTi0hom6r44"
-        },
-        {
-            linkText:"toshimaru nakamura on his approach to sound",
-            linkSrc:"https://www.youtube.com/watch?v=dqfGbtqDVDk"
-        },
-
-        {
-            linkText:"feeback loops and interaction design",
-            linkSrc:"https://www.smashingmagazine.com/2013/02/designing-great-feedback-loops/"
-        },
         {
             linkText:"robert morris, box with the sound of tis own making",
             linkSrc:"https://www.wikiart.org/en/robert-morris/box-with-the-sound-of-its-own-making-1961"

@@ -1,0 +1,5 @@
+clm tracker:
+https://github.com/auduno/clmtrackr
+
+CLM paper:
+https://781d5d26-a-62cb3a1a-s-sites.googlegroups.com/site/xgyanhome/home/projects/clm-implementation/ConstrainedLocalModel-tutorial%2Cv0.7.pdf?attachauth=ANoY7coC8Mh4cwaTROPsq0CxQUvLPjn8ByJkkVmRIqxxIw2iincttYJVBgd0UtyGtihWTU5-YMy08pYGs3_PmDtEZhrF-H4AXppZe55orCoqFaeSEO72-xSkUJwF2ve6hWxRiNE7pKutWN5x_oEg2sTgbSJ5WPWaotc01XaC1hno1khmRCZekg4GdWQmvN1i_JTquX0bOYSVlFA9XuTYC9hGh9nxRBp7jftKfQtLxd6qu9TBIQpsuXE1F1-V51PgKznPPVPhGmNkI0jXDjfY-jX1GNS-Ky4g2H2ncHRZMtl3LAL2hv5o71U%3D&attredirects=0

@@ -108,9 +108,18 @@ const DAY21 = {
 
     ],
     techLinks: [
+
+        {
+            linkText: 'neopixel strip -- make code',
+            linkSrc: 'https://makecode.adafruit.com/#editor',
+        },
         {
             linkText: 'neopixel strip',
             linkSrc: 'https://www.youtube.com/watch?v=0v7HI9W6pks',
+        },
+        {
+            linkText: 'Adafruit NeoPixel LED Strip w/ Alligator Clips',
+            linkSrc: 'https://www.adafruit.com/product/3811',
         },
         {
             linkText: 'adafruit light sensor',
@@ -134,21 +143,15 @@ const DAY21 = {
             linkSrc: 'https://makecode.com/_1PM81L8V7LPR',
         },
         {
-            linkText: 'neopixels with make code',
+            linkText: 'neopixels - overview',
             linkSrc: 'https://learn.adafruit.com/neopixels-with-makecode/overview',
         },
-        {
-            linkText: 'how to drive neopixels with the CPE',
-            linkSrc: 'https://www.digikey.com/en/maker/blogs/2018/how-to-drive-neopixels-using-circuit-playground-express',
-        },
+
         {
             linkText: 'circuit python neopixel',
             linkSrc: 'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-neopixel',
         },
-        {
-            linkText: 'Adafruit NeoPixel LED Strip w/ Alligator Clips',
-            linkSrc: 'https://www.adafruit.com/product/3811',
-        },
+
         {
             linkText: 'Pixel Mapping with cicuit python',
             linkSrc: 'https://learn.adafruit.com/circuitpython-led-animations/pixel-mapping',
@@ -184,7 +187,41 @@ const DAY21 = {
         {
             linkText: 'a few examples in circuit python',
             linkSrc: 'https://github.com/socalledsound/circuit-python-examples',
-        }
+        },
+
+        {
+            linkText: 'basic pixel array',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/lWZR5BN-o',
+        },
+
+        {
+            linkText: 'pixel sorting is a neat thing you can do with the pixel array',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yapFC24FG',
+        },
+        {
+            linkText: 'pixelate video example',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MHpS_is5i',
+        },
+        {
+            linkText: 'video particles',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/f3mHA8cO2',
+        },
+        {
+            linkText: 'yodel pixels',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
+        },
+        {
+            linkText: `pixel manipulation with shaders`,
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
+        },
+        {
+            linkText: `another shader-based camera manipulation`,
+            linkSrc: `https://editor.p5js.org/socalledsound/sketches/kVWQKkuNt`
+        },
+        {
+            linkText: 'a nice little p5 code repo for glitching images',
+            linkSrc: 'https://github.com/phillipdavidstearns/aYearInCode/tree/master/p5/projects/imageGlitch',
+        },
 
     ],
 }

@@ -19,9 +19,11 @@ import DAY16 from './days/unit2/DAY16'
 //unit 3 control
 import DAY17 from './days/unit3/DAY17'
 import DAY18 from './days/unit3/DAY18'
+import DAY19 from './days/unit3/DAY19'
+import DAY20 from './days/unit3/DAY20'
 //unit 4 visualization
-import DAY19 from './days/unit4/DAY19'
-import DAY20 from './days/unit4/DAY20'
+// import DAY19 from './days/unit4/DAY19'
+// import DAY20 from './days/unit4/DAY20'
 // unit 5 seeing
 import DAY21 from './days/unit5/DAY21'
 import DAY22 from './days/unit5/DAY22'
@@ -122,26 +124,27 @@ export const UNIT3 = {
     illustrationURL: UNIT2LOGO,
     // illustrationURL: 'https://res.cloudinary.com/chris-kubick/image/upload/v1597869667/side-effects/Untitled_xko40r.png',
     overview: `
-        In this unit we are going to take some of the things that we learned in unit 2 and apply them to the realm of user input.
-       Where before we were able to take in some input from a button, and output it to an led to tell us what the value of that input was;
-       now we will take in streams of data and similarly output streams of data.  We've moved from singular inputs and outputs and into the
-       realm of SYSTEMS.  I know it probably doesn't sound like that much fun, but it is!   
+        Everything that we've learned about in code has an analog origin story.  Before computers were little boxes we carried
+        around in our pockets, they were looms that produced fabric, and then electrical circuits.  Computers, as you hopefully
+        remember, are basically just big collections of switches, wired up to be useful in interesting ways.  IN this unit, we're going
+        to start to explore some of the ways that we can wire up sensors and switches in the physical world to control our code creations.
+           
     `,
     project: FINAL_PROJECT,
-    days: [DAY17, DAY18]
+    days: [DAY17, DAY18, DAY19, DAY20]
 }
+
+// export const UNIT4 = {
+//     id: 104,
+//     title: 'unit 4 : visualizing',
+//     unit: 'unit4',
+//     illustrationURL: UNIT2LOGO,
+//     overview: 'data visualization, by way of sound',
+//     project: FINAL_PROJECT,
+//     days: [DAY19, DAY20]   
+// }
 
 export const UNIT4 = {
-    id: 104,
-    title: 'unit 4 : visualizing',
-    unit: 'unit4',
-    illustrationURL: UNIT2LOGO,
-    overview: 'data visualization, by way of sound',
-    project: FINAL_PROJECT,
-    days: [DAY19, DAY20]   
-}
-
-export const UNIT5 = {
     id: 105,
     title: 'unit 5 : pixels and neopixels',
     unit: 'unit5',
@@ -151,7 +154,7 @@ export const UNIT5 = {
     days: [DAY21, DAY22, ]   
 }
 
-export const UNIT6 = {
+export const UNIT5 = {
     id: 105,
     title: 'unit 6 : and then there were three',
     unit: 'unit6',
@@ -172,7 +175,7 @@ export const UNIT6 = {
     days: [DAY23, DAY24, DAY25]   
 }
 
-export const UNIT7 = {
+export const UNIT6 = {
     id: 105,
     title: 'unit 7 : finally',
     unit: 'unit7',

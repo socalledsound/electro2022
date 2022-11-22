@@ -16,13 +16,13 @@ const DAY22 = {
     the gallery!
     `,
     illustrationURL:'https://res.cloudinary.com/chris-kubick/image/upload/v1603987612/zombie_jts9s0.jpg',
-    videos: [
-        {
-            linkText: 'click the assignment button for the text tutorial, on pixels and motion tracking. videos are linked from there....',
-            linkSrc: '',
-        },
+    // videos: [
+    //     {
+    //         linkText: 'click the assignment button for the text tutorial, on pixels and motion tracking. videos are linked from there....',
+    //         linkSrc: '',
+    //     },
 
-    ],
+    // ],
     inspirationLinks: [
         {
             linkText: 'nobumichi asai - face projection mapping',
@@ -45,16 +45,36 @@ const DAY22 = {
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/lWZR5BN-o',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'sunrise pixel ripples',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/jP5xjo7F1',
         },
         {
-            linkText: 'pixel sorting is a neat thing you can do with the pixel array',
+            linkText: 'melting bear',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/JXSaZyLjS',
+        },
+        {
+            linkText: 'CA pixel bear 3d',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/oGqWRe4ce',
+        },
+        {
+            linkText: 'image edge detection',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MrysOMgrc'
+        },
+        {
+            linkText:'basic pixel sort',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/aKupRiwQU'
+        },
+        {
+            linkText: 'ASDF pixel sorting w/ bitwise operators',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/yapFC24FG',
         },
         {
             linkText: 'pixelate video example',
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/MHpS_is5i',
+        },
+        {
+            linkText: 'pixelate with shader',
+            linkSrc: 'https://editor.p5js.org/socalledsound/sketches/-wnTyH5Dz',
         },
         {
             linkText: 'video particles',
@@ -65,7 +85,7 @@ const DAY22 = {
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/STHJQaBF4',
         },
         {
-            linkText: `we'll learn this version of pixel manipulation in a few weeks, with shaders...`,
+            linkText: `pixel manipulation with shaders...`,
             linkSrc: 'https://editor.p5js.org/socalledsound/sketches/k5Ib2t5Qa',
         },
         {
@@ -84,7 +104,7 @@ const DAY22 = {
         },
   
         {
-            linkText: 'clmtrackr',
+            linkText: 'clmtrackr (w/ link to research paper outlining the details)',
             linkSrc: 'https://github.com/auduno/clmtrackr',
         },
         {
@@ -96,21 +116,22 @@ const DAY22 = {
             linkText: 'building a kitty cam with face detection!',
             linkSrc: 'https://girliemac.com/blog/2015/12/25/kittycam-raspberrypi-camera-cat-face-recog-nodejs/',
         },
+
         {
-            linkText: 'a nice little p5 code repo for glitching images',
-            linkSrc: 'https://github.com/phillipdavidstearns/aYearInCode/tree/master/p5/projects/imageGlitch',
+            linkText: 'viola jones algorithm (face detection) explained',
+            linkSrc: 'https://www.youtube.com/watch?v=uEJ71VlUmMQ',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'how face id works (probably)',
+            linkSrc: 'https://www.youtube.com/watch?v=mwTaISbA87A',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'the fft algorithm (used w pixel array in compression algorithms)',
+            linkSrc: 'https://www.youtube.com/watch?v=nmgFG7PUHfo&t=142s',
         },
         {
-            linkText: '',
-            linkSrc: '',
+            linkText: 'download vs code',
+            linkSrc: 'https://code.visualstudio.com/download',
         },
     ],
 

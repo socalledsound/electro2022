@@ -182,7 +182,7 @@ export const ASSIGNMENT18 = {
 
 export const ASSIGNMENT19 = {
     id: 19,
-    title : 'pendulum',
+    title : 'proposal',
     description : '',
     markdown:  DAY19_WORKSHOP_MD,
 }
@@ -190,7 +190,7 @@ export const ASSIGNMENT19 = {
 
 export const ASSIGNMENT20 = {
     id: 20,
-    title : 'visualizing',
+    title : 'update',
     description : '',
     markdown: DAY20_WORKSHOP_MD,
 }
@@ -225,7 +225,7 @@ export const ASSIGNMENT23 = {
 
 export const ASSIGNMENT24 = {
     id: 24,
-    title : 'shade',
+    title : 'diffuse',
     description : `
      
     `,
@@ -235,7 +235,7 @@ export const ASSIGNMENT24 = {
 
 export const ASSIGNMENT25 = {
     id: 25,
-    title : 'update', 
+    title : 'models', 
     description : `
     
     `,
