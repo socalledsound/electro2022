@@ -30,16 +30,16 @@ const GalleryNew = ({history}) => {
     // const gpioWorks = useSelector( selectGPIOWorks)
     // console.log(gpioWorks)
     const featuredWorks = useSelector(selectFeaturedWorks)
-    const currentAssignmentWorks = useSelector(selectCurrentWorks)
+    // const currentAssignmentWorks = useSelector(selectCurrentWorks)
     //console.log(currentAssignmentWorks)
-    let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
+    // let currentAssignment  = useSelector(selectCurrentGalleryAssignment)
    // console.log(currentAssignment)
     // let currentAssignment = currentAssignmentWorks[0]
     // let currentAssignmentTitle = null
     // if(currentAssignmentWorks && currentAssignmentWorks.length){
     //     currentAssignmentTitle = currentAssignmentWorks[0].assignment
     // }
-    const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
+    // const recentWorks = useSelector(selectRecentWorks).filter(item => item.assignment !== currentAssignment.title)
     //console.log(recentWorks)
     // const currentUser = useSelector(selectCurrentUser)
     // const unCommentedWorks = useSelector(selectUncommentedWorks(currentUser))
@@ -64,7 +64,7 @@ const GalleryNew = ({history}) => {
 
                 
                     
-                    <div className={styles.galleryRowWrapper}>
+                    {/* <div className={styles.galleryRowWrapper}>
                          <h5 className={styles.galleryHeading2}>the current assignment: </h5>
                         <div 
                                         className={styles.galleryCategoryButton}
@@ -78,16 +78,16 @@ const GalleryNew = ({history}) => {
                                     currentAssignmentWorks.length > 0 && 
                         <GalleryRowRecent category={currentAssignment.title} works={currentAssignmentWorks}/>
                                     }
-                    </div>
+                    </div> */}
                 
 
-                {
+                {/* {
                     recentWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>
                          <h5 className={styles.galleryHeading2}>other works submitted in the last week: </h5>
                         <GalleryRowRecent category={'submitted recently'} works={recentWorks} recent={true}/>
                     </div>
-                }
+                } */}
                 {/* {
                     midtermWorks.length > 0 && 
                     <div className={styles.galleryRowRecentWrapper}>

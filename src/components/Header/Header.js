@@ -21,7 +21,7 @@ const Header = () => {
                         </NavLink>
                 }
                 <NavLink className={styles.otherLink} to='/syllabus'>syllabus</NavLink>
-                <NavLink className={styles.otherLink} to='/gallery'>gallery</NavLink>
+                <NavLink className={styles.otherLink} to='/fullgallery'>gallery</NavLink>
                 <NavLink className={styles.otherLink} to='/people'>people</NavLink>
                 <NavLink className={styles.otherLink} to='/resources'>resources</NavLink>
             </div>
