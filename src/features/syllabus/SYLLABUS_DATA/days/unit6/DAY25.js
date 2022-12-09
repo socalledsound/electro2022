@@ -36,6 +36,10 @@ const DAY25 = {
             linkText: 'ando - copilot for designers',
             linkSrc: 'https://www.figma.com/community/plugin/1145446664512862540',
         },
+        {
+            linkText: 'magician is another design AI for figma',
+            linkSrc: 'https://magician.design/',
+        },
           
         {
             linkText: 'github copilot',
@@ -51,10 +55,23 @@ const DAY25 = {
             linkText: 'descript - AI for video/audio',
             linkSrc: 'https://www.descript.com/#vid1',
         },
+        {
+            linkText: 'magic video - stable diffusion but for video',
+            linkSrc: 'https://magicvideo.github.io/',
+        },
+
+        {
+            linkText: 'generate dancing characters from music',
+            linkSrc: 'https://edge-dance.github.io/',
+        },
 
         {
             linkText: 'Lex - AI writing assistant',
             linkSrc: 'https://www.youtube.com/watch?v=7Cao0oy1CBg&t=2s',
+        },
+        {
+            linkText: 'bearly AI is an AI tool for reading and writing',
+            linkSrc: 'https://www.youtube.com/watch?v=2SvgCYOqMY8',
         },
           
         {
@@ -82,6 +99,10 @@ const DAY25 = {
         {
             linkText: 'AI/ML used as slave driver by Amazon',
             linkSrc: 'https://www.theverge.com/2022/11/21/23466219/amazon-warehouse-surveillance-camera-offshore-workers-india-costa-rica',
+        },
+        {
+            linkText: 'facebook galactica debacle',
+            linkSrc: 'https://www.cnet.com/science/meta-trained-an-ai-on-48-million-science-papers-it-was-shut-down-after-two-days/',
         },
     ],
     
@@ -127,6 +148,14 @@ const DAY25 = {
             linkText: 'diffusers colab notebook ',
             linkSrc: 'https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb',
         },
+        {
+            linkText: 'emoji diffusion',
+            linkSrc: 'https://huggingface.co/valhalla/emoji-diffusion?text=a+snail+shaped+harp+emoji',
+        },
+        {
+            linkText: 'ghibli diffusion',
+            linkSrc: 'https://huggingface.co/nitrosocke/Ghibli-Diffusion',
+        },
                   
         {
             linkText: 'DALL-E 2 prompt book',
@@ -137,6 +166,10 @@ const DAY25 = {
             linkText: 'stable diffusion prompt book',
             linkSrc: 'https://openart.ai/promptbook',
         },
+        {
+            linkText: 'prompt to prompt image editing',
+            linkSrc: 'https://prompt-to-prompt.github.io/',
+        }
     ],
 
 

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { selectCurrentUser, selectLoginLoading } from '../../features/user/userSlice'
-import { selectCurrentDay } from '../../features/syllabus/syllabusSlice'
+import { selectCurrentDay, selectFinalDay } from '../../features/syllabus/syllabusSlice'
 // import { selectFinalDay } from '../../features/syllabus/syllabusSlice'
 import { fetchUserCritMessagesStart } from '../../features/critMessages/critMessagesSlice'
 import { startFetchUserWorks } from '../../features/gallery/gallerySlice'
@@ -20,6 +20,7 @@ import { startSyncPollAnswers } from '../../features/poll/pollSlice'
 const HomePage = () => {
     const dispatch = useDispatch()
     const currentUser = useSelector(selectCurrentUser)
+    const finalDay = useSelector(selectFinalDay)
     const loading = useSelector(selectLoginLoading)
     // const warning = useSelector(selectWarningStatus)
     // const currentDay = useSelector(selectFinalDay)
@@ -59,7 +60,8 @@ const HomePage = () => {
                             currentUser &&
                             <UserNewMessages currentUser={currentUser}/>
                         } */}
-                    <DayDetail day={currentDay}/>
+                    {/* <DayDetail day={currentDay}/> */}
+                    <DayDetail day={finalDay}/>
                     </Fragment>
                   :
                     <SignInPage currentUser={currentUser}/>
